@@ -66,6 +66,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     font-family: OpenSans, Arial, Tahoma, Verdana, sans-serif;
     color: #24201E;
   }
+  div, p, h3, h4, h5, h6, li, span {color: #24201E;}
   
   article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
   ol, ul { list-style: none; }
@@ -85,7 +86,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     box-sizing: border-box;
   }
   
-p {
+p, li {
   font-family: 'OpenSans';
   font-style: normal;
   font-weight: 400;
@@ -102,7 +103,7 @@ h1 {
     font-size: 64px;
   }
 
-h2 {
+h2, h3 {
     font-family: 'Nunito-Bold';
     font-style: normal;
     font-weight: 700;
