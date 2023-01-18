@@ -23,12 +23,12 @@
 
 <body>
 
-    <header class="header">
+    <header class="header container">
         
             
             
-                <nav class="uk-margin" uk-navbar>
-                    <div class="uk-navbar">
+                <nav class="uk-margin header-nav uk-margin-medium-top" uk-navbar>
+                    
                         <div class="header-logo">
                             <object type="image/svg+xml" data="svg/logo.svg">
                                 <img src="svg/logo.svg">
@@ -36,16 +36,17 @@
                         </div>
                         <!-- Навигация, ссылки -->
                         <ul class="uk-navbar-nav">
-                            <li><a href="#">Направления</a>
+                            <li class="nav-item uk-active"><a  href="#">Направления</a>
                                 <div class="uk-navbar-dropdown">
                                     <ul class="uk-nav uk-navbar-dropdown-nav">
-                                        <li><a href="#">Активное</a>
+                                        <li class="uk-active"><a href="#">Активное</a>
                                             <div class="uk-navbar-dropdown">
                                                 <ul class="uk-nav uk-navbar-dropdown-nav">
                                                     <li><a href="#">Активное</a></li>
                                                     <li><a href="#">Элемент списка</a></li>
                                                     <li><a href="#">Пункт меню</a></li>
                                                     <li><a href="#">Продолжаем</a></li> 
+                                                    
                                                 </ul>
                                             </div>
                                         </li>
@@ -55,45 +56,46 @@
                                     </ul>
                                 </div>
                             </li>
-                            <li><a href="#">О школе</a></li>
+                            <li class="nav-item"><a  href="#">О школе</a></li>
                             
-                             
+                            
+
                         </ul><!-- Навигация, ссылки -->
                             
                         <div class="uk-navbar-item header-phone"> <!-- Отдельный контейнер -->
-                            <div><a href="#">8 (800) 775-37-95</a></div>
+                            <a href="tel:+78007753795">8 (800) 775-37-95</a>
+                            <div class="header-phone_text">Получить консультацию</div>
                         </div>
                         <div class="uk-navbar-item header-buttons"> <!-- Отдельный контейнер -->
-                            <button class="uk-button uk-button-default">Кнопка</button>
-                            <button class="uk-button uk-button-primary">Кнопка</button>
+                            <button class="uk-button uk-button-default button-one uk-margin-small-right">Регистрация</button>
+                            <button class="uk-button uk-button-primary button-two">Войти на урок</button>
                         </div>
-                    </div>
+                    
                 </nav>
            
             
       
     </header>
+<main class="main container">
 
-  <!-- 1 секция -->
-    <section>
-        <div>
-            <h1>Онлайн-занятия с гениальными репетиторами</h1>
-            <div>
-                <p>
+
+  <!-- 1 секция  Главный баннер и текст-->
+    <section class="container-item uk-flex-between" uk-grid>
+        <div class="uk-width-1-2@m uk-padding-remove">
+            <h1 class="h1">Онлайн-занятия с гениальными репетиторами</h1>
+            <div class="h1-text">
                     Логопеды разовьют ребенка, а репетиторы подготовят ребенка к школе, подтянут школьный предмет на 5+
-                </p>
-                
             </div>
-            <button class="uk-button uk-button-primary">Оставить заявку</button>
+            <button class="uk-button uk-button-primary button-tree">Оставить заявку</button>
         </div>
-        <div>
+        <div class="uk-width-expand@m uk-padding-remove">
             <img src="images/test/Иллюстрация1.png" alt="">
         </div>
     </section>
 
     <!-- 2 секция -->
-    <section>
-        <h2>Направления</h2>
+    <section class="container-item">
+        <h2 class="center">Направления</h2>
         <div>
             
             <div uk-grid>
@@ -122,8 +124,8 @@
     </section>
 
     <!-- 3 секция -->
-    <section>
-        <h3>Наши преподаватели</h3>
+    <section class="container-item">
+        <h3 class="center">Наши преподаватели</h3>
         <p>
             Все наши преподаватели получают официальный допуск к занятиям с детьми. Допуск выдает педагогический институт и предъявляется родителю, вместе с документами о повышении квалификации по направлению занятий
         </p>
@@ -274,8 +276,8 @@
         
     </section>
 
-    <!-- 4 секция -->
-    <section>
+    <!-- 4 секция Как проходят занятия-->
+    <section class="container-item uk-flex">
         <div>
             <img src="images/test/Group 182.png" alt="">
         </div>
@@ -295,8 +297,8 @@
         
     </section>
 
-    <!-- 5 секция -->
-    <section>
+    <!-- 5 секция Начните бесплатно-->
+    <section class="container-item uk-flex">
 <div>
     <h3>Начните бесплатно</h3>
     <p>Пробное занятия по любому направлению с любым репетитором</p>
@@ -343,21 +345,21 @@
 </div>
     </section>
 
-    <!-- 6 секция -->
-    <section>
+    <!-- 6 секция Как начатьзанятия-->
+    <section class="container-item uk-flex">
         <div>
             <img src="images/test/Иллюстрация.png" alt="">
         </div>
         <div>
-            <h3>Онлайн-занятия с гениальными репетиторами</h3>
+            <h3>Как начать занятия</h3>
             <h3>Оставьте завку и мы вам перезвоним</h3>
-            <button class="uk-button uk-button-primary">Оставить заявку</button>
+            <button class="uk-button uk-button-primary button-tree">Оставить заявку</button>
             <p>Педагог-куратор Вам перезвонит, обсудит все моменты, выберет удобное время для первого пробного занятия</p>           
         </div>
     </section>
 
     <!-- 7 секция -->
-    <section>
+    <section class="container-item">
         
         <div>
             <h3>Почему нужно заниматься у нас?</h3>
@@ -375,8 +377,8 @@
     </section>
 
     <!-- 8 секция -->
-    <section>
-        <h3>Посмотрите, за что нас любят ученики и их родители</h3>
+    <section class="container-item">
+        <h3 class="center">Посмотрите, за что нас любят ученики и их родители</h3>
 
         <ul class="uk-subnav uk-subnav-pill uk-flex-center" uk-switcher="connect: #switcher-id">
             <li><a href="#">Видео</a></li>
@@ -395,7 +397,7 @@
     </section>
 
     <!-- 9 секция -->
-    <section>
+    <section class="container-item">
         <h3>Хотите бесплатно заниматься с детьми сами?</h3>
         <ul>
             <li>Авторизуйтесь на сайте и пользуйтесь бесплатно</li>
@@ -406,8 +408,8 @@
     </section>
 
 
-    <!-- 10 секция -->
-    <section>
+    <!-- 10 секция Остались вопросмы-->
+    <section class="container-item uk-flex">
         <div>
             <img src="images/test/иллюстрация3.png" alt="">
         </div>
@@ -426,12 +428,12 @@
                 </div>
                  
             </div>
-            <button class="uk-button uk-button-primary">Получить консультацию</button>
+            <button class="uk-button uk-button-primary button-tree">Получить консультацию</button>
         </div>
     </section>
 
  <!-- 11 секция -->
-    <section>
+    <section class="container-item">
         <h3>Частые вопросы</h3>
         <ul uk-accordion="multiple: true">
             <li class="uk-open">
@@ -473,8 +475,8 @@
         </ul>
     </section>
 
-
-    <footer class="footer"></footer>
+</main>
+    <footer class="footer container"></footer>
 
 
 
