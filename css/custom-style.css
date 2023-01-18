@@ -9,3 +9,8 @@
 .uk-card-badge { 
     left: 230px;   
 }
+.uk-navbar-dropdown {
+    
+    top: 80px !important;
+    left: 20% !important;
+    
