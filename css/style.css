@@ -4,89 +4,236 @@
   font-weight: 400;
   font-display: swap;
   src: local("Nunito"),
-       local("Nunito-Regular"),
-       url(/fonts/Nunito-Regular.woff2) format("woff2"),
-       url(/fonts/nunito-regular.woff) format("woff");
+    local("Nunito-Regular"),
+    url(/fonts/Nunito-Regular.woff2) format("woff2"),
+    url(/fonts/nunito-regular.woff) format("woff");
   unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
+
 @font-face {
   font-family: "Nunito-Bold";
   font-style: normal;
   font-weight: 700;
   font-display: swap;
   src: local("Nunito-Bold"),
-       url(/fonts/Nunito-Bold.woff2) format("woff2"),
-       url(/fonts/Nunito-Bold.woff) format("woff");
+    url(/fonts/Nunito-Bold.woff2) format("woff2"),
+    url(/fonts/Nunito-Bold.woff) format("woff");
   unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
+
 @font-face {
   font-family: "Nunito-Black";
   font-style: normal;
   font-weight: 900;
   font-display: swap;
   src: local("Nunito-Black"),
-       url(/fonts/Nunito-Black.woff2) format("woff2"),
-       url(/fonts/Nunito-Black.woff) format("woff");
+    url(/fonts/Nunito-Black.woff2) format("woff2"),
+    url(/fonts/Nunito-Black.woff) format("woff");
   unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
+
 @font-face {
   font-family: "OpenSans";
   font-style: normal;
   font-weight: 400;
   font-display: swap;
   src: local("OpenSans"),
-       url(/fonts/OpenSans-Regular.woff2) format("woff2"),
-       url(/fonts/opensans-regular.woff) format("woff");
+    url(/fonts/OpenSans-Regular.woff2) format("woff2"),
+    url(/fonts/opensans-regular.woff) format("woff");
   unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
+
 @font-face {
   font-family: "OpenSans-Bold";
   font-style: normal;
   font-weight: 700;
   font-display: swap;
   src: local("OpenSans-Bold"),
-       url(/fonts/OpenSans-Bold.woff2) format("woff2"),
-       url(/fonts/opensans-bold.woff) format("woff");
+    url(/fonts/OpenSans-Bold.woff2) format("woff2"),
+    url(/fonts/opensans-bold.woff) format("woff");
   unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
 
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
-    outline: none;
-  }
-  html { height: 101%; } /* always display scrollbars */
-  body { 
-    font-size: 62.5%; 
-    line-height: 1; 
-    font-family: OpenSans, Arial, Tahoma, Verdana, sans-serif;
-    color: #24201E;
-  }
-  div, p, h3, h4, h5, h6, li, span {color: #24201E;}
-  
-  article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
-  ol, ul { list-style: none; }
-  
-  blockquote, q { quotes: none; }
-  blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
-  strong { font-weight: bold; } 
-  
-  input { outline: none; }
-  
-  table { border-collapse: collapse; border-spacing: 0; }
-  img { border: 0; max-width: 100%; }
-  
-  a { text-decoration: none; }
-  a:hover { text-decoration: underline; }
-  *, *:after, *:before {
-    box-sizing: border-box;
-  }
-  
-p, li {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  outline: none;
+}
+
+html {
+  height: 101%;
+}
+
+/* always display scrollbars */
+body {
+  font-size: 62.5%;
+  line-height: 1;
+  font-family: OpenSans, Arial, Tahoma, Verdana, sans-serif;
+  color: #24201E;
+  height: 100%;
+}
+
+div,
+p,
+h3,
+h4,
+h5,
+h6,
+li,
+span {
+  color: #24201E;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+strong {
+  font-weight: bold;
+}
+
+input {
+  outline: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+img {
+  border: 0;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+p,
+li {
   font-family: 'OpenSans';
   font-style: normal;
   font-weight: 400;
@@ -94,151 +241,277 @@ p, li {
   line-height: 25px;
 }
 
-  
+
 h1 {
-    font-family: "Nunito-Bold";
-    font-style: normal;
-    font-weight: 700;
-    line-height: 64px;
-    font-size: 64px;
-  }
+  font-family: "Nunito-Bold";
+  font-style: normal;
+  font-weight: 700;
+  line-height: 64px;
+  font-size: 64px;
+}
 
-h2, h3 {
-    font-family: 'Nunito-Bold';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 48px;
-    line-height: 64px;
-  }
+h2 {
+  font-family: 'Nunito-Bold';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 64px;
+  margin-bottom: 50px;
+}
+
+h3 {
+  font-family: 'Nunito-Bold';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 46px;
+  line-height: 60px;
+  margin-bottom: 35px;
+}
 
 
+/*блоки*/
 
-  /*блоки*/
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+}
 
-  .container {
-    margin: 0 auto;
-    max-width: 1200px;
-  }
-  .container-item {
-      margin: 80px 0px 80px;
-      padding: 0 15px;
-  }
-  
-  .center {
-    text-align: center;
-    }
+.container-item {
+  margin: 80px 0px 80px;
+  padding: 0 15px;
+}
+
+.center {
+  text-align: center;
+}
 
 
 /*кнопки*/
-  
-  .button-one {
-    font-family: 'OpenSans-Bold';
-    font-size: 14px;
-    line-height: 19px;
-    text-align: center;
-    color: #292929;
-    background: #F8F8F8;
-    padding: 15px 30px;
-    border: 1px solid #F8F8F8;
-    border-radius: 5px;
-    text-transform: none;
-  }
-  .button-one:hover {
-    color: #AE00D4;
-    border: 1px solid #AE00D4;
-  }
-  .button-two {
-    font-family: 'OpenSans-Bold';
-    font-size: 14px;
-    line-height: 19px;
-    text-align: center;
-    color: #AE00D4;
-    background: #fff;
-    padding: 15px 30px;
-    border: 1px solid #AE00D4;
-    border-radius: 5px;
-    text-transform: none;
-  }
-  .button-two:hover {
-    color: #fff;
-    background: #AE00D4;
-  }
-  .button-tree {
-    font-family: 'OpenSans-Bold';
-    font-size: 14px;
-    line-height: 19px;
-    text-align: center;
-    color: #fff;
-    background: #AE00D4;
-    padding: 15px 30px;
-    border: 1px solid #AE00D4;
-    border-radius: 5px;
-    text-transform: none;
-  }
-  .button-tree:hover {
-    border: 1px solid #9C16B9;
-    background: #9C16B9;
-  }
 
-
-
-  .header {
-    padding: 0 15px;
-  }
-  .header-nav {
-    justify-content: space-between;
-  }
-  .header-phone{
-    display: block;
-    padding-top: 25px;
-  }
-
-  .header-phone a{
-    font-weight: 700;
-    font-size: 16px;
-    color: #292929;
-  }
-  .header-phone a{
-    text-decoration: none;
-  }
-  .header-phone a:hover{
-    color: #AE00D4;
-  }
-  .header-phone_text {
-    font-size: 16px;
-  }
-
-  .nav-item a{
-    font-family: 'Nunito-Bold';
-    font-size: 18px !important;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 24px;
-    color: #292929 !important;
-    text-transform: none !important;
-  }
-  .nav-item a:hover {
-    color: #AE00D4 !important;
-  }
-  .nav-item::after{
-    position: relative;
-    content: '•';
-    color: #AE00D4;
-    font-size: 40px;
-    left: 50%;
-    top: -30px;
-  }
-
-
-.h1 {
-    margin-bottom: 50px;
-    margin-top: 85px;
-    max-width: 555px;
+.button-one {
+  font-family: 'OpenSans-Bold';
+  font-size: 14px;
+  line-height: 19px;
+  text-align: center;
+  color: #292929;
+  background: #F8F8F8;
+  padding: 15px 30px;
+  border: 1px solid #F8F8F8;
+  border-radius: 5px;
+  text-transform: none;
 }
 
-.h1-text {
+.button-one:hover {
+  color: #AE00D4;
+  border: 1px solid #AE00D4;
+}
+
+.button-two {
+  font-family: 'OpenSans-Bold';
+  font-size: 14px;
+  line-height: 19px;
+  text-align: center;
+  color: #AE00D4;
+  background: #fff;
+  padding: 15px 30px;
+  border: 1px solid #AE00D4;
+  border-radius: 5px;
+  text-transform: none;
+}
+
+.button-two:hover {
+  color: #fff;
+  background: #AE00D4;
+}
+
+.button-tree {
+  font-family: 'OpenSans-Bold';
+  font-size: 14px;
+  line-height: 19px;
+  text-align: center;
+  color: #fff;
+  background: #AE00D4;
+  padding: 15px 30px;
+  border: 1px solid #AE00D4;
+  border-radius: 5px;
+  text-transform: none;
+}
+
+.button-tree:hover {
+  border: 1px solid #9C16B9;
+  background: #9C16B9;
+}
+
+/*шапкаи*/
+
+.header {
+  padding: 0 15px;
+}
+
+.header-nav {
+  justify-content: space-between;
+}
+
+.header-phone {
+  display: block;
+  padding-top: 25px;
+}
+
+.header-phone a {
+  font-weight: 700;
+  font-size: 16px;
+  color: #292929;
+}
+
+.header-phone a {
+  text-decoration: none;
+}
+
+.header-phone a:hover {
+  color: #AE00D4;
+}
+
+.header-phone_text {
+  font-size: 16px;
+}
+
+/*меню в шапке*/
+
+.nav-item a {
+  font-family: 'Nunito-Bold';
+  font-size: 18px !important;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+  color: #292929 !important;
+  text-transform: none !important;
+}
+
+.nav-item a:hover {
+  color: #AE00D4 !important;
+}
+
+.nav-item::after {
+  position: relative;
+  content: '•';
+  color: #AE00D4;
+  font-size: 40px;
+  left: 50%;
+  top: -30px;
+}
+
+/*подвал*/
+.footer {
+  height: fit-content;
+  min-height: 450px;
+  background-image: url(../images/фон.png);
+  background-position: 50% 100%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+}
+
+.footer-logo {
+  position: relative;
+  bottom: 60px;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 80px 0px 20px 0px;
+}
+
+
+.footer-content div>ul>li {
+  font-family: 'Nunito-Bold';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 32px;
+  color: #24201E;
+}
+
+/*1 секция юлок-баннер*/
+
+.h1-banner {
+  margin-bottom: 50px;
+  margin-top: 85px;
+  max-width: 555px;
+}
+
+.h1-banner-text {
   font-size: 18px;
   line-height: 26px;
   margin-bottom: 50px;
   max-width: 555px;
+}
+
+/*2 секция Направления*/
+.two-section{
+  margin-bottom: -860px;
+}
+
+.two-section-img {
+  position: relative;
+  bottom: 687px;
+  right: 68%;
+  z-index: -10;
+}
+
+
+
+/*7 секция Почемв надо заниматься у нас*/
+.seven-section{
+  margin-bottom: -860px;
+}
+
+.seven-section-img {
+  position: relative;
+  left: 55%;
+  bottom: 870px;
+}
+
+
+/*8  секция табы с отзывами*/
+
+li.uk-active>a.tab-button-reviews {
+  background-color: #F8F8F8 !important;
+  color: #AE00D4 !important;
+  border: 2px solid #AE00D4;
+  border-radius: 20px 20px 0 0 !important;
+  padding: 20px 55px !important;
+  font-family: 'Nunito-Bold';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 30px;
+  text-align: center;
+  text-transform: none;
+}
+
+a.tab-button-reviews {
+  background-color: #F8F8F8 !important;
+  color: #24201D !important;
+  border: 2px solid #fff;
+  border-radius: 20px 20px 0 0 !important;
+  padding: 20px 55px !important;
+  font-family: 'Nunito-Bold';
+  font-style: normal;
+  font-weight: 700 !important;
+  font-size: 22px !important;
+  line-height: 30px;
+  text-align: center;
+  text-transform: none !important;
+}
+
+/*11  секция аккордеон с вопросами-ответами*/
+.accordion-answer {
+  background: #FFFFFF;
+  box-shadow: 0px 0px 10.954px rgba(41, 41, 41, 0.1);
+  margin-top: 80px;
+  margin-bottom: 130px;
+  border-radius: 20px;
+  padding: 40px;
 }
