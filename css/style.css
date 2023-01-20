@@ -166,6 +166,7 @@ h6,
 li,
 span {
   color: #24201E;
+  font-family: OpenSans, Arial, Tahoma, Verdana, sans-serif;
 }
 
 article,
@@ -277,7 +278,7 @@ h3 {
 }
 
 .container-item {
-  margin: 80px 0px 80px;
+  margin: 80px 0px 100px;
   padding: 0 15px;
 }
 
@@ -450,27 +451,135 @@ h3 {
 
 /*2 секция Направления*/
 .two-section{
-  margin-bottom: -860px;
+  margin-bottom: -1190px;
 }
 
 .two-section-img {
   position: relative;
-  bottom: 687px;
-  right: 68%;
+  bottom: 866px;
+  right: 66%;
   z-index: -10;
 }
 
+.uk-nav-default.trend-nav > li > a {
+  background: #F8F8F8;
+  padding: 20px;
+  border-radius: 20px;
+  margin-bottom: 17px;
+  color: #292929;
+  font-family: 'Nunito-Bold';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 30px;
+  border: 3px solid #F8F8F8;
+}
+.uk-nav-default.trend-nav > li.uk-active > a {
+  border: 3px solid #AE00D4;
+}
+ul.trend-nav > li{
+  min-width: 280px;
+  margin-right: 20px;
+}
+.trend-nav-item{
+  background: #FFFFFF;
+    box-shadow: 0px 0px 10.954px rgb(41 41 41 / 10%);
+    border-radius: 30px;
+    padding: 37px;
+}
+.trend-icon {
+  margin-right: 5px;
+  width: 40px;
+  height: 40px;
+}
+
+/*3 секция Наши преподаватели*/
+
+.teacher-text {
+  
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+  color: #292929;
+  margin-bottom: 100px;
+  max-width: 748px;
+  margin: 0 auto;
+  padding-bottom: 100px;
+}
+
+.card-teacher-content{
+  text-align: center;
+  padding: 15px 40px;
+}
+h4.card-teacher-title{
+  font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    text-align: center;
+    color: #24201E;
+}
+.card-teacher-experience {
+  
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  color: #888888;
+  padding: 5px;
+}
+.card-teacher-description {
+  
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  color: #24201E;
+}
+.teacher-arrow {
+  margin-right: 5px;
+  width: 60px;
+  fill:#AE00D4;
+}
 
 
+/*4 секция Как проходят занятия*/
+.section-four {
+  margin-left: 60px;
+}
+.section-four-text {
+  margin-top: 50px;
+}
+ ul.section-four-text > li{
+  font-family: 'Nunito';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 55px;
+color: #24201D;
+}
 /*7 секция Почемв надо заниматься у нас*/
 .seven-section{
   margin-bottom: -860px;
 }
-
+.seven-section-block{
+  background-color: #AE00D4;
+  border-radius: 30px;
+  padding: 70px 60px;
+}
+.seven-section-block h3, .seven-section-block p{
+  color: #fff;
+}
 .seven-section-img {
   position: relative;
   left: 55%;
   bottom: 870px;
+  z-index: -10;
 }
 
 
