@@ -7,7 +7,7 @@
     local("Nunito-Regular"),
     url(../fonts/Nunito-Regular.woff2) format("woff2"),
     url(../fonts/nunito-regular.woff) format("woff");
-   
+
 }
 
 @font-face {
@@ -18,7 +18,7 @@
   src: local("Nunito-Bold"),
     url(../fonts/Nunito-Bold.woff2) format("woff2"),
     url(../fonts/Nunito-Bold.woff) format("woff");
-  
+
 }
 
 @font-face {
@@ -29,7 +29,7 @@
   src: local("Nunito-Black"),
     url(../fonts/Nunito-Black.woff2) format("woff2"),
     url(../fonts/Nunito-Black.woff) format("woff");
-   
+
 }
 
 @font-face {
@@ -40,7 +40,7 @@
   src: local("OpenSans"),
     url(../fonts/OpenSans-Regular.woff2) format("woff2"),
     url(../fonts/opensans-regular.woff) format("woff");
-  
+
 }
 
 @font-face {
@@ -51,7 +51,7 @@
   src: local("OpenSans-Bold"),
     url(../fonts/OpenSans-Bold.woff2) format("woff2"),
     url(../fonts/opensans-bold.woff) format("woff");
-   
+
 }
 
 html,
@@ -152,7 +152,7 @@ html {
 body {
   font-size: 62.5%;
   line-height: 1;
-  font-family: OpenSans, Arial, Tahoma, Verdana, sans-serif;
+  font-family: OpenSans, sans-serif;
   color: #24201E;
   height: 100%;
 }
@@ -166,7 +166,7 @@ h6,
 li,
 span {
   color: #24201E;
-  font-family: OpenSans, Arial, Tahoma, Verdana, sans-serif;
+  font-family: OpenSans, sans-serif;
 }
 
 article,
@@ -450,7 +450,7 @@ h3 {
 }
 
 /*2 секция Направления*/
-.two-section{
+.two-section {
   margin-bottom: -1190px;
 }
 
@@ -461,7 +461,7 @@ h3 {
   z-index: -10;
 }
 
-.uk-nav-default.trend-nav > li > a {
+.uk-nav-default.trend-nav>li>a {
   background: #F8F8F8;
   padding: 20px;
   border-radius: 20px;
@@ -474,29 +474,87 @@ h3 {
   line-height: 30px;
   border: 3px solid #F8F8F8;
 }
-.uk-nav-default.trend-nav > li.uk-active > a {
+
+.uk-nav-default.trend-nav>li.uk-active>a {
   border: 3px solid #AE00D4;
 }
-ul.trend-nav > li{
+
+ul.trend-nav>li {
   min-width: 280px;
   margin-right: 20px;
 }
-.trend-nav-item{
+
+.trend-nav-item {
   background: #FFFFFF;
-    box-shadow: 0px 0px 10.954px rgb(41 41 41 / 10%);
-    border-radius: 30px;
-    padding: 37px;
+  box-shadow: 0px 0px 10.954px rgb(41 41 41 / 10%);
+  border-radius: 30px;
+  padding: 35px 20px 35px 35px;
+  height: fit-content;
 }
+
 .trend-icon {
   margin-right: 5px;
   width: 40px;
   height: 40px;
 }
 
+
+.trend-nav-item>ul>li>ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+
+}
+
+.trend-nav-item>ul>li>ul>li {
+  background: #FCEDFF;
+  border: 3px solid #FCEDFF;
+  ;
+  padding: 25px;
+  border-radius: 10px;
+  margin-bottom: 13px;
+  min-width: 31%;
+  text-align: center;
+  margin-right: 16px;
+}
+
+.trend-nav-item>ul>li>ul>li:hover {
+  background: #F8F8F8;
+  border: 3px solid #AE00D4;
+
+}
+
+.trend-nav-item>ul>li>ul>li a:hover {
+  color: #AE00D4;
+}
+
+.trend-nav-item>ul>li>ul>li a {
+  text-decoration: none;
+  color: #292929;
+  font-family: "Nunito-Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  padding: 25px 20px;
+}
+
+.trend-nav-item>ul>li>h4 {
+  color: #292929;
+  font-family: "Nunito-Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 33px;
+  margin-top: 36px;
+  margin-bottom: 15px;
+}
+
 /*3 секция Наши преподаватели*/
 
 .teacher-text {
-  
+
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -509,21 +567,23 @@ ul.trend-nav > li{
   padding-bottom: 100px;
 }
 
-.card-teacher-content{
+.card-teacher-content {
   text-align: center;
   padding: 15px 40px;
 }
-h4.card-teacher-title{
+
+h4.card-teacher-title {
   font-family: 'Nunito';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 33px;
-    text-align: center;
-    color: #24201E;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 33px;
+  text-align: center;
+  color: #24201E;
 }
+
 .card-teacher-experience {
-  
+
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -532,8 +592,9 @@ h4.card-teacher-title{
   color: #888888;
   padding: 5px;
 }
+
 .card-teacher-description {
-  
+
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -541,10 +602,11 @@ h4.card-teacher-title{
   text-align: center;
   color: #24201E;
 }
+
 .teacher-arrow {
   margin-right: 5px;
   width: 60px;
-  fill:#AE00D4;
+  fill: #AE00D4;
 }
 
 
@@ -552,32 +614,114 @@ h4.card-teacher-title{
 .section-four {
   margin-left: 60px;
 }
+
 .section-four-text {
   margin-top: 50px;
 }
- ul.section-four-text > li{
+
+ul.section-four-text>li {
   font-family: 'Nunito';
-font-style: normal;
-font-weight: 700;
-font-size: 24px;
-line-height: 55px;
-color: #24201D;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 55px;
+
 }
-/*7 секция Почемв надо заниматься у нас*/
-.seven-section{
+
+/*5 секция Начните бесплатно*/
+.section-five-title {
+  max-width: 435px;
+  margin-bottom: 40px;
+}
+
+.section-five-text {
+  max-width: 435px;
+  line-height: 28px;
+  margin-bottom: 45px;
+}
+
+.section-five-stages {
+  font-family: 'Nunito-Bold';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+
+}
+
+.section-five-stages>div>span {
+  font-family: 'Nunito-Bold';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 49px;
+  margin-right: 20px;
+  display: block;
+  top: -6px;
+  position: relative;
+}
+
+.section-five-stages>div {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.section-five-stages-item-text {
+  font-family: 'Nunito-Bold';
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.section-five-form {
+  background: #AE00D4;
+  padding: 50px 90px;
+  max-width: 500px;
+  color: white;
+  font-family: 'Nunito-Bold';
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  border-radius: 20px;
+}
+
+/*6 секция Почему надо заниматься у нас*/
+.section-six-title-second {
+  font-family: 'Nunito-Black';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 48px;
+  color: #AE00D4;
+}
+
+.section-six-title-second {
+  max-width: 445px;
+}
+
+.section-six-text-second {
+  margin-top: 40px;
+}
+
+/*7 секция Почему надо заниматься у нас*/
+.seven-section {
   margin-bottom: -860px;
 }
-.seven-section-block{
+
+.seven-section-block {
   background-color: #AE00D4;
   border-radius: 30px;
   padding: 70px 60px;
 }
-.seven-section-block h3, .seven-section-block p{
+
+.seven-section-block h3,
+.seven-section-block p {
   color: #fff;
 }
+
 .seven-section-img {
   position: relative;
-  left: 55%;
+  /*left: 55%;*/
   bottom: 870px;
   z-index: -10;
 }
@@ -623,4 +767,30 @@ a.tab-button-reviews {
   margin-bottom: 130px;
   border-radius: 20px;
   padding: 40px;
+}
+
+.accordion-answer ul>li {
+  border-bottom: 1px solid #292929;
+  padding: 10px 0 30px 0px;
+}
+
+.accordion-answer ul>li>a {
+  font-family: 'Nunito-Bold';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 30px;
+  color: #292929;
+
+}
+
+ul.accordion-answer>li>div>p {
+  font-family: 'OpenSans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #292929;
+  padding-right: 30px;
+  text-align: justify;
 }
