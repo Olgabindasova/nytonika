@@ -5,8 +5,8 @@
   font-display: swap;
   src: local("Nunito"),
     local("Nunito-Regular"),
-    url(/fonts/Nunito-Regular.woff2) format("woff2"),
-    url(/fonts/nunito-regular.woff) format("woff");
+    url(../fonts/Nunito-Regular.woff2) format("woff2"),
+    url(../fonts/nunito-regular.woff) format("woff");
    
 }
 
@@ -16,8 +16,8 @@
   font-weight: 700;
   font-display: swap;
   src: local("Nunito-Bold"),
-    url(/fonts/Nunito-Bold.woff2) format("woff2"),
-    url(/fonts/Nunito-Bold.woff) format("woff");
+    url(../fonts/Nunito-Bold.woff2) format("woff2"),
+    url(../fonts/Nunito-Bold.woff) format("woff");
   
 }
 
@@ -27,8 +27,8 @@
   font-weight: 900;
   font-display: swap;
   src: local("Nunito-Black"),
-    url(/fonts/Nunito-Black.woff2) format("woff2"),
-    url(/fonts/Nunito-Black.woff) format("woff");
+    url(../fonts/Nunito-Black.woff2) format("woff2"),
+    url(../fonts/Nunito-Black.woff) format("woff");
    
 }
 
@@ -38,8 +38,8 @@
   font-weight: 400;
   font-display: swap;
   src: local("OpenSans"),
-    url(/fonts/OpenSans-Regular.woff2) format("woff2"),
-    url(/fonts/opensans-regular.woff) format("woff");
+    url(../fonts/OpenSans-Regular.woff2) format("woff2"),
+    url(../fonts/opensans-regular.woff) format("woff");
   
 }
 
@@ -49,8 +49,8 @@
   font-weight: 700;
   font-display: swap;
   src: local("OpenSans-Bold"),
-    url(/fonts/OpenSans-Bold.woff2) format("woff2"),
-    url(/fonts/opensans-bold.woff) format("woff");
+    url(../fonts/OpenSans-Bold.woff2) format("woff2"),
+    url(../fonts/opensans-bold.woff) format("woff");
    
 }
 
