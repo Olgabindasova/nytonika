@@ -144,6 +144,12 @@ video {
   outline: none;
 }
 
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 html {
   height: 101%;
 }
@@ -305,6 +311,7 @@ h3 {
 .button-one:hover {
   color: #AE00D4;
   border: 1px solid #AE00D4;
+  transition: background 0.5s ease;
 }
 
 .button-two {
@@ -323,6 +330,8 @@ h3 {
 .button-two:hover {
   color: #fff;
   background: #AE00D4;
+  border: 1px solid #fff;
+  transition: background 0.5s ease;
 }
 
 .button-tree {
@@ -341,8 +350,26 @@ h3 {
 .button-tree:hover {
   border: 1px solid #9C16B9;
   background: #9C16B9;
+  transition: background 0.5s ease;
 }
+.section-block-button{
+  width: 105px;
+    height: 105px;
+    background-image: url("../svg/стрелка-круг-фиолетовый.svg");
+    background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 105px 105px;
+    display: block;
+    position: relative;
+    left: 50%;
+    z-index: 100;
+    bottom: 280px;
 
+}
+.section-block-button:hover{
+    background-image: url("../svg/стрелка-круг-белый.svg");
+    transition: background 0.5s ease;
+}
 /*шапкаи*/
 
 .header {
@@ -509,7 +536,6 @@ ul.trend-nav>li {
 .trend-nav-item>ul>li>ul>li {
   background: #FCEDFF;
   border: 3px solid #FCEDFF;
-  ;
   padding: 25px;
   border-radius: 10px;
   margin-bottom: 13px;
@@ -521,7 +547,7 @@ ul.trend-nav>li {
 .trend-nav-item>ul>li>ul>li:hover {
   background: #F8F8F8;
   border: 3px solid #AE00D4;
-
+  transition: 0.5s ease;
 }
 
 .trend-nav-item>ul>li>ul>li a:hover {
@@ -620,7 +646,7 @@ h4.card-teacher-title {
 }
 
 ul.section-four-text>li {
-  font-family: 'Nunito';
+  font-family: 'Nunito-Bold';
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -655,7 +681,7 @@ ul.section-four-text>li {
   font-weight: 700;
   font-size: 36px;
   line-height: 49px;
-  margin-right: 20px;
+  margin-right: 15px;
   display: block;
   top: -6px;
   position: relative;
@@ -675,14 +701,72 @@ ul.section-four-text>li {
 
 .section-five-form {
   background: #AE00D4;
-  padding: 50px 90px;
+  padding: 30px 60px;
   max-width: 500px;
   color: white;
-  font-family: 'Nunito-Bold';
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 24px;
   border-radius: 20px;
+}
+
+.section-five-form>fieldset>legend {
+  font-family: 'Nunito-Black';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 49px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.section-five-form>fieldset>div>input {
+  padding: 30px;
+}
+
+.section-five-form>fieldset>div>input::-webkit-input-placeholder {
+  text-align: center;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #888888;
+}
+
+.section-five-form>fieldset>div>input:-moz-placeholder {
+  text-align: center;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #888888;
+}
+
+.section-five-form>fieldset>div>input::-moz-placeholder {
+  text-align: center;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #888888;
+}
+
+.section-five-form>fieldset>div>input:-ms-input-placeholder {
+  text-align: center;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #888888;
+}
+
+.section-five-form>fieldset>div.uk-form-controls {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  text-align: center;
+  color: #FFFFFF;
+  padding: 0px 30px;
+}
+
+.section-five-form>fieldset>div.uk-form-controls a {
+  text-decoration: none;
+  color: #FFFFFF;
+  font-family: "OpenSans-Bold";
+  font-weight: 700;
 }
 
 /*6 секция Почему надо заниматься у нас*/
@@ -705,7 +789,7 @@ ul.section-four-text>li {
 
 /*7 секция Почему надо заниматься у нас*/
 .seven-section {
-  margin-bottom: -860px;
+  margin-bottom: -1575px
 }
 
 .seven-section-block {
@@ -717,12 +801,25 @@ ul.section-four-text>li {
 .seven-section-block h3,
 .seven-section-block p {
   color: #fff;
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 15px;
+}
+
+.seven-section-block-content {
+  max-width: 520px
+}
+.seven-section-block-sertificat{
+  display: block;
+    position: relative;
+    left: 55%;
+    bottom: -870px;
 }
 
 .seven-section-img {
   position: relative;
-  /*left: 55%;*/
-  bottom: 870px;
+  left: 55%;
+  bottom: 0px;
   z-index: -10;
 }
 
@@ -757,6 +854,71 @@ a.tab-button-reviews {
   line-height: 30px;
   text-align: center;
   text-transform: none !important;
+}
+
+/*9  секция Хотите бесплатно заниматься с детьми сами?*/
+.section-nine {
+  background: #FFFFFF;
+  box-shadow: 0px 0px 10.954px rgba(41, 41, 41, 0.1);
+  border-radius: 20px;
+  padding: 60px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 108%;
+  background-image: url("../images/Беслатное-занятие-фон.png");
+  max-height: 470px
+   
+}
+.position-nine-button {
+  left: 66%;
+  bottom: 225px;
+}
+.section-nine h3 {
+  max-width: 635px;
+
+}
+
+.section-nine>ul>li {
+  font-family: 'Nunito-Bold';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 48px;
+  color: #24201D;
+}
+/*10  секция Остались вопросы?*/
+.section-ten-second-text {
+  font-family: 'Nunito-Bold';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 48px;
+  color: #292929;
+}
+.section-ten-second > ul{
+  margin: 40px 0px;
+}
+.section-ten-second > ul > li {
+  font-family: 'Nunito-Bold';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  color: #292929;
+  margin-bottom: 20px;
+  display: flex;
+}
+.section-ten-second > ul > li > span {
+  font-family: 'Nunito-Black';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 65px;
+  color: #292929;
+  margin-right: 24px;
+  display: block;
+  position: relative;
+  bottom: 20px;
 }
 
 /*11  секция аккордеон с вопросами-ответами*/
