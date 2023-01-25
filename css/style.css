@@ -150,9 +150,7 @@ body {
   overflow-x: hidden;
 }
 
-html {
-  height: 101%;
-}
+
 
 /* always display scrollbars */
 body {
@@ -382,7 +380,7 @@ h3 {
 
 .header-phone {
   display: block;
-  padding-top: 25px;
+  padding-top: 32px;
 }
 
 .header-phone a {
@@ -630,11 +628,34 @@ h4.card-teacher-title {
 }
 
 .teacher-arrow {
-  margin-right: 5px;
+  margin: 15px;
   width: 60px;
+  height: 60px;
   fill: #AE00D4;
+  padding: 22px 15px 15px 15px;
+  border-radius: 50%;
+  background: #F8F8F8;
+  border: 2px solid #F8F8F8;
 }
-
+.teacher-arrow:hover {
+  background: #fff;;
+  border: 2px solid #AE00D4;
+  transition: background 0.5ms;
+}
+.card-teacher-content > .uk-label {
+  height: 40px;
+  padding: 15px 30px;
+  line-height: 15px;
+  text-transform: none;
+  background: #FFFFFF;
+  box-shadow: 0px 0px 7.212px rgba(0, 0, 0, 0.16);
+  border-radius: 20px;
+  font-family: "Nunito-Bold";
+  font-size: 12px;
+}
+.teacher-label-color-one{color: #FF8D44 !important;}
+.teacher-label-color-two{color: #DB6C92 !important;}
+.teacher-label-color-tree{color: #33C7A2 !important;}
 
 /*4 секция Как проходят занятия*/
 .section-four {
@@ -719,6 +740,7 @@ ul.section-four-text>li {
 
 .section-five-form>fieldset>div>input {
   padding: 30px;
+  border-radius: 5px;
 }
 
 .section-five-form>fieldset>div>input::-webkit-input-placeholder {
@@ -855,6 +877,75 @@ a.tab-button-reviews {
   text-align: center;
   text-transform: none !important;
 }
+.reviews-text li > div > div > img {
+  width: 90px;
+  border-radius: 40%;
+  padding-bottom: 22px;
+  display: block;
+  position: relative;
+  left: 33%;
+  top: -70px;
+}
+.reviews-text li  {
+  border: 8px solid #fff;
+}
+.reviews-text li > div {
+  padding: 30px 30px;
+  background: #F8F8FC;
+  border: 3px solid #FFFFFF;
+  border-radius: 20px;
+}
+.reviews-text li > div > .uk-card-media-top {
+  height: 60px;
+}
+.reviews-content{
+  display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: center;
+    min-height: 130px;
+}
+.reviews-text li > div > div > p{
+  font-family: 'OpenSans';
+  font-style: italic;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  color: #211D1D
+}
+.reviews-text li > div > div  > p.uk-card-title{
+  font-family: 'Nunito-Bold';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 22px;
+text-align: center;
+color: #211D1D;
+padding-top: 20px;
+}
+.reviews-video  {
+  border: 2px solid transparent;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+.reviews-video:hover {
+  border: 2px solid #fff;
+  background: #AE00D4;  
+  transition: background 0.5ms;
+
+}
+
+.reviews-video a {
+  border: 25px solid transparent;
+  border-left: 35px solid #e5e5e5;
+  margin-left: 27px;
+  margin-top: 13px;
+  display: block;
+}
+
+
 
 /*9  секция Хотите бесплатно заниматься с детьми сами?*/
 .section-nine {
