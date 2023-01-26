@@ -23,65 +23,111 @@
 
 <body>
 
-    <header class="header container">
+    <header uk-sticky>
+
+<section class="header container">
+
+    <nav class="header-nav uk-margin-small-top" uk-navbar>
+
+        <div class="header-logo">
+            <object type="image/svg+xml" data="svg/logo.svg">
+                <img src="svg/logo.svg">
+            </object>
+        </div>
+        <!-- Навигация, ссылки -->
+        <ul class="uk-navbar-nav">
+            <li class="nav-item"><a href="#">Направления</a>
+                <div class="uk-navbar-dropdown header-menu">
+                    <ul class="uk-nav uk-navbar-dropdown-nav">
+                        <li class="uk-active">
+                            <a  href="#">Активное</a> 
+                            <div class="uk-navbar-dropdown header-menu-second">
+                                <ul class="uk-nav uk-navbar-dropdown-nav header-menu-second-position">
+                                    <li><a href="#">
+                                            <object type="image/svg+xml" data="svg/МАлышам.svg"
+                                                class="trend-icon-nav">
+                                                <img src="svg/МАлышам.svg">
+                                            </object>
+                                            Активное</a></li>
+                                    <li><a href="#">
+                                            <object type="image/svg+xml" data="svg/МАлышам.svg"
+                                                class="trend-icon-nav">
+                                                <img src="svg/МАлышам.svg">
+                                            </object>
+                                            Элемент списка</a></li>
+                                    <li><a href="#">
+                                            <object type="image/svg+xml" data="svg/МАлышам.svg"
+                                                class="trend-icon-nav">
+                                                <img src="svg/МАлышам.svg">
+                                            </object>
+                                            Пункт меню</a></li>
+                                    <li><a href="#">
+                                            <object type="image/svg+xml" data="svg/МАлышам.svg"
+                                                class="trend-icon-nav">
+                                                <img src="svg/МАлышам.svg">
+                                            </object>
+                                            Продолжаем</a></li>
+
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a  href="#">Элемент списка</a> 
+                            <div class="uk-navbar-dropdown header-menu-second">
+                                <ul class="uk-nav uk-navbar-dropdown-nav header-menu-second-position">
+                                    <li><a href="#">
+                                        <object type="image/svg+xml" data="svg/МАлышам.svg"
+                                                class="trend-icon-nav">
+                                                <img src="svg/МАлышам.svg">
+                                            </object>
+                                        Активное</a></li>
+                                    <li><a href="#">
+                                        <object type="image/svg+xml" data="svg/МАлышам.svg"
+                                                class="trend-icon-nav">
+                                                <img src="svg/МАлышам.svg">
+                                            </object>
+                                        Элемент списка</a></li>
+                                    <li><a href="#">
+                                        <object type="image/svg+xml" data="svg/МАлышам.svg"
+                                                class="trend-icon-nav">
+                                                <img src="svg/МАлышам.svg">
+                                            </object>
+                                        Пункт меню</a></li>
+                                    <li><a href="#">
+                                        <object type="image/svg+xml" data="svg/МАлышам.svg"
+                                                class="trend-icon-nav">
+                                                <img src="svg/МАлышам.svg">
+                                            </object>
+                                        Продолжаем</a></li>
+
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a  href="#">Пункт меню</a></li>
+                        <li><a  href="#">Продолжаем</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="nav-item"><a href="#">О школе</a></li>
 
 
 
-        <nav class="uk-margin header-nav uk-margin-medium-top" uk-navbar>
+        </ul><!-- Навигация, ссылки -->
 
-            <div class="header-logo">
-                <object type="image/svg+xml" data="svg/logo.svg">
-                    <img src="svg/logo.svg">
-                </object>
-            </div>
-            <!-- Навигация, ссылки -->
-            <ul class="uk-navbar-nav">
-                <li class="nav-item uk-active"><a href="#">Направления</a>
-                    <div class="uk-navbar-dropdown header-menu">
-                        <ul class="uk-nav uk-navbar-dropdown-nav">
-                            <li class="uk-active"><a href="#">Активное</a>
-                                <div class="uk-navbar-dropdown header-menu-second">
-                                    <ul class="uk-nav uk-navbar-dropdown-nav header-menu-second-position">
-                                        <li><a href="#">Активное</a></li>
-                                        <li><a href="#">Элемент списка</a></li>
-                                        <li><a href="#">Пункт меню</a></li>
-                                        <li><a href="#">Продолжаем</a></li>
+        <div class="uk-navbar-item header-phone"> <!-- Отдельный контейнер -->
+            <a href="tel:+78007753795">8 (800) 775-37-95</a>
+            <div class="header-phone_text">Получить консультацию</div>
+        </div>
+        <div class="uk-navbar-item header-buttons"> <!-- Отдельный контейнер -->
+            <button class="uk-button uk-button-default button-one uk-margin-small-right">Регистрация</button>
+            <button class="uk-button uk-button-primary button-two">Войти на урок</button>
+        </div>
 
-                                    </ul>
-                                </div>
-                            </li>
-                            <li><a href="#">Элемент списка</a>
-                                <div class="uk-navbar-dropdown header-menu-second">
-                                    <ul class="uk-nav uk-navbar-dropdown-nav header-menu-second-position">
-                                        <li><a href="#">Активное</a></li>
-                                        <li><a href="#">Элемент списка</a></li>
-                                        <li><a href="#">Пункт меню</a></li>
-                                        <li><a href="#">Продолжаем</a></li>
-
-                                    </ul>
-                                </div>
-                            </li>
-                            <li><a href="#">Пункт меню</a></li>
-                            <li><a href="#">Продолжаем</a></li>
-                        </ul>
-                    </div>
-                </li>
-                <li class="nav-item"><a href="#">О школе</a></li>
+    </nav>
 
 
+</section>
 
-            </ul><!-- Навигация, ссылки -->
-
-            <div class="uk-navbar-item header-phone"> <!-- Отдельный контейнер -->
-                <a href="tel:+78007753795">8 (800) 775-37-95</a>
-                <div class="header-phone_text">Получить консультацию</div>
-            </div>
-            <div class="uk-navbar-item header-buttons"> <!-- Отдельный контейнер -->
-                <button class="uk-button uk-button-default button-one uk-margin-small-right">Регистрация</button>
-                <button class="uk-button uk-button-primary button-two">Войти на урок</button>
-            </div>
-
-        </nav>
+        
 
 
 
@@ -103,7 +149,9 @@
                 <img src="images/test/Иллюстрация1.png" alt="">
             </div>
         </section>
-
+        <section class="two-section-dop">
+            <img class="two-section-img" src="images/зеленый-шейп1.png" alt="">
+        </section>
         <!-- 2 секция -->
         <section class="container-item">
             <h2 class="center">Направления</h2>
@@ -236,7 +284,7 @@
                         </ul>
                     </div>
                 </div>
-                <img class="two-section-img" src="images/зеленый-шейп1.png" alt="">
+             
             </div>
         </section>
 
@@ -408,14 +456,15 @@
                         </ul>
 
                     </div>
-                    <a class="uk-position-center-left-out uk-position-small teacher-arrow" href="#" 
+                    <a class="uk-position-center-left-out uk-position-small teacher-arrow" href="#"
                         uk-slider-item="previous"><svg width="353" height="193" viewBox="0 0 353 193"
                             xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M54.6988 112.186C56.1488 112.186 58.7288 112.186 60.1688 112.186C151.419 112.186 242.669 112.196 333.909 112.156C336.519 112.156 339.219 112.146 341.709 111.486C349.009 109.546 353.149 102.646 352.389 94.2861C351.729 87.0761 346.129 81.3161 338.809 80.4561C336.829 80.2261 334.819 80.2561 332.819 80.2561C241.949 80.2461 151.069 80.2461 60.1988 80.2461C58.7388 80.2461 57.2688 80.2461 54.7688 80.2461C56.2588 78.6461 57.0988 77.6761 58.0088 76.7761C74.1988 60.6161 90.3688 44.4361 106.599 28.3261C110.869 24.0861 113.249 19.2261 112.019 13.1761C110.789 7.10612 107.299 2.71611 101.239 0.85611C95.1488 -1.01389 89.5688 0.146107 84.9588 4.66611C77.4688 12.0261 70.0888 19.4961 62.6688 26.9261C43.8488 45.7561 25.0288 64.5961 6.21878 83.4361C-2.08122 91.7461 -2.07123 100.666 6.23877 108.986C32.1988 134.996 58.2688 160.896 84.0888 187.036C94.7888 197.856 109.059 190.786 111.849 179.856C113.449 173.596 111.149 168.646 106.789 164.306C90.5988 148.146 74.4488 131.946 58.2188 115.826C57.2988 114.886 54.9488 112.866 54.6988 112.186Z" />
                         </svg>
                     </a>
-                    <a class="uk-position-center-right-out uk-position-small teacher-arrow" href="#"  uk-slider-item="next"><svg width="353" height="194" viewBox="0 0 353 194"
+                    <a class="uk-position-center-right-out uk-position-small teacher-arrow" href="#"
+                        uk-slider-item="next"><svg width="353" height="194" viewBox="0 0 353 194"
                             xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M297.89 113C296.44 113 293.86 113 292.42 113C201.17 113 109.92 113.01 18.6801 112.97C16.0701 112.97 13.3701 112.96 10.8801 112.3C3.58008 110.36 -0.559923 103.46 0.200077 95.1001C0.860077 87.8901 6.46008 82.1301 13.7801 81.2701C15.7601 81.0401 17.7701 81.0701 19.7701 81.0701C110.64 81.0601 201.52 81.0601 292.39 81.0601C293.85 81.0601 295.32 81.0601 297.82 81.0601C296.33 79.4601 295.49 78.4901 294.58 77.5901C278.39 61.4301 262.22 45.2501 245.99 29.1401C241.72 24.9001 239.34 20.0401 240.57 13.9901C241.8 7.92008 245.29 3.53007 251.35 1.67007C257.44 -0.199925 263.02 0.960072 267.63 5.48007C275.12 12.8401 282.5 20.3101 289.92 27.7401C308.74 46.5701 327.56 65.4101 346.37 84.2501C354.67 92.5601 354.66 101.48 346.35 109.8C320.39 135.81 294.32 161.71 268.5 187.85C257.8 198.67 243.53 191.6 240.74 180.67C239.14 174.41 241.44 169.46 245.8 165.12C261.99 148.96 278.14 132.76 294.37 116.64C295.29 115.7 297.64 113.68 297.89 113Z" />
@@ -533,10 +582,11 @@
                 <a href="" class="section-block-button"></a>
             </div>
             <div class="seven-section-block-sertificat" uk-lightbox>
-               <a href="images/test/Слой 64.png" data-caption="Тут можно разместить любое описание"><img src="images/test/Слой 64.png" alt=""></a> 
+                <a href="images/Лицензия1.jpg" data-caption="Лицензия на оказание образовательных услуг"><img
+                        src="images/Лицензия1.jpg" alt=""></a>
             </div>
             <img class="seven-section-img" src="images/желтый-шейп1.png" alt="">
-            
+
 
         </section>
 
@@ -554,13 +604,17 @@
                     <ul id="switcher-id" class="uk-switcher uk-margin">
                         <!-- 8 секция Видео-->
                         <li>
-                            <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider ="autoplay: /*true; autoplay-interval: 3000">
+                            <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1"
+                                uk-slider="autoplay: /*true; autoplay-interval: 3000">
                                 <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-4@m uk-grid-small">
                                     <li>
                                         <div class="uk-panel">
                                             <img src="images/test/1.png" width="400" height="600" alt="Слайдер">
                                             <div class="uk-position-center uk-panel">
-                                                <div class="uk-h1 reviews-video" uk-lightbox><a href="video/music.mp4" data-type="video" data-caption="YouBox" data-attrs="width: 900; height: 480;" data-poster="images/test/1.png"></a></div>
+                                                <div class="uk-h1 reviews-video" uk-lightbox><a href="video/music.mp4"
+                                                        data-type="video" data-caption="YouBox"
+                                                        data-attrs="width: 900; height: 480;"
+                                                        data-poster="images/test/1.png"></a></div>
                                             </div>
                                         </div>
                                     </li>
@@ -568,7 +622,10 @@
                                         <div class="uk-panel">
                                             <img src="images/test/2.png" width="400" height="600" alt="Слайдер">
                                             <div class="uk-position-center uk-panel">
-                                                <div class="uk-h1 reviews-video" uk-lightbox><a href="https://www.youtube.com/watch?v=WhWc3b3KhnY" data-caption="YouTube" data-attrs="width: 900; height: 480;"></a></div>
+                                                <div class="uk-h1 reviews-video" uk-lightbox><a
+                                                        href="https://www.youtube.com/watch?v=WhWc3b3KhnY"
+                                                        data-caption="YouTube"
+                                                        data-attrs="width: 900; height: 480;"></a></div>
                                             </div>
                                         </div>
                                     </li>
@@ -576,7 +633,10 @@
                                         <div class="uk-panel">
                                             <img src="images/test/3.png" width="400" height="600" alt="Слайдер">
                                             <div class="uk-position-center uk-panel">
-                                                <div class="uk-h1 reviews-video" uk-lightbox><a href="https://www.youtube.com/watch?v=WhWc3b3KhnY" data-caption="YouTube" data-attrs="width: 900; height: 480;"></a></div>
+                                                <div class="uk-h1 reviews-video" uk-lightbox><a
+                                                        href="https://www.youtube.com/watch?v=WhWc3b3KhnY"
+                                                        data-caption="YouTube"
+                                                        data-attrs="width: 900; height: 480;"></a></div>
                                             </div>
                                         </div>
                                     </li>
@@ -584,7 +644,10 @@
                                         <div class="uk-panel">
                                             <img src="images/test/4.png" width="400" height="600" alt="Слайдер">
                                             <div class="uk-position-center uk-panel">
-                                                <div class="uk-h1 reviews-video" uk-lightbox><a href="https://www.youtube.com/watch?v=WhWc3b3KhnY" data-caption="YouTube" data-attrs="width: 900; height: 480;"></a></div>
+                                                <div class="uk-h1 reviews-video" uk-lightbox><a
+                                                        href="https://www.youtube.com/watch?v=WhWc3b3KhnY"
+                                                        data-caption="YouTube"
+                                                        data-attrs="width: 900; height: 480;"></a></div>
                                             </div>
                                         </div>
                                     </li>
@@ -592,7 +655,10 @@
                                         <div class="uk-panel">
                                             <img src="images/test/1.png" width="400" height="600" alt="Слайдер">
                                             <div class="uk-position-center uk-panel">
-                                                <div class="uk-h1 reviews-video" uk-lightbox><a href="https://www.youtube.com/watch?v=WhWc3b3KhnY" data-caption="YouTube" data-attrs="width: 900; height: 480;"></a></div>
+                                                <div class="uk-h1 reviews-video" uk-lightbox><a
+                                                        href="https://www.youtube.com/watch?v=WhWc3b3KhnY"
+                                                        data-caption="YouTube"
+                                                        data-attrs="width: 900; height: 480;"></a></div>
                                             </div>
                                         </div>
                                     </li>
@@ -600,14 +666,17 @@
                                         <div class="uk-panel">
                                             <img src="images/test/2.png" width="400" height="600" alt="Слайдер">
                                             <div class="uk-position-center uk-panel">
-                                                <div class="uk-h1 reviews-video" uk-lightbox><a href="https://www.youtube.com/watch?v=WhWc3b3KhnY" data-caption="YouTube" data-attrs="width: 900; height: 480;"></a></div>
+                                                <div class="uk-h1 reviews-video" uk-lightbox><a
+                                                        href="https://www.youtube.com/watch?v=WhWc3b3KhnY"
+                                                        data-caption="YouTube"
+                                                        data-attrs="width: 900; height: 480;"></a></div>
                                             </div>
                                         </div>
                                     </li>
 
                                 </ul>
                                 <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#"
-                                     uk-slider-item="previous"></a>
+                                    uk-slider-item="previous"></a>
                                 <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#"
                                     uk-slider-item="next"></a>
                             </div>
@@ -615,16 +684,18 @@
                         <!-- 8 секция Текстовые-->
                         <li>
 
-                            <div class="uk-slider-container-offset" uk-slider="center: true; autoplay: true; autoplay-interval: 3000">
+                            <div class="uk-slider-container-offset"
+                                uk-slider="center: true; autoplay: true; autoplay-interval: 3000">
                                 <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
-                                    <ul class="uk-slider-items uk-child-width-1-3@s uk-grid-small reviews-text uk-grid-match uk-margin-large-top" uk-grid>
+                                    <ul class="uk-slider-items uk-child-width-1-3@s uk-grid-small reviews-text uk-grid-match uk-margin-large-top"
+                                        uk-grid>
                                         <li>
                                             <div class="uk-card uk-card-default">
                                                 <div class="uk-card-media-top">
                                                     <img src="images/test/Слой 8.png" width="900" height="600"
                                                         alt="Слайдер" loading="lazy">
                                                 </div>
-                                                <div class="reviews-content">                   
+                                                <div class="reviews-content">
                                                     <p>Строго говоря, ничто не мешает нам вообразить себе, что в
                                                         каком-нибудь одном индивиде.</p>
                                                     <p class="uk-card-title">Карусель</p>
@@ -637,10 +708,10 @@
                                                     <img src="images/test/Слой 8.png" width="900" height="600"
                                                         alt="Слайдер" loading="lazy">
                                                 </div>
-                                                <div class="reviews-content"> 
+                                                <div class="reviews-content">
                                                     <p>Предположим, что механическое воззрение правильно, что развитие
                                                         состоит из ряда случайностей.</p>
-                                                        <p class="uk-card-title">Карусель</p>
+                                                    <p class="uk-card-title">Карусель</p>
                                                 </div>
                                             </div>
                                         </li>
@@ -650,10 +721,10 @@
                                                     <img src="images/test/Слой 8.png" width="900" height="600"
                                                         alt="Слайдер" loading="lazy">
                                                 </div>
-                                                <div class="reviews-content"> 
+                                                <div class="reviews-content">
                                                     <p>При этом сила доказательства будет пропорциональна степени
                                                         удаленности взятых линий.</p>
-                                                        <p class="uk-card-title">Карусель</p>
+                                                    <p class="uk-card-title">Карусель</p>
                                                 </div>
                                             </div>
                                         </li>
@@ -663,10 +734,10 @@
                                                     <img src="images/test/Слой 8.png" width="900" height="600"
                                                         alt="Слайдер" loading="lazy">
                                                 </div>
-                                                <div class="reviews-content"> 
+                                                <div class="reviews-content">
                                                     <p>Предположим, что механическое воззрение правильно, что развитие
                                                         состоит из ряда случайностей.</p>
-                                                        <p class="uk-card-title">Карусель</p>
+                                                    <p class="uk-card-title">Карусель</p>
                                                 </div>
                                             </div>
                                         </li>
@@ -676,10 +747,10 @@
                                                     <img src="images/test/Слой 8.png" width="900" height="600"
                                                         alt="Слайдер" loading="lazy">
                                                 </div>
-                                                <div class="reviews-content"> 
+                                                <div class="reviews-content">
                                                     <p>При этом сила доказательства будет пропорциональна степени
                                                         удаленности взятых линий.</p>
-                                                        <p class="uk-card-title">Карусель</p>
+                                                    <p class="uk-card-title">Карусель</p>
                                                 </div>
                                             </div>
                                         </li>
@@ -689,10 +760,10 @@
                                                     <img src="images/test/Слой 8.png" width="900" height="600"
                                                         alt="Слайдер" loading="lazy">
                                                 </div>
-                                                <div class="reviews-content"> 
+                                                <div class="reviews-content">
                                                     <p>Согласно гипотезе производит изменение, по второй же она только
                                                         делает выбор между ними.</p>
-                                                        <p class="uk-card-title">Карусель</p>
+                                                    <p class="uk-card-title">Карусель</p>
                                                 </div>
                                             </div>
                                         </li>
@@ -867,38 +938,54 @@
                     </div>
                 </div>
                 <div class="footer-content_item">
-                        <div class="footer-content_item_info">
-                       <p class="footer-content_item-title">Почта</p>
-                       <p>barmarat@bk.ru</p>
-                       </div>
+                    <div class="footer-content_item_info">
+                        <p class="footer-content_item-title  uk-margin-small-top">Почта</p>
+                        <p class="footer-phone uk-margin-bottom"><a href="mailto:barmarat@bk.ru">barmarat@bk.ru</a></p>
+                    </div>
 
-                       <div class="footer-content_item_info">
+                    <div class="footer-content_item_info">
                         <p class="footer-content_item-title">Телефон</p>
                         <div>
-                            <p>9 (999) 999-99-99</p>
-                            <p>Получить консультацию</p>
+                            <p class="footer-phone"><a href="tel:+79999999999"> 8 (999) 999-99-99</a></p>
+                            <p class="header-phone_text">Получить консультацию</p>
                         </div>
                         <div>
-                            <p>9 (999) 999-99-99</p>
-                            <p>Для новых пользователе</p>
+                            <p class="footer-phone"><a href="tel:+79999999999"> 8 (999) 999-99-99</a></p>
+                            <p class="header-phone_text">Для новых пользователе</p>
                         </div>
                         <div>
-                            <p>9 (999) 999-99-99</p>
-                            <p>Отдел заботы о пользователях</p>
+                            <p class="footer-phone"><a href="tel:+79999999999"> 8 (999) 999-99-99</a></p>
+                            <p class="header-phone_text">Отдел заботы о пользователях</p>
                         </div>
                     </div>
-                    <div class="footer-content_item_adress">105120, г. Москва, ул. Нижняя Сыромятническая, дом 10, строение 2, помещ. 1, ком. 4</div>
+                    <div class="footer-content_item_adress">105120, г. Москва, ул. Нижняя Сыромятническая, дом 10,
+                        строение 2, помещ. 1, ком. 4</div>
                 </div>
                 <div class="footer-content_item">
                     <div>
-                        <div class="footer-content_item-title">Напишите нам</div>
-                        <div><a href=""></a><a href=""></a><a href=""></a></div>
+                        <div class="footer-content_item-title uk-margin-medium-bottom uk-margin-small-top">Напишите нам</div>
+                        <div class="footer-content_icons">
+                            <a href="">
+                            <img class="trend-icon" src="svg/telegram.svg" alt="">
+                        </a>
+                        <a href="">
+                            <img class="trend-icon" src="svg/viber.svg" alt="">
+                        </a>
+                        
                     </div>
                     <div>
-                        <div class="footer-content_item-title">Наши соц. сети</div>
-                        <div><a href=""></a><a href=""></a><a href=""></a></div>
+                        <div class="footer-content_item-title uk-margin-medium-bottom uk-margin-small-top">Наши соц. сети</div>
+                        <div class="footer-content_icons">
+                            <a href="">
+                            <img class="trend-icon" src="svg/youtube.svg" alt="">
+                        </a><a href="">
+                            <img class="trend-icon" src="svg/vk-logo-of-social-network.svg" alt="">
+                        </a>
+                        <a href="">
+                            <img class="trend-icon" src="svg/viber.svg" alt="">
+                        </a></div>
                     </div>
-                    <div><img src="images/test/Слой 72.png" alt=""></div>
+                    <div class="uk-margin-medium-top"><img src="images/test/Слой 72.png" alt=""></div>
                 </div>
             </div>
 
