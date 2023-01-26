@@ -413,8 +413,8 @@ h3 {
   text-transform: none !important;
 }
 
-.nav-item a:hover {
-  color: #AE00D4 !important;
+.nav-item a:hover, .nav-item a:active, .nav-item a:focus  {
+  color: #AE00D4 !important; 
 }
 
 .nav-item::after {
@@ -424,6 +424,54 @@ h3 {
   font-size: 40px;
   left: 50%;
   top: -30px;
+}
+
+.header-menu{
+  background: #FFFFFF;
+    border: 1px solid #D589CC;
+    box-shadow: 0px 0px 10.954px rgb(41 41 41 / 10%);
+    border-radius: 10px;
+    width: 215px;
+}
+.header-menu ul> li{
+  background: #F8F8F8;
+  border-radius: 5px;
+  margin-bottom: 12px;
+  
+}
+
+.header-menu ul> li:hover {
+  background: #FCEDFF;
+  border-radius: 5px;
+ 
+}
+
+.header-menu ul> li > a{
+  font-family: 'Nunito-Bold';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px !important;
+  line-height: 19px;
+  color: #292929 !important;
+  padding: 5px 5px 5px 20px;
+}
+.header-menu ul> li > a:hover{
+  color: #292929 !important;
+}
+.header-menu-second {
+  background: none;
+  box-shadow: none !important;
+}
+.header-menu-second-position {
+  padding: 25px !important;
+  display: block;
+  position: relative !important;
+  top: -80px !important;
+  left: 88% !important;
+  background: #FCEDFF;
+  border-radius: 10px;
+  box-shadow: 0 5px 12px rgb(0 0 0 / 15%);
+  width: 200px;
 }
 
 /*подвал*/
@@ -450,14 +498,36 @@ h3 {
 }
 
 
-.footer-content div>ul>li {
+.footer-content div>ul>li a {
   font-family: 'Nunito-Bold';
   font-style: normal;
   font-weight: 700;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 32px;
   color: #24201E;
+  text-decoration: none;
 }
+.footer-content div>ul>li a {
+  color: #252220;
+  text-decoration: none;
+}
+.footer-content_item_requisites, .footer-content_item_adress {
+  font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    max-width: 300px;
+    margin-top: 25px;
+}
+.footer-content_item-title{
+  font-family: 'Nunito-Bold';
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 19px;
+color: #24201E;
+margin: 10px 0px;
+}
+
 
 /*1 секция юлок-баннер*/
 
