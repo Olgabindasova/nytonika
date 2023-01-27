@@ -368,6 +368,48 @@ h3 {
     background-image: url("../svg/стрелка-круг-белый.svg");
     transition: background 0.5s ease;
 }
+
+/*иконки и точки*/
+
+.icons-style{
+  display: block;
+  position: relative;
+  max-width: 110px;
+}
+.icons-shadow {
+  background: #FFFFFF;
+  box-shadow: 0px 11px 9.166px rgba(0, 0, 1, 0.11);
+  border-radius: 20px;
+  width: 80px;
+  height: 80px;
+  padding: 15px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+.icons-shadow:hover {
+  transform: translate(20px, -20px);
+  transition: all 3s;
+
+}
+
+.icons-shadow > img {
+  object-fit: contain;
+}
+.icons-radius{
+  width: 27px;
+  height: 27px;
+  background-color: #2A3B4F;
+  border-radius: 50%;
+}
+.icons-radius-tor{
+  width: 35px;
+  height: 35px;
+  border: 4px solid #2A3B4F;
+  border-radius: 50%;
+}
+
+
 /*шапкаи*/
 header {
   background-color: rgba(255, 255, 255, 1);
@@ -424,7 +466,7 @@ header {
 .header-menu.uk-open::before {
   position: relative;
   content: '';
-  left: 35%;
+  left: 46%;
   top: -50px;
   width: 10px;
   height: 10px;
@@ -444,7 +486,7 @@ header {
   background: #F8F8F8;
   border-radius: 5px;
   margin-bottom: 15px;
-  padding: 5px;
+  /*padding: 5px;*/
 }
 
 .header-menu ul> li:hover {
@@ -459,7 +501,7 @@ header {
   font-size: 14px !important;
   line-height: 19px;
   color: #292929 !important;
-  padding: 5px 5px 5px 20px;
+  padding: 10px 10px 10px 20px;
 }
 .header-menu ul> li > a:hover{
   color: #292929;
@@ -491,7 +533,7 @@ span.menu-one {
   background: #fff !important;
 }
 .trend-icon-nav {
-  margin-right: 5px;
+  margin-right: -7px;
     width: 40px;
     height: 40px;
     display: block;
@@ -546,6 +588,12 @@ span.menu-one {
   color: #252220;
   text-decoration: none;
 }
+.footer-content_item{
+  display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 .footer-content_item_requisites, .footer-content_item_adress {
   font-weight: 400;
     font-size: 16px;
@@ -608,12 +656,46 @@ border: 3px solid #F8F8F8;
 }
 
 /*2 секция Направления*/
-
+.two-section {
+  min-height: 640px;
+}
 .two-section-dop{
   height: 0px;
 }
-.two-section {
-  /*margin-bottom: -1190px;*/
+.two-section-dop-icons {
+  height: 0px;
+}
+
+.two-section-img1 {
+  top: 130px;
+  left: 85%;
+}
+.two-section-img2 {
+  left: 103%;
+  top: 582px;
+}
+.two-section-img3 {
+  left: 103%;
+  top: 350px;
+  background-color: #3b4857;
+}
+.two-section-img4 {
+  right: 5%;
+  top: 630px;
+  background-color: #faa05a;
+}
+.two-section-img5 {
+  left: 36%;
+  top: 622px;
+}
+.two-section-img6 {
+  bottom: 138px;
+  right: 10%;
+  width: 95px;
+}
+.two-section-img7 {
+  left: 97%;
+  top: -41px;
 }
 
 .two-section-img {
@@ -782,13 +864,15 @@ h4.card-teacher-title {
 .card-teacher-content > .uk-label {
   height: 40px;
   padding: 15px 30px;
-  line-height: 15px;
   text-transform: none;
   background: #FFFFFF;
   box-shadow: 0px 0px 7.212px rgba(0, 0, 0, 0.16);
-  border-radius: 20px;
-  font-family: "Nunito-Bold";
-  font-size: 12px;
+  font-family: 'Nunito-Bold';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 13px;
+  border-radius: 25px;
 }
 .teacher-label-color-one{color: #FF8D44 !important;}
 .teacher-label-color-two{color: #DB6C92 !important;}
@@ -813,6 +897,39 @@ ul.section-four-text>li {
 }
 
 /*5 секция Начните бесплатно*/
+.five-section-dop-icons{
+  height: 0;
+}
+.five-section-img1 {
+  top: 207px;
+  left: 88%;
+}
+.five-section-img2 {
+  left: 89%;
+  top: 574px;
+}
+.five-section-img3 {
+  left: 44%;
+  top: 62px;
+  background-color: #229FA4;
+}
+.five-section-img4 {
+  top: 165px;
+  background-color: #D41B19;
+  left: 48.5%;
+  z-index: -1;
+}
+.five-section-img5 {
+  left: 36%;
+  top: 622px;
+}
+.five-section-img6 {
+  width: 76px;
+  left: 43%;
+  top: 314px;
+}
+
+
 .section-five-title {
   max-width: 435px;
   margin-bottom: 40px;
@@ -878,6 +995,7 @@ ul.section-four-text>li {
 .section-five-form>fieldset>div>input {
   padding: 30px;
   border-radius: 5px;
+  font-size: 1.2rem !important;
 }
 
 .section-five-form>fieldset>div>input::-webkit-input-placeholder {
@@ -947,6 +1065,21 @@ ul.section-four-text>li {
 }
 
 /*7 секция Почему надо заниматься у нас*/
+.seven-section-dop-icons{
+  height: 0;
+}
+.seven-section-img1 {
+  top: 503px;
+  left: 98%;
+}
+.seven-section-img2 {
+  left: 44%;
+  top: -105px;
+}
+.seven-section-img3 {
+  left: -55px;
+  top: 0;
+}
 .seven-section {
   margin-bottom: -1575px
 }
@@ -1088,6 +1221,43 @@ padding-top: 20px;
 
 
 /*9  секция Хотите бесплатно заниматься с детьми сами?*/
+
+.nine-section-dop-icons{
+  height: 0;
+}
+.nine-section-img1 {
+  top: 0;
+  left: 67%;
+}
+.nine-section-img2 {
+  left: 96%;
+  top: 433px;
+}
+.nine-section-img3 {
+  left: 103%;
+  top: 350px;
+  background-color: #fff;
+}
+.nine-section-img4 {
+  left: 61%;
+  top: 346px;
+  width: 45px;
+  height: 45px;
+  border: 4px solid #faa05a;
+}
+.nine-section-img5 {
+  left: 85%;
+  top: -198px;
+}
+.nine-section-img6 {
+  bottom: 138px;
+  width: 95px;
+  left: 98%;
+}
+.nine-section-img7 {
+  left: 97%;
+  top: -41px;
+}
 .section-nine {
   background: #FFFFFF;
   box-shadow: 0px 0px 10.954px rgba(41, 41, 41, 0.1);
@@ -1149,10 +1319,44 @@ padding-top: 20px;
   margin-right: 24px;
   display: block;
   position: relative;
-  bottom: 20px;
+  bottom: 10px;
 }
 
 /*11  секция аккордеон с вопросами-ответами*/
+.elevn-section-dop-icons{
+  height: 0;
+}
+.elevn-section-img1 {
+  top: 130px;
+  left: 85%;
+}
+.elevn-section-img2 {
+  left: 103%;
+  top: 582px;
+}
+.elevn-section-img3 {
+  left: 103%;
+  top: 350px;
+  background-color: #3b4857;
+}
+.elevn-section-img4 {
+  right: 5%;
+  top: 630px;
+  background-color: #faa05a;
+}
+.elevn-section-img5 {
+  left: 100%;
+  top: 350px;
+}
+.elevn-section-img6 {
+  bottom: 138px;
+  right: 10%;
+  width: 95px;
+}
+.elevn-section-img7 {
+  left: 97%;
+  top: -41px;
+}
 .accordion-answer {
   background: #FFFFFF;
   box-shadow: 0px 0px 10.954px rgba(41, 41, 41, 0.1);
