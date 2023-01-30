@@ -1503,9 +1503,9 @@ ul.accordion-answer>li>div>p {
   }
 }
 
-/*адаптив до 1199*/
+/*адаптив до 1200*/
 
-@media (max-width: 1199px) {
+@media (max-width: 1200px) {
   .header {
     padding: 0 40px;
   }
@@ -1687,3 +1687,38 @@ ul.section-four-text>li {
 }
 }
 
+/*адаптив до 980*/
+
+@media (max-width: 980px) {
+  .seven-section-img1 {
+    top: -63px;
+    left: 88%;
+}
+
+.nine-section-img5 {
+  top: -254px;
+}
+.elevn-section-img5 {
+  left: 80%;
+  top: 750px;
+}
+.section-nine {
+  background-size: 145%;
+}
+.section-ten {
+  margin-top: 95px;
+}
+.section-ten-second>ul>li>span {
+  font-size: 40px;
+  line-height: 48px;
+  bottom: 6px;
+}
+.section-ten-second>ul>li {
+  font-size: 22px;
+  line-height: 28px;
+}
+h1 {
+  font-size: 54px;
+}
+
+}
