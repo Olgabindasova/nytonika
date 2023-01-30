@@ -679,7 +679,9 @@ span.menu-one {
   margin-bottom: 50px;
   max-width: 555px;
 }
-
+.button-one-mobile {
+  display: none;
+}
 /*2 секция Направления*/
 .two-section {
   min-height: 640px;
@@ -1721,4 +1723,63 @@ h1 {
   font-size: 54px;
 }
 
+}
+
+/*адаптив до 960*/
+
+@media (max-width: 960px) {
+.one-section{
+  justify-content: center !important;
+       align-items: center !important;
+    align-content: center !important;
+}
+.one-section > div {
+  display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.h1-banner {
+  text-align: center;
+  margin-top: 20px
+}
+.banner-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  max-width: 500px;
+}
+.h1-banner-text {
+  text-align: center;
+}
+.one-section > div > img {
+  width: 75%;
+    margin-top: -20px;
+}
+.button-one-section{
+  display: none;
+}
+.button-one-mobile {
+  display: block;
+  margin-top: 50px;
+}
+.trend-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.two-section-img5 {
+  left: 80%;
+  top: 900px;
+}
+.trend-nav-item>ul>li>ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.trend-nav-item>ul>li>h4 {
+  text-align: center;
+}
 }
