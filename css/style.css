@@ -350,32 +350,35 @@ h3 {
   background: #9C16B9;
   transition: background 0.5s ease;
 }
-.section-block-button{
+
+.section-block-button {
   width: 105px;
-    height: 105px;
-    background-image: url("../svg/стрелка-круг-фиолетовый.svg");
-    background-repeat: no-repeat;
+  height: 105px;
+  background-image: url("../svg/стрелка-круг-фиолетовый.svg");
+  background-repeat: no-repeat;
   background-position: center center;
   background-size: 105px 105px;
-    display: block;
-    position: relative;
-    left: 50%;
-    z-index: 100;
-    bottom: 280px;
+  display: block;
+  position: relative;
+  left: 50%;
+  z-index: 100;
+  bottom: 280px;
 
 }
-.section-block-button:hover{
-    background-image: url("../svg/стрелка-круг-белый.svg");
-    transition: background 0.5s ease;
+
+.section-block-button:hover {
+  background-image: url("../svg/стрелка-круг-белый.svg");
+  transition: background 0.5s ease;
 }
 
 /*иконки и точки*/
 
-.icons-style{
+.icons-style {
   display: block;
   position: relative;
   max-width: 110px;
 }
+
 .icons-shadow {
   background: #FFFFFF;
   box-shadow: 0px 11px 9.166px rgba(0, 0, 1, 0.11);
@@ -387,22 +390,25 @@ h3 {
   align-content: center;
   justify-content: center;
 }
+
 .icons-shadow:hover {
   transform: translate(20px, -20px);
   transition: all 3s;
 
 }
 
-.icons-shadow > img {
+.icons-shadow>img {
   object-fit: contain;
 }
-.icons-radius{
+
+.icons-radius {
   width: 27px;
   height: 27px;
   background-color: #2A3B4F;
   border-radius: 50%;
 }
-.icons-radius-tor{
+
+.icons-radius-tor {
   width: 35px;
   height: 35px;
   border: 4px solid #2A3B4F;
@@ -414,13 +420,14 @@ h3 {
 header {
   background-color: rgba(255, 255, 255, 1);
 }
+
 .header {
   padding: 0 15px;
 }
 
 .header-nav {
   justify-content: space-between;
-  
+
 }
 
 .header-phone {
@@ -458,8 +465,10 @@ header {
   text-transform: none !important;
 }
 
-.nav-item a:hover, .nav-item a:active, .nav-item a:focus  {
-  color: #AE00D4 !important; 
+.nav-item a:hover,
+.nav-item a:active,
+.nav-item a:focus {
+  color: #AE00D4 !important;
 }
 
 
@@ -475,26 +484,27 @@ header {
   border-radius: 50%;
 }
 
-.header-menu{
+.header-menu {
   background: #FFFFFF;
-    border: 1px solid #D589CC;
-    box-shadow: 0px 0px 10.954px rgb(41 41 41 / 10%);
-    border-radius: 10px;
-    width: 215px;
+  border: 1px solid #D589CC;
+  box-shadow: 0px 0px 10.954px rgb(41 41 41 / 10%);
+  border-radius: 10px;
+  width: 215px;
 }
-.header-menu ul> li{
+
+.header-menu ul>li {
   background: #F8F8F8;
   border-radius: 5px;
   margin-bottom: 15px;
   /*padding: 5px;*/
 }
 
-.header-menu ul> li:hover {
+.header-menu ul>li:hover {
   background: #FCEDFF;
   border-radius: 5px;
-  }
+}
 
-.header-menu ul> li > a{
+.header-menu ul>li>a {
   font-family: 'Nunito-Bold';
   font-style: normal;
   font-weight: 700;
@@ -503,9 +513,11 @@ header {
   color: #292929 !important;
   padding: 10px 10px 10px 20px;
 }
-.header-menu ul> li > a:hover{
+
+.header-menu ul>li>a:hover {
   color: #292929;
 }
+
 span.menu-one {
   background-image: url("../svg/menu1.svg");
   background-position: center center;
@@ -518,28 +530,34 @@ span.menu-one {
   left: 102%;
   top: -13px;
 }
-.header-menu-second > li > a{
+
+.header-menu-second>li>a {
   padding: 0px !important;
 }
+
 .header-menu-second {
   background: none;
   box-shadow: none !important;
   left: 88% !important;
 }
-.header-menu-second-position > li {
+
+.header-menu-second-position>li {
   background: #FCEDFF !important;
 }
-.header-menu-second-position > li:hover {
+
+.header-menu-second-position>li:hover {
   background: #fff !important;
 }
+
 .trend-icon-nav {
   margin-right: -7px;
-    width: 40px;
-    height: 40px;
-    display: block;
-    position: relative;
-    left: -10px;
+  width: 40px;
+  height: 40px;
+  display: block;
+  position: relative;
+  left: -10px;
 }
+
 .header-menu-second-position {
   padding: 20px !important;
   display: block;
@@ -584,31 +602,36 @@ span.menu-one {
   color: #24201E;
   text-decoration: none;
 }
+
 .footer-content div>ul>li a {
   color: #252220;
   text-decoration: none;
 }
-.footer-content_item{
+
+.footer-content_item {
   display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 33%;
 }
 
-.footer-content_item_requisites, .footer-content_item_adress {
+.footer-content_item_requisites,
+.footer-content_item_adress {
   font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
-    max-width: 300px;
-    margin-top: 25px;
+  font-size: 16px;
+  line-height: 19px;
+  max-width: 300px;
+  margin-top: 25px;
 }
-.footer-content_item-title{
+
+.footer-content_item-title {
   font-family: 'Nunito-Bold';
-font-style: normal;
-font-weight: 700;
-font-size: 18px;
-line-height: 19px;
-color: #24201E;
- 
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 19px;
+  color: #24201E;
+
 }
 
 .footer-phone {
@@ -633,13 +656,15 @@ color: #24201E;
 .footer-phone_text {
   font-size: 16px;
 }
-.footer-content_icons > a > img{
-margin-right: 10px;
-background-color: #F8F8F8;
-border-radius: 50px;
-border: 3px solid #F8F8F8;
+
+.footer-content_icons>a>img {
+  margin-right: 10px;
+  background-color: #F8F8F8;
+  border-radius: 50px;
+  border: 3px solid #F8F8F8;
 
 }
+
 /*1 секция юлок-баннер*/
 
 .h1-banner {
@@ -659,9 +684,11 @@ border: 3px solid #F8F8F8;
 .two-section {
   min-height: 640px;
 }
-.two-section-dop{
+
+.two-section-dop {
   height: 0px;
 }
+
 .two-section-dop-icons {
   height: 0px;
 }
@@ -670,29 +697,35 @@ border: 3px solid #F8F8F8;
   top: 130px;
   left: 85%;
 }
+
 .two-section-img2 {
   left: 103%;
   top: 582px;
 }
+
 .two-section-img3 {
   left: 103%;
   top: 350px;
   background-color: #3b4857;
 }
+
 .two-section-img4 {
   right: 5%;
   top: 630px;
   background-color: #faa05a;
 }
+
 .two-section-img5 {
   left: 36%;
   top: 622px;
 }
+
 .two-section-img6 {
   bottom: 138px;
   right: 10%;
   width: 95px;
 }
+
 .two-section-img7 {
   left: 97%;
   top: -41px;
@@ -816,7 +849,7 @@ ul.trend-nav>li {
 }
 
 h4.card-teacher-title {
-  font-family: 'Nunito';
+  font-family: 'Nunito-Bold';
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -856,12 +889,15 @@ h4.card-teacher-title {
   background: #F8F8F8;
   border: 2px solid #F8F8F8;
 }
+
 .teacher-arrow:hover {
-  background: #fff;;
+  background: #fff;
+  ;
   border: 2px solid #AE00D4;
   transition: background 0.5ms;
 }
-.card-teacher-content > .uk-label {
+
+.card-teacher-content>.uk-label {
   height: 40px;
   padding: 15px 30px;
   text-transform: none;
@@ -873,10 +909,20 @@ h4.card-teacher-title {
   font-size: 17px;
   line-height: 13px;
   border-radius: 25px;
+  width: fit-content;
 }
-.teacher-label-color-one{color: #FF8D44 !important;}
-.teacher-label-color-two{color: #DB6C92 !important;}
-.teacher-label-color-tree{color: #33C7A2 !important;}
+
+.teacher-label-color-one {
+  color: #FF8D44 !important;
+}
+
+.teacher-label-color-two {
+  color: #DB6C92 !important;
+}
+
+.teacher-label-color-tree {
+  color: #33C7A2 !important;
+}
 
 /*4 секция Как проходят занятия*/
 .section-four {
@@ -897,32 +943,38 @@ ul.section-four-text>li {
 }
 
 /*5 секция Начните бесплатно*/
-.five-section-dop-icons{
+.five-section-dop-icons {
   height: 0;
 }
+
 .five-section-img1 {
   top: 207px;
   left: 88%;
 }
+
 .five-section-img2 {
   left: 89%;
   top: 574px;
 }
+
 .five-section-img3 {
   left: 44%;
   top: 62px;
   background-color: #229FA4;
 }
+
 .five-section-img4 {
   top: 165px;
   background-color: #D41B19;
   left: 48.5%;
   z-index: -1;
 }
+
 .five-section-img5 {
   left: 36%;
   top: 622px;
 }
+
 .five-section-img6 {
   width: 76px;
   left: 43%;
@@ -1065,21 +1117,25 @@ ul.section-four-text>li {
 }
 
 /*7 секция Почему надо заниматься у нас*/
-.seven-section-dop-icons{
+.seven-section-dop-icons {
   height: 0;
 }
+
 .seven-section-img1 {
   top: 503px;
   left: 98%;
 }
+
 .seven-section-img2 {
   left: 44%;
   top: -105px;
 }
+
 .seven-section-img3 {
   left: -55px;
   top: 0;
 }
+
 .seven-section {
   margin-bottom: -1575px
 }
@@ -1101,6 +1157,7 @@ ul.section-four-text>li {
 .seven-section-block-content {
   max-width: 520px
 }
+
 .seven-section-block-sertificat {
   display: block;
   position: relative;
@@ -1108,9 +1165,11 @@ ul.section-four-text>li {
   bottom: -870px;
   max-width: 500px;
 }
-.seven-section-block-sertificat a > img {
-   border-radius: 25px;
+
+.seven-section-block-sertificat a>img {
+  border-radius: 25px;
 }
+
 .seven-section-img {
   position: relative;
   left: 55%;
@@ -1150,7 +1209,8 @@ a.tab-button-reviews {
   text-align: center;
   text-transform: none !important;
 }
-.reviews-text li > div > div > img {
+
+.reviews-text li>div>div>img {
   width: 90px;
   border-radius: 40%;
   padding-bottom: 22px;
@@ -1159,26 +1219,31 @@ a.tab-button-reviews {
   left: 33%;
   top: -70px;
 }
-.reviews-text li  {
+
+.reviews-text li {
   border: 8px solid #fff;
 }
-.reviews-text li > div {
+
+.reviews-text li>div {
   padding: 30px 30px;
   background: #F8F8FC;
   border: 3px solid #FFFFFF;
   border-radius: 20px;
 }
-.reviews-text li > div > .uk-card-media-top {
+
+.reviews-text li>div>.uk-card-media-top {
   height: 60px;
 }
-.reviews-content{
+
+.reviews-content {
   display: flex;
-    flex-wrap: wrap;
-    align-content: space-between;
-    justify-content: center;
-    min-height: 130px;
+  flex-wrap: wrap;
+  align-content: space-between;
+  justify-content: center;
+  min-height: 130px;
 }
-.reviews-text li > div > div > p{
+
+.reviews-text li>div>div>p {
   font-family: 'OpenSans';
   font-style: italic;
   font-weight: 400;
@@ -1187,25 +1252,28 @@ a.tab-button-reviews {
   text-align: center;
   color: #211D1D
 }
-.reviews-text li > div > div  > p.uk-card-title{
+
+.reviews-text li>div>div>p.uk-card-title {
   font-family: 'Nunito-Bold';
-font-style: normal;
-font-weight: 700;
-font-size: 16px;
-line-height: 22px;
-text-align: center;
-color: #211D1D;
-padding-top: 20px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  color: #211D1D;
+  padding-top: 20px;
 }
-.reviews-video  {
+
+.reviews-video {
   border: 2px solid transparent;
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
 }
+
 .reviews-video:hover {
   border: 2px solid #fff;
-  background: #AE00D4;  
+  background: #AE00D4;
   transition: background 0.5ms;
 
 }
@@ -1222,22 +1290,26 @@ padding-top: 20px;
 
 /*9  секция Хотите бесплатно заниматься с детьми сами?*/
 
-.nine-section-dop-icons{
+.nine-section-dop-icons {
   height: 0;
 }
+
 .nine-section-img1 {
   top: 0;
   left: 67%;
 }
+
 .nine-section-img2 {
   left: 96%;
   top: 433px;
 }
+
 .nine-section-img3 {
   left: 103%;
   top: 350px;
   background-color: #fff;
 }
+
 .nine-section-img4 {
   left: 61%;
   top: 346px;
@@ -1245,19 +1317,23 @@ padding-top: 20px;
   height: 45px;
   border: 4px solid #faa05a;
 }
+
 .nine-section-img5 {
   left: 85%;
   top: -198px;
 }
+
 .nine-section-img6 {
   bottom: 138px;
   width: 95px;
   left: 98%;
 }
+
 .nine-section-img7 {
   left: 97%;
   top: -41px;
 }
+
 .section-nine {
   background: #FFFFFF;
   box-shadow: 0px 0px 10.954px rgba(41, 41, 41, 0.1);
@@ -1268,12 +1344,13 @@ padding-top: 20px;
   background-size: 108%;
   background-image: url("../images/Беслатное-занятие-фон.png");
   max-height: 470px
-   
 }
+
 .position-nine-button {
   left: 66%;
   bottom: 225px;
 }
+
 .section-nine h3 {
   max-width: 635px;
 
@@ -1287,6 +1364,7 @@ padding-top: 20px;
   line-height: 48px;
   color: #24201D;
 }
+
 /*10  секция Остались вопросы?*/
 .section-ten-second-text {
   font-family: 'Nunito-Bold';
@@ -1296,10 +1374,12 @@ padding-top: 20px;
   line-height: 48px;
   color: #292929;
 }
-.section-ten-second > ul{
+
+.section-ten-second>ul {
   margin: 40px 0px;
 }
-.section-ten-second > ul > li {
+
+.section-ten-second>ul>li {
   font-family: 'Nunito-Bold';
   font-style: normal;
   font-weight: 700;
@@ -1309,7 +1389,8 @@ padding-top: 20px;
   margin-bottom: 20px;
   display: flex;
 }
-.section-ten-second > ul > li > span {
+
+.section-ten-second>ul>li>span {
   font-family: 'Nunito-Black';
   font-style: normal;
   font-weight: 900;
@@ -1323,40 +1404,44 @@ padding-top: 20px;
 }
 
 /*11  секция аккордеон с вопросами-ответами*/
-.elevn-section-dop-icons{
+.elevn-section-dop-icons {
   height: 0;
 }
+
 .elevn-section-img1 {
   top: 130px;
   left: 85%;
 }
+
 .elevn-section-img2 {
-  left: 103%;
-  top: 582px;
+  left: -54px;
+  top: 444px;
 }
+
 .elevn-section-img3 {
-  left: 103%;
-  top: 350px;
-  background-color: #3b4857;
+  left: -6px;
+  top: 283px;
+  background-color: #229FA4;
 }
+
 .elevn-section-img4 {
-  right: 5%;
-  top: 630px;
+  top: 0;
+  left: 83.5%;
+  z-index: -1;
   background-color: #faa05a;
 }
+
 .elevn-section-img5 {
   left: 100%;
   top: 350px;
 }
+
 .elevn-section-img6 {
   bottom: 138px;
   right: 10%;
   width: 95px;
 }
-.elevn-section-img7 {
-  left: 97%;
-  top: -41px;
-}
+
 .accordion-answer {
   background: #FFFFFF;
   box-shadow: 0px 0px 10.954px rgba(41, 41, 41, 0.1);
@@ -1391,3 +1476,214 @@ ul.accordion-answer>li>div>p {
   padding-right: 30px;
   text-align: justify;
 }
+
+
+/*адаптив до 1340*/
+@media (max-width: 1340px) {
+  .teacher-arrow.uk-position-center-right-out {
+    top: 380px;
+    left: 94%;
+  }
+
+  .uk-position-center-left-out {
+    right: 94%;
+    top: 380px;
+  }
+  .two-section-img6 {
+    bottom: 269px;
+    right: -7%;
+}
+
+  .footer-logo {
+    padding: 0 30px;
+  }
+
+  .footer-content {
+    padding: 20px 30px 20px 30px;
+  }
+}
+
+/*адаптив до 1199*/
+
+@media (max-width: 1199px) {
+  .header {
+    padding: 0 40px;
+  }
+  .header-logo{
+    max-width: 160px;
+    padding-top: 12px;
+  }
+  .container-item {
+    padding: 0 40px;
+  }
+
+  .card-teacher-content>.uk-card-badge {
+    left: 165px;
+  }
+
+  .five-section-img1 {
+    top: 165px;
+    left: 92%;
+  }
+
+  .five-section-img2 {
+    left: 92%;
+    top: 609px;
+  }
+
+  .five-section-img6 {
+    top: 419px;
+  }
+
+  .seven-section-img3 {
+    left: -11px;
+    top: -57px;
+  }
+
+  .seven-section-img1 {
+    top: 632px;
+    left: 92%;
+    z-index: 1;
+  }
+
+  .seven-section {
+    margin-bottom: -1455px;
+  }
+
+  .seven-section-block-sertificat {
+    bottom: -758px;
+    max-width: 433px;
+}
+
+  .seven-section-block-content {
+    max-width: 440px;
+  }
+
+  .section-nine {
+    background-size: 130%;
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  .section-nine h3 {
+    max-width: 600px;
+    padding-top: 25px;
+  }
+
+  .nine-section-img2 {
+    left: 90%;
+    top: 365px;
+  }
+
+  .nine-section-img1 {
+    top: -41px;
+  }
+
+  .nine-section-img6 {
+    left: 92%;
+  }
+
+  .nine-section-img4 {
+    top: 252px;
+  }
+
+  .section-ten {
+    margin-top: 150px;
+    margin-bottom: -20px;
+  }
+
+  .section-ten-img {
+    padding-top: 100px;
+  }
+
+  .elevn-section-img2 {
+    left: -12px;
+  }
+
+  .elevn-section-img3 {
+    left: 25px;
+  }
+
+  .footer-logo {
+    padding: 0 40px;
+    max-width: 235px;
+  }
+
+  .footer-content {
+    padding: 20px 40px 20px 40px;
+  }
+
+  .footer {
+    background-size: cover;
+  }
+}
+
+
+/*адаптив до 1080*/
+
+@media (max-width: 1080px) {
+  h1 {
+    font-size: 58px;
+}
+  h3 {
+    font-size: 40px;
+    line-height: 40px;
+}
+
+  .h1-banner-text {
+    max-width: 460px;
+}
+.two-section-img7 {
+  left: 94%;
+}
+.trend-nav-item {
+  margin-left: 30px;
+}
+ul.section-four-text>li {
+  line-height: 36px;
+  padding-bottom: 15px;
+}
+.section-five-stages {
+  max-width: 500px;
+  margin-top: 100px;
+}
+.five-section-dop-icons {
+  margin-bottom: -50px;
+}
+.section-six-title-second {
+  font-size: 40px;
+  line-height: 40px;
+}
+.section-nine {
+  background-size: 140%;
+  padding-top: 60px;
+}
+.section-nine > ul{
+   max-width: 570px;
+}
+.section-nine>ul>li {
+  line-height: 42px;
+}
+.section-ten-second-text {
+  font-size: 34px;
+  line-height: 40px;
+}
+.seven-section-img { 
+  left: 33%;
+  bottom: 31px;
+}
+.seven-section-img1 {
+  top: 604px;
+  left: 91%;
+}
+.accordion-answer {
+  margin-top: 48px;
+}
+.elevn-section-img4 {
+  top: -39px;
+}
+.footer-content_item > li {
+  line-height: 22px;
+}
+}
+
