@@ -371,6 +371,40 @@ h3 {
   transition: background 0.5s ease;
 }
 
+.button-menu {
+  background-image: url("../icons/menu.svg");
+  background-position: center center;
+  background-size: 40px 40px;
+  display: block;
+  position: relative;
+  width: 50px;
+  height: 50px;
+  background-repeat: no-repeat;
+  margin-top: 10px;  
+}
+.button-menu[aria-expanded="true"] {
+  background-image: url("../icons/menu-aktiv.svg");
+  z-index: 1005;
+  margin-top: 25px; 
+  transition: all 0.5s;
+}
+
+.button-menu-lk, .button-menu-telefon {
+  background-position: center center;
+  background-size: 40px 40px;
+  display: block;
+  position: relative;
+  width: 50px;
+  height: 50px;
+  background-repeat: no-repeat;
+  margin-top: 10px;  
+}
+.button-menu-lk {
+  background-image: url("../icons/lk.svg");
+}
+.button-menu-telefon {
+  background-image: url("../icons/telefon.svg");
+}
 /*иконки и точки*/
 
 .icons-style {
@@ -416,7 +450,10 @@ h3 {
 }
 
 
-/*шапкаи*/
+/*шапки*/
+.header-desktop {display: flex;}
+.header-mobile {display: none;}
+
 header {
   background-color: rgba(255, 255, 255, 1);
 }
@@ -568,6 +605,34 @@ span.menu-one {
   box-shadow: 0 5px 8px rgb(0 0 0 / 15%);
   width: 225px;
 }
+
+.menu-slide {
+  width: 100%;
+    padding: 30px 30px;
+    background: #FFFFFF;
+border: 1px solid #D589CC;
+box-shadow: 0px 0px 10.954px rgba(41, 41, 41, 0.1);
+border-radius: 10px;
+margin: 15px;
+max-width: 96% !important;
+height: fit-content;
+}
+.menu-slide > ul > li > a{
+  color: #000 !important;
+}
+.nav-line {
+  border: 1px solid #2A3B4F !important;
+  margin-top: 25px !important;
+  margin-bottom: 25px !important;
+  width: 95%;
+}
+
+
+
+
+
+
+
 
 /*подвал*/
 .footer {
@@ -1410,6 +1475,9 @@ a.tab-button-reviews {
   bottom: 10px;
 }
 
+.section-ten-one-button {
+  display: none;
+}
 /*11  секция аккордеон с вопросами-ответами*/
 .elevn-section-dop-icons {
   height: 0;
@@ -1692,6 +1760,14 @@ ul.section-four-text>li {
 .footer-content_item > li {
   line-height: 22px;
 }
+.header-desktop {display: none;}
+.header-mobile {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.mobile-buttons-block{display: flex;}
 }
 
 /*адаптив до 980*/
@@ -1977,6 +2053,20 @@ padding: 40px 0;
   flex-direction: column-reverse;
   align-content: center;
   align-items: center;
+}
+.section-ten-second > h3, .section-ten-second >p {
+  text-align: center;
+}
+.section-ten-second-button {
+  display: none;
+}
+.section-ten-one-button {
+  display: block;
+  margin: 0 auto;
+  margin-top: 90px;
+}
+.section-ten-second>ul {
+  margin: 40px 40px;
 }
 }
 
