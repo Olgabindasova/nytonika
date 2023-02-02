@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/uikit-rtl.css">
     <link rel="stylesheet" href="css/uikit.css">
+
     <link rel="stylesheet" href="css/custom-style.css">
     <link rel="stylesheet" href="css/style.css">
 
@@ -27,7 +28,7 @@
 
         <section class="header container">
 
-            <nav class="header-desktop header-nav uk-margin-small-top"  uk-navbar>
+            <nav class="header-desktop header-nav uk-margin-small-top" uk-navbar>
 
                 <div class="header-logo">
 
@@ -39,71 +40,40 @@
                     <li class="nav-item"><a href="#">Направления</a>
                         <div class="uk-navbar-dropdown header-menu">
                             <ul class="uk-nav uk-navbar-dropdown-nav">
-                                <li class="uk-active">
-                                    <a href="#">Активное</a>
+                                <li class="uk-active uk-parent">
+                                    <a href="#">Активное<span uk-nav-parent-icon></span></a>
                                     <div class="uk-navbar-dropdown header-menu-second">
                                         <ul class="uk-nav uk-navbar-dropdown-nav header-menu-second-position">
-                                            <li><a href="#">
-                                                    <object type="image/svg+xml" data="svg/МАлышам.svg"
-                                                        class="trend-icon-nav">
-                                                        <img src="svg/МАлышам.svg">
-                                                    </object>
-                                                    Активное</a></li>
-                                            <li><a href="#">
-                                                    <object type="image/svg+xml" data="svg/МАлышам.svg"
-                                                        class="trend-icon-nav">
-                                                        <img src="svg/МАлышам.svg">
-                                                    </object>
-                                                    Элемент списка</a></li>
-                                            <li><a href="#">
-                                                    <object type="image/svg+xml" data="svg/МАлышам.svg"
-                                                        class="trend-icon-nav">
-                                                        <img src="svg/МАлышам.svg">
-                                                    </object>
-                                                    Пункт меню</a></li>
-                                            <li><a href="#">
-                                                    <object type="image/svg+xml" data="svg/МАлышам.svg"
-                                                        class="trend-icon-nav">
-                                                        <img src="svg/МАлышам.svg">
-                                                    </object>
-                                                    Продолжаем</a></li>
+                                            <li><a href="#"><img class="trend-icon-nav" src="svg/МАлышам.svg">
+                                                Активное</a></li>
+                                        <li><a href="#"><img class="trend-icon-nav" src="svg/МАлышам.svg">
+                                                Элемент списка</a></li>
+                                        <li><a href="#"><img class="trend-icon-nav" src="svg/МАлышам.svg">
+                                                Пункт меню</a></li>
+                                        <li><a href="#"><img class="trend-icon-nav" src="svg/МАлышам.svg">
+                                                Продолжаем</a></li>
+
 
                                         </ul>
                                     </div>
                                 </li>
-                                <li><a href="#">Элемент списка</a>
+                                <li class="uk-parent"><a href="#">Элемент списка<span uk-nav-parent-icon></span></a>
                                     <div class="uk-navbar-dropdown header-menu-second">
                                         <ul class="uk-nav uk-navbar-dropdown-nav header-menu-second-position">
-                                            <li><a href="#">
-                                                    <object type="image/svg+xml" data="svg/МАлышам.svg"
-                                                        class="trend-icon-nav">
-                                                        <img src="svg/МАлышам.svg">
-                                                    </object>
-                                                    Активное</a></li>
-                                            <li><a href="#">
-                                                    <object type="image/svg+xml" data="svg/МАлышам.svg"
-                                                        class="trend-icon-nav">
-                                                        <img src="svg/МАлышам.svg">
-                                                    </object>
-                                                    Элемент списка</a></li>
-                                            <li><a href="#">
-                                                    <object type="image/svg+xml" data="svg/МАлышам.svg"
-                                                        class="trend-icon-nav">
-                                                        <img src="svg/МАлышам.svg">
-                                                    </object>
-                                                    Пункт меню</a></li>
-                                            <li><a href="#">
-                                                    <object type="image/svg+xml" data="svg/МАлышам.svg"
-                                                        class="trend-icon-nav">
-                                                        <img src="svg/МАлышам.svg">
-                                                    </object>
-                                                    Продолжаем</a></li>
+                                            <li><a href="#"><img class="trend-icon-nav" src="svg/МАлышам.svg">
+                                                Активное</a></li>
+                                        <li><a href="#"><img class="trend-icon-nav" src="svg/МАлышам.svg">
+                                                Элемент списка</a></li>
+                                        <li><a href="#"><img class="trend-icon-nav" src="svg/МАлышам.svg">
+                                                Пункт меню</a></li>
+                                        <li><a href="#"><img class="trend-icon-nav" src="svg/МАлышам.svg">
+                                                Продолжаем</a></li>
 
                                         </ul>
                                     </div>
                                 </li>
-                                <li><a href="#">Пункт меню</a></li>
-                                <li><a href="#">Продолжаем</a></li>
+                                <li class="uk-parent"><a href="#">Пункт меню<span uk-nav-parent-icon></span></a></li>
+                                <li class="uk-parent"><a href="#">Продолжаем<span uk-nav-parent-icon></span></a></li>
                             </ul>
                         </div>
                     </li>
@@ -123,119 +93,63 @@
                 </div>
 
             </nav>
-            <nav class="header-mobile header-nav uk-margin-small-top" uk-navbar>
+            <nav class="header-mobile header-nav uk-margin-small-top uk-margin-small-bottom" uk-navbar>
 
                 <div class="header-logo">
-
                     <img src="svg/logo.svg">
-
                 </div>
-
                 <button class="uk-button button-two uk-margin-small-right">Войти на урок</button>
-
                 <div class="mobile-buttons-block">
-                <a class="button-menu-lk" href=""></a>
-                <a class="button-menu-telefon" href=""></a>
-
-                <!-- Навигация, ссылки -->
-
-                <!--  <div class="uk-navbar uk-navbar-container uk-margin" uk-navbar="mode: click">
-            <div class="uk-navbar-left">
-                <a class="uk-navbar-toggle uk-navbar-toggle-animate" uk-navbar-toggle-icon href="#"></a>
-                <div class="uk-navbar-dropdown">
-                    <ul class="uk-nav uk-navbar-dropdown-nav">
-                        <li class="nav-item"><a href="#">Направления</a>
-                            <div class="uk-navbar-dropdown header-menu">
-                                <ul class="uk-nav uk-navbar-dropdown-nav">
-                                    <li class="uk-active">
-                                        <a  href="#">Активное</a> 
-                                        <div class="uk-navbar-dropdown header-menu-second">
-                                            <ul class="uk-nav uk-navbar-dropdown-nav header-menu-second-position">
-                                                <li><a href="#">
-                                                        <object type="image/svg+xml" data="svg/МАлышам.svg"
-                                                            class="trend-icon-nav">
-                                                            <img src="svg/МАлышам.svg">
-                                                        </object>
-                                                        Активное</a></li>
-                                                <li><a href="#">
-                                                        <object type="image/svg+xml" data="svg/МАлышам.svg"
-                                                            class="trend-icon-nav">
-                                                            <img src="svg/МАлышам.svg">
-                                                        </object>
-                                                        Элемент списка</a></li>
-                                                <li><a href="#">
-                                                        <object type="image/svg+xml" data="svg/МАлышам.svg"
-                                                            class="trend-icon-nav">
-                                                            <img src="svg/МАлышам.svg">
-                                                        </object>
-                                                        Пункт меню</a></li>
-                                                <li><a href="#">
-                                                        <object type="image/svg+xml" data="svg/МАлышам.svg"
-                                                            class="trend-icon-nav">
-                                                            <img src="svg/МАлышам.svg">
-                                                        </object>
-                                                        Продолжаем</a></li>
-            
-                                            </ul>
-                                        </div>
-                                    </li>
-                                    <li><a  href="#">Элемент списка</a> 
-                                        <div class="uk-navbar-dropdown header-menu-second">
-                                            <ul class="uk-nav uk-navbar-dropdown-nav header-menu-second-position">
-                                                <li><a href="#">
-                                                    <object type="image/svg+xml" data="svg/МАлышам.svg"
-                                                            class="trend-icon-nav">
-                                                            <img src="svg/МАлышам.svg">
-                                                        </object>
-                                                    Активное</a></li>
-                                                <li><a href="#">
-                                                    <object type="image/svg+xml" data="svg/МАлышам.svg"
-                                                            class="trend-icon-nav">
-                                                            <img src="svg/МАлышам.svg">
-                                                        </object>
-                                                    Элемент списка</a></li>
-                                                <li><a href="#">
-                                                    <object type="image/svg+xml" data="svg/МАлышам.svg"
-                                                            class="trend-icon-nav">
-                                                            <img src="svg/МАлышам.svg">
-                                                        </object>
-                                                    Пункт меню</a></li>
-                                                <li><a href="#">
-                                                    <object type="image/svg+xml" data="svg/МАлышам.svg"
-                                                            class="trend-icon-nav">
-                                                            <img src="svg/МАлышам.svg">
-                                                        </object>
-                                                    Продолжаем</a></li>
-            
-                                            </ul>
-                                        </div>
-                                    </li>
-                                    <li><a  href="#">Пункт меню</a></li>
-                                    <li><a  href="#">Продолжаем</a></li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class="nav-item"><a href="#">О школе</a></li>
-            
-            
-            
-                    </ul>  Навигация, ссылки  
-            
+                    <a class="button-menu-lk" href=""></a>
+                    <a class="button-menu-telefon" href="tel:+79999999999"></a>
+                    <a href="#offcanvas-slide" class="button-menu" uk-toggle></a>  
                 </div>
-            </div>
-        </div>-->
-
-
-                <a href="#offcanvas-slide" class="button-menu" uk-toggle></a>
-
                 <div id="offcanvas-slide" uk-offcanvas>
                     <div class="uk-offcanvas-bar menu-slide">
-                        <ul class="uk-nav uk-nav-default">
-                            <li class="uk-active"><a href="#">Активный Off-canvas</a></li>
-                            <li><a href="#">Пункт off-canvas</a></li>
-                            <li class="uk-nav-header">Крутой заголовок</li>
-                            <li><a href="#">Пункт меню off-canvas</a></li>
-                            <li><a href="#">Ещё один пункт меню</a></li>
+                        <div class="menu-mobile-title">Меню</div>
+                        <ul class="uk-nav-default menu-mobile" uk-nav>
+                            <li class="uk-parent nav-item"><a href="#">Направления<span uk-nav-parent-icon></span></a>
+
+                                <ul class="uk-nav-sub menu-second-mobile uk-nav uk-nav-default" uk-nav>
+                                    <li class="uk-parent">
+                                        <a href="#">Активное <span uk-nav-parent-icon></span></a>
+
+                                        <ul class="menu-second-sub-mobile uk-nav uk-nav-default" uk-nav>
+                                            <li><a href="#"><img class="trend-icon-nav" src="svg/МАлышам.svg">
+                                                    Активное</a></li>
+                                            <li><a href="#"><img class="trend-icon-nav" src="svg/МАлышам.svg">
+                                                    Элемент списка</a></li>
+                                            <li><a href="#"><img class="trend-icon-nav" src="svg/МАлышам.svg">
+                                                    Пункт меню</a></li>
+                                            <li><a href="#"><img class="trend-icon-nav" src="svg/МАлышам.svg">
+                                                    Продолжаем</a></li>
+
+                                        </ul>
+
+                                    </li>
+                                    <li class="uk-parent">
+                                        <a href="#">Элемент списка <span uk-nav-parent-icon></span></a>
+
+                                        <ul class="menu-second-sub-mobile uk-nav-sub uk-nav uk-nav-default">
+                                            <li><a href="#"><img class="trend-icon-nav" src="svg/МАлышам.svg">
+                                                    Активное</a></li>
+                                            <li><a href="#"><img class="trend-icon-nav" src="svg/МАлышам.svg">
+                                                    Элемент списка</a></li>
+                                            <li><a href="#"><img class="trend-icon-nav" src="svg/МАлышам.svg">
+                                                    Пункт меню</a></li>
+                                            <li><a href="#"><img class="trend-icon-nav" src="svg/МАлышам.svg">
+                                                    Продолжаем</a></li>
+
+                                        </ul>
+
+                                    </li>
+                                    <li class="uk-parent"><a href="#">Пункт меню</a></li>
+                                    <li class="uk-parent"><a href="#">Продолжаем</a></li>
+                                </ul>
+
+                            </li>
+                            <li class="nav-item"><a href="#">О школе</a></li>
+
                             <li class="uk-nav-divider nav-line"></li>
                             <li>
                                 <div class="footer-content_item">
@@ -292,7 +206,8 @@
         <section class="container-item uk-flex-between one-section" uk-grid>
 
             <div class="uk-width-1-2@m uk-padding-remove">
-                <h1 class="h1-banner" uk-scrollspy="cls: uk-animation-slide-bottom; delay: 300">Онлайн-занятия с гениальными репетиторами</h1>
+                <h1 class="h1-banner" uk-scrollspy="cls: uk-animation-slide-bottom; delay: 300">Онлайн-занятия с
+                    гениальными репетиторами</h1>
 
                 <div class="banner-content" uk-scrollspy="cls: uk-animation-slide-bottom; delay: 600">
                     <div class="h1-banner-text">
@@ -310,7 +225,7 @@
         </section>
 
         <!-- 2 секция -->
-        <section class="two-section-dop" uk-scrollspy="cls: uk-animation-slide-left; delay: 400">
+        <section class="two-section-dop">
             <img class="two-section-img" src="images/зеленый-шейп1.png" alt="">
         </section>
         <section class="two-section-dop-icons" uk-scrollspy="cls: uk-animation-fade; delay: 600">
@@ -468,7 +383,8 @@
                 институт и предъявляется родителю, вместе с документами о повышении квалификации по направлению занятий
             </div>
 
-            <div uk-slider="autoplay: true; autoplay-interval: 5000" uk-scrollspy="cls: uk-animation-slide-bottom; delay: 600">
+            <div uk-slider="autoplay: true; autoplay-interval: 5000"
+                uk-scrollspy="cls: uk-animation-slide-bottom; delay: 600">
                 <div class="uk-position-relative">
                     <div class="uk-slider-container uk-light">
 
@@ -669,7 +585,7 @@
 
         <!-- 5 секция Начните бесплатно-->
         <section class="five-section-dop-icons" uk-scrollspy="cls: uk-animation-fade; delay: 600">
-            <div class="five-section-img1 icons-shadow icons-style" tabindex="0" ><img class="" src="icons/мольберт.png"
+            <div class="five-section-img1 icons-shadow icons-style" tabindex="0"><img class="" src="icons/мольберт.png"
                     alt=""></div>
             <div class="five-section-img2 icons-shadow icons-style"><img class="" src="icons/рюкзак.png" alt=""></div>
             <div class="five-section-img3 icons-radius icons-style" src="" alt=""></div>
@@ -679,10 +595,12 @@
         </section>
         <section class="container-item uk-child-width-1-1@s uk-child-width-1-2@m uk-grid-collapse section-five" uk-grid>
             <div>
-                <h3 class="section-five-title" uk-scrollspy="cls: uk-animation-slide-bottom; delay: 300">Начните бесплатно</h3>
-                <p class="section-five-text" uk-scrollspy="cls: uk-animation-slide-bottom; delay: 400">Пробное занятия по любому направлению с любым репетитором</p>
-                <div class="section-five-stages uk-child-width-1-1@s uk-child-width-1-2@m uk-child-width-1-2@l uk-grid-small" uk-scrollspy="cls: uk-animation-fade; delay: 500"
-                    uk-grid>
+                <h3 class="section-five-title" uk-scrollspy="cls: uk-animation-slide-bottom; delay: 300">Начните
+                    бесплатно</h3>
+                <p class="section-five-text" uk-scrollspy="cls: uk-animation-slide-bottom; delay: 400">Пробное занятия
+                    по любому направлению с любым репетитором</p>
+                <div class="section-five-stages uk-child-width-1-1@s uk-child-width-1-2@m uk-child-width-1-2@l uk-grid-small"
+                    uk-scrollspy="cls: uk-animation-fade; delay: 500" uk-grid>
                     <div class="uk-margin-large-bottom">
                         <span>01</span>
                         <div class="section-five-stages-item-text">Познакомим с платформой</div>
@@ -702,7 +620,8 @@
                 </div>
             </div>
             <div>
-                <form class="form_1 section-five-form" action="" method="POST" uk-scrollspy="cls: uk-animation-fade; delay: 600">
+                <form class="form_1 section-five-form" action="" method="POST"
+                    uk-scrollspy="cls: uk-animation-fade; delay: 600">
                     <fieldset class="uk-fieldset">
                         <legend class="uk-legend uk-text-center">Оставьте заявку, и мы свяжемся с вами</legend>
 
@@ -740,20 +659,27 @@
             </div>
             <div class="section-six-second uk-width-1-2@m">
                 <h3 class="" uk-scrollspy="cls: uk-animation-slide-bottom; delay: 300">Как начать занятия</h3>
-                <h3 class="section-six-title-second" uk-scrollspy="cls: uk-animation-slide-bottom; delay: 400">Оставьте заявку и мы вам перезвоним</h3>
-                <button class="uk-button uk-button-primary button-tree section-six-button-second" uk-scrollspy="cls: uk-animation-slide-bottom; delay: 500">Оставить
+                <h3 class="section-six-title-second" uk-scrollspy="cls: uk-animation-slide-bottom; delay: 400">Оставьте
+                    заявку и мы вам перезвоним</h3>
+                <button class="uk-button uk-button-primary button-tree section-six-button-second"
+                    uk-scrollspy="cls: uk-animation-slide-bottom; delay: 500">Оставить
                     заявку</button>
-                <p class="section-six-text-second" uk-scrollspy="cls: uk-animation-slide-bottom; delay: 600">Педагог-куратор Вам перезвонит, обсудит все моменты, выберет удобное
+                <p class="section-six-text-second" uk-scrollspy="cls: uk-animation-slide-bottom; delay: 600">
+                    Педагог-куратор Вам перезвонит, обсудит все моменты, выберет удобное
                     время для первого пробного занятия</p>
             </div>
         </section>
 
         <!-- 7 секция Почему нужно заниматься у нас?-->
         <section class="seven-section-dop-icons">
-            <div class="seven-section-img1 icons-shadow icons-style" tabindex="0" uk-scrollspy="cls: uk-animation-fade; delay: 600"><img class="" src="icons/шапка.png"
-                    alt=""></div>
-            <div class="seven-section-img2 icons-shadow icons-style" uk-scrollspy="cls: uk-animation-fade; delay: 600"><img class="" src="icons/перо.png" alt=""></div>
-            <div class="seven-section-img3 icons-shadow icons-style" uk-scrollspy="cls: uk-animation-fade; delay: 600"><img class="" src="icons/чернила.png" alt=""></div>
+            <div class="seven-section-img1 icons-shadow icons-style" tabindex="0"
+                uk-scrollspy="cls: uk-animation-fade; delay: 600"><img class="" src="icons/шапка.png" alt=""></div>
+            <div class="seven-section-img2 icons-shadow icons-style" uk-scrollspy="cls: uk-animation-fade; delay: 600">
+                <img class="" src="icons/перо.png" alt="">
+            </div>
+            <div class="seven-section-img3 icons-shadow icons-style" uk-scrollspy="cls: uk-animation-fade; delay: 600">
+                <img class="" src="icons/чернила.png" alt="">
+            </div>
 
         </section>
         <section class="container-item seven-section-margin-mobile">
@@ -783,7 +709,8 @@
 
         <!-- 8 секция Посмотрите, за что нас любят ученики и их родители-->
         <section class="container-item">
-            <h3 class="center"  uk-scrollspy="cls: uk-animation-slide-bottom; delay: 400">Посмотрите, за что нас любят ученики и их родители</h3>
+            <h3 class="center" uk-scrollspy="cls: uk-animation-slide-bottom; delay: 400">Посмотрите, за что нас любят
+                ученики и их родители</h3>
 
             <ul class="uk-subnav uk-subnav-pill uk-flex-center" uk-switcher="connect: #switcher-id">
                 <li><a class="tab-button-reviews" href="#">Видео</a></li>
@@ -992,26 +919,30 @@
                 <li>Онлайн-встречи с экспертами</li>
                 <li>Видеозаписи вебинаров</li>
             </ul>
-            <a href="" class="section-block-button position-nine-button" uk-scrollspy="cls: uk-animation-fade; delay: 600"></a>
+            <a href="" class="section-block-button position-nine-button"
+                uk-scrollspy="cls: uk-animation-fade; delay: 600"></a>
         </section>
 
 
         <!-- 10 секция Остались вопросмы-->
         <section class="container-item class uk-grid-small section-ten" uk-grid>
             <div class="uk-width-1-2@m">
-                <img class="section-ten-img" src="images/test/иллюстрация3.png" alt="" uk-scrollspy="cls: uk-animation-fade; delay: 500">
+                <img class="section-ten-img" src="images/test/иллюстрация3.png" alt=""
+                    uk-scrollspy="cls: uk-animation-fade; delay: 500">
                 <button class="uk-button uk-button-primary button-tree section-ten-one-button">Получить
                     консультацию</button>
             </div>
             <div class="section-ten-second uk-width-1-2@m">
                 <h3 uk-scrollspy="cls: uk-animation-slide-bottom; delay: 300">Остались вопросы?</h3>
-                <p class="section-ten-second-text" uk-scrollspy="cls: uk-animation-slide-bottom; delay: 400">Ответим на них на бесплатной консультации</p>
+                <p class="section-ten-second-text" uk-scrollspy="cls: uk-animation-slide-bottom; delay: 400">Ответим на
+                    них на бесплатной консультации</p>
                 <ul uk-scrollspy="cls: uk-animation-slide-bottom; delay: 500">
                     <li><span>01</span>Оставьте заявку</li>
                     <li><span>02</span>Дождитесь нашего звонка — позвоним с 09:00 до 22:00</li>
                     <li><span>03</span>Задайте вопросы — мы ответим на них и поможем подобрать репетитора</li>
                 </ul>
-                <button class="uk-button uk-button-primary button-tree section-ten-second-button" uk-scrollspy="cls: uk-animation-slide-bottom; delay: 600">Получить
+                <button class="uk-button uk-button-primary button-tree section-ten-second-button"
+                    uk-scrollspy="cls: uk-animation-slide-bottom; delay: 600">Получить
                     консультацию</button>
             </div>
         </section>

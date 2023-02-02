@@ -382,11 +382,17 @@ h3 {
   background-repeat: no-repeat;
   margin-top: 10px;  
 }
+.button-menu:hover {
+  background-image: url("../icons/menu-hover.svg");
+}
 .button-menu[aria-expanded="true"] {
   background-image: url("../icons/menu-aktiv.svg");
   z-index: 1005;
   margin-top: 25px; 
   transition: all 0.5s;
+}
+.button-menu[aria-expanded="true"]:hover {
+  background-image: url("../icons/menu-aktiv-hover.svg");
 }
 
 .button-menu-lk, .button-menu-telefon {
@@ -405,6 +411,14 @@ h3 {
 .button-menu-telefon {
   background-image: url("../icons/telefon.svg");
 }
+.button-menu-lk:hover {
+  background-image: url("../icons/lk-hover.svg");
+}
+.button-menu-telefon:hover  {
+  background-image: url("../icons/telefon-hover.svg");
+}
+
+
 /*иконки и точки*/
 
 .icons-style {
@@ -621,16 +635,31 @@ height: fit-content;
   color: #000 !important;
 }
 .nav-line {
-  border: 1px solid #2A3B4F !important;
   margin-top: 25px !important;
   margin-bottom: 25px !important;
   width: 95%;
+  height: 1.5px;
+  background-color: #2f4052;
+  border-radius: 0.5px;
+}
+.menu-mobile-title{
+  font-family: 'Nunito-Bold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 19px;
+    color: #292929;
+    margin-bottom: 30px;
+    margin-top: 10px
 }
 
+.menu-mobile {
+ /*overflow-y: scroll;*/
+  height: fit-content;
+  max-height: 600px;
+}
 
-
-
-
+.menu-mobile::-webkit-scrollbar {width:0px;}
 
 
 
