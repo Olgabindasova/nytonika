@@ -41,7 +41,7 @@
                         <div class="uk-navbar-dropdown header-menu">
                             <ul class="uk-nav uk-navbar-dropdown-nav">
                                 <li class="uk-active uk-parent">
-                                    <a href="#">Активное<span uk-nav-parent-icon></span></a>
+                                    <a href="#">Активное<span class="uk-nav-parent-icon icon-menu-tree"></a>
                                     <div class="uk-navbar-dropdown header-menu-second">
                                         <ul class="uk-nav uk-navbar-dropdown-nav header-menu-second-position">
                                             <li><a href="#"><img class="trend-icon-nav" src="svg/МАлышам.svg">
@@ -57,7 +57,8 @@
                                         </ul>
                                     </div>
                                 </li>
-                                <li class="uk-parent"><a href="#">Элемент списка<span uk-nav-parent-icon></span></a>
+                                <li class="uk-parent"><a href="#">Элемент списка<span
+                                    class="uk-nav-parent-icon icon-menu-tree"></a>
                                     <div class="uk-navbar-dropdown header-menu-second">
                                         <ul class="uk-nav uk-navbar-dropdown-nav header-menu-second-position">
                                             <li><a href="#"><img class="trend-icon-nav" src="svg/МАлышам.svg">
@@ -72,8 +73,10 @@
                                         </ul>
                                     </div>
                                 </li>
-                                <li class="uk-parent"><a href="#">Пункт меню<span uk-nav-parent-icon></span></a></li>
-                                <li class="uk-parent"><a href="#">Продолжаем<span uk-nav-parent-icon></span></a></li>
+                                <li class="uk-parent"><a href="#">Пункт меню<span
+                                    class="uk-nav-parent-icon icon-menu-tree"></a></li>
+                                <li class="uk-parent"><a href="#">Продолжаем<span
+                                    class="uk-nav-parent-icon icon-menu-tree"></a></li>
                             </ul>
                         </div>
                     </li>
@@ -213,6 +216,7 @@
 
 
     </header>
+    
     <main class="main container">
 
 
@@ -262,35 +266,35 @@
                         <ul class="uk-nav uk-nav-default trend-nav"
                             uk-switcher="connect: #component-nav; animation: uk-animation-fade">
                             <li><a href="#">
-                                    <object type="image/svg+xml" data="svg/МАлышам.svg" class="trend-icon">
-                                        <img src="svg/МАлышам.svg">
-                                    </object>
+                                     
+                                        <img class="trend-icon" src="svg/МАлышам.svg">
+                                     
                                     Малышам
                                 </a></li>
                             <li><a href="#">
-                                    <object type="image/svg+xml" data="svg/Дошкольникам.svg" class="trend-icon">
-                                        <img src="svg/Дошкольникам.svg">
-                                    </object>
+                                     
+                                        <img class="trend-icon" src="svg/Дошкольникам.svg">
+                                    
                                     Дошкольникам</a></li>
                             <li><a href="#">
-                                    <object type="image/svg+xml" data="svg/Начальная школа.svg" class="trend-icon">
-                                        <img src="svg/Начальная школа.svg">
-                                    </object>
+                                    
+                                        <img class="trend-icon" src="svg/Начальная школа.svg">
+                                     
                                     Начальная школа</a></li>
                             <li><a href="#">
-                                    <object type="image/svg+xml" data="svg/Средняя школа.svg" class="trend-icon">
-                                        <img src="svg/Средняя школа.svg">
-                                    </object>
+                                     
+                                        <img class="trend-icon" src="svg/Средняя школа.svg">
+                                     
                                     Средняя школа</a></li>
                             <li><a href="#">
-                                    <object type="image/svg+xml" data="svg/Логопедия.svg" class="trend-icon">
-                                        <img src="svg/Логопедия.svg">
-                                    </object>
+                                  
+                                        <img class="trend-icon" src="svg/Логопедия.svg">
+                                  
                                     Логопедия</a></li>
                             <li><a href="#">
-                                    <object type="image/svg+xml" data="svg/Доп развитие.svg" class="trend-icon">
-                                        <img src="svg/Доп развитие.svg">
-                                    </object>
+                                     
+                                        <img  class="trend-icon" src="svg/Доп развитие.svg">
+                                   
                                     Доп.развитие</a></li>
                         </ul>
                     </div>
@@ -298,7 +302,26 @@
                         <ul id="component-nav" class="uk-switcher ">
                             <li>
                                 <ul>
-                                    <li><a href="#">Логопед</a></li>
+                                    <li><a href="#modal-sections" uk-toggle>Логопед</a>
+                                        <div id="modal-sections" uk-modal>
+                                            <div class="uk-modal-dialog">
+                                                <button class="uk-modal-close-outside" type="button" uk-close></button>
+                                                <div class="uk-modal-header">
+                                                    <h3>Название в модальном окне</h3>
+                                                </div>
+                                                <div class="uk-modal-body">
+                                                    <p>Другой, свежий, розовый гвардейский офицер, безупречно вымытый, застегнутый и причесанный, держал янтарь у середины рта и розовыми губами слегка вытягивал дымок. Было то время перед званым обедом, когда собравшиеся гости не начинают длинного разговора в ожидании призыва к закуске.</p>
+                                                    <p>Ни одного штриха не мог бы я сделать, а никогда не был таким большим художником, как в эти минуты.</p>
+                                                </div>
+                                                <div class="uk-modal-footer uk-text-right">
+                                                   
+                                                    <a href="#zajavka" class="button-tree uk-button uk-button-primary" type="button">Отправить заявку</a>
+                                                </div>
+                                            </div>
+
+
+
+                                    </li>
                                     <li><a href="#">Дефектолог</a></li>
                                     <li><a href="#">Психолог</a></li>
                                     <li><a href="#">Раннее развитие</a></li>
@@ -598,7 +621,7 @@
         </section>
 
         <!-- 5 секция Начните бесплатно-->
-        <section class="five-section-dop-icons" uk-scrollspy="cls: uk-animation-fade; delay: 600">
+        <section  id="zajavka" class="five-section-dop-icons" uk-scrollspy="cls: uk-animation-fade; delay: 600">
             <div class="five-section-img1 icons-shadow icons-style" tabindex="0"><img class="" src="icons/мольберт.png"
                     alt=""></div>
             <div class="five-section-img2 icons-shadow icons-style"><img class="" src="icons/рюкзак.png" alt=""></div>
@@ -633,7 +656,7 @@
                     </div>
                 </div>
             </div>
-            <div>
+            <div >
                 <form class="form_1 section-five-form" action="" method="POST"
                     uk-scrollspy="cls: uk-animation-fade; delay: 600">
                     <fieldset class="uk-fieldset">
@@ -726,11 +749,11 @@
             <h3 class="center" uk-scrollspy="cls: uk-animation-slide-bottom; delay: 400">Посмотрите, за что нас любят
                 ученики и их родители</h3>
 
-            <ul class="uk-subnav uk-subnav-pill uk-flex-center" uk-switcher="connect: #switcher-id">
+            <ul class="uk-subnav uk-subnav-pill uk-flex-center section-eight-reviews" uk-switcher="connect: #switcher-id">
                 <li><a class="tab-button-reviews" href="#">Видео</a></li>
                 <li><a class="tab-button-reviews" href="#">Отзывы</a></li>
             </ul>
-            <div class="uk-margin uk-margin-medium-top uk-child-width-expand uk-text-center" uk-grid>
+            <div class="uk-margin uk-margin-medium-top uk-child-width-expand uk-text-center section-eight" uk-grid>
 
                 <div>
                     <ul id="switcher-id" class="uk-switcher uk-margin">
@@ -738,7 +761,7 @@
                         <li>
                             <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1"
                                 uk-slider="autoplay: /*true; autoplay-interval: 3000">
-                                <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-4@m uk-grid-small">
+                                <ul class="uk-slider-items uk-child-width-1-1 uk-child-width-1-2@s uk-child-width-1-4@m uk-grid-small">
                                     <li>
                                         <div class="uk-panel">
                                             <img src="images/test/1.png" width="400" height="600" alt="Слайдер">
@@ -976,7 +999,7 @@
         </section>
         <section class="container-item">
             <h3 uk-scrollspy="cls: uk-animation-slide-bottom; delay: 300">Частые вопросы</h3>
-            <div class="accordion-answer">
+            <div class="accordion-answer vopros-otwet">
                 <ul uk-accordion="multiple: true">
                     <li class="uk-open">
                         <a class="uk-accordion-title" href="#">Что нужно, чтобы начать учиться у вас?</a>
@@ -1094,10 +1117,7 @@
                         <li><a href="">Партнерская программа</a></li>
                     </ul>
 
-                    <div class="footer-content_item_requisites">
-                        ОГРН: 1187746880530 <br>
-                        ИНН/КПП: 7702446568/770901001
-                    </div>
+                    
                 </div>
                 <div class="footer-content_item">
                     <div class="footer-content_item_info">
@@ -1120,8 +1140,7 @@
                             <p class="header-phone_text">Отдел заботы о пользователях</p>
                         </div>
                     </div>
-                    <div class="footer-content_item_adress">105120, г. Москва, ул. Нижняя Сыромятническая, дом 10,
-                        строение 2, помещ. 1, ком. 4</div>
+                    
                 </div>
                 <div class="footer-content_item">
                     <div>
@@ -1150,11 +1169,18 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="uk-margin-medium-top"><img src="images/test/Слой 72.png" alt=""></div>
+                        
                     </div>
                 </div>
-
-
+            </div>
+            <div class="footer-content-bottom">
+                <div class="footer-content_item_requisites footer-content_item">
+                    ОГРН: 1187746880530 <br>
+                    ИНН/КПП: 7702446568/770901001
+                </div>
+                <div class="footer-content_item_adress footer-content_item">105120, г. Москва, ул. Нижняя Сыромятническая, дом 10,
+                    строение 2, помещ. 1, ком. 4</div>
+                <div class="uk-margin-medium-top footer-content_item footer-content_item_img"><img src="images/test/Слой 72.png" alt=""></div>
             </div>
     </footer>
 
