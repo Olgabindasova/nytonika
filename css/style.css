@@ -1053,6 +1053,10 @@ ul.trend-nav>li {
 .trend-nav-item>ul>li>ul>li a:hover {
   color: #AE00D4;
 }
+.trend-nav-item_title {
+  margin-top: 0px !important;
+  display: none;
+}
 
 .trend-nav-item>ul>li>ul>li a {
   text-decoration: none;
@@ -1374,9 +1378,7 @@ ul.section-four-text>li {
 .section-six-text-second {
   margin-top: 40px;
 }
-.section-six-button-second, .section-six-text-second { 
-  display: block;
-}
+
 .section-six-button-one, .section-six-text-one { 
   display: none;
 }
@@ -2079,7 +2081,10 @@ ul.trend-nav>li {
 .trend-nav-item>ul>li>h4 {
   text-align: center;
 }
-
+.trend-nav-item_title {
+  margin-top: -10px !important;
+  display: block;
+}
 .section-four{
   flex-direction: column-reverse;
   align-items: center;
@@ -2245,7 +2250,14 @@ padding: 40px 0;
   margin-left: 0px;
 }
 
-
+.reviews-text li>div>div>img {
+  width: 128px;
+  left: 40%;
+  top: -90px;
+}
+.reviews-text li {
+  padding: 0 80px;
+}
 
 .section-nine {
   background-size: 145%;
@@ -2307,6 +2319,9 @@ padding: 40px 0;
     top: 380px;
     left: 80%;
   }
+  .two-section-img5 {
+    top: 791px;
+}
 }
 /*адаптив до 860*/
 
@@ -2342,6 +2357,18 @@ padding: 40px 0;
 .seven-section-block {
   min-height: 1155px;
 }
+.position-nine-button {
+  bottom: 0px !important;
+}
+.reviews-text li>div>div>img {
+  width: 128px;
+  left: 33%;
+  top: -90px;
+}
+.reviews-text li {
+  padding: 0 60px;
+}
+
 }
 /*адаптив до 768*/
 
@@ -2654,7 +2681,14 @@ line-height: 18px;
 .nine-section-img4 {
   top: 360px;
 }
-
+.reviews-text li>div>div>img {
+  width: 128px;
+  left: 30%;
+  top: -90px;
+}
+.reviews-text li {
+  padding: 0 20px;
+}
 }
 
 /*адаптив до 561*/
@@ -2709,6 +2743,14 @@ li.uk-active>a.tab-button-reviews , a.tab-button-reviews {
 .seven-section-block {
   min-height: 1070px;
 }
+.reviews-text li>div>div>img {
+  width: 100px;
+  left: 27%;
+  top: -90px;
+}
+.reviews-text li {
+  padding: 0 15px;
+}
 }
 
 /*адаптив до 461*/
@@ -2759,6 +2801,17 @@ li.uk-active>a.tab-button-reviews , a.tab-button-reviews {
   background-position: 50% 100%;
   background-size: 115%;
 }
+.reviews-text li>div>div>img {
+  width: 100px;
+  left: 20%;
+  top: -90px;
+}
+.reviews-text li>div>div>p {
+  
+  font-size: 14px;
+  line-height: 16px;
+  
+}
 }
 
 /*адаптив до 390*/
@@ -2776,5 +2829,10 @@ li.uk-active>a.tab-button-reviews , a.tab-button-reviews {
 }
 .seven-section-margin-mobile{
   padding: 0 15px;
+}
+.reviews-text li>div>div>img {
+  width: 96px;
+  left: 0%;
+  top: -55px;
 }
 }
