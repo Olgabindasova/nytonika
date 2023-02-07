@@ -316,6 +316,18 @@ h3 {
 }
 
 /*кнопки*/
+.scrollup {
+  width: 105px;
+  height: 105px;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  display: none;
+  text-indent: -9999px;
+  background: url('../icons/наверх.svg') no-repeat;
+  background-size: 60px 60px;
+}
 
 .button-one {
   font-family: 'OpenSans-Bold';
