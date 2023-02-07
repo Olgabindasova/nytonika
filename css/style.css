@@ -1041,14 +1041,6 @@ ul.trend-nav>li {
 }
 
 .trend-nav-item>ul>li>ul>li {
- /* background: #FCEDFF;
-  border: 3px solid #FCEDFF;
-  padding: 25px;
-  border-radius: 10px;
-  margin-bottom: 13px;
-  min-width: 31%;
-  text-align: center;
-  margin-right: 16px;*/
   margin-right: 16px;
 }
 
@@ -1063,15 +1055,6 @@ ul.trend-nav>li {
 }
 
 .trend-nav-item>ul>li>ul>li a {
- /* text-decoration: none;
-  color: #292929;
-  font-family: "Nunito-Bold";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 25px;
-  text-align: center;
-  padding: 25px 20px;*/
   text-decoration: none;
   color: #292929;
   font-family: "Nunito-Bold";
@@ -1080,15 +1063,12 @@ ul.trend-nav>li {
   font-size: 18px;
   line-height: 25px;
   text-align: center;
-  /* padding: 25px 20px; */
   width: 100%;
-  /* height: 100%; */
   background: #FCEDFF;
   border: 3px solid #FCEDFF;
   padding: 20px 40px;
   border-radius: 10px;
   margin-bottom: 13px;
-  /* min-width: 37%; */
   text-align: center;
   display: inline-block;
 
@@ -2448,21 +2428,15 @@ ul.trend-nav>li {
   height: 30px;
 }
 .trend-nav-item>ul>li>ul>li {
-  background: #FCEDFF;
-  border: 2px solid #FCEDFF;
-  padding: 7px;
-  border-radius: 10px;
-  margin-bottom: 13px;
-  min-width: 37%;
-  margin-right: 10px;
+ 
 }
-.trend-nav-item>ul>li>ul>li:hover {
+.trend-nav-item>ul>li>ul>li> a:hover {
   border: 2px solid #AE00D4;
 }
 .trend-nav-item>ul>li>ul>li a {
   font-size: 14px;
   line-height: 20px;
-  padding: 20px 10px;
+  padding: 15px 25px;
 }
 .two-section-img4 {
   right: -10%;
