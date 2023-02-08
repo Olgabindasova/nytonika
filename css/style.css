@@ -606,7 +606,7 @@ header {
   background: #F8F8F8;
   border-radius: 5px;
   margin-bottom: 15px;
-  /*padding: 5px;*/
+ 
 }
 
 .header-menu ul>li:hover {
@@ -717,7 +717,7 @@ span.menu-one {
 }
 
 .menu-mobile {
- /*overflow-y: scroll;*/
+ 
   height: fit-content;
   max-height: 600px;
 }
@@ -778,7 +778,7 @@ span.menu-one {
   height: 12px;
   background-repeat: no-repeat;
   right: 10px;
-  /*left: 35px;*/
+  
 }
 .menu-second-sub-mobile {
   background-color: #FCEDFF;
@@ -938,7 +938,15 @@ li.uk-parent > a[aria-expanded="true"] .icon-menu-tree {
   display: none;
 }
 /*2 секция Направления*/
+
+
+
+.two-section-mobile{
+  display: none;
+}
+
 .two-section {
+  display: block;
   min-height: 640px;
 }
 
@@ -2066,7 +2074,13 @@ ul.trend-nav>li {
   min-width: 49%;
     margin-right: 0;
 }
- 
+.two-section{
+  display: none;
+}
+.two-section-mobile{
+  display: block;
+}
+
 .two-section-img5 {
   left: 80%;
   top: 900px;
