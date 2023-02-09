@@ -1097,6 +1097,111 @@ ul.trend-nav>li {
   margin-top: 36px;
   margin-bottom: 15px;
 }
+.modal-trend {
+  border-radius: 30px !important;
+  background: #fff;
+  padding: 30px;
+  border: 3px solid #ae00d4;
+}
+
+.modal-trend > .uk-modal-header { 
+  background: none; 
+  border-bottom: 0px !important; 
+}
+.modal-trend > .uk-modal-header > h3 { 
+  font-size: 40px;
+    line-height: 40px;
+}
+.modal-trend > .uk-modal-footer { 
+  background: none; 
+  border-top: 0px !important; 
+}
+.two-section-mobile > div > ul > li > a {
+  background: #F8F8F8;
+    padding: 20px;
+    border-radius: 20px;
+    margin-bottom: 17px;
+    color: #292929 !important;
+    font-family: 'Nunito-Bold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 30px;
+    border: 3px solid #F8F8F8;
+}
+.two-section-mobile > div > ul > li.uk-parent.uk-open > a[aria-expanded="true"] {
+  border: 3px solid #AE00D4;
+  
+}
+.two-section-mobile > div > ul {
+  display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+.two-section-mobile > div > ul.uk-nav-default.uk-nav > li.uk-parent.uk-open > ul.uk-nav-sub {
+  width: 100%;
+    min-width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 10px 20px;
+    max-width: 98%;
+    background: #FFFFFF !important;
+    box-shadow: 0px 0px 10.954px rgb(41 41 41 / 10%) !important;
+    border-radius: 30px;
+    padding: 35px 20px 35px 35px;
+    height: fit-content;
+    
+}
+
+
+.two-section-mobile > div > ul > li > ul > li > a {
+  text-decoration: none;
+    color: #292929 !important;
+    font-family: "Nunito-Bold";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    width: 100%;
+    background: #FCEDFF;
+    border: 3px solid #FCEDFF;
+    padding: 20px 40px;
+    border-radius: 10px;
+    margin-bottom: 13px;
+    text-align: center;
+    display: inline-block;
+}
+.two-section-mobile > div > ul > li > ul > li > a:hover {
+  border: 3px solid #AE00D4;
+  color: #AE00D4 !important;
+}
+
+
+
+.two-section-mobile > div > ul > li > ul > li {
+  margin: 0 10px;
+}
+.nav-subtitle-mobile {
+  width: 100%;
+    min-width: 700px;
+    color: #292929;
+    font-family: "Nunito-Bold";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px !important;
+    line-height: 33px;
+    text-align: center;
+    padding: 30px 0 15px 0;
+}
+.two-section-mobile > div > ul > li {
+  min-width: 45%;
+  margin: 0 10px;
+}
+
 
 /*3 секция Наши преподаватели*/
 
@@ -1319,6 +1424,7 @@ ul.section-four-text>li {
   padding: 30px;
   border-radius: 5px;
   font-size: 1.2rem !important;
+ /* text-align: center;*/
 }
 
 .section-five-form>fieldset>div>input::-webkit-input-placeholder {
@@ -1327,6 +1433,7 @@ ul.section-four-text>li {
   font-size: 16px;
   line-height: 16px;
   color: #888888;
+  
 }
 
 .section-five-form>fieldset>div>input:-moz-placeholder {
@@ -1335,6 +1442,7 @@ ul.section-four-text>li {
   font-size: 16px;
   line-height: 16px;
   color: #888888;
+ 
 }
 
 .section-five-form>fieldset>div>input::-moz-placeholder {
@@ -1343,6 +1451,7 @@ ul.section-four-text>li {
   font-size: 16px;
   line-height: 16px;
   color: #888888;
+  
 }
 
 .section-five-form>fieldset>div>input:-ms-input-placeholder {
@@ -1351,6 +1460,7 @@ ul.section-four-text>li {
   font-size: 16px;
   line-height: 16px;
   color: #888888;
+  
 }
 
 .section-five-form>fieldset>div.uk-form-controls {
@@ -2479,6 +2589,26 @@ ul.trend-nav>li {
   line-height: 20px;
   padding: 15px 25px;
 }
+.two-section-mobile > div > ul > li > a {
+  padding: 10px;
+    border-radius: 18px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 14px;
+    border: 2px solid #F8F8F8;
+}
+.two-section-mobile > div > ul > li.uk-parent.uk-open > a[aria-expanded="true"] {
+  border: 2px solid #AE00D4;
+}
+.two-section-mobile > div > ul > li > ul > li > a {
+  font-size: 14px;
+    line-height: 20px;
+    padding: 15px 25px;
+}
+
+ 
+
+
 .two-section-img4 {
   right: -10%;
 }
@@ -2737,7 +2867,10 @@ line-height: 18px;
     height: 85px;
     background-size: 85px 85px;
 }
-
+.two-section-mobile > div > ul > li {
+  min-width: 90%;
+  margin: 0 20px 0px 0px;
+}
 .section-eight-reviews {
   display: flex;
   flex-wrap: nowrap;
@@ -2764,6 +2897,15 @@ li.uk-active>a.tab-button-reviews , a.tab-button-reviews {
 }
 .reviews-text li {
   padding: 0 15px;
+}
+
+.modal-trend > .uk-modal-header > h3 {
+  font-size: 28px;
+  line-height: 28px;
+}
+.modal-trend > .uk-modal-body > p{
+  font-size: 16px;
+  line-height: 24px;
 }
 }
 
@@ -2803,6 +2945,15 @@ li.uk-active>a.tab-button-reviews , a.tab-button-reviews {
 /*адаптив до 420*/
 
 @media (max-width: 420px) {
+
+  .two-section-mobile > div > ul.uk-nav-default.uk-nav > li.uk-parent.uk-open > ul.uk-nav-sub {
+    
+    margin: 0; 
+    
+}
+
+
+
   .seven-section-block {
     min-height: 1190px;
   }
