@@ -2299,7 +2299,7 @@ h1 {
   font-size: 54px;
 }
 .section-contakt-one > div {
-  padding: 50px 40px;
+  padding: 50px 30px;
   min-width: 40%;
 }
 .section-contakt-two > div > h4, .section-contakt-one > div > h4 {
@@ -2716,9 +2716,9 @@ padding: 40px 0;
   line-height: 20px;
 }
 .two-section-contakt-img3 {
-  left: 88%;
-  top: -40px;
-  width: 70px;
+  left: 83%;
+  top: 83px;
+  width: 100px;
 }
 }
 /*адаптив до 768*/
@@ -2736,11 +2736,53 @@ padding: 40px 0;
 .section-dop-contakt-top-img {
   top: 45px;
 }
-.section-dop-contakt-top-img {
-  top: 45px;
+.two-section-contakt-img2, .two-section-contakt-img1{
+  display: none;
 }
+.section-contakt-two > div > h4, .section-contakt-one > div > h4 {
+  line-height: 28px;
+  max-width: 200px;
+  font-size: 22px;
+}
+.contact-title {
+  font-size: 20px;
+  line-height: 24px;
+}
+.section-contakt-one > div > h4 {
+  min-height: 60px;
+}
+.section-contakt-two {
+  margin-top: 0;
 }
 
+.section-contakt-two > div {
+  padding: 60px 70px;
+  margin-bottom: 25px;
+}
+.section-contakt-one > div {
+  
+  margin: 20px 0;
+ 
+}
+}
+/*адаптив до 670*/
+
+@media (max-width: 670px) {
+  .section-contakt-one > div {
+    margin: 20px 60px;
+    padding: 50px 80px;
+    min-width: 80%;
+}
+.section-contakt-two > div {
+  padding: 60px 80px;
+  margin-bottom: 25px;
+  max-width: 80%;
+  min-width: 80%;
+}
+.section-dop-contakt-bottom-img {
+  bottom: 65px;
+}
+}
 
 /*адаптив до 650*/
 
@@ -3082,12 +3124,18 @@ line-height: 18px;
 .section-contakt-two > div > h4, .section-contakt-one > div > h4 {
   max-width: 100%;
 }
-
 .section-contakt-one {
   align-items: center;
+  margin-top: 10px;
 }
 .section-contakt-one > div {
-  min-width: 100%;
+  min-width: 80%;
+}
+.section-contakt-two {
+  margin-top: -30px !important;
+}
+.section-contakt-two > div {
+  margin-bottom: 40px;
 }
 }
 
@@ -3112,7 +3160,16 @@ line-height: 18px;
 .footer-content {
   justify-content: flex-start;
 }
-
+.section-contakt-one > div {
+  padding: 40px 40px;
+}
+.section-contakt-two > div {
+  padding: 40px 40px;
+}
+.section-contakt-one {
+  align-items: center;
+  align-content: center;
+}
 }
 /*адаптив до 521*/
 
@@ -3163,6 +3220,16 @@ li.uk-active>a.tab-button-reviews , a.tab-button-reviews {
   font-size: 16px;
   line-height: 24px;
 }
+.contact-content-item > a {
+  line-height: 40px;
+  font-size: 16px;
+}
+.section-dop-contakt-top-img {
+  top: 36px;
+}
+.section-dop-contakt-bottom-img {
+  bottom: 57px;
+}
 }
 
 /*адаптив до 461*/
@@ -3195,6 +3262,19 @@ li.uk-active>a.tab-button-reviews , a.tab-button-reviews {
 }
 .seven-section-block {
   min-height: 1070px;
+}
+
+.section-contakt-one.container-item, .section-contakt-two.container-item  {
+  padding: 0;
+}
+.section-dop-contakt-bottom-img {
+  bottom: 81px;
+  min-width: 677px;
+}
+.section-dop-contakt-top-img {
+  top: 54px;
+  left: -200px;
+  min-width: 775px;
 }
 }
 
@@ -3233,6 +3313,20 @@ li.uk-active>a.tab-button-reviews , a.tab-button-reviews {
   line-height: 16px;
   
 }
+.section-contakt-one > div {
+  margin: 20px 10px;
+  min-width: 92%;
+  max-width: 92%;
+}
+.section-contakt-two > div {
+  max-width: 92%;
+  min-width: 92%;
+}
+.section-dop-contakt-one-img, .section-dop-contakt-two-img, .two-section-contakt-img3 {
+  display: none;
+}
+
+
 }
 
 /*адаптив до 390*/
@@ -3255,5 +3349,8 @@ li.uk-active>a.tab-button-reviews , a.tab-button-reviews {
   width: 96px;
   left: 0%;
   top: -55px;
+}
+.contakt-title {
+  font-size: 36px;
 }
 }
