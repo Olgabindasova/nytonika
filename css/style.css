@@ -2159,7 +2159,7 @@ line-height: 48px;
   max-width: 760px;
   color: #fff;
 }
-.sign-in-registration-block > div > h1, h4 {
+.sign-in-registration-block > div > h1, .sign-in-registration-block > div > h4 {
   color: #fff ;
 }
 .form-tab-1 {
