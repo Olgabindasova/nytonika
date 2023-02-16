@@ -493,7 +493,59 @@ display: none;
   background: #9C16B9;
   color: #FFFFFF;
 }
-.button-one-mobile-header{}
+.button-reg {
+  background: #F8F8F8;
+    border: 2px solid #9C16B9;
+    border-radius: 10px;
+    font-family: "Nunito-Bold";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #9C16B9;
+    padding: 0px 50px 0px 60px;
+}
+.button-reg:hover {
+  background: #9C16B9;
+    color: #fff;
+}
+.button-reg::after {
+  content: "→";
+  font-size: 30px;
+  padding-left: 13px;
+}
+.reg-block-button1 {
+  width: 105px;
+  height: 105px;
+  background-image: url(../icons/серая-стрелка-лево.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 105px 105px;
+  display: block;
+  position: relative;
+  background-color: #fff0;
+  border: 0px;
+}
+.reg-block-button1:hover, .reg-block-button1:active, .reg-block-button1:focus {
+  background-image: url(../icons/фиолет-стрелка-лево.svg);
+}
+.reg-block-button2 {
+  width: 105px;
+  height: 105px;
+  background-image: url(../icons/серая-стрелка-право.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 105px 105px;
+  display: block;
+  position: relative;
+  background-color: #fff0;
+  border: 0px;
+}
+.reg-block-button2:hover, .reg-block-button2:active, .reg-block-button2:focus{
+  background-image: url(../icons/фиолет-стрелка-право.svg);
+}
 /*иконки и точки*/
 
 .icons-style {
@@ -537,8 +589,23 @@ display: none;
   border: 4px solid #2A3B4F;
   border-radius: 50%;
 }
-
-
+.reg-img1{
+  background-color: #d41b19;
+    left: 50%;
+    top: -960px;
+    z-index: 110;
+}
+.reg-img2{
+  background-color: #20a0a0;
+    left: 55%;
+    top: -960px;
+    z-index: 110;
+}
+.reg-img3{
+  left: 100%;
+    top: -259px;
+    z-index: 110;
+}
 /*шапки*/
 .header-desktop {display: flex;}
 .header-mobile {display: none;}
@@ -578,7 +645,34 @@ header {
 .header-phone_text {
   font-size: 16px;
 }
-
+.header-phone-reg {
+  display: block;
+  padding-top: 10px;
+}
+.header-phone-reg > .header-phone_text {
+  font-family: 'OpenSans-Bold';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 32px;
+color: #24201E;
+text-transform: uppercase;
+}
+.header-phone-reg > a {
+  font-family: 'OpenSans-Bold';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 16px;
+color: #AE00D4;
+}
+.header-phone-reg > a:hover {
+color: #9C16B9;
+}
+.header-reg {
+  background: none;
+  z-index: 100;
+}
 /*меню в шапке*/
 
 .nav-item a {
@@ -935,6 +1029,37 @@ li.uk-parent > a[aria-expanded="true"] .icon-menu-tree {
   flex-wrap: nowrap;
   justify-content: space-between;
   padding: 30px 0px;
+}
+
+
+.footer-content-social {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  flex-direction: row;
+  margin-bottom: 50px;
+}
+.footer-content-social > div {
+  margin-right: 30px;
+}
+.footer-content-social-reg{
+  display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    flex-direction: row;
+    margin: 0px 50px 70px 50px;
+}
+.footer-content-social-reg > div {
+  margin-right: 30px;
+}
+
+.reg-img-footer {
+
+  min-height: 450px;
+  background-image: url(../images/желтый-шейп1.png);
+  background-position: -350px 120%;
+  background-repeat: no-repeat;
+  background-size: 1000px;
 }
 /*1 секция блок-баннер*/
 
@@ -1879,6 +2004,9 @@ ul.accordion-answer>li>div>p {
   padding-right: 30px;
   text-align: justify;
 }
+
+
+/* Страница контактов */
 .section-dop-contakt-one{
   height: 0px;
 }
@@ -1999,8 +2127,142 @@ line-height: 48px;
   left: 85%;
   top: -40px;
 }
+/*Страницы входа и регистрации*/
+.section-dop1-reg, .section-dop2-reg  {
+  height: 0;
+}
+.section-dop2-reg {
+  position: relative;
+}
+.section-dop1-reg-img {
+  position: relative;
+  width: 80%;
+  left: 75%;
+  top: -235px;
+}
+.section-dop2-reg-img {
+  position: relative;
+  right: 40%;
+  top: 445px;
+  z-index: -1;
+}
+.sign-in-registration-block {
+  background: #ae00d4;
+  min-width: 1170px;
+  border-radius: 20px;
+  padding: 75px;
+  z-index: 100;
+    position: relative;
+}
+.sign-in-registration-block > div {
+  margin: 0 auto;
+  max-width: 760px;
+  color: #fff;
+}
+.sign-in-registration-block > div > h1, h4 {
+  color: #fff ;
+}
+.form-tab-1 {
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  margin: 0px 5px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+.form-tab-1 >li {
+  width: 50%;
+  padding-left: 0;
+  padding-right: 0;
+}
+.form-tab-1 >li> a{
+  justify-content: center;
+  font-family: 'Nunito-Bold';
+font-style: normal;
+font-weight: 700;
+font-size: 24px !important;
+line-height: 48px;
+text-transform: uppercase;
+}
+.form-tab-1 > .uk-active> a{
+  background: #D41B19 !important;
+border: 2px solid #FFFFFF;
+border-radius: 10px;
+}
+.form-tab-1-checkbox > li{
+  min-height: 150px;
+}
+.checkbox-tab {
+  margin: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.checkbox-tab > span {
+  color: #ffffff;
+  font-family: 'OpenSans-Bold';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 20px;
+}
+.checkbox-tab-item {
+  margin-right: 20px;
+}
 
+.checkbox-tab.uk-checkbox:checked, .checkbox-tab-item.uk-checkbox:indeterminate, .checkbox-tab-item.uk-checkbox {
+  background-color: #AE00D4 !important;
+  border-color: #fff !important;
+  border: 2px solid;
+  border-radius: 5px;
+  width: 30px;
+height: 30px;
+min-width: 30px;
+}
+.checkbox-tab-item.uk-checkbox:checked {
+  background-size: 20px;
 
+}
+
+.form-2>fieldset>div>input {
+  padding: 30px;
+  border-radius: 5px;
+  font-size: 1.2rem !important;
+}
+.form-2>fieldset>div:first-child>div>input {
+  padding: 30px;
+  border-radius: 5px;
+  font-size: 1.2rem !important;
+}
+.form-2>fieldset>div:first-child>div {
+  width: 48%;
+}
+.form-2>fieldset>div:first-child {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+.form-2>fieldset>div> .checkbox-tab-item{
+  padding: 0;
+}
+.form-2>fieldset>div>div>.uk-form-icon {
+  color: #AE00D4;
+  left: 10px;
+}
+.form-2>fieldset>div>div>.uk-form-icon:not(.uk-form-icon-flip) ~ .uk-input{
+  padding-left: 60px !important;
+}
+.form-2>fieldset>div>.uk-form-icon {
+  color: #AE00D4;
+  left: 10px;
+}
+.form-2>fieldset>div>.uk-form-icon:not(.uk-form-icon-flip) ~ .uk-input{
+  padding-left: 60px !important;
+}
+
+.reg-block{
+  margin-right: 50px;
+}
 
 
 
@@ -2045,6 +2307,14 @@ line-height: 48px;
 }
 .footer-content-bottom {
   padding: 30px 30px;
+}
+.sign-in-registration-block {
+  min-width: 85%;
+  margin: 50px 50px 30px 50px !important;
+  padding-top: 50px !important;
+}
+.section-dop2-reg-img {
+  top: 310px;
 }
 }
 
@@ -2171,6 +2441,20 @@ line-height: 48px;
   .footer-content_item {
     min-width: 310px;
 }
+.reg-img1 {
+  left: 1%;
+  top: -80vh;
+}
+.reg-img2 {
+  background-color: #20a0a0;
+  left: 3%;
+  top: -77vh;
+}
+.reg-img3 {
+  left: 90%;
+  top: -259px;
+  
+}
 }
 
 
@@ -2258,10 +2542,37 @@ ul.section-four-text>li {
   justify-content: space-between;
   align-items: flex-end;
 }
-.mobile-buttons-block{display: flex;}
 
+.mobile-buttons-block{display: flex;}
+.button-reg {
+  
+  font-size: 16px;
+  line-height: 20px;
+  padding: 0px 30px 0px 40px;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 13px;
+  height: 45px;
+}
+.section-dop2-reg-img {
+  top: 370px;
+}
+.sign-in-registration-block > div > h1 {
+  font-size: 48px;
+  line-height: 48px;
+}
+.form-2>fieldset>div:first-child>div>input {
+  font-size: 0.95rem !important;
+}
 .footer-content_item {
   min-width: 260px;
+}
+.form-2>fieldset>div>input {
+  
+  font-size: 0.95rem !important;
+}
+.form-tab-1 >li> a {
+  font-size: 18px !important;
 }
 }
 
@@ -2666,9 +2977,7 @@ padding: 40px 0;
 /*адаптив до 820*/
 
 @media (max-width: 820px) {
-  ul.teachers > li {
-    
-  }
+  
   .seven-section-margin-mobile{
     margin-bottom: 360px;
   }
@@ -2764,6 +3073,22 @@ padding: 40px 0;
   margin: 20px 0;
  
 }
+.reg-footer-content {
+  display: flex; 
+  flex-wrap: wrap;
+ flex-direction: column-reverse; 
+   
+}
+.reg-block {
+  margin-right: 0; 
+  display: flex;
+  justify-content: center;
+}
+.reg-block-button1, .reg-block-button2 {
+  width: 80px;
+  height: 80px;
+  background-size: 80px 80px;
+  }
 }
 /*адаптив до 670*/
 
@@ -2853,9 +3178,7 @@ ul.trend-nav>li {
   width: 30px;
   height: 30px;
 }
-.trend-nav-item>ul>li>ul>li {
  
-}
 .trend-nav-item>ul>li>ul>li> a:hover {
   border: 2px solid #AE00D4;
 }
@@ -2880,9 +3203,6 @@ ul.trend-nav>li {
     line-height: 20px;
     padding: 15px 25px;
 }
-
- 
-
 
 .two-section-img4 {
   right: -10%;
@@ -3082,6 +3402,16 @@ line-height: 18px;
 .vopros-otwet  {
   padding: 25px;
 }
+.form-2>fieldset>div:first-child {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.form-2>fieldset>div:first-child>div {
+  width: 100%;
+  margin-top: 30px;
+}
 }
 
 /*адаптив до 631*/
@@ -3137,6 +3467,10 @@ line-height: 18px;
 .section-contakt-two > div {
   margin-bottom: 40px;
 }
+.checkbox-tab > span {
+  font-size: 14px;
+  line-height: 14px;
+}
 }
 
 /*адаптив до 561*/
@@ -3169,6 +3503,25 @@ line-height: 18px;
 .section-contakt-one {
   align-items: center;
   align-content: center;
+}
+.form-tab-1 >li> a {
+  font-size: 14px !important;
+}
+.sign-in-registration-block > div > h1 {
+  font-size: 40px;
+  line-height: 36px;
+  margin-bottom: -30px;
+}
+.sign-in-registration-block {
+  min-width: 90%;
+  margin: 15px !important;
+  padding-top: 50px !important;
+  padding: 0px 20px;
+}
+.checkbox-tab.uk-checkbox:checked, .checkbox-tab-item.uk-checkbox:indeterminate, .checkbox-tab-item.uk-checkbox {
+  width: 23px;
+  height: 23px;
+  min-width: 23px;
 }
 }
 /*адаптив до 521*/
@@ -3276,6 +3629,10 @@ li.uk-active>a.tab-button-reviews , a.tab-button-reviews {
   left: -200px;
   min-width: 775px;
 }
+.form-tab-1 >li> a {
+  font-size: 12px !important;
+  padding: 5px !important;
+}
 }
 
 /*адаптив до 420*/
@@ -3325,8 +3682,18 @@ li.uk-active>a.tab-button-reviews , a.tab-button-reviews {
 .section-dop-contakt-one-img, .section-dop-contakt-two-img, .two-section-contakt-img3 {
   display: none;
 }
-
-
+.button-reg {
+  font-size: 13px;
+  line-height: 13px;
+  padding: 0px 20px 0px 30px;
+  margin-left: 5px;
+  margin-right: 15px;
+  margin-top: 13px;
+  height: 42px;
+}
+.button-reg::after {
+  font-size: 18px;
+}
 }
 
 /*адаптив до 390*/
@@ -3352,5 +3719,20 @@ li.uk-active>a.tab-button-reviews , a.tab-button-reviews {
 }
 .contakt-title {
   font-size: 36px;
+}
+.form-tab-1 {
+  margin: 0px;
+}
+.form-2 > fieldset > h4 {
+  line-height: 22px;
+  font-size: 20px;
+}
+.sign-in-registration-block > div > h1 {
+  font-size: 32px;
+  line-height: 30px;
+  margin-bottom: -30px;
+}
+.form-2>fieldset>div>div>.uk-form-icon:not(.uk-form-icon-flip) ~ .uk-input {
+  padding-right: 10px !important;
 }
 }
