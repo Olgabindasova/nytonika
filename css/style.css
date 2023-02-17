@@ -2223,7 +2223,9 @@ min-width: 30px;
   background-size: 20px;
 
 }
-
+.form-2>fieldset>h4{
+  color: #fff;
+}
 .form-2>fieldset>div>input {
   padding: 30px;
   border-radius: 5px;
