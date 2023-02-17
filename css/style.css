@@ -546,6 +546,24 @@ display: none;
 .reg-block-button2:hover, .reg-block-button2:active, .reg-block-button2:focus{
   background-image: url(../icons/фиолет-стрелка-право.svg);
 }
+.button-sign {
+  background: #FFFFFF;
+  border: 2px solid #AE00D4;
+  border-radius: 7px;
+  padding: 12px;
+  font-family: 'Nunito-Bold';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 36px;
+  color: #9C16B9;
+}
+.button-sign:hover {
+  background: #d41b19;
+  border: 2px solid #f8f8f8;
+  color: #f8f8f8;
+  transition: all 0.5ms;
+}
 /*иконки и точки*/
 
 .icons-style {
@@ -1055,7 +1073,7 @@ li.uk-parent > a[aria-expanded="true"] .icon-menu-tree {
 
 .reg-img-footer {
 
-  min-height: 450px;
+
   background-image: url(../images/желтый-шейп1.png);
   background-position: -350px 120%;
   background-repeat: no-repeat;
@@ -2267,6 +2285,60 @@ min-width: 30px;
 }
 
 
+.form-tab-2 {
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  margin: 40px 5px 10px;
+  border-radius: 10px;
+}
+.form-tab-2 >li {
+  width: 50%;
+  padding-left: 0;
+  padding-right: 0;
+}
+.form-tab-2 >li> a{
+  justify-content: center;
+  font-family: 'Nunito';
+font-style: normal;
+font-weight: 400;
+font-size: 24px !important;
+text-transform: none !important;
+color: #fff !important;
+border-bottom: 2px solid #AE00D4;
+}
+.form-tab-2 >li> a:hover{
+  background-color: #AE00D4;
+}
+.form-tab-2 > .uk-active> a{
+border-bottom: 2px solid #FFFFFF;
+background-color: #AE00D4;
+margin: 0px 10px;
+}
+.sign-in {
+  max-width: 535px !important;
+}
+.form-icon-sign-in {
+  left: 25% !important;
+}
+
+.form-sign-in>fieldset>div>.uk-form-icon:not(.uk-form-icon-flip) ~ .uk-input {
+  padding-left: 35% !important;
+}
+
+.form-2>fieldset>div>input {
+  font-family: 'Nunito-Bold';
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  color: #888888;
+}
+.sign-in > h4 >a {
+  color: #fff;
+  text-decoration: none;
+}
+
+
+
 
 /*адаптив до 1340*/
 @media (max-width: 1340px) {
@@ -3473,6 +3545,16 @@ line-height: 18px;
   font-size: 14px;
   line-height: 14px;
 }
+.form-tab-2 >li> a {
+  font-size: 18px !important;
+}
+.button-sign {
+  font-size: 16px;
+}
+
+.sign-in > h4 {
+  font-size: 20px;
+}
 }
 
 /*адаптив до 561*/
@@ -3635,6 +3717,15 @@ li.uk-active>a.tab-button-reviews , a.tab-button-reviews {
   font-size: 12px !important;
   padding: 5px !important;
 }
+
+.form-icon-sign-in {
+  left: 15% !important;
+}
+
+.form-sign-in>fieldset>div>.uk-form-icon:not(.uk-form-icon-flip) ~ .uk-input {
+  padding-left: 30% !important;
+}
+
 }
 
 /*адаптив до 420*/
