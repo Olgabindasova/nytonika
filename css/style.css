@@ -5,8 +5,8 @@
   font-display: swap;
   src: local("Nunito"),
     local("Nunito-Regular"),
-    url(../fonts/Nunito-Regular.woff2) format("woff2"),
-    url(../fonts/nunito-regular.woff) format("woff");
+    url(https://cdn.nyutonika.ru/fonts/Nunito-Regular.woff2) format("woff2"),
+    url(https://cdn.nyutonika.ru/fonts/nunito-regular.woff) format("woff");
 
 }
 
@@ -16,8 +16,8 @@
   font-weight: 700;
   font-display: swap;
   src: local("Nunito-Bold"),
-    url(../fonts/Nunito-Bold.woff2) format("woff2"),
-    url(../fonts/Nunito-Bold.woff) format("woff");
+    url(https://cdn.nyutonika.ru/fonts/Nunito-Bold.woff2) format("woff2"),
+    url(https://cdn.nyutonika.ru/fonts/Nunito-Bold.woff) format("woff");
 
 }
 
@@ -27,8 +27,8 @@
   font-weight: 900;
   font-display: swap;
   src: local("Nunito-Black"),
-    url(../fonts/Nunito-Black.woff2) format("woff2"),
-    url(../fonts/Nunito-Black.woff) format("woff");
+    url(https://cdn.nyutonika.ru/fonts/Nunito-Black.woff2) format("woff2"),
+    url(https://cdn.nyutonika.ru/fonts/Nunito-Black.woff) format("woff");
 
 }
 
@@ -38,8 +38,8 @@
   font-weight: 400;
   font-display: swap;
   src: local("OpenSans"),
-    url(../fonts/OpenSans-Regular.woff2) format("woff2"),
-    url(../fonts/opensans-regular.woff) format("woff");
+    url(https://cdn.nyutonika.ru/fonts/OpenSans-Regular.woff2) format("woff2"),
+    url(https://cdn.nyutonika.ru/fonts/opensans-regular.woff) format("woff");
 
 }
 
@@ -49,8 +49,8 @@
   font-weight: 700;
   font-display: swap;
   src: local("OpenSans-Bold"),
-    url(../fonts/OpenSans-Bold.woff2) format("woff2"),
-    url(../fonts/opensans-bold.woff) format("woff");
+    url(https://cdn.nyutonika.ru/fonts/OpenSans-Bold.woff2) format("woff2"),
+    url(https://cdn.nyutonika.ru/fonts/opensans-bold.woff) format("woff");
 
 }
 
@@ -413,7 +413,7 @@ h4 {
 .section-block-button {
   width: 105px;
   height: 105px;
-  background-image: url("../svg/стрелка-круг-фиолетовый.svg");
+  background-image: url("https://cdn.nyutonika.ru/svg/стрелка-круг-фиолетовый.svg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 105px 105px;
@@ -426,12 +426,12 @@ h4 {
 }
 
 .section-block-button:hover {
-  background-image: url("../svg/стрелка-круг-белый.svg");
+  background-image: url("https://cdn.nyutonika.ru/svg/стрелка-круг-белый.svg");
   transition: background 0.5s ease;
 }
 
 .button-menu {
-  background-image: url("../icons/menu.svg");
+  background-image: url("https://cdn.nyutonika.ru/icons/menu.svg");
   background-position: center center;
   background-size: 40px 40px;
   display: block;
@@ -443,18 +443,18 @@ h4 {
 }
 
 .button-menu:hover {
-  background-image: url("../icons/menu-hover.svg");
+  background-image: url("https://cdn.nyutonika.ru/icons/menu-hover.svg");
 }
 
 .button-menu[aria-expanded="true"] {
-  background-image: url("../icons/menu-aktiv.svg");
+  background-image: url("https://cdn.nyutonika.ru/icons/menu-aktiv.svg");
   z-index: 1005;
   margin-top: 25px;
   transition: all 0.5s;
 }
 
 .button-menu[aria-expanded="true"]:hover {
-  background-image: url("../icons/menu-aktiv-hover.svg");
+  background-image: url("https://cdn.nyutonika.ru/icons/menu-aktiv-hover.svg");
 }
 
 .header-buttons-menu-open[aria-expanded="true"] {
@@ -478,19 +478,19 @@ h4 {
 }
 
 .button-menu-lk {
-  background-image: url("../icons/lk.svg");
+  background-image: url("https://cdn.nyutonika.ru/icons/lk.svg");
 }
 
 .button-menu-telefon {
-  background-image: url("../icons/telefon.svg");
+  background-image: url("https://cdn.nyutonika.ru/icons/telefon.svg");
 }
 
 .button-menu-lk:hover {
-  background-image: url("../icons/lk-hover.svg");
+  background-image: url("https://cdn.nyutonika.ru/icons/lk-hover.svg");
 }
 
 .button-menu-telefon:hover {
-  background-image: url("../icons/telefon-hover.svg");
+  background-image: url("https://cdn.nyutonika.ru/icons/telefon-hover.svg");
 }
 
 .button-two-mobile-header {
@@ -542,7 +542,7 @@ h4 {
 .reg-block-button1 {
   width: 105px;
   height: 105px;
-  background-image: url(../icons/серая-стрелка-лево.svg);
+  background-image: url(https://cdn.nyutonika.ru/icons/серая-стрелка-лево.svg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 105px 105px;
@@ -555,13 +555,13 @@ h4 {
 .reg-block-button1:hover,
 .reg-block-button1:active,
 .reg-block-button1:focus {
-  background-image: url(../icons/фиолет-стрелка-лево.svg);
+  background-image: url(https://cdn.nyutonika.ru/icons/фиолет-стрелка-лево.svg);
 }
 
 .reg-block-button2 {
   width: 105px;
   height: 105px;
-  background-image: url(../icons/серая-стрелка-право.svg);
+  background-image: url(https://cdn.nyutonika.ru/icons/серая-стрелка-право.svg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 105px 105px;
@@ -574,7 +574,7 @@ h4 {
 .reg-block-button2:hover,
 .reg-block-button2:active,
 .reg-block-button2:focus {
-  background-image: url(../icons/фиолет-стрелка-право.svg);
+  background-image: url(https://cdn.nyutonika.ru/icons/фиолет-стрелка-право.svg);
 }
 
 .button-sign {
@@ -805,7 +805,7 @@ header {
 }
 
 span.menu-one {
-  background-image: url("../svg/menu1.svg");
+  background-image: url("https://cdn.nyutonika.ru/svg/menu1.svg");
   background-position: center center;
   background-size: 10px 10px;
   display: block;
@@ -906,7 +906,7 @@ span.menu-one {
 }
 
 .icon-menu-one {
-  background-image: url("../icons/Ellipse1.svg");
+  background-image: url("https://cdn.nyutonika.ru/icons/Ellipse1.svg");
   background-position: center center;
   background-size: 9px 9px;
   display: block;
@@ -918,7 +918,7 @@ span.menu-one {
 }
 
 .uk-nav>li>a[aria-expanded="true"] .icon-menu-one {
-  background-image: url("../icons/Ellipse2.svg");
+  background-image: url("https://cdn.nyutonika.ru/icons/Ellipse2.svg");
 }
 
 .menu-mobile>li.uk-parent>a {
@@ -944,7 +944,7 @@ span.menu-one {
 }
 
 .icon-menu-two {
-  background-image: url("../icons/Polygon2.svg");
+  background-image: url("https://cdn.nyutonika.ru/icons/Polygon2.svg");
   background-position: center center;
   background-size: 15px 25px;
   display: block;
@@ -956,7 +956,7 @@ span.menu-one {
 }
 
 .icon-menu-tree {
-  background-image: url("../icons/Polygon4.svg");
+  background-image: url("https://cdn.nyutonika.ru/icons/Polygon4.svg");
   background-position: center center;
   background-size: 12px 12px;
   display: inline-block;
@@ -995,11 +995,11 @@ ul.menu-second-sub-mobile>li>a:hover {
 }
 
 li.uk-parent>a[aria-expanded="true"] .icon-menu-two {
-  background-image: url(../icons/Polygon3.svg);
+  background-image: url(https://cdn.nyutonika.ru/icons/Polygon3.svg);
 }
 
 li.uk-parent>a[aria-expanded="true"] .icon-menu-tree {
-  background-image: url(../icons/Polygon5.svg);
+  background-image: url(https://cdn.nyutonika.ru/icons/Polygon5.svg);
 }
 
 
@@ -1009,7 +1009,7 @@ li.uk-parent>a[aria-expanded="true"] .icon-menu-tree {
 .footer {
   height: fit-content;
   min-height: 450px;
-  background-image: url(../images/фон.png);
+  background-image: url(https://cdn.nyutonika.ru/images/фон.png);
   background-position: 50% 100%;
   background-repeat: no-repeat;
   background-size: contain;
@@ -1142,7 +1142,7 @@ li.uk-parent>a[aria-expanded="true"] .icon-menu-tree {
 .reg-img-footer {
 
 
-  background-image: url(../images/желтый-шейп1.png);
+  background-image: url(https://cdn.nyutonika.ru/images/желтый-шейп1.png);
   background-position: -350px 120%;
   background-repeat: no-repeat;
   background-size: 1000px;
@@ -1969,7 +1969,7 @@ a.tab-button-reviews {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 108%;
-  background-image: url("../images/Беслатное-занятие-фон.png");
+  background-image: url("https://cdn.nyutonika.ru/images/Беслатное-занятие-фон.png");
   max-height: 470px
 }
 
@@ -2490,7 +2490,7 @@ ul.accordion-answer>li>div>p {
 }
 
 .regpass-img-footer {
-  background-image: url(../images/желтый-шейп1.png);
+  background-image: url(https://cdn.nyutonika.ru/images/желтый-шейп1.png);
   background-position: -150px 160%;
   background-repeat: no-repeat;
   background-size: 685px;
@@ -2517,6 +2517,155 @@ ul.accordion-answer>li>div>p {
   color: #fff;
   font-size: 1.5em;
   font-family: "Nunito-Bold";
+}
+
+.trend-nav-base {
+  justify-content: center;
+}
+
+.trend-nav-base>li {
+  align-content: flex-start;
+  width: 375px;
+}
+
+.trend-nav-base>li>a {
+  height: 360px;
+  font-family: 'Nunito-Bold';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 48px;
+  color: #FFFFFF;
+  padding: 40px;
+  padding-top: 200px;
+  background-position: 100% 100%;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  min-width: 290px;
+}
+
+.trend-nav-base>li>a:hover {
+  font-family: 'Nunito-Black';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 48px;
+  color: #FFFFFF;
+}
+
+.trend1 {
+  background-image: url(https://cdn.nyutonika.ru/svg/Направление-логопедия.svg);
+}
+
+.trend2 {
+  background-image: url(https://cdn.nyutonika.ru/svg/Направлениемалышам.svg);
+}
+
+.trend3 {
+  background-image: url(https://cdn.nyutonika.ru/svg/Направлениедошкольникам.svg);
+}
+
+.trend4 {
+  background-image: url(https://cdn.nyutonika.ru/svg/Направлениеначальная-школа.svg);
+}
+
+.trend5 {
+  background-image: url(https://cdn.nyutonika.ru/svg/Направлениесредняя-школа.svg);
+}
+
+.trend6 {
+  background-image: url(https://cdn.nyutonika.ru/svg/Направлениедопразвитие.svg);
+}
+
+.trend1:hover {
+  background-image: url(https://cdn.nyutonika.ru/svg/Направление-логопедия-ховер.svg);
+}
+
+.trend2:hover {
+  background-image: url(https://cdn.nyutonika.ru/svg/Направлениемалышам-ховер.svg);
+}
+
+.trend3:hover {
+  background-image: url(https://cdn.nyutonika.ru/svg/Направлениедошкольникам-ховер.svg);
+}
+
+.trend4:hover {
+  background-image: url(https://cdn.nyutonika.ru/svg/Направлениеначальная-школа-ховер.svg);
+}
+
+.trend5:hover {
+  background-image: url(https://cdn.nyutonika.ru/svg/Направлениесредняя-школа-ховер.svg);
+}
+
+.trend6:hover {
+  background-image: url(https://cdn.nyutonika.ru/svg/Направлениедопразвитие-ховер.svg);
+}
+
+.trend-nav-base>li>ul>li>a {
+  background: #FEF7FF;
+  border-radius: 20px;
+  font-family: 'Nunito-Bold';
+  font-weight: 700;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+  color: #2A3B4F !important;
+  padding: 20px 10px;
+  margin: 28px 0px;
+  border: 2px solid #FEF7FF;
+}
+
+.trend-nav-base>li>ul>li>a:hover {
+  border: 2px solid #AE00D4;
+  background: #FCEDFF;
+  color: #AE00D4 !important;
+  font-family: 'Nunito-Bold';
+  font-weight: 700;
+  transition: all 0.8ms;
+  box-shadow: 0px 0px 10.954px rgba(41, 41, 41, 0.1);
+}
+
+.two-section-img-trend {
+  position: relative;
+  bottom: 40px;
+  right: 66%;
+  z-index: -10;
+}
+
+.seven-section-img-trend {
+  position: relative;
+  left: 100%;
+  bottom: 265px;
+  z-index: -10;
+  width: 85%;
+}
+
+.two-section-img3-trend {
+  left: 90%;
+  top: -261px;
+  background-color: #20A0A0;
+}
+
+.two-section-img4-trend {
+  top: -240px;
+  left: 84%;
+  background-color: #D41B19;
+}
+
+.two-section-img5-trend {
+  left: 59%;
+  top: 0;
+}
+
+.two-section-img6-trend {
+  bottom: 75px;
+  right: -7%;
+}
+
+.section-ten-trend {
+  margin-top: 20px;
+  margin-bottom: 100px;
 }
 
 /*адаптив до 1340*/
@@ -3253,7 +3402,7 @@ ul.accordion-answer>li>div>p {
   .section-nine {
     background-position: 150% 100%;
     background-size: 98%;
-    background-image: url("../images/Беслатное-занятие-фон2.png");
+    background-image: url("https://cdn.nyutonika.ru/images/Беслатное-занятие-фон2.png");
 
   }
 
@@ -4213,8 +4362,6 @@ ul.accordion-answer>li>div>p {
 
   }
 
-
-
   .seven-section-block {
     min-height: 1190px;
   }
@@ -4272,6 +4419,20 @@ ul.accordion-answer>li>div>p {
 
   .button-reg::after {
     font-size: 18px;
+  }
+
+  .trend-nav-base>li>a {
+    font-size: 32px;
+    line-height: 34px;
+    height: 345px;
+    padding: 20px;
+    padding-top: 170px !important;
+  }
+
+  .trend-nav-base>li>ul>li>a {
+    font-size: 20px;
+    line-height: 20px;
+    margin: 20px 0px;
   }
 }
 
