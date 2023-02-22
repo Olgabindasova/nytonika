@@ -2508,6 +2508,51 @@ ul.accordion-answer>li>div>p {
   margin-bottom: 30px !important;
 }
 
+.notice-block {
+  padding: 20px 30px;
+  background-color: #fff;
+  margin: -5px 0px 40px;
+  border-radius: 7px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.notice-block-text {
+  color: #d41b19 !important;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+}
+
+.notice-block-text>p {
+  color: #d41b19 !important;
+  font-family: 'OpenSans-Bold';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.notice-block-text>p>a {
+  color: #24201D;
+
+}
+
+.notice-block-text>span {
+  margin-right: 20px;
+}
+
+.notice-block-text>span>svg {
+  width: 40px;
+  min-width: 40px;
+  height: 40px;
+}
+
 #first {
   display: block;
 }
@@ -3225,11 +3270,8 @@ ul.accordion-answer>li>div>p {
     display: flex;
     justify-content: center;
     flex-direction: row;
-    /* flex-wrap: wrap; */
     align-items: center;
-    /* align-content: center; */
     margin: 0 auto;
-    /* padding-left: 40px; */
   }
 
   .section-five-stages>div {
@@ -4134,6 +4176,19 @@ ul.accordion-answer>li>div>p {
 
   .sign-in>h4 {
     font-size: 20px;
+  }
+
+  .notice-block-text>span {
+    margin-right: 7px;
+  }
+
+  .notice-block-text > p{
+    font-size: 13px;
+    line-height: 15px;
+  }
+
+  .notice-block {
+    padding: 10px 10px;
   }
 }
 
