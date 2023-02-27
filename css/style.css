@@ -464,21 +464,26 @@ h4 {
 .header-buttons-menu-close {
   margin-top: -20px !important;
 }
+
 .button-menu-telefon {
   display: block;
 }
+
 .entry {
   display: block;
   /*display: none !important;*/
 }
+
 .exit {
-   /*display: block;*/
+  /*display: block;*/
   display: none !important;
 }
+
 .button-menu-lk,
 .button-menu-lk-ex {
   display: none;
 }
+
 .button-menu-lk,
 .button-menu-telefon,
 .button-menu-lk-ex,
@@ -491,24 +496,31 @@ h4 {
   background-repeat: no-repeat;
   margin-top: 10px;
 }
-.button-menu-lk-en{
+
+.button-menu-lk-en {
   top: -5px;
 }
+
 .button-menu-lk {
   background-image: url("https://cdn.nyutonika.ru/icons/lk.svg");
 }
+
 .button-menu-lk-ex {
   background-image: url("https://cdn.nyutonika.ru/icons/lk2-.svg");
 }
+
 .button-menu-lk-ex:hover {
   background-image: url("https://cdn.nyutonika.ru/icons/lk3-.svg");
 }
+
 .button-menu-lk-en {
   background-image: url("https://cdn.nyutonika.ru/icons/lk3+.svg");
 }
+
 .button-menu-lk-en:hover {
   background-image: url("https://cdn.nyutonika.ru/icons/lk2+.svg");
 }
+
 .button-menu-telefon {
   background-image: url("https://cdn.nyutonika.ru/icons/telefon.svg");
 }
@@ -3073,12 +3085,15 @@ ul.accordion-answer>li>div>p {
     margin-top: 13px;
     height: 45px;
   }
+
   .button-menu-lk {
     display: block;
   }
+
   .button-menu-lk-en {
     top: 0;
-}
+  }
+
   .section-dop2-reg-img {
     top: 370px;
   }
@@ -4215,7 +4230,7 @@ ul.accordion-answer>li>div>p {
     margin-right: 7px;
   }
 
-  .notice-block-text > p{
+  .notice-block-text>p {
     font-size: 13px;
     line-height: 15px;
   }
@@ -4235,9 +4250,11 @@ ul.accordion-answer>li>div>p {
   .button-one-mobile-header {
     display: none;
   }
+
   .button-menu-lk-ex {
     display: block;
   }
+
   .header-mobile {
     margin-top: 0px !important;
   }
