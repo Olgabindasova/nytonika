@@ -340,6 +340,17 @@ h4 {
   border: var(--scrollbarBorder);
 }
 
+
+
+/*цвета*/
+.color1{background-color: #7DDF9B;}
+.color2{background-color: #F3D04F;}
+.color3{background-color: #FF5642;}
+.color4{background-color: #20A0A0;}
+.color5{background-color: #D589CC;}
+.color6{background-color: #54D0B1;}
+.color7{background-color: #FAE480;}
+.color8{background-color: #54D0B1;}
 /*кнопки*/
 
 
@@ -2984,7 +2995,13 @@ ul.accordion-answer>li>div>p {
   max-width: 30px;
   height: 30px;
 }
-
+.efficiency-blok-img > span {
+  width: 23px;
+  height: 23px;
+  border-radius: 50%;
+  display: block;
+  position: relative;
+}
 .frame>div.details>img {
   max-width: 73px;
   height: 73px;
@@ -3079,6 +3096,7 @@ ul.accordion-answer>li>div>p {
   color: #fff;
   font-size: 64px;
   line-height: 64px;
+  padding-bottom: 80px;
 }
 
 .form-trend-list {
@@ -3104,7 +3122,6 @@ ul.accordion-answer>li>div>p {
   width: 23px;
   height: 23px;
   border-radius: 50%;
-  background-color: #20A0A0;
   display: block;
   position: relative;
   left: -60px;
@@ -3179,6 +3196,69 @@ ul.accordion-answer>li>div>p {
   background-size: auto;
   width: 100%;
 }
+ol.diagnostika-list {
+	list-style-type: none; 
+	counter-reset: num;
+	margin: 100px 0 0 12%;
+	padding: 15px 0 5px 0;
+	font-size: 16px;
+}
+ol.diagnostika-list  li {
+	position: relative;	
+	margin: 0 0 0 0;
+	padding: 25px 20px 25px 55px;
+	background: #FEF7FF;
+border: 1px solid #CC7DC3;
+box-shadow: 0px 0px 10.954px rgba(41, 41, 41, 0.1);
+border-radius: 20px;
+max-width: 350px;
+max-height: 160px;
+}
+ol.diagnostika-list  li:nth-child(even) {
+  left: 55%;
+}
+
+ol.diagnostika-list  li:before {
+	content: counter(num); 
+	counter-increment: num;
+	display: inline-block;
+	position: absolute;
+	top: -35px;
+	left: -38px;
+	width: 80px;
+	height: 80px;
+	background: #CC7DC3;
+	color: #fff;
+	text-align: center;
+	font-family: 'Nunito-Black';
+font-style: normal;
+font-weight: 900;
+font-size: 48px;
+line-height: 80px;
+	border-radius: 50%;
+}
+
+.diagnostika-list-line{
+  display: block;
+  position: relative;
+}
+.line1{
+  left: 99%;
+  top: -14px;
+}
+.line2{
+  left: -99%;
+  top: 32px; 
+}
+.line3{
+  left: 99%;
+  top: -14px;
+}
+.line4{
+  left: -99%;
+  top: -14px;
+}
+
 /*Заголовки страницы напрапвлений*/
 .title-trend-block {
   font-family: 'Nunito-Black';
