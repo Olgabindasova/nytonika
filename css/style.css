@@ -343,14 +343,38 @@ h4 {
 
 
 /*цвета*/
-.color1{background-color: #7DDF9B;}
-.color2{background-color: #F3D04F;}
-.color3{background-color: #FF5642;}
-.color4{background-color: #20A0A0;}
-.color5{background-color: #D589CC;}
-.color6{background-color: #54D0B1;}
-.color7{background-color: #FAE480;}
-.color8{background-color: #54D0B1;}
+.color1 {
+  background-color: #7DDF9B;
+}
+
+.color2 {
+  background-color: #F3D04F;
+}
+
+.color3 {
+  background-color: #FF5642;
+}
+
+.color4 {
+  background-color: #20A0A0;
+}
+
+.color5 {
+  background-color: #D589CC;
+}
+
+.color6 {
+  background-color: #54D0B1;
+}
+
+.color7 {
+  background-color: #FAE480;
+}
+
+.color8 {
+  background-color: #54D0B1;
+}
+
 /*кнопки*/
 
 
@@ -2656,51 +2680,51 @@ ul.accordion-answer>li>div>p {
 }
 
 .trend1 {
-  background-image: url(https://cdn.nyutonika.ru/svg/Направление-логопедия.svg);
+  background-image: url('https://cdn.nyutonika.ru/svg/Направление-логопедия.svg');
 }
 
 .trend2 {
-  background-image: url(https://cdn.nyutonika.ru/svg/Направлениемалышам.svg);
+  background-image: url('https://cdn.nyutonika.ru/svg/Направлениемалышам.svg');
 }
 
 .trend3 {
-  background-image: url(https://cdn.nyutonika.ru/svg/Направлениедошкольникам.svg);
+  background-image: url('https://cdn.nyutonika.ru/svg/Направлениедошкольникам.svg');
 }
 
 .trend4 {
-  background-image: url(https://cdn.nyutonika.ru/svg/Направлениеначальная-школа.svg);
+  background-image: url('https://cdn.nyutonika.ru/svg/Направлениеначальная-школа.svg');
 }
 
 .trend5 {
-  background-image: url(https://cdn.nyutonika.ru/svg/Направлениесредняя-школа.svg);
+  background-image: url('https://cdn.nyutonika.ru/svg/Направлениесредняя-школа.svg');
 }
 
 .trend6 {
-  background-image: url(https://cdn.nyutonika.ru/svg/Направлениедопразвитие.svg);
+  background-image: url('https://cdn.nyutonika.ru/svg/Направлениедопразвитие.svg');
 }
 
 .trend1:hover {
-  background-image: url(https://cdn.nyutonika.ru/svg/Направление-логопедия-ховер.svg);
+  background-image: url('https://cdn.nyutonika.ru/svg/Направление-логопедия-ховер.svg');
 }
 
 .trend2:hover {
-  background-image: url(https://cdn.nyutonika.ru/svg/Направлениемалышам-ховер.svg);
+  background-image: url('https://cdn.nyutonika.ru/svg/Направлениемалышам-ховер.svg');
 }
 
 .trend3:hover {
-  background-image: url(https://cdn.nyutonika.ru/svg/Направлениедошкольникам-ховер.svg);
+  background-image: url('https://cdn.nyutonika.ru/svg/Направлениедошкольникам-ховер.svg');
 }
 
 .trend4:hover {
-  background-image: url(https://cdn.nyutonika.ru/svg/Направлениеначальная-школа-ховер.svg);
+  background-image: url('https://cdn.nyutonika.ru/svg/Направлениеначальная-школа-ховер.svg');
 }
 
 .trend5:hover {
-  background-image: url(https://cdn.nyutonika.ru/svg/Направлениесредняя-школа-ховер.svg);
+  background-image: url('https://cdn.nyutonika.ru/svg/Направлениесредняя-школа-ховер.svg');
 }
 
 .trend6:hover {
-  background-image: url(https://cdn.nyutonika.ru/svg/Направлениедопразвитие-ховер.svg);
+  background-image: url('https://cdn.nyutonika.ru/svg/Направлениедопразвитие-ховер.svg');
 }
 
 .trend-nav-base>li>ul>li>a {
@@ -2789,24 +2813,42 @@ ul.accordion-answer>li>div>p {
 }
 
 .banner-trend-dop_img-logoped-aplle1 {
-  right: 60%;
+  right: 65%;
   top: 328px;
 }
 
 .banner-trend-dop_img-logoped-aplle2 {
-  left: 50%;
-  bottom: 1070px;
+  left: 52%;
+  bottom: 1370px;
+}
+
+.banner-trend-dop_img-logoped-aplle3 {
+  left: 78%;
+  bottom: 301px;
+
 }
 
 .banner-trend-dop_img-logoped-circle {
-  left: 27%;
-  top: -1390px;
+  left: 32%;
+  top: -2065px;
+}
+
+.banner-trend-dop_img-logoped-line-form {
+
+  left: 40%;
+  top: -702px;
 }
 
 .banner-trend-dop_img-logoped-icon1 {
-  left: -15%;
-  top: -1567px;
+  left: -14%;
+  top: -2194px;
   width: 210px;
+}
+
+.banner-trend-dop_img-logoped-icon2 {
+  left: 4%;
+  top: -2528px;
+  width: 175px;
 }
 
 .banner-trend {
@@ -2995,13 +3037,15 @@ ul.accordion-answer>li>div>p {
   max-width: 30px;
   height: 30px;
 }
-.efficiency-blok-img > span {
+
+.efficiency-blok-img>span {
   width: 23px;
   height: 23px;
   border-radius: 50%;
   display: block;
   position: relative;
 }
+
 .frame>div.details>img {
   max-width: 73px;
   height: 73px;
@@ -3187,7 +3231,7 @@ ul.accordion-answer>li>div>p {
 
 
 /*Как проходит бесплатная диагностика*/
-.diagnostika-logoped{
+.diagnostika-logoped {
   height: fit-content;
   min-height: 1000px;
   background-image: url("https://cdn.nyutonika.ru/svg/логопед-какпроходятзанятия-фон.svg");
@@ -3196,69 +3240,232 @@ ul.accordion-answer>li>div>p {
   background-size: auto;
   width: 100%;
 }
+
 ol.diagnostika-list {
-	list-style-type: none; 
-	counter-reset: num;
-	margin: 100px 0 0 12%;
-	padding: 15px 0 5px 0;
-	font-size: 16px;
+  list-style-type: none;
+  counter-reset: num;
+  margin: 100px 0 0 12%;
+  padding: 15px 0 5px 0;
+  font-size: 16px;
+  z-index: 10;
+  position: relative;
 }
-ol.diagnostika-list  li {
-	position: relative;	
-	margin: 0 0 0 0;
-	padding: 25px 20px 25px 55px;
-	background: #FEF7FF;
-border: 1px solid #CC7DC3;
-box-shadow: 0px 0px 10.954px rgba(41, 41, 41, 0.1);
-border-radius: 20px;
-max-width: 350px;
-max-height: 160px;
+
+ol.diagnostika-list li {
+  position: relative;
+  margin: 0 0 0 0;
+  padding: 25px 20px 25px 55px;
+  background: #FEF7FF;
+  border: 1px solid #CC7DC3;
+  box-shadow: 0px 0px 10.954px rgba(41, 41, 41, 0.1);
+  border-radius: 20px;
+  max-width: 350px;
+  max-height: 160px;
 }
-ol.diagnostika-list  li:nth-child(even) {
+
+ol.diagnostika-list li:nth-child(even) {
   left: 55%;
 }
 
-ol.diagnostika-list  li:before {
-	content: counter(num); 
-	counter-increment: num;
-	display: inline-block;
-	position: absolute;
-	top: -35px;
-	left: -38px;
-	width: 80px;
-	height: 80px;
-	background: #CC7DC3;
-	color: #fff;
-	text-align: center;
-	font-family: 'Nunito-Black';
-font-style: normal;
-font-weight: 900;
-font-size: 48px;
-line-height: 80px;
-	border-radius: 50%;
+ol.diagnostika-list li:before {
+  content: counter(num);
+  counter-increment: num;
+  display: inline-block;
+  position: absolute;
+  top: -35px;
+  left: -38px;
+  width: 80px;
+  height: 80px;
+  background: #CC7DC3;
+  color: #fff;
+  text-align: center;
+  font-family: 'Nunito-Black';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 80px;
+  border-radius: 50%;
 }
 
-.diagnostika-list-line{
+.diagnostika-list-line {
   display: block;
   position: relative;
 }
-.line1{
+
+.line1 {
   left: 99%;
   top: -14px;
 }
-.line2{
+
+.line2 {
   left: -99%;
-  top: 32px; 
+  top: 32px;
 }
-.line3{
+
+.line3 {
   left: 99%;
   top: -14px;
 }
-.line4{
+
+.line4 {
   left: -99%;
   top: -14px;
 }
 
+.banner-trend-dop_img-logoped-img1 {
+  left: 120%;
+  top: -375px;
+}
+
+.banner-trend-dop_img-logoped-img2 {
+  left: 100%;
+  top: -375px;
+}
+
+.banner-trend-dop_img-logoped-img3 {
+  left: -75%;
+  top: -375px;
+}
+
+.banner-trend-dop_img-logoped-img4 {
+  left: 37%;
+  top: -409px;
+}
+
+.banner-trend-dop_img-logoped-img5 {
+  left: 29%;
+  top: -214px;
+}
+
+.banner-trend-dop_img-logoped-img6 {
+  left: 106%;
+  top: -23px;
+}
+
+.banner-trend-dop_img-logoped-img7 {
+  right: 6%;
+  top: -333px;
+}
+
+/*Как  проходят уроки*/
+ol.lessons-list {
+  list-style-type: none;
+  counter-reset: num;
+  margin: 250px 0 0 0;
+  padding: 15px 0 5px 0;
+  font-size: 16px;
+  z-index: 10;
+  position: relative;
+}
+
+ol.lessons-list li {
+  position: relative;
+  margin: 0 0 0 0;
+
+}
+
+ol.lessons-list li>div {
+  padding: 25px 30px 25px 85px;
+  background: #FEF7FF;
+  border: 3px solid #AE00D4;
+  box-shadow: 0px 0px 10.954px rgba(41, 41, 41, 0.1);
+  border-radius: 20px;
+  max-width: 280px;
+  max-height: 95px;
+  font-family: 'Nunito-Bold';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  color: #000000;
+}
+
+ol.lessons-list li:nth-child(1) {
+  left: 2%;
+  top: -149px;
+}
+
+ol.lessons-list li:nth-child(2) {
+  left: 75%;
+  top: -185px;
+}
+
+ol.lessons-list li:nth-child(3) {
+  left: -3%;
+  top: 72px;
+}
+
+ol.lessons-list li:nth-child(4) {
+  left: 72%;
+  top: 35px;
+}
+
+ol.lessons-list li:before {
+  content: counter(num);
+  counter-increment: num;
+  display: inline-block;
+  position: absolute;
+  top: 20px;
+  left: 24px;
+  width: 45px;
+  height: 45px;
+  background: #AE00D4;
+  color: #fff;
+  text-align: center;
+  font-family: 'Nunito-Black';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 27px;
+  line-height: 46px;
+  border-radius: 50%;
+}
+
+.lessons-logoped {
+  margin-bottom: 300px;
+}
+
+.lessons-list-line {
+  display: block;
+  position: relative;
+}
+
+.line6 {
+  left: 278px;
+  top: -80px;
+}
+
+.line7 {
+  right: 170px;
+  bottom: 58px;
+}
+
+.line8 {
+  left: 168px;
+  bottom: 311px;
+}
+
+.line9 {
+  bottom: 281px;
+  left: 58px;
+}
+
+.lessons-list-img {
+  top: -460px;
+  left: 281px;
+  width: 700px;
+  z-index: 2 !important;
+}
+.lessons-list-img2 {
+  top: -970px;
+  left: 297px;
+  width: 665px;
+  z-index: 3 !important;
+}
+.banner-trend-dop_img-logoped-aplle4 {
+  bottom: 330px;
+  left: 707px;
+  width: 600px;
+}
 /*Заголовки страницы напрапвлений*/
 .title-trend-block {
   font-family: 'Nunito-Black';
