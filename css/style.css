@@ -4990,6 +4990,14 @@ ol.lessons-list li:before {
     color: #2A3B4F;
     padding-bottom: 50px;
 }
+.problems>div>section {
+  padding: 5px;
+}
+.problems-img{
+  padding: 0px !important;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
 }
 
 /*адаптив до 631*/
@@ -5168,6 +5176,10 @@ ol.lessons-list li:before {
 }
 .benefits__title {
   text-align: center;
+}
+.benefits__number {
+  font-size: 65px;
+  line-height: 56px !important;
 }
 .efficiency > div > .uk-card {
   width: 100%;
