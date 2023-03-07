@@ -391,6 +391,7 @@ h4 {
   text-indent: -9999px;
   background: url('https://cdn.nyutonika.ru/icons/наверх.svg') no-repeat;
   background-size: 60px 60px;
+  z-index: 10000;
 }
 
 .button-one {
@@ -753,6 +754,7 @@ h4 {
 
 header {
   background-color: rgba(255, 255, 255, 1);
+  z-index: 10000 !important;
 }
 
 .header {
@@ -1621,7 +1623,10 @@ h4.card-teacher-title {
 .teacher-label-color-tree {
   color: #33C7A2 !important;
 }
-
+.teachers > li > div > div.uk-card-media-top {
+  display: flex;
+    justify-content: center;
+}
 /*4 секция Как проходят занятия*/
 .section-four-title {
   margin-left: 60px;
@@ -2884,7 +2889,8 @@ ul.accordion-answer>li>div>p {
   color: #FFFFFF;
   max-width: 360px;
   z-index: 1000;
-  padding-top: 100px;
+  padding-top: 80px;
+  padding-bottom: 20px;
 }
 
 .banner-trend_logoped {
@@ -3455,17 +3461,20 @@ ol.lessons-list li:before {
   width: 700px;
   z-index: 2 !important;
 }
+
 .lessons-list-img2 {
   top: -970px;
   left: 297px;
   width: 665px;
   z-index: 3 !important;
 }
+
 .banner-trend-dop_img-logoped-aplle4 {
   bottom: 330px;
   left: 707px;
   width: 600px;
 }
+
 /*Заголовки страницы напрапвлений*/
 .title-trend-block {
   font-family: 'Nunito-Black';
@@ -4254,6 +4263,94 @@ ol.lessons-list li:before {
   .footer-content_item {
     min-width: 215px;
   }
+
+  .banner-trend-form>div>.uk-form-icon:not(.uk-form-icon-flip)~.uk-input {
+    padding-left: 70px !important;
+  }
+
+  .banner-trend-form>div>input {
+    padding: 10px;
+    font-size: 16px;
+    line-height: 16px;
+    height: 70px;
+  }
+
+  .banner-trend-form>div>button {
+    font-size: 16px;
+    line-height: 16px;
+    height: 70px;
+    padding: 10px;
+  }
+
+  .banner-trend-title {
+    padding-top: 100px;
+    font-size: 48px;
+    line-height: 48px;
+    max-width: 100%;
+  }
+
+  .banner-trend {
+    min-height: 790px;
+  }
+
+  .banner-trend-form>div>label {
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .banner-trend>div>section {
+    min-height: 750px;
+  }
+
+  .banner-trend-text {
+    font-size: 24px;
+    line-height: 24px;
+    max-width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .benefits__inner {
+    max-width: 800px;
+}
+.benefits__number {
+  font-size: 46px;
+  line-height: 30px !important;
+}
+.benefits__title {
+  font-size: 15px;
+  line-height: 18px !important;
+  max-width: 160px;
+}
+.efficiency {
+  padding: 40px 20px 40px 50px;
+}
+.teacher-text-trend {
+  font-size: 20px;
+  line-height: 30px;
+}
+.form-trend>div>section>h4 {
+  font-size: 48px;
+  line-height: 52px;
+  padding-bottom: 40px;
+}
+.form-trend-list>div {
+  font-size: 22px;
+  line-height: 30px;
+  padding-bottom: 30px;
+}
+.form-trend-list>div>span {
+  top: 35px;
+  left: -40px;
+}
+.form-trend-list {
+  padding: 30px 40px;
+}
+.form-trend {
+  padding: 30px 0;
+}
+.form-trend > div > section {
+  margin: 10px 0px 10px;
+}
 }
 
 
@@ -4328,6 +4425,19 @@ ol.lessons-list li:before {
   .two-section-contakt-img2 {
     top: -524px;
   }
+  .efficiency > div > .uk-card {
+    width: 50%;
+    min-height: 310px;
+  }
+  .efficiency-blok-title {
+    text-align: center;
+}
+.efficiency-blok-text {
+  text-align: center;
+}
+.frame .details {
+  height: 85%;
+}
 }
 
 /*адаптив до 820*/
@@ -4475,6 +4585,15 @@ ol.lessons-list li:before {
     height: 80px;
     background-size: 80px 80px;
   }
+  .title-trend-block {
+    font-size: 36px;
+    line-height: 38px;
+    text-align: center;
+}
+.efficiency>p {
+  padding-bottom: 30px;
+  text-align: center;
+}
 }
 
 /*адаптив до 670*/
@@ -4862,6 +4981,15 @@ ol.lessons-list li:before {
     width: 100%;
     margin-top: 30px;
   }
+  .problems>div>section>p {
+    font-family: 'Nunito-Bold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #2A3B4F;
+    padding-bottom: 50px;
+}
 }
 
 /*адаптив до 631*/
@@ -5031,6 +5159,30 @@ ol.lessons-list li:before {
     height: 23px;
     min-width: 23px;
   }
+  .benefits__element {
+    width: 100%;
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.benefits__title {
+  text-align: center;
+}
+.efficiency > div > .uk-card {
+  width: 100%;
+  min-height: 245px;
+}
+.title-trend-block {
+  margin-left: -20px;
+}
+.efficiency>p {
+  margin-left: -20px;
+}
+.efficiency {
+  -webkit-box-shadow: 20px 33px 0px 0px #CC7DC3;
+  box-shadow: 20px 33px 0px 0px #cc7dc3;
+}
 }
 
 /*адаптив до 521*/
@@ -5104,6 +5256,28 @@ ol.lessons-list li:before {
   .section-dop-contakt-bottom-img {
     bottom: 57px;
   }
+  .banner-trend-title {
+    padding-top: 65px;
+    font-size: 36px;
+    line-height: 36px;
+}
+.banner-trend-form {
+  width: 107%;
+}
+.banner-trend > div > section {
+  padding: 15px;
+}
+.problems>div>section>div>div>ul>li {
+  font-size: 18px;
+  line-height: 18px;
+}
+.problems>div>section>div>div>ul>li>ul>li {
+  font-size: 14px;
+  line-height: 14px;
+}
+.problems>div>section>div>div.efficiency {
+  padding: 30px 40px !important;
+}
 }
 
 /*адаптив до 461*/
@@ -5181,6 +5355,14 @@ ol.lessons-list li:before {
   .regpass>.form-sign-in>fieldset>div>.form-icon-sign-in {
     left: 5% !important;
   }
+  .efficiency-blok-title {
+    font-size: 18px;
+    line-height: 20px;
+}
+.frame>div.details>img {
+  max-width: 60px;
+  height: 60px;
+}
 }
 
 /*адаптив до 420*/
@@ -5265,6 +5447,13 @@ ol.lessons-list li:before {
     line-height: 20px;
     margin: 20px 0px;
   }
+  .banner-trend-form {
+    width: 110%;
+  }
+  .title-trend-block {
+    font-size: 28px;
+    line-height: 28px;
+}
 }
 
 /*адаптив до 390*/
