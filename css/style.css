@@ -372,6 +372,22 @@ h4 {
 }
 
 .color8 {
+  background-color: #325DE9;
+}
+
+.color9 {
+  background-color: #FF422C;
+}
+
+.color10 {
+  background-color: #33C7A2;
+}
+
+.color11 {
+  background-color: #FFD129;
+}
+
+.color12 {
   background-color: #54D0B1;
 }
 
@@ -1623,10 +1639,12 @@ h4.card-teacher-title {
 .teacher-label-color-tree {
   color: #33C7A2 !important;
 }
-.teachers > li > div > div.uk-card-media-top {
+
+.teachers>li>div>div.uk-card-media-top {
   display: flex;
-    justify-content: center;
+  justify-content: center;
 }
+
 /*4 секция Как проходят занятия*/
 .section-four-title {
   margin-left: 60px;
@@ -2827,6 +2845,22 @@ ul.accordion-answer>li>div>p {
   bottom: 1370px;
 }
 
+.banner-trend-dop_img-podgotovka-aplle1 {
+  right: 24%;
+  bottom: 1157px;
+}
+
+.banner-trend-dop_img-podgotovka-aplle2 {
+  left: 85%;
+  bottom: 1793px;
+}
+
+.banner-trend-dop_img-podgotovka-icon1 {
+  left: 53%;
+  top: -3264px;
+  width: 210px;
+}
+
 .banner-trend-dop_img-logoped-aplle3 {
   left: 78%;
   bottom: 301px;
@@ -2843,7 +2877,11 @@ ul.accordion-answer>li>div>p {
   left: 40%;
   top: -702px;
 }
-
+.banner-trend-dop_img-podgotovka-line-form {
+  left: 40%;
+  top: -638px;
+  width: 265px;
+}
 .banner-trend-dop_img-logoped-icon1 {
   left: -14%;
   top: -2194px;
@@ -2858,7 +2896,7 @@ ul.accordion-answer>li>div>p {
 
 .banner-trend {
   min-height: 820px;
-  margin-top: -70px;
+  margin-top: -80px;
 }
 
 .banner-trend>div>section {
@@ -2897,6 +2935,22 @@ ul.accordion-answer>li>div>p {
   background-color: #D589CC;
 }
 
+.banner-trend_podgotovka {
+  background-color: #8DC5FF;
+}
+
+.banner-trend-dop_img-podgotovka {
+  left: 52%;
+  top: 81px;
+  width: 702px;
+  z-index: 999 !important;
+}
+
+.banner-trend-dop_img-podgotovka-circle {
+  left: 41%;
+  top: -2277px;
+  width: 706px;
+}
 
 /*-Анимированные цифры--*/
 .benefits-block {
@@ -2973,6 +3027,10 @@ ul.accordion-answer>li>div>p {
   color: #AF65A7;
 }
 
+.benefits-podgotovka>div>div>p.benefits__number {
+  color: #64A8EF;
+}
+
 .benefits-number-after::after {
   content: "+";
 }
@@ -2986,6 +3044,14 @@ ul.accordion-answer>li>div>p {
   width: 800px;
 }
 
+.two-section-img-efficiency-podgotovka {
+  position: relative;
+  z-index: -10;
+  bottom: 531px;
+  width: 800px;
+  left: 66%;
+}
+
 .efficiency {
   background: #FFFFFF;
   border: 1px solid #AE00D4;
@@ -2994,12 +3060,18 @@ ul.accordion-answer>li>div>p {
   box-shadow: 33px 33px 0px 0px #CC7DC3;
   padding: 50px 90px;
   height: fit-content;
+}
 
+.efficiency-podgotovka {
+  border: 1px solid #7BC4F9;
+  -webkit-box-shadow: 33px 33px 0px 0px #8DC5FF;
+  box-shadow: 33px 33px 0px 0px #8DC5FF;
 }
 
 .problems>div>section>div>div.efficiency {
   max-width: 550px !important;
   padding: 50px 70px !important;
+  margin-left: 10px;
 }
 
 .efficiency>p {
@@ -3095,7 +3167,9 @@ ul.accordion-answer>li>div>p {
   background: #FCEDFF;
   padding: 30px;
 }
-
+.problems-podgotovka {
+  background: #F3F9FF;
+}
 .problems>div>section>p {
   font-family: 'Nunito-Bold';
   font-style: normal;
@@ -3131,7 +3205,21 @@ ul.accordion-answer>li>div>p {
   left: -35px;
   top: 20px;
 }
-
+.problems-podgotovka>div>section>div>div>ul>li:nth-child(2n+1)::before {
+  background: #FF5642;
+}
+.problems-podgotovka>div>section>div>div>ul>li:nth-child(2n+2)::before {
+  background: #FFDD62;
+}
+.problems-podgotovka>div>section>div>div>ul>li:nth-child(2n+3)::before {
+  background: #46C1ED;
+}
+.problems-podgotovka>div>section>div>div>ul>li:nth-child(2n+4)::before {
+  background: #7DDF9B;
+}
+.problems-podgotovka>div>section>div>div>ul>li:nth-child(2n+5)::before {
+  background: #AE00D4;
+}
 .problems>div>section>div>div>ul>li>ul {
   margin-top: 15px;
 }
@@ -3140,6 +3228,18 @@ ul.accordion-answer>li>div>p {
 .form-trend {
   background: #9C16B9;
   padding: 30px;
+}
+
+.text-trend-block {
+  font-family: 'Nunito-Black';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 36px;
+  text-align: center;
+  margin-top: -60px;
+  margin-bottom: 50px;
+  color: #FFFFFF;
 }
 
 .form-trend>div>section>h4 {
@@ -3203,6 +3303,7 @@ ul.accordion-answer>li>div>p {
   font-size: 18px;
   line-height: 24px;
   color: #FFFFFF;
+  z-index: 1000;
 }
 
 .banner-trend-form>div>button {
@@ -3246,7 +3347,16 @@ ul.accordion-answer>li>div>p {
   background-size: auto;
   width: 100%;
 }
-
+.diagnostika-podgotovka {
+  height: fit-content;
+  min-height: 1000px;
+  background-image: url("https://cdn.nyutonika.ru/svg/подготовка-фон.svg");
+  background-position: 24% 24%;
+  background-repeat: no-repeat;
+  width: 100%;
+  padding: 100px;
+  margin-bottom: 300px;
+}
 ol.diagnostika-list {
   list-style-type: none;
   counter-reset: num;
@@ -3352,6 +3462,11 @@ ol.diagnostika-list li:before {
   right: 6%;
   top: -333px;
 }
+.banner-trend-dop_img-podgotovka-img7 {
+  bottom: 1000px;
+    width: 1500px;
+    margin: 0 auto;
+}
 
 /*Как  проходят уроки*/
 ol.lessons-list {
@@ -3393,7 +3508,7 @@ ol.lessons-list li:nth-child(1) {
 
 ol.lessons-list li:nth-child(2) {
   left: 75%;
-  top: -185px;
+  top: -323px;
 }
 
 ol.lessons-list li:nth-child(3) {
@@ -3485,6 +3600,31 @@ ol.lessons-list li:before {
   color: #24201E;
 }
 
+/*адаптив до 1580*/
+@media (max-width: 1580px) {
+  .banner-trend-dop_img-logoped-aplle2 {
+    left: 59%;
+    bottom: 1941px;
+    width: 1000px;
+  }
+
+  .banner-trend-dop_img-logoped-circle {
+    left: 32%;
+    top: -2137px;
+  }
+
+  .banner-trend-dop_img-logoped-icon1 {
+    left: -28%;
+    top: -2259px;
+    width: 161px;
+  }
+
+  .banner-trend-dop_img-logoped-icon2 {
+    left: 4%;
+    top: -2528px;
+    width: 149px;
+  }
+}
 
 /*адаптив до 1340*/
 @media (max-width: 1340px) {
@@ -3694,6 +3834,73 @@ ol.lessons-list li:before {
     top: -259px;
 
   }
+
+  ol.diagnostika-list {
+    margin: 10px 0 0 35%;
+  }
+
+  ol.diagnostika-list li:nth-child(even) {
+    left: 0;
+  }
+
+  ol.diagnostika-list li {
+    margin: 0 0 80px 0;
+  }
+
+  .line1 {
+    left: 0;
+    top: 32px;
+  }
+
+  .line2 {
+    left: -72px;
+    top: 32px;
+    transform: rotate(222deg);
+  }
+
+  .line3 {
+    left: 0;
+    top: -14px;
+  }
+
+  .line4 {
+    left: 0;
+    top: -2px;
+    transform: rotate(222deg);
+  }
+
+  .banner-trend-dop_img-logoped-img5 {
+    left: 65%;
+    top: -204px;
+  }
+
+  .banner-trend-dop_img-logoped {
+    left: 29%;
+    width: 760px;
+    top: 160px;
+  }
+
+  .banner-trend-dop_img-logoped-circle {
+    display: none !important;
+  }
+
+  .banner-trend-dop_img-logoped-icon2 {
+    left: 4%;
+    top: -2652px;
+    width: 125px;
+  }
+
+  ol.lessons-list li:nth-child(4) {
+    left: 72%;
+    top: 289px;
+  }
+
+  .lessons-list-img2 {
+    top: -982px;
+    left: 297px;
+    width: 665px;
+    z-index: 3 !important;
+  }
 }
 
 
@@ -3850,6 +4057,66 @@ ol.lessons-list li:before {
 
   .form-tab-1>li>a {
     font-size: 18px !important;
+  }
+
+  .banner-trend-dop_img-logoped {
+    left: 29%;
+    width: 807px;
+    top: 79px;
+  }
+
+  ol.lessons-list li:nth-child(1),
+  ol.lessons-list li:nth-child(2),
+  ol.lessons-list li:nth-child(3),
+  ol.lessons-list li:nth-child(4) {
+    left: 0%;
+    top: 0px;
+  }
+
+  ol.lessons-list {
+    margin: 25px 0 0 20%;
+  }
+
+  ol.lessons-list li>div {
+    padding: 25px 30px 25px 10%;
+    max-width: 85%;
+    max-height: fit-content;
+  }
+
+  ol.lessons-list li:before {
+    top: 10px;
+    left: -55px;
+  }
+
+  ol.lessons-list li {
+    margin-bottom: 25px;
+  }
+
+  .line6,
+  .line7,
+  .line8,
+  .line9 {
+    display: none !important;
+  }
+
+  .lessons-list-dop {
+    margin-top: 500px;
+    justify-content: center;
+    margin-bottom: -100px;
+  }
+
+  .lessons-list-img {
+    left: 0;
+    width: 700px;
+    max-width: 100%;
+    margin-left: 40px;
+  }
+
+  .lessons-list-img2 {
+    left: 0;
+    top: -988px;
+    width: 665px;
+    margin-left: 40px;
   }
 }
 
@@ -4290,7 +4557,7 @@ ol.lessons-list li:before {
   }
 
   .banner-trend {
-    min-height: 790px;
+    min-height: 700px;
   }
 
   .banner-trend-form>div>label {
@@ -4299,7 +4566,7 @@ ol.lessons-list li:before {
   }
 
   .banner-trend>div>section {
-    min-height: 750px;
+    min-height: 630px;
   }
 
   .banner-trend-text {
@@ -4309,48 +4576,82 @@ ol.lessons-list li:before {
     padding-top: 10px;
     padding-bottom: 10px;
   }
+
   .benefits__inner {
     max-width: 800px;
+  }
+
+  .benefits__number {
+    font-size: 46px;
+    line-height: 30px !important;
+  }
+
+  .benefits__title {
+    font-size: 15px;
+    line-height: 18px !important;
+    max-width: 160px;
+  }
+
+  .efficiency {
+    padding: 40px 20px 40px 50px;
+  }
+
+  .teacher-text-trend {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .form-trend>div>section>h4 {
+    font-size: 48px;
+    line-height: 52px;
+    padding-bottom: 40px;
+  }
+
+  .form-trend-list>div {
+    font-size: 22px;
+    line-height: 30px;
+    padding-bottom: 30px;
+  }
+
+  .form-trend-list>div>span {
+    top: 35px;
+    left: -40px;
+  }
+
+  .form-trend-list {
+    padding: 30px 40px;
+  }
+
+  .form-trend {
+    padding: 30px 0;
+  }
+
+  .form-trend>div>section {
+    margin: 10px 0px 10px;
+  }
+
+  .banner-trend-dop_img-logoped {
+    display: none !important;
+  }
+
+  .banner-trend-dop_img-logoped-aplle2 {
+    left: 39%;
+    bottom: 1111px;
+    width: 941px;
+  }
+
+  .banner-trend-dop_img-logoped-aplle1,
+  .banner-trend-dop_img-logoped-aplle3,
+  .banner-trend-dop_img-logoped-line-form {
+    display: none !important;
+  }
+  .text-trend-block {
+    font-size: 20px;
+    line-height: 22px;
+    margin-top: -15px;
+    margin-bottom: 50px;
 }
-.benefits__number {
-  font-size: 46px;
-  line-height: 30px !important;
-}
-.benefits__title {
-  font-size: 15px;
-  line-height: 18px !important;
-  max-width: 160px;
-}
-.efficiency {
-  padding: 40px 20px 40px 50px;
-}
-.teacher-text-trend {
-  font-size: 20px;
-  line-height: 30px;
-}
-.form-trend>div>section>h4 {
-  font-size: 48px;
-  line-height: 52px;
-  padding-bottom: 40px;
-}
-.form-trend-list>div {
-  font-size: 22px;
-  line-height: 30px;
-  padding-bottom: 30px;
-}
-.form-trend-list>div>span {
-  top: 35px;
-  left: -40px;
-}
-.form-trend-list {
-  padding: 30px 40px;
-}
-.form-trend {
-  padding: 30px 0;
-}
-.form-trend > div > section {
-  margin: 10px 0px 10px;
-}
+
 }
 
 
@@ -4425,19 +4726,23 @@ ol.lessons-list li:before {
   .two-section-contakt-img2 {
     top: -524px;
   }
-  .efficiency > div > .uk-card {
+
+  .efficiency>div>.uk-card {
     width: 50%;
     min-height: 310px;
   }
+
   .efficiency-blok-title {
     text-align: center;
-}
-.efficiency-blok-text {
-  text-align: center;
-}
-.frame .details {
-  height: 85%;
-}
+  }
+
+  .efficiency-blok-text {
+    text-align: center;
+  }
+
+  .frame .details {
+    height: 85%;
+  }
 }
 
 /*адаптив до 820*/
@@ -4585,15 +4890,35 @@ ol.lessons-list li:before {
     height: 80px;
     background-size: 80px 80px;
   }
+
   .title-trend-block {
     font-size: 36px;
     line-height: 38px;
     text-align: center;
-}
-.efficiency>p {
-  padding-bottom: 30px;
-  text-align: center;
-}
+  }
+
+  .efficiency>p {
+    padding-bottom: 30px;
+    text-align: center;
+  }
+
+  ol.diagnostika-list {
+    margin: 10px 0 0 25%;
+  }
+
+  .lessons-list-dop {
+    margin-top: 520px;
+    margin-bottom: -260px;
+  }
+
+  .lessons-list-img {
+    width: 600px;
+  }
+
+  .lessons-list-img2 {
+    top: -900px;
+    width: 570px;
+  }
 }
 
 /*адаптив до 670*/
@@ -4981,6 +5306,7 @@ ol.lessons-list li:before {
     width: 100%;
     margin-top: 30px;
   }
+
   .problems>div>section>p {
     font-family: 'Nunito-Bold';
     font-style: normal;
@@ -4989,15 +5315,37 @@ ol.lessons-list li:before {
     line-height: 24px;
     color: #2A3B4F;
     padding-bottom: 50px;
-}
-.problems>div>section {
-  padding: 5px;
-}
-.problems-img{
-  padding: 0px !important;
-  padding-left: 0px !important;
-  padding-right: 0px !important;
-}
+  }
+
+  .problems>div>section {
+    padding: 5px;
+  }
+
+  .problems-img {
+    padding: 0px !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+
+  .form-trend>div>section>h4 {
+    font-size: 36px;
+    line-height: 38px;
+    padding-bottom: 40px;
+  }
+
+  .lessons-list-dop {
+    margin-top: 520px;
+    margin-bottom: -400px;
+  }
+
+  .lessons-list-img {
+    width: 400px;
+  }
+
+  .lessons-list-img2 {
+    top: -735px;
+    width: 370px;
+  }
 }
 
 /*адаптив до 631*/
@@ -5098,6 +5446,10 @@ ol.lessons-list li:before {
   .notice-block {
     padding: 10px 10px;
   }
+
+  ol.diagnostika-list {
+    margin: 10px 0 0 10%;
+  }
 }
 
 /*адаптив до 561*/
@@ -5167,33 +5519,45 @@ ol.lessons-list li:before {
     height: 23px;
     min-width: 23px;
   }
+
   .benefits__element {
     width: 100%;
     margin-bottom: 25px;
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-.benefits__title {
-  text-align: center;
-}
-.benefits__number {
-  font-size: 65px;
-  line-height: 56px !important;
-}
-.efficiency > div > .uk-card {
-  width: 100%;
-  min-height: 245px;
-}
-.title-trend-block {
-  margin-left: -20px;
-}
-.efficiency>p {
-  margin-left: -20px;
-}
-.efficiency {
-  -webkit-box-shadow: 20px 33px 0px 0px #CC7DC3;
-  box-shadow: 20px 33px 0px 0px #cc7dc3;
+  }
+
+  .benefits__title {
+    text-align: center;
+  }
+
+  .benefits__number {
+    font-size: 65px;
+    line-height: 56px !important;
+  }
+
+  .efficiency>div>.uk-card {
+    width: 100%;
+    min-height: 245px;
+  }
+
+  .title-trend-block {
+    margin-left: -20px;
+  }
+
+  .efficiency>p {
+    margin-left: -20px;
+  }
+
+  .efficiency {
+    -webkit-box-shadow: 20px 33px 0px 0px #CC7DC3;
+    box-shadow: 20px 33px 0px 0px #cc7dc3;
+  }
+  .efficiency-podgotovka {
+    border: 1px solid #7BC4F9;
+    -webkit-box-shadow: 20px 33px 0px 0px #8DC5FF;
+    box-shadow: 20px 33px 0px 0px #8DC5FF;
 }
 }
 
@@ -5268,28 +5632,34 @@ ol.lessons-list li:before {
   .section-dop-contakt-bottom-img {
     bottom: 57px;
   }
+
   .banner-trend-title {
     padding-top: 65px;
     font-size: 36px;
     line-height: 36px;
-}
-.banner-trend-form {
-  width: 107%;
-}
-.banner-trend > div > section {
-  padding: 15px;
-}
-.problems>div>section>div>div>ul>li {
-  font-size: 18px;
-  line-height: 18px;
-}
-.problems>div>section>div>div>ul>li>ul>li {
-  font-size: 14px;
-  line-height: 14px;
-}
-.problems>div>section>div>div.efficiency {
-  padding: 30px 40px !important;
-}
+  }
+
+  .banner-trend-form {
+    width: 107%;
+  }
+
+  .banner-trend>div>section {
+    padding: 15px;
+  }
+
+  .problems>div>section>div>div>ul>li {
+    font-size: 18px;
+    line-height: 18px;
+  }
+
+  .problems>div>section>div>div>ul>li>ul>li {
+    font-size: 14px;
+    line-height: 14px;
+  }
+
+  .problems>div>section>div>div.efficiency {
+    padding: 30px 40px !important;
+  }
 }
 
 /*адаптив до 461*/
@@ -5367,14 +5737,85 @@ ol.lessons-list li:before {
   .regpass>.form-sign-in>fieldset>div>.form-icon-sign-in {
     left: 5% !important;
   }
+
   .efficiency-blok-title {
     font-size: 18px;
     line-height: 20px;
-}
-.frame>div.details>img {
-  max-width: 60px;
-  height: 60px;
-}
+  }
+
+  .frame>div.details>img {
+    max-width: 60px;
+    height: 60px;
+  }
+
+  .line1,
+  .line2,
+  .line3,
+  .line4,
+  .banner-trend-dop_img-logoped-img5,
+  .banner-trend-dop_img-logoped-img4,
+  .banner-trend-dop_img-logoped-img3,
+  .banner-trend-dop_img-logoped-img2 {
+    display: none !important;
+  }
+
+  ol.diagnostika-list li {
+    max-height: fit-content;
+    padding: 25px 20px 25px 40px;
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .form-trend>div>section>h4 {
+    font-size: 28px;
+    line-height: 30px;
+    padding-bottom: 32px;
+  }
+
+  .form-trend-list {
+    padding: 20px 20px;
+  }
+
+  .form-trend-list>div>span {
+    width: 16px;
+    height: 16px;
+  }
+
+  ol.diagnostika-list li:before {
+    width: 60px;
+    height: 60px;
+    font-size: 35px;
+    line-height: 63px;
+  }
+
+  .form-trend-list>div {
+    font-size: 18px;
+    line-height: 22px;
+    padding-bottom: 10px;
+  }
+
+  .section-ten-second>ul {
+    margin: 40px 10px;
+  }
+
+  .lessons-list-dop {
+    margin-top: 490px;
+    margin-bottom: -469px;
+  }
+
+  .lessons-list-img {
+    width: 350px;
+  }
+
+  .lessons-list-img2 {
+    top: -700px;
+    width: 330px;
+  }
+
+  .lessons-logoped {
+    margin-bottom: 300px;
+    margin-top: -100px;
+  }
 }
 
 /*адаптив до 420*/
@@ -5459,13 +5900,15 @@ ol.lessons-list li:before {
     line-height: 20px;
     margin: 20px 0px;
   }
+
   .banner-trend-form {
     width: 110%;
   }
+
   .title-trend-block {
     font-size: 28px;
     line-height: 28px;
-}
+  }
 }
 
 /*адаптив до 390*/
@@ -5515,5 +5958,28 @@ ol.lessons-list li:before {
 
   .form-2>fieldset>div>div>.uk-form-icon:not(.uk-form-icon-flip)~.uk-input {
     padding-right: 10px !important;
+  }
+
+  .lessons-list-img2 {
+    top: -685px;
+    width: 315px
+  }
+}
+
+/*адаптив до 376*/
+
+@media (max-width: 376px) {
+  .lessons-list-img {
+    width: 270px;
+  }
+
+  .lessons-list-img2 {
+    top: -630px;
+    width: 255px;
+  }
+
+  .lessons-list-dop {
+    margin-top: 490px;
+    margin-bottom: -555px;
   }
 }
