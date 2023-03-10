@@ -1094,11 +1094,11 @@ ul.menu-second-sub-mobile>li>a:hover {
 }
 
 li.uk-parent>a[aria-expanded="true"] .icon-menu-two {
-  background-image: url(https://cdn.nyutonika.ru/icons/Polygon3.svg);
+  background-image: url('https://cdn.nyutonika.ru/icons/Polygon3.svg');
 }
 
 li.uk-parent>a[aria-expanded="true"] .icon-menu-tree {
-  background-image: url(https://cdn.nyutonika.ru/icons/Polygon5.svg);
+  background-image: url('https://cdn.nyutonika.ru/icons/Polygon5.svg');
 }
 
 
@@ -1108,7 +1108,7 @@ li.uk-parent>a[aria-expanded="true"] .icon-menu-tree {
 .footer {
   height: fit-content;
   min-height: 450px;
-  background-image: url(https://cdn.nyutonika.ru/images/фон.png);
+  background-image: url('https://cdn.nyutonika.ru/images/фон.png');
   background-position: 50% 100%;
   background-repeat: no-repeat;
   background-size: contain;
@@ -2854,7 +2854,11 @@ ul.accordion-answer>li>div>p {
   left: 85%;
   bottom: 1793px;
 }
-
+.banner-trend-dop_img-malisham-aplle1 {
+  left: -500px;
+  top: -772px;
+  z-index: 998 !important;
+}
 .banner-trend-dop_img-podgotovka-icon1 {
   left: 53%;
   top: -3264px;
@@ -2877,11 +2881,13 @@ ul.accordion-answer>li>div>p {
   left: 40%;
   top: -702px;
 }
+
 .banner-trend-dop_img-podgotovka-line-form {
   left: 40%;
   top: -638px;
   width: 265px;
 }
+
 .banner-trend-dop_img-logoped-icon1 {
   left: -14%;
   top: -2194px;
@@ -2938,7 +2944,9 @@ ul.accordion-answer>li>div>p {
 .banner-trend_podgotovka {
   background-color: #8DC5FF;
 }
-
+.banner-trend_malisham {
+  background-color: #FFCF00;
+}
 .banner-trend-dop_img-podgotovka {
   left: 52%;
   top: 81px;
@@ -2951,7 +2959,12 @@ ul.accordion-answer>li>div>p {
   top: -2277px;
   width: 706px;
 }
-
+.banner-trend-dop_img-malisham {
+  left: 38%;
+  width: 1242px;
+  top: 68px;
+  z-index: 980 !important;
+}
 /*-Анимированные цифры--*/
 .benefits-block {
   z-index: 1200;
@@ -3030,7 +3043,9 @@ ul.accordion-answer>li>div>p {
 .benefits-podgotovka>div>div>p.benefits__number {
   color: #64A8EF;
 }
-
+.benefits-malisham>div>div>p.benefits__number {
+  color: #33C7A2;
+}
 .benefits-number-after::after {
   content: "+";
 }
@@ -3067,7 +3082,11 @@ ul.accordion-answer>li>div>p {
   -webkit-box-shadow: 33px 33px 0px 0px #8DC5FF;
   box-shadow: 33px 33px 0px 0px #8DC5FF;
 }
-
+.efficiency-malisham {
+  border: 1px solid #FFDD62;
+  -webkit-box-shadow: 33px 33px 0px 0px #FFDD62;
+  box-shadow: 33px 33px 0px 0px #FFDD62;
+}
 .problems>div>section>div>div.efficiency {
   max-width: 550px !important;
   padding: 50px 70px !important;
@@ -3167,8 +3186,12 @@ ul.accordion-answer>li>div>p {
   background: #FCEDFF;
   padding: 30px;
 }
+
 .problems-podgotovka {
   background: #F3F9FF;
+}
+.problems_malisham {
+  background: #FFFCEE;
 }
 .problems>div>section>p {
   font-family: 'Nunito-Bold';
@@ -3205,20 +3228,32 @@ ul.accordion-answer>li>div>p {
   left: -35px;
   top: 20px;
 }
+
 .problems-podgotovka>div>section>div>div>ul>li:nth-child(2n+1)::before {
   background: #FF5642;
 }
+
 .problems-podgotovka>div>section>div>div>ul>li:nth-child(2n+2)::before {
   background: #FFDD62;
 }
+
 .problems-podgotovka>div>section>div>div>ul>li:nth-child(2n+3)::before {
   background: #46C1ED;
 }
+
 .problems-podgotovka>div>section>div>div>ul>li:nth-child(2n+4)::before {
   background: #7DDF9B;
 }
+
 .problems-podgotovka>div>section>div>div>ul>li:nth-child(2n+5)::before {
   background: #AE00D4;
+}
+.problems>div>section>div>div.efficiency-malisham>ul>li:before {
+  background: #54D0B1;
+  width: 25px;
+  height: 25px;
+  left: -40px;
+  top: 25px;
 }
 .problems>div>section>div>div>ul>li>ul {
   margin-top: 15px;
@@ -3347,6 +3382,7 @@ ul.accordion-answer>li>div>p {
   background-size: auto;
   width: 100%;
 }
+
 .diagnostika-podgotovka {
   height: fit-content;
   min-height: 1000px;
@@ -3357,6 +3393,7 @@ ul.accordion-answer>li>div>p {
   padding: 100px;
   margin-bottom: 300px;
 }
+
 ol.diagnostika-list {
   list-style-type: none;
   counter-reset: num;
@@ -3377,6 +3414,19 @@ ol.diagnostika-list li {
   border-radius: 20px;
   max-width: 350px;
   max-height: 160px;
+  font-family: 'Nunito-Bold';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: #2A3B4F;
+}
+
+.diagnostika-podgotovka>div>section>ol.diagnostika-list li {
+  border: 1px solid #8DC5FF !important;
+  padding-top: 42px;
+  max-height: 7em;
+  height: fit-content;
 }
 
 ol.diagnostika-list li:nth-child(even) {
@@ -3403,6 +3453,10 @@ ol.diagnostika-list li:before {
   border-radius: 50%;
 }
 
+.diagnostika-podgotovka>div>section>ol.diagnostika-list li:before {
+  background: #8DC5FF !important;
+}
+
 .diagnostika-list-line {
   display: block;
   position: relative;
@@ -3427,7 +3481,24 @@ ol.diagnostika-list li:before {
   left: -99%;
   top: -14px;
 }
+.line10 {
+  left: 97%;
+  top: -14px;
+}
+.line11 {
+  left: -100%;
+  top: -29px;
+  width: 287px;
+}
+.line12 {
+  left: 97%;
+  top: -14px;
+}
 
+.line13 {
+  left: -104%;
+  top: -14px;
+}
 .banner-trend-dop_img-logoped-img1 {
   left: 120%;
   top: -375px;
@@ -3462,10 +3533,11 @@ ol.diagnostika-list li:before {
   right: 6%;
   top: -333px;
 }
+
 .banner-trend-dop_img-podgotovka-img7 {
-  bottom: 1000px;
-    width: 1500px;
-    margin: 0 auto;
+  bottom: 780px;
+  width: 1300px;
+  margin: 0 auto;
 }
 
 /*Как  проходят уроки*/
@@ -3868,7 +3940,27 @@ ol.lessons-list li:before {
     top: -2px;
     transform: rotate(222deg);
   }
-
+  .line10 {
+    left: 0;
+    top: 20px;
+    width: 244px;
+}
+.line11 {
+  left: -73px;
+  top: -29px;
+  transform: rotate(222deg);
+}
+.line12 {
+  left: 0;
+  top: 18px;
+  width: 224px;
+}
+.line13 {
+  left: 0;
+  top: 34px;
+  transform: rotate(222deg);
+  width: 231px;
+}
   .banner-trend-dop_img-logoped-img5 {
     left: 65%;
     top: -204px;
@@ -3901,6 +3993,9 @@ ol.lessons-list li:before {
     width: 665px;
     z-index: 3 !important;
   }
+  .diagnostika-podgotovka {
+    margin-bottom: 80px;
+}
 }
 
 
@@ -4118,6 +4213,12 @@ ol.lessons-list li:before {
     width: 665px;
     margin-left: 40px;
   }
+  .diagnostika-podgotovka > div > section> ol.diagnostika-list {
+    margin: 10px 0 0 20%;
+}
+.diagnostika-podgotovka {
+  margin-bottom: -150px;
+}
 }
 
 /*адаптив до 980*/
@@ -4178,6 +4279,12 @@ ol.lessons-list li:before {
   .section-dop-contakt-bottom-img {
     bottom: 90px;
   }
+  .diagnostika-podgotovka>div>section>ol.diagnostika-list li {
+    max-width: 100%;
+}
+.diagnostika-podgotovka > div > section> ol.diagnostika-list {
+  margin: 10px 0 0 5%;
+}
 }
 
 /*адаптив до 960*/
@@ -4645,13 +4752,16 @@ ol.lessons-list li:before {
   .banner-trend-dop_img-logoped-line-form {
     display: none !important;
   }
+
   .text-trend-block {
     font-size: 20px;
     line-height: 22px;
     margin-top: -15px;
     margin-bottom: 50px;
+  }
+  .diagnostika-podgotovka {
+    margin-bottom: -220px;
 }
-
 }
 
 
@@ -4743,6 +4853,9 @@ ol.lessons-list li:before {
   .frame .details {
     height: 85%;
   }
+  .diagnostika-podgotovka {
+    margin-bottom: -325px;
+}
 }
 
 /*адаптив до 820*/
@@ -5346,6 +5459,9 @@ ol.lessons-list li:before {
     top: -735px;
     width: 370px;
   }
+  .diagnostika-podgotovka {
+    margin-bottom: -260px;
+}
 }
 
 /*адаптив до 631*/
@@ -5554,11 +5670,17 @@ ol.lessons-list li:before {
     -webkit-box-shadow: 20px 33px 0px 0px #CC7DC3;
     box-shadow: 20px 33px 0px 0px #cc7dc3;
   }
+
   .efficiency-podgotovka {
     border: 1px solid #7BC4F9;
     -webkit-box-shadow: 20px 33px 0px 0px #8DC5FF;
     box-shadow: 20px 33px 0px 0px #8DC5FF;
-}
+  }
+  .efficiency-malisham {
+    border: 1px solid #FFDD62;
+    -webkit-box-shadow: 20px 33px 0px 0px #FFDD62;
+    box-shadow: 20px 33px 0px 0px #FFDD62;
+  }
 }
 
 /*адаптив до 521*/
