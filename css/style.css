@@ -3781,7 +3781,7 @@ ol.diagnostika-list li:before {
   height: 179px;
   background: #FFDD62;
   border: 0px;
-  content: url('https://cdn.nyutonika.ru/images/комфорт1.png');
+  /*content: url('https://cdn.nyutonika.ru/images/комфорт1.png');*/
 }
 .card-nachscola:nth-child(2n+1)>.info-nachscola>.title-nachscola{
   color: #FFDD62;
