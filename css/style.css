@@ -2834,7 +2834,12 @@ ul.accordion-answer>li>div>p {
   top: 133px;
   z-index: 999 !important;
 }
-
+.banner-trend-dop_img-nachscola {
+  left: 53%;
+  width: 529px;
+  top: 133px;
+  z-index: 999 !important;
+}
 .banner-trend-dop_img-logoped-aplle1 {
   right: 65%;
   top: 328px;
@@ -2854,11 +2859,13 @@ ul.accordion-answer>li>div>p {
   left: 85%;
   bottom: 1793px;
 }
+
 .banner-trend-dop_img-malisham-aplle1 {
   left: -500px;
   top: -772px;
   z-index: 998 !important;
 }
+
 .banner-trend-dop_img-podgotovka-icon1 {
   left: 53%;
   top: -3264px;
@@ -2944,8 +2951,12 @@ ul.accordion-answer>li>div>p {
 .banner-trend_podgotovka {
   background-color: #8DC5FF;
 }
+
 .banner-trend_malisham {
   background-color: #FFCF00;
+}
+.banner-trend_nachscola{
+  background-color: #33C7A2;
 }
 .banner-trend-dop_img-podgotovka {
   left: 52%;
@@ -2959,12 +2970,14 @@ ul.accordion-answer>li>div>p {
   top: -2277px;
   width: 706px;
 }
+
 .banner-trend-dop_img-malisham {
   left: 38%;
   width: 1242px;
   top: 68px;
   z-index: 980 !important;
 }
+
 /*-Анимированные цифры--*/
 .benefits-block {
   z-index: 1200;
@@ -3043,9 +3056,16 @@ ul.accordion-answer>li>div>p {
 .benefits-podgotovka>div>div>p.benefits__number {
   color: #64A8EF;
 }
+
 .benefits-malisham>div>div>p.benefits__number {
   color: #33C7A2;
 }
+
+.benefits-nachscola>div>div>p.benefits__number {
+  color: #229FA4;
+}
+
+
 .benefits-number-after::after {
   content: "+";
 }
@@ -3082,11 +3102,19 @@ ul.accordion-answer>li>div>p {
   -webkit-box-shadow: 33px 33px 0px 0px #8DC5FF;
   box-shadow: 33px 33px 0px 0px #8DC5FF;
 }
+
 .efficiency-malisham {
   border: 1px solid #FFDD62;
   -webkit-box-shadow: 33px 33px 0px 0px #FFDD62;
   box-shadow: 33px 33px 0px 0px #FFDD62;
 }
+
+.efficiency-nachscola {
+  border: 1px solid #33C7A2;
+  -webkit-box-shadow: 33px 33px 0px 0px #33C7A2;
+  box-shadow: 33px 33px 0px 0px #33C7A2;
+}
+
 .problems>div>section>div>div.efficiency {
   max-width: 550px !important;
   padding: 50px 70px !important;
@@ -3190,9 +3218,15 @@ ul.accordion-answer>li>div>p {
 .problems-podgotovka {
   background: #F3F9FF;
 }
+
 .problems_malisham {
   background: #FFFCEE;
 }
+
+.problems-nachscola {
+  background: #F1FFFB;
+}
+
 .problems>div>section>p {
   font-family: 'Nunito-Bold';
   font-style: normal;
@@ -3248,13 +3282,23 @@ ul.accordion-answer>li>div>p {
 .problems-podgotovka>div>section>div>div>ul>li:nth-child(2n+5)::before {
   background: #AE00D4;
 }
+
 .problems>div>section>div>div.efficiency-malisham>ul>li:before {
+  background: #54D0B1;
+  width: 30px;
+  height: 30px;
+  left: -40px;
+  top: 25px;
+}
+
+.problems>div>section>div>div.efficiency-nachscola>ul>li:before {
   background: #54D0B1;
   width: 25px;
   height: 25px;
   left: -40px;
   top: 25px;
 }
+
 .problems>div>section>div>div>ul>li>ul {
   margin-top: 15px;
 }
@@ -3394,6 +3438,25 @@ ul.accordion-answer>li>div>p {
   margin-bottom: 300px;
 }
 
+.diagnostika-malisham {
+  height: fit-content;
+  min-height: 1000px;
+  background-image: url("https://cdn.nyutonika.ru/svg/фон-малыщам-диагностика.svg");
+  background-position: 50% 100%;
+  background-repeat: no-repeat;
+  background-size: auto;
+  width: 100%;
+}
+.diagnostika-nachscola {
+  height: fit-content;
+  min-height: 1000px;
+  background-image: url("https://cdn.nyutonika.ru/svg/фон-диагностика-нач-школа.svg");
+  background-position: 50% 100%;
+  background-repeat: no-repeat;
+  background-size: auto;
+  width: 100%;
+  padding-top: 30px;
+}
 ol.diagnostika-list {
   list-style-type: none;
   counter-reset: num;
@@ -3427,6 +3490,30 @@ ol.diagnostika-list li {
   padding-top: 42px;
   max-height: 7em;
   height: fit-content;
+}
+
+.diagnostika-malisham>div>section>ol.diagnostika-list li {
+  border: 1px solid #FF5642 !important;
+}
+
+.diagnostika-malisham>div>section>ol.diagnostika-list li:nth-child(2n+1):before {
+  background: #FF5642;
+}
+
+.diagnostika-malisham>div>section>ol.diagnostika-list li:nth-child(2n+2):before {
+  background: #FF9501;
+}
+
+.diagnostika-malisham>div>section>ol.diagnostika-list li:nth-child(2n+3):before {
+  background: #46C1ED;
+}
+
+.diagnostika-malisham>div>section>ol.diagnostika-list li:nth-child(2n+4):before {
+  background: #33C7A2;
+}
+
+.diagnostika-malisham>div>section>ol.diagnostika-list li:nth-child(2n+5):before {
+  background: #FFDD62;
 }
 
 ol.diagnostika-list li:nth-child(even) {
@@ -3481,15 +3568,18 @@ ol.diagnostika-list li:before {
   left: -99%;
   top: -14px;
 }
+
 .line10 {
   left: 97%;
   top: -14px;
 }
+
 .line11 {
   left: -100%;
   top: -29px;
   width: 287px;
 }
+
 .line12 {
   left: 97%;
   top: -14px;
@@ -3499,6 +3589,17 @@ ol.diagnostika-list li:before {
   left: -104%;
   top: -14px;
 }
+
+.line15 {
+  left: -99%;
+  top: -17px;
+}
+
+.line17 {
+  left: -104%;
+  top: -14px;
+}
+
 .banner-trend-dop_img-logoped-img1 {
   left: 120%;
   top: -375px;
@@ -3540,6 +3641,187 @@ ol.diagnostika-list li:before {
   margin: 0 auto;
 }
 
+.banner-trend-dop_img-malisham-img1 {
+  left: -123%;
+  top: -815px;
+}
+
+.banner-trend-dop_img-malisham-img2 {
+  left: 66%;
+  top: -759px;
+}
+
+/* Timeline Container */
+.timeline-nachscola {
+  margin: 20px auto;
+  padding: 20px;
+}
+
+/* Card container */
+.card-nachscola {
+  position: relative;
+  max-width: 520px;
+  margin: 0 auto;
+}
+
+/* setting padding based on even or odd */
+.card-nachscola:nth-child(odd) {
+  padding: 30px 0 30px 30px;
+}
+
+.card-nachscola:nth-child(even) {
+  padding: 30px 30px 30px 0;
+}
+
+/* Global ::before */
+.card-nachscola::before {
+  content: "";
+  position: absolute;
+  width: 50%;
+  border: 1px dashed #9299a1;
+
+}
+
+/* Setting the border of top, bottom, left */
+.card-nachscola:nth-child(odd)::before {
+  left: 2px;
+  top: -3.5px;
+  bottom: -3.2px;
+  border-width: 3px 0 3px 3px;
+  border-radius: 50% 0 0 50%;
+  border-right: 2px dashed #fff;
+}
+
+/* Setting the border of top, bottom, right */
+.card-nachscola:nth-child(even)::before {
+  right: -2px;
+  top: -1px;
+  bottom: 0;
+  border-width: 3px 3px 3px 0;
+  border-radius: 0 50% 50% 0;
+}
+
+/* контур первой карточки */
+.card-nachscola:first-child::before {
+  border-radius: 50% 0 0 50%;
+  border-right: 2px dashed #fff;
+}
+
+/* Removing the border if it is the last card  and it's odd */
+.card-nachscola:last-child:nth-child(odd)::before {
+  border-bottom: 0;
+  border-bottom-left-radius: 0;
+  border-left: 2px dashed #fff;
+}
+
+/* Removing the border if it is the last card  and it's even */
+.card-nachscola:last-child:nth-child(even)::before {
+  border-bottom: 0;
+  border-bottom-right-radius: 0;
+   
+}
+
+/* Information about the timeline */
+.info-nachscola {
+  display: flex;
+  flex-direction: column;
+  color: #666;
+  padding: 35px;
+}
+
+.card-nachscola:nth-child(2n+1)>.info-nachscola {
+  padding-left: 200px;
+}
+
+.card-nachscola:nth-child(2n+2)>.info-nachscola {
+  padding-right: 200px;
+}
+
+/* Title of the card */
+.title-nachscola {
+  position: relative;
+  font-family: 'Nunito-Black';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 30px;
+  margin-bottom: 0;
+}
+
+/* Timeline dot  */
+.title-nachscola::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: white;
+  border-radius: 999px;
+  border: solid orangered;
+}
+
+/* text right if the card is even  */
+.card-nachscola:nth-child(even)>.info-nachscola>.title-nachscola {
+  text-align: right;
+}
+
+/* setting dot to the left if the card is odd */
+.card-nachscola:nth-child(odd)>.info-nachscola>.title-nachscola::before {
+  left: -45px;
+}
+
+/* setting dot to the right if the card is odd */
+.card-nachscola:nth-child(even)>.info-nachscola>.title-nachscola::before {
+  right: -45px;
+}
+
+.card-nachscola:nth-child(2n+1)>.info-nachscola>.title-nachscola::before {
+  left: -201px;
+  top: -32px;
+  width: 179px;
+  height: 179px;
+  background: #FFDD62;
+  border: 0px;
+  content: url('https://cdn.nyutonika.ru/images/комфорт1.png');
+}
+.card-nachscola:nth-child(2n+1)>.info-nachscola>.title-nachscola{
+  color: #FFDD62;
+}
+.card-nachscola:nth-child(2n+2)>.info-nachscola>.title-nachscola::before {
+  right: -195px;
+  top: -27px;
+  width: 170px;
+  height: 170px;
+  background: #FF5642;
+  border: 0px;
+}
+.card-nachscola:nth-child(2n+2)>.info-nachscola>.title-nachscola{
+  color: #FF5642;
+}
+ 
+.card-nachscola:nth-child(2n+3)>.info-nachscola>.title-nachscola::before {
+  left: -207px;
+  top: -48px;
+  width: 215px;
+  height: 215px;
+  background: #33C7A2;
+  border: 0px;
+}
+.card-nachscola:nth-child(2n+3)>.info-nachscola>.title-nachscola {
+  color: #33C7A2;
+  padding-left: 50px;
+}
+.card-nachscola:nth-child(2n+4)>.info-nachscola>.title-nachscola::before {
+  right: -194px;
+  top: -8px;
+  width: 130px;
+    height: 130px;
+    background: #8DC5FF;
+  border: 0px;
+}
+.card-nachscola:nth-child(2n+4)>.info-nachscola>.title-nachscola {
+  color: #7BC4F9;
+  padding-left: 50px;
+}
 /*Как  проходят уроки*/
 ol.lessons-list {
   list-style-type: none;
@@ -3940,27 +4222,54 @@ ol.lessons-list li:before {
     top: -2px;
     transform: rotate(222deg);
   }
+
   .line10 {
     left: 0;
     top: 20px;
     width: 244px;
-}
-.line11 {
-  left: -73px;
-  top: -29px;
-  transform: rotate(222deg);
-}
-.line12 {
-  left: 0;
-  top: 18px;
-  width: 224px;
-}
-.line13 {
-  left: 0;
-  top: 34px;
-  transform: rotate(222deg);
-  width: 231px;
-}
+  }
+
+  .line11 {
+    left: -73px;
+    top: -29px;
+    transform: rotate(222deg);
+  }
+
+  .line12 {
+    left: 0;
+    top: 18px;
+    width: 224px;
+  }
+
+  .line13 {
+    left: 0;
+    top: 34px;
+    transform: rotate(222deg);
+    width: 231px;
+  }
+
+  .line15 {
+    left: -60px;
+    top: -21px;
+    transform: rotate(222deg);
+  }
+
+  .line17 {
+    left: -44px;
+    top: 26px;
+    transform: rotate(209deg);
+  }
+
+  .banner-trend-dop_img-malisham-img2 {
+    left: 120%;
+    top: -759px;
+  }
+
+  .banner-trend-dop_img-malisham-img5 {
+    left: 110%;
+    top: -204px;
+  }
+
   .banner-trend-dop_img-logoped-img5 {
     left: 65%;
     top: -204px;
@@ -3993,9 +4302,10 @@ ol.lessons-list li:before {
     width: 665px;
     z-index: 3 !important;
   }
+
   .diagnostika-podgotovka {
     margin-bottom: 80px;
-}
+  }
 }
 
 
@@ -4213,12 +4523,14 @@ ol.lessons-list li:before {
     width: 665px;
     margin-left: 40px;
   }
-  .diagnostika-podgotovka > div > section> ol.diagnostika-list {
+
+  .diagnostika-podgotovka>div>section>ol.diagnostika-list {
     margin: 10px 0 0 20%;
-}
-.diagnostika-podgotovka {
-  margin-bottom: -150px;
-}
+  }
+
+  .diagnostika-podgotovka {
+    margin-bottom: -150px;
+  }
 }
 
 /*адаптив до 980*/
@@ -4279,12 +4591,14 @@ ol.lessons-list li:before {
   .section-dop-contakt-bottom-img {
     bottom: 90px;
   }
+
   .diagnostika-podgotovka>div>section>ol.diagnostika-list li {
     max-width: 100%;
-}
-.diagnostika-podgotovka > div > section> ol.diagnostika-list {
-  margin: 10px 0 0 5%;
-}
+  }
+
+  .diagnostika-podgotovka>div>section>ol.diagnostika-list {
+    margin: 10px 0 0 5%;
+  }
 }
 
 /*адаптив до 960*/
@@ -4759,9 +5073,10 @@ ol.lessons-list li:before {
     margin-top: -15px;
     margin-bottom: 50px;
   }
+
   .diagnostika-podgotovka {
     margin-bottom: -220px;
-}
+  }
 }
 
 
@@ -4853,9 +5168,10 @@ ol.lessons-list li:before {
   .frame .details {
     height: 85%;
   }
+
   .diagnostika-podgotovka {
     margin-bottom: -325px;
-}
+  }
 }
 
 /*адаптив до 820*/
@@ -5459,9 +5775,10 @@ ol.lessons-list li:before {
     top: -735px;
     width: 370px;
   }
+
   .diagnostika-podgotovka {
     margin-bottom: -260px;
-}
+  }
 }
 
 /*адаптив до 631*/
@@ -5676,10 +5993,17 @@ ol.lessons-list li:before {
     -webkit-box-shadow: 20px 33px 0px 0px #8DC5FF;
     box-shadow: 20px 33px 0px 0px #8DC5FF;
   }
+
   .efficiency-malisham {
     border: 1px solid #FFDD62;
     -webkit-box-shadow: 20px 33px 0px 0px #FFDD62;
     box-shadow: 20px 33px 0px 0px #FFDD62;
+  }
+
+  .efficiency-nachscola {
+    border: 1px solid #33C7A2;
+    -webkit-box-shadow: 20px 33px 0px 0px #33C7A2;
+    box-shadow: 20px 33px 0px 0px #33C7A2;
   }
 }
 
