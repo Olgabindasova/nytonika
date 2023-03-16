@@ -3073,7 +3073,9 @@ ul.accordion-answer>li>div>p {
 .benefits-srscola>div>div>p.benefits__number {
   color: #E08235;
 }
-
+.benefits-doprazvitie>div>div>p.benefits__number {
+  color: #D41B19;
+}
 .benefits-number-after::after {
   content: "+";
 }
@@ -3126,6 +3128,11 @@ ul.accordion-answer>li>div>p {
   border: 1px solid #FF8D44;
   -webkit-box-shadow: 33px 33px 0px 0px #FF8D44;
   box-shadow: 33px 33px 0px 0px #FF8D44;
+}
+.efficiency-doprazvitie {
+  border: 1px solid #FF5642;
+  -webkit-box-shadow: 33px 33px 0px 0px #FF5642;
+  box-shadow: 33px 33px 0px 0px #FF5642;
 }
 .problems>div>section>div>div.efficiency {
   max-width: 550px !important;
@@ -3241,6 +3248,9 @@ ul.accordion-answer>li>div>p {
 .problems-srscola {
   background: #FCFBF5;
 }
+.problems-doprazvitie {
+  background: #FFF8F7;
+}
 .problems>div>section>p {
   font-family: 'Nunito-Bold';
   font-style: normal;
@@ -3312,7 +3322,13 @@ ul.accordion-answer>li>div>p {
   left: -40px;
   top: 25px;
 }
-
+.problems>div>section>div>div.efficiency-doprazvitie>ul>li:before {
+  background: #FF5642;
+  width: 25px;
+  height: 25px;
+  left: -40px;
+  top: 25px;
+}
 .problems>div>section>div>div>ul>li>ul {
   margin-top: 15px;
 }
@@ -3471,6 +3487,26 @@ ul.accordion-answer>li>div>p {
   width: 100%;
   padding-top: 30px;
 }
+.diagnostika-srscola {
+  height: fit-content;
+  min-height: 1000px;
+  background-image: url("https://cdn.nyutonika.ru/svg/фон-диагностика-ср-школа2.svg");
+  background-position: 50% 30%;
+  background-repeat: no-repeat;
+  background-size: 167%;
+  width: 100%;
+  padding-top: 30px;
+}
+.diagnostika-doprazvitie {
+  height: fit-content;
+  min-height: 1321px;
+  background-image: url("https://cdn.nyutonika.ru/svg/фон-допразвитие3-диагностика.svg");
+  background-position: 17% 94%;
+  background-repeat: no-repeat;
+  background-size: 195%;
+  width: 100%;
+  padding-top: 30px;
+}
 ol.diagnostika-list {
   list-style-type: none;
   counter-reset: num;
@@ -3557,7 +3593,20 @@ ol.diagnostika-list li:before {
 .diagnostika-podgotovka>div>section>ol.diagnostika-list li:before {
   background: #8DC5FF !important;
 }
-
+.diagnostika-doprazvitie>div>section>ol.diagnostika-list li {
+  background: rgb(255 248 250 / 90%);
+  border: 1px solid #f0506e;
+}
+.diagnostika-doprazvitie>div>section>ol.diagnostika-list li:before {
+  content: counter(num);
+    top: -18px;
+    left: -16px;
+    width: 50px;
+    height: 50px;
+    background: #f0506e !important;
+    font-size: 29px;
+    line-height: 49px;
+}
 .diagnostika-list-line {
   display: block;
   position: relative;
@@ -3664,7 +3713,15 @@ ol.diagnostika-list li:before {
   left: 66%;
   top: -759px;
 }
-
+.banner-trend-dop_img-doprazvitie-img7 {
+  top: -74px;
+  left: 9%;
+}
+.banner-trend-dop_img-doprazvitie-img8 {
+  top: -901px;
+  left: 22%;
+  width: 1300px;
+}
 /* Timeline Container-srscola */
 
 .timeline-srscola {
@@ -3679,12 +3736,18 @@ ol.diagnostika-list li:before {
   content: '';
   position: absolute;
   width: 2px;
-  background: #FF8D44;
-  top: 150px;
+  background: repeating-linear-gradient(
+  180deg,
+  #FF8D44,
+  #FF8D44 10px,
+  #ffffff00 10px,
+  #ffffff00 20px
+);
+  top: 168px;
   bottom: 0;
   left: 45%;
   margin-left: -1px;
-  height: 83%;
+  height: 82%;
 }
 
 .container-srscola {
@@ -3726,7 +3789,13 @@ ol.diagnostika-list li:before {
   height: 2px;
   top: calc(50% - 1px);
   right: 44px;
-  background: #FF8D44;
+  background: repeating-linear-gradient(
+  270deg,
+  #FF8D44,
+  #FF8D44 10px,
+  #ffffff00 10px,
+  #ffffff00 20px
+);
   z-index: 1;
 }
 
@@ -3750,6 +3819,23 @@ ol.diagnostika-list li:before {
   font-size: 48px;
   line-height: 80px;
   color: #FFFFFF;
+}
+
+.container-srscola > span.srscola-cr {
+  width: 3px;
+  height: 17px;
+  background: #ff8d44;
+  display: block;
+  position: relative;
+  border-radius: 50%;
+  top: 137px;
+  right: 6px;
+  z-index: 1;
+  padding-left: 18px;
+}
+.container-srscola:nth-child(2n+1) > span.srscola-cr {
+  top: 137px;
+  right: -225px;
 }
 .container-srscola .date-srscola {
   position: absolute;
@@ -3781,7 +3867,6 @@ ol.diagnostika-list li:before {
   top: calc(50% - 20px);
   background: #FFFFFF;
   border: 2px solid #FF8D44;
-  /*border-radius: 40px;*/
   text-align: center;
   font-size: 18px;
   color: #000;
@@ -3828,29 +3913,56 @@ ol.diagnostika-list li:before {
 
 @media (max-width: 767.98px) {
   .timeline-srscola::after {
-    left: 90px;
+    left: 5px;
+    height: 81%;
   }
-
+  .content-srscola {
+    max-width: none;
+}
   .container-srscola {
     width: 100%;
-    padding-left: 120px;
-    padding-right: 30px;
-  }
-
+    padding-left: 30px;
+    padding-right: 0px;
+}
+.container-srscola > span {
+  width: 60px;
+  height: 60px;
+  background: #ff8d44;
+  display: block;
+  position: relative;
+  border-radius: 50%;
+  top: 17px;
+  right: 0;
+  left: 80%;
+  z-index: 1;
+  padding-left: 19px;
+  font-family: 'Nunito-Black';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 35px;
+  line-height: 63px;
+  color: #FFFFFF;
+}
   .container-srscola.right-srscola {
     left: 0%;
   }
 
-  .container-srscola.left-srscola::after, 
-  .container-srscola.right-srscola::after {
-    left: 82px;
-  }
+  .container-srscola.left-srscola::after, .container-srscola.right-srscola::after {
+    left: -3px;
+    top: calc(50% + 32px);
+}
 
-  .container-srscola.left-srscola::before,
-  .container-srscola.right-srscola::before {
-    left: 100px;
-    border-color: transparent #FF8D44 transparent transparent;
-  }
+.container-srscola.left-srscola::before, .container-srscola.right-srscola::before {
+  left: 8px;
+  border-color: transparent #FF8D44 transparent transparent;
+  top: calc(50% + 40px);
+  width: 16px;
+}
+.container-srscola:nth-child(2n+1) > span.srscola-cr, .container-srscola > span.srscola-cr  {
+  top: 124px;
+  right: 0;
+  left: -6px;
+}
 
   .container-srscola.left-srscola .date-srscola,
   .container-srscola.right-srscola .date-srscola {
@@ -3866,13 +3978,51 @@ ol.diagnostika-list li:before {
 
   .container-srscola.left-srscola .content-srscola,
   .container-srscola.right-srscola .content-srscola {
-    padding: 30px 30px 30px 90px;
-    border-radius: 500px 0 0 500px;
+    padding: 30px 30px 30px 30px;
   }
 }
-
-
-
+@media (max-width: 511px) {
+  .container-srscola:nth-child(2n+1) > span.srscola-cr, .container-srscola > span.srscola-cr {
+    top: 134px;
+    right: 0;
+    left: -6px;
+}
+}
+@media (max-width: 419px) {
+  .container-srscola:nth-child(2n+1) > span.srscola-cr, .container-srscola > span.srscola-cr {
+    top: 144px;
+    right: 0;
+    left: -6px;
+}
+.timeline-srscola::after {
+  height: 82%;
+  top: 175px;
+}
+}
+@media (max-width: 419px) {
+  .container-srscola:nth-child(2n+1) > span.srscola-cr, .container-srscola > span.srscola-cr {
+    top: 156px;
+    right: 0;
+    left: -6px;
+}
+.timeline-srscola::after {
+  height: 82%;
+  top: 187px;
+}
+}
+@media (max-width: 348px) {
+  .container-srscola:nth-child(2n+1) > span.srscola-cr, .container-srscola > span.srscola-cr {
+    top: 166px;
+}
+.timeline-srscola::after {
+  top: 197px;
+  height: 82.5%;
+}
+.timeline-srscola {
+  margin-top: -50px;
+  margin-bottom: 100px;
+}
+}
 /* Timeline Container */
 .timeline-nachscola {
   margin: 20px auto;
@@ -6231,6 +6381,11 @@ ol.lessons-list li:before {
     border: 1px solid #FF8D44;
     -webkit-box-shadow: 20px 33px 0px 0px #FF8D44;
     box-shadow: 20px 33px 0px 0px #FF8D44;
+  }
+  .efficiency-doprazvitie {
+    border: 1px solid #FF5642;
+    -webkit-box-shadow: 20px 33px 0px 0px #FF5642;
+    box-shadow: 20px 33px 0px 0px #FF5642;
   }
 }
 
