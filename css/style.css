@@ -2836,9 +2836,23 @@ ul.accordion-answer>li>div>p {
 }
 .banner-trend-dop_img-nachscola {
   left: 53%;
-  width: 529px;
-  top: 133px;
+  top: 27px;
   z-index: 999 !important;
+  height: 1000px;
+}
+.banner-trend-dop_img-nachscola-circle {
+  left: 0%;
+  bottom: 762px;
+}
+.banner-trend-dop_img-nachscola-aplle1 {
+  right: 42%;
+  bottom: 179px;
+}
+.banner-trend-dop_img-nachscola-aplle2 {
+  left: 74%;
+  bottom: 771px;
+  max-width: 779px;
+  z-index: 1000 !important;
 }
 .banner-trend-dop_img-logoped-aplle1 {
   right: 65%;
@@ -4309,13 +4323,37 @@ ol.lessons-list li:before {
   width: 665px;
   z-index: 3 !important;
 }
-
+.lessons-list-img3 {
+  top: -622px;
+  left: 263px;
+  width: 737px;
+  z-index: 3 !important;
+}
+.lessons-list-img4 {
+  top: -1035px;
+  left: 306px;
+  width: 643px;
+  z-index: 3 !important;
+}
 .banner-trend-dop_img-logoped-aplle4 {
   bottom: 330px;
   left: 707px;
   width: 600px;
 }
-
+.banner-trend-dop_img-podgotovka-aplle3 {
+  bottom: 330px;
+  left: 0px;
+  width: 600px;
+}
+.banner-trend-dop_img-nachsc-aplle2 {
+  bottom: 608px;
+  left: 85%;
+}
+.banner-trend-dop_img-nachsc-aplle3 {
+  bottom: 330px;
+  left: -133px;
+  width: 550px;
+}
 /*Заголовки страницы напрапвлений*/
 .title-trend-block {
   font-family: 'Nunito-Black';
@@ -4350,8 +4388,18 @@ ol.lessons-list li:before {
     top: -2528px;
     width: 149px;
   }
+  .banner-trend-dop_img-podgotovka-aplle1 {
+    right: 40%;
+    bottom: 1157px;
 }
-
+}
+/*адаптив до 1390*/
+@media (max-width: 1390px){
+  .banner-trend-dop_img-nachscola-circle {
+    left: 35%;
+    bottom: 1384px;
+}
+}
 /*адаптив до 1340*/
 @media (max-width: 1340px) {
   .teacher-arrow.uk-position-center-right-out {
@@ -4411,6 +4459,10 @@ ol.lessons-list li:before {
   .section-dop2-reg-img {
     top: 310px;
   }
+  .banner-trend-dop_img-podgotovka-aplle1 {
+    right: 40%;
+    bottom: 1616px;
+}
 }
 
 /*адаптив до 1200*/
@@ -4597,15 +4649,16 @@ ol.lessons-list li:before {
 
   .line10 {
     left: 0;
-    top: 20px;
-    width: 244px;
-  }
+    top: 54px;
+    width: 161px;
+}
 
-  .line11 {
-    left: -73px;
-    top: -29px;
-    transform: rotate(222deg);
-  }
+.line11 {
+  left: 58px;
+  top: -8px;
+  transform: rotate(222deg);
+  width: 300px;
+}
 
   .line12 {
     left: 0;
@@ -4674,7 +4727,7 @@ ol.lessons-list li:before {
     width: 665px;
     z-index: 3 !important;
   }
-
+  
   .diagnostika-podgotovka {
     margin-bottom: 80px;
   }
@@ -4895,7 +4948,18 @@ ol.lessons-list li:before {
     width: 665px;
     margin-left: 40px;
   }
-
+  .lessons-list-img3 {
+    top: -544px;
+    left: 58px;
+    width: 737px;
+    z-index: 3 !important;
+}
+.lessons-list-img4 {
+  top: -977px;
+  left: 55px;
+  width: 643px;
+  z-index: 3 !important;
+}
   .diagnostika-podgotovka>div>section>ol.diagnostika-list {
     margin: 10px 0 0 20%;
   }
@@ -4976,6 +5040,14 @@ ol.lessons-list li:before {
 /*адаптив до 960*/
 
 @media (max-width: 959.5px) {
+
+  .banner-trend-dop_img-podgotovka, .banner-trend-dop_img-nachscola, .banner-trend-dop_img-nachscola-circle, .banner-trend-dop_img-nachscola-aplle1  {
+    display: none !important;
+  }
+  .banner-trend-dop_img-podgotovka-line-form {
+    display: none !important;
+}
+
   .one-section {
     justify-content: center !important;
     align-items: center !important;
@@ -5549,6 +5621,25 @@ ol.lessons-list li:before {
 /*адаптив до 820*/
 
 @media (max-width: 820px) {
+  .diagnostika-podgotovka>div>section>ol.diagnostika-list {
+    margin: 10px 0 0 10px;
+}
+  .lessons-list-img3 {
+    top: -524px;
+    left: 19px;
+    width: 600px;
+    z-index: 3 !important;
+}
+.diagnostika-podgotovka {
+  padding: 10px;
+  margin-bottom: -100px;
+}
+.lessons-list-img4 {
+  top: -868px;
+  left: 19px;
+  width: 519px;
+  z-index: 3 !important;
+}
 
   .seven-section-margin-mobile {
     margin-bottom: 360px;
@@ -5746,6 +5837,10 @@ ol.lessons-list li:before {
 /*адаптив до 650*/
 
 @media (max-width: 650px) {
+  .lessons-list-dop2 {
+    margin-top: 520px !important;
+    margin-bottom: -280px !important;
+  }
   h2 {
     font-size: 28px;
     line-height: 28px;
@@ -6149,13 +6244,53 @@ ol.lessons-list li:before {
   }
 
   .diagnostika-podgotovka {
-    margin-bottom: -260px;
+    margin-bottom: -150px;
   }
 }
 
 /*адаптив до 631*/
 
 @media (max-width: 631px) {
+  .card-nachscola::before, .card-nachscola >.info-nachscola>.title-nachscola::before {
+    display: none !important;
+}
+.card-nachscola:nth-child(2n+1) >.info-nachscola {
+  padding-left: 0px !important; 
+}
+.card-nachscola:nth-child(even)>.info-nachscola>.title-nachscola {
+  text-align: left;
+}
+.card-nachscola:nth-child(2n+3)>.info-nachscola>.title-nachscola, .card-nachscola:nth-child(2n+4)>.info-nachscola>.title-nachscola {
+  padding-left: 0px;
+}
+.card-nachscola:nth-child(odd) {
+  padding: 30px 0 30px 0px;
+}
+.info-nachscola {
+  padding: 0px;
+}
+.card-nachscola:nth-child(2n+2)>.info-nachscola {
+  padding-right: 0px;
+}
+.diagnostika-nachscola {
+  min-height: 700px;
+}
+  .lessons-list-dop2 {
+    margin-top: 520px !important;
+    margin-bottom: -345px !important;
+}
+.lessons-list-img3 {
+  top: -524px;
+  left: 19px;
+  width: 484px;
+  z-index: 3 !important;
+}
+.lessons-list-img4 {
+  top: -789px;
+  left: 19px;
+  width: 436px;
+  z-index: 3 !important;
+}
   .menu-slide {
     max-width: 94% !important;
   }
@@ -6392,7 +6527,20 @@ ol.lessons-list li:before {
 /*адаптив до 521*/
 
 @media (max-width: 520px) {
-
+  .banner-trend-dop_img-logoped-img3 {
+    left: -137%;
+    top: -375px;
+}
+  .lessons-list-dop2 {
+    margin-top: 520px !important;
+    margin-bottom: -421px !important;
+}
+.lessons-list-img4 {
+  top: -751px;
+  left: 16px;
+  width: 369px;
+  z-index: 3 !important;
+}
   .section-block-button {
     width: 85px;
     height: 85px;
@@ -6649,6 +6797,16 @@ ol.lessons-list li:before {
 /*адаптив до 420*/
 
 @media (max-width: 420px) {
+  .lessons-list-dop2 {
+    margin-top: 520px !important;
+    margin-bottom: -516px !important;
+}
+.lessons-list-img4 {
+  top: -721px;
+  left: 16px;
+  width: 321px;
+  z-index: 3 !important;
+}
 
   .two-section-mobile>div>ul.uk-nav-default.uk-nav>li.uk-parent.uk-open>ul.uk-nav-sub {
 
@@ -6797,6 +6955,16 @@ ol.lessons-list li:before {
 /*адаптив до 376*/
 
 @media (max-width: 376px) {
+  .lessons-list-dop2 {
+    margin-top: 520px !important;
+    margin-bottom: -569px !important;
+}
+.lessons-list-img4 {
+  top: -693px;
+  left: 16px;
+  width: 282px;
+  z-index: 3 !important;
+}
   .lessons-list-img {
     width: 270px;
   }
