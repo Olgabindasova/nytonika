@@ -2834,11 +2834,108 @@ ul.accordion-answer>li>div>p {
   top: 133px;
   z-index: 999 !important;
 }
+.banner-trend-dop_img-doprazvitie {
+  left: 49%;
+  max-width: 1031px;
+  height: min-content;
+  top: 27px;
+  z-index: 999 !important;
+}
+.banner-trend-dop_img-doprazvitie-circle {
+  width: 35%;
+  bottom: 1259px;
+  right: -43%;
+}
+.banner-trend-dop_img-doprazvitie-aplle1 {
+  right: 28%;
+  top: -635px;
+}
+.banner-trend-dop_img-doprazvitie-aplle2 {
+  left: 17%;
+  bottom: 980px;
+  max-width: 42%;
+}
+.banner-trend-dop_img-doprazvitie-icon2 {
+  left: 4%;
+  top: -1813px;
+}
+.banner-trend-dop_img-doprazvitie-icon1 {
+  top: -1571px;
+  width: 207px;
+}
+@media (max-width: 1800px) {
+  .banner-trend-dop_img-doprazvitie-aplle2 {
+    left: 72%;
+    bottom: 1862px;
+    max-width: 42%;
+}
+.banner-trend-dop_img-doprazvitie-circle {
+  width: 35%;
+  bottom: 1322px;
+  right: 8%;
+}
+.banner-trend-dop_img-doprazvitie-icon1 {
+  top: -1681px;
+  width: 207px;
+  right: 32%;
+}
+.banner-trend-dop_img-doprazvitie-icon2 {
+  left: -37%;
+  top: -1987px;
+}
+}
+@media (max-width: 1550px) {
+  .banner-trend-dop_img-doprazvitie-icon1 {
+    top: -1895px;
+    width: 207px;
+    right: 32%;
+}
+}
+@media (max-width: 1250px) {
+  .banner-trend-dop_img-doprazvitie-circle {
+    width: 35%;
+    bottom: 1245px;
+    right: 8%;
+}
+.banner-trend-dop_img-doprazvitie-aplle1 {
+  right: 45%;
+  top: -635px;
+}
+.banner-trend-dop_img-doprazvitie-icon1 {
+  top: -1487px;
+  width: 150px;
+  right: 32%;
+}
+}
+
 .banner-trend-dop_img-nachscola {
   left: 53%;
   top: 27px;
   z-index: 999 !important;
   height: 1000px;
+}
+.banner-trend-dop_img-srscola {
+  left: 40%;
+  width: 1188px;
+  top: 120px;
+  z-index: 999 !important;
+}
+.banner-trend-dop_img-srscola-circle {
+  left: -11%;
+  top: -1471px;
+  z-index: 999!important;
+}
+.banner-trend-dop_img-srscola-aplle1 {
+  right: 24%;
+  top: -739px;
+}
+.banner-trend-dop_img-srscola-aplle2 {
+  left: 76%;
+  bottom: 2000px;
+}
+.banner-trend-dop_img-srscola-icon1 {
+  left: -21%;
+  bottom: 1763px;
 }
 .banner-trend-dop_img-nachscola-circle {
   left: 0%;
@@ -2879,7 +2976,16 @@ ul.accordion-answer>li>div>p {
   top: -772px;
   z-index: 998 !important;
 }
+.banner-trend-dop_img-malisham-aplle2 {
+  left: 66%;
+  bottom: 2323px;
 
+}
+.banner-trend-dop_img-malisham-ris1 {
+  left: -2%;
+  bottom: 2138px;
+  
+}
 .banner-trend-dop_img-podgotovka-icon1 {
   left: 53%;
   top: -3264px;
@@ -3346,7 +3452,21 @@ ul.accordion-answer>li>div>p {
 .problems>div>section>div>div>ul>li>ul {
   margin-top: 15px;
 }
-
+.problems>div>section>div>div.efficiency-srscola>ul>li:nth-child(2n+1)::before {
+  background: #54D0B1;
+}
+.problems>div>section>div>div.efficiency-srscola>ul>li:nth-child(2n+2)::before {
+  background: #FFDD62;
+}
+.problems>div>section>div>div.efficiency-srscola>ul>li:nth-child(2n+3)::before {
+  background: #98E0EC;
+}
+.problems>div>section>div>div.efficiency-srscola>ul>li:nth-child(2n+4)::before {
+  background: #FF5642;
+}
+.problems>div>section>div>div.efficiency-srscola>ul>li:nth-child(2n+5)::before {
+  background: #CC7DC3;
+}
 /*Блок с формой*/
 .form-trend {
   background: #9C16B9;
@@ -4737,6 +4857,21 @@ ol.lessons-list li:before {
 /*адаптив до 1080*/
 
 @media (max-width: 1080px) {
+  .banner-trend-dop_img-malisham-aplle1 {
+    left: -702px;
+    top: -772px;
+    z-index: 998 !important;
+}
+.banner-trend-dop_img-malisham {
+  left: 18%;
+  width: 1242px;
+  top: 68px;
+  z-index: 980 !important;
+}
+.banner-trend-dop_img-malisham-aplle2 {
+  left: 63%;
+  bottom: 2323px;
+}
   h1 {
     font-size: 58px;
   }
@@ -5040,8 +5175,8 @@ ol.lessons-list li:before {
 /*адаптив до 960*/
 
 @media (max-width: 959.5px) {
-
-  .banner-trend-dop_img-podgotovka, .banner-trend-dop_img-nachscola, .banner-trend-dop_img-nachscola-circle, .banner-trend-dop_img-nachscola-aplle1  {
+   
+  .banner-trend-dop_img-doprazvitie, .banner-trend-dop_img-srscola, .banner-trend-dop_img-srscola-aplle1,.banner-trend-dop_img-srscola-aplle2, .banner-trend-dop_img-malisham-aplle2, .banner-trend-dop_img-malisham-aplle1, .banner-trend-dop_img-malisham, .banner-trend-dop_img-podgotovka, .banner-trend-dop_img-nachscola, .banner-trend-dop_img-nachscola-circle, .banner-trend-dop_img-nachscola-aplle1  {
     display: none !important;
   }
   .banner-trend-dop_img-podgotovka-line-form {
@@ -6724,7 +6859,7 @@ ol.lessons-list li:before {
     height: 60px;
   }
 
-  .line1,
+  .line1, .line15, .line17,
   .line2,
   .line3,
   .line4,
