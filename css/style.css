@@ -7114,3 +7114,38 @@ ol.lessons-list li:before {
     margin-bottom: -555px;
   }
 }
+/*----дополнительные стили для блока с пояснениями и для подвала, потом эти стили можно будет убрать----*/
+
+.trend-nav-item > ul > li > p {
+  padding-top: 50px !important;
+  padding: 20px;
+  font-family: 'Nunito-Bold';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 30px;
+  border-top: 1px solid #AE00D4;
+}
+
+.trend-nav-item > ul > li > ul {
+  padding-bottom: 50px;
+  padding-top: 5%;
+}
+.trend-nav-item > ul > li {
+  min-height: 400px;
+}
+.two-section-mobile > div > ul > li > ul > li > p {
+  padding-top: 20px !important;
+    padding: 20px;
+    font-family: 'Nunito-Bold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    border-top: 1px solid #AE00D4;
+}
+
+footer > div > div.footer-content >div.footer-content_item:nth-child(2) {
+  justify-content: flex-start !important;
+}
