@@ -2017,7 +2017,9 @@ a.tab-button-reviews {
   display: block;
 }
 
-
+.section-eight > div > ul#switcher-id > li > div > ul > li > div > img {
+  border-radius: 20px;
+}
 
 /*9  секция Хотите бесплатно заниматься с детьми сами?*/
 
