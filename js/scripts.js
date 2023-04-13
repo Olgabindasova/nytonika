@@ -14,7 +14,15 @@ $(document).ready(function(){
   $("html, body").animate({ scrollTop: 0 }, 600);
   return false;
   });
-   
+   if(window.location.hash) {
+    var hash = window.location.hash;
+
+    var modal = UIkit.modal(hash);
+
+    if ( modal ) {
+        modal.show();
+    }
+}
   });
 
 $(function() {
