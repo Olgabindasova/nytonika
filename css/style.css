@@ -390,7 +390,9 @@ h4 {
 .color12 {
   background-color: #54D0B1;
 }
-
+.color13 {
+  background-color: #AE00D4;
+}
 /*кнопки*/
 
 
@@ -1614,7 +1616,7 @@ h4.card-teacher-title {
 }
 
 .card-teacher-content>.uk-label {
-  height: 40px;
+  height: 35px;
   padding: 15px 30px;
   text-transform: none;
   background: #FFFFFF;
@@ -1622,10 +1624,11 @@ h4.card-teacher-title {
   font-family: 'Nunito-Bold';
   font-style: normal;
   font-weight: 700;
-  font-size: 17px;
-  line-height: 13px;
+  font-size: 12px;
+  line-height: 9px;
   border-radius: 25px;
   width: fit-content;
+  left: 188px;
 }
 
 .teacher-label-color-one {
@@ -3415,20 +3418,23 @@ ul.accordion-answer>li>div>p {
   background: #FF5642;
 }
 
-.problems-podgotovka>div>section>div>div>ul>li:nth-child(2n+2)::before {
+.problems-podgotovka>div>section>div>div>ul>li:nth-child(2n)::before {
   background: #FFDD62;
 }
 
-.problems-podgotovka>div>section>div>div>ul>li:nth-child(2n+3)::before {
+.problems-podgotovka>div>section>div>div>ul>li:nth-child(3n)::before {
   background: #46C1ED;
 }
 
-.problems-podgotovka>div>section>div>div>ul>li:nth-child(2n+4)::before {
+.problems-podgotovka>div>section>div>div>ul>li:nth-child(3n+4)::before {
   background: #7DDF9B;
 }
 
-.problems-podgotovka>div>section>div>div>ul>li:nth-child(2n+5)::before {
+.problems-podgotovka>div>section>div>div>ul>li:nth-child(5n)::before {
   background: #AE00D4;
+}
+.problems-podgotovka>div>section>div>div>ul>li:nth-child(6n)::before {
+  background: #FF5642;
 }
 
 .problems>div>section>div>div.efficiency-malisham>ul>li:before {
@@ -4606,7 +4612,7 @@ ol.lessons-list li:before {
   }
 
   .card-teacher-content>.uk-card-badge {
-    left: 165px;
+    left: 140px;
   }
 
   .five-section-img1 {
@@ -6101,7 +6107,7 @@ ol.lessons-list li:before {
 
   .card-teacher-content>.uk-label {
     font-size: 15px;
-    line-height: 15px;
+    line-height: 10px;
   }
 
   .card-teacher-content {
