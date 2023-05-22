@@ -861,6 +861,12 @@ header {
   color: #AE00D4 !important;
 }
 
+.header-desktop > .uk-navbar-nav {
+  min-width: 400px;
+  justify-content: center;
+}
+
+
 
 .header-menu.uk-open::before {
   position: relative;
