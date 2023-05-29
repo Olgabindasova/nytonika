@@ -866,7 +866,9 @@ header {
   justify-content: center;
 }
 
-
+.header-desktop >ul > li > div {
+  left: 27% !important;
+}
 
 .header-menu.uk-open::before {
   position: relative;
@@ -7167,4 +7169,140 @@ ol.lessons-list li:before {
 
 footer > div > div.footer-content >div.footer-content_item:nth-child(2) {
   justify-content: flex-start !important;
+}
+
+/*----Cтили для страницы Политика Конфинденциальности----*/
+
+ul.punkt2 li {
+  color: #24201E;
+  font-family: "Nunito-Bold";
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+  font-size: 16px;
+  padding: 10px 0px 10px 60px;
+}
+
+ul.punkt2 li::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #9c16b9;
+  position: relative;
+  display: block;
+  left: -20px;
+  top: 15px;
+}
+
+.politik>p {
+  color: #24201E;
+  font-family: "Nunito-Bold";
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  font-size: 20px;
+  padding: 25px 0px 25px 25px;
+  /*text-align: justify;*/
+}
+.punkt {
+  text-align: left;
+} 
+table.punkt th{
+color: #9c16b9;
+font-family: "Nunito-Bold";
+font-style: normal;
+font-weight: 700;
+line-height: 24px;
+font-size: 18px;
+padding: 25px 0px 25px 0px;
+}
+table.punkt tr {
+border-bottom: 1px solid #ccc;
+}
+table.punkt td{
+color: #24201E;
+font-family: "Nunito-Bold";
+font-style: normal;
+font-weight: 700;
+line-height: 18px;
+font-size: 16px;
+padding: 10px 0px 10px 0px;
+}
+table.punkt td >ul >li {
+color: #24201E;
+font-family: "Nunito-Bold";
+font-style: normal;
+font-weight: 700;
+line-height: 18px;
+font-size: 16px;
+padding: 5px 0px 5px 0px;
+}
+table.punkt td >ul >li::before {
+content: "";
+width: 3px;
+height: 3px;
+border-radius: 50%;
+background: #9c16b9;
+position: relative;
+display: block;
+left: -20px;
+top: 10px;
+}
+@media screen and (max-width: 600px) {
+
+.politik>h1 {
+  font-size: 36px;
+  line-height: 33px;
+} 
+.politik>h4 {
+  font-size: 22px;
+} 
+.politik>p {
+  line-height: 20px;
+  font-size: 16px;
+  padding: 10px 0px 10px 25px;
+  /* text-align: justify; */
+}
+ul.punkt2 li {
+  font-family: "Nunito";
+  font-weight: 400;
+  line-height: 16px;
+  font-size: 14px;
+  padding: 10px 0px 10px 50px;
+}
+table.punkt {
+border: 0;
+}
+
+table.punkt thead {
+content: attr(data-label);
+float: left;
+text-transform: uppercase;
+font-weight: bold;
+}
+
+table.punkt tr {
+margin-bottom: 10px;
+display: block;
+border-bottom: 2px solid #ddd;
+}
+
+table.punkt td {
+display: block;
+text-align: left;
+font-size: 16px;
+border-bottom: 1px dotted #ccc;
+border-right: 1px solid transparent;
+}
+table.punkt td >ul >li {
+  font-family: "Nunito";
+  font-weight: 400;
+  line-height: 18px;
+  font-size: 16px;
+  padding: 5px 0px 5px 25px;
+}
+table.punkt td:last-child {
+border-bottom: 0;
+}
 }
