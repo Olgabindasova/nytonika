@@ -1,0 +1,437 @@
+/*---------Основные Блоки-----------*/
+
+.lk-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100%;
+    min-height: 100vh;
+}
+
+.aside-lk {
+    z-index: 1;
+    background-color: #AE00D4;
+    width: 150px;
+    height: 100%;
+    flex-direction: column;
+    transition: 0.5s 0.5s;
+    height: 100%;
+    min-height: 100vh;
+}
+
+.section-lk {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    height: 100%;
+    align-content: space-between;
+}
+
+.aside-lk.active {
+    width: 400px;
+}
+
+.aside-lk_logo {
+    height: 100px;
+    background: #fff;
+    border-right: 2px solid #AE00D4;
+    display: flex;
+    padding: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.aside-lk_menu {
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    padding-top: 25px;
+}
+.aside-lk_all {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.aside-lk_all_contact{
+    border-top: 1px solid #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.aside-lk_all_contact > div {
+    padding: 10px 10px;
+}
+.aside-lk_all_contact > div > p{
+    font-size: 12px;
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+    line-height: 30px;
+}
+.aside-lk_all_contact > div > a {
+    font-size: 12px;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+}
+.aside-lk_all_contact > div > div > a > svg {
+    fill: #AE00D4;
+}
+.aside-lk_all_contact_icon {
+    width: 30px;
+    height: 30px;
+}
+.as-social [class*=as-icon-telegram], .as-social [class*=as-icon-viber]{
+    color:#fff;
+    background-color:#AE00D4;
+    border-radius:50%;
+    transition-property:border-radius,background-color;
+}
+[class*=as-icon-]:hover{color:#fff;border-radius:10px}
+
+
+.aside-lk.active > .aside-lk_all > .aside-lk_all_contact {
+    border-top: 1px solid #fff;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    align-content: flex-start;
+    justify-content: center;
+}
+
+
+
+
+
+.header-top-lk {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+}
+.header-top-lk_profile {
+    display: flex;
+    align-items: center;
+}
+.header-top-lk_profile_title{
+    font-weight: 700;
+    font-size: 14px;
+    color: #2A3B4F;
+    line-height: 18px;
+}
+.header-top-lk_profile_name{
+    font-weight: 700;
+    font-size: 14px;
+    color: #AE00D4;
+    line-height: 16px;
+}
+.header-top-lk_profile_icon {
+    width: 50px;
+    height: 50px;
+    padding: 9px;
+    border: 2px solid #AE00D4;
+    border-radius: 25px;
+    color: #AE00D4;
+    display: block;
+    transition: all 1s;
+}
+.header-top-lk_profile_icon:hover {
+    color: #fff;
+    background-color: #AE00D4;
+}
+/*-----------------------------*/
+
+
+/*-----------Кнопки------------*/
+.menu_one {
+    display: block;
+    background: #AE00D4;
+    border: 2px solid #fff;
+    border-radius: 25px;
+    width: 40px;
+    height: 40px;
+    transform: scale(1);
+    transition: transform 0.5s;
+    left: 5px;
+    position: relative;
+}
+
+.menu_one:hover,
+.close-menu-active:hover {
+    background: #fff;
+}
+
+.menu_one:hover:after,
+.close-menu-active:hover:after {
+    color: #AE00D4;
+}
+
+.menu_one::after {
+    content: "🠖";
+    font-size: 23px;
+    color: #fff;
+    position: relative;
+}
+
+.menu_one.active::after {
+    content: "🠖";
+    font-size: 23px;
+    color: #ffffff00;
+    position: relative;
+}
+
+.menu_one.active {
+    background: none;
+    border: none;
+    width: 0px;
+    height: 0px;
+    transform: scale(0);
+}
+
+.close-menu {
+    background: none;
+    border: none;
+    width: 0px;
+    height: 0px;
+    transform: scale(0);
+    transition: transform 0.5s;
+}
+
+.close-menu-active {
+    background: #AE00D4;
+    border: 2px solid #fff;
+    border-radius: 25px;
+    width: 40px;
+    height: 40px;
+    transform: scale(1);
+    transition: transform 0.5s 0.5s;
+    margin-left: 48%;
+}
+
+.close-menu-active::after {
+    content: "🠔";
+    transform: rotate(180deg);
+    font-size: 23px;
+    color: #fff;
+    position: relative;
+    bottom: 11px;
+}
+.close-menu-active::before {
+    content: "Свернуть панель";
+    font-size: 14px;
+    color: #fff;
+    position: relative;
+    width: 120px;
+    display: inline-block;
+    right: 140px;
+    top: 10px;
+}
+.logo1 {
+    width: 60px;
+    cursor: pointer;
+    transition: 1s linear;
+}
+.logo1.active {
+    display: none;
+   
+}
+.logo1:hover {
+    transform: rotate(-45deg);
+}
+
+.logo2 {
+    display: none;
+    transform: scale(0);
+}
+.logo2.active  {
+    display: block;
+    animation-name: example;
+  animation-duration: 1s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+}
+@keyframes example {
+    0%   {opacity: 0;transform: scale(0);}
+    25%  {opacity: 0;transform: scale(1);}
+    50%  {opacity: 0.5;transform: scale(1);}
+    75%  {opacity: 0.75;transform: scale(1);}
+    100% {opacity: 1;transform: scale(1);}
+  }
+.back-to-site-lk {
+    background: #ffffff;
+    border: 2px solid #AE00D4;
+    border-radius: 10px;
+    font-family: "Nunito-Bold";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 43px;
+    text-align: center;
+    color: #AE00D4;
+    padding: 0px 20px 0px 20px;
+    transition: all 0.5s;
+}
+.back-to-site-lk::after {
+    content: "🠖";
+    font-size: 30px;
+    padding-left: 13px;
+    top: 6px;
+    position: relative;
+    line-height: 30px;
+}
+.back-to-site-lk:hover {
+    background: #AE00D4;
+    color: #fff;
+}
+
+
+
+/*-----------------------------*/
+
+/*-------Меню----------------------*/
+.menu-lk{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    margin-top: 30px;
+    height: 100%;
+    min-height: 55vh;
+}
+.menu-lk > li{
+    margin-bottom: 30px;
+}
+.menu-lk > li > a > img {
+    width: 60px;
+    padding: 3px;
+    height: 60px;
+    display: block;
+    border-radius: 30px;
+    transition: all 0.5s;
+}
+.menu-lk.active > li > a > img {
+    display: none;
+}
+.menu-lk > li > a > img:hover {
+    background-color: #33C7A2;
+    border: 3px solid #fff;
+}
+.menu-lk > li > a{
+    text-decoration: none;
+}
+.menu-lk > li > a > span {
+    display: none;
+    color: #fff;
+    font-family: 'Nunito-Bold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+    max-width: 185px;
+    padding: 15px;
+    border-radius: 10px;
+    background: #AE00D4;
+    border: 2px solid #AE00D4;
+    cursor: pointer;
+    transition: all 0.5s;
+    transform: scale(0);
+}
+.menu-lk.active  > li > a > span {
+    display: block;
+    animation-name: example;
+  animation-duration: 1s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+}
+.menu-lk.active  > li > a > span:hover {
+    display: block;
+    background: #33C7A2; 
+    border: 2px solid #FFFFFF;
+}
+/*-----------------------------*/
+
+
+/*-------Блоки страниц----------------------*/
+
+/*-------Блоки страниц. 1.Страница приветствия---------------------*/
+
+.welcome-lk {
+    display: flex;
+    min-width: 760px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 100%;
+    min-height: 50vh;
+    margin: 0 auto;
+    align-content: center;
+}
+
+.welcome-lk_text {
+    background: #33C7A2;
+    border-radius: 10px;
+    font-family: 'Nunito-Bold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 32px;
+    color: #FFFFFF;
+    margin-top: 80px;
+    margin-bottom: 30px;
+    padding: 35px 150px;
+    max-width: 760px;
+    text-align: center;
+}
+/*-----------------------------*/
+
+/*-------Блоки страниц. 1.Страница приветствия. Форма выбора ученика------------------*/
+
+.form-lk>fieldset>div:first-child {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+.form-lk>fieldset>div:first-child>div {
+    width: 48%;
+}
+.form-lk>fieldset>div>div>.uk-form-icon {
+    color: #AE00D4;
+    left: 10px;
+}
+.form-lk>fieldset>div>div>.uk-form-icon:not(.uk-form-icon-flip)~.uk-input {
+    padding-left: 60px !important;
+}
+.form-lk>fieldset>div:first-child>div>input {
+    padding: 30px;
+    border-radius: 5px;
+    font-size: 1.2rem !important;
+    border: 2px solid #AE00D4;
+}
+.button-form-lk {
+    font-family: 'Nunito-Bold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    text-align: center;
+    color: #fff;
+    background: #AE00D4;
+    padding: 15px 30px;
+    border: 2px solid #AE00D4;
+    border-radius: 5px;
+    text-transform: none;
+    width: 100%;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.button-form-lk:hover {
+    color: #AE00D4;
+    background: #fff;
+}
+input:-webkit-autofill {
+    box-shadow: inset 40px 40px 0px 20px #ffffff;
+    -webkit-text-fill-color: var(--color) !important;
+}
+/*-----------------------------*/

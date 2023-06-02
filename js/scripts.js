@@ -14,7 +14,8 @@ $(document).ready(function(){
   $("html, body").animate({ scrollTop: 0 }, 600);
   return false;
   });
-   if(window.location.hash) {
+   
+  if(window.location.hash) {
     var hash = window.location.hash;
 
     var modal = UIkit.modal(hash);
@@ -23,6 +24,7 @@ $(document).ready(function(){
         modal.show();
     }
 }
+
   });
 
 $(function() {
@@ -56,3 +58,25 @@ $(document).ready(function () {
 
 }); 
 
+
+// добавляет класс active
+
+document.querySelector('.menu_one').addEventListener('click', () => {
+  document.querySelector('.aside-lk').classList.add('active');
+  document.querySelector('.menu_one').classList.add('active'); 
+  document.querySelector('.logo1').classList.add('active');
+  document.querySelector('.logo2').classList.add('active');
+  document.querySelector('.menu-lk').classList.add('active');
+  document.querySelector('.close-menu').classList.add('close-menu-active');
+})
+
+// удаляет  класс  active
+
+document.querySelector('.close-menu').addEventListener('click', () => {
+  document.querySelector('.aside-lk').classList.remove('active');
+  document.querySelector('.menu_one').classList.remove('active'); 
+  document.querySelector('.logo1').classList.remove('active');
+  document.querySelector('.logo2').classList.remove('active');
+  document.querySelector('.menu-lk').classList.remove('active');
+  document.querySelector('.close-menu').classList.remove('close-menu-active')
+})
