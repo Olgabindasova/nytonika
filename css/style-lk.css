@@ -1,3 +1,57 @@
+/*---------Цвета-----------*/
+
+:root {
+    --main-color: #AE00D4;
+    --colorBlockCardOne: #33C7A2;
+    --colorBlockCardTwo: #D589CC;
+    --colorFontContent: #2A3B4F;
+}
+
+/*---------Скролл-----------*/
+
+.section-lk {
+    scrollbar-width: var(--scrollbarWidth);
+    scrollbar-color: var(--scrollbarThumb) var(--scrollbarBg);
+  }
+  
+  .section-lk::-webkit-scrollbar {
+    width: var(--scrollbarWidth);
+  }
+  
+  .section-lk::-webkit-scrollbar-track {
+    background: var(--scrollbarBg);
+    border-radius: var(--scrollbarBorderRadius);
+  }
+  
+  .section-lk::-webkit-scrollbar-thumb {
+    background-color: var(--scrollbarThumb);
+    border-radius: var(--scrollbarBorderRadius);
+    border: var(--scrollbarBorder);
+  }
+
+  /*---------Пагинация-----------*/
+
+  .page-lk > div > .uk-pagination > li {
+    background: var(--main-color);
+    border-radius: 30px;
+    width: 30px;
+    height: 30px;
+    line-height: 20px;
+    margin: 0 5px;
+}.page-lk > div > .uk-pagination > li:hover {
+    background: #9C16B9;
+}
+.page-lk > div > .uk-pagination > li.uk-disabled > span {
+    color: #fff;
+    position: relative;
+    right: 2px;
+    bottom: 2px;
+}
+.page-lk > div > .uk-pagination > li > a {
+    color: #fff;
+    font-size: 14px;
+    font-family: "Nunito-Bold";
+}
 /*---------Основные Блоки-----------*/
 .page-lk {
     width: 100%;
@@ -7,6 +61,7 @@
     padding: 0 50px;
     flex-direction: column;
 }
+
 .lk-wrapper {
     display: flex;
     flex-direction: row;
@@ -17,7 +72,7 @@
 
 .aside-lk {
     z-index: 1;
-    background-color: #AE00D4;
+    background-color: var(--main-color);
     width: 150px;
     height: 100%;
     flex-direction: column;
@@ -30,8 +85,8 @@
     display: flex;
     width: 100%;
     flex-wrap: wrap;
-    height: 100%;
-    align-content: space-between;
+    overflow-y: auto;
+    align-content: flex-start;
 }
 
 .aside-lk.active {
@@ -41,7 +96,7 @@
 .aside-lk_logo {
     height: 100px;
     background: #fff;
-    border-right: 2px solid #AE00D4;
+    border-right: 2px solid var(--main-color);
     display: flex;
     padding: 15px;
     justify-content: center;
@@ -54,59 +109,72 @@
     padding: 15px;
     padding-top: 25px;
 }
+
 .aside-lk_all {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
-.aside-lk_all_contact{
+
+.aside-lk_all_contact {
     border-top: 1px solid #fff;
     display: flex;
     flex-direction: column;
     align-items: center;
+    min-height: 160px;
 }
-.aside-lk_all_contact > div {
+
+.aside-lk_all_contact>div {
     padding: 10px 10px;
 }
-.aside-lk_all_contact > div > p{
+
+.aside-lk_all_contact>div>p {
     font-size: 12px;
     font-weight: 400;
     color: #fff;
     text-align: center;
     line-height: 30px;
 }
-.aside-lk_all_contact > div > a {
+
+.aside-lk_all_contact>div>a {
     font-size: 12px;
     font-weight: 700;
     color: #fff;
     text-align: center;
     text-decoration: none;
 }
-.aside-lk_all_contact > div > div > a > svg {
-    fill: #AE00D4;
+
+.aside-lk_all_contact>div>div>a>svg {
+    fill: var(--main-color);
 }
+
 .aside-lk_all_contact_icon {
     width: 30px;
     height: 30px;
 }
-.as-social [class*=as-icon-telegram], .as-social [class*=as-icon-viber]{
-    color:#fff;
-    background-color:#AE00D4;
-    border-radius:50%;
-    transition-property:border-radius,background-color;
+
+.as-social [class*=as-icon-telegram],
+.as-social [class*=as-icon-viber] {
+    color: #fff;
+    background-color: var(--main-color);
+    border-radius: 50%;
+    transition-property: border-radius, background-color;
 }
-[class*=as-icon-]:hover{color:#fff;border-radius:10px}
+
+[class*=as-icon-]:hover {
+    color: #fff;
+    border-radius: 10px
+}
 
 
-.aside-lk.active > .aside-lk_all > .aside-lk_all_contact {
+.aside-lk.active>.aside-lk_all>.aside-lk_all_contact {
     border-top: 1px solid #fff;
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
-    align-content: flex-start;
+    align-items: center;
     justify-content: center;
+    min-height: 100px;
 }
-
 
 
 
@@ -119,43 +187,49 @@
     justify-content: space-between;
     padding: 0 50px;
 }
+
 .header-top-lk_profile {
     display: flex;
     align-items: center;
 }
-.header-top-lk_profile_title{
+
+.header-top-lk_profile_title {
     font-weight: 700;
     font-size: 14px;
-    color: #2A3B4F;
+    color: var(--colorFontContent);
     line-height: 18px;
 }
-.header-top-lk_profile_name{
+
+.header-top-lk_profile_name {
     font-weight: 700;
     font-size: 14px;
-    color: #AE00D4;
+    color: var(--main-color);
     line-height: 16px;
 }
+
 .header-top-lk_profile_icon {
     width: 50px;
     height: 50px;
     padding: 9px;
-    border: 2px solid #AE00D4;
+    border: 2px solid var(--main-color);
     border-radius: 25px;
-    color: #AE00D4;
+    color: var(--main-color);
     display: block;
     transition: all 1s;
 }
+
 .header-top-lk_profile_icon:hover {
     color: #fff;
-    background-color: #AE00D4;
+    background-color: var(--main-color);
 }
+
 /*-----------------------------*/
 
 
 /*-----------Кнопки------------*/
 .menu_one {
     display: block;
-    background: #AE00D4;
+    background: var(--main-color);
     border: 2px solid #fff;
     border-radius: 25px;
     width: 40px;
@@ -173,7 +247,7 @@
 
 .menu_one:hover:after,
 .close-menu-active:hover:after {
-    color: #AE00D4;
+    color: var(--main-color);
 }
 
 .menu_one::after {
@@ -208,7 +282,7 @@
 }
 
 .close-menu-active {
-    background: #AE00D4;
+    background: var(--main-color);
     border: 2px solid #fff;
     border-radius: 25px;
     width: 40px;
@@ -226,6 +300,7 @@
     position: relative;
     bottom: 11px;
 }
+
 .close-menu-active::before {
     content: "Свернуть панель";
     font-size: 14px;
@@ -236,15 +311,18 @@
     right: 140px;
     top: 10px;
 }
+
 .logo1 {
     width: 60px;
     cursor: pointer;
     transition: 1s linear;
 }
+
 .logo1.active {
     display: none;
-   
+
 }
+
 .logo1:hover {
     transform: rotate(-45deg);
 }
@@ -253,23 +331,45 @@
     display: none;
     transform: scale(0);
 }
-.logo2.active  {
+
+.logo2.active {
     display: block;
     animation-name: example;
-  animation-duration: 1s;
-  animation-delay: 0.5s;
-  animation-fill-mode: forwards;
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
 }
+
 @keyframes example {
-    0%   {opacity: 0;transform: scale(0);}
-    25%  {opacity: 0;transform: scale(1);}
-    50%  {opacity: 0.5;transform: scale(1);}
-    75%  {opacity: 0.75;transform: scale(1);}
-    100% {opacity: 1;transform: scale(1);}
-  }
+    0% {
+        opacity: 0;
+        transform: scale(0);
+    }
+
+    25% {
+        opacity: 0;
+        transform: scale(1);
+    }
+
+    50% {
+        opacity: 0.5;
+        transform: scale(1);
+    }
+
+    75% {
+        opacity: 0.75;
+        transform: scale(1);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
 .back-to-site-lk {
     background: #ffffff;
-    border: 2px solid #AE00D4;
+    border: 2px solid var(--main-color);
     border-radius: 10px;
     font-family: "Nunito-Bold";
     font-style: normal;
@@ -277,10 +377,11 @@
     font-size: 16px;
     line-height: 43px;
     text-align: center;
-    color: #AE00D4;
+    color: var(--main-color);
     padding: 0px 20px 0px 20px;
     transition: all 0.5s;
 }
+
 .back-to-site-lk::after {
     content: "🠖";
     font-size: 30px;
@@ -289,8 +390,9 @@
     position: relative;
     line-height: 30px;
 }
+
 .back-to-site-lk:hover {
-    background: #AE00D4;
+    background: var(--main-color);
     color: #fff;
 }
 
@@ -299,7 +401,7 @@
 /*-----------------------------*/
 
 /*-------Меню----------------------*/
-.menu-lk{
+.menu-lk {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -308,10 +410,12 @@
     height: 100%;
     min-height: 55vh;
 }
-.menu-lk > li{
+
+.menu-lk>li {
     margin-bottom: 30px;
 }
-.menu-lk > li > a > img {
+
+.menu-lk>li>a>img {
     width: 60px;
     padding: 3px;
     height: 60px;
@@ -319,17 +423,21 @@
     border-radius: 30px;
     transition: all 0.5s;
 }
-.menu-lk.active > li > a > img {
+
+.menu-lk.active>li>a>img {
     display: none;
 }
-.menu-lk > li > a > img:hover {
-    background-color: #33C7A2;
+
+.menu-lk>li>a>img:hover {
+    background-color: var(--colorBlockCardOne);
     border: 3px solid #fff;
 }
-.menu-lk > li > a{
+
+.menu-lk>li>a {
     text-decoration: none;
 }
-.menu-lk > li > a > span {
+
+.menu-lk>li>a>span {
     display: none;
     color: #fff;
     font-family: 'Nunito-Bold';
@@ -340,24 +448,27 @@
     max-width: 185px;
     padding: 15px;
     border-radius: 10px;
-    background: #AE00D4;
-    border: 2px solid #AE00D4;
+    background: var(--main-color);
+    border: 2px solid var(--main-color);
     cursor: pointer;
     transition: all 0.5s;
     transform: scale(0);
 }
-.menu-lk.active  > li > a > span {
+
+.menu-lk.active>li>a>span {
     display: block;
     animation-name: example;
-  animation-duration: 1s;
-  animation-delay: 0.5s;
-  animation-fill-mode: forwards;
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
 }
-.menu-lk.active  > li > a > span:hover {
+
+.menu-lk.active>li>a>span:hover {
     display: block;
-    background: #33C7A2; 
+    background: var(--colorBlockCardOne);
     border: 2px solid #FFFFFF;
 }
+
 /*-----------------------------*/
 
 
@@ -378,7 +489,7 @@
 }
 
 .welcome-lk_text {
-    background: #33C7A2;
+    background: var(--colorBlockCardOne);
     border-radius: 10px;
     font-family: 'Nunito-Bold';
     font-style: normal;
@@ -392,6 +503,7 @@
     max-width: 760px;
     text-align: center;
 }
+
 /*-----------------------------*/
 
 /*-------Блоки страниц. 1.Страница приветствия. Форма выбора ученика------------------*/
@@ -401,22 +513,27 @@
     flex-wrap: nowrap;
     justify-content: space-between;
 }
+
 .form-lk>fieldset>div:first-child>div {
     width: 48%;
 }
+
 .form-lk>fieldset>div>div>.uk-form-icon {
-    color: #AE00D4;
+    color: var(--main-color);
     left: 10px;
 }
+
 .form-lk>fieldset>div>div>.uk-form-icon:not(.uk-form-icon-flip)~.uk-input {
     padding-left: 60px !important;
 }
+
 .form-lk>fieldset>div:first-child>div>input {
     padding: 30px;
     border-radius: 5px;
     font-size: 1.2rem !important;
-    border: 2px solid #AE00D4;
+    border: 2px solid var(--main-color);
 }
+
 .button-form-lk {
     font-family: 'Nunito-Bold';
     font-style: normal;
@@ -424,21 +541,176 @@
     font-size: 30px;
     text-align: center;
     color: #fff;
-    background: #AE00D4;
+    background: var(--main-color);
     padding: 15px 30px;
-    border: 2px solid #AE00D4;
+    border: 2px solid var(--main-color);
     border-radius: 5px;
     text-transform: none;
     width: 100%;
     cursor: pointer;
     transition: all 0.5s;
 }
+
 .button-form-lk:hover {
-    color: #AE00D4;
+    color: var(--main-color);
     background: #fff;
 }
+
 input:-webkit-autofill {
     box-shadow: inset 40px 40px 0px 20px #ffffff;
     -webkit-text-fill-color: var(--color) !important;
 }
+
 /*-----------------------------*/
+
+
+/*-------Блоки страниц. 4.История заказов------------------*/
+
+
+.card-lk {
+    border-radius: 10px;
+}
+.card-lk_button{
+    padding: 25px 30px 25px 30px;
+}
+
+.color-order-history-card {
+    background: #fff;
+    border: 3px solid var(--colorBlockCardOne);
+
+}
+
+.color-order-history-card>.card-lk_title {
+    background: var(--colorBlockCardOne);
+    width: 100%;
+    padding: 20px 30px;
+    color: #fff;
+    border-radius: 5px;
+    font-family: 'Nunito-Bold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 32px;
+}
+
+.color-order-history-card>.card-lk_title>span {
+    font-size: 36px;
+    color: inherit;
+    font-family: inherit;
+}
+
+.color-order-history-card>.card-lk_content {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+    color: var(--colorFontContent);
+    padding: 25px 30px 0 30px;
+}
+
+.color-order-history-card>.card-lk_buy {
+    font-family: 'Nunito-Bold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 22px;
+    color: var(--colorFontContent);
+    padding: 15px 30px 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.color-order-history-card>.card-lk_buy>div {
+    font-family: inherit;
+    color: inherit;
+}
+
+.color-order-history-card>.card-lk_buy>div>span {
+    font-family: inherit;
+    color: inherit;
+    font-size: 36px;
+    padding: 0 5px;
+}
+
+
+/*-------Блоки страниц. 2.Ближайшие занятия-----------------*/
+
+.color-next-class-card {
+    background: #fff;
+    border: 3px solid var(--colorBlockCardOne);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.color-next-class-card>.card-lk_title {
+    background: var(--colorBlockCardOne);
+    width: 100%;
+    padding: 20px 30px;
+    color: #fff;
+    border-radius: 5px;
+    font-family: 'Nunito-Bold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 32px;
+    display: flex;
+    flex-direction: column;
+}
+
+.color-next-class-card>.card-lk_title > span {
+    color: inherit;
+    font-family: "Nunito";
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 14px;
+    padding: 10px;
+    margin-bottom: 10px;
+    background: #D41B19;
+    border: 2px solid #FFFFFF;
+    border-radius: 10px;
+}
+
+.color-next-class-card>.card-lk_content {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+    color: var(--colorFontContent);
+    padding: 25px 30px 0 30px;
+}
+.color-next-class-card>.card-lk_content > p  {
+    font-family: "Nunito";
+    font-weight: 400;
+    font-size: 20px;
+    padding-right: 10px;
+    color: var(--colorFontConten);
+}
+.color-next-class-card>.card-lk_content > p > span {
+    font-family: "Nunito-Bold";
+    font-size: 20px;
+    padding-right: 10px;
+    color: var(--colorFontConten);
+}
+
+.card-lk_button > button {
+    background: var(--colorBlockCardOne);
+    border: 3px solid var(--colorBlockCardOne);
+    border-radius: 10px;
+    color: #fff;
+    width: 100%;
+    padding: 10px;
+    font-family: 'Nunito-Bold';
+    font-style: normal;
+    font-weight: 700;
+    transition: all 0.5s;
+}
+
+.card-lk_button:hover > button {
+    background: #fff;
+    border: 3px solid var(--colorBlockCardOne);
+    color: var(--colorBlockCardOne);
+}
