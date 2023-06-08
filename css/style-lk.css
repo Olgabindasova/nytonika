@@ -714,3 +714,135 @@ input:-webkit-autofill {
     border: 3px solid var(--colorBlockCardOne);
     color: var(--colorBlockCardOne);
 }
+
+/*-------Блоки страниц. 2.Последние занятия-----------------*/
+.color-recent-classes-card {
+    background: #fff;
+    border: 3px solid var(--colorBlockCardTwo);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.color-recent-classes-card>.card-lk_title {
+    background: var(--colorBlockCardTwo);
+    width: 100%;
+    padding: 25px 30px;
+    color: #fff;
+    border-radius: 5px;
+    font-family: 'Nunito-Bold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 28px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.color-recent-classes-card>.card-lk_title > div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+
+.color-recent-classes-card>.card-lk_title > div > span {
+    color: #fff;
+    font-family: "Nunito";
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 14px;
+    padding: 5px 10px;
+    border: 2px solid #FFFFFF;
+    border-radius: 10px;
+    width: fit-content;
+}
+.payment-error{
+    background: #D41B19;
+}
+.payment-made{
+    background: #84B102;
+}
+.return-issued{
+    background:  #FF9501;
+}
+.color-recent-classes-card>.card-lk_content {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+    color: var(--colorFontContent);
+    padding: 25px 30px 30px 30px;
+}
+.color-recent-classes-card>.card-lk_content > p {
+    font-family: "Nunito";
+    font-weight: 400;
+    font-size: 20px;
+    padding-right: 10px;
+    color: var(--colorFontConten);
+}
+.color-recent-classes-card>.card-lk_content > p > span {
+    font-family: "Nunito-Bold";
+    font-weight: 700;
+    font-size: 20px;
+    padding-right: 10px;
+    color: var(--colorFontConten);
+}
+
+
+
+
+
+.star-wrapper {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: flex-end;
+}
+  .star-wrapper a {
+    width: 20px;
+    height: 20px;
+    background-size: 20px 20px;
+    display: block;
+    background-image: url('https://cdn.nyutonika.ru/icons-lk/star-two.svg');
+    transition: all 0.5s;
+    margin-right: 3px;
+    text-decoration: none;
+    color: transparent;
+   
+  }
+  .star-wrapper a:hover {
+      transform: scale(1.4);
+  }
+  .s1:hover {
+    background-image: url('https://cdn.nyutonika.ru/icons-lk/star-1.svg');
+}
+.s2:hover {
+    background-image: url('https://cdn.nyutonika.ru/icons-lk/star-2.svg');
+}
+.s3:hover {
+    background-image: url('https://cdn.nyutonika.ru/icons-lk/star-3.svg');
+}
+  .s4:hover {
+    background-image: url('https://cdn.nyutonika.ru/icons-lk/star-4.svg');
+}
+  .s5:hover {
+    background-image: url('https://cdn.nyutonika.ru/icons-lk/star-5.svg');
+}
+  .s1:hover ~ a {
+    background-image: url('https://cdn.nyutonika.ru/icons-lk/star-one.svg');
+  }
+  .s2:hover ~ a {
+    background-image: url('https://cdn.nyutonika.ru/icons-lk/star-one.svg');
+  }
+  .s3:hover ~ a {
+    background-image: url('https://cdn.nyutonika.ru/icons-lk/star-one.svg');
+  }
+  .s4:hover ~ a {
+    background-image: url('https://cdn.nyutonika.ru/icons-lk/star-one.svg');
+  }
+  .s5:hover ~ a {
+    background-image: url('https://cdn.nyutonika.ru/icons-lk/star-one.svg');
+  }
+  

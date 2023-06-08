@@ -80,3 +80,21 @@ document.querySelector('.close-menu').addEventListener('click', () => {
   document.querySelector('.menu-lk').classList.remove('active');
   document.querySelector('.close-menu').classList.remove('close-menu-active')
 })
+
+
+
+$('.rat').on('mouseover', function(){
+  let $this = $(this);
+  $this.nextAll().removeClass('star').addClass( "star-o" );
+  $this.prevAll().removeClass( "star-o" ).addClass('star');
+  $this.removeClass( "star-o" ).addClass('star');
+});
+$('.rat').one('click',function(){
+ let $this = $(this); $this.addClass('active').siblings().removeClass('active');
+});
+$('.rat').on('mouseleave', function(){
+  let select = $('.active');
+  select.nextAll().removeClass('star').addClass('star-o');
+  select.prevAll().removeClass('star-o').addClass('star');
+  select.removeClass('star-o').addClass('star');
+});
