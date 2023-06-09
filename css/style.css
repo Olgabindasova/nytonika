@@ -7306,3 +7306,141 @@ table.punkt td:last-child {
 border-bottom: 0;
 }
 }
+
+
+/*-------------Страница анкеты-----*/
+
+
+.leave-request {
+  background: #ae00d4;
+    border-radius: 10px;
+    padding: 12px;
+    margin: 40px 0;
+}
+.leave-request > p {
+  font-family: "Nunito-Bold";
+    font-size: 2rem;
+    color: #fff;
+    text-align: center;
+}
+.h1-leave-request {
+  text-align: center;
+}
+.form-leave-request{
+  margin: 50px auto;
+}
+.form-leave-request> div > label {
+  font-family: "Nunito-Bold";
+  font-size: 20px;
+  margin-left: 10px;
+  color: #2A3B4F;
+}
+.form-leave-request> div > div > input.uk-input{
+  color: #2A3B4F !important;
+  border: 1px solid #ae00d4;
+  margin: 10px 10px 20px 10px;
+  padding: 20px;
+  min-height: 60px;
+  border-radius: 5px;
+  font-weight: 400;
+  font-family: "Nunito-Bold";
+  font-size: 18px;
+}
+.form-leave-request> div > div > textarea.uk-textarea{
+  color: #2A3B4F !important;
+  border: 1px solid #ae00d4;
+  margin: 10px 10px 20px 10px;
+  padding: 20px;
+  min-height: 60px;
+  border-radius: 5px;
+  font-weight: 400;
+  font-family: "Nunito-Bold";
+  font-size: 18px;
+}
+
+.form-leave-request> div > div > .uk-input::-webkit-input-placeholder {color:#2A3B4F; opacity: 0.8;}
+.form-leave-request> div > div > .uk-input::-moz-placeholder          {color:#2A3B4F;opacity: 0.8;}/* Firefox 19+ */
+.form-leave-request> div > div > .uk-input:-moz-placeholder           {color:#2A3B4F;opacity: 0.8;}/* Firefox 18- */
+.form-leave-request> div > div > .uk-input:-ms-input-placeholder      {color:#2A3B4F;opacity: 0.8;}
+
+.form-leave-request> div > select, .form-leave-request> div > div > select{
+  color: #2A3B4F !important;
+  opacity: 0.8;
+  border: 1px solid #ae00d4;
+  margin: 10px 10px 20px 10px;
+  font-size: 15px;
+  padding: 20px;
+  min-height: 60px;
+  border-radius: 5px;
+  font-weight: 400;
+  font-family: "Nunito-Bold";
+  font-size: 18px;
+}
+
+.form-leave-request> div > select > option, .form-leave-request> div > div > select > option {
+  color: #2A3B4F !important;
+  opacity: 0.8;
+}
+
+.form-leave-request> div > select.uk-select:not([multiple]):not([size]) {
+  border: 1px solid #ae00d4;
+  color: #2A3B4F !important;
+  opacity: 0.8;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='24' height='16' viewBox='0 0 24 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M11.5 13L6 4H17L11.5 13Z' fill='%23AE00D4'/%3e%3c/svg%3e ");
+  background-position: 99% 50%;
+}
+.form-leave-request> div > div > select.uk-select:not([multiple]):not([size]) {
+  border: 1px solid #ae00d4;
+  color: #2A3B4F !important;
+  opacity: 0.8;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='24' height='16' viewBox='0 0 24 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M11.5 13L6 4H17L11.5 13Z' fill='%23AE00D4'/%3e%3c/svg%3e ");
+  background-position: 99% 50%;
+}
+
+.form-leave-request > div >button.button-tree {
+  margin-left: 10px;
+}
+
+.areas-of-work {
+  border: 1px solid #ae00d4;
+  padding: 40px;
+  border-radius: 5px;
+  margin: 10px -10px 20px 10px;
+}
+.areas-of-work > div > label {
+  font-family: "Nunito-Bold";
+  font-size: 20px;
+  margin-left: 10px;
+  color: #2A3B4F;
+}
+
+.areas-of-work > div > div {
+  margin: 40px 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.areas-of-work > div >  div > label {
+  width: 25%;
+  margin-bottom: 15px;
+  min-width: 250px;
+  font-family: "Nunito-Bold";
+  font-size: 14px;
+  color: #2A3B4F;
+}
+
+.areas-of-work > div >  div > label > input.uk-checkbox {
+  height: 25px;
+    width: 25px;
+    border: 1px solid #ae00d4;
+    border-radius: 3px;
+    margin-right: 5px;
+}
+.areas-of-work > div >  div > label > input.uk-checkbox:checked{
+  background-color: #ae00d4;
+  border-color: transparent;
+}
+
+
