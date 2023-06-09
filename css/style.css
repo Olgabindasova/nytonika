@@ -7335,7 +7335,7 @@ border-bottom: 0;
   margin-left: 10px;
   color: #2A3B4F;
 }
-.form-leave-request> div > div > input.uk-input{
+.form-leave-request> div > div > input.uk-input {
   color: #2A3B4F !important;
   border: 1px solid #ae00d4;
   margin: 10px 10px 20px 10px;
@@ -7345,6 +7345,7 @@ border-bottom: 0;
   font-weight: 400;
   font-family: "Nunito-Bold";
   font-size: 18px;
+  background: #fefcfe;
 }
 .form-leave-request> div > div > textarea.uk-textarea{
   color: #2A3B4F !important;
@@ -7356,6 +7357,7 @@ border-bottom: 0;
   font-weight: 400;
   font-family: "Nunito-Bold";
   font-size: 18px;
+  background: #fefcfe;
 }
 
 .form-leave-request> div > div > .uk-input::-webkit-input-placeholder {color:#2A3B4F; opacity: 0.8;}
@@ -7375,6 +7377,7 @@ border-bottom: 0;
   font-weight: 400;
   font-family: "Nunito-Bold";
   font-size: 18px;
+  background: #fefcfe;
 }
 
 .form-leave-request> div > select > option, .form-leave-request> div > div > select > option {
@@ -7400,12 +7403,15 @@ border-bottom: 0;
 .form-leave-request > div >button.button-tree {
   margin-left: 10px;
 }
-
+.form-leave-request > h4 {
+  margin-left: 10px;
+}
 .areas-of-work {
   border: 1px solid #ae00d4;
   padding: 40px;
   border-radius: 5px;
   margin: 10px -10px 20px 10px;
+  background: #fefcfe;
 }
 .areas-of-work > div > label {
   font-family: "Nunito-Bold";
@@ -7444,3 +7450,73 @@ border-bottom: 0;
 }
 
 
+@media (max-width: 500px) {
+  .h1-leave-request {
+    font-size: 40px;
+    line-height: 36px;
+}
+.leave-request > p {
+  font-size: 1.3rem;
+}
+.leave-request {
+  padding: 5px;
+  margin: 20px 0;
+}
+.areas-of-work > div >  div > label {
+  min-width: 200px;
+  font-size: 12px;
+}
+.areas-of-work > div > div {
+  margin: 30px auto;
+}
+.areas-of-work > div > label {
+  font-size: 16px;
+}
+.areas-of-work {
+  padding: 15px;
+}
+.areas-of-work > div >  div > label > input.uk-checkbox {
+  height: 16px;
+  width: 16px;
+}
+.form-leave-request {
+  margin: 50px auto 75px;
+}
+.form-leave-request> div > label {
+  font-size: 17px;
+}
+.form-leave-request> div > div > input.uk-input {
+  margin: 10px 10px 10px 10px;
+  padding: 15px;
+  min-height: 45px;
+  font-size: 14px;
+}
+.form-leave-request> div > select, .form-leave-request> div > div > select {
+  margin: 10px 10px 20px 10px;
+  font-size: 15px;
+  padding: 10px;
+  min-height: 45px;
+}
+.form-leave-request > h4 {
+  line-height: 28px;
+    font-size: 24px;
+}
+}
+
+@media (max-width: 375px) {
+  .h1-leave-request {
+    font-size: 28px;
+    line-height: 26px;
+}
+.leave-request > p {
+  font-size: 1rem;
+}
+.form-leave-request {
+  margin: 50px 10px 75px -10px;
+}
+}
+@media (max-width: 300px) {
+  .form-leave-request {
+    margin: 50px 10px 75px -25px;
+  }
+}
