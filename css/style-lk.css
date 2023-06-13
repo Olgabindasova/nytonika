@@ -695,8 +695,12 @@ input:-webkit-autofill {
     padding-right: 10px;
     color: var(--colorFontConten);
 }
-
 .card-lk_button > button {
+    border: none;
+    background: none;
+    width: 100%;
+}
+.card-lk_button > button > a{
     background: var(--colorBlockCardOne);
     border: 3px solid var(--colorBlockCardOne);
     border-radius: 10px;
@@ -707,9 +711,11 @@ input:-webkit-autofill {
     font-style: normal;
     font-weight: 700;
     transition: all 0.5s;
+    display: block;
+    text-decoration: none;
 }
 
-.card-lk_button:hover > button {
+.card-lk_button:hover > button > a {
     background: #fff;
     border: 3px solid var(--colorBlockCardOne);
     color: var(--colorBlockCardOne);
