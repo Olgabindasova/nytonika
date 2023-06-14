@@ -394,7 +394,10 @@ h4 {
   background-color: #AE00D4;
 }
 .color14 {
-  background-color: #7ee5ff;
+  background-color: #7ee5ff !important;
+}
+.color15 {
+  background-color: #7ee5ff !important;
 }
 /*кнопки*/
 
@@ -7519,4 +7522,128 @@ border-bottom: 0;
   .form-leave-request {
     margin: 50px 10px 75px -25px;
   }
+}
+
+
+
+.h1-napravlenia {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-start;
+  padding: 50px 30px 15px 30px;
+}
+
+
+.napravlenia_doshkoln::after {
+  background-color: #8dc5ff;
+  width: 150px;
+  height: 3px;
+  display: block;
+  position: relative;
+  content: "";
+  top: 70px;
+  left: -100px;
+}
+
+.text-h2-napravlenia {
+  font-family: "Nunito-Bold";
+    font-style: normal;
+    font-weight: 700;
+    line-height: 38px;
+    font-size: 40px;
+    margin-top: 25px;
+    max-width: 555px;
+    padding: 0 25px;
+}
+
+.title-trend-block_napravlenia {
+  font-family: 'Nunito-Bold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 36px;
+    color: #24201E;
+}
+
+.napravlenia_doshkoln_banner-text {
+  background: #e1efff47;
+  padding: 30px;
+  border-radius: 20px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  margin-top: 30px;
+  border: 2px solid #8dc5ff;
+}
+.napravlenia_doshkoln_banner-text>p {
+margin-bottom: 10px;
+}
+
+
+.banner-trend-form.napravlenia_doshkoln_podg>div>button {
+  background: #8dc5ff;
+  border: 2px solid #8dc5ff;
+}
+.banner-trend-form.napravlenia_doshkoln_podg>div>button:hover {
+  border: 2px solid #8dc5ff;
+  color: #8dc5ff;
+  background: #fff;
+}
+.banner-trend-form.napravlenia_doshkoln_podg>div>span.uk-form-icon {
+  color: #8dc5ff;
+}
+.banner-trend-form.napravlenia_doshkoln_podg>div>input {
+  border: 2px solid #8dc5ff;
+}
+.banner-trend-form.napravlenia_doshkoln_podg>div>label {
+  color: #24201E;
+}
+.napravlenia_doshkoln_blue > li{
+padding: 15px;
+font-family: "Nunito-Bold";
+}
+.napravlenia_doshkoln_blue>li::before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #ffde63;
+  position: relative;
+  display: block;
+  left: -35px;
+  top: 30px;
+}
+.teacher-text-trend_napravlenia {
+  font-size: 28px;
+  line-height: 36px;
+}
+.napravlenia_textblock {
+  font-family: 'Nunito-Bold';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+  color: #2A3B4F;
+}
+  .napravlenia_textblock_one{
+    margin-bottom: -40px;
+    font-family: 'Nunito-Bold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 29px;
+    color: #2a3b4f;
+  }
+  .napravlenia_textblock_one::before {
+    content: "❛❛";
+    display: block;
+    position: relative;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 29px;
+    color: #8dc5ff;
+    right: 50px;
+    top: 15px;
 }
