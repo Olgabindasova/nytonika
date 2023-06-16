@@ -887,11 +887,20 @@ input:-webkit-autofill {
 /*-------Блоки страниц. 3.Пакеты занятий----------------*/
 
 .packages-text {
-    padding: 20px 10px;
+    padding: 25px;
+    margin-top: 30px;
+    margin-right: 15px;
+    margin-bottom: -15px;
+    border: 3px solid #ae00d4;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
 }
 
 .packages-text>p {
     font-family: "Nunito-Bold";
+    font-size: 2em;
+    color: #ae00d4;
 }
 
 .activity-packages {
@@ -941,13 +950,13 @@ input:-webkit-autofill {
     color: #fff;
 }
 
-.card-lk_button_activity-packages>button {
+.card-lk_button_activity-packages {
     border: none;
     background: none;
     width: 100%;
 }
 
-.card-lk_button_activity-packages>button>a {
+.card-lk_button_activity-packages  {
     background-color: #fff;
     border-radius: 10px;
     color: var(--colorBlockCardOne);
@@ -961,7 +970,7 @@ input:-webkit-autofill {
     text-decoration: none;
 }
 
-.card-lk_button_activity-packages:hover>button>a {
+.card-lk_button_activity-packages:hover  {
     background-color: var(--colorBlockCardOne);
     border: 3px solid #fff;
     color: #fff;
@@ -971,12 +980,12 @@ input:-webkit-autofill {
     background-color: var(--colorBlockCardThree);
 }
 
-.packag1>.card-lk_button_activity-packages>button>a {
+.packag1>.card-lk_button_activity-packages  {
     border: 3px solid var(--colorBlockCardThree);
     color: var(--colorBlockCardThree);
 }
 
-.packag1>.card-lk_button_activity-packages:hover>button>a {
+.packag1>.card-lk_button_activity-packages:hover  {
     background-color: var(--colorBlockCardThree);
     border: 3px solid #fff;
     color: #fff;
@@ -986,12 +995,12 @@ input:-webkit-autofill {
     background-color: var(--colorBlockCardOne);
 }
 
-.packag2>.card-lk_button_activity-packages>button>a {
+.packag2>.card-lk_button_activity-packages  {
     border: 3px solid var(--colorBlockCardOne);
     color: var(--colorBlockCardOne);
 }
 
-.packag2>.card-lk_button_activity-packages:hover>button>a {
+.packag2>.card-lk_button_activity-packages:hover  {
     background-color: var(--colorBlockCardOne);
     border: 3px solid #fff;
     color: #fff;
@@ -1001,12 +1010,12 @@ input:-webkit-autofill {
     background-color: var(--colorBlockCardTwo);
 }
 
-.packag3>.card-lk_button_activity-packages>button>a {
+.packag3>.card-lk_button_activity-packages {
     border: 3px solid var(--colorBlockCardTwo);
     color: var(--colorBlockCardTwo);
 }
 
-.packag3>.card-lk_button_activity-packages:hover>button>a {
+.packag3>.card-lk_button_activity-packages:hover  {
     background-color: var(--colorBlockCardTwo);
     border: 3px solid #fff;
     color: #fff;
@@ -1016,12 +1025,12 @@ input:-webkit-autofill {
     background-color: var(--colorBlockCardFour);
 }
 
-.packag4>.card-lk_button_activity-packages>button>a {
+.packag4>.card-lk_button_activity-packages  {
     border: 3px solid var(--colorBlockCardFour);
     color: var(--colorBlockCardFour);
 }
 
-.packag4>.card-lk_button_activity-packages:hover>button>a {
+.packag4>.card-lk_button_activity-packages:hover  {
     background-color: var(--colorBlockCardFour);
     border: 3px solid #fff;
     color: #fff;
@@ -1031,13 +1040,73 @@ input:-webkit-autofill {
     background-color: var(--colorBlockCardFive);
 }
 
-.packag5>.card-lk_button_activity-packages>button>a {
+.packag5>.card-lk_button_activity-packages {
     border: 3px solid var(--colorBlockCardFive);
     color: var(--colorBlockCardFive);
 }
 
-.packag5>.card-lk_button_activity-packages:hover>button>a {
+.packag5>.card-lk_button_activity-packages:hover  {
     background-color: var(--colorBlockCardFive);
     border: 3px solid #fff;
     color: #fff;
+}
+
+
+.student {
+    background-color: var(--colorBlockCardOne);
+    padding: 30px;
+}
+
+.student>h3 {
+    font-size: 30px;
+    margin-bottom: 0;
+    color: #fff;
+    padding-left: 10px;
+}
+
+.student-button {
+    border-top: 1px solid var(--main-color);
+    padding: 25px 0 25px 0;
+}
+
+.student-button>button>a {
+    font-size: 18px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.b-st-dop {
+    display: block;
+    width: fit-content;
+    float: right;
+    margin: 20px;
+}
+
+.danger-lk {
+    background: #D41B19;
+    border: 1px solid #D41B19;
+    line-height: 0px;
+    padding: 0px 25px 15px 60px;
+    height: 60px;
+    line-height: 10px;
+    vertical-align: middle;
+    min-width: 255px;
+    margin-top: 40px;
+}
+.danger-lk:hover {
+    background: #a81614;
+    border: 1px solid #a81614;
+    color: #fff;
+    text-decoration: none;
+}
+
+.danger-lk::before {
+    display: block;
+    content: url('https://cdn.nyutonika.ru/icons-lk/danger.svg');
+    width: 25px;
+    height: 25px;
+    color: #fff;
+    position: relative;
+    top: 18px;
+    right: 40px;
 }
