@@ -4,6 +4,9 @@
     --main-color: #AE00D4;
     --colorBlockCardOne: #33C7A2;
     --colorBlockCardTwo: #D589CC;
+    --colorBlockCardThree: #7BC4F9;
+    --colorBlockCardFour: #FFA655;
+    --colorBlockCardFive: #FF5642;
     --colorFontContent: #2A3B4F;
 }
 
@@ -12,46 +15,51 @@
 .section-lk {
     scrollbar-width: var(--scrollbarWidth);
     scrollbar-color: var(--scrollbarThumb) var(--scrollbarBg);
-  }
-  
-  .section-lk::-webkit-scrollbar {
+}
+
+.section-lk::-webkit-scrollbar {
     width: var(--scrollbarWidth);
-  }
-  
-  .section-lk::-webkit-scrollbar-track {
+}
+
+.section-lk::-webkit-scrollbar-track {
     background: var(--scrollbarBg);
     border-radius: var(--scrollbarBorderRadius);
-  }
-  
-  .section-lk::-webkit-scrollbar-thumb {
+}
+
+.section-lk::-webkit-scrollbar-thumb {
     background-color: var(--scrollbarThumb);
     border-radius: var(--scrollbarBorderRadius);
     border: var(--scrollbarBorder);
-  }
+}
 
-  /*---------Пагинация-----------*/
+/*---------Пагинация-----------*/
 
-  .page-lk > div > .uk-pagination > li {
+.page-lk>div>.uk-pagination>li {
     background: var(--main-color);
     border-radius: 30px;
     width: 30px;
     height: 30px;
     line-height: 20px;
     margin: 0 5px;
-}.page-lk > div > .uk-pagination > li:hover {
+}
+
+.page-lk>div>.uk-pagination>li:hover {
     background: #9C16B9;
 }
-.page-lk > div > .uk-pagination > li.uk-disabled > span {
+
+.page-lk>div>.uk-pagination>li.uk-disabled>span {
     color: #fff;
     position: relative;
     right: 2px;
     bottom: 2px;
 }
-.page-lk > div > .uk-pagination > li > a {
+
+.page-lk>div>.uk-pagination>li>a {
     color: #fff;
     font-size: 14px;
     font-family: "Nunito-Bold";
 }
+
 /*---------Основные Блоки-----------*/
 .page-lk {
     width: 100%;
@@ -570,7 +578,8 @@ input:-webkit-autofill {
 .card-lk {
     border-radius: 10px;
 }
-.card-lk_button{
+
+.card-lk_button {
     padding: 25px 30px 25px 30px;
 }
 
@@ -660,7 +669,7 @@ input:-webkit-autofill {
     flex-direction: column;
 }
 
-.color-next-class-card>.card-lk_title > span {
+.color-next-class-card>.card-lk_title>span {
     color: inherit;
     font-family: "Nunito";
     font-weight: 400;
@@ -682,25 +691,29 @@ input:-webkit-autofill {
     color: var(--colorFontContent);
     padding: 25px 30px 0 30px;
 }
-.color-next-class-card>.card-lk_content > p  {
+
+.color-next-class-card>.card-lk_content>p {
     font-family: "Nunito";
     font-weight: 400;
     font-size: 20px;
     padding-right: 10px;
     color: var(--colorFontConten);
 }
-.color-next-class-card>.card-lk_content > p > span {
+
+.color-next-class-card>.card-lk_content>p>span {
     font-family: "Nunito-Bold";
     font-size: 20px;
     padding-right: 10px;
     color: var(--colorFontConten);
 }
-.card-lk_button > button {
+
+.card-lk_button>button {
     border: none;
     background: none;
     width: 100%;
 }
-.card-lk_button > button > a{
+
+.card-lk_button>button>a {
     background: var(--colorBlockCardOne);
     border: 3px solid var(--colorBlockCardOne);
     border-radius: 10px;
@@ -715,7 +728,7 @@ input:-webkit-autofill {
     text-decoration: none;
 }
 
-.card-lk_button:hover > button > a {
+.card-lk_button:hover>button>a {
     background: #fff;
     border: 3px solid var(--colorBlockCardOne);
     color: var(--colorBlockCardOne);
@@ -746,14 +759,15 @@ input:-webkit-autofill {
     justify-content: space-between;
     align-items: center;
 }
-.color-recent-classes-card>.card-lk_title > div {
+
+.color-recent-classes-card>.card-lk_title>div {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
 }
 
 
-.color-recent-classes-card>.card-lk_title > div > span {
+.color-recent-classes-card>.card-lk_title>div>span {
     color: #fff;
     font-family: "Nunito";
     font-weight: 400;
@@ -764,15 +778,19 @@ input:-webkit-autofill {
     border-radius: 10px;
     width: fit-content;
 }
-.payment-error{
+
+.payment-error {
     background: #D41B19;
 }
-.payment-made{
+
+.payment-made {
     background: #84B102;
 }
-.return-issued{
-    background:  #FF9501;
+
+.return-issued {
+    background: #FF9501;
 }
+
 .color-recent-classes-card>.card-lk_content {
     font-family: 'Nunito';
     font-style: normal;
@@ -782,14 +800,16 @@ input:-webkit-autofill {
     color: var(--colorFontContent);
     padding: 25px 30px 30px 30px;
 }
-.color-recent-classes-card>.card-lk_content > p {
+
+.color-recent-classes-card>.card-lk_content>p {
     font-family: "Nunito";
     font-weight: 400;
     font-size: 20px;
     padding-right: 10px;
     color: var(--colorFontConten);
 }
-.color-recent-classes-card>.card-lk_content > p > span {
+
+.color-recent-classes-card>.card-lk_content>p>span {
     font-family: "Nunito-Bold";
     font-weight: 700;
     font-size: 20px;
@@ -799,14 +819,15 @@ input:-webkit-autofill {
 
 
 
-
+/*-------Блоки страниц. 2.Последние занятия  звезды-----------------*/
 
 .star-wrapper {
     margin-bottom: 10px;
     display: flex;
     justify-content: flex-end;
 }
-  .star-wrapper a {
+
+.star-wrapper a {
     width: 20px;
     height: 20px;
     background-size: 20px 20px;
@@ -816,39 +837,207 @@ input:-webkit-autofill {
     margin-right: 3px;
     text-decoration: none;
     color: transparent;
-   
-  }
-  .star-wrapper a:hover {
-      transform: scale(1.4);
-  }
-  .s1:hover {
+
+}
+
+.star-wrapper a:hover {
+    transform: scale(1.4);
+}
+
+.s1:hover {
     background-image: url('https://cdn.nyutonika.ru/icons-lk/star-1.svg');
 }
+
 .s2:hover {
     background-image: url('https://cdn.nyutonika.ru/icons-lk/star-2.svg');
 }
+
 .s3:hover {
     background-image: url('https://cdn.nyutonika.ru/icons-lk/star-3.svg');
 }
-  .s4:hover {
+
+.s4:hover {
     background-image: url('https://cdn.nyutonika.ru/icons-lk/star-4.svg');
 }
-  .s5:hover {
+
+.s5:hover {
     background-image: url('https://cdn.nyutonika.ru/icons-lk/star-5.svg');
 }
-  .s1:hover ~ a {
+
+.s1:hover~a {
     background-image: url('https://cdn.nyutonika.ru/icons-lk/star-one.svg');
-  }
-  .s2:hover ~ a {
+}
+
+.s2:hover~a {
     background-image: url('https://cdn.nyutonika.ru/icons-lk/star-one.svg');
-  }
-  .s3:hover ~ a {
+}
+
+.s3:hover~a {
     background-image: url('https://cdn.nyutonika.ru/icons-lk/star-one.svg');
-  }
-  .s4:hover ~ a {
+}
+
+.s4:hover~a {
     background-image: url('https://cdn.nyutonika.ru/icons-lk/star-one.svg');
-  }
-  .s5:hover ~ a {
+}
+
+.s5:hover~a {
     background-image: url('https://cdn.nyutonika.ru/icons-lk/star-one.svg');
-  }
-  
+}
+
+/*-------Блоки страниц. 3.Пакеты занятий----------------*/
+
+.packages-text {
+    padding: 20px 10px;
+}
+
+.packages-text>p {
+    font-family: "Nunito-Bold";
+}
+
+.activity-packages {
+    padding: 35px 30px;
+    margin-bottom: 10px !important;
+}
+
+
+
+
+.activity-packages_title {
+    color: #fff;
+    font-family: "Nunito-Bold";
+    font-size: 32px;
+    padding-right: 10px;
+}
+
+.activity-packages_content {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0 20px 0;
+}
+
+.activity-packages_content>p {
+    font-family: 'Nunito-Bold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.activity-packages_content>p>span {
+    font-family: 'Nunito-Bold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+}
+
+.activity-packages_content_pricetext {
+    color: #fff;
+}
+
+.activity-packages_content_price {
+    color: #fff;
+}
+
+.activity-packages_content_price>span {
+    color: #fff;
+}
+
+.card-lk_button_activity-packages>button {
+    border: none;
+    background: none;
+    width: 100%;
+}
+
+.card-lk_button_activity-packages>button>a {
+    background-color: #fff;
+    border-radius: 10px;
+    color: var(--colorBlockCardOne);
+    width: 100%;
+    padding: 10px;
+    font-family: 'Nunito-Bold';
+    font-style: normal;
+    font-weight: 700;
+    transition: all 0.5s;
+    display: block;
+    text-decoration: none;
+}
+
+.card-lk_button_activity-packages:hover>button>a {
+    background-color: var(--colorBlockCardOne);
+    border: 3px solid #fff;
+    color: #fff;
+}
+
+.packag1 {
+    background-color: var(--colorBlockCardThree);
+}
+
+.packag1>.card-lk_button_activity-packages>button>a {
+    border: 3px solid var(--colorBlockCardThree);
+    color: var(--colorBlockCardThree);
+}
+
+.packag1>.card-lk_button_activity-packages:hover>button>a {
+    background-color: var(--colorBlockCardThree);
+    border: 3px solid #fff;
+    color: #fff;
+}
+
+.packag2 {
+    background-color: var(--colorBlockCardOne);
+}
+
+.packag2>.card-lk_button_activity-packages>button>a {
+    border: 3px solid var(--colorBlockCardOne);
+    color: var(--colorBlockCardOne);
+}
+
+.packag2>.card-lk_button_activity-packages:hover>button>a {
+    background-color: var(--colorBlockCardOne);
+    border: 3px solid #fff;
+    color: #fff;
+}
+
+.packag3 {
+    background-color: var(--colorBlockCardTwo);
+}
+
+.packag3>.card-lk_button_activity-packages>button>a {
+    border: 3px solid var(--colorBlockCardTwo);
+    color: var(--colorBlockCardTwo);
+}
+
+.packag3>.card-lk_button_activity-packages:hover>button>a {
+    background-color: var(--colorBlockCardTwo);
+    border: 3px solid #fff;
+    color: #fff;
+}
+
+.packag4 {
+    background-color: var(--colorBlockCardFour);
+}
+
+.packag4>.card-lk_button_activity-packages>button>a {
+    border: 3px solid var(--colorBlockCardFour);
+    color: var(--colorBlockCardFour);
+}
+
+.packag4>.card-lk_button_activity-packages:hover>button>a {
+    background-color: var(--colorBlockCardFour);
+    border: 3px solid #fff;
+    color: #fff;
+}
+
+.packag5 {
+    background-color: var(--colorBlockCardFive);
+}
+
+.packag5>.card-lk_button_activity-packages>button>a {
+    border: 3px solid var(--colorBlockCardFive);
+    color: var(--colorBlockCardFive);
+}
+
+.packag5>.card-lk_button_activity-packages:hover>button>a {
+    background-color: var(--colorBlockCardFive);
+    border: 3px solid #fff;
+    color: #fff;
+}
