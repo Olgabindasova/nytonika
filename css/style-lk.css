@@ -1074,28 +1074,52 @@ input:-webkit-autofill {
     max-width: 600px;
     margin: 0 auto;
 }
-
-.b-st-dop {
+.student > ul > li > div > .card-lk_button> a {
+    background: var(--colorBlockCardOne);
+    border: 3px solid var(--colorBlockCardOne);
+    border-radius: 10px;
+    color: #fff;
+    width: 100%;
+    padding: 10px;
+    font-family: 'Nunito-Bold';
+    font-style: normal;
+    font-weight: 700;
+    transition: all 0.5s;
     display: block;
+    text-decoration: none;
+    text-align: center;
+}
+.student > ul > li > div > .card-lk_button:hover>a {
+    background: #fff;
+    border: 3px solid var(--colorBlockCardOne);
+    color: var(--colorBlockCardOne);
+}
+.b-st-dop {
     width: fit-content;
     float: right;
     margin: 20px;
+    border-radius: 5px;
 }
-
+.b-st-dop:hover {
+    color: #fff;
+    text-decoration: none;
+}
 .danger-lk {
     background: #D41B19;
     border: 1px solid #D41B19;
-    line-height: 0px;
-    padding: 0px 25px 15px 60px;
-    height: 60px;
-    line-height: 10px;
-    vertical-align: middle;
-    min-width: 255px;
-    margin-top: 40px;
+    padding: 17px 12px 10px 30px;
+    height: 50px;
+    min-width: 215px;
+    color: #fff;
+    font-size: 12px;
+    font-family: "OpenSans-Bold";
+    margin-top: 30px;
+    display: flex;
+    cursor: pointer;
 }
 .danger-lk:hover {
-    background: #a81614;
-    border: 1px solid #a81614;
+    background: #fa0703;
+    border: 1px solid #fa0703;
     color: #fff;
     text-decoration: none;
 }
@@ -1103,10 +1127,10 @@ input:-webkit-autofill {
 .danger-lk::before {
     display: block;
     content: url('https://cdn.nyutonika.ru/icons-lk/danger.svg');
-    width: 25px;
-    height: 25px;
+    width: 20px;
+    height: 20px;
     color: #fff;
     position: relative;
-    top: 18px;
-    right: 40px;
+    top: -6px;
+    right: 15px;
 }
