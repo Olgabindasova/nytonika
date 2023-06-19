@@ -825,8 +825,37 @@ input:-webkit-autofill {
     margin-bottom: 10px;
     display: flex;
     justify-content: flex-end;
+    color: #fff !important;
+    font-size: 13px;
+    line-height: 13px;
+    font-weight: 400;
+    min-width: 150px;
 }
 
+.star-wrapper > span {
+    width: 28px;
+    height: 28px;
+    background-size: 28px 28px;
+    display: block;
+    margin: 0px 5px -16px;
+    position: relative;
+    top: -11px;
+}
+.rating1 {
+    background-image: url('https://cdn.nyutonika.ru/icons-lk/star-5.svg');
+}
+.rating2 {
+    background-image: url('https://cdn.nyutonika.ru/icons-lk/star-4.svg');
+}
+.rating3 {
+    background-image: url('https://cdn.nyutonika.ru/icons-lk/star-3.svg');
+}
+.rating4 {
+    background-image: url('https://cdn.nyutonika.ru/icons-lk/star-2.svg');
+}
+.rating5 {
+    background-image: url('https://cdn.nyutonika.ru/icons-lk/star-1.svg');
+}
 .star-wrapper a {
     width: 20px;
     height: 20px;
