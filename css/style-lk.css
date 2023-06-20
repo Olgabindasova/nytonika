@@ -8,6 +8,7 @@
     --colorBlockCardFour: #FFA655;
     --colorBlockCardFive: #FF5642;
     --colorFontContent: #2A3B4F;
+    --colorEducator: #229FA4;
 }
 
 /*---------Скролл-----------*/
@@ -441,6 +442,11 @@
     border: 3px solid #fff;
 }
 
+.menu-lk.educator>li>a>img:hover {
+    background-color: var(--colorEducator) !important;
+    border: 3px solid #fff;
+}
+
 .menu-lk>li>a {
     text-decoration: none;
 }
@@ -474,6 +480,12 @@
 .menu-lk.active>li>a>span:hover {
     display: block;
     background: var(--colorBlockCardOne);
+    border: 2px solid #FFFFFF;
+}
+
+.menu-lk.educator.active>li>a>span:hover {
+    display: block;
+    background: var(--colorEducator);
     border: 2px solid #FFFFFF;
 }
 
@@ -654,6 +666,10 @@ input:-webkit-autofill {
     justify-content: space-between;
 }
 
+.color-next-class-card.educator {
+    border: 3px solid var(--colorEducator) !important;
+}
+
 .color-next-class-card>.card-lk_title {
     background: var(--colorBlockCardOne);
     width: 100%;
@@ -667,6 +683,17 @@ input:-webkit-autofill {
     line-height: 32px;
     display: flex;
     flex-direction: column;
+}
+
+.color-next-class-card.educator>.card-lk_title {
+    background: var(--colorEducator) !important;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.educator>div>.payment-made {
+    background: #82C9C0 !important;
 }
 
 .color-next-class-card>.card-lk_title>span {
@@ -728,10 +755,64 @@ input:-webkit-autofill {
     text-decoration: none;
 }
 
+.buttons-educator>.card-lk_button>button>a {
+    background: var(--colorEducator);
+    border: 3px solid var(--colorEducator);
+
+}
+
 .card-lk_button:hover>button>a {
     background: #fff;
     border: 3px solid var(--colorBlockCardOne);
     color: var(--colorBlockCardOne);
+}
+
+.buttons-educator>.card-lk_button:hover>.card-lk__button_class>a {
+    border: 3px solid var(--colorEducator);
+    color: var(--colorEducator);
+}
+
+.buttons-educator {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 30px 25px 30px;
+}
+
+.buttons-educator>.card-lk_button {
+    padding: 0;
+    width: 49%;
+}
+
+.card-lk__button_repeal {
+    background-color: #d41b19;
+    border-radius: 10px;
+    color: #fff;
+    font-family: 'Nunito-Bold';
+    border: 3px solid #d41b19;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.card-lk__button_repeal:hover {
+    background-color: #fff;
+    color: #d41b19;
+}
+
+.card-lk__button_repeal_return-money {
+    background-color: #d41b19;
+    border-radius: 10px;
+    color: #fff;
+    font-family: 'Nunito-Bold';
+    border: 3px solid #d41b19;
+    transition: all 0.5s;
+    cursor: pointer;
+    width: 100%;
+    padding: 10px;
+}
+
+.card-lk__button_repeal_return-money:hover {
+    background-color: #fff;
+    color: #d41b19;
 }
 
 /*-------Блоки страниц. 2.Последние занятия-----------------*/
@@ -832,7 +913,7 @@ input:-webkit-autofill {
     min-width: 150px;
 }
 
-.star-wrapper > span {
+.star-wrapper>span {
     width: 28px;
     height: 28px;
     background-size: 28px 28px;
@@ -841,21 +922,27 @@ input:-webkit-autofill {
     position: relative;
     top: -11px;
 }
+
 .rating1 {
     background-image: url('https://cdn.nyutonika.ru/icons-lk/star-5.svg');
 }
+
 .rating2 {
     background-image: url('https://cdn.nyutonika.ru/icons-lk/star-4.svg');
 }
+
 .rating3 {
     background-image: url('https://cdn.nyutonika.ru/icons-lk/star-3.svg');
 }
+
 .rating4 {
     background-image: url('https://cdn.nyutonika.ru/icons-lk/star-2.svg');
 }
+
 .rating5 {
     background-image: url('https://cdn.nyutonika.ru/icons-lk/star-1.svg');
 }
+
 .star-wrapper a {
     width: 20px;
     height: 20px;
@@ -985,7 +1072,7 @@ input:-webkit-autofill {
     width: 100%;
 }
 
-.card-lk_button_activity-packages  {
+.card-lk_button_activity-packages {
     background-color: #fff;
     border-radius: 10px;
     color: var(--colorBlockCardOne);
@@ -999,7 +1086,7 @@ input:-webkit-autofill {
     text-decoration: none;
 }
 
-.card-lk_button_activity-packages:hover  {
+.card-lk_button_activity-packages:hover {
     background-color: var(--colorBlockCardOne);
     border: 3px solid #fff;
     color: #fff;
@@ -1009,12 +1096,12 @@ input:-webkit-autofill {
     background-color: var(--colorBlockCardThree);
 }
 
-.packag1>.card-lk_button_activity-packages  {
+.packag1>.card-lk_button_activity-packages {
     border: 3px solid var(--colorBlockCardThree);
     color: var(--colorBlockCardThree);
 }
 
-.packag1>.card-lk_button_activity-packages:hover  {
+.packag1>.card-lk_button_activity-packages:hover {
     background-color: var(--colorBlockCardThree);
     border: 3px solid #fff;
     color: #fff;
@@ -1024,12 +1111,12 @@ input:-webkit-autofill {
     background-color: var(--colorBlockCardOne);
 }
 
-.packag2>.card-lk_button_activity-packages  {
+.packag2>.card-lk_button_activity-packages {
     border: 3px solid var(--colorBlockCardOne);
     color: var(--colorBlockCardOne);
 }
 
-.packag2>.card-lk_button_activity-packages:hover  {
+.packag2>.card-lk_button_activity-packages:hover {
     background-color: var(--colorBlockCardOne);
     border: 3px solid #fff;
     color: #fff;
@@ -1044,7 +1131,7 @@ input:-webkit-autofill {
     color: var(--colorBlockCardTwo);
 }
 
-.packag3>.card-lk_button_activity-packages:hover  {
+.packag3>.card-lk_button_activity-packages:hover {
     background-color: var(--colorBlockCardTwo);
     border: 3px solid #fff;
     color: #fff;
@@ -1054,12 +1141,12 @@ input:-webkit-autofill {
     background-color: var(--colorBlockCardFour);
 }
 
-.packag4>.card-lk_button_activity-packages  {
+.packag4>.card-lk_button_activity-packages {
     border: 3px solid var(--colorBlockCardFour);
     color: var(--colorBlockCardFour);
 }
 
-.packag4>.card-lk_button_activity-packages:hover  {
+.packag4>.card-lk_button_activity-packages:hover {
     background-color: var(--colorBlockCardFour);
     border: 3px solid #fff;
     color: #fff;
@@ -1074,7 +1161,7 @@ input:-webkit-autofill {
     color: var(--colorBlockCardFive);
 }
 
-.packag5>.card-lk_button_activity-packages:hover  {
+.packag5>.card-lk_button_activity-packages:hover {
     background-color: var(--colorBlockCardFive);
     border: 3px solid #fff;
     color: #fff;
@@ -1103,7 +1190,8 @@ input:-webkit-autofill {
     max-width: 600px;
     margin: 0 auto;
 }
-.student > ul > li > div > .card-lk_button> a {
+
+.student>ul>li>div>.card-lk_button>a {
     background: var(--colorBlockCardOne);
     border: 3px solid var(--colorBlockCardOne);
     border-radius: 10px;
@@ -1118,21 +1206,25 @@ input:-webkit-autofill {
     text-decoration: none;
     text-align: center;
 }
-.student > ul > li > div > .card-lk_button:hover>a {
+
+.student>ul>li>div>.card-lk_button:hover>a {
     background: #fff;
     border: 3px solid var(--colorBlockCardOne);
     color: var(--colorBlockCardOne);
 }
+
 .b-st-dop {
     width: fit-content;
     float: right;
     margin: 20px;
     border-radius: 5px;
 }
+
 .b-st-dop:hover {
     color: #fff;
     text-decoration: none;
 }
+
 .danger-lk {
     background: #D41B19;
     border: 1px solid #D41B19;
@@ -1146,6 +1238,7 @@ input:-webkit-autofill {
     display: flex;
     cursor: pointer;
 }
+
 .danger-lk:hover {
     background: #fa0703;
     border: 1px solid #fa0703;
@@ -1162,4 +1255,145 @@ input:-webkit-autofill {
     position: relative;
     top: -6px;
     right: 15px;
+}
+
+.nothing-here-yet {
+    background: #fff;
+    border-radius: 10px;
+    font-family: 'Nunito-Bold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+    color: var(--colorBlockCardOne);
+    margin-top: 80px;
+    margin-bottom: 30px;
+    padding: 15px 30px;
+    width: fit-content;
+    border: 3px solid var(--colorBlockCardOne);
+}
+
+
+.operation-history {
+    width: 100%;
+}
+
+table.operation-history>thead {
+    font-family: 'Nunito-Bold';
+    font-style: normal;
+    font-weight: 700 !important;
+    font-size: 26px !important;
+    color: var(--colorFontContent);
+    border-bottom: 3px solid #AE00D4;
+    text-align: left;
+}
+
+table.operation-history>thead>tr>th {
+    padding: 15px 15px 15px 25px;
+}
+
+table.operation-history>tbody>tr>td {
+    padding: 45px 35px 15px 25px;
+}
+
+table.operation-history>tbody tr td:nth-of-type(3) {
+    color: var(--colorEducator);
+}
+
+table.operation-history>tbody tr td:nth-of-type(5) {
+    color: var(--colorEducator);
+}
+
+table.operation-history>tbody {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400 !important;
+    font-size: 24px !important;
+    color: var(--colorFontContent);
+    text-align: left;
+}
+
+table.operation-history>tbody>tr>td {
+    padding: 45px 35px 25px 25px;
+    background: linear-gradient(0deg, rgba(130, 201, 192, 0.2) 80%, rgba(255, 255, 255, 1) 80%);
+}
+
+table.operation-history>tbody>tr.write-off>td {
+    padding: 45px 35px 25px 25px;
+    background: linear-gradient(0deg, rgba(212, 27, 25, 0.1) 80%, rgba(255, 255, 255, 1) 80%);
+}
+
+table.operation-history>tbody .write-off td:nth-of-type(3) {
+    color: #D41B19;
+}
+
+table.operation-history>tbody .write-off td:nth-of-type(5) {
+    color: #D41B19
+}
+
+@media only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px) {
+
+    table.operation-history,
+    table.operation-history>thead,
+    table.operation-history>tbody,
+    table.operation-history>thead tr th,
+    table.operation-history>tbody tr td,
+    table.operation-history>thead tr,
+    table.operation-history>tbody tr {
+        display: block;
+    }
+
+    table.operation-history>thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    table.operation-history>thead tr,
+    table.operation-history>tbody tr {
+        margin: 0 0 1rem 0;
+    }
+
+
+
+    table.operation-history>tbody tr td {
+
+        border: none;
+        position: relative;
+        padding-left: 50% !important;
+    }
+
+    table.operation-history>tbody tr td:before {
+        position: absolute;
+        top: 45px;
+        left: 25px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+    }
+
+    table.operation-history>tbody {
+        font-size: 16px !important;
+    }
+
+    table.operation-history>tbody tr td:nth-of-type(1):before {
+        content: "ID";
+    }
+
+    table.operation-history>tbody tr td:nth-of-type(2):before {
+        content: "ДАТА";
+    }
+
+    table.operation-history>tbody tr td:nth-of-type(3):before {
+        content: "ТИП";
+    }
+
+    table.operation-history>tbody tr td:nth-of-type(4):before {
+        content: "ДЕЙСТВИЯ";
+    }
+
+    table.operation-history>tbody tr td:nth-of-type(5):before {
+        content: "СУММА";
+    }
 }
