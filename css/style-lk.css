@@ -1397,3 +1397,138 @@ table.operation-history>tbody .write-off td:nth-of-type(5) {
         content: "СУММА";
     }
 }
+.educator > li > .card-lk {
+    background-color: var(--colorEducator);
+    border-radius: 10px;
+    padding: 30px;
+}
+.educator_content {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0 15px 0;
+    border-bottom: 1px solid #fff;
+}
+.educator_content.border-none {
+    border-bottom: none;
+}
+.educator_content.border-none span {
+    font-family: 'Nunito-Bold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    color: #fff;
+    margin-right: 5px;
+}
+.educator_content > p {
+    font-family: 'Nunito-Bold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    color: #fff;
+}
+.educator_content > p > span {
+    font-family: 'Nunito';
+    font-weight: 400;
+    font-size: 20px;
+    color: #fff;
+}
+.educator-balans {
+display: flex;
+justify-content: space-between;
+}
+.balans {
+    min-width: 250px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border: 2px solid var(--colorFontContent);
+    border-radius: 10px;
+    margin: 20px 20px 20px 40px;
+    width: fit-content;
+}
+.balans > p {
+    font-family: 'Nunito-Bold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    color: var(--colorFontContent);
+    line-height: 30px;
+}
+.balans > p > span {
+    color: var(--colorFontContent);
+    font-size: 30px;
+}
+.form-lk-educator > fieldset {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+.form-lk-educator > fieldset > div > input {
+    width: 96%;
+    margin: 10px;
+    height: 55px;
+    border: 2px solid var(--colorEducator);
+    color: var(--colorEducator);
+    border-radius: 5px;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 20px;
+    padding: 0 20px;
+}
+.form-lk-educator > fieldset > div > input[type=datetime-local]::-webkit-calendar-picker-indicator {
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='50' height='50' viewBox='0 0 50 50' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M39.5833 8.33332H35.4166V6.24999C35.4166 5.69746 35.1971 5.16755 34.8064 4.77685C34.4157 4.38615 33.8858 4.16666 33.3333 4.16666C32.7808 4.16666 32.2509 4.38615 31.8602 4.77685C31.4695 5.16755 31.25 5.69746 31.25 6.24999V8.33332H18.75V6.24999C18.75 5.69746 18.5305 5.16755 18.1398 4.77685C17.7491 4.38615 17.2192 4.16666 16.6666 4.16666C16.1141 4.16666 15.5842 4.38615 15.1935 4.77685C14.8028 5.16755 14.5833 5.69746 14.5833 6.24999V8.33332H10.4166C8.75902 8.33332 7.16931 8.9918 5.99721 10.1639C4.82511 11.336 4.16663 12.9257 4.16663 14.5833V39.5833C4.16663 41.2409 4.82511 42.8306 5.99721 44.0027C7.16931 45.1748 8.75902 45.8333 10.4166 45.8333H39.5833C41.2409 45.8333 42.8306 45.1748 44.0027 44.0027C45.1748 42.8306 45.8333 41.2409 45.8333 39.5833V14.5833C45.8333 12.9257 45.1748 11.336 44.0027 10.1639C42.8306 8.9918 41.2409 8.33332 39.5833 8.33332ZM41.6666 39.5833C41.6666 40.1359 41.4471 40.6658 41.0564 41.0565C40.6657 41.4472 40.1358 41.6667 39.5833 41.6667H10.4166C9.86409 41.6667 9.33419 41.4472 8.94349 41.0565C8.55279 40.6658 8.33329 40.1359 8.33329 39.5833V25H41.6666V39.5833ZM41.6666 20.8333H8.33329V14.5833C8.33329 14.0308 8.55279 13.5009 8.94349 13.1102C9.33419 12.7195 9.86409 12.5 10.4166 12.5H14.5833V14.5833C14.5833 15.1359 14.8028 15.6658 15.1935 16.0565C15.5842 16.4472 16.1141 16.6667 16.6666 16.6667C17.2192 16.6667 17.7491 16.4472 18.1398 16.0565C18.5305 15.6658 18.75 15.1359 18.75 14.5833V12.5H31.25V14.5833C31.25 15.1359 31.4695 15.6658 31.8602 16.0565C32.2509 16.4472 32.7808 16.6667 33.3333 16.6667C33.8858 16.6667 34.4157 16.4472 34.8064 16.0565C35.1971 15.6658 35.4166 15.1359 35.4166 14.5833V12.5H39.5833C40.1358 12.5 40.6657 12.7195 41.0564 13.1102C41.4471 13.5009 41.6666 14.0308 41.6666 14.5833V20.8333Z' fill='%23229FA4'/%3e%3c/svg%3e ");
+    background-repeat: no-repeat;
+    background-position: 98% 50%;
+  }
+.form-lk-educator > fieldset > div > select {
+    margin: 10px;
+    width: 96%;
+    border: 2px solid var(--colorEducator);
+    color: var(--colorEducator);
+    height: 55px !important;
+    border-radius: 5px;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 20px;
+}
+.form-lk-educator > fieldset > div > .uk-select:not([multiple]):not([size]) {
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='50' height='50' viewBox='0 0 50 50' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M25 31.25L14.5834 20.8333H35.4167L25 31.25Z' fill='%23229FA4'/%3e%3c/svg%3e ");
+    background-repeat: no-repeat;
+    background-position: 98% 50%;
+    background-size: 30px 30px;
+}
+.form-lk-educator > fieldset > div > label {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    color: var(--colorFontContent);
+    margin: 0 0 20px 30px;
+}
+.form-lk-educator > fieldset > div > button {
+    font-family: 'Nunito-Bold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    text-align: center;
+    color: #fff;
+    background: var(--colorEducator);
+    padding: 15px 30px;
+    border: 2px solid var(--colorEducator);
+    border-radius: 5px;
+    text-transform: none;
+    width: 100%;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.form-lk-educator > fieldset > div > button:hover {
+    color:  var(--colorEducator);
+    background: #fff;
+    border: 2px solid var(--colorEducator);
+}
