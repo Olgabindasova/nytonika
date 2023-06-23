@@ -7510,6 +7510,30 @@ table.punkt td>ul>li::before {
   color: #2A3B4F;
 }
 
+.form-leave-request>div>.uk-form-controls {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.form-leave-request>div>div.uk-form-controls>label {
+  padding: 25px;
+  margin-bottom: 15px;
+  font-family: "Nunito-Bold";
+  font-size: 14px;
+  color: #2A3B4F;
+}
+
+.form-leave-request>div>div.uk-form-controls>label > input.uk-radio {
+  margin-right: 7px;
+  height: 25px;
+  width: 25px;
+  border: 2px solid #ae00d4;
+}
+.form-leave-request>div>div.uk-form-controls>label > input.uk-radio:checked {
+  background-color: #ae00d4;
+}
+
 .form-leave-request>div>div>input.uk-input {
   color: #2A3B4F !important;
   border: 1px solid #ae00d4;
@@ -7744,7 +7768,6 @@ table.punkt td>ul>li::before {
   width: 100%;
   margin: 0 auto;
   display: flex;
-  justify-content: flex-start;
   padding: 50px 30px 15px 30px;
 }
 
@@ -7764,7 +7787,7 @@ table.punkt td>ul>li::before {
   font-family: "Nunito-Bold";
   font-style: normal;
   font-weight: 700;
-  line-height: 38px;
+  line-height: 44px;
   font-size: 40px;
   margin-top: 25px;
   max-width: 555px;
@@ -7885,42 +7908,47 @@ table.punkt td>ul>li::before {
   top: 70px;
   left: -100px;
 }
+
 .napravlenia_nachscola_text {
   color: #33c7a2;
-    font-family: "Nunito-Bold";
-    font-size: 22px;
-    line-height: 28px;
-    padding-left: 14px;
-    z-index: 1000;
-    display: block;
-    position: relative;
+  font-family: "Nunito-Bold";
+  font-size: 22px;
+  line-height: 28px;
+  padding-left: 14px;
+  z-index: 1000;
+  display: block;
+  position: relative;
 }
-.napravlenia_nach_banner-text > p{
+
+.napravlenia_nach_banner-text>p {
   margin-top: 40px;
   padding: 20px;
   font-family: "Nunito";
 }
 
-.napravlenia_nach_banner-text > p > span {
+.napravlenia_nach_banner-text>p>span {
   padding-top: 15px;
-    display: inline-block;
-    color: #34c7a2;
-    font-size: 25px;
-    font-family: "Nunito-Bold";
+  display: inline-block;
+  color: #34c7a2;
+  font-size: 25px;
+  font-family: "Nunito-Bold";
 }
 
 .banner-trend-form.napravlenia_nach>div>button {
   background: #33C7A2;
   border: 2px solid #33C7A2;
 }
+
 .banner-trend-form.napravlenia_nach>div>button:hover {
   border: 2px solid #33C7A2;
   color: #33C7A2;
   background: #fff;
 }
+
 .banner-trend-form.napravlenia_nach>div>input {
   border: 2px solid #33C7A2;
 }
+
 .banner-trend-form.napravlenia_nach>div>span.uk-form-icon {
   color: #33C7A2;
 }
@@ -7934,6 +7962,7 @@ table.punkt td>ul>li::before {
   line-height: 29px;
   color: #2a3b4f;
 }
+
 .napravlenia_textblock_two::before {
   content: "?";
   display: block;
@@ -7945,7 +7974,8 @@ table.punkt td>ul>li::before {
   top: 20px;
   transition: all 0.8s;
 }
-.napravlenia_textblock_two:hover::before  {
+
+.napravlenia_textblock_two:hover::before {
   content: "?";
   display: block;
   position: relative;
@@ -7955,6 +7985,7 @@ table.punkt td>ul>li::before {
   right: 75px;
   top: 20px;
 }
+
 .napravlenia_textblock_banner-nach {
   padding: 0 10px 40px 80px !important;
 }
