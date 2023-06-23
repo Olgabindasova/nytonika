@@ -706,9 +706,12 @@ input:-webkit-autofill {
     font-size: 28px;
     line-height: 32px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 115px;
 }
-
 .color-next-class-card.educator>.card-lk_title {
     background: var(--colorEducator) !important;
     display: flex;
@@ -731,6 +734,7 @@ input:-webkit-autofill {
     text-decoration: none;
     margin-top: 10px;
     cursor: pointer;
+    margin-left: 5px;
 }
 .educator>div>.payment-made {
     background: #82C9C0 !important;
