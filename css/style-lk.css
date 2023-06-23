@@ -683,7 +683,13 @@ input:-webkit-autofill {
     flex-direction: column;
     justify-content: space-between;
 }
-
+.educator-non {
+    flex-direction: row;
+    align-items: center;
+}
+.educator-non > div.card-lk_content  {
+    padding: 0px 30px 0 30px !important;
+}
 .color-next-class-card.educator {
     border: 3px solid var(--colorEducator) !important;
 }
@@ -1231,7 +1237,14 @@ input:-webkit-autofill {
     border: 3px solid var(--colorBlockCardOne);
     color: var(--colorBlockCardOne);
 }
-
+.color-red {
+    background: #D41B19 !important;
+    border: 3px solid #D41B19 !important;
+}
+.color-red:hover {
+    background: #fff !important;
+    color: #D41B19 !important;
+}
 .b-st-dop {
     width: fit-content;
     float: right;
