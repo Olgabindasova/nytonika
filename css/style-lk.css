@@ -1238,12 +1238,19 @@ input:-webkit-autofill {
     color: var(--colorBlockCardOne);
 }
 .color-red {
-    background: #D41B19 !important;
-    border: 3px solid #D41B19 !important;
+    border-radius: 5px;
+    background: #D41B19;
+    border: 3px solid #D41B19;
+    color: #fff;
+    padding: 10px 20px;
+    font-family: "Nunito-Bold";
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.5s;
 }
 .color-red:hover {
-    background: #fff !important;
-    color: #D41B19 !important;
+    background: #fff;
+    color: #D41B19;
 }
 .b-st-dop {
     width: fit-content;
