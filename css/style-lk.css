@@ -714,8 +714,24 @@ input:-webkit-autofill {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
 }
-
+.card-lk_title> a {
+    color: inherit;
+    font-family: Nunito;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+    padding: 10px;
+    margin-bottom: 10px;
+    background: #D41B19;
+    border: 2px solid #FFFFFF;
+    border-radius: 10px;
+    width: fit-content;
+    text-decoration: none;
+    margin-top: 10px;
+    cursor: pointer;
+}
 .educator>div>.payment-made {
     background: #82C9C0 !important;
 }
@@ -764,7 +780,7 @@ input:-webkit-autofill {
     width: 100%;
 }
 
-.card-lk_button>button>a {
+.card-lk_button>button {
     background: var(--colorBlockCardOne);
     border: 3px solid var(--colorBlockCardOne);
     border-radius: 10px;
@@ -779,23 +795,35 @@ input:-webkit-autofill {
     text-decoration: none;
 }
 
-.buttons-educator>.card-lk_button>button>a {
+.buttons-educator>.card-lk_button>button {
     background: var(--colorEducator);
     border: 3px solid var(--colorEducator);
-
 }
-.buttons-educator>.card-lk_button>button>a.inactively {
+
+.buttons-educator>.card-lk_button>button:hover {
+    background: #fff;
+    border: 3px solid var(--colorEducator);
+    color: var(--colorEducator);
+}
+
+.buttons-educator>.card-lk_button>button:disabled {
     background: #82C9C0;
     border: 3px solid #82C9C0;
     cursor: none;
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    font-family: 'Nunito-Bold';
+    font-style: normal;
+    font-weight: 700;
 }
-.buttons-educator>.card-lk_button>button>a.inactively:hover {
+.buttons-educator>.card-lk_button>button:hover:disabled {
     background: #82C9C0;
     border: 3px solid #82C9C0;
     cursor: none;
     color: #fff;
 }
-.card-lk_button:hover>button>a {
+.card-lk_button:hover>button {
     background: #fff;
     border: 3px solid var(--colorBlockCardOne);
     color: var(--colorBlockCardOne);
