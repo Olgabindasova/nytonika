@@ -784,7 +784,17 @@ input:-webkit-autofill {
     border: 3px solid var(--colorEducator);
 
 }
-
+.buttons-educator>.card-lk_button>button>a.inactively {
+    background: #82C9C0;
+    border: 3px solid #82C9C0;
+    cursor: none;
+}
+.buttons-educator>.card-lk_button>button>a.inactively:hover {
+    background: #82C9C0;
+    border: 3px solid #82C9C0;
+    cursor: none;
+    color: #fff;
+}
 .card-lk_button:hover>button>a {
     background: #fff;
     border: 3px solid var(--colorBlockCardOne);
