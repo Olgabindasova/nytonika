@@ -475,6 +475,7 @@
     animation-duration: 1s;
     animation-delay: 0.5s;
     animation-fill-mode: forwards;
+    min-width: 180px;
 }
 
 .menu-lk.active>li>a>span:hover {
@@ -488,6 +489,23 @@
     background: var(--colorEducator);
     border: 2px solid #FFFFFF;
 }
+.menu-lk > li.activ-color > a > img {
+    background: var(--colorBlockCardOne);
+    border: 2px solid #FFFFFF;
+}
+.menu-lk.educator > li.activ-color > a > img {
+    background: var(--colorEducator);
+    border: 2px solid #FFFFFF;
+}
+.menu-lk.active > li.activ-color > a > span {
+    background: var(--colorBlockCardOne);
+    border: 2px solid #FFFFFF;
+}
+.menu-lk.educator.active > li.activ-color > a > span {
+    background: var(--colorEducator);
+    border: 2px solid #FFFFFF;
+}
+
 
 /*-----------------------------*/
 
@@ -1084,6 +1102,7 @@ input:-webkit-autofill {
     transition: all 0.5s;
     display: block;
     text-decoration: none;
+    cursor: pointer;
 }
 
 .card-lk_button_activity-packages:hover {
