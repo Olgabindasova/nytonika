@@ -772,6 +772,9 @@ input:-webkit-autofill {
     background: #D41B19;
     border: 2px solid #FFFFFF;
     border-radius: 10px;
+    margin-left: 10px;
+    min-width: 125px;
+    text-align: center;
 }
 
 .color-next-class-card>.card-lk_content {
@@ -1424,7 +1427,7 @@ table.operation-history>tbody {
     font-family: 'Nunito';
     font-style: normal;
     font-weight: 400 !important;
-    font-size: 24px !important;
+    font-size: 22px !important;
     color: var(--colorFontContent);
     text-align: left;
 }
@@ -1448,7 +1451,7 @@ table.operation-history>tbody .write-off td:nth-of-type(5) {
 }
 
 @media only screen and (max-width: 760px),
-(min-device-width: 768px) and (max-device-width: 1024px) {
+(min-device-width: 760px) and (max-device-width: 1024px) {
 
     table.operation-history,
     table.operation-history>thead,
@@ -1469,12 +1472,14 @@ table.operation-history>tbody .write-off td:nth-of-type(5) {
     table.operation-history>thead tr,
     table.operation-history>tbody tr {
         margin: 0 0 1rem 0;
+        border-bottom: 2px solid #ae00d4;
+        padding-bottom: 30px;
     }
 
 
 
     table.operation-history>tbody tr td {
-
+        font-size: 14px;
         border: none;
         position: relative;
         padding-left: 50% !important;
@@ -1901,6 +1906,32 @@ table.operation-history>tbody .write-off td:nth-of-type(5) {
     .color-order-history-card>.card-lk_title>span {
         font-size: 28px;
     }
+
+    .card-lk__button_repeal {
+        font-size: 14px;
+    }
+
+    .card-lk__button_repeal_return-money {
+        font-size: 14px;
+    }
+
+    .operation-history {
+        margin-top: -20px;
+    }
+
+    .balans {
+        min-width: 220px;
+        padding: 20px;
+    }
+
+    .balans>p {
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    .balans>p>span {
+        font-size: 25px;
+    }
 }
 
 @media (max-width: 767px) {
@@ -1954,6 +1985,25 @@ table.operation-history>tbody .write-off td:nth-of-type(5) {
 
     .page-lk>div>a.b-st-dop {
         margin-left: 5px;
+    }
+
+    .educator-balans {
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .balans {
+        margin: 20px 20px -10px 0px;
+        width: 98%;
+        padding: 10px;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .balans>p {
+        margin-right: 10px;
     }
 }
 
@@ -2066,5 +2116,84 @@ table.operation-history>tbody .write-off td:nth-of-type(5) {
         font-size: 20px;
         line-height: 24px;
     }
+
+    .buttons-educator {
+        padding: 5px 30px 25px 30px;
+        flex-direction: column;
+    }
+
+    .buttons-educator>.card-lk_button {
+        padding: 0;
+        width: 100%;
+    }
+
+    .card-lk__button_repeal {
+        margin-top: 10px;
+        height: 35px;
+    }
+
+    .color-next-class-card.educator>.card-lk_title {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .color-next-class-card>.card-lk_title>span {
+        padding: 5px 15px;
+        margin-bottom: 5px;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .educator>li>.card-lk {
+        padding: 10px 20px;
+    }
+
+    .educator_content {
+        padding: 10px 0 10px 0;
+    }
+
+    .educator_content>p {
+        font-size: 16px;
+    }
+
+    .educator_content>p>span {
+        font-size: 16px;
+    }
+
+    .educator_content.border-none span {
+        font-size: 28px;
+    }
+
+    .form-lk-educator>fieldset>div>button {
+        font-size: 14px;
+        padding: 15px 30px;
+        margin-top: -10px;
+    }
+
+    .form-lk-educator>fieldset>div>label {
+        font-size: 16px;
+        margin: 0 0 20px 5px;
+    }
+
+    .form-lk-educator>fieldset>div>select {
+        margin: 10px 10px 10px 0px;
+        font-size: 14px;
+        line-height: 14px;
+        height: 45px !important;
+        width: 100%;
+    }
+
+    .form-lk-educator>fieldset>div>input {
+        height: 45px;
+        font-size: 14px;
+        line-height: 16px;
+        margin: 10px 10px 10px 0px;
+        width: 100%;
+    }
+
+    .form-lk-educator>fieldset>div {
+        width: 100%;
+    }
+
 
 }
