@@ -576,7 +576,9 @@ h4 {
 }
 
 .button-menu-lk-ex {
+  border: none;
   background-image: url("https://cdn.nyutonika.ru/icons/lk2-.svg");
+  background-color: #fff;
 }
 
 .button-menu-lk-ex:hover {
@@ -7524,13 +7526,14 @@ table.punkt td>ul>li::before {
   color: #2A3B4F;
 }
 
-.form-leave-request>div>div.uk-form-controls>label > input.uk-radio {
+.form-leave-request>div>div.uk-form-controls>label>input.uk-radio {
   margin-right: 7px;
   height: 25px;
   width: 25px;
   border: 2px solid #ae00d4;
 }
-.form-leave-request>div>div.uk-form-controls>label > input.uk-radio:checked {
+
+.form-leave-request>div>div.uk-form-controls>label>input.uk-radio:checked {
   background-color: #ae00d4;
 }
 
