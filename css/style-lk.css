@@ -1682,7 +1682,22 @@ table.operation-history>tbody .write-off td:nth-of-type(5) {
     border: 2px solid var(--colorEducator);
 }
 
+.header-top-lk_profile>.logo-mobile {
+    display: none;
+    width: 0;
+}
 
+.header-top-lk_profile>.menu-lk-mobile {
+    display: none;
+}
+
+#offcanvas-mobile-menu {
+    display: none;
+}
+
+.mobile-lk_all_contact {
+    display: none;
+}
 
 /*-------Адаптив------------------*/
 
@@ -2206,4 +2221,203 @@ table.operation-history>tbody .write-off td:nth-of-type(5) {
     }
 
 
+}
+
+@media (max-width: 500px) {
+    .aside-lk {
+        display: none;
+    }
+
+    .header-top-lk.lk-mobile {
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 30px;
+    }
+
+    .logo1 {
+        width: 50px;
+    }
+
+    .header-top-lk_profile {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .back-to-site-lk {
+        border: 2px solid var(--main-color);
+        font-family: "Nunito";
+        font-weight: 700;
+        width: 100%;
+        margin: 15px auto 15px;
+        height: 35px;
+        display: block;
+        line-height: 30px;
+    }
+
+    .header-top-lk_profile>.logo-mobile {
+        width: 55%;
+        display: block;
+    }
+
+    .header-top-lk_profile>div {
+        max-width: 80px;
+    }
+
+    .header-top-lk_profile_title {
+        font-weight: 600;
+    }
+
+    .header-top-lk_profile_name {
+        font-weight: 700;
+    }
+
+    .header-top-lk_profile>.menu-lk-mobile {
+        display: block;
+    }
+
+    .menu-slide-lk-mobile {
+        max-width: 500px !important;
+        width: 100%;
+        background-color: var(--main-color);
+        height: fit-content;
+        padding: 20px 45px;
+    }
+
+    .menu-lk-mobile-title {
+        margin-bottom: 40px;
+    }
+
+    .menu-slide-lk-mobile_menu {
+        color: #fff;
+        font-size: 22px;
+        font-family: Nunito-Bold;
+        font-weight: 700;
+        line-height: 28px;
+    }
+
+    .menu-lk-mobile-title>div::after {
+        height: 1px;
+        background: #fff;
+        width: 100%;
+        left: 0;
+        top: 20px;
+        display: block;
+        position: relative;
+        content: "";
+    }
+
+    .menu-lk-mobile-title>a>span {
+        border: 2px solid #fff;
+        padding: 5px;
+        border-radius: 50%;
+        float: right;
+        display: block;
+        position: relative;
+        top: -40px;
+        right: -20px;
+        transition: all 0.5s;
+        cursor: pointer;
+    }
+
+    .menu-lk-mobile-title>a:hover>span {
+        background: #fff;
+        color: var(--main-color);
+    }
+
+    .menu-slide-lk-mobile>ul {
+        margin: 20px 0 20px;
+    }
+
+    .menu-slide-lk-mobile>ul>li {
+        margin: 10px 0;
+
+    }
+
+    .menu-slide-lk-mobile>ul>li>a {
+        padding: 10px 20px;
+        color: #fff !important;
+        font-family: 'Nunito';
+        font-weight: 400;
+        background: var(--main-color);
+        border-radius: 5px;
+        border: 2px solid var(--main-color);
+        text-decoration: none;
+        transition: all 0.5s;
+    }
+
+    .menu-slide-lk-mobile>ul>li>a:hover {
+        background: var(--colorBlockCardOne);
+        border-radius: 5px;
+        border: 2px solid #fff;
+        color: #fff !important;
+    }
+
+    .menu-slide-lk-mobile.educator>ul>li>a:hover {
+        background: var(--colorEducator);
+        border-radius: 5px;
+        border: 2px solid #fff;
+        color: #fff !important;
+    }
+
+    .page-lk {
+        min-height: 80%;
+    }
+
+    .mobile-lk_all_contact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        min-height: 160px;
+    }
+
+    .mobile-lk_all_contact::before {
+        height: 1px;
+        background: var(--main-color);
+        width: 108%;
+        left: 0px;
+        top: -30px;
+        display: block;
+        position: relative;
+        content: "";
+    }
+
+    .mobile-lk_all_contact>div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mobile-lk_all_contact>div>p {
+        color: var(--colorFontContent);
+        font-size: 16px;
+        font-family: OpenSans;
+        font-weight: 700;
+        line-height: 32px;
+    }
+
+    .mobile-lk_all_contact>div>div>a.uk-icon-button {
+        background: var(--main-color);
+        color: #fff;
+    }
+
+    .mobile-lk_all_contact>div>a {
+        color: var(--colorFontContent);
+        font-size: 16px;
+        font-family: OpenSans;
+        font-weight: 700;
+        line-height: 32px;
+        text-decoration: none;
+    }
+
+    .mobile-lk_all_contact>div>a:hover {
+        color: var(--main-color);
+    }
+
+    #offcanvas-mobile-menu {
+        height: fit-content;
+    }
 }
