@@ -2372,6 +2372,7 @@ table.operation-history>tbody .write-off td:nth-of-type(5) {
         flex-wrap: nowrap;
         justify-content: space-around;
         min-height: 160px;
+        margin-top: 50px;
     }
 
     .mobile-lk_all_contact::before {
