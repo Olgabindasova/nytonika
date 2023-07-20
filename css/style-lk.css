@@ -158,12 +158,19 @@
     fill: var(--main-color);
 }
 
+.aside-lk_all_contact>div>div>a {
+    margin: 1px;
+    width: 34px;
+    height: 34px;
+}
+
 .aside-lk_all_contact_icon {
     width: 30px;
     height: 30px;
 }
 
 .as-social [class*=as-icon-telegram],
+.as-social [class*=as-icon-whatsapp],
 .as-social [class*=as-icon-viber] {
     color: #fff;
     background-color: var(--main-color);
