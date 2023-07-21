@@ -1566,14 +1566,32 @@ table.operation-history>tbody .write-off td:nth-of-type(5) {
     font-family: 'Nunito-Bold';
     font-style: normal;
     font-weight: 700;
-    font-size: 20px;
+    font-size: 18px;
     color: #fff;
 }
 
 .educator_content>p>span {
     font-family: 'Nunito';
     font-weight: 400;
-    font-size: 20px;
+    font-size: 16px;
+    color: #fff;
+}
+
+.educator_content_diagnost {
+    border: 2px solid #fff;
+    border-radius: 5px;
+    background: #fff;
+    padding: 10px;
+    color: var(--colorEducator);
+    font-family: 'Nunito-Bold';
+    font-size: 15px;
+    width: 100%;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.educator_content_diagnost:hover {
+    background: var(--colorEducator);
     color: #fff;
 }
 
