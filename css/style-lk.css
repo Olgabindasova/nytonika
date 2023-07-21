@@ -1400,6 +1400,35 @@ input:-webkit-autofill {
     text-decoration: none;
 }
 
+.buttons-title-lk {
+    display: flex;
+}
+
+.pay-lk {
+    background: var(--colorBlockCardOne);
+    border: 2px solid var(--colorBlockCardOne);
+    padding: 17px 12px 12px 17px;
+    height: 50px;
+    min-width: 100px;
+    color: #fff;
+    font-size: 12px;
+    font-family: "OpenSans-Bold";
+    cursor: pointer;
+    transition: all 0.5s;
+    width: fit-content;
+    margin: 30px 0px 0px 20px;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+}
+
+.pay-lk:hover {
+    background: #fff;
+    color: var(--colorBlockCardOne);
+    text-decoration: none;
+}
+
 .danger-lk {
     background: #D41B19;
     border: 1px solid #D41B19;
@@ -2292,7 +2321,17 @@ table.operation-history>tbody .write-off td:nth-of-type(5) {
         width: 100%;
     }
 
+    .buttons-title-lk {
+        flex-direction: column-reverse;
+        align-items: flex-end;
+    }
 
+    .pay-lk {
+        padding: 9px 5px 5px 5px;
+        height: 35px;
+        min-width: 80px;
+        margin: -10px 15px 0px 0px;
+    }
 }
 
 @media (max-width: 500px) {
