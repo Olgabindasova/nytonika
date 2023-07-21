@@ -7,6 +7,9 @@
     --colorBlockCardThree: #7BC4F9;
     --colorBlockCardFour: #FFA655;
     --colorBlockCardFive: #FF5642;
+    --colorBlockCardSix: #40CDE0;
+    --colorBlockCardSeven: #F7C202;
+    --colorBlockCardEight: #84B102;
     --colorFontContent: #2A3B4F;
     --colorEducator: #229FA4;
     --colorDanger: #D41B19;
@@ -1140,7 +1143,7 @@ input:-webkit-autofill {
 .activity-packages_title {
     color: #fff;
     font-family: "Nunito-Bold";
-    font-size: 32px;
+    font-size: 24px;
     padding-right: 10px;
 }
 
@@ -1278,6 +1281,50 @@ input:-webkit-autofill {
     color: #fff;
 }
 
+.packag6 {
+    background-color: var(--colorBlockCardSix);
+}
+
+.packag6>.card-lk_button_activity-packages {
+    border: 3px solid var(--colorBlockCardSix);
+    color: var(--colorBlockCardSix);
+}
+
+.packag6>.card-lk_button_activity-packages:hover {
+    background-color: var(--colorBlockCardSix);
+    border: 3px solid #fff;
+    color: #fff;
+}
+
+.packag7 {
+    background-color: var(--colorBlockCardSeven);
+}
+
+.packag7>.card-lk_button_activity-packages {
+    border: 3px solid var(--colorBlockCardSeven);
+    color: var(--colorBlockCardSeven);
+}
+
+.packag7>.card-lk_button_activity-packages:hover {
+    background-color: var(--colorBlockCardSeven);
+    border: 3px solid #fff;
+    color: #fff;
+}
+
+.packag8 {
+    background-color: var(--colorBlockCardEight);
+}
+
+.packag8>.card-lk_button_activity-packages {
+    border: 3px solid var(--colorBlockCardEight);
+    color: var(--colorBlockCardEight);
+}
+
+.packag8>.card-lk_button_activity-packages:hover {
+    background-color: var(--colorBlockCardEight);
+    border: 3px solid #fff;
+    color: #fff;
+}
 
 .student {
     background-color: var(--colorBlockCardOne);
