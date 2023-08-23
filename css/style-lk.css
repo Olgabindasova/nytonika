@@ -1800,6 +1800,36 @@ table.operation-history>tbody .write-off td:nth-of-type(5) {
     display: none;
 }
 
+.page-lk>div:not([class]) {
+    min-height: 70px;
+    width: 100%;
+    border-top: 1px solid var(--main-color);
+    padding: 20px 0;
+}
+
+.page-lk>div:not([class])>p {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--main-color);
+    margin: 0 0 20px 0;
+    border-bottom: 1px solid;
+    padding: 0 20px 20px 20px;
+    line-height: 18px;
+}
+
+.page-lk>div:not([class])>p>a {
+    font-family: 'Nunito-Bold';
+    text-decoration: none;
+    color: var(--main-color);
+    transition: all 0.5ms;
+}
+
+.page-lk>div:not([class])>p>a:hover {
+    color: var(--colorBlockCardOne);
+}
+
 /*-------Адаптив------------------*/
 
 @media (max-width: 1100px) {
