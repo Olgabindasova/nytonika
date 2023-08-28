@@ -2684,6 +2684,36 @@ ul.accordion-answer>li>div>p {
   height: 40px;
 }
 
+.success-block {
+  padding: 20px 30px;
+  background-color: #fff;
+  margin: -5px 0px 40px;
+  border-radius: 7px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.success-block-text {
+  color: #33C7A2 !important;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+}
+
+.success-block-text>p {
+  color: #33C7A2 !important;
+  font-family: 'OpenSans-Bold';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
 #first {
   display: block;
 }
@@ -6097,6 +6127,15 @@ ol.lessons-list li:before {
   .lessons-list-img2 {
     top: -900px;
     width: 570px;
+  }
+
+  .success-block-text>span {
+    margin-right: 10px;
+    width: 45px;
+  }
+
+  .success-block-text>p {
+    font-size: 15px;
   }
 }
 
