@@ -10,6 +10,7 @@
     --colorBlockCardSix: #40CDE0;
     --colorBlockCardSeven: #F7C202;
     --colorBlockCardEight: #84B102;
+    --colorBlockCardEight: #bde1d8;
     --colorFontContent: #2A3B4F;
     --colorEducator: #229FA4;
     --colorDanger: #D41B19;
@@ -1873,6 +1874,7 @@ table.operation-history>tbody .write-off td:nth-of-type(5) {
     display: flex;
     flex-direction: column;
     gap: 15px;
+    min-height: 125px;
 }
 
 .card-lk_buy.history-paket-buy {
@@ -2005,35 +2007,50 @@ table.operation-history>tbody .write-off td:nth-of-type(5) {
 }
 
 .using-class-item.using-class-plus {
-    background: #d41b191a;
+    background: #f6f1f1;
 }
 
 .using-class-item.using-class-plus>div>div {
-    color: var(--colorDanger);
+    color: #9c9c9c;
 }
 
 .color-order-history-card.used {
-    border: 3px solid var(--colorBlockCardFive);
+    border: 3px solid var(--colorBlockCardEight);
 }
 
 .color-order-history-card.used>.history-paket-item {
-    background: var(--colorBlockCardFive);
+    background: var(--colorBlockCardEight);
 }
 
 .color-order-history-card.used>.using-classes {
-    background: var(--colorBlockCardFive);
+    background: var(--colorBlockCardEight);
 }
 
 .color-order-history-card.used>.using-classes>li.using-classes_li.uk-open>div.using-class {
-    border: 2px solid var(--colorBlockCardFive);
+    border: 2px solid var(--colorBlockCardEight);
 }
 
 .color-order-history-card.used>.using-classes>li.using-classes_li.uk-open>div.using-class>ul>li>.using-class-item.using-class-plus {
-    background: #d41b191a;
+    background: #f6f1f1;
 }
 
 .color-order-history-card.used>.using-classes>li.using-classes_li.uk-open>div.using-class>ul>li>.using-class-item.using-class-plus>div>div {
-    color: var(--colorDanger);
+    color: #9c9c9c;
+}
+
+.paket-info {
+    padding: 20px 30px 0px 30px !important;
+    font-size: 16px !important;
+    line-height: 12px !important;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.paket-info>div {
+    font-family: 'Nunito-Bold';
+    font-style: normal;
+    font-weight: 700;
 }
 
 /*-----------------------------------------*/
@@ -2588,6 +2605,10 @@ table.operation-history>tbody .write-off td:nth-of-type(5) {
 
     .card-lk_title-paket>div:nth-child(2) {
         font-size: 16px;
+    }
+
+    .paket-info {
+        flex-direction: column;
     }
 }
 
