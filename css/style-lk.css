@@ -10,7 +10,7 @@
     --colorBlockCardSix: #40CDE0;
     --colorBlockCardSeven: #F7C202;
     --colorBlockCardEight: #84B102;
-    --colorBlockCardEight: #bde1d8;
+    --colorBlockCardNine: #bde1d8;
     --colorFontContent: #2A3B4F;
     --colorEducator: #229FA4;
     --colorDanger: #D41B19;
@@ -2015,19 +2015,19 @@ table.operation-history>tbody .write-off td:nth-of-type(5) {
 }
 
 .color-order-history-card.used {
-    border: 3px solid var(--colorBlockCardEight);
+    border: 3px solid var(--colorBlockCardNine);
 }
 
 .color-order-history-card.used>.history-paket-item {
-    background: var(--colorBlockCardEight);
+    background: var(--colorBlockCardNine);
 }
 
 .color-order-history-card.used>.using-classes {
-    background: var(--colorBlockCardEight);
+    background: var(--colorBlockCardNine);
 }
 
 .color-order-history-card.used>.using-classes>li.using-classes_li.uk-open>div.using-class {
-    border: 2px solid var(--colorBlockCardEight);
+    border: 2px solid var(--colorBlockCardNine);
 }
 
 .color-order-history-card.used>.using-classes>li.using-classes_li.uk-open>div.using-class>ul>li>.using-class-item.using-class-plus {
