@@ -732,6 +732,8 @@ input:-webkit-autofill {
 
 .color-next-class-card.educator {
     border: 3px solid var(--colorEducator) !important;
+    container-type: inline-size;
+    container-name: next-class-card-educator;
 }
 
 .color-next-class-card>.card-lk_title {
@@ -759,6 +761,7 @@ input:-webkit-autofill {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+
 }
 
 .card-lk_title>a {
@@ -769,7 +772,7 @@ input:-webkit-autofill {
     line-height: 15px;
     padding: 10px;
     margin-bottom: 10px;
-    background: #D41B19;
+    background: var(--colorDanger);
     border: 2px solid #FFFFFF;
     border-radius: 10px;
     width: fit-content;
@@ -791,7 +794,7 @@ input:-webkit-autofill {
     line-height: 14px;
     padding: 10px;
     margin-bottom: 10px;
-    background: #D41B19;
+    background: var(--colorDanger);
     border: 2px solid #FFFFFF;
     border-radius: 10px;
     margin-left: 10px;
@@ -822,6 +825,131 @@ input:-webkit-autofill {
     font-size: 20px;
     padding-right: 10px;
     color: var(--colorFontConten);
+}
+
+.card-lk_content.educator-info {
+    padding: 25px 30px;
+}
+
+.card-lk_title-data>div {
+    font-family: 'Nunito-Bold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    color: #fff;
+}
+
+.card-lk_title-pay {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.card-lk_title-pay>span.payment-error {
+    color: #fff;
+    font-family: 'Nunito';
+    font-weight: 400;
+    font-size: 13px;
+    background: var(--colorDanger);
+    border: 2px solid #FFFFFF;
+    border-radius: 10px;
+    min-width: 125px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-lk_title-pay>span.payment-made {
+    color: #fff;
+    font-family: 'Nunito';
+    font-weight: 400;
+    font-size: 13px;
+    background: #82C9C0 !important;
+    border: 2px solid #FFFFFF;
+    border-radius: 10px;
+    min-width: 125px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-lk_title-pay>ul>li {
+    position: relative;
+    z-index: 1;
+    min-width: 180px;
+}
+
+.card-lk_title-pay>ul>li>a {
+    color: var(--colorDanger);
+    font-family: 'Nunito';
+    font-weight: 400;
+    font-size: 13px;
+    padding: 10px;
+    background: #fff;
+    border-radius: 10px;
+    border: 2px solid var(--colorDanger);
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 8px;
+    justify-content: space-around;
+}
+
+.card-lk_title-pay>ul>li>a::before {
+    content: "";
+    display: block;
+    position: relative;
+    width: 0;
+    height: 0;
+    margin-left: 0;
+    border: 6px solid transparent;
+    border-top: 6px solid;
+    top: 4px;
+    left: 0;
+    float: right;
+    background-image: none !important;
+}
+
+.card-lk_title-pay>ul>li:hover>a,
+.card-lk_title-pay>ul>li>a[aria-expanded="true"] {
+    color: #fff;
+    background: var(--colorDanger);
+    border: 2px solid var(--colorDanger);
+}
+
+.card-lk_title-pay>ul>li>div.uk-accordion-content {
+    position: absolute;
+    background: #fff;
+    margin-top: 0;
+    z-index: -1;
+    padding: 20px 5px 5px 5px;
+    top: 25px;
+    border-radius: 10px;
+    border: 2px solid var(--colorDanger);
+    width: 100%;
+}
+
+.card-lk_title-pay>ul>li>div.uk-accordion-content>ul>li>a {
+    font-family: "Nunito";
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px !important;
+    text-decoration: none;
+    color: var(--colorDanger);
+
+}
+
+.card-lk_title-pay>ul>li>div.uk-accordion-content>ul>li {
+    line-height: 14px !important;
+    display: block;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+.card-lk_title-pay>ul>li>div.uk-accordion-content>ul>li:hover {
+    background: rgba(212, 27, 25, .1);
 }
 
 .card-lk_button>button {
@@ -898,26 +1026,26 @@ input:-webkit-autofill {
 }
 
 .card-lk__button_repeal {
-    background-color: #d41b19;
+    background-color: var(--colorDanger);
     border-radius: 10px;
     color: #fff;
     font-family: 'Nunito-Bold';
-    border: 3px solid #d41b19;
+    border: 3px solid var(--colorDanger);
     transition: all 0.5s;
     cursor: pointer;
 }
 
 .card-lk__button_repeal:hover {
     background-color: #fff;
-    color: #d41b19;
+    color: var(--colorDanger);
 }
 
 .card-lk__button_repeal_return-money {
-    background-color: #d41b19;
+    background-color: var(--colorDanger);
     border-radius: 10px;
     color: #fff;
     font-family: 'Nunito-Bold';
-    border: 3px solid #d41b19;
+    border: 3px solid var(--colorDanger);
     transition: all 0.5s;
     cursor: pointer;
     width: 100%;
@@ -926,7 +1054,7 @@ input:-webkit-autofill {
 
 .card-lk__button_repeal_return-money:hover {
     background-color: #fff;
-    color: #d41b19;
+    color: var(--colorDanger);
 }
 
 /*-------Блоки страниц. 2.Последние занятия-----------------*/
@@ -975,7 +1103,7 @@ input:-webkit-autofill {
 }
 
 .payment-error {
-    background: #D41B19;
+    background: var(--colorDanger);
 }
 
 .payment-made {
@@ -1375,8 +1503,8 @@ input:-webkit-autofill {
 
 .color-red {
     border-radius: 5px;
-    background: #D41B19;
-    border: 3px solid #D41B19;
+    background: var(--colorDanger);
+    border: 3px solid var(--colorDanger);
     color: #fff;
     padding: 10px 20px;
     font-family: "Nunito-Bold";
@@ -1387,7 +1515,7 @@ input:-webkit-autofill {
 
 .color-red:hover {
     background: #fff;
-    color: #D41B19;
+    color: var(--colorDanger);
 }
 
 .b-st-dop {
@@ -1432,8 +1560,8 @@ input:-webkit-autofill {
 }
 
 .danger-lk {
-    background: #D41B19;
-    border: 1px solid #D41B19;
+    background: var(--colorDanger);
+    border: 1px solid var(--colorDanger);
     padding: 17px 12px 10px 30px;
     height: 50px;
     min-width: 215px;
@@ -1538,11 +1666,11 @@ table.operation-history>tbody>tr.write-off>td {
 }
 
 table.operation-history>tbody .write-off td:nth-of-type(3) {
-    color: #D41B19;
+    color: var(--colorDanger);
 }
 
 table.operation-history>tbody .write-off td:nth-of-type(5) {
-    color: #D41B19
+    color: var(--colorDanger);
 }
 
 @media only screen and (max-width: 760px),
@@ -2056,6 +2184,37 @@ table.operation-history>tbody .write-off td:nth-of-type(5) {
 /*-----------------------------------------*/
 
 /*-------Адаптив------------------*/
+@container next-class-card-educator (max-width: 560px) {
+    .color-next-class-card.educator>.card-lk_title {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 15px;
+    }
+}
+
+@container next-class-card-educator (max-width: 360px) {
+    .card-lk_title-pay {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .card-lk_title-pay>span.payment-error {
+        height: 40px;
+    }
+
+    .card-lk_title-pay>ul>li>a {
+        justify-content: center;
+    }
+
+    .card-lk_title-pay>ul>li>a::before {
+        top: 3px;
+    }
+
+    .card-lk_title-pay>ul>li {
+        min-width: 160px;
+    }
+}
 
 @media (max-width: 1100px) {
     .header-top-lk {
