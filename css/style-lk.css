@@ -941,6 +941,19 @@ input:-webkit-autofill {
 
 }
 
+.card-lk_title-pay>ul>li>div.uk-accordion-content>ul>li>button {
+    font-family: "Nunito";
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px !important;
+    text-decoration: none;
+    color: var(--colorDanger);
+    border: 0px;
+    background: transparent;
+    padding: 0;
+    cursor: pointer;
+}
+
 .card-lk_title-pay>ul>li>div.uk-accordion-content>ul>li {
     line-height: 14px !important;
     display: block;
@@ -950,6 +963,23 @@ input:-webkit-autofill {
 
 .card-lk_title-pay>ul>li>div.uk-accordion-content>ul>li:hover {
     background: rgba(212, 27, 25, .1);
+}
+
+.card-lk_title-pay>span.return-issued {
+    color: #fff;
+    font-family: "Nunito";
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 14px;
+    padding: 5px 10px;
+    border: 2px solid #FFFFFF;
+    border-radius: 10px;
+    background: #FF9501;
+    height: 40px;
+    min-width: 125px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .card-lk_button>button {
