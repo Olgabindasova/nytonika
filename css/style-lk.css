@@ -1119,6 +1119,11 @@ input:-webkit-autofill {
     align-items: flex-end;
 }
 
+.color-recent-classes-card>.card-lk_title>div.card-lk_title-data {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
 
 .color-recent-classes-card>.card-lk_title>div>span {
     color: #fff;
