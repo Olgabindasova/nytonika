@@ -2289,11 +2289,88 @@ table.operation-history>tbody .write-off td:nth-of-type(5) {
     border: 2px solid var(--main-color);
 }
 
+/*-----------------------------------------*/
+.assent_title {
+    font-family: 'Nunito-Bold';
+    font-style: normal;
+    font-weight: 700;
+    color: var(--colorFontContent);
+    font-size: 30px;
+}
 
+.assent>form>fieldset>div {
+    padding: 25px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.assent>form>fieldset>div>div>label {
+    font-family: 'Nunito-Bold';
+    font-style: normal;
+    font-weight: 700;
+    color: var(--colorFontContent);
+    font-size: 18px;
+}
+
+.assent>form>fieldset>div>div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.assent>form>fieldset>div>div>input {
+    height: 20px;
+    width: 20px;
+    border: 2px solid var(--colorFontContent);
+    border-radius: 2px;
+}
+
+.assent>form>fieldset>div>div>input:checked {
+    border: 2px solid var(--main-color);
+    background-color: var(--main-color) !important;
+}
+
+.assent {
+    container-type: inline-size;
+    container-name: assent;
+}
 
 /*-----------------------------------------*/
 
 /*-------Адаптив------------------*/
+@container assent (max-width: 550px) {
+    .assent_title {
+        font-size: 26px;
+        line-height: 26px;
+    }
+
+    .assent>form>fieldset>div {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .assent>form>fieldset>div>div>input {
+        height: 16px;
+        width: 16px;
+    }
+
+    .assent>form>fieldset>div>div>label {
+        font-size: 16px;
+    }
+
+    .assent>form>fieldset>div>div>a {
+        padding: 15px;
+        width: 100%;
+    }
+
+    .assent>form>fieldset>div>div:nth-child(2) {
+        width: 100%;
+    }
+}
+
 @container slots (max-width: 800px) {
     .slots_data {
         font-size: 18px;
