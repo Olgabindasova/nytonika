@@ -2338,8 +2338,255 @@ table.operation-history>tbody .write-off td:nth-of-type(5) {
 }
 
 /*-----------------------------------------*/
+.title-dogovor {
+    line-height: 40px;
+    font-size: 40px;
+}
+
+.text-dogovora {
+    font-family: 'Nunito-Bold';
+    font-style: normal;
+    font-weight: 700;
+    color: var(--colorFontContent);
+    font-size: 16px;
+    padding-bottom: 50px;
+    container-type: inline-size;
+    container-name: dogovor;
+}
+
+.text-dogovora_header {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 25px 0;
+}
+
+.text-dogovora>p {
+    padding: 10px 0;
+}
+
+.text-dogovora>p>a {
+    color: var(--main-color);
+}
+
+.text-dogovora>p>span {
+    font-family: 'Nunito-Bold';
+    font-style: normal;
+    font-weight: 700;
+    color: var(--colorFontContent);
+    font-size: 20px;
+}
+
+.text-dogovora_h2 {
+    padding: 20px 0;
+    font-family: 'Nunito-Bold';
+    font-style: normal;
+    font-weight: 700;
+    color: var(--colorFontContent);
+    font-size: 28px;
+}
+
+ol.text-dogovora-items {
+    padding: 30px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    counter-reset: punkt 0;
+    list-style-type: none;
+}
+
+.text-dogovora-items>li {
+    font-family: 'Nunito-Bold';
+    font-style: normal;
+    font-weight: 700;
+    color: var(--colorFontContent);
+    font-size: 22px;
+    padding: 30px 0 0 50px;
+    display: block;
+    width: 100%;
+    border-top: 1px solid var(--main-color);
+}
+
+.text-dogovora-items>li::before {
+    counter-increment: punkt;
+    content: counter(punkt) ". ";
+    font-size: 22px;
+    color: var(--colorFontContent);
+    height: 0px;
+    display: block;
+    position: relative;
+    right: 40px;
+}
+
+ol.text-dogovora-items ol {
+    counter-reset: podpunkt 0;
+    padding: 20px 0 0 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+ol.text-dogovora-items ol li {
+    font-family: 'Nunito';
+    font-weight: 500;
+    font-size: 18px;
+}
+
+ol.text-dogovora-items ol li span {
+    font-family: 'Nunito-Bold';
+    font-style: normal;
+    font-weight: 700;
+    color: var(--colorFontContent);
+    font-size: 20px;
+}
+
+ol.text-dogovora-items ol li::before {
+    counter-increment: podpunkt;
+    content: counter(punkt) "." counter(podpunkt) ".";
+    font-size: 17px;
+    color: var(--colorFontContent);
+    height: 0px;
+    display: block;
+    position: relative;
+    right: 45px;
+    font-weight: 700;
+    font-family: 'Nunito-Bold';
+    top: 1px;
+}
+
+ol.text-dogovora-items ol ol {
+    counter-reset: podpunkt2;
+    padding: 20px 0 0 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+ol.text-dogovora-items ol ol li {
+    font-family: 'Nunito';
+    font-weight: 500;
+    font-size: 17px;
+}
+
+ol.text-dogovora-items ol ol li::before {
+    counter-increment: podpunkt2;
+    content: counter(punkt) "." counter(podpunkt) "." counter(podpunkt2) ".";
+    font-size: 16px;
+    color: var(--colorFontContent);
+    height: 0px;
+    display: block;
+    position: relative;
+    right: 55px;
+    font-weight: 700;
+    font-family: 'Nunito-Bold';
+}
+
+.items-punkt>p {
+    display: flex;
+    gap: 10px;
+    font-family: 'Nunito';
+    font-weight: 500;
+    font-size: 17px;
+}
+
+.items-punkt>p::before {
+    content: '\2022';
+    display: block;
+    position: relative;
+}
+
+/*-----------------------------------------*/
 
 /*-------Адаптив------------------*/
+@container dogovor (max-width: 450px) {
+    .text-dogovora>p {
+        font-size: 15px;
+        line-height: 20px;
+        padding: 5px 0;
+    }
+
+    .text-dogovora_header {
+        flex-direction: column;
+        padding: 15px 0;
+        gap: 5px;
+    }
+
+    .text-dogovora_h2 {
+        padding: 15px 0;
+        font-size: 24px;
+    }
+
+    .text-dogovora>p>span {
+        font-size: 15px;
+    }
+
+    ol.text-dogovora-items {
+        padding: 15px 0;
+        gap: 10px;
+    }
+
+    .text-dogovora-items>li {
+        font-size: 18px;
+        line-height: 20px;
+        padding: 15px 0 0 30px;
+    }
+
+    .text-dogovora-items>li::before {
+        font-size: 18px;
+        right: 30px;
+    }
+
+    ol.text-dogovora-items ol {
+        padding: 10px 0 0 10px;
+        gap: 10px;
+    }
+
+    ol.text-dogovora-items ol li {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    ol.text-dogovora-items ol li::before {
+        font-size: 15px;
+        right: 37px;
+        top: 0px;
+        letter-spacing: -0.7px;
+    }
+
+    .items-punkt>p {
+        gap: 6px;
+        font-size: 15px;
+        line-height: 16px;
+    }
+
+    .items-punkt {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding-top: 10px;
+    }
+
+    ol.text-dogovora-items ol ol {
+        padding: 10px 0 0 5px;
+        gap: 5px;
+    }
+
+    ol.text-dogovora-items ol ol li {
+        font-size: 15px;
+        line-height: 18px;
+    }
+
+    ol.text-dogovora-items ol li span {
+        font-size: 17px;
+    }
+
+    ol.text-dogovora-items ol ol li::before {
+        font-size: 13px;
+        letter-spacing: -0.7px;
+        right: 42px;
+    }
+}
+
 @container assent (max-width: 550px) {
     .assent_title {
         font-size: 26px;
