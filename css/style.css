@@ -3299,6 +3299,14 @@ ul.accordion-answer>li>div>p {
   width: 800px;
 }
 
+.two-section-img-efficiency_1 {
+  position: relative;
+  right: 15%;
+  z-index: -10;
+  bottom: 750px;
+  width: 1200px;
+}
+
 .two-section-img-efficiency-podgotovka {
   position: relative;
   z-index: -10;
@@ -4640,6 +4648,10 @@ ol.lessons-list li:before {
   font-size: 48px;
   line-height: 64px;
   color: #24201E;
+}
+
+.color-text-1 {
+  color: #24201E !important;
 }
 
 /*адаптив до 1580*/
