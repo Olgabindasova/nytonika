@@ -3583,6 +3583,20 @@ ul.accordion-answer>li>div>p {
   background: #CC7DC3;
 }
 
+.okr-mir {
+  background-image: url("https://cdn.nyutonika.ru/svg/логопед-какпроходятзанятия-фон.svg");
+  background-position: 50% 100%;
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+.okr-mir2 {
+  background-image: url("https://cdn.nyutonika.ru/images/кузнечик2.png");
+  background-position: bottom left;
+  background-repeat: no-repeat;
+  background-size: 20%;
+}
+
 /*Блок с формой*/
 .form-trend {
   background: #9C16B9;
@@ -6877,6 +6891,8 @@ ol.lessons-list li:before {
     -webkit-box-shadow: 20px 33px 0px 0px #FF5642;
     box-shadow: 20px 33px 0px 0px #FF5642;
   }
+
+
 }
 
 /*адаптив до 521*/
@@ -8042,4 +8058,29 @@ table.punkt td>ul>li::before {
 
 .napravlenia_textblock_banner-nach {
   padding: 0 10px 40px 80px !important;
+}
+
+@media (max-width: 561px) {
+  .napravlenia_textblock_two {
+    padding: 0 10px 40px 100px !important;
+    font-size: 24px;
+    line-height: 21px;
+  }
+
+  .napravlenia_textblock_two::before {
+    font-size: 80px;
+    right: 40px;
+    top: -15px;
+  }
+
+  .napravlenia_textblock {
+    font-size: 18px;
+    line-height: 24px;
+    padding: 10px 20px 0px 60px;
+    text-align: center;
+  }
+
+  .okr-mir2 {
+    background-size: 50%;
+  }
 }
