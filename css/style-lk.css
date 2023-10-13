@@ -2291,6 +2291,34 @@ table.operation-history>tbody .write-off td:nth-of-type(5) {
     background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2214%22%20height%3D%2211%22%20viewBox%3D%220%200%2014%2011%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%20%20%3Cpolygon%20fill%3D%22%23fff%22%20points%3D%2212%201%205%207.5%202%205%201%205.5%205%2010%2013%201.5%22%20%2F%3E%0A%3C%2Fsvg%3E%0A");
 }
 
+.slot-info {
+    padding: 30px 10px 0;
+    font-family: 'Nunito-Bold';
+    font-style: normal;
+    font-weight: 700;
+    color: var(--colorFontContent);
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.slot-info::before {
+    content: '!';
+    display: block;
+    position: relative;
+    font-size: 21px;
+    padding: 5px;
+    border: 1px solid;
+    color: var(--main-color);
+    width: 30px;
+    height: 30px;
+    min-width: 30px;
+    text-align: center;
+    border-radius: 50%;
+}
+
 /*-----------------------------------------*/
 .assent_title {
     font-family: 'Nunito-Bold';
