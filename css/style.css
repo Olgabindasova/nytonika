@@ -403,6 +403,67 @@ h4 {
   background-color: #7ee5ff !important;
 }
 
+
+.textcolor1 {
+  color: #7DDF9B !important;
+}
+
+.textcolor2 {
+  color: #F3D04F !important;
+}
+
+.textcolor3 {
+  color: #FF5642 !important;
+}
+
+.textcolor4 {
+  color: #20A0A0 !important;
+}
+
+.textcolor5 {
+  color: #D589CC !important;
+}
+
+.textcolor6 {
+  color: #54D0B1 !important;
+}
+
+.textcolor7 {
+  color: #FAE480 !important;
+}
+
+.textcolor8 {
+  color: #325DE9 !important;
+}
+
+.textcolor9 {
+  color: #FF422C !important;
+}
+
+.textcolor10 {
+  color: #33C7A2 !important;
+}
+
+.textcolor11 {
+  color: #FFD129 !important;
+}
+
+.textcolor12 {
+  color: #54D0B1 !important;
+}
+
+.textcolor13 {
+  color: #AE00D4 !important;
+}
+
+.textcolor14 {
+  color: #7ee5ff !important;
+}
+
+.textcolor15 {
+  color: #7ee5ff !important;
+}
+
 /*кнопки*/
 
 
@@ -3594,6 +3655,21 @@ ul.accordion-answer>li>div>p {
   background-image: url("https://cdn.nyutonika.ru/images/кузнечик2.png");
   background-position: bottom left;
   background-repeat: no-repeat;
+  background-size: 20%;
+
+}
+
+.rus-nach {
+  background-image: url("https://cdn.nyutonika.ru/images/перо-свиток.png");
+  background-position: bottom left;
+  background-repeat: no-repeat;
+  background-size: 15%;
+  transition: all 1s;
+}
+
+
+.rus-nach:hover {
+  background-position: bottom right;
   background-size: 20%;
 }
 
@@ -8060,6 +8136,59 @@ table.punkt td>ul>li::before {
   padding: 0 10px 40px 80px !important;
 }
 
+
+
+.napravlenia_doshkoln_banner-text2 {
+  background: #ffde630d;
+  padding: 30px;
+  border-radius: 20px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  margin: 30px 0;
+  border: 2px solid #ffde63;
+}
+
+.napravlenia_doshkoln_banner-text2>p>span {
+  display: block;
+  color: #2a3b4f;
+  padding: 0 0 15px 0;
+  font-size: 25px;
+  font-family: "Nunito-Bold";
+}
+
+.problems>div>section>div>div.efficiency-malisham.efficiency_rus-nach>ul>li:before {
+  background: #33c7a2;
+  width: 20px;
+  height: 20px;
+  left: -40px;
+  top: 25px;
+}
+
+.h1-napravlenia.napravlenia_nach.napravlenia_nach_rus-nach::after {
+  background-color: #ffde63;
+}
+
+.napravlenia_textblock_two_rushach.napravlenia_textblock_two::before {
+  content: "❛❛";
+  color: #F3D04F;
+  font-size: 125px;
+  transition: all 0.5s;
+}
+
+.napravlenia_textblock_two_rushach:hover.napravlenia_textblock_two::before {
+  color: #33C7A2;
+  font-size: 115px;
+}
+
+.napravlenia_textblock_two_rushach .napravlenia_textblock_two {
+  transition: all 1s;
+}
+
+.napravlenia_textblock_two_rushach:hover.napravlenia_textblock_two {
+  color: #33C7A2;
+}
+
 @media (max-width: 561px) {
   .napravlenia_textblock_two {
     padding: 0 10px 40px 100px !important;
@@ -8082,5 +8211,9 @@ table.punkt td>ul>li::before {
 
   .okr-mir2 {
     background-size: 50%;
+  }
+
+  .rus-nach {
+    background-size: 30%;
   }
 }
