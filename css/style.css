@@ -3644,11 +3644,44 @@ ul.accordion-answer>li>div>p {
   background: #CC7DC3;
 }
 
+.problems-items {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding-left: 10px
+}
+
+.problems-items>li {
+  font-family: 'Nunito-Bold';
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 20px;
+  color: #fff;
+  display: flex;
+  gap: 15px;
+}
+
+.problems-items>li::before {
+  content: '.';
+  position: relative;
+  display: block;
+  font-size: 60px;
+  top: -15px;
+}
+
 .okr-mir {
   background-image: url("https://cdn.nyutonika.ru/svg/логопед-какпроходятзанятия-фон.svg");
   background-position: 50% 100%;
   background-repeat: no-repeat;
   background-size: auto;
+}
+
+.math {
+  background-image: url("https://cdn.nyutonika.ru/svg/фон-диагностика-нач-школа.svg");
+  background-position: 40% 10%;
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-color: #fff;
 }
 
 .okr-mir2 {
@@ -8177,6 +8210,71 @@ table.punkt td>ul>li::before {
 }
 
 .napravlenia_textblock_two_rushach:hover.napravlenia_textblock_two::before {
+  color: #33C7A2;
+  font-size: 115px;
+}
+
+.napravlenia_textblock_two_math-hach.napravlenia_textblock_two::before {
+  content: "+";
+  color: #46C1ED;
+  font-size: 130px;
+  top: -10px;
+  transition: all 0.5s;
+}
+
+.napravlenia_textblock_two_math-hach:hover.napravlenia_textblock_two::before {
+  color: #33C7A2;
+  font-size: 115px;
+}
+
+.napravlenia_textblock_two_math-hach-2.napravlenia_textblock_two::before {
+  content: ">";
+  color: #46C1ED;
+  font-size: 130px;
+  top: -10px;
+  transition: all 0.5s;
+}
+
+.napravlenia_textblock_two_math-hach-2:hover.napravlenia_textblock_two::before {
+  color: #33C7A2;
+  font-size: 115px;
+}
+
+.napravlenia_textblock_two_math-hach-3.napravlenia_textblock_two::before {
+  content: "=";
+  color: #46C1ED;
+  font-size: 130px;
+  top: -10px;
+  transition: all 0.5s;
+}
+
+.napravlenia_textblock_two_math-hach-3:hover.napravlenia_textblock_two::before {
+  color: #33C7A2;
+  font-size: 115px;
+}
+
+.napravlenia_textblock_two_math-hach-4.napravlenia_textblock_two::before {
+  content: "*";
+  color: #46C1ED;
+  font-size: 130px;
+  top: -10px;
+  transition: all 0.5s;
+}
+
+.napravlenia_textblock_two_math-hach-4:hover.napravlenia_textblock_two::before {
+  color: #33C7A2;
+  font-size: 115px;
+}
+
+.napravlenia_textblock_two_math-hach-5.napravlenia_textblock_two::before {
+  content: "!";
+  color: #46C1ED;
+  font-size: 130px;
+  top: -10px;
+  transition: all 0.5s;
+}
+
+.napravlenia_textblock_two_math-hach-5:hover.napravlenia_textblock_two::before {
   color: #33C7A2;
   font-size: 115px;
 }
