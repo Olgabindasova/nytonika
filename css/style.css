@@ -8202,6 +8202,10 @@ table.punkt td>ul>li::before {
   background-color: #ffde63;
 }
 
+.h1-napravlenia.napravlenia_nach.napravlenia_nach_log-psi::after {
+  background-color: #CC7DC3;
+}
+
 .napravlenia_textblock_two_rushach.napravlenia_textblock_two::before {
   content: "❛❛";
   color: #F3D04F;
@@ -8285,6 +8289,32 @@ table.punkt td>ul>li::before {
 
 .napravlenia_textblock_two_rushach:hover.napravlenia_textblock_two {
   color: #33C7A2;
+}
+
+.banner-trend-form.napravlenia_nach.napravlenia_nach_log-psi>div>button {
+  background: #CC7DC3;
+  border: 2px solid #CC7DC3;
+}
+
+.banner-trend-form.napravlenia_nach.napravlenia_nach_log-psi>div>button:hover {
+  background: #fff;
+  border: 2px solid #CC7DC3;
+  color: #CC7DC3;
+}
+
+.banner-trend-form.napravlenia_nach.napravlenia_nach_log-psi>div>input {
+  border: 2px solid #CC7DC3;
+}
+
+.banner-trend-form.napravlenia_nach.napravlenia_nach_log-psi>div>span.uk-form-icon {
+  color: #CC7DC3;
+}
+
+.napravlenia_textblock_two_rushach.napravlenia_textblock_two.napravlenia_nach_log-psi::before {
+  content: "❛❛";
+  color: #229FA4;
+  font-size: 125px;
+  transition: all 0.5s;
 }
 
 @media (max-width: 561px) {
