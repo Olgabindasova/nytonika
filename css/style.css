@@ -8148,8 +8148,8 @@ table.punkt td>ul>li::before {
   font-weight: 700;
   font-size: 140px;
   color: #33C7A2;
-  right: 75px;
-  top: 20px;
+  right: 50px;
+  top: 10px;
   transition: all 0.8s;
 }
 
@@ -8160,7 +8160,7 @@ table.punkt td>ul>li::before {
   font-weight: 700;
   font-size: 155px;
   color: #FF422C;
-  right: 75px;
+  right: 50px;
   top: 20px;
 }
 
@@ -8316,11 +8316,56 @@ table.punkt td>ul>li::before {
   transition: all 0.5s;
 }
 
+
+
 section.math-hach>.seven-section>.seven-section-block {
   background-color: #33C7A2;
 }
 
+@media (max-width: 860px) {
+  .container-item.seven-section-margin-mobile.math-hach {
+    margin-bottom: 370px !important;
+  }
+
+  section.seven-section-margin-mobile.math-hach>.seven-section-block-sertificat>a>img {
+    width: 100%;
+    top: 50px;
+    position: relative;
+  }
+
+  section.seven-section-margin-mobile.math-hach>.seven-section>.seven-section-block>.seven-section-block-content>.napravlenia_textblock {
+    padding-left: 0 !important;
+    text-align: left;
+  }
+}
+
+@media (max-width: 651px) {
+  section.seven-section-margin-mobile.math-hach {
+    max-width: 520px;
+  }
+
+  section.seven-section-margin-mobile.math-hach>.seven-section-block-sertificat>a>img {
+    width: 100%;
+    top: 180px;
+  }
+
+  .container-item.seven-section-margin-mobile.math-hach {
+    margin-bottom: 90px !important;
+    margin-top: 90px;
+  }
+}
+
+
 @media (max-width: 561px) {
+  section.seven-section-margin-mobile.math-hach {
+    max-width: 450px;
+  }
+
+  section.seven-section-margin-mobile.math-hach>.seven-section-block-sertificat>a>img {
+    width: 100%;
+    top: 170px;
+  }
+
   .napravlenia_textblock_two {
     padding: 0 10px 40px 100px !important;
     font-size: 24px;
