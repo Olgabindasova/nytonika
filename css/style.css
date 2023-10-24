@@ -8093,7 +8093,6 @@ table.punkt td>ul>li::before {
   font-family: "Nunito-Bold";
   font-size: 22px;
   line-height: 28px;
-  padding-left: 14px;
   z-index: 1000;
   display: block;
   position: relative;
@@ -8317,6 +8316,10 @@ table.punkt td>ul>li::before {
   transition: all 0.5s;
 }
 
+section.math-hach>.seven-section>.seven-section-block {
+  background-color: #33C7A2;
+}
+
 @media (max-width: 561px) {
   .napravlenia_textblock_two {
     padding: 0 10px 40px 100px !important;
@@ -8334,6 +8337,47 @@ table.punkt td>ul>li::before {
     font-size: 18px;
     line-height: 24px;
     padding: 10px 20px 0px 60px;
+    text-align: center;
+  }
+
+  .text-h2-napravlenia {
+    line-height: 34px;
+    font-size: 28px;
+    margin-top: 0px;
+    max-width: 555px;
+    padding: 10px 10px;
+  }
+
+  .h1-napravlenia {
+    padding: 50px 30px 15px 30px;
+    font-size: 40px;
+    line-height: 40px;
+  }
+
+  .h1-napravlenia::after {
+    top: 90px !important;
+  }
+
+  .napravlenia_textblock_two_math-hach::before,
+  .napravlenia_textblock_two_math-hach-2::before,
+  .napravlenia_textblock_two_math-hach-3::before,
+  .napravlenia_textblock_two_math-hach-4::before {
+    font-size: 100px !important;
+    top: -35px !important;
+  }
+
+  .title-trend-block_napravlenia {
+    font-size: 26px;
+    line-height: 28px;
+  }
+
+  .napravlenia_nachscola_text {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .container.uk-margin-large-bottom>h3 {
+    padding: 0 5%;
     text-align: center;
   }
 
