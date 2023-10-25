@@ -1373,6 +1373,7 @@ li.uk-parent>a[aria-expanded="true"] .icon-menu-tree {
 .two-section-img1 {
   top: 130px;
   left: 85%;
+  z-index: -1;
 }
 
 .two-section-img2 {
@@ -1401,11 +1402,13 @@ li.uk-parent>a[aria-expanded="true"] .icon-menu-tree {
   bottom: 138px;
   right: 10%;
   width: 95px;
+  z-index: -1;
 }
 
 .two-section-img7 {
   left: 97%;
   top: -41px;
+  z-index: -1;
 }
 
 .two-section-img {
@@ -8320,6 +8323,94 @@ table.punkt td>ul>li::before {
 
 section.math-hach>.seven-section>.seven-section-block {
   background-color: #33C7A2;
+}
+
+.diagnostika-srscola.angl {
+  background-position: 57% 0%;
+  background-size: 106%;
+}
+
+.h1-napravlenia.napravlenia_nach.napravlenia_srshk::after {
+  background-color: #FF8D44;
+}
+
+
+.banner-trend-form.napravlenia_srshk>div>button {
+  background: #98e0ec;
+  border: 2px solid #98e0ec;
+}
+
+.banner-trend-form.napravlenia_srshk>div>button:hover {
+  background: #fff;
+  border: 2px solid #98e0ec;
+  color: #98e0ec;
+}
+
+.banner-trend-form.napravlenia_srshk>div>span.uk-form-icon {
+  color: #98e0ec;
+}
+
+.banner-trend-form.napravlenia_srshk>div>input {
+  border: 2px solid #98e0ec;
+}
+
+.napravlenia_textblock_two.napravlenia_srshk::before {
+  content: "❛❛";
+  display: block;
+  position: relative;
+  font-weight: 700;
+  font-size: 120px;
+  color: #98e0ec;
+  right: 50px;
+  top: 10px;
+  transition: all 0.8s;
+}
+
+.napravlenia_textblock_two.napravlenia_srshk:hover::before {
+  font-size: 100px;
+  color: #FF8D44;
+}
+
+.efficiency-srscola_angl {
+  display: flex;
+  grid-gap: 20px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+
+
+.efficiency-srscola_angl>ul>li {
+  font-family: 'Nunito-Bold';
+  display: flex;
+  gap: 10px;
+}
+
+.efficiency-srscola_angl>ul>li::before {
+  content: '';
+  display: block;
+  position: relative;
+  width: 10px;
+  height: 10px;
+  background: #98e0ec;
+  border-radius: 50%;
+  top: 5px;
+}
+
+.efficiency-srscola_angl>div:nth-child(2) {
+  min-width: 300px;
+  max-width: 50%;
+}
+
+.efficiency-srscola_angl>div:nth-child(2)>img {
+  text-align: center;
+}
+
+@media (max-width: 1151px) {
+  .efficiency-srscola_angl>div:nth-child(2) {
+    min-width: 300px;
+    max-width: 100%;
+  }
 }
 
 @media (max-width: 860px) {
