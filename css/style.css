@@ -7274,8 +7274,8 @@ ol.lessons-list li:before {
   }
 
   .lessons-logoped {
-    margin-bottom: 300px;
-    margin-top: -100px;
+    margin-bottom: 250px;
+    margin-top: -50px;
   }
 }
 
@@ -8432,5 +8432,60 @@ section.math-hach>.seven-section>.seven-section-block {
 
   .rus-nach {
     background-size: 30%;
+  }
+}
+
+@media (max-width: 451px) {
+  section.seven-section-margin-mobile.math-hach {
+    max-width: 320px;
+  }
+
+  section.seven-section-margin-mobile.math-hach>.seven-section {
+    padding: 0px;
+  }
+
+  section.seven-section-margin-mobile.math-hach>.seven-section>.seven-section-block {
+    padding: 25px;
+    height: fit-content !important;
+    min-height: fit-content;
+  }
+
+  section.seven-section-margin-mobile.math-hach>.seven-section>.seven-section-block>.seven-section-block-content>.napravlenia_textblock {
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+    padding: 0;
+  }
+
+  section.seven-section-margin-mobile.math-hach>.seven-section>.seven-section-block>.seven-section-block-content>.problems-items {
+    gap: 10px;
+    padding-left: 0px
+  }
+
+  section.seven-section-margin-mobile.math-hach>.seven-section>.seven-section-block>.seven-section-block-content>.problems-items>li {
+    font-size: 15px;
+    line-height: 17px;
+    gap: 5px;
+  }
+
+  .container-item.seven-section-margin-mobile.math-hach {
+    margin-bottom: 400px !important;
+    margin-top: 90px;
+  }
+
+  section.seven-section-margin-mobile.math-hach>.seven-section-block-sertificat>a>img {
+    width: 100%;
+    top: 525px;
+  }
+}
+
+@media (max-width: 321px) {
+  section.seven-section-margin-mobile.math-hach>.seven-section-block-sertificat>a>img {
+    width: 95%;
+    top: 470px;
+  }
+
+  section.seven-section-margin-mobile.math-hach {
+    max-width: 300px;
   }
 }
