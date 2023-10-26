@@ -8378,7 +8378,11 @@ section.math-hach>.seven-section>.seven-section-block {
   justify-content: space-between;
 }
 
-
+.efficiency-srscola_angl>ul {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
 
 .efficiency-srscola_angl>ul>li {
   font-family: 'Nunito-Bold';
