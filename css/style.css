@@ -400,9 +400,12 @@ h4 {
 }
 
 .color15 {
-  background-color: #7ee5ff !important;
+  background-color: #7ddef6 !important;
 }
 
+.color16 {
+  background-color: #fff !important;
+}
 
 .textcolor1 {
   color: #7DDF9B !important;
@@ -8376,12 +8379,14 @@ section.math-hach>.seven-section>.seven-section-block {
   grid-gap: 20px;
   flex-wrap: wrap;
   justify-content: space-between;
+  align-items: center;
 }
 
 .efficiency-srscola_angl>ul {
   display: flex;
   flex-direction: column;
   gap: 12px;
+  max-width: 47%;
 }
 
 .efficiency-srscola_angl>ul>li {
@@ -8395,6 +8400,7 @@ section.math-hach>.seven-section>.seven-section-block {
   display: block;
   position: relative;
   width: 10px;
+  min-width: 10px;
   height: 10px;
   background: #98e0ec;
   border-radius: 50%;
@@ -8412,8 +8418,19 @@ section.math-hach>.seven-section>.seven-section-block {
 
 @media (max-width: 1151px) {
   .efficiency-srscola_angl>div:nth-child(2) {
-    min-width: 300px;
+    min-width: 100%;
     max-width: 100%;
+  }
+
+  .efficiency-srscola_angl>ul {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 960px) {
+  .text-h2-napravlenia {
+
+    text-align: center;
   }
 }
 
@@ -8490,7 +8507,7 @@ section.math-hach>.seven-section>.seven-section-block {
 
   .h1-napravlenia {
     padding: 50px 30px 15px 30px;
-    font-size: 40px;
+    font-size: 36px;
     line-height: 40px;
   }
 
