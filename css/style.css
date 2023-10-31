@@ -8416,6 +8416,23 @@ section.math-hach>.seven-section>.seven-section-block {
   text-align: center;
 }
 
+.block-row-item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+  padding: 50px 0;
+}
+
+.block-row-item div {
+  font-family: 'Nunito-Bold';
+  font-size: 18px;
+  line-height: 20px;
+  max-width: 200px;
+  text-align: center;
+  padding: 15px;
+}
+
 @media (max-width: 1151px) {
   .efficiency-srscola_angl>div:nth-child(2) {
     min-width: 100%;
