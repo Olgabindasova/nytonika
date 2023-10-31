@@ -352,7 +352,7 @@ h4 {
 }
 
 .color3 {
-  background-color: #FF5642;
+  background-color: #FF5642 !important;
 }
 
 .color4 {
@@ -384,7 +384,7 @@ h4 {
 }
 
 .color11 {
-  background-color: #FFD129;
+  background-color: #FFD129 !important;
 }
 
 .color12 {
@@ -392,7 +392,7 @@ h4 {
 }
 
 .color13 {
-  background-color: #AE00D4;
+  background-color: #AE00D4 !important;
 }
 
 .color14 {
@@ -405,6 +405,10 @@ h4 {
 
 .color16 {
   background-color: #fff !important;
+}
+
+.color17 {
+  background-color: #FF8D44 !important;
 }
 
 .textcolor1 {
@@ -8419,9 +8423,9 @@ section.math-hach>.seven-section>.seven-section-block {
 .block-row-item {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
   gap: 20px;
-  padding: 50px 0;
+  padding: 20px 0;
 }
 
 .block-row-item div {
@@ -8431,6 +8435,10 @@ section.math-hach>.seven-section>.seven-section-block {
   max-width: 200px;
   text-align: center;
   padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
 }
 
 @media (max-width: 1151px) {
