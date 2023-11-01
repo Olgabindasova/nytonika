@@ -5158,6 +5158,10 @@ ol.lessons-list li:before {
   .diagnostika-podgotovka {
     margin-bottom: 80px;
   }
+
+  .efficiency-reverse {
+    flex-direction: column-reverse;
+  }
 }
 
 
@@ -8439,6 +8443,99 @@ section.math-hach>.seven-section>.seven-section-block {
   flex-direction: column;
   align-items: center;
   gap: 25px;
+}
+
+.efficiency-p {
+  font-family: 'Nunito-Bold';
+  font-size: 40px;
+  line-height: 20px;
+  color: #229fa4;
+  padding-bottom: 20px !important;
+  display: block;
+  position: relative;
+  right: 15px;
+}
+
+.efficiency-ul-log>li {
+  font-size: 20px !important;
+  line-height: 20px !important;
+  padding-bottom: 0px !important;
+}
+
+.efficiency-ul-log>li::before {
+  width: 12px !important;
+  height: 12px !important;
+  left: -35px;
+  top: 20px;
+}
+
+.item-circle {
+  display: flex;
+  justify-content: center;
+  margin-top: -170px;
+
+}
+
+.item-circle>ul {
+  --_w: 900px;
+  --_r: calc((var(--_w) - var(--_sz)) / 2);
+  --_sz: 170px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  list-style-type: none;
+  inline-size: var(--_w);
+  position: relative;
+  display: block;
+}
+
+.item-circle>ul>li {
+  --_x: calc(var(--_r) + (var(--_r) * cos(var(--_d))));
+  --_y: calc(var(--_r) + (var(--_r) * sin(var(--_d))));
+  border-radius: 50%;
+  display: grid;
+  height: var(--_sz);
+  left: var(--_x);
+  place-content: center;
+  position: absolute;
+  top: var(--_y);
+  transition: transform .2s ease-in;
+  width: var(--_sz);
+  text-align: center;
+  font-family: 'Nunito-Bold';
+  font-size: 18px;
+  line-height: 20px;
+  color: #2A3B4F;
+  cursor: pointer;
+}
+
+.item-circle>ul>li:hover {
+  transform: scale(1.4);
+}
+
+.item-circle>ul>li:nth-child(1) {
+  --_d: 0deg;
+  top: calc(var(--_w)/2);
+  left: 45%;
+}
+
+.item-circle>ul>li:nth-child(2) {
+  --_d: 90deg;
+}
+
+.item-circle>ul>li:nth-child(3) {
+  --_d: 155deg;
+}
+
+.item-circle>ul>li:nth-child(4) {
+  --_d: 200deg;
+}
+
+.item-circle>ul>li:nth-child(5) {
+  --_d: 340deg;
+}
+
+.item-circle>ul>li:nth-child(6) {
+  --_d: 25deg;
 }
 
 @media (max-width: 1151px) {
