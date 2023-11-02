@@ -356,11 +356,11 @@ h4 {
 }
 
 .color4 {
-  background-color: #20A0A0;
+  background-color: #20A0A0 !important;
 }
 
 .color5 {
-  background-color: #D589CC;
+  background-color: #D589CC !important;
 }
 
 .color6 {
@@ -8498,7 +8498,7 @@ section.math-hach>.seven-section>.seven-section-block {
   place-content: center;
   position: absolute;
   top: var(--_y);
-  transition: transform .2s ease-in;
+  transition: all .5s ease-in;
   width: var(--_sz);
   text-align: center;
   font-family: 'Nunito-Bold';
