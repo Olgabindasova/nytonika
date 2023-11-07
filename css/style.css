@@ -471,6 +471,14 @@ h4 {
   color: #7ee5ff !important;
 }
 
+.textcolor16 {
+  color: #7BC4F9 !important;
+}
+
+.textcolor17 {
+  color: #24201E !important;
+}
+
 /*кнопки*/
 
 
@@ -5160,6 +5168,7 @@ ol.lessons-list li:before {
   }
 
   .efficiency-reverse {
+
     flex-direction: column-reverse;
   }
 }
@@ -8539,8 +8548,17 @@ section.math-hach>.seven-section>.seven-section-block {
   --_d: 25deg;
 }
 
+.item-circle>ul>li:nth-child(7) {
+  --_d: 280deg;
+}
+
 .item-circle-mobile {
   display: none;
+}
+
+.item-circle_border {
+  background: #fff;
+  border: 2px solid #ccc;
 }
 
 @media (max-width: 1151px) {
