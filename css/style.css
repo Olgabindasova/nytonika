@@ -8558,7 +8558,8 @@ section.math-hach>.seven-section>.seven-section-block {
 
 .item-circle_border {
   background: #fff;
-  border: 2px solid #ccc;
+  border: 2px solid #8dc5ff;
+  color: #8dc5ff !important;
 }
 
 @media (max-width: 1151px) {
