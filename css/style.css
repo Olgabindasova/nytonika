@@ -376,11 +376,11 @@ h4 {
 }
 
 .color9 {
-  background-color: #FF422C;
+  background-color: #FF422C !important;
 }
 
 .color10 {
-  background-color: #33C7A2;
+  background-color: #33C7A2 !important;
 }
 
 .color11 {
@@ -388,7 +388,7 @@ h4 {
 }
 
 .color12 {
-  background-color: #54D0B1;
+  background-color: #54D0B1 !important;
 }
 
 .color13 {
@@ -409,6 +409,10 @@ h4 {
 
 .color17 {
   background-color: #FF8D44 !important;
+}
+
+.color18 {
+  background-color: #7BC4F9 !important;
 }
 
 .textcolor1 {
@@ -8456,8 +8460,8 @@ section.math-hach>.seven-section>.seven-section-block {
 
 .efficiency-p {
   font-family: 'Nunito-Bold';
-  font-size: 40px;
-  line-height: 20px;
+  font-size: 36px;
+  line-height: 30px;
   color: #229fa4;
   padding-bottom: 20px !important;
   display: block;
@@ -8528,6 +8532,11 @@ section.math-hach>.seven-section>.seven-section-block {
   transform: scale(1.7);
 }
 
+.item-circle>ul>li:nth-child(1)>p {
+  font-size: 10px;
+  line-height: 12px;
+}
+
 .item-circle>ul>li:nth-child(2) {
   --_d: 90deg;
 }
@@ -8560,6 +8569,28 @@ section.math-hach>.seven-section>.seven-section-block {
   background: #fff;
   border: 2px solid #8dc5ff;
   color: #8dc5ff !important;
+}
+
+.item-circle>ul>li>p {
+  font-size: 16px;
+  line-height: 18px;
+  padding-top: 10px;
+}
+
+.diagnostika-defectolog {
+  height: fit-content;
+  min-height: 1000px;
+  background-image: url("https://cdn.nyutonika.ru/svg/логопед-какпроходятзанятия-фон2.svg");
+  background-size: auto;
+  width: 100%;
+  background-position: 50% 100%;
+  background-repeat: no-repeat;
+}
+
+.efficiency-srscola_angl.defectolog-spisok>ul>li::before {
+
+  background: #8dc5ff;
+
 }
 
 @media (max-width: 1151px) {
