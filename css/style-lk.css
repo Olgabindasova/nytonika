@@ -728,7 +728,7 @@ input:-webkit-autofill {
 }
 
 .educator-non>div.card-lk_content {
-    padding: 0px 30px 0 30px !important;
+    padding: 30px !important;
 }
 
 .color-next-class-card.educator {
@@ -967,13 +967,13 @@ input:-webkit-autofill {
 }
 
 .card-lk_title-pay>span.return-issued {
-    color: #fff;
+    color: var(--colorWhiteText);
     font-family: "Nunito";
     font-weight: 400;
     font-size: 13px;
     line-height: 14px;
     padding: 5px 10px;
-    border: 2px solid #FFFFFF;
+    border: 2px solid var(--colorWhiteText);
     border-radius: 10px;
     background: #FF9501;
     height: 40px;
@@ -993,7 +993,7 @@ input:-webkit-autofill {
     background: var(--colorBlockCardOne);
     border: 3px solid var(--colorBlockCardOne);
     border-radius: 10px;
-    color: #fff;
+    color: var(--colorWhiteText);
     width: 100%;
     padding: 10px;
     font-family: 'Nunito-Bold';
@@ -1010,7 +1010,7 @@ input:-webkit-autofill {
 }
 
 .buttons-educator>.card-lk_button>button:hover {
-    background: #fff;
+    background: var(--colorWhiteText);
     border: 3px solid var(--colorEducator);
     color: var(--colorEducator);
 }
@@ -1019,7 +1019,7 @@ input:-webkit-autofill {
     background: #82C9C0;
     border: 3px solid #82C9C0;
     cursor: none;
-    color: #fff;
+    color: var(--colorWhiteText);
     padding: 10px;
     border-radius: 10px;
     font-family: 'Nunito-Bold';
@@ -1031,11 +1031,11 @@ input:-webkit-autofill {
     background: #82C9C0;
     border: 3px solid #82C9C0;
     cursor: none;
-    color: #fff;
+    color: var(--colorWhiteText);
 }
 
 .card-lk_button:hover>button {
-    background: #fff;
+    background: var(--colorWhiteText);
     border: 3px solid var(--colorBlockCardOne);
     color: var(--colorBlockCardOne);
 }
@@ -1059,7 +1059,7 @@ input:-webkit-autofill {
 .card-lk__button_repeal {
     background-color: var(--colorDanger);
     border-radius: 10px;
-    color: #fff;
+    color: var(--colorWhiteText);
     font-family: 'Nunito-Bold';
     border: 3px solid var(--colorDanger);
     transition: all 0.5s;
@@ -1067,14 +1067,14 @@ input:-webkit-autofill {
 }
 
 .card-lk__button_repeal:hover {
-    background-color: #fff;
+    background-color: var(--colorWhiteText);
     color: var(--colorDanger);
 }
 
 .card-lk__button_repeal_return-money {
     background-color: var(--colorDanger);
     border-radius: 10px;
-    color: #fff;
+    color: var(--colorWhiteText);
     font-family: 'Nunito-Bold';
     border: 3px solid var(--colorDanger);
     transition: all 0.5s;
@@ -1084,13 +1084,13 @@ input:-webkit-autofill {
 }
 
 .card-lk__button_repeal_return-money:hover {
-    background-color: #fff;
+    background-color: var(--colorWhiteText);
     color: var(--colorDanger);
 }
 
 /*-------Блоки страниц. 2.Последние занятия-----------------*/
 .color-recent-classes-card {
-    background: #fff;
+    background: var(--colorWhiteText);
     border: 3px solid var(--colorBlockCardTwo);
     display: flex;
     flex-direction: column;
@@ -1101,7 +1101,7 @@ input:-webkit-autofill {
     background: var(--colorBlockCardTwo);
     width: 100%;
     padding: 25px 30px;
-    color: #fff;
+    color: var(--colorWhiteText);
     border-radius: 5px;
     font-family: 'Nunito-Bold';
     font-style: normal;
@@ -1128,13 +1128,13 @@ input:-webkit-autofill {
 }
 
 .color-recent-classes-card>.card-lk_title>div>span {
-    color: #fff;
+    color: var(--colorWhiteText);
     font-family: "Nunito";
     font-weight: 400;
     font-size: 13px;
     line-height: 14px;
     padding: 5px 10px;
-    border: 2px solid #FFFFFF;
+    border: 2px solid var(--colorWhiteText);
     border-radius: 10px;
     width: fit-content;
 }
@@ -1185,7 +1185,7 @@ input:-webkit-autofill {
     margin-bottom: 10px;
     display: flex;
     justify-content: flex-end;
-    color: #fff !important;
+    color: var(--colorWhiteText) !important;
     font-size: 13px;
     line-height: 13px;
     font-weight: 400;
@@ -1308,7 +1308,7 @@ input:-webkit-autofill {
 
 
 .activity-packages_title {
-    color: #fff;
+    color: var(--colorWhiteText);
     font-family: "Nunito-Bold";
     font-size: 24px;
     padding-right: 10px;
@@ -1334,16 +1334,10 @@ input:-webkit-autofill {
     font-size: 36px;
 }
 
-.activity-packages_content_pricetext {
-    color: #fff;
-}
-
-.activity-packages_content_price {
-    color: #fff;
-}
-
+.activity-packages_content_pricetext,
+.activity-packages_content_price,
 .activity-packages_content_price>span {
-    color: #fff;
+    color: var(--colorWhiteText);
 }
 
 .card-lk_button_activity-packages {
@@ -1353,7 +1347,7 @@ input:-webkit-autofill {
 }
 
 .card-lk_button_activity-packages {
-    background-color: #fff;
+    background-color: var(--colorWhiteText);
     border-radius: 10px;
     color: var(--colorBlockCardOne);
     width: 100%;
@@ -1369,8 +1363,8 @@ input:-webkit-autofill {
 
 .card-lk_button_activity-packages:hover {
     background-color: var(--colorBlockCardOne);
-    border: 3px solid #fff;
-    color: #fff;
+    border: 3px solid var(--colorWhiteText);
+    color: var(--colorWhiteText);
 }
 
 .packag1 {
@@ -1384,8 +1378,8 @@ input:-webkit-autofill {
 
 .packag1>.card-lk_button_activity-packages:hover {
     background-color: var(--colorBlockCardThree);
-    border: 3px solid #fff;
-    color: #fff;
+    border: 3px solid var(--colorWhiteText);
+    color: var(--colorWhiteText);
 }
 
 .packag2 {
@@ -1399,8 +1393,8 @@ input:-webkit-autofill {
 
 .packag2>.card-lk_button_activity-packages:hover {
     background-color: var(--colorBlockCardOne);
-    border: 3px solid #fff;
-    color: #fff;
+    border: 3px solid var(--colorWhiteText);
+    color: var(--colorWhiteText);
 }
 
 .packag3 {
@@ -1414,8 +1408,8 @@ input:-webkit-autofill {
 
 .packag3>.card-lk_button_activity-packages:hover {
     background-color: var(--colorBlockCardTwo);
-    border: 3px solid #fff;
-    color: #fff;
+    border: 3px solid var(--colorWhiteText);
+    color: var(--colorWhiteText);
 }
 
 .packag4 {
@@ -1429,8 +1423,8 @@ input:-webkit-autofill {
 
 .packag4>.card-lk_button_activity-packages:hover {
     background-color: var(--colorBlockCardFour);
-    border: 3px solid #fff;
-    color: #fff;
+    border: 3px solid var(--colorWhiteText);
+    color: var(--colorWhiteText);
 }
 
 .packag5 {
@@ -1444,8 +1438,8 @@ input:-webkit-autofill {
 
 .packag5>.card-lk_button_activity-packages:hover {
     background-color: var(--colorBlockCardFive);
-    border: 3px solid #fff;
-    color: #fff;
+    border: 3px solid var(--colorWhiteText);
+    color: var(--colorWhiteText);
 }
 
 .packag6 {
@@ -1459,8 +1453,8 @@ input:-webkit-autofill {
 
 .packag6>.card-lk_button_activity-packages:hover {
     background-color: var(--colorBlockCardSix);
-    border: 3px solid #fff;
-    color: #fff;
+    border: 3px solid var(--colorWhiteText);
+    color: var(--colorWhiteText);
 }
 
 .packag7 {
@@ -1474,8 +1468,8 @@ input:-webkit-autofill {
 
 .packag7>.card-lk_button_activity-packages:hover {
     background-color: var(--colorBlockCardSeven);
-    border: 3px solid #fff;
-    color: #fff;
+    border: 3px solid var(--colorWhiteText);
+    color: var(--colorWhiteText);
 }
 
 .packag8 {
@@ -1489,8 +1483,8 @@ input:-webkit-autofill {
 
 .packag8>.card-lk_button_activity-packages:hover {
     background-color: var(--colorBlockCardEight);
-    border: 3px solid #fff;
-    color: #fff;
+    border: 3px solid var(--colorWhiteText);
+    color: var(--colorWhiteText);
 }
 
 .student {
@@ -1501,7 +1495,7 @@ input:-webkit-autofill {
 .student>h3 {
     font-size: 30px;
     margin-bottom: 0;
-    color: #fff;
+    color: var(--colorWhiteText);
     padding-left: 10px;
 }
 
@@ -1514,6 +1508,7 @@ input:-webkit-autofill {
     font-size: 18px;
     max-width: 600px;
     margin: 0 auto;
+    color: var(--colorWhiteText);
 }
 
 .student>ul>li>div>.card-lk_button>a {
@@ -2943,18 +2938,16 @@ ol.text-dogovora-items ol ol li::before {
     }
 
     .student>ul>li>div>.card-lk_button>a {
-        padding: 5px;
+        padding: 10px;
         font-size: 14px;
         line-height: 14px;
     }
 
     .educator-non>.card-lk_button {
-        padding: 25px 20px 25px 10px;
+        padding: 0px 20px 0px 10px;
     }
 
-    .educator-non>div.card-lk_content {
-        padding: 0px 10px 0 30px !important;
-    }
+
 
     .educator-non>.card-lk_button>form>button.color-red {
         padding: 10px 10px;
@@ -3169,6 +3162,7 @@ ol.text-dogovora-items ol ol li::before {
         flex-direction: column;
         align-items: center;
         display: flex;
+        gap: 15px;
     }
 
     .educator-non>div.card-lk_content {
@@ -3231,6 +3225,10 @@ ol.text-dogovora-items ol ol li::before {
 
     .educator_content>p>span {
         font-size: 16px;
+    }
+
+    .educator-non>.card-lk_button {
+        padding: 0px 20px 20px 10px;
     }
 
     .educator_content.border-none span {
