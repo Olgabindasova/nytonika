@@ -485,9 +485,6 @@ h4 {
 
 /*кнопки*/
 
-
-
-
 .scrollup {
   width: 105px;
   height: 105px;
@@ -3888,6 +3885,17 @@ ul.accordion-answer>li>div>p {
   height: fit-content;
   min-height: 1000px;
   background-image: url("https://cdn.nyutonika.ru/svg/фон-диагностика-ср-школа2.svg");
+  background-position: 50% 30%;
+  background-repeat: no-repeat;
+  background-size: 167%;
+  width: 100%;
+  padding-top: 30px;
+}
+
+.diagnostika-srscola-alg {
+  height: fit-content;
+  min-height: 1000px;
+  background-image: url("https://cdn.nyutonika.ru/svg/фон-ср-школа6.svg");
   background-position: 50% 30%;
   background-repeat: no-repeat;
   background-size: 167%;
@@ -8196,7 +8204,6 @@ table.punkt td>ul>li::before {
 }
 
 
-
 .napravlenia_doshkoln_banner-text2 {
   background: #ffde630d;
   padding: 30px;
@@ -8343,8 +8350,6 @@ table.punkt td>ul>li::before {
   transition: all 0.5s;
 }
 
-
-
 section.math-hach>.seven-section>.seven-section-block {
   background-color: #33C7A2;
 }
@@ -8392,6 +8397,23 @@ section.math-hach>.seven-section>.seven-section-block {
 
 .napravlenia_textblock_two.napravlenia_srshk:hover::before {
   font-size: 100px;
+  color: #FF8D44;
+}
+
+.napravlenia_textblock_two.napravlenia_srshk.invers::before {
+  content: "*";
+  display: block;
+  position: relative;
+  font-weight: 700;
+  font-size: 120px;
+  color: #98e0ec;
+  right: 50px;
+  top: 10px;
+  transition: all 0.8s;
+}
+
+.napravlenia_textblock_two.napravlenia_srshk.invers:hover::before {
+  font-size: 130px;
   color: #FF8D44;
 }
 
@@ -8588,9 +8610,7 @@ section.math-hach>.seven-section>.seven-section-block {
 }
 
 .efficiency-srscola_angl.defectolog-spisok>ul>li::before {
-
   background: #8dc5ff;
-
 }
 
 @media (max-width: 1151px) {
