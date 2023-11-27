@@ -1549,6 +1549,16 @@ input:-webkit-autofill {
     color: var(--colorDanger);
 }
 
+.color-red.inactive {
+    background: var(--colorBlockCardNine);
+    border: 3px solid var(--colorBlockCardNine);
+    cursor: default;
+}
+
+.color-red.inactive:hover {
+    color: var(--colorWhiteText);
+}
+
 .b-st-dop {
     width: fit-content;
     float: right;
