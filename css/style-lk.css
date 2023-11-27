@@ -75,7 +75,6 @@
     justify-content: space-between;
     padding: 0 50px;
     flex-direction: column;
-
 }
 
 .lk-wrapper {
@@ -1564,21 +1563,26 @@ input:-webkit-autofill {
 
 .buttons-title-lk {
     display: flex;
+    width: 60%;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+    padding-right: 15px;
+    padding-left: 15px;
 }
 
 .pay-lk {
     background: var(--colorBlockCardOne);
     border: 2px solid var(--colorBlockCardOne);
-    padding: 17px 12px 12px 17px;
-    height: 50px;
-    min-width: 100px;
+    padding: 17px;
+    height: fit-content;
     color: #fff;
     font-size: 12px;
+    line-height: 14px;
     font-family: "OpenSans-Bold";
     cursor: pointer;
     transition: all 0.5s;
     width: fit-content;
-    margin: 30px 0px 0px 20px;
     border-radius: 5px;
     text-align: center;
     text-decoration: none;
@@ -1594,16 +1598,18 @@ input:-webkit-autofill {
 .danger-lk {
     background: var(--colorDanger);
     border: 1px solid var(--colorDanger);
-    padding: 17px 12px 10px 30px;
-    height: 50px;
-    min-width: 215px;
+    padding: 17px 16px 17px 20px;
+    height: fit-content;
     color: #fff;
     font-size: 12px;
     font-family: "OpenSans-Bold";
-    margin-top: 30px;
     display: flex;
     cursor: pointer;
     transition: all 0.5s;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    border-radius: 5px;
 }
 
 .danger-lk:hover {
@@ -1617,11 +1623,12 @@ input:-webkit-autofill {
     display: block;
     content: url('https://cdn.nyutonika.ru/icons-lk/danger.svg');
     width: 20px;
-    height: 20px;
+    height: 15px;
     color: #fff;
     position: relative;
     top: -6px;
-    right: 15px;
+    right: 12px;
+    padding-right: 5px;
 }
 
 .danger-lk::after {
@@ -2532,6 +2539,9 @@ ol.text-dogovora-items ol ol li::before {
 /*-----------------------------------------*/
 
 /*-------Адаптив------------------*/
+
+
+
 @container dogovor (max-width: 450px) {
     .text-dogovora>p {
         font-size: 15px;
@@ -2998,41 +3008,29 @@ ol.text-dogovora-items ol ol li::before {
     .balans>p>span {
         font-size: 25px;
     }
+
+    .buttons-title-lk {
+        justify-content: center;
+        align-items: flex-end;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .pay-lk {
+        padding: 12px;
+        width: 200px;
+    }
+
+    .danger-lk {
+        padding: 12px 15px 12px 20px;
+        width: 200px;
+    }
 }
 
+@media (max-width: 1060px) {}
+
 @media (max-width: 767px) {
-    .danger-lk::after {
-        content: "";
-    }
 
-    .danger-lk:hover::after {
-        color: #fa0703;
-        content: "Сообщить о проблеме";
-        top: 53px;
-        left: -24px;
-        font-size: 10px;
-        font-weight: 400 !important;
-    }
-
-    .danger-lk::before {
-        top: -18px;
-        right: 27px;
-        content: url('https://cdn.nyutonika.ru/icons-lk/danger-mb.svg');
-    }
-
-    .danger-lk:hover {
-        background: #fa0703;
-        border: none;
-        padding: 2px;
-        border-radius: 37px;
-        width: 46px;
-    }
-
-    .danger-lk:hover::before {
-        top: 10px;
-        right: -10px;
-        content: url('https://cdn.nyutonika.ru/icons-lk/danger.svg');
-    }
 
     .page-lk>div>ul {
         padding: 10px;
@@ -3043,11 +3041,7 @@ ol.text-dogovora-items ol ol li::before {
         padding: 0;
     }
 
-    .danger-lk {
-        background: #fff;
-        border: none;
-        min-width: 50px;
-    }
+
 
     .page-lk>div>a.b-st-dop {
         margin-left: 5px;
@@ -3074,6 +3068,7 @@ ol.text-dogovora-items ol ol li::before {
 }
 
 @media (max-width: 640px) {
+
     .welcome-lk {
         min-width: 270px;
     }
@@ -3266,16 +3261,48 @@ ol.text-dogovora-items ol ol li::before {
         width: 100%;
     }
 
+    .title-lk {
+        display: flex;
+        flex-direction: column;
+    }
+
     .buttons-title-lk {
         flex-direction: column-reverse;
-        align-items: flex-end;
+        align-items: center;
+        width: 100%;
+        padding: 20px 5px 0;
+    }
+
+    .danger-lk {
+        background: var(--colorDanger);
+        border: none;
+        border-radius: 5px;
+        width: 100%;
+        padding: 15px 23%;
+    }
+
+    .danger-lk:hover {
+        background: #fa0703;
+    }
+
+    .danger-lk::after {
+        color: #fff;
+        content: "Сообщить о проблеме";
+        top: 0;
+        width: 100%;
+        font-size: 12px;
+        font-weight: 400 !important;
+    }
+
+    .danger-lk::before {
+
+        top: -5px;
+        right: auto;
+        content: url(https://cdn.nyutonika.ru/icons-lk/danger.svg);
     }
 
     .pay-lk {
-        padding: 9px 5px 5px 5px;
-        height: 35px;
-        min-width: 80px;
-        margin: -10px 15px 0px 0px;
+        width: 100%;
     }
 
     .card-lk_title-paket>div,
@@ -3501,7 +3528,9 @@ ol.text-dogovora-items ol ol li::before {
         height: fit-content;
     }
 
-
+    .danger-lk {
+        padding: 15px 20%;
+    }
 }
 
 @media (max-width: 400px) {
@@ -3541,5 +3570,9 @@ ol.text-dogovora-items ol ol li::before {
 
     .using-classes>li>a::before {
         top: 10px;
+    }
+
+    .danger-lk {
+        padding: 15px 15%;
     }
 }
