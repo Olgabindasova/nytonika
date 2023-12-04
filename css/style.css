@@ -8641,6 +8641,7 @@ section.math-hach>.seven-section>.seven-section-block {
   background: #F3D04F;
   width: 10px;
   height: 10px;
+  min-width: 10px;
   content: '';
   display: block;
   border-radius: 50%;
