@@ -3907,6 +3907,15 @@ ul.accordion-answer>li>div>p {
   padding-top: 30px;
 }
 
+.diagnostika-srscola-phis {
+
+  background-image: url("https://cdn.nyutonika.ru/svg/физика-фон.svg");
+  background-position: 400px 60%;
+  background-repeat: no-repeat;
+  background-size: 80%;
+
+}
+
 .diagnostika-doprazvitie {
   height: fit-content;
   min-height: 1321px;
@@ -6352,6 +6361,11 @@ ol.lessons-list li:before {
     line-height: 28px;
   }
 
+  h4 {
+    line-height: 28px;
+    font-size: 22px;
+  }
+
   .container-item {
     margin: 60px 0px 50px;
   }
@@ -8115,6 +8129,38 @@ table.punkt td>ul>li::before {
   top: 15px;
 }
 
+.napravlenia_textblock_2 {
+  background: #fff;
+  border-radius: 10px;
+  border: 1px solid #FF8D44;
+
+}
+
+.napravlenia_textblock_2>ul {
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.napravlenia_textblock_2>ul>li {
+  font-family: 'Nunito-Bold';
+  display: flex;
+  gap: 25px;
+  padding-left: 0px;
+  font-size: 1.2rem;
+  align-items: center;
+}
+
+.napravlenia_textblock_2>ul>li::before {
+  content: '';
+  display: block;
+  position: relative;
+  width: 10px;
+  min-width: 10px;
+  height: 10px;
+  background: #98e0ec;
+  border-radius: 50%;
+}
 
 .h1-napravlenia.napravlenia_nach::after {
   background-color: #33C7A2;
