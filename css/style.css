@@ -368,11 +368,11 @@ h4 {
 }
 
 .color7 {
-  background-color: #FAE480;
+  background-color: #FAE480 !important;
 }
 
 .color8 {
-  background-color: #325DE9;
+  background-color: #325DE9 !important;
 }
 
 .color9 {
@@ -8133,7 +8133,24 @@ table.punkt td>ul>li::before {
   background: #fff;
   border-radius: 10px;
   border: 1px solid #FF8D44;
+}
 
+.napravlenia_textblock_3 {
+  background: #ffffff;
+  border-radius: 10px;
+  border: 1px solid #33C7A2;
+  padding: 15px;
+  max-width: 300px;
+}
+
+.napravlenia_textblock_block {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.napravlenia_textblock_3>.napravlenia_textblock {
+  padding: 0 15px !important;
 }
 
 .napravlenia_textblock_2>ul {
