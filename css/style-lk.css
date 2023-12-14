@@ -1679,12 +1679,27 @@ table.operation-history>thead {
     text-align: left;
 }
 
+table.operation-history.practice-schedule>thead {
+    font-size: 18px !important;
+    text-align: right;
+}
+
 table.operation-history>thead>tr>th {
     padding: 15px 15px 15px 25px;
 }
 
+table.operation-history.practice-schedule>thead>tr>th {
+    padding: 15px 10px 15px 10px;
+    text-align: right;
+}
+
 table.operation-history>tbody>tr>td {
     padding: 45px 35px 15px 25px;
+}
+
+table.operation-history.practice-schedule>tbody>tr>td {
+    padding: 45px 10px 25px 10px;
+    background: linear-gradient(0deg, rgb(174 0 212 / 3%) 80%, rgba(255, 255, 255, 1) 80%);
 }
 
 table.operation-history>tbody tr td:nth-of-type(3) {
@@ -1692,6 +1707,29 @@ table.operation-history>tbody tr td:nth-of-type(3) {
 }
 
 table.operation-history>tbody tr td:nth-of-type(5) {
+    color: var(--colorEducator);
+}
+
+table.operation-history.practice-schedule>tbody tr td:nth-of-type(3) {
+    color: var(--main-color);
+}
+
+table.operation-history.practice-schedule>tbody tr td:nth-of-type(3) a {
+    color: var(--main-color);
+    transition: all 0.5s;
+    padding: 5px 10px;
+}
+
+table.operation-history.practice-schedule>tbody tr td:nth-of-type(3) a:hover {
+    color: var(--main-color);
+    border-radius: 5px;
+    background: #ae00d417;
+    text-decoration: none;
+}
+
+table.operation-history.practice-schedule>tbody tr td:nth-of-type(4),
+table.operation-history.practice-schedule>tbody tr td:nth-of-type(5),
+table.operation-history.practice-schedule>tbody tr td:nth-of-type(6) {
     color: var(--colorEducator);
 }
 
@@ -1704,6 +1742,13 @@ table.operation-history>tbody {
     text-align: left;
 }
 
+table.operation-history.practice-schedule>tbody {
+    font-size: 15px !important;
+    text-align: right;
+    font-family: 'Nunito-Bold';
+    font-weight: 700 !important;
+}
+
 table.operation-history>tbody>tr>td {
     padding: 45px 35px 25px 25px;
     background: linear-gradient(0deg, rgba(130, 201, 192, 0.2) 80%, rgba(255, 255, 255, 1) 80%);
@@ -1712,6 +1757,10 @@ table.operation-history>tbody>tr>td {
 table.operation-history>tbody>tr.write-off>td {
     padding: 45px 35px 25px 25px;
     background: linear-gradient(0deg, rgba(212, 27, 25, 0.1) 80%, rgba(255, 255, 255, 1) 80%);
+}
+
+table.operation-history.practice-schedule>tbody>tr.write-off>td {
+    padding: 45px 10px 25px 10px;
 }
 
 table.operation-history>tbody .write-off td:nth-of-type(3) {
@@ -1757,6 +1806,10 @@ table.operation-history>tbody .write-off td:nth-of-type(5) {
         padding-left: 50% !important;
     }
 
+    table.operation-history.practice-schedule>tbody tr td {
+        text-align: left;
+    }
+
     table.operation-history>tbody tr td:before {
         position: absolute;
         top: 45px;
@@ -1764,6 +1817,11 @@ table.operation-history>tbody .write-off td:nth-of-type(5) {
         width: 45%;
         padding-right: 10px;
         white-space: nowrap;
+    }
+
+    table.operation-history.practice-schedule>tbody tr td:before {
+        white-space: wrap;
+        padding-right: 15px;
     }
 
     table.operation-history>tbody {
@@ -1788,6 +1846,34 @@ table.operation-history>tbody .write-off td:nth-of-type(5) {
 
     table.operation-history>tbody tr td:nth-of-type(5):before {
         content: "СУММА";
+    }
+
+    table.operation-history.practice-schedule>tbody tr td:nth-of-type(1):before {
+        content: "№";
+    }
+
+    table.operation-history.practice-schedule>tbody tr td:nth-of-type(2):before {
+        content: "Ближайшее занятие";
+    }
+
+    table.operation-history.practice-schedule>tbody tr td:nth-of-type(3):before {
+        content: "Имя";
+    }
+
+    table.operation-history.practice-schedule>tbody tr td:nth-of-type(4):before {
+        content: "Лет";
+    }
+
+    table.operation-history.practice-schedule>tbody tr td:nth-of-type(5):before {
+        content: "Занятие по:";
+    }
+
+    table.operation-history.practice-schedule>tbody tr td:nth-of-type(6):before {
+        content: "Занятие по счету:";
+    }
+
+    table.operation-history.practice-schedule>tbody tr td:nth-of-type(7):before {
+        content: "Супервизия";
     }
 }
 
