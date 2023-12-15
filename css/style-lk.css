@@ -2633,10 +2633,210 @@ ol.text-dogovora-items ol ol li::before {
 }
 
 /*-----------------------------------------*/
+.supervisions {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 50px 0;
+    padding-bottom: 20px;
+}
+
+.supervision-block {
+    container-type: inline-size;
+    container-name: supervision;
+}
+
+.supervision-block>div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+    border: 2px solid var(--main-color);
+    border-radius: 10px;
+    background: #ae00d408;
+}
+
+.supervision-block_educator {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+}
+
+.supervision-block_educator_img {
+    border-radius: 10px;
+    width: 120px;
+}
+
+.supervision-block_educator_name {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 250px;
+}
+
+.supervision-block_educator_name>div:nth-child(1) {
+    font-family: "Nunito-Bold";
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+    font-size: 24px;
+    color: var(--colorFontContent);
+}
+
+.supervision-block_educator_name>div:nth-child(2) {
+    font-family: "Nunito";
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    font-size: 18px;
+    color: var(--colorFontContent);
+
+}
+
+.supervision-block_time-button {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 50%;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+}
+
+.supervision-block_time-button>div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: flex-start;
+    width: 50%;
+}
+
+.supervision-block_time-button>div>div {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.supervision-block_time-button>a {
+    display: flex;
+    align-items: center;
+    height: fit-content;
+}
+
+.supervision-block_time-button_time-zone {
+    font-family: "Nunito-Bold";
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px;
+    font-size: 18px;
+    color: var(--main-color);
+    width: 100%;
+}
+
+.supervision-block_time-button_hour {
+    font-family: "Nunito-Bold";
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px;
+    font-size: 18px;
+    color: var(--colorFontContent);
+    border-radius: 5px;
+    background: #ae00d417;
+    padding: 5px;
+}
 
 /*-------Адаптив------------------*/
+@container supervision (max-width: 1175px) {
+    .supervision-block_time-button {
+        flex-direction: column;
+        align-content: flex-start;
+        align-items: flex-start;
+    }
 
+    .supervision-block_time-button>div>div {
+        flex-direction: row;
+    }
 
+    .supervision-block_time-button>div {
+        width: 100%;
+    }
+
+    .supervision-block_time-button>a {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+@container supervision (max-width: 900px) {
+    .supervision-block_educator_name {
+        max-width: 150px;
+    }
+
+    .supervision-block_educator_name>div:nth-child(1) {
+        line-height: 22px;
+        font-size: 20px;
+    }
+
+    .supervision-block_time-button_hour {
+        font-size: 16px;
+    }
+
+    .supervision-block_educator_img {
+        width: 110px;
+    }
+}
+
+@container supervision (max-width: 720px) {
+    .supervision-block>div {
+        flex-direction: column;
+    }
+
+    .supervision-block_educator_name {
+        max-width: 100%;
+        gap: 5px;
+    }
+
+    .supervision-block_time-button {
+        width: 100%;
+    }
+
+    .supervision-block_educator_img {
+        width: 20%;
+        min-width: 75px;
+    }
+
+    .supervision-block_educator {
+        gap: 10px;
+        flex-wrap: nowrap;
+    }
+
+    .supervision-block_educator_name {
+        max-width: 70%;
+    }
+}
+
+@container supervision (max-width: 455px) {
+    .supervision-block_time-button_hour {
+        font-size: 14px;
+        width: 48%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .supervision-block_time-button>div>div {
+        flex-direction: row;
+        width: 100%;
+    }
+}
+
+@container supervision (max-width: 350px) {
+    .supervision-block_time-button_hour {
+        width: 100%;
+    }
+}
 
 @container dogovor (max-width: 450px) {
     .text-dogovora>p {
