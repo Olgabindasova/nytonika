@@ -8145,6 +8145,14 @@ table.punkt td>ul>li::before {
   max-width: 300px;
 }
 
+.napravlenia_textblock_3.log {
+  background: #ffffff;
+  border-radius: 10px;
+  border: 1px solid #AF65A7;
+  padding: 15px;
+  max-width: 300px;
+}
+
 .napravlenia_textblock_block {
   display: flex;
   gap: 15px;
