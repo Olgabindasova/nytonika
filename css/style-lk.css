@@ -2748,7 +2748,189 @@ ol.text-dogovora-items ol ol li::before {
     padding: 5px;
 }
 
+/*-------Кабинет практиканта-----------------*/
+.intern-office {
+    padding: 20px;
+    border: 2px solid var(--main-color);
+    border-radius: 10px;
+    background: #ae00d408;
+    margin: 50px 0 20px;
+    padding-bottom: 20px;
+    container-type: inline-size;
+    container-name: intern-office;
+}
+
+.intern-office_info {
+    border-bottom: 1px solid var(--main-color);
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+}
+
+.intern-office_name {
+    font-family: "Nunito-Bold";
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+    font-size: 30px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 15px;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px 0 0;
+}
+
+.intern-office_name>span {
+    font-size: 13px;
+    line-height: 15px;
+    color: var(--colorWhiteText);
+    background: var(--colorBlockCardOne);
+    padding: 10px 10px;
+    border-radius: 5px;
+}
+
+.intern-office_information-comments {
+    display: flex;
+    gap: 20px;
+}
+
+.intern-office_list {
+    margin: 25px 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 45%;
+}
+
+.intern-office_list>li {
+    font-family: "Nunito-Bold";
+    font-style: normal;
+    font-weight: 700;
+    line-height: 15px;
+    font-size: 15px;
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    background: var(--colorWhiteText);
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.intern-office_list>li>span {
+    font-family: "Nunito";
+    font-style: normal;
+    font-weight: 500;
+    line-height: 15px;
+    font-size: 15px;
+}
+
+.intern-office_list_class {
+    color: var(--colorBlockCardOne);
+}
+
+.intern-office_info-classes {
+    margin: 25px 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.intern-office_comment {
+    font-family: "Nunito";
+    font-style: normal;
+    font-weight: 500;
+    line-height: 15px;
+    font-size: 15px;
+    background: var(--colorWhiteText);
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.intern-office_classes-underway {
+    font-family: "Nunito-Bold";
+    font-style: normal;
+    font-weight: 700;
+    line-height: 15px;
+    font-size: 15px;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.intern-office_classes-underway>.uk-icon-button {
+    color: var(--colorWhiteText);
+    background: var(--colorBlockCardOne);
+}
+
+.intern-office_upcoming-classes {
+    font-family: "Nunito-Bold";
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26px;
+    font-size: 24px;
+    margin: 25px 0 10px;
+}
+
+.intern-office_time {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--colorWhiteText);
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 15px 0;
+}
+.intern-office_time>div {
+    font-family: "Nunito-Bold";
+    font-style: normal;
+    font-weight: 700;
+    line-height: 18px;
+    font-size: 15px;
+}
+.clear-height {
+    padding: 10px;
+}
+/*-------конец кабинет практиканта------------------*/
+
 /*-------Адаптив------------------*/
+
+
+@container intern-office (max-width: 768px) {
+    .intern-office_list {
+        width: 100%;
+    }
+    .intern-office_information-comments {
+        flex-direction: column;
+    }
+}
+@container intern-office (max-width: 500px) {
+    .intern-office_time {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 15px;
+    }
+    .intern-office_time>a{
+         width: 100%;
+    }
+    .intern-office_name {
+        font-size: 24px;
+    }
+    .intern-office_upcoming-classes {
+        font-size: 20px;
+    }
+}
+@container intern-office (max-width: 370px) {
+    .intern-office_list>li {
+        flex-direction: column;
+    }
+    .intern-office_list>li>span {
+        padding-top: 10px;
+        border-top: 1px solid var(--colorBlockCardNine);
+        text-align: right;
+    }
+}
 @container supervision (max-width: 1175px) {
     .supervision-block_time-button {
         flex-direction: column;
