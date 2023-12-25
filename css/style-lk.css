@@ -990,7 +990,7 @@ input:-webkit-autofill {
     width: 100%;
 }
 
-.card-lk_button>button {
+.card-lk_button>button, .card-lk_button>a  {
     background: var(--colorBlockCardOne);
     border: 3px solid var(--colorBlockCardOne);
     border-radius: 10px;
@@ -1015,9 +1015,10 @@ input:-webkit-autofill {
 .color-next-class-card.rooms{
     justify-content: flex-start;
 }
-.room-type>button {
+.room-type>button, .room-type>a {
     width: auto;
     cursor: pointer;
+    text-align: center;
 }
 .pruffeme {
     background: var(--colorBlockCardEight) !important;
