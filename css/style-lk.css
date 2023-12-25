@@ -719,6 +719,8 @@ input:-webkit-autofill {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    container-type: inline-size;
+    container-name: room-type;
 }
 
 .educator-non {
@@ -752,7 +754,7 @@ input:-webkit-autofill {
     align-content: center;
     align-items: center;
     justify-content: space-between;
-    min-height: 115px;
+    min-height: 130px;
 }
 
 .color-next-class-card.educator>.card-lk_title {
@@ -1001,8 +1003,46 @@ input:-webkit-autofill {
     transition: all 0.5s;
     display: block;
     text-decoration: none;
+    cursor: pointer;
 }
 
+.card-lk_button.room-type {
+    display: grid;
+    justify-items: stretch;
+    gap: 10px;
+    grid-auto-flow: column;
+}
+.color-next-class-card.rooms{
+    justify-content: flex-start;
+}
+.room-type>button {
+    width: auto;
+    cursor: pointer;
+}
+.pruffeme {
+    background: var(--colorBlockCardEight) !important;
+    border: 3px solid var(--colorBlockCardEight) !important; 
+}
+.pruffeme:hover {
+    background: var(--colorWhiteText) !important;
+    color: var(--colorBlockCardEight) !important; 
+}
+.zoom{
+    background: var(--colorBlockCardThree) !important;
+    border: 3px solid var(--colorBlockCardThree) !important; 
+}
+.zoom:hover{
+    background: var(--colorWhiteText) !important;
+    color: var(--colorBlockCardThree) !important; 
+}
+.skype{
+    background: var(--colorBlockCardSix) !important;
+    border: 3px solid var(--colorBlockCardSix) !important; 
+}
+.skype:hover{
+    background: var(--colorWhiteText) !important;
+    color: var(--colorBlockCardSix) !important; 
+}
 .buttons-educator>.card-lk_button>button {
     background: var(--colorEducator);
     border: 3px solid var(--colorEducator);
@@ -1033,7 +1073,7 @@ input:-webkit-autofill {
     color: var(--colorWhiteText);
 }
 
-.card-lk_button:hover>button {
+.card-lk_button>button:hover {
     background: var(--colorWhiteText);
     border: 3px solid var(--colorBlockCardOne);
     color: var(--colorBlockCardOne);
@@ -2882,6 +2922,7 @@ ol.text-dogovora-items ol ol li::before {
     border-radius: 5px;
     margin: 15px 0;
 }
+
 .intern-office_time>div {
     font-family: "Nunito-Bold";
     font-style: normal;
@@ -2889,48 +2930,65 @@ ol.text-dogovora-items ol ol li::before {
     line-height: 18px;
     font-size: 15px;
 }
+
 .clear-height {
     padding: 10px;
 }
+
 /*-------конец кабинет практиканта------------------*/
+
 
 /*-------Адаптив------------------*/
 
+@container room-type (max-width: 500px) {
+    .card-lk_button.room-type {
+        grid-auto-flow: row;
+        grid-template-columns: auto;
+    }
+}
 
 @container intern-office (max-width: 768px) {
     .intern-office_list {
         width: 100%;
     }
+
     .intern-office_information-comments {
         flex-direction: column;
     }
 }
+
 @container intern-office (max-width: 500px) {
     .intern-office_time {
         align-items: flex-start;
         flex-direction: column;
         gap: 15px;
     }
-    .intern-office_time>a{
-         width: 100%;
+
+    .intern-office_time>a {
+        width: 100%;
     }
+
     .intern-office_name {
         font-size: 24px;
     }
+
     .intern-office_upcoming-classes {
         font-size: 20px;
     }
 }
+
 @container intern-office (max-width: 370px) {
     .intern-office_list>li {
         flex-direction: column;
     }
+
     .intern-office_list>li>span {
         padding-top: 10px;
         border-top: 1px solid var(--colorBlockCardNine);
         text-align: right;
     }
 }
+
 @container supervision (max-width: 1175px) {
     .supervision-block_time-button {
         flex-direction: column;
