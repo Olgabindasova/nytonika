@@ -1020,6 +1020,12 @@ input:-webkit-autofill {
     cursor: pointer;
     text-align: center;
 }
+.card-lk_button.room-type>button:disabled, .card-lk_button.room-type>a:disabled  {
+    background: #a2e0d0;
+    border: 3px solid #a2e0d0;;
+    cursor: none;
+    color: var(--colorWhiteText);
+}
 .pruffeme {
     background: var(--colorBlockCardEight) !important;
     border: 3px solid var(--colorBlockCardEight) !important; 
