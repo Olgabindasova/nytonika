@@ -162,8 +162,56 @@
                                     <p class="">За занятие:</p>
                                     <p class=""><span>300</span>руб.</p>
                                 </div>
+                                <div>
+                                    <button type="submit" uk-toggle="target: #my-id"
+                                        class="educator_content_diagnost">Диагностика успешна</button>
+                                </div>
+                            </div>
+                            <div id="my-id" class="uk-flex-top diagnosis-successful" uk-modal>
+                                <div class="uk-modal-dialog  uk-margin-auto-vertical uk-modal-dialog modal-trend">
+                                    <button class="uk-modal-close-outside uk-icon uk-close" type="button"
+                                        uk-close></button>
+                                    <div class="uk-modal-header">
+                                        <h3>Диагностика успешна</h3>
+                                    </div>
+                                    <div class="">
+                                        <form class="form-leave-request">
+
+                                            <div class="">
+                                                <label class="uk-form-label">Беру в работу</label>
+                                                <div class="uk-form-controls">
+
+                                                    <label><input class="uk-radio" type="radio" name="radio1"
+                                                            checked>Да</label><br>
+                                                    <label><input class="uk-radio" type="radio"
+                                                            name="radio1">Нет</label>
+                                                </div>
+                                                <label class="uk-form-label">График занятий</label>
+                                                <div class="uk-form-controls">
+                                                    <textarea class="uk-textarea" rows="3" name="f_message"
+                                                        placeholder="Введите даты" 
+                                                        required></textarea>
+                                                </div>
+                                                <label class="uk-form-label">Комментарий</label>
+                                                <div class="uk-form-controls">
+                                                    <textarea class="uk-textarea" rows="3" name="f_message"
+                                                        placeholder="Введите комментарий" 
+                                                        required></textarea>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <button class="button-tree uk-button uk-button-primary"
+                                                    type="submit">Отправить</button>
+                                            </div>
+
+
+                                        </form>
+                                    </div>
+
+                                </div>
                             </div>
                         </li>
+
                         <li>
                             <div class="card-lk">
                                 <div class="educator_content">
