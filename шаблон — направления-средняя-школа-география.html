@@ -1,0 +1,1364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/uikit-rtl.css">
+    <link rel="stylesheet" href="css/uikit.css">
+
+    <link rel="stylesheet" href="css/custom-style.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+    <script src="js/uikit.js" type="text/javascript"></script>
+    <script src="js/uikit-icons.js" type="text/javascript"></script>
+    <script src="js/scripts.js" type="text/javascript"></script>
+    <title>Ньютоника - География средняя школа</title>
+</head>
+
+<body>
+
+
+    <div class="wrapper">
+        <header uk-sticky>
+
+            <section class="header container">
+
+                <nav class="header-desktop header-nav uk-margin-small-top" uk-navbar>
+
+                    <div class="header-logo">
+
+                        <img src="svg/logo.svg">
+
+                    </div>
+                    <!-- Навигация, ссылки -->
+                    <ul class="uk-navbar-nav">
+                        <li class="nav-item"><a href="https://stage.nyutonika.ru/logo_mal">Направления</a>
+                            <div class="uk-navbar-dropdown header-menu">
+                                <ul class="uk-nav uk-navbar-dropdown-nav">
+                                    <li class="uk-active uk-parent">
+                                        <a href="https://stage.nyutonika.ru/logo_mal">Активное<span
+                                                class="uk-nav-parent-icon icon-menu-tree"></span></a>
+                                        <div class="uk-navbar-dropdown header-menu-second">
+                                            <ul class="uk-nav uk-navbar-dropdown-nav header-menu-second-position">
+                                                <li><a href="https://stage.nyutonika.ru/logo_mal"><img
+                                                            class="trend-icon-nav" src="svg/МАлышам.svg">
+                                                        Активное</a></li>
+                                                <li><a href="https://stage.nyutonika.ru/logo_mal"><img
+                                                            class="trend-icon-nav" src="svg/МАлышам.svg">
+                                                        Элемент списка</a></li>
+                                                <li><a href="https://stage.nyutonika.ru/logo_mal"><img
+                                                            class="trend-icon-nav" src="svg/МАлышам.svg">
+                                                        Пункт меню</a></li>
+                                                <li><a href="https://stage.nyutonika.ru/logo_mal"><img
+                                                            class="trend-icon-nav" src="svg/МАлышам.svg">
+                                                        Продолжаем</a></li>
+
+
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="uk-parent"><a href="#">Элемент списка<span
+                                                class="uk-nav-parent-icon icon-menu-tree"></span></a>
+                                        <div class="uk-navbar-dropdown header-menu-second">
+                                            <ul class="uk-nav uk-navbar-dropdown-nav header-menu-second-position">
+                                                <li><a href="#"><img class="trend-icon-nav" src="svg/МАлышам.svg">
+                                                        Активное</a></li>
+                                                <li><a href="#"><img class="trend-icon-nav" src="svg/МАлышам.svg">
+                                                        Элемент списка</a></li>
+                                                <li><a href="#"><img class="trend-icon-nav" src="svg/МАлышам.svg">
+                                                        Пункт меню</a></li>
+                                                <li><a href="#"><img class="trend-icon-nav" src="svg/МАлышам.svg">
+                                                        Продолжаем</a></li>
+
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="uk-parent"><a href="#">Пункт меню<span
+                                                class="uk-nav-parent-icon icon-menu-tree"></span></a></li>
+                                    <li class="uk-parent"><a href="#">Продолжаем<span
+                                                class="uk-nav-parent-icon icon-menu-tree"></span></a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <!-- <li class="nav-item"><a href="#">О школе</a></li>-->
+
+
+
+                    </ul><!-- Навигация, ссылки -->
+
+                    <div class="uk-navbar-item header-phone"> <!-- Отдельный контейнер -->
+                        <a href="tel:+78007753795">8 (800) 775-37-95</a>
+                        <div class="header-phone_text"></div>
+                    </div>
+                    <div class="uk-navbar-item header-buttons"> <!-- Отдельный контейнер -->
+                        <button
+                            class="uk-button uk-button-default button-one uk-margin-small-right">Регистрация</button>
+                        <button class="uk-button uk-button-primary button-two">Войти на урок</button>
+                    </div>
+
+                </nav>
+            </section>
+            <section>
+                <nav class="">
+                    <div class="header container header-mobile uk-margin-small-top uk-margin-small-bottom" uk-navbar>
+                        <div class="header-logo">
+                            <img src="svg/logo.svg">
+                        </div>
+                        <a class="uk-button button-two button-one-mobile-header uk-margin-small-right">Войти на урок</a>
+                        <div class="mobile-buttons-block">
+                            <a class="button-menu-lk" href=""></a>
+                            <a class="button-menu-telefon" href="tel:+79999999999"></a>
+                            <a href="#offcanvas-slide" class="button-menu header-buttons-menu-open" uk-toggle></a>
+                        </div>
+                        <div id="offcanvas-slide" uk-offcanvas>
+                            <div class="uk-offcanvas-bar menu-slide">
+                                <div class="menu-mobile-title">Меню <a href="#offcanvas-slide"
+                                        class="button-menu header-buttons-menu-close" uk-toggle></a></div>
+                                <ul class="uk-nav-default menu-mobile uk-nav">
+                                    <li class="uk-parent nav-item"><a
+                                            href="https://stage.nyutonika.ru/logo_mal">Направления<span
+                                                class="uk-nav-parent-icon icon-menu-one">
+                                            </span></a>
+
+                                        <ul class="uk-nav-sub menu-second-mobile uk-nav-default">
+                                            <li class="uk-parent">
+                                                <a href="https://stage.nyutonika.ru/logo_mal">Активное<span
+                                                        class="uk-nav-parent-icon icon-menu-two">
+                                                    </span></a>
+
+
+                                                <ul class="menu-second-sub-mobile  uk-nav-default">
+                                                    <li><a href="#"><img class="trend-icon-nav" src="svg/МАлышам.svg">
+                                                            Активное</a></li>
+                                                    <li><a href="#"><img class="trend-icon-nav" src="svg/МАлышам.svg">
+                                                            Элемент списка</a></li>
+                                                    <li><a href="#"><img class="trend-icon-nav" src="svg/МАлышам.svg">
+                                                            Пункт меню</a></li>
+                                                    <li><a href="#"><img class="trend-icon-nav" src="svg/МАлышам.svg">
+                                                            Продолжаем</a></li>
+
+                                                </ul>
+
+                                            </li>
+                                            <li class="uk-parent">
+                                                <a href="https://stage.nyutonika.ru/logo_mal">Элемент списка <span
+                                                        class="uk-nav-parent-icon icon-menu-two"></span></a>
+
+                                                <ul class="menu-second-sub-mobile uk-nav-sub uk-nav uk-nav-default">
+                                                    <li><a href="#"><img class="trend-icon-nav" src="svg/МАлышам.svg">
+                                                            Активное</a></li>
+                                                    <li><a href="#"><img class="trend-icon-nav" src="svg/МАлышам.svg">
+                                                            Элемент списка</a></li>
+                                                    <li><a href="#"><img class="trend-icon-nav" src="svg/МАлышам.svg">
+                                                            Пункт меню</a></li>
+                                                    <li><a href="#"><img class="trend-icon-nav" src="svg/МАлышам.svg">
+                                                            Продолжаем</a></li>
+
+                                                </ul>
+
+                                            </li>
+                                            <li class="uk-parent"><a href="#">Пункт меню <span
+                                                        class="uk-nav-parent-icon icon-menu-two"></span></a></li>
+                                            <li class="uk-parent"><a href="#">Продолжаем <span
+                                                        class="uk-nav-parent-icon icon-menu-two"></span></a></li>
+                                        </ul>
+
+                                    </li>
+                                    <li class="nav-item uk-parent"><a href="#">О школе <span
+                                                class="uk-nav-parent-icon icon-menu-one"></span></a></li>
+
+                                    <li class="uk-nav-divider nav-line"></li>
+                                    <li>
+                                        <div class="footer-content_item">
+                                            <div>
+                                                <div
+                                                    class="footer-content_item-title uk-margin-small-top uk-margin-small-bottom">
+                                                    Напишите нам</div>
+                                                <div class="footer-content_icons">
+                                                    <a href="">
+                                                        <img class="trend-icon" src="svg/telegram.svg" alt="">
+                                                    </a>
+                                                    <a href="">
+                                                        <img class="trend-icon" src="svg/viber.svg" alt="">
+                                                    </a>
+
+                                                </div>
+                                                <div>
+                                                    <div
+                                                        class="footer-content_item-title uk-margin-top uk-margin-small-bottom">
+                                                        Наши соц. сети</div>
+                                                    <div class="footer-content_icons uk-margin-bottom">
+                                                        <a href="">
+                                                            <img class="trend-icon" src="svg/youtube.svg" alt="">
+                                                        </a><a href="">
+                                                            <img class="trend-icon"
+                                                                src="svg/vk-logo-of-social-network.svg" alt="">
+                                                        </a>
+                                                        <a href="">
+                                                            <img class="trend-icon" src="svg/viber.svg" alt="">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div>
+                        <a class="uk-button button-two-mobile-header uk-margin-small-right">Войти на урок</a>
+                    </div>
+                </nav>
+
+            </section>
+
+
+
+
+
+        </header>
+
+
+
+
+
+
+
+
+        <h1 class="h1-napravlenia napravlenia_nach napravlenia_srshk"
+            uk-scrollspy="cls: uk-animation-slide-bottom; delay: 300">
+            География средняя школа
+        </h1>
+
+
+        <div class="main container">
+
+            <!-- 1 секция  баннер и текст-->
+            <section class="container-item uk-flex-between one-section" uk-grid>
+                <div class="uk-width-1-2@m uk-padding-remove uk-flex uk-flex-middle">
+                    <div class="banner-content" uk-scrollspy="cls: uk-animation-slide-bottom; delay: 600">
+                        <div class="text-h2-napravlenia" uk-scrollspy="cls: uk-animation-slide-bottom; delay: 300">
+                            Изучаем политическую и физическую карты мира!
+                            <br>
+                            Знакомимся с обычаями и культурой разных стран!
+                        </div>
+                        <div class="text-h2-napravlenia">
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-width-expand@m uk-padding-remove">
+                    <img src="https://cdn.nyutonika.ru/images/pages-napr/Group104.png" alt=""
+                        uk-scrollspy="cls: uk-animation-fade; delay: 600">
+                </div>
+            </section>
+        </div>
+        <div class="container">
+            <section class="two-section-dop-icons uk-scrollspy-inview "
+                uk-scrollspy="cls: uk-animation-fade; delay: 600">
+
+                <div alt="" class="elevn-section-img3 icons-radius icons-style color17" src="">
+                </div>
+                <div alt="" class="elevn-section-img4 icons-radius icons-style color9" src=" ">
+                </div>
+                <div class="nine-section-img1 icons-shadow icons-style" tabindex="0">
+                    <img alt="" class="" src="https://cdn.nyutonika.ru/icons/молекула-11.svg">
+                </div>
+                <div class="nine-section-img6 icons-block  icons-style" tabindex="0">
+                    <img alt="" class="" src="https://cdn.nyutonika.ru/icons/graph.svg">
+                </div>
+            </section>
+            <div class="container-item">
+                <h3>Хотите узнать больше?</h3>
+                <h4>Оставьте заявку на бесплатный урок</h4>
+                <form action="" class="uk-grid-small banner-trend-form napravlenia_srshk" uk-grid>
+                    <div class="uk-width-1-3@m uk-width-1-4@l uk-inline">
+                        <span class="uk-form-icon uk-icon" uk-icon="icon: user; ratio: 1.7"></span><input
+                            class="uk-input" type="text" placeholder="Ваше имя">
+                    </div>
+                    <div class="uk-width-1-3@m uk-width-1-4@l uk-inline">
+                        <span class="uk-form-icon uk-icon" uk-icon="icon: receiver; ratio: 1.7"></span><input
+                            class="uk-input phone" type="tel" placeholder="Телефон">
+                    </div>
+                    <div class="uk-width-1-3@m uk-width-1-4@l uk-inline">
+                        <span class="uk-form-icon uk-icon" uk-icon="icon: mail; ratio: 1.7"></span><input
+                            class="uk-input" type="email" placeholder="E-mail">
+                    </div>
+                    <div class="uk-width-1-1@m uk-width-1-4@l uk-inline">
+                        <button type="submit" class="uk-button uk-button-default uk-width-1-1">Оставить
+                            заявку</button>
+                    </div>
+                    <div class="uk-width-1-1 uk-flex uk-flex-center">
+                        <label class="uk-form-label color-text-1" for="form-stacked-text">Отправляя форму, вы
+                            соглашаетесь с
+                            офертой и даёте согласие на обработку ваших персональных данных</label>
+                    </div>
+                </form>
+            </div>
+
+
+            <section class="two-section-dop uk-margin-large-bottom">
+                <img class="two-section-img-efficiency" src="https://cdn.nyutonika.ru/svg/голубойшейп.svg" alt="">
+            </section>
+        </div>
+
+        <div class="uk-margin-bottom">
+            <div class="container">
+
+                <section class="container-item">
+                    <div class="efficiency efficiency-srscola uk-scrollspy-inview "
+                        uk-scrollspy="cls: uk-animation-slide-bottom; delay: 300">
+
+
+
+                        <h4 class="uk-scrollspy-inview uk-text-center"
+                            uk-scrollspy="cls: uk-animation-slide-bottom; delay: 400">
+                            Отправляясь в путешествие, мы первым делом смотрим на карту, сопоставляем расстояние от дома
+                            до финального пункта назначения, выстраиваем маршрут. Оцениваем географическое положение
+                            выбранной точки. Подготовка подходящей одежды, разработка удобного маршрута - все это
+                            невозможно без знания географии.
+                        </h4>
+                        <div class="icons-block  uk-scrollspy-inview uk-flex uk-flex-center"
+                            uk-scrollspy="cls: uk-animation-fade; delay: 600">
+                            <img alt="" class="" src="https://cdn.nyutonika.ru/images/pages-napr/Group104.png">
+                        </div>
+
+                    </div>
+                </section>
+
+
+
+            </div>
+        </div>
+        <div class="problems color16 uk-margin-bottom uk-margin-large-top">
+
+            <div class="container">
+                <section class="nine-section-dop-icons uk-scrollspy-inview "
+                    uk-scrollspy="cls: uk-animation-fade; delay: 600">
+                    <div class="nine-section-img5 icons-block  icons-style" tabindex="0">
+                        <img alt="" class="" src="https://cdn.nyutonika.ru/icons/молекула-10.svg">
+                    </div>
+                </section>
+                <section class="uk-padding-large">
+                    <h3 class="uk-text-center   uk-scrollspy-inview "
+                        uk-scrollspy="cls: uk-animation-slide-bottom; delay: 300">
+                        Как организован процесс изучения географии в Ньютонике?
+                    </h3>
+                </section>
+
+                <section class="uk-flex-between one-section uk-padding uk-margin-large-bottom uk-grid" uk-grid="">
+                    <div class="uk-width-1-2@m uk-flex uk-flex-middle">
+                        <div class="banner-content uk-scrollspy-inview "
+                            uk-scrollspy="cls: uk-animation-slide-bottom; delay: 600">
+                            <div class="uk-padding napravlenia_textblock_2">
+                                <ul>
+                                    <li>Занятия направлены организованы на самостоятельный поиск ответов на вопросы.
+                                    </li>
+                                    <li>Картинки, интерактивные задания и интересные факты о географии помогают
+                                        ориентироваться в учебном материале школьной программы.</li>
+                                    <li>Мотивация к изучению и понятная подача материала! География интересна и проста
+                                        для любого школьника!</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="uk-width-expand@m uk-margin uk-first-column">
+                        <img alt="" class="" src="https://cdn.nyutonika.ru/images/pages-napr/Group104.png">
+                    </div>
+                </section>
+            </div>
+
+        </div>
+
+        <div class="problems problems-srscola">
+
+            <div class="container">
+                <section class="container-item">
+                    <h3 class="uk-text-center   uk-scrollspy-inview "
+                        uk-scrollspy="cls: uk-animation-slide-bottom; delay: 300">
+                        Наша задача
+                    </h3>
+                    <div class="uk-child-width-1-2@l uk-child-width-1-2@m uk-padding-top uk-flex-between@l uk-flex-middle uk-flex-center uk-flex-wrap uk-grid-medium uk-grid uk-grid-stack"
+                        uk-grid="">
+                        <div class="uk-flex-center uk-flex uk-padding problems-img uk-grid-margin uk-first-column">
+                            <img class="uk-scrollspy-inview "
+                                uk-scrollspy="cls: uk-animation-fade; delay: 500; repeat: false"
+                                src="https://cdn.nyutonika.ru/images/pages-napr/Group104.png" alt="">
+                        </div>
+                        <div class="efficiency efficiency-srscola uk-first-column">
+                            <ul>
+                                <li>облегчение процесса изучения географических понятий</li>
+                                <li>улучшение успеваемости в школе</li>
+                                <li>подготовка к написанию итоговых контрольных</li>
+                                <li>помощь детям в осознании целостности картины мира и его многообразии</li>
+                                <li>составление доступной и интересной программы</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </section>
+            </div>
+
+        </div>
+        <div class="problems color16 ">
+
+            <div class="container">
+                <section class="container-item">
+                    <h3 class="uk-text-center   uk-scrollspy-inview "
+                        uk-scrollspy="cls: uk-animation-slide-bottom; delay: 300">
+                        Результаты обучения:
+                    </h3>
+                    <div class="uk-child-width-1-2@l uk-child-width-1-2@m uk-padding-top uk-flex-between@l uk-flex-middle uk-flex-center uk-flex-wrap uk-grid-medium uk-grid uk-grid-stack"
+                        uk-grid="">
+
+                        <div class="efficiency efficiency-srscola uk-first-column">
+                            <ul>
+                                <li>отличные оценки в школе по курсу географии</li>
+                                <li>успешная сдача контрольных тестов</li>
+                                <li>навыки использования карт и статистических данных</li>
+                                <li>знания географических особенностей природы</li>
+
+                            </ul>
+                        </div>
+                        <div class="uk-flex-center uk-flex uk-padding problems-img uk-grid-margin uk-first-column">
+                            <img class="uk-scrollspy-inview "
+                                uk-scrollspy="cls: uk-animation-fade; delay: 500; repeat: false"
+                                src="https://cdn.nyutonika.ru/images/pages-napr/Group104.png" alt="">
+                        </div>
+                    </div>
+                    <div class="uk-child-width-1-2@l uk-child-width-1-2@m uk-padding-top uk-flex-between@l uk-flex-middle uk-flex-center uk-flex-wrap uk-grid-medium uk-grid uk-grid-stack"
+                        uk-grid="">
+                        <div class="uk-flex-center uk-flex uk-padding problems-img uk-grid-margin uk-first-column">
+                            <img class="uk-scrollspy-inview "
+                                uk-scrollspy="cls: uk-animation-fade; delay: 500; repeat: false"
+                                src="https://cdn.nyutonika.ru/images/pages-napr/Group104.png" alt="">
+                        </div>
+                        <div class="efficiency efficiency-srscola uk-first-column">
+                            <ul>
+
+                                <li>знакомства с разными странами, их территорией, населением и хозяйством</li>
+                                <li>любовь к природе, понимание важности ее сохранения и рационального
+                                    природопользования</li>
+                                <li>изучение внутреннего и внешнего строения земной оболочки, рельефа</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </section>
+
+            </div>
+
+        </div>
+        <div class="problems problems-srscola uk-margin-xlarge-bottom">
+
+            <div class="container">
+                <section class="container-item">
+                    <h3 class="uk-text-center   uk-scrollspy-inview "
+                        uk-scrollspy="cls: uk-animation-slide-bottom; delay: 300">
+                        Исследуем необъятный мир не выходя из дома! <br>
+                        Передовые методы обучения, интерактивные возможности и эффективный курс!
+                    </h3>
+                </section>
+            </div>
+
+        </div>
+
+
+        <div class="problems problems-srscola color16  diagnostika-srscola angl">
+            <div class="container">
+                <section class="container-item">
+                    <h4 class="uk-text-center title-trend-block uk-scrollspy-inview "
+                        uk-scrollspy="cls: uk-animation-slide-bottom; delay: 300">Наука о земле - наука о жизни
+                    </h4>
+                </section>
+            </div>
+
+
+            <div class="container">
+                <!-- 1 секция  баннер и текст-->
+                <section class="uk-flex-between one-section uk-padding uk-margin-large-bottom" uk-grid>
+                    <div class="uk-width-expand@m uk-margin">
+                        <img src="https://cdn.nyutonika.ru/images/pages-napr/Group104.png" alt=""
+                            uk-scrollspy="cls: uk-animation-fade; delay: 600">
+                    </div>
+                    <div class="uk-width-1-2@m uk-flex uk-flex-middle">
+                        <div class="banner-content" uk-scrollspy="cls: uk-animation-slide-bottom; delay: 600">
+                            <div class="uk-padding uk-margin-top napravlenia_textblock_two napravlenia_srshk">
+
+                            </div>
+                            <div class=" uk-padding napravlenia_textblock ">
+                                География - единственный школьный предмет, изучающий тесную взаимосвязь природы и
+                                деятельности человека в глобальных масштабах. Благодаря урокам географии дети узнают о
+                                многообразии природных ресурсов, познакомятся с экономикой и культурой разных стран,
+                                научатся ценить природу.
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+
+            <div class="container">
+                <!-- 1 секция  баннер и текст-->
+                <section class="uk-flex-between one-section  uk-padding uk-margin-top uk-margin-bottom" uk-grid>
+                    <div class="uk-width-1-2@m   uk-flex uk-flex-middle">
+                        <div class="banner-content" uk-scrollspy="cls: uk-animation-slide-bottom; delay: 600">
+                            <div class="uk-padding uk-margin-top napravlenia_textblock_two napravlenia_srshk">
+                            </div>
+                            <div class="h1-banner-text uk-padding napravlenia_textblock ">
+                                Считается, что дети начинают изучать географию только в средней школе, но многие понятия
+                                им уже знакомы из уроков по окружающему миру.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="uk-width-expand@m   uk-margin">
+                        <img src="https://cdn.nyutonika.ru/images/pages-napr/Group104.png" alt=""
+                            uk-scrollspy="cls: uk-animation-fade; delay: 600">
+                    </div>
+                </section>
+            </div>
+        </div>
+
+
+
+
+        <div class="problems problems-srscola color16 ">
+            <div class="container">
+                <section class="container-item">
+                    <h3 class="uk-text-center title-trend-block uk-scrollspy-inview uk-margin-large-bottom"
+                        uk-scrollspy="cls: uk-animation-slide-bottom; delay: 300">Вы думаете, что география
+                        второстепенна? Но это не так!
+                    </h3>
+                    <h4 class="uk-text-center uk-scrollspy-inview "
+                        uk-scrollspy="cls: uk-animation-slide-bottom; delay: 400">
+                        Многочисленные исследования показывают, что мы используем различные географические знания
+                        буквально каждый день.
+                    </h4>
+                </section>
+            </div>
+        </div>
+
+        <div class="problems problems-srscola">
+            <div class="container">
+                 
+                <section class="uk-flex-between one-section   uk-grid" uk-grid="">
+                    <div class="uk-width-1-2@m uk-flex uk-flex-middle uk-first-column">
+                        <div class="banner-content uk-scrollspy-inview " uk-scrollspy="cls: uk-animation-slide-bottom; delay: 600">
+                            <h4>Прогнозы погоды</h4>
+                            <div class="h1-banner-text uk-padding napravlenia_textblock_2">
+                                всегда знаем, когда нужно взять с собой зонтик
+                            </div>
+                        </div>
+                    </div>
+                    <div class="uk-width-expand@m  ">
+                        <img src="https://cdn.nyutonika.ru/images/pages-napr/Group104.png" alt="" uk-scrollspy="cls: uk-animation-fade; delay: 600" class="uk-scrollspy-inview "  >
+                    </div>
+                </section>
+                <section class="uk-flex-between one-section   uk-grid" uk-grid="">
+                    <div class="uk-width-expand@m   uk-first-column">
+                        <img src="https://cdn.nyutonika.ru/images/pages-napr/Group104.png" alt="" uk-scrollspy="cls: uk-animation-fade; delay: 600" class="uk-scrollspy-inview "  >
+                    </div>
+                    <div class="uk-width-1-2@m   uk-flex uk-flex-middle">
+                        <div class="banner-content uk-scrollspy-inview " uk-scrollspy="cls: uk-animation-slide-bottom; delay: 600">
+                            <h4>Онлайн-карты</h4>
+                            <div class="h1-banner-text uk-padding napravlenia_textblock_2">
+                                экономим время, выбирая самые короткие маршруты
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="uk-flex-between one-section   uk-grid" uk-grid="">
+                    <div class="uk-width-1-2@m uk-flex uk-flex-middle uk-first-column">
+                        <div class="banner-content uk-scrollspy-inview " uk-scrollspy="cls: uk-animation-slide-bottom; delay: 600">
+                            <h4>Путешествия и прогулки</h4>
+                            <div class="h1-banner-text uk-padding napravlenia_textblock_2">
+                               планируем поездки с умом
+                            </div>
+                        </div>
+                    </div>
+                    
+                </section>
+            </div>
+        </div>
+
+        <div class="">
+            <div class="container">
+
+                <!-- 3 секция -->
+                <section class="container-item">
+                    <h3 class="center title-trend-block" uk-scrollspy="cls: uk-animation-slide-bottom; delay: 300">
+                        С первых занятий определяем сильные стороны ребенка, <br> ставим цели и разбираем сложные темы!
+                    </h3>
+
+                    <div class="teacher-text-trend teacher-text-trend_napravlenia"
+                        uk-scrollspy="cls: uk-animation-slide-bottom; delay: 400">
+                        Все репетиторы школы 1 раз в год повышают квалификацию в Международном институте развития образования и получают соответствующие документы. Уроки разрабатываются и проводятся в соответствии с требованиями ФГОС.
+                    </div>
+
+                    <div uk-slider="autoplay: true; autoplay-interval: 5000"
+                        uk-scrollspy="cls: uk-animation-slide-bottom; delay: 600"
+                        class="uk-slider uk-scrollspy-inview ">
+                        <div class="uk-position-relative">
+                            <div class="uk-slider-container uk-light">
+
+                                <ul
+                                    class="uk-slider-items uk-child-width-1-1 uk-child-width-1-1@s uk-child-width-1-3@m uk-grid-small teachers">
+
+                                    <li tabindex="-1" class="uk-active" style="order: 1;">
+                                        <div class="uk-card uk-card-default ">
+                                            <div class="uk-card-media-top">
+                                                <img src="https://cdn.nyutonika.ru/images/teachers/8-sr.png"
+                                                    alt="Слайдер">
+                                            </div>
+                                            <div class="uk-card-body card-teacher-content">
+                                                <div class="uk-card-badge uk-label teacher-label-color-tree">Английский
+                                                    язык
+                                                </div>
+                                                <h4 class="uk-card-title card-teacher-title">Елена Лаврова</h4>
+                                                <p class="card-teacher-experience">Стаж - 5 лет</p>
+                                                <p class="card-teacher-description">Учитель – это не профессия, учитель
+                                                    - это образ жизни</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li tabindex="-1" class="uk-active" style="order: 1;">
+                                        <div class="uk-card uk-card-default ">
+                                            <div class="uk-card-media-top">
+                                                <img src="https://cdn.nyutonika.ru/images/teachers/1-sr.png"
+                                                    alt="Слайдер">
+                                            </div>
+                                            <div class="uk-card-body card-teacher-content">
+                                                <div class="uk-card-badge uk-label teacher-label-color-tree">География
+                                                </div>
+                                                <h4 class="uk-card-title card-teacher-title">Сергей Еремин</h4>
+                                                <p class="card-teacher-experience">Стаж - 25 лет</p>
+                                                <p class="card-teacher-description">Лучший способ узнать дорогу –
+                                                    спросить у учителя географии!</p>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li tabindex="-1" class="" style="order: 1;">
+                                        <div class="uk-card uk-card-default">
+                                            <div class="uk-card-media-top">
+                                                <img src="https://cdn.nyutonika.ru/images/teachers/2-sr.png"
+                                                    alt="Слайдер">
+                                            </div>
+                                            <div class="uk-card-body card-teacher-content">
+                                                <div class="uk-card-badge uk-label teacher-label-color-tree">Русский
+                                                    язык
+                                                </div>
+                                                <h4 class="uk-card-title card-teacher-title">Софья Константинова</h4>
+                                                <p class="card-teacher-experience">Стаж - 9 лет</p>
+                                                <p class="card-teacher-description">Какое счастье быть полезной людям,
+                                                    учить его величество народ!
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </li>
+
+
+                                    <li tabindex="-1" class="" style="order: 1;">
+                                        <div class="uk-card uk-card-default">
+                                            <div class="uk-card-media-top">
+                                                <img src="https://cdn.nyutonika.ru/images/teachers/3-sr.png"
+                                                    alt="Слайдер" loading="lazy">
+                                            </div>
+                                            <div class="uk-card-body card-teacher-content">
+                                                <div class="uk-card-badge uk-label teacher-label-color-tree">Информатика
+                                                </div>
+                                                <h4 class="uk-card-title card-teacher-title">Матвей Фадеев</h4>
+                                                <p class="card-teacher-experience">Стаж - 4 года</p>
+                                                <p class="card-teacher-description">Многому я научился у своих
+                                                    наставников, еще более – у своих товарищей, но более всего – у своих
+                                                    учеников
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </li>
+
+
+                                    <li tabindex="-1" class="" style="order: 1;">
+                                        <div class="uk-card uk-card-default">
+                                            <div class="uk-card-media-top">
+                                                <img src="https://cdn.nyutonika.ru/images/teachers/4-sr.png"
+                                                    alt="Слайдер">
+                                            </div>
+                                            <div class="uk-card-body card-teacher-content">
+                                                <div class="uk-card-badge uk-label teacher-label-color-tree">Алгебра
+                                                </div>
+                                                <h4 class="uk-card-title card-teacher-title">Александра Власова</h4>
+                                                <p class="card-teacher-experience">Стаж - 6 лет</p>
+                                                <p class="card-teacher-description">Ученик – это не сосуд, который надо
+                                                    заполнить, а факел, который надо зажечь
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li tabindex="-1" class="" style="order: 1;">
+                                        <div class="uk-card uk-card-default">
+                                            <div class="uk-card-media-top">
+                                                <img src="https://cdn.nyutonika.ru/images/teachers/5-sr.png"
+                                                    alt="Слайдер">
+                                            </div>
+                                            <div class="uk-card-body card-teacher-content">
+                                                <div class="uk-card-badge uk-label teacher-label-color-tree">Биология
+                                                </div>
+                                                <h4 class="uk-card-title card-teacher-title">Мария Яковлева</h4>
+                                                <p class="card-teacher-experience">Стаж - 5 лет</p>
+                                                <p class="card-teacher-description">Наша задача не в том, чтобы сделать
+                                                    себя необходимыми нашим детям, а, напротив, в том, чтобы помочь им
+                                                    научиться по возможности обходиться без нас
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li tabindex="-1" class="" style="order: 1;">
+                                        <div class="uk-card uk-card-default">
+                                            <div class="uk-card-media-top">
+                                                <img src="https://cdn.nyutonika.ru/images/teachers/6-sr.png"
+                                                    alt="Слайдер">
+                                            </div>
+                                            <div class="uk-card-body card-teacher-content">
+                                                <div class="uk-card-badge uk-label teacher-label-color-tree">История
+                                                </div>
+                                                <h4 class="uk-card-title card-teacher-title">Арина Быкова</h4>
+                                                <p class="card-teacher-experience">Стаж - 7 лет</p>
+                                                <p class="card-teacher-description">Педагоги не могут успешно кого-то
+                                                    учить, если в это же время усердно не учатся сами
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li tabindex="-1" class="">
+                                        <div class="uk-card uk-card-default">
+                                            <div class="uk-card-media-top">
+                                                <img src="https://cdn.nyutonika.ru/images/teachers/7-sr.png"
+                                                    alt="Слайдер">
+                                            </div>
+                                            <div class="uk-card-body card-teacher-content">
+                                                <div class="uk-card-badge uk-label teacher-label-color-tree">Литература
+                                                </div>
+                                                <h4 class="uk-card-title card-teacher-title">Михаил Белов</h4>
+                                                <p class="card-teacher-experience">Стаж - 15 лет</p>
+                                                <p class="card-teacher-description">Настоящий учитель тот, кто способен
+                                                    спуститься с высот своих знаний до незнания ученика и вместе с ним
+                                                    совершить восхождение
+
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+
+                            </div>
+                            <a class="uk-position-center-left-out uk-position-small teacher-arrow" href="#"
+                                uk-slider-item="previous"><svg width="353" height="193" viewBox="0 0 353 193"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M54.6988 112.186C56.1488 112.186 58.7288 112.186 60.1688 112.186C151.419 112.186 242.669 112.196 333.909 112.156C336.519 112.156 339.219 112.146 341.709 111.486C349.009 109.546 353.149 102.646 352.389 94.2861C351.729 87.0761 346.129 81.3161 338.809 80.4561C336.829 80.2261 334.819 80.2561 332.819 80.2561C241.949 80.2461 151.069 80.2461 60.1988 80.2461C58.7388 80.2461 57.2688 80.2461 54.7688 80.2461C56.2588 78.6461 57.0988 77.6761 58.0088 76.7761C74.1988 60.6161 90.3688 44.4361 106.599 28.3261C110.869 24.0861 113.249 19.2261 112.019 13.1761C110.789 7.10612 107.299 2.71611 101.239 0.85611C95.1488 -1.01389 89.5688 0.146107 84.9588 4.66611C77.4688 12.0261 70.0888 19.4961 62.6688 26.9261C43.8488 45.7561 25.0288 64.5961 6.21878 83.4361C-2.08122 91.7461 -2.07123 100.666 6.23877 108.986C32.1988 134.996 58.2688 160.896 84.0888 187.036C94.7888 197.856 109.059 190.786 111.849 179.856C113.449 173.596 111.149 168.646 106.789 164.306C90.5988 148.146 74.4488 131.946 58.2188 115.826C57.2988 114.886 54.9488 112.866 54.6988 112.186Z">
+                                    </path>
+                                </svg>
+                            </a>
+                            <a class="uk-position-center-right-out uk-position-small teacher-arrow" href="#"
+                                uk-slider-item="next"><svg width="353" height="194" viewBox="0 0 353 194"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M297.89 113C296.44 113 293.86 113 292.42 113C201.17 113 109.92 113.01 18.6801 112.97C16.0701 112.97 13.3701 112.96 10.8801 112.3C3.58008 110.36 -0.559923 103.46 0.200077 95.1001C0.860077 87.8901 6.46008 82.1301 13.7801 81.2701C15.7601 81.0401 17.7701 81.0701 19.7701 81.0701C110.64 81.0601 201.52 81.0601 292.39 81.0601C293.85 81.0601 295.32 81.0601 297.82 81.0601C296.33 79.4601 295.49 78.4901 294.58 77.5901C278.39 61.4301 262.22 45.2501 245.99 29.1401C241.72 24.9001 239.34 20.0401 240.57 13.9901C241.8 7.92008 245.29 3.53007 251.35 1.67007C257.44 -0.199925 263.02 0.960072 267.63 5.48007C275.12 12.8401 282.5 20.3101 289.92 27.7401C308.74 46.5701 327.56 65.4101 346.37 84.2501C354.67 92.5601 354.66 101.48 346.35 109.8C320.39 135.81 294.32 161.71 268.5 187.85C257.8 198.67 243.53 191.6 240.74 180.67C239.14 174.41 241.44 169.46 245.8 165.12C261.99 148.96 278.14 132.76 294.37 116.64C295.29 115.7 297.64 113.68 297.89 113Z">
+                                    </path>
+                                </svg></a>
+                        </div>
+
+                    </div>
+
+                </section>
+            </div>
+        </div>
+
+
+
+
+        <div class="form-trend">
+            <div class="container">
+                <section class="container-item">
+
+                    <h4 class="uk-text-center title-trend-block"
+                        uk-scrollspy="cls: uk-animation-slide-bottom; delay: 300">Почему Ньютоника?
+                    </h4>
+                    <div class="text-trend-block">Для нас отличные оценки учеников - это норма, так как мы:
+                    </div>
+                    <div class="form-trend-list">
+                        <div><span class="color1"></span>ценим время,<br> работаем системно и продуктивно
+                        </div>
+                        <div><span class="color2"></span>креативно и легко мотивируем учиться<br>с помощью игр и экспериментов
+                        </div>
+                        <div><span class="color3"></span>удобно = эффективно,<br>в домашней обстановке проще сосредоточиться
+                        </div>
+
+                    </div>
+                    <div class="banner-trend-dop" uk-grid tabindex="0">
+                        <img class="banner-trend-dop_img-logoped-aplle3"
+                            uk-scrollspy="cls: uk-animation-fade; delay: 500; repeat: false"
+                            src="https://cdn.nyutonika.ru/svg/яблоко-форма-сршкола.svg" alt="">
+                        <img class="banner-trend-dop_img-logoped-line-form"
+                            uk-scrollspy="cls: uk-animation-fade; delay: 500; repeat: false"
+                            src="https://cdn.nyutonika.ru/svg/линия-формасршкола.svg" alt="">
+                    </div>
+
+                    <form action="" class="uk-grid-small banner-trend-form" uk-grid>
+                        <div class="uk-width-1-3@m uk-width-1-4@l uk-inline">
+                            <span class="uk-form-icon uk-icon" uk-icon="icon: user; ratio: 1.7"></span><input
+                                class="uk-input" type="text" placeholder="Ваше имя">
+                        </div>
+                        <div class="uk-width-1-3@m uk-width-1-4@l uk-inline">
+                            <span class="uk-form-icon uk-icon" uk-icon="icon: receiver; ratio: 1.7"></span><input
+                                class="uk-input phone" type="tel" placeholder="Телефон">
+                        </div>
+                        <div class="uk-width-1-3@m uk-width-1-4@l uk-inline">
+                            <span class="uk-form-icon uk-icon" uk-icon="icon: mail; ratio: 1.7"></span><input
+                                class="uk-input" type="email" placeholder="E-mail">
+                        </div>
+                        <div class="uk-width-1-1@m uk-width-1-4@l uk-inline">
+                            <button type="submit" class="uk-button uk-button-default uk-width-1-1">Оставить
+                                заявку</button>
+                        </div>
+                        <div class="uk-width-1-1 uk-flex uk-flex-center">
+                            <label class="uk-form-label" for="form-stacked-text">Отправляя форму, вы соглашаетесь с
+                                офертой и даёте согласие на обработку ваших персональных данных</label>
+                        </div>
+                    </form>
+                </section>
+            </div>
+        </div>
+
+
+        <div class="lessons-logoped">
+            <div class="container">
+                <section class="container-item">
+                    <h4 class="uk-text-center title-trend-block"
+                        uk-scrollspy="cls: uk-animation-slide-bottom; delay: 300">Как проходят уроки</h4>
+                    <ol class="lessons-list">
+                        <li>
+                            <div>Учебные материалы в одном месте</div>
+                            <span class="banner-trend-dop" uk-grid tabindex="0">
+                                <img class="lessons-list-line line6" src="https://cdn.nyutonika.ru/svg/линия6.svg"
+                                    alt="">
+                            </span>
+                        </li>
+                        <li>
+                            <div>Рисуйте, пишите, выполняйте задания</div>
+                            <span class="banner-trend-dop" uk-grid tabindex="0">
+                                <img class="lessons-list-line line7" src="https://cdn.nyutonika.ru/svg/линия7.svg"
+                                    alt="">
+                            </span>
+                        </li>
+                        <li>
+                            <div>Интерактивная доска для занятий</div>
+                            <span class="banner-trend-dop" uk-grid tabindex="0">
+                                <img class="lessons-list-line line8" src="https://cdn.nyutonika.ru/svg/линия8.svg"
+                                    alt="">
+                            </span>
+                        </li>
+                        <li>
+                            <div>Видеочат с преподавателем</div>
+                            <span class="banner-trend-dop" uk-grid tabindex="0">
+                                <img class="lessons-list-line line9" src="https://cdn.nyutonika.ru/svg/линия9.svg"
+                                    alt="">
+                            </span>
+                        </li>
+                    </ol>
+                    <div class="banner-trend-dop lessons-list-dop" uk-grid tabindex="0">
+                        <img class="lessons-list-img" src="https://cdn.nyutonika.ru/images/экран.png" alt="">
+                        <img class="lessons-list-img2" src="https://cdn.nyutonika.ru/images/экран2.png" alt="">
+                    </div>
+                    <div class="banner-trend-dop uk-grid" uk-grid="" tabindex="0">
+                        <img class="banner-trend-dop_img-nachsc-aplle2"
+                            src="https://cdn.nyutonika.ru/svg/уроки круги.svg" alt="">
+                        <img class="banner-trend-dop_img-nachsc-aplle3 uk-first-column"
+                            src="https://cdn.nyutonika.ru/svg/яблоко-сршк-занятия1.svg" alt="">
+                    </div>
+                </section>
+            </div>
+
+        </div>
+        <div class="container">
+            <!-- 8 секция Посмотрите, за что нас любят ученики и их родители-->
+            <section class="container-item">
+                <h3 class="center" uk-scrollspy="cls: uk-animation-slide-bottom; delay: 400">Посмотрите, за что нас
+                    любят
+                    ученики и их родители</h3>
+
+                <ul class="uk-subnav uk-subnav-pill uk-flex-center section-eight-reviews"
+                    uk-switcher="connect: #switcher-id">
+                    <li><a class="tab-button-reviews" href="#">Видео</a></li>
+                    <li><a class="tab-button-reviews" href="#">Отзывы</a></li>
+                </ul>
+                <div class="uk-margin uk-margin-medium-top uk-child-width-expand uk-text-center section-eight" uk-grid>
+
+                    <div>
+                        <ul id="switcher-id" class="uk-switcher uk-margin">
+                            <!-- 8 секция Видео-->
+                            <li>
+                                <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1"
+                                    uk-slider="autoplay:  true; autoplay-interval: 3000">
+                                    <ul
+                                        class="uk-slider-items uk-child-width-1-1 uk-child-width-1-2@s uk-child-width-1-4@m uk-grid-small">
+                                        <li>
+                                            <div class="uk-panel">
+                                                <img src="https://cdn.nyutonika.ru/images/test/1.png" width="400"
+                                                    height="600" alt="Слайдер">
+                                                <div class="uk-position-center uk-panel">
+                                                    <div class="uk-h1 reviews-video" uk-lightbox><a
+                                                            href="video/music.mp4" data-type="video"
+                                                            data-caption="YouBox" data-attrs="width: 900; height: 480;"
+                                                            data-poster="https://cdn.nyutonika.ru/images/test/1.png"></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="uk-panel">
+                                                <img src="https://cdn.nyutonika.ru/images/test/2.png" width="400"
+                                                    height="600" alt="Слайдер">
+                                                <div class="uk-position-center uk-panel">
+                                                    <div class="uk-h1 reviews-video" uk-lightbox><a
+                                                            href="https://www.youtube.com/watch?v=WhWc3b3KhnY"
+                                                            data-caption="YouTube"
+                                                            data-attrs="width: 900; height: 480;"></a></div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="uk-panel">
+                                                <img src="https://cdn.nyutonika.ru/images/test/3.png" width="400"
+                                                    height="600" alt="Слайдер">
+                                                <div class="uk-position-center uk-panel">
+                                                    <div class="uk-h1 reviews-video" uk-lightbox><a
+                                                            href="https://www.youtube.com/watch?v=WhWc3b3KhnY"
+                                                            data-caption="YouTube"
+                                                            data-attrs="width: 900; height: 480;"></a></div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="uk-panel">
+                                                <img src="https://cdn.nyutonika.ru/images/test/4.png" width="400"
+                                                    height="600" alt="Слайдер">
+                                                <div class="uk-position-center uk-panel">
+                                                    <div class="uk-h1 reviews-video" uk-lightbox><a
+                                                            href="https://www.youtube.com/watch?v=WhWc3b3KhnY"
+                                                            data-caption="YouTube"
+                                                            data-attrs="width: 900; height: 480;"></a></div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="uk-panel">
+                                                <img src="https://cdn.nyutonika.ru/images/test/1.png" width="400"
+                                                    height="600" alt="Слайдер">
+                                                <div class="uk-position-center uk-panel">
+                                                    <div class="uk-h1 reviews-video" uk-lightbox><a
+                                                            href="https://www.youtube.com/watch?v=WhWc3b3KhnY"
+                                                            data-caption="YouTube"
+                                                            data-attrs="width: 900; height: 480;"></a></div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="uk-panel">
+                                                <img src="https://cdn.nyutonika.ru/images/test/2.png" width="400"
+                                                    height="600" alt="Слайдер">
+                                                <div class="uk-position-center uk-panel">
+                                                    <div class="uk-h1 reviews-video" uk-lightbox><a
+                                                            href="https://www.youtube.com/watch?v=WhWc3b3KhnY"
+                                                            data-caption="YouTube"
+                                                            data-attrs="width: 900; height: 480;"></a></div>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                    </ul>
+                                    <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#"
+                                        uk-slider-item="previous"></a>
+                                    <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#"
+                                        uk-slider-item="next"></a>
+                                </div>
+                            </li>
+                            <!-- 8 секция Текстовые-->
+                            <li>
+
+                                <div class="uk-slider-container-offset"
+                                    uk-slider="center: true; autoplay: true; autoplay-interval: 3000">
+                                    <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
+                                        <ul class="uk-slider-items uk-child-width-1-1@s uk-child-width-1-3@m uk-grid-small reviews-text uk-grid-match uk-margin-large-top"
+                                            uk-grid>
+                                            <li>
+                                                <div class="uk-card uk-card-default">
+                                                    <div class="uk-card-media-top">
+                                                        <img src="images/test/Слой 8.png" width="900" height="600"
+                                                            alt="Слайдер" loading="lazy">
+                                                    </div>
+                                                    <div class="reviews-content">
+                                                        <p>Строго говоря, ничто не мешает нам вообразить себе, что в
+                                                            каком-нибудь одном индивиде.</p>
+                                                        <p class="uk-card-title">Карусель</p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="uk-card uk-card-default">
+                                                    <div class="uk-card-media-top">
+                                                        <img src="images/test/Слой 8.png" width="900" height="600"
+                                                            alt="Слайдер" loading="lazy">
+                                                    </div>
+                                                    <div class="reviews-content">
+                                                        <p>Предположим, что механическое воззрение правильно, что
+                                                            развитие
+                                                            состоит из ряда случайностей.</p>
+                                                        <p class="uk-card-title">Карусель</p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="uk-card uk-card-default">
+                                                    <div class="uk-card-media-top">
+                                                        <img src="images/test/Слой 8.png" width="900" height="600"
+                                                            alt="Слайдер" loading="lazy">
+                                                    </div>
+                                                    <div class="reviews-content">
+                                                        <p>При этом сила доказательства будет пропорциональна
+                                                            степени
+                                                            удаленности взятых линий.</p>
+                                                        <p class="uk-card-title">Карусель</p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="uk-card uk-card-default">
+                                                    <div class="uk-card-media-top">
+                                                        <img src="images/test/Слой 8.png" width="900" height="600"
+                                                            alt="Слайдер" loading="lazy">
+                                                    </div>
+                                                    <div class="reviews-content">
+                                                        <p>Предположим, что механическое воззрение правильно, что
+                                                            развитие
+                                                            состоит из ряда случайностей.</p>
+                                                        <p class="uk-card-title">Карусель</p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="uk-card uk-card-default">
+                                                    <div class="uk-card-media-top">
+                                                        <img src="images/test/Слой 8.png" width="900" height="600"
+                                                            alt="Слайдер" loading="lazy">
+                                                    </div>
+                                                    <div class="reviews-content">
+                                                        <p>При этом сила доказательства будет пропорциональна
+                                                            степени
+                                                            удаленности взятых линий.</p>
+                                                        <p class="uk-card-title">Карусель</p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="uk-card uk-card-default">
+                                                    <div class="uk-card-media-top">
+                                                        <img src="images/test/Слой 8.png" width="900" height="600"
+                                                            alt="Слайдер" loading="lazy">
+                                                    </div>
+                                                    <div class="reviews-content">
+                                                        <p>Согласно гипотезе производит изменение, по второй же она
+                                                            только
+                                                            делает выбор между ними.</p>
+                                                        <p class="uk-card-title">Карусель</p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+
+                                    </div>
+
+                                </div>
+
+
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <!-- 10 секция Остались вопросмы-->
+            <section class="container-item class uk-grid-small section-ten" uk-grid>
+                <div class="uk-width-1-2@m">
+                    <img class="section-ten-img" src="https://cdn.nyutonika.ru/images/test/иллюстрация3.png" alt=""
+                        uk-scrollspy="cls: uk-animation-fade; delay: 500">
+                    <a href="#zajavka" class="uk-button uk-button-primary button-tree section-ten-one-button"
+                        uk-scroll>Получить
+                        консультацию</a>
+                </div>
+                <div class="section-ten-second uk-width-1-2@m">
+                    <h3 uk-scrollspy="cls: uk-animation-slide-bottom; delay: 300">Остались вопросы?</h3>
+                    <p class="section-ten-second-text" uk-scrollspy="cls: uk-animation-slide-bottom; delay: 400">
+                        Ответим
+                        на
+                        них на бесплатной консультации</p>
+                    <ul uk-scrollspy="cls: uk-animation-slide-bottom; delay: 500">
+                        <li><span>01</span>Оставьте заявку</li>
+                        <li><span>02</span>Дождитесь нашего звонка — <br>позвоним с 09:00 до 21:00 по Московскому
+                            времени</li>
+                        <li><span>03</span>Задайте вопросы — мы ответим на них и поможем подобрать репетитора</li>
+                    </ul>
+                    <a href="#zajavka" class="uk-button uk-button-primary button-tree section-ten-second-button"
+                        uk-scrollspy="cls: uk-animation-slide-bottom; delay: 600" uk-scroll>Получить
+                        консультацию</a>
+                </div>
+            </section>
+
+            <!-- 11 секция -->
+            <section class="elevn-section-dop-icons" uk-scrollspy="cls: uk-animation-fade; delay: 600">
+                <div class="elevn-section-img1 icons-shadow icons-style"><img class=""
+                        src="https://cdn.nyutonika.ru/icons/картинка.png" alt="">
+                </div>
+                <div class="elevn-section-img2 icons-shadow icons-style"><img class=""
+                        src="https://cdn.nyutonika.ru/icons/капитель.png" alt="">
+                </div>
+                <div class="elevn-section-img3 icons-radius icons-style" src="" alt=""></div>
+                <div class="elevn-section-img4 icons-radius icons-style" src=" " alt=""></div>
+                <div class="elevn-section-img5 icons-radius-tor icons-style" src=" " alt=""></div>
+                <div class="elevn-section-img6 icons-block icons-style"><img class=""
+                        src="https://cdn.nyutonika.ru/icons/+c.svg" alt=""></div>
+
+
+            </section>
+            <section class="container-item">
+                <h3 uk-scrollspy="cls: uk-animation-slide-bottom; delay: 300">Частые вопросы</h3>
+                <div class="accordion-answer vopros-otwet">
+                    <ul uk-accordion="multiple: true">
+                        <li class="uk-open">
+                            <a class="uk-accordion-title" href="#">Что нужно, чтобы начать учиться у вас?</a>
+                            <div class="uk-accordion-content">
+                                <p>Всё очень просто — оставьте свои контакты, с вами свяжется педагог-куратор, чтобы
+                                    уточнить
+                                    образовательные цели и назначить вводный урок с репетитором. На первом
+                                    бесплатном
+                                    занятии
+                                    ученик знакомится с преподавателем и проходит тестирование, чтобы понять уровень
+                                    знаний
+                                    предмета и составить индивидуальный план обучения. После этого останется выбрать
+                                    необходимый
+                                    пакет уроков, оплатить его и начать заниматься. Для уроков нужен будет компьютер
+                                    или
+                                    планшет
+                                    с доступом в интернет</p>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="uk-accordion-title" href="#">Как проходят занятия?</a>
+                            <div class="uk-accordion-content">
+                                <p>Всё очень просто — оставьте свои контакты, с вами свяжется педагог-куратор, чтобы
+                                    уточнить
+                                    образовательные цели и назначить вводный урок с репетитором. На первом
+                                    бесплатном
+                                    занятии
+                                    ученик знакомится с преподавателем и проходит тестирование, чтобы понять уровень
+                                    знаний
+                                    предмета и составить индивидуальный план обучения. После этого останется выбрать
+                                    необходимый
+                                    пакет уроков, оплатить его и начать заниматься. Для уроков нужен будет компьютер
+                                    или
+                                    планшет
+                                    с доступом в интернет</p>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="uk-accordion-title" href="#">Нужно ли мне скачивать какие-то программы для
+                                занятия?</a>
+                            <div class="uk-accordion-content">
+                                <p>Всё очень просто — оставьте свои контакты, с вами свяжется педагог-куратор, чтобы
+                                    уточнить
+                                    образовательные цели и назначить вводный урок с репетитором. На первом
+                                    бесплатном
+                                    занятии
+                                    ученик знакомится с преподавателем и проходит тестирование, чтобы понять уровень
+                                    знаний
+                                    предмета и составить индивидуальный план обучения. После этого останется выбрать
+                                    необходимый
+                                    пакет уроков, оплатить его и начать заниматься. Для уроков нужен будет компьютер
+                                    или
+                                    планшет
+                                    с доступом в интернет</p>
+                            </div>
+                        <li>
+                            <a class="uk-accordion-title" href="#">Могу ли я поменять репетитора в ходе занятий?</a>
+                            <div class="uk-accordion-content">
+                                <p>Всё очень просто — оставьте свои контакты, с вами свяжется педагог-куратор, чтобы
+                                    уточнить
+                                    образовательные цели и назначить вводный урок с репетитором. На первом
+                                    бесплатном
+                                    занятии
+                                    ученик знакомится с преподавателем и проходит тестирование, чтобы понять уровень
+                                    знаний
+                                    предмета и составить индивидуальный план обучения. После этого останется выбрать
+                                    необходимый
+                                    пакет уроков, оплатить его и начать заниматься. Для уроков нужен будет компьютер
+                                    или
+                                    планшет
+                                    с доступом в интернет</p>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="uk-accordion-title" href="#">Почему занятия в Ньютонике эффективнее
+                                самоподготовки
+                                и
+                                занятий в офлайне?</a>
+                            <div class="uk-accordion-content">
+                                <p>Всё очень просто — оставьте свои контакты, с вами свяжется педагог-куратор, чтобы
+                                    уточнить
+                                    образовательные цели и назначить вводный урок с репетитором. На первом
+                                    бесплатном
+                                    занятии
+                                    ученик знакомится с преподавателем и проходит тестирование, чтобы понять уровень
+                                    знаний
+                                    предмета и составить индивидуальный план обучения. После этого останется выбрать
+                                    необходимый
+                                    пакет уроков, оплатить его и начать заниматься. Для уроков нужен будет компьютер
+                                    или
+                                    планшет
+                                    с доступом в интернет</p>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="uk-accordion-title" href="#">Есть ли у вас рассрочка?</a>
+                            <div class="uk-accordion-content">
+                                <p>Всё очень просто — оставьте свои контакты, с вами свяжется педагог-куратор, чтобы
+                                    уточнить
+                                    образовательные цели и назначить вводный урок с репетитором. На первом
+                                    бесплатном
+                                    занятии
+                                    ученик знакомится с преподавателем и проходит тестирование, чтобы понять уровень
+                                    знаний
+                                    предмета и составить индивидуальный план обучения. После этого останется выбрать
+                                    необходимый
+                                    пакет уроков, оплатить его и начать заниматься. Для уроков нужен будет компьютер
+                                    или
+                                    планшет
+                                    с доступом в интернет</p>
+                            </div>
+                        </li>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+        </div>
+
+
+
+
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-logo">
+
+                <img src="svg/logo.svg">
+
+            </div>
+            <div class="footer-content">
+                <div class="footer-content_item">
+                    <ul>
+                        <li><a href="">Политика обработки персональных данных</a></li>
+                        <li><a href="">Карьера репетитора</a></li>
+                        <li><a href="">Контакты</a></li>
+                        <li><a href="">Оферта</a></li>
+                        <li><a href="">Вебинары</a></li>
+                        <li><a href="">Карта сайта</a></li>
+                        <li><a href="">Партнерская программа</a></li>
+                    </ul>
+
+
+                </div>
+                <div class="footer-content_item">
+                    <div class="footer-content_item_info">
+                        <p class="footer-content_item-title  uk-margin-small-top">Почта</p>
+                        <p class="footer-phone uk-margin-bottom"><a href="mailto:barmarat@bk.ru">barmarat@bk.ru</a></p>
+                    </div>
+
+                    <div class="footer-content_item_info">
+                        <p class="footer-content_item-title">Телефон</p>
+                        <div>
+                            <p class="footer-phone"><a href="tel:+79999999999"> 8 (999) 999-99-99</a></p>
+                            <p class="header-phone_text">Получить консультацию</p>
+                        </div>
+                        <div>
+                            <p class="footer-phone"><a href="tel:+79999999999"> 8 (999) 999-99-99</a></p>
+                            <p class="header-phone_text">Для новых пользователе</p>
+                        </div>
+                        <div>
+                            <p class="footer-phone"><a href="tel:+79999999999"> 8 (999) 999-99-99</a></p>
+                            <p class="header-phone_text">Отдел заботы о пользователях</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="footer-content_item">
+                    <div>
+                        <div class="footer-content_item-title uk-margin-medium-bottom uk-margin-small-top">Напишите нам
+                        </div>
+                        <div class="footer-content_icons">
+                            <a href="">
+                                <img class="trend-icon" src="svg/telegram.svg" alt="">
+                            </a>
+                            <a href="">
+                                <img class="trend-icon" src="svg/viber.svg" alt="">
+                            </a>
+
+                        </div>
+                        <div>
+                            <div class="footer-content_item-title uk-margin-medium-bottom uk-margin-small-top">Наши соц.
+                                сети</div>
+                            <div class="footer-content_icons">
+                                <a href="">
+                                    <img class="trend-icon" src="svg/youtube.svg" alt="">
+                                </a><a href="">
+                                    <img class="trend-icon" src="svg/vk-logo-of-social-network.svg" alt="">
+                                </a>
+                                <a href="">
+                                    <img class="trend-icon" src="svg/viber.svg" alt="">
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="footer-content-bottom">
+                <div class="footer-content_item_requisites footer-content_item">
+                    ОГРН: 1187746880530 <br>
+                    ИНН/КПП: 7702446568/770901001
+                </div>
+                <div class="footer-content_item_adress footer-content_item">105120, г. Москва, ул. Нижняя
+                    Сыромятническая, дом 10,
+                    строение 2, помещ. 1, ком. 4</div>
+                <div class="uk-margin-medium-top footer-content_item footer-content_item_img"><img
+                        src="images/test/Слой 72.png" alt=""></div>
+            </div>
+            <a href="#" class="scrollup">Наверх</a>
+        </div>
+    </footer>
+
+
+
+    <script src="js/jquery.maskedinput-1.4.1.js" type="text/javascript"></script>
+</body>
+
+</html>
