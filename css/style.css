@@ -3918,6 +3918,7 @@ ul.accordion-answer>li>div>p {
 
 }
 
+
 .diagnostika-doprazvitie {
   height: fit-content;
   min-height: 1321px;
@@ -8153,6 +8154,50 @@ table.punkt td>ul>li::before {
   max-width: 300px;
 }
 
+.napravlenia_textblock_3.srsc {
+  background: #ffffff;
+  border-radius: 10px;
+  border: 1px solid #FF8D44;
+  padding: 15px;
+  max-width: 300px;
+}
+
+.napravlenia_textblock_3.srsc>ul {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: flex-start;
+  padding: 20px 20px 10px 35px;
+}
+
+.napravlenia_textblock_3.srsc>ul>li {
+  padding-bottom: 0;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.napravlenia_textblock_3.srsc>ul>li::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #98e0ec;
+  position: relative;
+  display: block;
+  left: -20px;
+  top: 15px;
+}
+.napravlenia_textblock_3.srsc>.napravlenia_textblock {
+  padding-top: 10px !important;
+  font-size: 20px;
+  line-height: 20px;
+}
+.trend-block-text {
+  font-size: 30px !important;
+  line-height: 36px !important;
+  font-family: 'Nunito-Black' !important;
+  font-style: normal !important;
+}
 .napravlenia_textblock_block {
   display: flex;
   gap: 15px;
@@ -8290,6 +8335,17 @@ table.punkt td>ul>li::before {
   line-height: 26px;
   margin: 30px 0;
   border: 2px solid #ffde63;
+}
+
+.napravlenia_sr-schk_banner-text2 {
+  background: #98e0ec14;
+  padding: 30px;
+  border-radius: 20px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  margin: 30px 0;
+  border: 2px solid #98e0ec;
 }
 
 .napravlenia_doshkoln_banner-text2>p>span {
