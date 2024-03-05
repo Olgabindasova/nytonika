@@ -8187,17 +8187,20 @@ table.punkt td>ul>li::before {
   left: -20px;
   top: 15px;
 }
+
 .napravlenia_textblock_3.srsc>.napravlenia_textblock {
   padding-top: 10px !important;
   font-size: 20px;
   line-height: 20px;
 }
+
 .trend-block-text {
   font-size: 30px !important;
   line-height: 36px !important;
   font-family: 'Nunito-Black' !important;
   font-style: normal !important;
 }
+
 .napravlenia_textblock_block {
   display: flex;
   gap: 15px;
@@ -9004,4 +9007,63 @@ section.math-hach>.seven-section>.seven-section-block {
   section.seven-section-margin-mobile.math-hach {
     max-width: 300px;
   }
+}
+
+/*---Меню раздела ----*/
+
+.section-menu {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 30px 20px;
+}
+
+.section-menu>li>a {
+  background: #cc7dc3;
+  padding: 20px 25px;
+  border: 2px solid #cc7dc3;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #fff;
+  font-family: "Nunito-Bold";
+  font-size: 26px;
+  transition: all 0.5s;
+display: block;
+text-align: center;
+}
+
+.section-menu>li:first-child>a:hover {
+  background: #20A0A0;
+  border: 2px solid #20A0A0;
+}
+
+.section-menu>li:nth-child(2n+2)>a:hover {
+  background: #FAE480;
+  border: 2px solid #FAE480;
+}
+
+.section-menu>li:nth-child(2n+3)>a:hover {
+  background: #33C7A2;
+  border: 2px solid #33C7A2;
+}
+
+.section-menu>li:nth-child(2n+4)>a:hover {
+  background: #D41B19;
+  border: 2px solid #D41B19;
+}
+
+@media (max-width: 451px) {
+  .section-menu>li>a {
+    padding: 15px 15px;
+    font-size: 20px;
+    width: 100%;
+}
+.section-menu>li  {
+  width: 100%;
+}
+  .section-menu {
+    padding: 20px 20px;
+  }
+
 }
