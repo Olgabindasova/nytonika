@@ -9048,6 +9048,11 @@ section.math-hach>.seven-section>.seven-section-block {
   border: 2px solid #33C7A2;
 }
 
+.section-menu.mal>li>a {
+  background: #FFD129;
+  border: 2px solid #FFD129;
+}
+
 .section-menu>li:first-child>a:hover {
   background: #20A0A0;
   border: 2px solid #20A0A0;
@@ -9118,11 +9123,16 @@ section.math-hach>.seven-section>.seven-section-block {
   background: #9C16B9 !important;
   border: 2px solid #9C16B9 !important;
 }
+.section-menu.mal>li:nth-child(2)>a:hover {
+  background: #9C16B9 !important;
+  border: 2px solid #9C16B9 !important;
+}
 .section-menu.nachsk>li:nth-child(3)>a:hover,
 .section-menu.nachsk>li:nth-child(8)>a:hover {
   background: #20A0A0 !important;
   border: 2px solid #20A0A0 !important;
 }
+
 @media (max-width: 451px) {
   .section-menu>li>a {
     padding: 15px 15px;
