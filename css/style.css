@@ -9029,17 +9029,25 @@ section.math-hach>.seven-section>.seven-section-block {
   font-family: "Nunito-Bold";
   font-size: 26px;
   transition: all 0.5s;
-display: block;
-text-align: center;
+  display: block;
+  text-align: center;
 }
+
 .section-menu.dosk>li>a {
   background: #7BC4F9;
   border: 2px solid #7BC4F9;
 }
+
 .section-menu.srsk>li>a {
   background: #FF8D44;
   border: 2px solid #FF8D44;
 }
+
+.section-menu.nachsk>li>a {
+  background: #33C7A2;
+  border: 2px solid #33C7A2;
+}
+
 .section-menu>li:first-child>a:hover {
   background: #20A0A0;
   border: 2px solid #20A0A0;
@@ -9059,6 +9067,7 @@ text-align: center;
   background: #D41B19;
   border: 2px solid #D41B19;
 }
+
 .section-menu.dosk>li:first-child>a:hover {
   background: #325DE9;
   border: 2px solid #325DE9;
@@ -9068,36 +9077,63 @@ text-align: center;
   background: #9C16B9;
   border: 2px solid #9C16B9;
 }
+
 .section-menu.dosk>li:nth-child(2n+2)>a:hover {
   background: #FF422C;
   border: 2px solid #FF422C;
 }
+
 .section-menu.srsk>li:nth-child(2n+3)>a:hover {
   background: #FAE480 !important;
   border: 2px solid #FAE480 !important;
 }
+
 .section-menu.srsk>li:nth-child(2n+2)>a:hover {
   background: #FF5642;
   border: 2px solid #FF5642;
 }
+
 .section-menu.srsk>li:first-child>a:hover,
 .section-menu.srsk>li:nth-child(5)>a:hover,
 .section-menu.srsk>li:nth-child(7)>a:hover,
 .section-menu.srsk>li:nth-child(11)>a:hover,
-.section-menu.srsk>li:nth-child(13)>a:hover   {
+.section-menu.srsk>li:nth-child(13)>a:hover {
   background: #7ee5ff !important;
   border: 2px solid #7ee5ff !important;
 }
 
+.section-menu.nachsk>li:first-child>a:hover,
+.section-menu.nachsk>li:nth-child(5)>a:hover,
+.section-menu.nachsk>li:nth-child(7)>a:hover {
+  background: #FAE480 !important;
+  border: 2px solid #FAE480 !important;
+}
+
+.section-menu.nachsk>li:nth-child(2n+2)>a:hover {
+  background: #FF422C;
+  border: 2px solid #FF422C;
+}
+
+.section-menu.nachsk>li:nth-child(2n+5)>a:hover {
+  background: #9C16B9 !important;
+  border: 2px solid #9C16B9 !important;
+}
+.section-menu.nachsk>li:nth-child(3)>a:hover,
+.section-menu.nachsk>li:nth-child(8)>a:hover {
+  background: #20A0A0 !important;
+  border: 2px solid #20A0A0 !important;
+}
 @media (max-width: 451px) {
   .section-menu>li>a {
     padding: 15px 15px;
     font-size: 20px;
     width: 100%;
-}
-.section-menu>li  {
-  width: 100%;
-}
+  }
+
+  .section-menu>li {
+    width: 100%;
+  }
+
   .section-menu {
     padding: 20px 20px;
   }
