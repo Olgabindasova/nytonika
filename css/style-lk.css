@@ -1348,8 +1348,10 @@ input:-webkit-autofill {
 .activity-packages {
     padding: 35px 30px;
     margin-bottom: 10px !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
-
 
 
 
@@ -1533,6 +1535,39 @@ input:-webkit-autofill {
     color: var(--colorWhiteText);
 }
 
+.activity-packages>.lable-sale {
+    display: block;
+    height: 0px;
+}
+.activity-packages>.lable-sale>span {
+    position: relative;
+    display: flex;
+    top: -50px;
+    left: 98%;
+    width: 50px;
+    height: 50px;
+    background: var(--main-color);
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: var(--colorWhiteText);
+    font-family:'Nunito-Bold';
+    font-size: 14px;
+    font-weight: 700;
+}
+.activity-packages_content.sale{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 10px 0px 0 0;
+    position: relative;
+    top: 16px;
+    text-decoration: line-through;
+    color: var(--colorWhiteText);
+}
+.activity-packages_content.sale>p.activity-packages_content_price{
+    font-size: 20px;
+}
 .student {
     background-color: var(--colorBlockCardOne);
     padding: 30px;
