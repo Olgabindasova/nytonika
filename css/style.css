@@ -486,9 +486,11 @@ h4 {
 .textcolor17 {
   color: #24201E !important;
 }
+
 .textcolor18 {
-  color: #fff!important;
+  color: #fff !important;
 }
+
 /*кнопки*/
 
 .scrollup {
@@ -7833,6 +7835,7 @@ table.punkt td>ul>li::before {
   font-family: "Nunito-Bold";
   font-size: 18px;
   background: #fefcfe;
+  width: 100%;
 }
 
 .form-leave-request>div>select>option,
@@ -7845,18 +7848,18 @@ table.punkt td>ul>li::before {
   border: 1px solid #ae00d4;
   color: #2A3B4F !important;
   opacity: 0.8;
-  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='24' height='16' viewBox='0 0 24 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M11.5 13L6 4H17L11.5 13Z' fill='%23AE00D4'/%3e%3c/svg%3e ");
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='24' height='16' viewBox='0 0 24 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M11.5 13L6 4H17L11.5 13Z' fill='%23AE00D4'/%3e%3c/svg%3e");
   background-position: 99% 50%;
 }
 
-.form-leave-request>div>div>select.uk-select:not([multiple]):not([size]) {
+.form-leave-request>div>div.uk-form-controls>select.uk-select:not([multiple]):not([size]) {
   border: 1px solid #ae00d4;
   color: #2A3B4F !important;
   opacity: 0.8;
-  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='24' height='16' viewBox='0 0 24 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M11.5 13L6 4H17L11.5 13Z' fill='%23AE00D4'/%3e%3c/svg%3e ");
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='24' height='16' viewBox='0 0 24 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M11.5 13L6 4H17L11.5 13Z' fill='%23AE00D4'/%3e%3c/svg%3e");
   background-position: 99% 50%;
 }
-
+ 
 .form-leave-request>div>button.button-tree {
   margin-left: 10px;
 }
@@ -9125,10 +9128,12 @@ section.math-hach>.seven-section>.seven-section-block {
   background: #9C16B9 !important;
   border: 2px solid #9C16B9 !important;
 }
+
 .section-menu.mal>li:nth-child(2)>a:hover {
   background: #9C16B9 !important;
   border: 2px solid #9C16B9 !important;
 }
+
 .section-menu.nachsk>li:nth-child(3)>a:hover,
 .section-menu.nachsk>li:nth-child(8)>a:hover {
   background: #20A0A0 !important;

@@ -167,49 +167,7 @@
                                         class="educator_content_diagnost">Диагностика успешна</button>
                                 </div>
                             </div>
-                            <div id="my-id" class="uk-flex-top diagnosis-successful" uk-modal>
-                                <div class="uk-modal-dialog  uk-margin-auto-vertical uk-modal-dialog modal-trend">
-                                    <button class="uk-modal-close-outside uk-icon uk-close" type="button"
-                                        uk-close></button>
-                                    <div class="uk-modal-header">
-                                        <h3>Диагностика успешна</h3>
-                                    </div>
-                                    <div class="">
-                                        <form class="form-leave-request">
 
-                                            <div class="">
-                                                <label class="uk-form-label">Беру в работу</label>
-                                                <div class="uk-form-controls">
-
-                                                    <label><input class="uk-radio" type="radio" name="radio1"
-                                                            checked>Да</label><br>
-                                                    <label><input class="uk-radio" type="radio"
-                                                            name="radio1">Нет</label>
-                                                </div>
-                                                <label class="uk-form-label">График занятий</label>
-                                                <div class="uk-form-controls">
-                                                    <textarea class="uk-textarea" rows="3" name="f_message"
-                                                        placeholder="Введите даты" 
-                                                        required></textarea>
-                                                </div>
-                                                <label class="uk-form-label">Комментарий</label>
-                                                <div class="uk-form-controls">
-                                                    <textarea class="uk-textarea" rows="3" name="f_message"
-                                                        placeholder="Введите комментарий" 
-                                                        required></textarea>
-                                                </div>
-                                            </div>
-                                            <div>
-                                                <button class="button-tree uk-button uk-button-primary"
-                                                    type="submit">Отправить</button>
-                                            </div>
-
-
-                                        </form>
-                                    </div>
-
-                                </div>
-                            </div>
                         </li>
 
                         <li>
@@ -226,7 +184,12 @@
                                     <p class="">За занятие:</p>
                                     <p class=""><span>300</span>руб.</p>
                                 </div>
+                                <div>
+                                    <button type="submit" uk-toggle="target: .diagnosis-successful"
+                                        class="educator_content_diagnost">Диагностика успешна</button>
+                                </div>
                             </div>
+
                         </li>
                         <li>
                             <div class="card-lk">
@@ -241,6 +204,10 @@
                                 <div class="educator_content border-none">
                                     <p class="">За занятие:</p>
                                     <p class=""><span>300</span>руб.</p>
+                                </div>
+                                <div>
+                                    <button type="submit" uk-toggle="target: .diagnosis-successful"
+                                        class="educator_content_diagnost">Диагностика успешна</button>
                                 </div>
                             </div>
                         </li>
@@ -293,7 +260,73 @@
         </section>
 
     </div>
-
+    <div id="my-id" class="uk-flex-top diagnosis-successful" uk-modal>
+        <div class="uk-modal-dialog  uk-margin-auto-vertical uk-modal-dialog modal-trend">
+            <button class="uk-modal-close-outside uk-icon uk-close" type="button" uk-close></button>
+            <div class="uk-modal-header">
+                <h3>Диагностика успешна</h3>
+            </div>
+            
+                <form class="form-leave-request">
+                    <div class="">
+                        <label class="uk-form-label">Беру в работу</label>
+                        <div class="uk-form-controls">
+                            <label><input class="uk-radio" type="radio" name="radio1" checked>Да</label><br>
+                            <label><input class="uk-radio" type="radio" name="radio1">Нет</label>
+                        </div>
+                        <label class="uk-form-label">График занятий</label>
+                        <div class="uk-form-controls">
+                            <textarea class="uk-textarea" rows="3" name="f_message" placeholder="Введите даты"
+                                required></textarea>
+                        </div>
+                        <label class="uk-form-label">Комментарий</label>
+                        <div class="uk-form-controls">
+                            <textarea class="uk-textarea" rows="3" name="f_message" placeholder="Введите комментарий"
+                                required></textarea>
+                        </div>
+                        <label class="uk-form-label">Нарушение</label>
+                        <div class="uk-form-controls">
+                            <select name="disorder" id="disorder" class="uk-select" required>
+                                <option value="">Не выбрано</option>
+                                <option value="Алалия">Алалия</option>
+                                <option value="Брадилалия">Брадилалия</option>
+                                <option value="Билингвизм">Билингвизм</option>
+                                <option value="Дизартрия">Дизартрия</option>
+                                <option value="Дисфония">Дисфония</option>
+                                <option value="Дискалькулия">Дискалькулия</option>
+                                <option value="Ринолалия">Ринолалия</option>
+                                <option value="Афазия">Афазия</option>
+                                <option value="Дисграфия">Дисграфия</option>
+                                <option value="Заикание">Заикание</option>
+                                <option value="Нарушение темпа речи">Нарушение темпа речи</option>
+                                <option value="Дислалия">Дислалия</option>
+                                <option value="Дислексия">Дислексия</option>
+                                <option value="Ротацизм">Ротацизм</option>
+                                <option value="ОНР">ОНР</option>
+                                <option value="ТНР">ТНР</option>
+                                <option value="ЗРР">ЗРР</option>
+                                <option value="ФФНР">ФФНР</option>
+                                <option value="Аутизм">Аутизм</option>
+                                <option value="Мутизм">Мутизм</option>
+                                <option value="НОДА">НОДА</option>
+                                <option value="ЗПРР">ЗПРР</option>
+                                <option value="СДВГ">СДВГ</option>
+                                <option value="ТМНР">ТМНР</option>
+                                <option value="УО">УО</option>
+                                <option value="ДЦП">ДЦП</option>
+                                <option value="Синдром Дауна">Синдром Дауна</option>
+                                <option value="Нарушение слуха">Нарушение слуха</option>
+                                <option value="Нарушение зрения">Нарушение зрения</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div>
+                        <button class="button-tree uk-button uk-button-primary" type="submit">Отправить</button>
+                    </div>
+                </form>
+          
+        </div>
+    </div>
     <script src="js/scripts.js" type="text/javascript"></script>
     <script src="js/jquery.maskedinput-1.4.1.js" type="text/javascript"></script>
 </body>
