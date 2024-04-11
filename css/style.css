@@ -7867,6 +7867,13 @@ table.punkt td>ul>li::before {
 .form-leave-request>h4 {
   margin-left: 10px;
 }
+.alignment-modal-form.form-leave-request{
+  margin: 50px auto 10px;
+}
+.alignment-modal.uk-modal{
+  padding: 2.5%;
+}
+
 
 .areas-of-work {
   border: 1px solid #ae00d4;
