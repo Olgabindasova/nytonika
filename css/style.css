@@ -7859,7 +7859,7 @@ table.punkt td>ul>li::before {
   background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='24' height='16' viewBox='0 0 24 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M11.5 13L6 4H17L11.5 13Z' fill='%23AE00D4'/%3e%3c/svg%3e");
   background-position: 99% 50%;
 }
- 
+
 .form-leave-request>div>button.button-tree {
   margin-left: 10px;
 }
@@ -7867,10 +7867,12 @@ table.punkt td>ul>li::before {
 .form-leave-request>h4 {
   margin-left: 10px;
 }
-.alignment-modal-form.form-leave-request{
+
+.alignment-modal-form.form-leave-request {
   margin: 50px auto 10px;
 }
-.alignment-modal.uk-modal{
+
+.alignment-modal.uk-modal {
   padding: 2.5%;
 }
 
@@ -9162,4 +9164,9 @@ section.math-hach>.seven-section>.seven-section-block {
     padding: 20px 20px;
   }
 
+}
+
+.reviews-social>img {
+  border-radius: 20px;
+  border: 10px solid #F8F8F8;
 }
