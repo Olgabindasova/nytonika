@@ -1116,70 +1116,29 @@
                     мессенжерах</h3>
 
                 <div class="uk-child-width-1-2@s uk-child-width-1-3@m uk-margin-remove" uk-grid="masonry: pack">
-                    <div class="uk-flex uk-flex-center uk-flex-middle uk-padding-small reviews-social">
+                    <div class="uk-flex uk-flex-center uk-flex-middle uk-padding-small reviews-social uk-margin-remove">
                         <img class="uk-scrollspy-inview"
                             src="https://cdn.nyutonika.ru/images/social-network-reviews/mediatmpIMG_9477.jpg" alt=""
                             uk-scrollspy="cls: uk-animation-fade; delay: 300">
                     </div>
-                    <div class="uk-flex uk-flex-center uk-flex-middle uk-padding-small reviews-social">
+                    <div class="uk-flex uk-flex-center uk-flex-middle uk-padding-small reviews-social uk-margin-remove">
                         <img class="uk-scrollspy-inview"
                             src="https://cdn.nyutonika.ru/images/social-network-reviews/mediatmpIMG_9478.jpg" alt=""
                             uk-scrollspy="cls: uk-animation-fade; delay: 300">
                     </div>
-                    <div class="uk-flex uk-flex-center uk-flex-middle uk-padding-small reviews-social">
+                    <div class="uk-flex uk-flex-center uk-flex-middle uk-padding-small reviews-social uk-margin-remove">
                         <img class="uk-scrollspy-inview"
                             src="https://cdn.nyutonika.ru/images/social-network-reviews/mediatmpIMG_9479.jpg" alt=""
-                            uk-scrollspy="cls: uk-animation-fade; delay: 300">
-                    </div>
-                    <div class="uk-flex uk-flex-center uk-flex-middle uk-padding-small reviews-social">
-                        <img class="uk-scrollspy-inview"
-                            src="https://cdn.nyutonika.ru/images/social-network-reviews/mediatmpIMG_9480.jpg" alt=""
-                            uk-scrollspy="cls: uk-animation-fade; delay: 300">
-                    </div>
-                    <div class="uk-flex uk-flex-center uk-flex-middle uk-padding-small reviews-social">
-                        <img class="uk-scrollspy-inview"
-                            src="https://cdn.nyutonika.ru/images/social-network-reviews/mediatmpIMG_9481.jpg" alt=""
-                            uk-scrollspy="cls: uk-animation-fade; delay: 300">
-                    </div>
-                    <div class="uk-flex uk-flex-center uk-flex-middle uk-padding-small reviews-social">
-                        <img class="uk-scrollspy-inview"
-                            src="https://cdn.nyutonika.ru/images/social-network-reviews/mediatmpIMG_9482.jpg" alt=""
-                            uk-scrollspy="cls: uk-animation-fade; delay: 300">
-                    </div>
-                    <div class="uk-flex uk-flex-center uk-flex-middle uk-padding-small reviews-social">
-                        <img class="uk-scrollspy-inview"
-                            src="https://cdn.nyutonika.ru/images/social-network-reviews/mediatmpIMG_9483.jpg" alt=""
-                            uk-scrollspy="cls: uk-animation-fade; delay: 300">
-                    </div>
-                    <div class="uk-flex uk-flex-center uk-flex-middle uk-padding-small reviews-social">
-                        <img class="uk-scrollspy-inview"
-                            src="https://cdn.nyutonika.ru/images/social-network-reviews/mediatmpIMG_9485.jpg" alt=""
                             uk-scrollspy="cls: uk-animation-fade; delay: 300">
                     </div>
 
                 </div>
                 <div class="uk-flex uk-flex-center uk-flex-middle uk-padding-small">
-                    <button class="uk-button uk-button-primary button-tree btn-search-more">Показать
-                        еще</button>
+                    <a href="" class="uk-button uk-button-primary button-tree">Показать
+                        все</a>
                 </div>
 
-<script>
-    const SHOW_INITIAL = 3;
-const SHOW_MORE = 3;
-const $button = $('.btn-search-more');
-const $items = $('.reviews-social').hide();
-
-showItems(SHOW_INITIAL);
-$button.click(() => showItems(SHOW_MORE));
-
-function showItems(count) {
-    const $hidden = $items.filter(':hidden');
-    $hidden.slice(0, count).show();
-    $button.toggle($hidden.length > count);
-}
-
  
-</script>
 
 
             </section>
