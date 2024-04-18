@@ -11,6 +11,7 @@
     --colorBlockCardSeven: #F7C202;
     --colorBlockCardEight: #84B102;
     --colorBlockCardNine: #bde1d8;
+    --colorBlockCardTen: #32bccf;
     --colorFontContent: #2A3B4F;
     --colorEducator: #229FA4;
     --colorDanger: #D41B19;
@@ -1102,19 +1103,20 @@ input:-webkit-autofill {
     width: 49%;
 }
 
+
 .card-lk__button_repeal {
-    background-color: var(--colorDanger);
+    background-color: var(--colorDanger) !important;
     border-radius: 10px;
     color: var(--colorWhiteText);
     font-family: 'Nunito-Bold';
-    border: 3px solid var(--colorDanger);
+    border: 3px solid var(--colorDanger) !important;
     transition: all 0.5s;
     cursor: pointer;
 }
 
 .card-lk__button_repeal:hover {
-    background-color: var(--colorWhiteText);
-    color: var(--colorDanger);
+    background-color: var(--colorWhiteText) !important;
+    color: var(--colorDanger) !important;
 }
 
 .card-lk__button_repeal_return-money {
@@ -1134,6 +1136,82 @@ input:-webkit-autofill {
     color: var(--colorDanger);
 }
 
+
+/*-------Блоки страниц. Домашние задания---------------*/
+.buttons-educator.homework {
+    padding: 10px 25px 25px !important;
+    gap: 5px !important;
+    height: 100%;
+    display: flex;
+    align-items: start;
+    align-content: flex-end;
+    flex-wrap: wrap;
+}
+@media (max-width: 640px){
+.buttons-educator.homework {
+    flex-direction: row;
+}}
+.buttons-educator.homework>.card-lk_button {
+    flex-grow: 1;
+    width: fit-content;
+}
+.buttons-educator.homework>div>button {
+    white-space: nowrap;
+}
+.buttons-educator.homework>div>button.timer {
+    background: var(--colorBlockCardTen);
+    border: 3px solid var(--colorBlockCardTen);
+}
+.buttons-educator.homework>div>button.timer:hover {
+    background: var(--colorWhiteText);
+    color: var(--colorBlockCardSix);
+}
+.buttons-educator.homework>div>button.timer.deactivate {
+    background: var(--colorBlockCardFour);
+    border: 3px solid var(--colorBlockCardFour);
+}
+.buttons-educator.homework>div>button.timer.deactivate:hover {
+    background: var(--colorWhiteText);
+    color: var(--colorBlockCardFour);
+}
+.buttons-educator.homework>div>button.card-lk__button_repeal{
+    margin: 0 !important;
+} 
+.color-next-class-card.homework>.card-lk_title{
+    margin: 0;
+    min-height: auto;
+    gap:15px;
+}
+.color-next-class-card.homework>.card-lk_title>span {
+    background: var(--colorEducator) !important;
+    width: 100% !important;
+    margin: 0 !important;
+    display: flex;
+    justify-content: center;
+    font-size: 16px;
+    padding: 10px;
+}
+.color-next-class-card.homework>.card-lk_title>div {
+    padding: 0;
+    color: #fff;
+    font-family: 'Nunito-Bold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 24px;
+}
+.color-next-class-card.homework>.card-lk_content {
+    padding: 20px 30px 5px 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: space-between;
+}
+.color-next-class-card.homework>.card-lk_content>p {
+   margin: 0;
+   padding: 0;
+}
+ 
 /*-------Блоки страниц. 2.Последние занятия-----------------*/
 .color-recent-classes-card {
     background: var(--colorWhiteText);
