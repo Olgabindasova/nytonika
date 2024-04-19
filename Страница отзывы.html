@@ -19,7 +19,7 @@
     <script src="js/uikit-icons.js" type="text/javascript"></script>
     <script src="js/scripts.js" type="text/javascript"></script>
     <title>Ньютоника</title>
-    
+
 </head>
 
 <body>
@@ -222,57 +222,82 @@
         <main class="main container">
 
 
-            
 
-           
+
+
 
             <!-- 8 2 секция Отзывы с соцсетях -->
             <section class="container-item">
                 <h3 class="center" uk-scrollspy="cls: uk-animation-slide-bottom; delay: 300">Отзывы в соцсетях и
                     мессенжерах</h3>
-                    <div class="uk-child-width-1-2 uk-flex-between uk-flex-middle" uk-grid>
-                        <div class="teacher-text-trend_napravlenia uk-padding-remove-vertical  uk-padding-large uk-scrollspy-inview" uk-scrollspy="cls: uk-animation-slide-bottom; delay: 400">
-                            За последние 7 дней
-                        </div>
-                        <div class="teacher-text-trend_napravlenia uk-text-right uk-scrollspy-inview" uk-scrollspy="cls: uk-animation-slide-bottom; delay: 400">
-                            Всего <span class="counter" data-count="478">0</span> отзывов
-                        </div>
+                <div class="uk-child-width-1-2 container-item uk-margin-remove uk-flex-between uk-flex-middle uk-grid"
+                    uk-grid>
+                    <div class="social-reviews uk-padding-remove  uk-scrollspy-inview"
+                        uk-scrollspy="cls: uk-animation-slide-bottom; delay: 400">
+                        За последние <span class="uk-text-bolder">7</span> дней
                     </div>
-                    
-      
+                    <div class="social-reviews uk-padding-remove uk-text-right uk-scrollspy-inview"
+                        uk-scrollspy="cls: uk-animation-slide-bottom; delay: 400">
+                        Всего <span class="counter uk-text-bolder" data-count="478">0</span> отзывов
+                    </div>
+                </div>
+                <style>
+                    .social-reviews {
+                        font-family: 'Nunito';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 26px;
+                        line-height: 26px;
+                    }
 
-                    
 
 
-           <script>
-    // выберите элемент
-    const counters = document.querySelectorAll('.counter');
+                    @media (max-width: 650px) {
+                        .social-reviews {
+                            font-size: 18px;
+                            line-height: 18px;
+                        }
+                    }
 
-    // переберите все элементы счетчика
-    counters.forEach(counter => {
-      // функция для увеличения счетчика
-      function updateCount() {
-        const target = +counter.getAttribute('data-count');
-        const count = +counter.innerHTML;
+                    @media (max-width: 400px) {
+                        .social-reviews {
+                            font-size: 14px;
+                            line-height: 14px;
+                        }
+                    }
+                </style>
 
-        const inc = Math.floor((target - count) / 100);
 
-        if (count < target && inc > 0) {
-          counter.innerHTML = (count + inc);
-          // повторить
-          setTimeout(updateCount, 1);
-        }
-        // если счетчик не равен целевому значению, то продолжить
-        else {
-          counter.innerHTML = target;
-        }
-      }
-      updateCount();
-    });
-  </script>
-       
-                  
+                <script>
+                    // выберите элемент
+                    const counters = document.querySelectorAll('.counter');
+
+                    // переберите все элементы счетчика
+                    counters.forEach(counter => {
+                        // функция для увеличения счетчика
+                        function updateCount() {
+                            const target = +counter.getAttribute('data-count');
+                            const count = +counter.innerHTML;
+
+                            const inc = Math.floor((target - count) / 100);
+
+                            if (count < target && inc > 0) {
+                                counter.innerHTML = (count + inc);
+                                // повторить
+                                setTimeout(updateCount, 1);
+                            }
+                            // если счетчик не равен целевому значению, то продолжить
+                            else {
+                                counter.innerHTML = target;
+                            }
+                        }
+                        updateCount();
+                    });
+                </script>
+
+
                 <div class="uk-child-width-1-2@s uk-child-width-1-3@m uk-margin-remove" uk-grid="masonry: pack">
+
                     <div class="uk-flex uk-flex-center uk-flex-middle uk-padding-small reviews-social uk-margin-remove">
                         <img class="uk-scrollspy-inview"
                             src="https://cdn.nyutonika.ru/images/social-network-reviews/mediatmpIMG_9477.jpg" alt=""
@@ -310,17 +335,42 @@
                     </div>
                     <div class="uk-flex uk-flex-center uk-flex-middle uk-padding-small reviews-social uk-margin-remove">
                         <img class="uk-scrollspy-inview"
-                            src="https://cdn.nyutonika.ru/images/social-network-reviews/mediatmpIMG_0210.jpg" alt=""
-                            uk-scrollspy="cls: uk-animation-fade; delay: 300">
-                    </div>
-                    <div class="uk-flex uk-flex-center uk-flex-middle uk-padding-small reviews-social uk-margin-remove">
-                        <img class="uk-scrollspy-inview"
-                            src="https://cdn.nyutonika.ru/images/social-network-reviews/mediatmpIMG_0219.jpg" alt=""
-                            uk-scrollspy="cls: uk-animation-fade; delay: 300">
-                    </div>
-                    <div class="uk-flex uk-flex-center uk-flex-middle uk-padding-small reviews-social uk-margin-remove">
-                        <img class="uk-scrollspy-inview"
                             src="https://cdn.nyutonika.ru/images/social-network-reviews/mediatmpIMG_9485.jpg" alt=""
+                            uk-scrollspy="cls: uk-animation-fade; delay: 300">
+                    </div>
+                    <div class="uk-flex uk-flex-center uk-flex-middle uk-padding-small reviews-social uk-margin-remove">
+                        <img class="uk-scrollspy-inview"
+                            src="https://cdn.nyutonika.ru/images/social-network-reviews/mediatmpIMG_9486.jpg" alt=""
+                            uk-scrollspy="cls: uk-animation-fade; delay: 300">
+                    </div>
+                    <div class="uk-flex uk-flex-center uk-flex-middle uk-padding-small reviews-social uk-margin-remove">
+                        <img class="uk-scrollspy-inview"
+                            src="https://cdn.nyutonika.ru/images/social-network-reviews/mediatmpIMG_9487.jpg" alt=""
+                            uk-scrollspy="cls: uk-animation-fade; delay: 300">
+                    </div>
+                    <div class="uk-flex uk-flex-center uk-flex-middle uk-padding-small reviews-social uk-margin-remove">
+                        <img class="uk-scrollspy-inview"
+                            src="https://cdn.nyutonika.ru/images/social-network-reviews/mediatmpIMG_9488.jpg" alt=""
+                            uk-scrollspy="cls: uk-animation-fade; delay: 300">
+                    </div>
+                    <div class="uk-flex uk-flex-center uk-flex-middle uk-padding-small reviews-social uk-margin-remove">
+                        <img class="uk-scrollspy-inview"
+                            src="https://cdn.nyutonika.ru/images/social-network-reviews/mediatmpIMG_9489.jpg" alt=""
+                            uk-scrollspy="cls: uk-animation-fade; delay: 300">
+                    </div>
+                    <div class="uk-flex uk-flex-center uk-flex-middle uk-padding-small reviews-social uk-margin-remove">
+                        <img class="uk-scrollspy-inview"
+                            src="https://cdn.nyutonika.ru/images/social-network-reviews/mediatmpIMG_9490.jpg" alt=""
+                            uk-scrollspy="cls: uk-animation-fade; delay: 300">
+                    </div>
+                    <div class="uk-flex uk-flex-center uk-flex-middle uk-padding-small reviews-social uk-margin-remove">
+                        <img class="uk-scrollspy-inview"
+                            src="https://cdn.nyutonika.ru/images/social-network-reviews/mediatmpIMG_9491.jpg" alt=""
+                            uk-scrollspy="cls: uk-animation-fade; delay: 300">
+                    </div>
+                    <div class="uk-flex uk-flex-center uk-flex-middle uk-padding-small reviews-social uk-margin-remove">
+                        <img class="uk-scrollspy-inview"
+                            src="https://cdn.nyutonika.ru/images/social-network-reviews/mediatmpIMG_0209.jpg" alt=""
                             uk-scrollspy="cls: uk-animation-fade; delay: 300">
                     </div>
                     <div class="uk-flex uk-flex-center uk-flex-middle uk-padding-small reviews-social uk-margin-remove">
@@ -335,41 +385,224 @@
                     </div>
                     <div class="uk-flex uk-flex-center uk-flex-middle uk-padding-small reviews-social uk-margin-remove">
                         <img class="uk-scrollspy-inview"
-                            src="https://cdn.nyutonika.ru/images/social-network-reviews/mediatmpIMG_0209.jpg" alt=""
+                            src="https://cdn.nyutonika.ru/images/social-network-reviews/mediatmpIMG_0210.jpg" alt=""
                             uk-scrollspy="cls: uk-animation-fade; delay: 300">
                     </div>
-                   
-
-
+                    <div class="uk-flex uk-flex-center uk-flex-middle uk-padding-small reviews-social uk-margin-remove">
+                        <img class="uk-scrollspy-inview"
+                            src="https://cdn.nyutonika.ru/images/social-network-reviews/mediatmpIMG_0219.jpg" alt=""
+                            uk-scrollspy="cls: uk-animation-fade; delay: 300">
+                    </div>
+                    <div class="uk-flex uk-flex-center uk-flex-middle uk-padding-small reviews-social uk-margin-remove">
+                        <img class="uk-scrollspy-inview"
+                            src="https://cdn.nyutonika.ru/images/social-network-reviews/mediatmpIMG_0243.jpg" alt=""
+                            uk-scrollspy="cls: uk-animation-fade; delay: 300">
+                    </div>
+                    <div class="uk-flex uk-flex-center uk-flex-middle uk-padding-small reviews-social uk-margin-remove">
+                        <img class="uk-scrollspy-inview"
+                            src="https://cdn.nyutonika.ru/images/social-network-reviews/mediatmpIMG_0245.jpg" alt=""
+                            uk-scrollspy="cls: uk-animation-fade; delay: 300">
+                    </div>
+                    <div class="uk-flex uk-flex-center uk-flex-middle uk-padding-small reviews-social uk-margin-remove">
+                        <img class="uk-scrollspy-inview"
+                            src="https://cdn.nyutonika.ru/images/social-network-reviews/mediatmpIMG_0246.jpg" alt=""
+                            uk-scrollspy="cls: uk-animation-fade; delay: 300">
+                    </div>
+                    <div class="uk-flex uk-flex-center uk-flex-middle uk-padding-small reviews-social uk-margin-remove">
+                        <img class="uk-scrollspy-inview"
+                            src="https://cdn.nyutonika.ru/images/social-network-reviews/mediatmpIMG_0266.jpg" alt=""
+                            uk-scrollspy="cls: uk-animation-fade; delay: 300">
+                    </div>
+                    <div class="uk-flex uk-flex-center uk-flex-middle uk-padding-small reviews-social uk-margin-remove">
+                        <img class="uk-scrollspy-inview"
+                            src="https://cdn.nyutonika.ru/images/social-network-reviews/mediatmpIMG_0265.jpg" alt=""
+                            uk-scrollspy="cls: uk-animation-fade; delay: 300">
+                    </div>
+                    <div class="uk-flex uk-flex-center uk-flex-middle uk-padding-small reviews-social uk-margin-remove">
+                        <img class="uk-scrollspy-inview"
+                            src="https://cdn.nyutonika.ru/images/social-network-reviews/mediatmpIMG_0267.jpg" alt=""
+                            uk-scrollspy="cls: uk-animation-fade; delay: 300">
+                    </div>
+                    <div class="uk-flex uk-flex-center uk-flex-middle uk-padding-small reviews-social uk-margin-remove">
+                        <img class="uk-scrollspy-inview"
+                            src="https://cdn.nyutonika.ru/images/social-network-reviews/mediatmpIMG_0271.jpg" alt=""
+                            uk-scrollspy="cls: uk-animation-fade; delay: 300">
+                    </div>
+                    <div class="uk-flex uk-flex-center uk-flex-middle uk-padding-small reviews-social uk-margin-remove">
+                        <img class="uk-scrollspy-inview"
+                            src="https://cdn.nyutonika.ru/images/social-network-reviews/mediatmpIMG_0272.jpg" alt=""
+                            uk-scrollspy="cls: uk-animation-fade; delay: 300">
+                    </div>
+                    <div class="uk-flex uk-flex-center uk-flex-middle uk-padding-small reviews-social uk-margin-remove">
+                        <img class="uk-scrollspy-inview"
+                            src="https://cdn.nyutonika.ru/images/social-network-reviews/mediatmpIMG_0250.jpg" alt=""
+                            uk-scrollspy="cls: uk-animation-fade; delay: 300">
+                    </div>
+                    <div class="uk-flex uk-flex-center uk-flex-middle uk-padding-small reviews-social uk-margin-remove">
+                        <img class="uk-scrollspy-inview"
+                            src="https://cdn.nyutonika.ru/images/social-network-reviews/mediatmpIMG_0268.jpg" alt=""
+                            uk-scrollspy="cls: uk-animation-fade; delay: 300">
+                    </div>
+                    <div class="uk-flex uk-flex-center uk-flex-middle uk-padding-small reviews-social uk-margin-remove">
+                        <img class="uk-scrollspy-inview"
+                            src="https://cdn.nyutonika.ru/images/social-network-reviews/mediatmpIMG_0270.jpg" alt=""
+                            uk-scrollspy="cls: uk-animation-fade; delay: 300">
+                    </div>
+                    <div class="uk-flex uk-flex-center uk-flex-middle uk-padding-small reviews-social uk-margin-remove">
+                        <img class="uk-scrollspy-inview"
+                            src="https://cdn.nyutonika.ru/images/social-network-reviews/mediatmpIMG_0273.jpg" alt=""
+                            uk-scrollspy="cls: uk-animation-fade; delay: 300">
+                    </div>
+                    <div class="uk-flex uk-flex-center uk-flex-middle uk-padding-small reviews-social uk-margin-remove">
+                        <img class="uk-scrollspy-inview"
+                            src="https://cdn.nyutonika.ru/images/social-network-reviews/mediatmpIMG_0275.jpg" alt=""
+                            uk-scrollspy="cls: uk-animation-fade; delay: 300">
+                    </div>
+                    <div class="uk-flex uk-flex-center uk-flex-middle uk-padding-small reviews-social uk-margin-remove">
+                        <img class="uk-scrollspy-inview"
+                            src="https://cdn.nyutonika.ru/images/social-network-reviews/mediatmpIMG_0276.jpg" alt=""
+                            uk-scrollspy="cls: uk-animation-fade; delay: 300">
+                    </div>
+                    <div class="uk-flex uk-flex-center uk-flex-middle uk-padding-small reviews-social uk-margin-remove">
+                        <img class="uk-scrollspy-inview"
+                            src="https://cdn.nyutonika.ru/images/social-network-reviews/mediatmpIMG_0353.jpg" alt=""
+                            uk-scrollspy="cls: uk-animation-fade; delay: 300">
+                    </div>
+                    <div class="uk-flex uk-flex-center uk-flex-middle uk-padding-small reviews-social uk-margin-remove">
+                        <img class="uk-scrollspy-inview"
+                            src="https://cdn.nyutonika.ru/images/social-network-reviews/mediatmpIMG_0354.jpg" alt=""
+                            uk-scrollspy="cls: uk-animation-fade; delay: 300">
+                    </div>
+                    <div class="uk-flex uk-flex-center uk-flex-middle uk-padding-small reviews-social uk-margin-remove">
+                        <img class="uk-scrollspy-inview"
+                            src="https://cdn.nyutonika.ru/images/social-network-reviews/mediatmpIMG_0364.jpg" alt=""
+                            uk-scrollspy="cls: uk-animation-fade; delay: 300">
+                    </div>
+                    <div class="uk-flex uk-flex-center uk-flex-middle uk-padding-small reviews-social uk-margin-remove">
+                        <img class="uk-scrollspy-inview"
+                            src="https://cdn.nyutonika.ru/images/social-network-reviews/mediatmpIMG_0358.jpg" alt=""
+                            uk-scrollspy="cls: uk-animation-fade; delay: 300">
+                    </div>
+                    <div class="uk-flex uk-flex-center uk-flex-middle uk-padding-small reviews-social uk-margin-remove">
+                        <img class="uk-scrollspy-inview"
+                            src="https://cdn.nyutonika.ru/images/social-network-reviews/mediatmpIMG_0359.jpg" alt=""
+                            uk-scrollspy="cls: uk-animation-fade; delay: 300">
+                    </div>
+                    <div class="uk-flex uk-flex-center uk-flex-middle uk-padding-small reviews-social uk-margin-remove">
+                        <img class="uk-scrollspy-inview"
+                            src="https://cdn.nyutonika.ru/images/social-network-reviews/mediatmpIMG_0350.jpg" alt=""
+                            uk-scrollspy="cls: uk-animation-fade; delay: 300">
+                    </div>
+                    <div class="uk-flex uk-flex-center uk-flex-middle uk-padding-small reviews-social uk-margin-remove">
+                        <img class="uk-scrollspy-inview"
+                            src="https://cdn.nyutonika.ru/images/social-network-reviews/handled_IMG_0380_1080_1920_80.jpg"
+                            alt="" uk-scrollspy="cls: uk-animation-fade; delay: 300">
+                    </div>
+                    <div class="uk-flex uk-flex-center uk-flex-middle uk-padding-small reviews-social uk-margin-remove">
+                        <img class="uk-scrollspy-inview"
+                            src="https://cdn.nyutonika.ru/images/social-network-reviews/mediatmpIMG_0372.jpg" alt=""
+                            uk-scrollspy="cls: uk-animation-fade; delay: 300">
+                    </div>
+                    <div class="uk-flex uk-flex-center uk-flex-middle uk-padding-small reviews-social uk-margin-remove">
+                        <img class="uk-scrollspy-inview"
+                            src="https://cdn.nyutonika.ru/images/social-network-reviews/mediatmpIMG_0368.jpg" alt=""
+                            uk-scrollspy="cls: uk-animation-fade; delay: 300">
+                    </div>
+                    <div class="uk-flex uk-flex-center uk-flex-middle uk-padding-small reviews-social uk-margin-remove">
+                        <img class="uk-scrollspy-inview"
+                            src="https://cdn.nyutonika.ru/images/social-network-reviews/mediatmpIMG_0374.jpg" alt=""
+                            uk-scrollspy="cls: uk-animation-fade; delay: 300">
+                    </div>
+                    <div class="uk-flex uk-flex-center uk-flex-middle uk-padding-small reviews-social uk-margin-remove">
+                        <img class="uk-scrollspy-inview"
+                            src="https://cdn.nyutonika.ru/images/social-network-reviews/mediatmpIMG_0373.jpg"
+                            alt="" uk-scrollspy="cls: uk-animation-fade; delay: 300">
+                    </div>
+                    <div class="uk-flex uk-flex-center uk-flex-middle uk-padding-small reviews-social uk-margin-remove">
+                        <img class="uk-scrollspy-inview"
+                            src="https://cdn.nyutonika.ru/images/social-network-reviews/mediatmpIMG_0370.jpg" alt=""
+                            uk-scrollspy="cls: uk-animation-fade; delay: 300">
+                    </div>
+                    <div class="uk-flex uk-flex-center uk-flex-middle uk-padding-small reviews-social uk-margin-remove">
+                        <img class="uk-scrollspy-inview"
+                            src="https://cdn.nyutonika.ru/images/social-network-reviews/mediatmpIMG_0367.jpg" alt=""
+                            uk-scrollspy="cls: uk-animation-fade; delay: 300">
+                    </div>
+                    <div class="uk-flex uk-flex-center uk-flex-middle uk-padding-small reviews-social uk-margin-remove">
+                        <img class="uk-scrollspy-inview"
+                            src="https://cdn.nyutonika.ru/images/social-network-reviews/mediatmpIMG_0382.jpg" alt=""
+                            uk-scrollspy="cls: uk-animation-fade; delay: 300">
+                    </div>
+                    <div class="uk-flex uk-flex-center uk-flex-middle uk-padding-small reviews-social uk-margin-remove">
+                        <img class="uk-scrollspy-inview"
+                            src="https://cdn.nyutonika.ru/images/social-network-reviews/mediatmpIMG_0379.jpg" alt=""
+                            uk-scrollspy="cls: uk-animation-fade; delay: 300">
+                    </div>
+                    <div class="uk-flex uk-flex-center uk-flex-middle uk-padding-small reviews-social uk-margin-remove">
+                        <img class="uk-scrollspy-inview"
+                            src="https://cdn.nyutonika.ru/images/social-network-reviews/mediatmpIMG_0376.jpg" alt=""
+                            uk-scrollspy="cls: uk-animation-fade; delay: 300">
+                    </div>
+                    <div class="uk-flex uk-flex-center uk-flex-middle uk-padding-small reviews-social uk-margin-remove">
+                        <img class="uk-scrollspy-inview"
+                            src="https://cdn.nyutonika.ru/images/social-network-reviews/mediatmpIMG_0387.jpg" alt=""
+                            uk-scrollspy="cls: uk-animation-fade; delay: 300">
+                    </div>
+                    <div class="uk-flex uk-flex-center uk-flex-middle uk-padding-small reviews-social uk-margin-remove">
+                        <img class="uk-scrollspy-inview"
+                            src="https://cdn.nyutonika.ru/images/social-network-reviews/mediatmpIMG_0386.jpg" alt=""
+                            uk-scrollspy="cls: uk-animation-fade; delay: 300">
+                    </div>
+                    <div class="uk-flex uk-flex-center uk-flex-middle uk-padding-small reviews-social uk-margin-remove">
+                        <img class="uk-scrollspy-inview"
+                            src="https://cdn.nyutonika.ru/images/social-network-reviews/mediatmpIMG_0384.jpg" alt=""
+                            uk-scrollspy="cls: uk-animation-fade; delay: 300">
+                    </div>
+                    <div class="uk-flex uk-flex-center uk-flex-middle uk-padding-small reviews-social uk-margin-remove">
+                        <img class="uk-scrollspy-inview"
+                            src="https://cdn.nyutonika.ru/images/social-network-reviews/mediatmpIMG_0390.jpg" alt=""
+                            uk-scrollspy="cls: uk-animation-fade; delay: 300">
+                    </div>
+                    <div class="uk-flex uk-flex-center uk-flex-middle uk-padding-small reviews-social uk-margin-remove">
+                        <img class="uk-scrollspy-inview"
+                            src="https://cdn.nyutonika.ru/images/social-network-reviews/mediatmpIMG_0389.jpg" alt=""
+                            uk-scrollspy="cls: uk-animation-fade; delay: 300">
+                    </div>
+                    <div class="uk-flex uk-flex-center uk-flex-middle uk-padding-small reviews-social uk-margin-remove">
+                        <img class="uk-scrollspy-inview"
+                            src="https://cdn.nyutonika.ru/images/social-network-reviews/mediatmpIMG_0388.jpg" alt=""
+                            uk-scrollspy="cls: uk-animation-fade; delay: 300">
+                    </div>
                 </div>
                 <div class="uk-flex uk-flex-center uk-flex-middle uk-padding-small uk-margin-top">
-                    <button class="uk-button uk-button-primary button-tree btn-search-more">Показать
+                    <button
+                        class="uk-button uk-button-primary button-tree btn-search-more uk-margin-large-bottom">Показать
                         еще</button>
                 </div>
 
-<script>
-    const SHOW_INITIAL = 6;
-const SHOW_MORE = 3;
-const $button = $('.btn-search-more');
-const $items = $('.reviews-social').hide();
+                <script>
+                    const SHOW_INITIAL = 6;
+                    const SHOW_MORE = 3;
+                    const $button = $('.btn-search-more');
+                    const $items = $('.reviews-social').hide();
 
-showItems(SHOW_INITIAL);
-$button.click(() => showItems(SHOW_MORE));
+                    showItems(SHOW_INITIAL);
+                    $button.click(() => showItems(SHOW_MORE));
 
-function showItems(count) {
-    const $hidden = $items.filter(':hidden');
-    $hidden.slice(0, count).show();
-    $button.toggle($hidden.length > count);
-}
+                    function showItems(count) {
+                        const $hidden = $items.filter(':hidden');
+                        $hidden.slice(0, count).show();
+                        $button.toggle($hidden.length > count);
+                    }
 
- 
-</script>
+
+                </script>
 
 
             </section>
 
-           
-            
+            <!-- конец  8 2 секция Отзывы с соцсетях -->
+
 
         </main>
         <footer class="footer">
