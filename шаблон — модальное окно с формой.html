@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/uikit-rtl.css">
+    <link rel="stylesheet" href="css/uikit.css">
+
+    <link rel="stylesheet" href="css/custom-style.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+    <script src="js/uikit.js"  type="text/javascript"></script>
+    <script src="js/uikit-icons.js"  type="text/javascript"></script>
+    <script src="js/scripts.js"  type="text/javascript"></script>
+    <title>Ньютоника</title>
+</head>
+
+<body>
+<div class="wrapper"> 
+    <header uk-sticky>
+
+        <section class="header container">
+
+            <nav class="header-desktop header-nav uk-margin-small-top" uk-navbar>
+
+                <div class="header-logo">
+
+                    <img src="svg/logo.svg">
+
+                </div>
+                <!-- Навигация, ссылки -->
+                <ul class="uk-navbar-nav">
+                    <li class="nav-item"><a href="#">Направления</a>
+                        <div class="uk-navbar-dropdown header-menu">
+                            <ul class="uk-nav uk-navbar-dropdown-nav">
+                                <li class="uk-active uk-parent">
+                                    <a href="#">Активное<span class="uk-nav-parent-icon icon-menu-tree"></a>
+                                    <div class="uk-navbar-dropdown header-menu-second">
+                                        <ul class="uk-nav uk-navbar-dropdown-nav header-menu-second-position">
+                                            <li><a href="#"><img class="trend-icon-nav" src="svg/МАлышам.svg">
+                                                    Активное</a></li>
+                                            <li><a href="#"><img class="trend-icon-nav" src="svg/МАлышам.svg">
+                                                    Элемент списка</a></li>
+                                            <li><a href="#"><img class="trend-icon-nav" src="svg/МАлышам.svg">
+                                                    Пункт меню</a></li>
+                                            <li><a href="#"><img class="trend-icon-nav" src="svg/МАлышам.svg">
+                                                    Продолжаем</a></li>
+
+
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="uk-parent"><a href="#">Элемент списка<span
+                                    class="uk-nav-parent-icon icon-menu-tree"></a>
+                                    <div class="uk-navbar-dropdown header-menu-second">
+                                        <ul class="uk-nav uk-navbar-dropdown-nav header-menu-second-position">
+                                            <li><a href="#"><img class="trend-icon-nav" src="svg/МАлышам.svg">
+                                                    Активное</a></li>
+                                            <li><a href="#"><img class="trend-icon-nav" src="svg/МАлышам.svg">
+                                                    Элемент списка</a></li>
+                                            <li><a href="#"><img class="trend-icon-nav" src="svg/МАлышам.svg">
+                                                    Пункт меню</a></li>
+                                            <li><a href="#"><img class="trend-icon-nav" src="svg/МАлышам.svg">
+                                                    Продолжаем</a></li>
+
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="uk-parent"><a href="#">Пункт меню<span
+                                    class="uk-nav-parent-icon icon-menu-tree"></a></li>
+                                <li class="uk-parent"><a href="#">Продолжаем<span
+                                    class="uk-nav-parent-icon icon-menu-tree"></a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a href="#">О школе</a></li>
+
+
+
+                </ul><!-- Навигация, ссылки -->
+
+                <div class="uk-navbar-item header-phone"> <!-- Отдельный контейнер -->
+                    <a href="tel:+78007753795">8 (800) 775-37-95</a>
+                    <div class="header-phone_text"></div>
+                </div>
+                <div class="uk-navbar-item header-buttons"> <!-- Отдельный контейнер -->
+                    <button class="uk-button uk-button-default button-one uk-margin-small-right">Регистрация</button>
+                    <button class="uk-button uk-button-primary button-two">Войти на урок</button>
+                </div>
+
+            </nav>
+</section>
+<section>
+            <nav class="">
+             <div class="header container header-mobile uk-margin-small-top uk-margin-small-bottom"  uk-navbar>
+                <div class="header-logo">
+                    <img src="svg/logo.svg">
+                </div>
+                <a class="uk-button button-two button-one-mobile-header uk-margin-small-right">Войти на урок</a>
+                <div class="mobile-buttons-block">
+                    <a class="button-menu-lk" href=""></a>
+                    <a class="button-menu-telefon" href="tel:+79999999999"></a>
+                    <a href="#offcanvas-slide" class="button-menu header-buttons-menu-open" uk-toggle></a>
+                </div>
+                <div id="offcanvas-slide" uk-offcanvas>
+                    <div class="uk-offcanvas-bar menu-slide">
+                        <div class="menu-mobile-title">Меню <a href="#offcanvas-slide"
+                                class="button-menu header-buttons-menu-close" uk-toggle></a></div>
+                        <ul class="uk-nav-default menu-mobile" uk-nav>
+                            <li class="uk-parent nav-item"><a href="#">Направления<span
+                                        class="uk-nav-parent-icon icon-menu-one">
+                                    </span></a>
+
+                                <ul class="uk-nav-sub menu-second-mobile uk-nav uk-nav-default" uk-nav>
+                                    <li class="uk-parent">
+                                        <a href="#">Активное<span class="uk-nav-parent-icon icon-menu-two">
+                                            </span></a>
+
+                                        <ul class="menu-second-sub-mobile uk-nav uk-nav-default" uk-nav>
+                                            <li><a href="#"><img class="trend-icon-nav" src="svg/МАлышам.svg">
+                                                    Активное</a></li>
+                                            <li><a href="#"><img class="trend-icon-nav" src="svg/МАлышам.svg">
+                                                    Элемент списка</a></li>
+                                            <li><a href="#"><img class="trend-icon-nav" src="svg/МАлышам.svg">
+                                                    Пункт меню</a></li>
+                                            <li><a href="#"><img class="trend-icon-nav" src="svg/МАлышам.svg">
+                                                    Продолжаем</a></li>
+
+                                        </ul>
+
+                                    </li>
+                                    <li class="uk-parent">
+                                        <a href="#">Элемент списка <span
+                                                class="uk-nav-parent-icon icon-menu-two"></span></a>
+
+                                        <ul class="menu-second-sub-mobile uk-nav-sub uk-nav uk-nav-default">
+                                            <li><a href="#"><img class="trend-icon-nav" src="svg/МАлышам.svg">
+                                                    Активное</a></li>
+                                            <li><a href="#"><img class="trend-icon-nav" src="svg/МАлышам.svg">
+                                                    Элемент списка</a></li>
+                                            <li><a href="#"><img class="trend-icon-nav" src="svg/МАлышам.svg">
+                                                    Пункт меню</a></li>
+                                            <li><a href="#"><img class="trend-icon-nav" src="svg/МАлышам.svg">
+                                                    Продолжаем</a></li>
+
+                                        </ul>
+
+                                    </li>
+                                    <li class="uk-parent"><a href="#">Пункт меню <span
+                                                class="uk-nav-parent-icon icon-menu-two"></span></a></li>
+                                    <li class="uk-parent"><a href="#">Продолжаем <span
+                                                class="uk-nav-parent-icon icon-menu-two"></span></a></li>
+                                </ul>
+
+                            </li>
+                            <li class="nav-item uk-parent"><a href="#">О школе <span
+                                        class="uk-nav-parent-icon icon-menu-one"></span></a></li>
+
+                            <li class="uk-nav-divider nav-line"></li>
+                            <li>
+                                <div class="footer-content_item">
+                                    <div>
+                                        <div
+                                            class="footer-content_item-title uk-margin-small-top uk-margin-small-bottom">
+                                            Напишите нам</div>
+                                        <div class="footer-content_icons">
+                                            <a href="">
+                                                <img class="trend-icon" src="svg/telegram.svg" alt="">
+                                            </a>
+                                            <a href="">
+                                                <img class="trend-icon" src="svg/viber.svg" alt="">
+                                            </a>
+
+                                        </div>
+                                        <div>
+                                            <div class="footer-content_item-title uk-margin-top uk-margin-small-bottom">
+                                                Наши соц. сети</div>
+                                            <div class="footer-content_icons uk-margin-bottom">
+                                                <a href="">
+                                                    <img class="trend-icon" src="svg/youtube.svg" alt="">
+                                                </a><a href="">
+                                                    <img class="trend-icon" src="svg/vk-logo-of-social-network.svg"
+                                                        alt="">
+                                                </a>
+                                                <a href="">
+                                                    <img class="trend-icon" src="svg/viber.svg" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                 
+            </div>
+            <div>
+            <a class="uk-button button-two-mobile-header uk-margin-small-right">Войти на урок</a>
+            </div>
+            </nav>
+
+        </section>
+
+
+
+
+
+    </header>
+    
+    <main class="main container">
+
+
+       
+        <section class="container-item">
+             
+            <div>
+                <button type="submit" uk-toggle="target: #tutor-feedback-form"
+                    class="button-tree uk-button uk-button-primary">Вызвать форму</button>
+            </div>
+            
+            <div id="tutor-feedback-form" class="uk-flex-top" uk-modal>
+                <div class="uk-width-large uk-margin-auto-vertical uk-modal-dialog modal-trend">
+                    <button class="uk-modal-close-outside uk-icon uk-close" type="button" uk-close></button>
+                    <div class="uk-flex uk-flex-center">
+                        <h4 class="uk-width-large uk-text-center">Дарим первый урок с репетитором бесплатно</h4>
+                    </div>
+                    
+                        <form class="form-leave-request uk-margin-remove">
+                            <div class="uk-text-center">
+                                <label class="uk-form-label uk-margin-remove">Оставьте заявку и получите первый урок в подарок</label>
+                                <div class="uk-form-controls uk-margin-top">
+                                    <input class="uk-input uk-margin-remove-left uk-margin-remove-right" name="Имя" type="text" placeholder="Ваше ФИО" required>
+                                </div>
+                                 
+                                <div class="uk-form-controls">
+                                    <input id="" class="uk-input form-control phone uk-margin-remove-left uk-margin-remove-right" name="Телефон" type="text" placeholder="Введите номер телефона" minlength="9" maxlength="16" required>
+                                </div>
+                                 
+                                <div class="uk-form-controls">
+                                    <input class="uk-input uk-margin-remove-left uk-margin-remove-right uk-margin-remove-bottom" name="E-mail" type="email" placeholder="Введите e-mail" required>
+                                </div>
+                                
+                            </div>
+                            <div class="checkbox-tab feedback-form uk-margin-remove-left uk-margin-remove-right">
+                                <input class="uk-checkbox checkbox-tab-item" type="checkbox" required><span>Соглашаюсь с
+                                    политикой обработки персональных данных и даю согласие на обработку данных</span>
+                            </div>
+                            <div class="uk-margin-bottom uk-margin-top">
+                                <button class="button-tree uk-button uk-button-primary uk-width-expand uk-margin-remove" type="submit">Оставить заявку</button>
+                            </div>
+                        </form>
+                  
+                </div>
+            </div>
+            
+        </section>
+
+         
+
+         
+         
+
+ 
+
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-logo">
+
+                <img src="svg/logo.svg">
+
+            </div>
+            <div class="footer-content">
+                <div class="footer-content_item">
+                    <ul>
+                        <li><a href="">Политика обработки персональных данных</a></li>
+                        <li><a href="">Карьера репетитора</a></li>
+                        <li><a href="">Контакты</a></li>
+                        <li><a href="">Оферта</a></li>
+                        <li><a href="">Вебинары</a></li>
+                        <li><a href="">Карта сайта</a></li>
+                        <li><a href="">Партнерская программа</a></li>
+                    </ul>
+
+                    
+                </div>
+                <div class="footer-content_item">
+                    <div class="footer-content_item_info">
+                        <p class="footer-content_item-title  uk-margin-small-top">Почта</p>
+                        <p class="footer-phone uk-margin-bottom"><a href="mailto:barmarat@bk.ru">barmarat@bk.ru</a></p>
+                    </div>
+
+                    <div class="footer-content_item_info">
+                        <p class="footer-content_item-title">Телефон</p>
+                        <div>
+                            <p class="footer-phone"><a href="tel:+79999999999"> 8 (999) 999-99-99</a></p>
+                            <p class="header-phone_text">Получить консультацию</p>
+                        </div>
+                        <div>
+                            <p class="footer-phone"><a href="tel:+79999999999"> 8 (999) 999-99-99</a></p>
+                            <p class="header-phone_text">Для новых пользователе</p>
+                        </div>
+                        <div>
+                            <p class="footer-phone"><a href="tel:+79999999999"> 8 (999) 999-99-99</a></p>
+                            <p class="header-phone_text">Отдел заботы о пользователях</p>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="footer-content_item">
+                    <div>
+                        <div class="footer-content_item-title uk-margin-medium-bottom uk-margin-small-top">Напишите нам
+                        </div>
+                        <div class="footer-content_icons">
+                            <a href="">
+                                <img class="trend-icon" src="svg/telegram.svg" alt="">
+                            </a>
+                            <a href="">
+                                <img class="trend-icon" src="svg/viber.svg" alt="">
+                            </a>
+
+                        </div>
+                        <div>
+                            <div class="footer-content_item-title uk-margin-medium-bottom uk-margin-small-top">Наши соц.
+                                сети</div>
+                            <div class="footer-content_icons">
+                                <a href="">
+                                    <img class="trend-icon" src="svg/youtube.svg" alt="">
+                                </a><a href="">
+                                    <img class="trend-icon" src="svg/vk-logo-of-social-network.svg" alt="">
+                                </a>
+                                <a href="">
+                                    <img class="trend-icon" src="svg/viber.svg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="footer-content-bottom">
+                <div class="footer-content_item_requisites footer-content_item">
+                    ОГРН: 1187746880530 <br>
+                    ИНН/КПП: 7702446568/770901001
+                </div>
+                <div class="footer-content_item_adress footer-content_item">105120, г. Москва, ул. Нижняя Сыромятническая, дом 10,
+                    строение 2, помещ. 1, ком. 4</div>
+                <div class="uk-margin-medium-top footer-content_item footer-content_item_img"><img src="images/test/Слой 72.png" alt=""></div>
+            </div>
+            <a href="#" class="scrollup">Наверх</a>
+        </div>
+    </footer>
+
+    </div>
+
+    <script src="js/jquery.maskedinput-1.4.1.js"  type="text/javascript"></script>
+</body>
+
+</html>

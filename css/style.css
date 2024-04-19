@@ -9170,3 +9170,118 @@ section.math-hach>.seven-section>.seven-section-block {
   border-radius: 20px;
   border: 10px solid #F8F8F8;
 }
+
+
+/*---Стилизация селектов ----*/
+ .choices {
+  margin: 10px 10px 20px 10px !important;
+  width: 100%;
+}
+
+.choices__inner {
+  border: 1px solid #ae00d4;
+  opacity: 0.8;
+  border-radius: 5px;
+  padding: 20px !important;
+  min-height: 60px;
+  border-radius: 5px;
+  background: #fefcfe;
+}
+
+.is-focused .choices__inner,
+.is-open .choices__inner {
+  border-color: #ae00d4;
+  border-radius: 5px;
+}
+
+.is-open .choices__list--dropdown,
+.is-open .choices__list[aria-expanded] {
+  border-color: #ae00d4;
+  border-radius: 0px 0px 5px 5px;
+}
+
+.choices__list--dropdown,
+.choices__list[aria-expanded] {
+  margin-top: -4px;
+ background-color: #fcf7fe;
+}
+
+.choices__list--dropdown .choices__item--selectable.is-highlighted,
+.choices__list[aria-expanded] .choices__item--selectable.is-highlighted {
+  background-color: #ae00d417;
+}
+.choices__list--dropdown .choices__item, .choices__list[aria-expanded] .choices__item {
+  padding: 15px 20px;
+  font-weight: 700;
+  font-family: "Nunito-Bold";
+  font-size: 16px;
+  color: #2A3B4F !important;
+}
+.choices__list--single .choices__item {
+  font-weight: 400;
+  font-family: "Nunito-Bold";
+  font-size: 18px;
+  color: #2A3B4F !important;
+}
+
+.choices__list--single {
+  padding: 0 !important;
+}
+
+.choices[data-type*=select-one]::after {
+  right: 15px;
+  top: 50%;
+  margin-top: -3px;
+  border: 6px solid transparent;
+  border-top: 10px solid #ae00d4;
+}
+
+.choices[data-type*=select-one].is-open::after {
+  border: 6px solid transparent;
+  border-bottom: 10px solid #ae00d4;
+  margin-top: -10px;
+}
+
+@media (max-width: 500px) {
+  .choices__inner{
+    padding: 10px 20px !important;
+    min-height: 45px;
+  }
+  .choices__list--single .choices__item {
+    font-size: 15px;
+    line-height: 24px;
+}
+.choices__list--dropdown .choices__item, .choices__list[aria-expanded] .choices__item {
+  padding: 10px 20px;
+  font-size: 14px;
+}
+} 
+
+/*---Стилизация форма в модальном окне ----*/
+.feedback-form .checkbox-tab{
+     display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+.checkbox-tab.feedback-form>span {
+  color: #546272;
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 15px;
+}
+.checkbox-tab.feedback-form>input{
+  background-color: #ffffff !important;
+    border-color: #ae00d4 !important;
+    border: 1px solid;
+    border-radius: 3px;
+    width: 20px;
+    height: 20px;
+    min-width: 20px;
+    margin-right: 15px;
+}
+.checkbox-tab.feedback-form>.uk-checkbox:checked {
+  background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8.00034 16L3 10.7499L4.42838 9.25013L8.00135 12.9984L8.00034 12.9995L16.5716 4L18 5.49974L9.42872 14.5003L8.00135 15.9989L8.00034 16V16Z' fill='%23AE00D4'/%3E%3C/svg%3E");
+}
