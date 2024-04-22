@@ -1051,7 +1051,7 @@ input:-webkit-autofill {
     background: var(--colorWhiteText) !important;
     color: var(--colorBlockCardSix) !important; 
 }
-.buttons-educator>.card-lk_button>button {
+.buttons-educator>.card-lk_button>button, .buttons-educator>.card-lk_button>a {
     background: var(--colorEducator);
     border: 3px solid var(--colorEducator);
 }
@@ -1147,6 +1147,15 @@ input:-webkit-autofill {
     align-content: flex-end;
     flex-wrap: wrap;
 }
+.buttons-educator.homework>div>a {
+    text-align: center;
+    line-height: 21px;
+    transition: all 0.5s;
+}
+.buttons-educator.homework>div>a:hover{
+    background: var(--colorWhiteText);
+    color: var(--colorEducator);
+} 
 @media (max-width: 640px){
 .buttons-educator.homework {
     flex-direction: row;
@@ -1155,7 +1164,7 @@ input:-webkit-autofill {
     flex-grow: 1;
     width: fit-content;
 }
-.buttons-educator.homework>div>button {
+.buttons-educator.homework>div>button, .buttons-educator.homework>div>a  {
     white-space: nowrap;
 }
 .buttons-educator.homework>div>button.timer {
@@ -3577,7 +3586,11 @@ ol.text-dogovora-items ol ol li::before {
         font-size: 14px;
         padding: 8px;
     }
-
+    .buttons-educator.homework>div>a {
+        font-size: 14px;
+        padding: 6px;
+        line-height: 20px;
+    }
     .color-recent-classes-card>.card-lk_title>div {
         flex-direction: row;
         align-items: flex-start;
@@ -4231,4 +4244,8 @@ ol.text-dogovora-items ol ol li::before {
     .danger-lk {
         padding: 15px 15%;
     }
+}
+
+.form-leave-request ul{
+    background: #40CDE0;
 }
