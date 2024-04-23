@@ -738,7 +738,10 @@ input:-webkit-autofill {
     container-type: inline-size;
     container-name: next-class-card-educator;
 }
-
+.color-next-class-card.educator.parental {
+    border: 3px solid var(--colorBlockCardOne) !important;
+    
+}
 .color-next-class-card>.card-lk_title {
     background: var(--colorBlockCardOne);
     width: 100%;
@@ -764,9 +767,10 @@ input:-webkit-autofill {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-
 }
-
+.color-next-class-card.educator.parental>.card-lk_title {
+    background: var(--colorBlockCardOne) !important;
+}
 .card-lk_title>a {
     color: inherit;
     font-family: Nunito;
@@ -1156,6 +1160,15 @@ input:-webkit-autofill {
     background: var(--colorWhiteText);
     color: var(--colorEducator);
 } 
+.parental>.buttons-educator.homework>div>a {
+    background: var(--colorBlockCardOne);
+    color: var(--colorWhiteText);
+    border: 3px solid var(--colorBlockCardOne);
+}
+.parental>.buttons-educator.homework>div>a:hover{
+    background: var(--colorWhiteText);
+    color: var(--colorBlockCardOne);
+} 
 @media (max-width: 640px){
 .buttons-educator.homework {
     flex-direction: row;
@@ -1199,6 +1212,10 @@ input:-webkit-autofill {
     justify-content: center;
     font-size: 16px;
     padding: 10px;
+}
+.color-next-class-card.homework.parental>.card-lk_title>span {
+    background: var(--colorBlockCardOne) !important;
+    
 }
 .color-next-class-card.homework>.card-lk_title>div {
     padding: 0;
