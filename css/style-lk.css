@@ -61,7 +61,13 @@
     right: 2px;
     bottom: 2px;
 }
-
+.page-lk h1 {
+    font-family: "Nunito-Bold";
+    font-style: normal;
+    font-weight: 700;
+    line-height: 54px;
+    font-size: 50px;
+}
 .page-lk>div>.uk-pagination>li>a {
     color: #fff;
     font-size: 14px;
@@ -1219,7 +1225,39 @@ input:-webkit-autofill {
   border-right: 5px solid transparent;
   border-top: 8px solid var(--main-color);
 }
-
+.button-dz-block {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    min-height: 350px;
+    padding-top: 5vh;
+}
+.button-dz {
+    background: var(--colorBlockCardOne);
+    border-radius: 10px;
+    border: 3px solid var(--colorBlockCardOne);
+    font-family: 'Nunito-Bold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: clamp(30px, 4.5vw, 46px);
+    line-height: clamp(36px, 5vw, 50px);
+    color: var(--colorWhiteText);
+    padding: 5vh 10vw;
+    max-width: 900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+    text-decoration: none;
+    text-align: center;
+    
+}
+.button-dz:hover{
+    text-decoration: none;
+    background: var(--colorWhiteText);
+    color: var(--colorBlockCardOne);
+}
 @media (max-width: 640px){
 .buttons-educator.homework {
     flex-direction: row;
@@ -3632,7 +3670,7 @@ ol.text-dogovora-items ol ol li::before {
     .page-lk>h1,
     .page-lk>div>h1 {
         font-size: 42px;
-        line-height: 42px;
+        line-height: 46px;
     }
 
     .page-lk>div>h2 {
