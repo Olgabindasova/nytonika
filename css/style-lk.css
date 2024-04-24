@@ -441,8 +441,6 @@
 
 
 
-/*-----------------------------*/
-
 /*-------Меню----------------------*/
 .menu-lk {
     display: flex;
@@ -737,6 +735,7 @@ input:-webkit-autofill {
     border: 3px solid var(--colorEducator) !important;
     container-type: inline-size;
     container-name: next-class-card-educator;
+    padding-bottom: 20px;
 }
 .color-next-class-card.educator.parental {
     border: 3px solid var(--colorBlockCardOne) !important;
@@ -1143,7 +1142,7 @@ input:-webkit-autofill {
 
 /*-------Блоки страниц. Домашние задания---------------*/
 .buttons-educator.homework {
-    padding: 10px 25px 25px !important;
+    padding: 10px 25px 0px !important;
     gap: 5px !important;
     height: 100%;
     display: flex;
@@ -1160,15 +1159,67 @@ input:-webkit-autofill {
     background: var(--colorWhiteText);
     color: var(--colorEducator);
 } 
-.parental>.buttons-educator.homework>div>a {
+.parental>.buttons-educator.homework>div>a,.parental>.buttons-educator.homework>div>button {
     background: var(--colorBlockCardOne);
     color: var(--colorWhiteText);
     border: 3px solid var(--colorBlockCardOne);
 }
-.parental>.buttons-educator.homework>div>a:hover{
+.parental>.buttons-educator.homework>div>a:hover, .parental>.buttons-educator.homework>div>button:hover{
     background: var(--colorWhiteText);
     color: var(--colorBlockCardOne);
 } 
+
+.parental>.buttons-educator.homework>div>.inactive,
+.parental>.buttons-educator.homework>div>.inactive:hover {
+    background: #a2e0d0;
+    border: 3px solid #a2e0d0;
+    color: var(--colorWhiteText);
+    cursor: help;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.inactive::before,
+.inactive::after {
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .4s ease-in-out;
+  bottom: 100%;
+  left: 50%;
+  transform: translate(-50%);
+  margin-bottom: 15px;
+}
+
+.inactive:hover::before,
+.inactive:hover::after {
+  opacity: 1;
+  visibility: visible;
+}
+
+.inactive::before {
+  content: attr(data-inactive);
+  z-index: 2;
+  width: fit-content;
+  color: #fff;
+  background: var(--main-color);
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: 12px;
+}
+
+.inactive::after {
+  content: "";
+  width: 0;
+  height: 0;
+  margin-bottom: 8px;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 8px solid var(--main-color);
+}
+
 @media (max-width: 640px){
 .buttons-educator.homework {
     flex-direction: row;
@@ -1237,7 +1288,64 @@ input:-webkit-autofill {
    margin: 0;
    padding: 0;
 }
- 
+
+.button-balans{
+    background: var(--colorWhiteText) !important;
+    border: 3px solid var(--colorWhiteText) !important;
+    color: var(--colorFontContent) !important;
+    font-size: 1.5em !important;
+    font-family: "Nunito-Bold";
+    display:inline-block;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+}
+.button-balans span {
+    
+    color: var(--colorFontContent) !important;
+    font-family: "Nunito-Bold";
+    text-decoration:none;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    display:inline-block;
+}    
+.button-balans span:hover {
+    color: var(--main-color);
+    text-decoration:none;
+}        
+.button-balans span:after {
+    display: block;
+    position: relative;
+    content: "";
+    top: 5px;
+    height: 1px;
+    width: 0%;
+    background-color: var(--main-color);
+    transition: width 0.4s ease-in-out;
+}
+.button-balans span:hover:after,
+.button-balans span:focus:after {
+    width: 100%;
+}
+
+/*----------Цвета кнопок-------------*/
+.button-red {
+    background: var(--colorDanger) !important;
+    border: 3px solid var(--colorDanger) !important;
+}
+.button-red:hover {
+    background: var(--colorWhiteText) !important;
+    color: var(--colorDanger) !important;
+}
+.button-main {
+    background: var(--main-color) !important;
+    border: 3px solid var(--main-color) !important;
+}
+.button-main:hover {
+    background: var(--colorWhiteText) !important;
+    color: var(--main-color) !important;
+}
+
+
 /*-------Блоки страниц. 2.Последние занятия-----------------*/
 .color-recent-classes-card {
     background: var(--colorWhiteText);
@@ -1765,6 +1873,7 @@ input:-webkit-autofill {
     gap: 10px;
     padding-right: 15px;
     padding-left: 15px;
+    white-space: nowrap;
 }
 
 .pay-lk {
@@ -1779,7 +1888,7 @@ input:-webkit-autofill {
     cursor: pointer;
     transition: all 0.5s;
     width: fit-content;
-    border-radius: 5px;
+    border-radius: 8px;
     text-align: center;
     text-decoration: none;
     display: block;
@@ -3436,6 +3545,21 @@ ol.text-dogovora-items ol ol li::before {
     }
 }
 
+
+@media (max-width: 1250px){
+    .buttons-title-lk {
+        justify-content: center;
+        align-items: flex-end;
+        flex-direction: column;
+        gap: 5px;
+    }
+    .pay-lk {
+        padding: 12px;
+        min-width: 200px;
+    }
+}
+
+
 @media (max-width: 1100px) {
     .header-top-lk {
         padding: 0 20px;
@@ -3695,12 +3819,7 @@ ol.text-dogovora-items ol ol li::before {
         font-size: 25px;
     }
 
-    .buttons-title-lk {
-        justify-content: center;
-        align-items: flex-end;
-        flex-direction: column;
-        gap: 5px;
-    }
+    
 
     .pay-lk {
         padding: 12px;
@@ -3711,6 +3830,7 @@ ol.text-dogovora-items ol ol li::before {
         padding: 12px 15px 12px 20px;
         width: 200px;
     }
+   
 }
 
 @media (max-width: 1060px) {}
@@ -4266,3 +4386,7 @@ ol.text-dogovora-items ol ol li::before {
 .form-leave-request ul{
     background: #40CDE0;
 }
+
+
+
+
