@@ -2838,12 +2838,13 @@ ul.accordion-answer>li>div>p {
   background-repeat: no-repeat;
   background-size: 100%;
   min-width: 290px;
+  transition: 0.5s;
 }
 
 .trend-nav-base>li>a:hover {
-  font-family: 'Nunito-Black';
+  font-family: 'Nunito-Bold';
   font-style: normal;
-  font-weight: 900;
+  font-weight: 700;
   font-size: 36px;
   line-height: 48px;
   color: #FFFFFF;
@@ -2872,7 +2873,9 @@ ul.accordion-answer>li>div>p {
 .trend6 {
   background-image: url('https://cdn.nyutonika.ru/svg/Направлениедопразвитие.svg');
 }
-
+.trend7 {
+  background-image: url('https://cdn.nyutonika.ru/svg/Напрпвления-дз.svg');
+}
 .trend1:hover {
   background-image: url('https://cdn.nyutonika.ru/svg/Направление-логопедия-ховер.svg');
 }
@@ -2896,7 +2899,9 @@ ul.accordion-answer>li>div>p {
 .trend6:hover {
   background-image: url('https://cdn.nyutonika.ru/svg/Направлениедопразвитие-ховер.svg');
 }
-
+.trend7:hover {
+  background-image: url('https://cdn.nyutonika.ru/svg/Направления-дз-ховер.svg');
+}
 .trend-nav-base>li>ul>li>a {
   background: #FEF7FF;
   border-radius: 20px;
@@ -2910,6 +2915,7 @@ ul.accordion-answer>li>div>p {
   padding: 20px 10px;
   margin: 28px 0px;
   border: 2px solid #FEF7FF;
+  transition: all 0.5s;
 }
 
 .trend-nav-base>li>ul>li>a:hover {
