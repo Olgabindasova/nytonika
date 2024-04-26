@@ -18,6 +18,7 @@
     <script src="js/uikit-icons.js" type="text/javascript"></script>
 
     <title>Ньютоника</title>
+
 </head>
 
 <body>
@@ -131,38 +132,42 @@
                     </div>
                 </div>
             </div>
+            
+
             <div class="page-lk">
                 <h1 class="uk-text-left uk-margin-top">Последние занятия</h1>
                 <div class="uk-margin-large-top">
                     <ul class="uk-grid-match uk-grid-small  uk-child-width-1-2@m uk-child-width-1-1@s"
                         uk-sortable="handle: .card-lk" uk-grid>
                         <li>
+
                             <div class="card-lk color-next-class-card educator">
-                                <div class="card-lk_title">
-                                    <div class="card-lk_title-data">
+                                <ul class="nav nav-kebab">
+                                    <div class="kebab">
+                                        <figure></figure>
+                                        <figure class="middle"></figure>
+                                        <div class="cross">x</div>
+                                        <figure></figure>
+                                        <ul class="dropdown">
+                                            <li><a href="">Отменить</a></li>
+                                            <li><a href="">Написать о проблеме</a></li>
+                                            <li><a href="">Вернуть средства</a></li>
+                                        </ul>
+                                    </div>
+                                </ul>
+                                <div class="card-lk_title card-lk_title-kebab">
+
+                                    <div class="card-lk_title-data card-lk_title-data-kebab">
                                         <div>Занятие</div>
                                         <div>04.05.23 10:02</div>
+
                                     </div>
                                     <div class="card-lk_title-pay">
                                         <span class="payment-error">Ошибка оплаты</span>
-                                        <ul uk-accordion="animation: false">
-                                            <li>
-                                                <a class="uk-accordion-title" href="#">Отмена оплаты</a>
-                                                <div class="uk-accordion-content">
-                                                    <ul class="">
-                                                        <li><a href="#">Отменить</a></li>
-                                                        <li>
-                                                            <a href="#">Написать о проблеме</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#">Вернуть средства</a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </li>
-                                        </ul>
                                     </div>
+
                                 </div>
+
                                 <div class="card-lk_content educator-info">
                                     <p><span>Ученик:</span>Тестовый ученик 1</p>
                                     <p><span>Преподаватель:</span>Тестовый логопед</p>
@@ -170,7 +175,9 @@
                                 </div>
 
                             </div>
+
                         </li>
+                       
                         <li>
                             <div class="card-lk color-next-class-card educator">
                                 <div class="card-lk_title">
@@ -179,23 +186,7 @@
                                         <div>04.05.23 10:02</div>
                                     </div>
                                     <div class="card-lk_title-pay">
-                                        <span class="payment-made">Оплачено</span>
-                                        <ul uk-accordion="animation: false">
-                                            <li>
-                                                <a class="uk-accordion-title" href="#">Отмена оплаты</a>
-                                                <div class="uk-accordion-content">
-                                                    <ul class="">
-                                                        <li><a href="#">Отменить</a></li>
-                                                        <li>
-                                                            <a href="#">Написать о проблеме</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#">Вернуть средства</a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </li>
-                                        </ul>
+                                        <span class="return-issued">Возврат оформлен</span>
                                     </div>
                                 </div>
                                 <div class="card-lk_content educator-info">
@@ -369,6 +360,20 @@
 
     <script src="js/scripts.js" type="text/javascript"></script>
     <script src="js/jquery.maskedinput-1.4.1.js" type="text/javascript"></script>
+    <script>
+
+        var kebab = document.querySelector('.kebab'),
+            middle = document.querySelector('.middle'),
+            cross = document.querySelector('.cross'),
+            dropdown = document.querySelector('.dropdown');
+
+        kebab.addEventListener('click', function () {
+            middle.classList.toggle('active');
+            cross.classList.toggle('active');
+            dropdown.classList.toggle('active');
+        })
+
+    </script>
 </body>
 
 </html>
