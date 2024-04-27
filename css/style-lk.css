@@ -4556,9 +4556,8 @@ ol.text-dogovora-items ol ol li::before {
                 }
 
 
-                .dropdown li a {
+                .dropdown li a,  .dropdown li button {
                     width: 100%;
-
                     display: inline-block;
                     white-space: pre;
                     box-sizing: border-box;
@@ -4568,6 +4567,12 @@ ol.text-dogovora-items ol ol li::before {
                     line-height: 14px !important;
                     text-decoration: none;
                     color: var(--colorDanger);
+                    background-color: transparent;
+                    border: 0;
+                    text-align: left;
+                    padding-block: 0;
+                    padding-inline: 0;
+                    cursor: pointer;
                 }
 
                 .dropdown li:hover {
