@@ -291,6 +291,7 @@ h4 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  overflow-y: hidden;
 }
 
 .main {
@@ -310,7 +311,54 @@ h4 {
 .center {
   text-align: center;
 }
+.footer-buttons {
+  position: fixed;
+  z-index: 100000000;
+  bottom: 0;
+  display: none;
+  justify-items: stretch;
+  justify-content: space-between;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+}
 
+.footer-buttons>a {
+  display: flex;
+  padding: 12px 10px 15px;
+  text-decoration: none;
+  color: #fff;
+  font-family: 'Nunito-Bold';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 10px;
+  transition: all 0.5s;
+}
+@media (max-width: 561px){
+  .footer-buttons {
+    display: grid;
+  }
+  .footer{
+    margin-bottom: 47px 
+  }
+  .scrollup {
+    bottom: 10px;
+}
+}
+.footer-buttons_t{
+  background-color: #AE00D4;
+}
+.footer-buttons_t:hover{
+  background-color: #9205b1;
+}
+.footer-buttons_w{
+  background-color: #54D0B1;
+}
+.footer-buttons_w:hover{
+  background-color: #20A0A0;
+}
 
 :root {
   --scrollbarBg: rgb(248 248 248);
@@ -505,6 +553,12 @@ h4 {
   background: url('https://cdn.nyutonika.ru/icons/наверх.svg') no-repeat;
   background-size: 60px 60px;
   z-index: 10000;
+}
+@media (max-width: 561px){
+  
+  .scrollup {
+    bottom: 20px;
+}
 }
 
 .button-one {
@@ -2873,9 +2927,11 @@ ul.accordion-answer>li>div>p {
 .trend6 {
   background-image: url('https://cdn.nyutonika.ru/svg/Направлениедопразвитие.svg');
 }
+
 .trend7 {
   background-image: url('https://cdn.nyutonika.ru/svg/Напрпвления-дз.svg');
 }
+
 .trend1:hover {
   background-image: url('https://cdn.nyutonika.ru/svg/Направление-логопедия-ховер.svg');
 }
@@ -2899,9 +2955,11 @@ ul.accordion-answer>li>div>p {
 .trend6:hover {
   background-image: url('https://cdn.nyutonika.ru/svg/Направлениедопразвитие-ховер.svg');
 }
+
 .trend7:hover {
   background-image: url('https://cdn.nyutonika.ru/svg/Направления-дз-ховер.svg');
 }
+
 .trend-nav-base>li>ul>li>a {
   background: #FEF7FF;
   border-radius: 20px;
@@ -9179,7 +9237,7 @@ section.math-hach>.seven-section>.seven-section-block {
 
 
 /*---Стилизация селектов ----*/
- .choices {
+.choices {
   margin: 10px 10px 20px 10px !important;
   width: 100%;
 }
@@ -9209,20 +9267,23 @@ section.math-hach>.seven-section>.seven-section-block {
 .choices__list--dropdown,
 .choices__list[aria-expanded] {
   margin-top: -4px;
- background-color: #fcf7fe;
+  background-color: #fcf7fe;
 }
 
 .choices__list--dropdown .choices__item--selectable.is-highlighted,
 .choices__list[aria-expanded] .choices__item--selectable.is-highlighted {
   background-color: #ae00d417;
 }
-.choices__list--dropdown .choices__item, .choices__list[aria-expanded] .choices__item {
+
+.choices__list--dropdown .choices__item,
+.choices__list[aria-expanded] .choices__item {
   padding: 15px 20px;
   font-weight: 700;
   font-family: "Nunito-Bold";
   font-size: 16px;
   color: #2A3B4F !important;
 }
+
 .choices__list--single .choices__item {
   font-weight: 400;
   font-family: "Nunito-Bold";
@@ -9249,27 +9310,31 @@ section.math-hach>.seven-section>.seven-section-block {
 }
 
 @media (max-width: 500px) {
-  .choices__inner{
+  .choices__inner {
     padding: 10px 20px !important;
     min-height: 45px;
   }
+
   .choices__list--single .choices__item {
     font-size: 15px;
     line-height: 24px;
+  }
+
+  .choices__list--dropdown .choices__item,
+  .choices__list[aria-expanded] .choices__item {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
 }
-.choices__list--dropdown .choices__item, .choices__list[aria-expanded] .choices__item {
-  padding: 10px 20px;
-  font-size: 14px;
-}
-} 
 
 /*---Стилизация форма в модальном окне ----*/
-.feedback-form .checkbox-tab{
-     display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
+.feedback-form .checkbox-tab {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
 }
+
 .checkbox-tab.feedback-form>span {
   color: #546272;
   font-family: 'Nunito';
@@ -9278,16 +9343,18 @@ section.math-hach>.seven-section>.seven-section-block {
   font-size: 13px;
   line-height: 15px;
 }
-.checkbox-tab.feedback-form>input{
+
+.checkbox-tab.feedback-form>input {
   background-color: #ffffff !important;
-    border-color: #ae00d4 !important;
-    border: 1px solid;
-    border-radius: 3px;
-    width: 20px;
-    height: 20px;
-    min-width: 20px;
-    margin-right: 15px;
+  border-color: #ae00d4 !important;
+  border: 1px solid;
+  border-radius: 3px;
+  width: 20px;
+  height: 20px;
+  min-width: 20px;
+  margin-right: 15px;
 }
+
 .checkbox-tab.feedback-form>.uk-checkbox:checked {
   background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8.00034 16L3 10.7499L4.42838 9.25013L8.00135 12.9984L8.00034 12.9995L16.5716 4L18 5.49974L9.42872 14.5003L8.00135 15.9989L8.00034 16V16Z' fill='%23AE00D4'/%3E%3C/svg%3E");
 }
