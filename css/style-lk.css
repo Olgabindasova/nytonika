@@ -21,8 +21,8 @@
 /*---------Скролл-----------*/
 
 .section-lk {
-    scrollbar-width: var(--scrollbarWidth);
-    scrollbar-color: var(--scrollbarThumb) var(--scrollbarBg);
+    scrollbar-width: 1px;
+    scrollbar-color: var(--colorWhiteText) var(--colorWhiteText);
 }
 
 .section-lk::-webkit-scrollbar {
@@ -93,7 +93,16 @@
     height: 100%;
     min-height: 100vh;
 }
-
+.footer-buttons-lk {
+    border-top: 1px solid #fff;
+}
+@media (max-width: 561px){
+     
+    .lk-wrapper{
+      margin-bottom: 48px;
+    }
+     
+  }
 .aside-lk {
     z-index: 1;
     background-color: var(--main-color);
@@ -1668,7 +1677,8 @@ input:-webkit-autofill {
 .activity-packages_content {
     display: flex;
     justify-content: space-between;
-    padding: 30px 0 20px 0;
+    padding: 30px 0 20px;
+    gap: 10px;
 }
 
 .activity-packages_content>p {
@@ -1858,6 +1868,7 @@ input:-webkit-autofill {
     font-family: 'Nunito-Bold';
     font-size: 14px;
     font-weight: 700;
+  
 }
 
 .activity-packages_content.sale {
@@ -1867,14 +1878,16 @@ input:-webkit-autofill {
     padding: 10px 0px 0 0;
     position: relative;
     top: 16px;
-    text-decoration: line-through;
     color: var(--colorWhiteText);
 }
 
 .activity-packages_content.sale>p.activity-packages_content_price {
-    font-size: 20px;
+    font-size: 20px; 
 }
-
+.activity-packages_content.sale>p.activity-packages_content_price>span {
+    text-decoration: line-through;
+    font-size: 28px;
+}
 .student {
     background-color: var(--colorBlockCardOne);
     padding: 30px;
