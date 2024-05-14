@@ -311,6 +311,7 @@ h4 {
 .center {
   text-align: center;
 }
+
 .footer-buttons {
   position: fixed;
   z-index: 100000000;
@@ -336,27 +337,34 @@ h4 {
   gap: 10px;
   transition: all 0.5s;
 }
-@media (max-width: 561px){
+
+@media (max-width: 561px) {
   .footer-buttons {
     display: grid;
   }
-  .footer{
+
+  .footer {
     margin-bottom: 47px;
   }
+
   .scrollup {
     bottom: 10px;
+  }
 }
-}
-.footer-buttons_t{
+
+.footer-buttons_t {
   background-color: #AE00D4;
 }
-.footer-buttons_t:hover{
+
+.footer-buttons_t:hover {
   background-color: #9205b1;
 }
-.footer-buttons_w{
+
+.footer-buttons_w {
   background-color: #54D0B1;
 }
-.footer-buttons_w:hover{
+
+.footer-buttons_w:hover {
   background-color: #20A0A0;
 }
 
@@ -554,11 +562,12 @@ h4 {
   background-size: 60px 60px;
   z-index: 10000;
 }
-@media (max-width: 561px){
-  
+
+@media (max-width: 561px) {
+
   .scrollup {
     bottom: 20px;
-}
+  }
 }
 
 .button-one {
@@ -1474,7 +1483,7 @@ li.uk-parent>a[aria-expanded="true"] .icon-menu-tree {
 }
 
 .two-section-img5 {
-  left: 36%;
+  left: 30%;
   top: 622px;
 }
 
