@@ -474,33 +474,43 @@ h4 {
 .color19 {
   background-color: transparent !important;
 }
+
 .color20 {
   background-color: #32A3F6 !important;
 }
+
 .color21 {
   background-color: #FF9501 !important;
 }
+
 .bordercolor1 {
   border-color: #33C7A2 !important;
 }
+
 .bordercolor2 {
   border-color: #32A3F6 !important;
 }
+
 .bordercolor3 {
-  border-color: #FFD129  !important;
+  border-color: #FFD129 !important;
 }
+
 .bordercolor4 {
-  border-color: #FF9501  !important;
+  border-color: #FF9501 !important;
 }
+
 .bordercolor5 {
   border-color: #FF5642 !important;
 }
+
 .bordercolor6 {
   border-color: #D589CC !important;
 }
+
 .bordercolor7 {
   border-color: #20A0A0 !important;
 }
+
 .textcolor1 {
   color: #7DDF9B !important;
 }
@@ -9395,28 +9405,79 @@ section.math-hach>.seven-section>.seven-section-block {
 }
 
 /*---Блок с ценами ----*/
-.pricing-simple>div{
+.pricing-simple>div {
   order: 1;
+}
+.btn-reviews-pricing {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+  align-items: center;
+  justify-content: flex-start;
+  text-transform: none;
+  text-align: left;
+  background: #fff;
+  gap: 5px;
+  line-height: normal;
+  padding: 10px;
+  font-family: "Nunito-Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  width: fit-content;
+  color: #ae00d4;
+  border: 2px dashed transparent;
+  transition: all .5s;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.btn-reviews-pricing>span:nth-child(1){
+  color: inherit;
+  border-bottom: 2px dashed #ae00d4;
+  width: fit-content;
+  padding-bottom: 5px;
+  transition: all .3s;
+}
+
+.btn-reviews-pricing>span:nth-child(2){
+  top: -1px;
+  position: relative;
+  transition: all .5s;
+}
+
+.btn-reviews-pricing:hover{
+  color: #ffffff;
+  background: #9C16B9;
+}
+.btn-reviews-pricing:hover>span:nth-child(1){
+  border-bottom: 2px dashed transparent;
+  transform: translate(0px, 2px);
+}
+.btn-reviews-pricing:hover>span:nth-child(2){
+   transform: translate(0px, 2px);
 }
 .pricing-simple>div:nth-child(1) {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  padding: 50px 20px 10px;
+  padding: 50px 20px 30px;
+  gap: 20px;
+}
+.pricing-simple>div:nth-child(1)>h4 {
+  font-size: clamp(28px, 3.5vw, 36px);
+  line-height: clamp(28px, 3.5vw, 36px);
+  padding: 10px 0;
 }
 
-.pricing-simple>div:nth-child(1)>h4{
-  font-size: clamp(28px, 3.5vw, 36px); 
-  line-height: clamp(28px, 3.5vw, 36px);
-}
 .pricing-simple>div:nth-child(1)>div {
   font-size: clamp(16px, 2vw, 20px);
   line-height: clamp(20px, 2vw, 24px);
   font-family: "Nunito";
   font-style: normal;
   font-weight: 500;
-  margin-bottom: 50px;
 }
+
 .pricing-item {
   border: 2px solid;
   border-radius: 15px;
@@ -9428,22 +9489,27 @@ section.math-hach>.seven-section>.seven-section-block {
   transition: .5s ease-in-out;
 }
 
-.pricing-item:hover{
-  box-shadow: 0 15px 15px rgba(0,0,0,.1);
-      transform: translate(0,-15px);
+.pricing-item:hover {
+  box-shadow: 0 15px 15px rgba(0, 0, 0, .1);
+  transform: translate(0, -15px);
 
 }
+
 @media screen and (min-width: 640px) and (max-width: 1200px) {
-  .pricing-simple>div:nth-child(1), .pricing-simple>div:nth-child(2), .pricing-simple>div:nth-child(4){
+
+  .pricing-simple>div:nth-child(1),
+  .pricing-simple>div:nth-child(2),
+  .pricing-simple>div:nth-child(4) {
     order: 0;
   }
 }
+
 .pricing-item_icon {
   -webkit-border-radius: 50% / 100% 100% 0 0;
   -moz-border-radius: 50% / 100% 100% 0 0;
   border-radius: 50% / 100% 100% 0 0;
   height: 38px;
-  left: 35%;
+  left: 37%;
   top: -38px;
   position: relative;
   width: 75px;
@@ -9462,9 +9528,11 @@ section.math-hach>.seven-section>.seven-section-block {
   width: 70px;
   right: 6px;
 }
-.pricing-item_icon>img.right{
+
+.pricing-item_icon>img.right {
   right: -6px;
 }
+
 .pricing-item_icon::before {
   background: #fff;
   border-radius: 50%;
@@ -9480,6 +9548,10 @@ section.math-hach>.seven-section>.seven-section-block {
   .pricing-item_icon {
     left: 39%;
   }
+  .pricing-header_top.pricing-header_top_hit>li {
+    left: 38% !important;
+    bottom: 15px !important;
+  }
 }
 
 @container pricing-item (min-width: 380px) {
@@ -9488,12 +9560,32 @@ section.math-hach>.seven-section>.seven-section-block {
   }
 }
 
+@container pricing-item (min-width: 400px) {
+  .pricing-header_top_hit {
+    background: rgb(255, 255, 255);
+    background: linear-gradient(45deg, rgba(255, 255, 255, 1) 78%, rgba(255, 86, 66, 1) 78%, rgba(255, 86, 66, 1) 90%, rgba(255, 255, 255, 1) 90%) !important;
+}
+   
+.pricing-header_top.pricing-header_top_hit>li {
+  left: 40% !important;
+  bottom: 16px !important;
+}
+}
+@container pricing-item (min-width: 434px){
+  .pricing-header_top_hit {
+    background: rgb(255, 255, 255);
+    background: linear-gradient(45deg, rgba(255, 255, 255, 1) 81%, rgba(255, 86, 66, 1) 81%, rgba(255, 86, 66, 1) 90%, rgba(255, 255, 255, 1) 90%) !important;
+}
+}
 @container pricing-item (min-width: 450px) {
   .pricing-item_icon {
     left: 40%;
   }
+  .pricing-header_top.pricing-header_top_hit>li {
+    left: 41% !important;
+    bottom: 17px !important;
+  }
 }
-
 .pricing-header_top {
   display: flex;
   flex-direction: column;
@@ -9519,7 +9611,7 @@ section.math-hach>.seven-section>.seven-section-block {
   font-family: "Nunito-Bold";
   font-style: normal;
   font-weight: 700;
-  font-size: clamp(24px, 2.6vw, 32px); 
+  font-size: clamp(24px, 2.6vw, 32px);
   line-height: clamp(26px, 3.5vw, 36px);
   color: #2A3B4F;
   display: flex;
@@ -9530,9 +9622,11 @@ section.math-hach>.seven-section>.seven-section-block {
   position: relative;
   bottom: 35px;
 }
-.pricing-item_title.bottom{
+
+.pricing-item_title.bottom {
   bottom: 65px;
 }
+
 .pricing-item_one {
   padding: 15px 10px;
   display: flex;
@@ -9606,68 +9700,115 @@ section.math-hach>.seven-section>.seven-section-block {
   padding: 10px 10px;
   width: 100%;
 }
+
 .button-color-1 {
   background: #33C7A2;
   border: 2px solid #33C7A2;
 }
+
 .button-color-1:hover {
   color: #33C7A2;
   background: #fff;
   border: 2px solid #33C7A2;
 }
+
 .button-color-2 {
   background: #32A3F6;
   border: 2px solid #32A3F6;
 }
+
 .button-color-2:hover {
   color: #32A3F6;
   background: #fff;
   border: 2px solid #32A3F6;
 }
+
 .button-color-3 {
   background: #FFD129;
-  border: 2px solid #FFD129 ;
+  border: 2px solid #FFD129;
 }
+
 .button-color-3:hover {
-  color: #FFD129 ;
+  color: #FFD129;
   background: #fff;
   border: 2px solid #FFD129;
 }
+
 .button-color-4 {
   background: #FF9501;
   border: 2px solid #FF9501;
 }
+
 .button-color-4:hover {
-  color: #FF9501 ;
+  color: #FF9501;
   background: #fff;
   border: 2px solid #FF9501;
 }
+
 .button-color-5 {
   background: #FF5642;
   border: 2px solid #FF5642;
 }
+
 .button-color-5:hover {
   color: #FF5642;
   background: #fff;
   border: 2px solid #FF5642;
 }
+
 .button-color-6 {
   background: #D589CC;
   border: 2px solid #D589CC;
 }
+
 .button-color-6:hover {
   color: #D589CC;
   background: #fff;
   border: 2px solid #D589CC;
 }
- 
+
 .button-color-7 {
   background: #20A0A0;
   border: 2px solid #20A0A0;
 }
+
 .button-color-7:hover {
   color: #20A0A0;
   background: #fff;
   border: 2px solid #20A0A0;
 }
- 
+
+
+.pricing-header_top_hit {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(45deg, rgba(255, 255, 255, 1) 76%, rgba(255, 86, 66, 1) 76%, rgba(255, 86, 66, 1) 88%, rgba(255, 255, 255, 1) 88%);
+  height: 125px;
+  bottom: 38px;
+  position: relative;
+}
+.pricing-header_top_normal{
+  height: 125px;
+  bottom: 38px;
+  position: relative;
+}
+.pricing-header_top.pricing-header_top_hit>li{
+  font-size: 13px;
+    color: #fff;
+    display: block;
+    position: relative;
+    rotate: 45deg;
+    left: 39%;
+    bottom: 19px;
+    font-family: "Nunito-Bold";
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+}
+.pricing-item_title_hit{
+  height: 0;
+  bottom: 125px;
+}
+.pricing-item_set_hit{
+  min-height: 100px;
+  bottom: 25px;
+}
