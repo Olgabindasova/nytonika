@@ -9829,7 +9829,7 @@ section.math-hach>.seven-section>.seven-section-block {
 }
 
 .btn-reviews-pricing_mobile {
-  display: none;
+  display: none !important;
 }
 
 @media (max-width: 640px) {
@@ -9838,9 +9838,10 @@ section.math-hach>.seven-section>.seven-section-block {
   }
 
   .btn-reviews-pricing_mobile {
-    display: flex;
+    display: flex !important;
     order: 1;
     margin: 0 auto;
+    width: fit-content;
   }
 
   .pricing-simple>div:nth-child(1)>h4 {
