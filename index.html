@@ -812,10 +812,11 @@
                         <h4>Нормальные цены</h4>
                         <div>Мы установили нормальные цены на максимально высокий уровень репетиторов.</div>
                         <div>Теперь к нам приходят более тысячи довольных учеников каждый месяц.</div>
-                        <button class="btn-reviews-pricing btn-search-more">
-                          <span>Посмотреть все пакеты</span><span uk-icon="icon: arrow-down; ratio: 1.3"></span></button>
+                        <button class="btn-reviews-pricing btn-reviews-pricing_desctop btn-search-more">
+                            <span>Посмотреть все пакеты</span><span
+                                uk-icon="icon: arrow-down; ratio: 1.3"></span></button>
                     </div>
-                    <div class="reviews-pricing-item"  uk-scrollspy="cls: uk-animation-slide-top; delay: 800">
+                    <div class="reviews-pricing-item" uk-scrollspy="cls: uk-animation-slide-top; delay: 800">
                         <div class="pricing-item bordercolor1">
 
                             <div class="pricing-item_icon bordercolor1"><img
@@ -843,7 +844,7 @@
 
                         </div>
                     </div>
-                    <div class="reviews-pricing-item"  uk-scrollspy="cls: uk-animation-slide-top; delay: 1200">
+                    <div class="reviews-pricing-item" uk-scrollspy="cls: uk-animation-slide-top; delay: 1200">
                         <div class="pricing-item bordercolor2">
 
                             <div class="pricing-item_icon bordercolor2"><img class="right"
@@ -851,7 +852,7 @@
                             </div>
                             <ul class="pricing-header_top pricing-header_top_normal">
                                 <li>
-                                
+
                                 </li>
                             </ul>
                             <div class="pricing-item_title pricing-item_title_hit">Пакет<br>
@@ -865,13 +866,13 @@
                                 <span>Хватит<br>примерно на год</span>
                             </div>
                             <div class="pricing-item_button">
-                            <a href="" class="uk-button uk-button-primary button-tree button-color-2">
+                                <a href="" class="uk-button uk-button-primary button-tree button-color-2">
                                     Начать бесплатно</a>
                             </div>
 
                         </div>
                     </div>
-                    <div class="reviews-pricing-item"  uk-scrollspy="cls: uk-animation-slide-top; delay: 1600">
+                    <div class="reviews-pricing-item" uk-scrollspy="cls: uk-animation-slide-top; delay: 1600">
                         <div class="pricing-item bordercolor3">
 
                             <div class="pricing-item_icon  bordercolor3"><img
@@ -900,6 +901,8 @@
 
                         </div>
                     </div>
+                    <button class="btn-reviews-pricing btn-reviews-pricing_mobile btn-search-more">
+                        <span>Посмотреть все пакеты</span><span uk-icon="icon: arrow-down; ratio: 1.3"></span></button>
                     <div class="reviews-pricing-item">
                         <div class="pricing-item bordercolor4">
 
@@ -1028,6 +1031,10 @@
                         $button.toggle($hidden.length > count);
                     }
 
+                    const btn = document.getElementByClass('btn-reviews-pricing_mobile');
+                    btn.addEventListener('click', () => {
+                        btn.style.display = 'none';
+                    });
 
                 </script>
             </section>
