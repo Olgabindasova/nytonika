@@ -6504,7 +6504,7 @@ ol.lessons-list li:before {
     bottom: 88px;
     right: 38%;
     z-index: -10;
-
+    width: 85%;
   }
 
   .one-section>div>img {
@@ -6580,7 +6580,7 @@ ol.lessons-list li:before {
   }
 
   .two-section-img4 {
-    right: -10%;
+    right: -2%;
   }
 
   .card-teacher-content>.uk-card-badge {
@@ -9408,6 +9408,7 @@ section.math-hach>.seven-section>.seven-section-block {
 .pricing-simple>div {
   order: 1;
 }
+
 .btn-reviews-pricing {
   display: flex;
   flex-direction: row;
@@ -9432,7 +9433,8 @@ section.math-hach>.seven-section>.seven-section-block {
   cursor: pointer;
   border-radius: 10px;
 }
-.btn-reviews-pricing>span:nth-child(1){
+
+.btn-reviews-pricing>span:nth-child(1) {
   color: inherit;
   border-bottom: 2px dashed #ae00d4;
   width: fit-content;
@@ -9440,23 +9442,26 @@ section.math-hach>.seven-section>.seven-section-block {
   transition: all .3s;
 }
 
-.btn-reviews-pricing>span:nth-child(2){
+.btn-reviews-pricing>span:nth-child(2) {
   top: -1px;
   position: relative;
   transition: all .5s;
 }
 
-.btn-reviews-pricing:hover{
+.btn-reviews-pricing:hover {
   color: #ffffff;
   background: #9C16B9;
 }
-.btn-reviews-pricing:hover>span:nth-child(1){
+
+.btn-reviews-pricing:hover>span:nth-child(1) {
   border-bottom: 2px dashed transparent;
   transform: translate(0px, 2px);
 }
-.btn-reviews-pricing:hover>span:nth-child(2){
-   transform: translate(0px, 2px);
+
+.btn-reviews-pricing:hover>span:nth-child(2) {
+  transform: translate(0px, 2px);
 }
+
 .pricing-simple>div:nth-child(1) {
   display: flex;
   flex-direction: column;
@@ -9464,6 +9469,7 @@ section.math-hach>.seven-section>.seven-section-block {
   padding: 50px 20px 30px;
   gap: 20px;
 }
+
 .pricing-simple>div:nth-child(1)>h4 {
   font-size: clamp(28px, 3.5vw, 36px);
   line-height: clamp(28px, 3.5vw, 36px);
@@ -9548,6 +9554,7 @@ section.math-hach>.seven-section>.seven-section-block {
   .pricing-item_icon {
     left: 39%;
   }
+
   .pricing-header_top.pricing-header_top_hit>li {
     left: 38% !important;
     bottom: 15px !important;
@@ -9564,28 +9571,32 @@ section.math-hach>.seven-section>.seven-section-block {
   .pricing-header_top_hit {
     background: rgb(255, 255, 255);
     background: linear-gradient(45deg, rgba(255, 255, 255, 1) 78%, rgba(255, 86, 66, 1) 78%, rgba(255, 86, 66, 1) 90%, rgba(255, 255, 255, 1) 90%) !important;
+  }
+
+  .pricing-header_top.pricing-header_top_hit>li {
+    left: 40% !important;
+    bottom: 16px !important;
+  }
 }
-   
-.pricing-header_top.pricing-header_top_hit>li {
-  left: 40% !important;
-  bottom: 16px !important;
-}
-}
-@container pricing-item (min-width: 434px){
+
+@container pricing-item (min-width: 434px) {
   .pricing-header_top_hit {
     background: rgb(255, 255, 255);
     background: linear-gradient(45deg, rgba(255, 255, 255, 1) 81%, rgba(255, 86, 66, 1) 81%, rgba(255, 86, 66, 1) 90%, rgba(255, 255, 255, 1) 90%) !important;
+  }
 }
-}
+
 @container pricing-item (min-width: 450px) {
   .pricing-item_icon {
     left: 40%;
   }
+
   .pricing-header_top.pricing-header_top_hit>li {
     left: 41% !important;
     bottom: 17px !important;
   }
 }
+
 .pricing-header_top {
   display: flex;
   flex-direction: column;
@@ -9786,29 +9797,33 @@ section.math-hach>.seven-section>.seven-section-block {
   bottom: 38px;
   position: relative;
 }
-.pricing-header_top_normal{
+
+.pricing-header_top_normal {
   height: 125px;
   bottom: 38px;
   position: relative;
 }
-.pricing-header_top.pricing-header_top_hit>li{
+
+.pricing-header_top.pricing-header_top_hit>li {
   font-size: 13px;
-    color: #fff;
-    display: block;
-    position: relative;
-    rotate: 45deg;
-    left: 39%;
-    bottom: 19px;
-    font-family: "Nunito-Bold";
-    font-style: normal;
-    font-weight: 700;
-    line-height: 32px;
+  color: #fff;
+  display: block;
+  position: relative;
+  rotate: 45deg;
+  left: 39%;
+  bottom: 19px;
+  font-family: "Nunito-Bold";
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
 }
-.pricing-item_title_hit{
+
+.pricing-item_title_hit {
   height: 0;
   bottom: 125px;
 }
-.pricing-item_set_hit{
+
+.pricing-item_set_hit {
   min-height: 100px;
   bottom: 25px;
 }
