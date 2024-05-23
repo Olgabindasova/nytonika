@@ -9831,7 +9831,9 @@ section.math-hach>.seven-section>.seven-section-block {
 .btn-reviews-pricing_mobile {
   display: none !important;
 }
-
+.pricing-margin>div>section {
+  margin: -60px 0px 70px;
+}
 @media (max-width: 640px) {
   .btn-reviews-pricing_desctop {
     display: none !important;
