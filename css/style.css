@@ -9844,6 +9844,18 @@ section.math-hach>.seven-section>.seven-section-block {
     width: fit-content;
   }
 
+  .btn-search-more_mobileclouse.active {
+    display: flex;
+  }
+
+  .btn-search-more_mobileclouse {
+    display: none;
+  }
+
+  .btn-search-more_mobile.active {
+    display: flex !important;
+  }
+
   .pricing-simple>div:nth-child(1)>h4 {
     text-align: center;
   }

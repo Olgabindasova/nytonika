@@ -901,11 +901,8 @@
 
                         </div>
                     </div>
-                    <div class="btn-reviews-pricing_mobile">
-                        <button class="btn-reviews-pricing btn-search-more">
-                            <span>Посмотреть все пакеты</span><span uk-icon="icon: arrow-down; ratio: 1.3"></span></button>
-                    </div>
-                    
+
+
                     <div class="reviews-pricing-item">
                         <div class="pricing-item bordercolor4">
 
@@ -1018,12 +1015,21 @@
 
                         </div>
                     </div>
+                    <div class="btn-reviews-pricing_mobile">
+                        <button class="btn-reviews-pricing btn-search-more btn-search-more_mobile">
+                            <span>Посмотреть все пакеты</span><span
+                                uk-icon="icon: arrow-down; ratio: 1.3"></span></button>
+                        <button class="btn-reviews-pricing btn-search-more_mobileclouse">
+                            <span>Cкрыть пакеты</span><span uk-icon="icon:  arrow-up; ratio: 1.3"></span></button>
+                    </div>
                 </div>
+
                 <script>
                     const SHOW_INITIAL = 4;
                     const SHOW_MORE = 4;
                     const $button = $('.btn-search-more');
                     const $items = $('.reviews-pricing-item').hide();
+                    const $button2 = $('.btn-search-more_mobileclouse');
 
                     showItems(SHOW_INITIAL);
                     $button.click(() => showItems(SHOW_MORE));
@@ -1033,11 +1039,19 @@
                         $hidden.slice(0, count).show();
                         $button.toggle($hidden.length > count);
                     }
+                    $button2.click(() => $('.reviews-pricing-item').slice(-4).css('display', 'none'));
 
-                    const btn = document.getElementByClass('btn-reviews-pricing_mobile');
-                    btn.addEventListener('click', () => {
-                        btn.style.display = 'none';
-                    });
+                    document.querySelector('.btn-search-more_mobile').addEventListener('click', () => {
+                        document.querySelector('.btn-search-more_mobileclouse').classList.add('active');
+                        document.querySelector('.btn-search-more_mobile').classList.remove('active');
+                    })
+
+                    document.querySelector('.btn-search-more_mobileclouse').addEventListener('click', () => {
+                        document.querySelector('.btn-search-more_mobileclouse').classList.remove('active');
+                        document.querySelector('.btn-search-more_mobile').classList.add('active');
+
+                    })
+
 
                 </script>
             </section>
