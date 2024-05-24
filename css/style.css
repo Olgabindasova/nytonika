@@ -2644,7 +2644,31 @@ ul.accordion-answer>li>div>p {
 .form-tab-1-checkbox>li {
   min-height: 150px;
 }
-
+.form-tab-1d>li:nth-child(1)>a {
+  background: #D41B19;
+  border: 2px solid #FFFFFF;
+  border-radius: 10px;
+  color: #ffffff;
+ cursor: default;
+}
+.form-tab-1d>li:nth-child(2)>a{
+  transition: all 0.5s;
+}
+.form-tab-1d>li:nth-child(2)>a:hover {
+  background: #20A0A0;
+  border: 2px solid #FFFFFF;
+  border-radius: 10px;
+  color: #ffffff;
+}
+  
+.button-form-tab-1, .button-form-tab-2{
+  border-radius: 10px;
+}
+.button-form-tab-1.passive{
+  background: #fff !important;
+  background-color: #fff !important;
+  color: #ccc !important;
+}
 .checkbox-tab {
   margin: 10px;
   display: flex;

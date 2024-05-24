@@ -59,6 +59,18 @@ $(document).ready(function () {
 }); 
 
 
+$(document).ready(function () {
+  // добавляет класс passive
+document.querySelector('.button-form-tab-2').addEventListener('mouseover', () => {
+document.querySelector('.button-form-tab-1').classList.add('passive');
+})
+// убирает класс passive
+document.querySelector('.button-form-tab-2').addEventListener('mouseout', () => {
+document.querySelector('.button-form-tab-1').classList.remove('passive');
+})
+}); 
+
+ 
 // добавляет класс active
 
 document.querySelector('.menu_one').addEventListener('click', () => {
@@ -68,7 +80,7 @@ document.querySelector('.menu_one').addEventListener('click', () => {
   document.querySelector('.logo2').classList.add('active');
   document.querySelector('.menu-lk').classList.add('active');
   document.querySelector('.close-menu').classList.add('close-menu-active');
-})
+});
 
 // удаляет  класс  active
 
@@ -79,22 +91,22 @@ document.querySelector('.close-menu').addEventListener('click', () => {
   document.querySelector('.logo2').classList.remove('active');
   document.querySelector('.menu-lk').classList.remove('active');
   document.querySelector('.close-menu').classList.remove('close-menu-active')
-})
-
-
-
-$('.rat').on('mouseover', function(){
-  let $this = $(this);
-  $this.nextAll().removeClass('star').addClass( "star-o" );
-  $this.prevAll().removeClass( "star-o" ).addClass('star');
-  $this.removeClass( "star-o" ).addClass('star');
 });
-$('.rat').one('click',function(){
- let $this = $(this); $this.addClass('active').siblings().removeClass('active');
-});
-$('.rat').on('mouseleave', function(){
-  let select = $('.active');
-  select.nextAll().removeClass('star').addClass('star-o');
-  select.prevAll().removeClass('star-o').addClass('star');
-  select.removeClass('star-o').addClass('star');
-});
+
+ 
+
+$(document).ready(function () {
+const multiSelect = () => {
+  const elements = document.querySelectorAll('.js-choice');
+  elements.forEach(el => {
+  const choices = new Choices(el, {
+  searchEnabled: false,
+  itemSelectText: '',
+  shouldSort: false,
+  })
+  });
+  };
+  multiSelect();
+}); 
+
+ 
