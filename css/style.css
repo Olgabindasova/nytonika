@@ -1245,7 +1245,15 @@ span.menu-one {
   margin: 15px 20px 10px 0px;
   padding: 12px 25px;
 }
-
+.menu-second-mobile>li>a {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  background: #F8F8F8;
+  border-radius: 10px;
+  margin: 15px 20px 10px 0px;
+  padding: 12px 25px;
+}
 .menu-second-mobile>li.uk-parent>a[aria-expanded="true"] {
   background: #FCEDFF;
 }
