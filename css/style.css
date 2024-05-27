@@ -482,7 +482,15 @@ h4 {
 .color21 {
   background-color: #FF9501 !important;
 }
-
+.color22 {
+  background-color: #C774FB !important;
+}
+.color23 {
+  background-color: #40CDE0 !important;
+}
+.color24 {
+  background-color: #FFB31F!important;
+}
 .bordercolor1 {
   border-color: #33C7A2 !important;
 }
@@ -510,7 +518,15 @@ h4 {
 .bordercolor7 {
   border-color: #20A0A0 !important;
 }
-
+.bordercolor8 {
+  border-color: #C774FB !important;
+}
+.bordercolor9 {
+  border-color: #40CDE0 !important;
+}
+.bordercolor10 {
+  border-color: #FFB31F !important;
+}
 .textcolor1 {
   color: #7DDF9B !important;
 }
@@ -9824,8 +9840,36 @@ section.math-hach>.seven-section>.seven-section-block {
   background: #fff;
   border: 2px solid #20A0A0;
 }
+.button-color-8 {
+  background: #C774FB;
+  border: 2px solid #C774FB;
+}
 
+.button-color-8:hover {
+  color: #C774FB;
+  background: #fff;
+  border: 2px solid #C774FB;
+}
+.button-color-9 {
+  background: #40CDE0;
+  border: 2px solid #40CDE0;
+}
 
+.button-color-9:hover {
+  color: #40CDE0;
+  background: #fff;
+  border: 2px solid #40CDE0;
+} 
+.button-color-10 {
+  background: #FFB31F;
+  border: 2px solid #FFB31F;
+}
+
+.button-color-10:hover {
+  color: #FFB31F;
+  background: #fff;
+  border: 2px solid #FFB31F;
+} 
 .pricing-header_top_hit {
   background: rgb(255, 255, 255);
   background: linear-gradient(45deg, rgba(255, 255, 255, 1) 76%, rgba(255, 86, 66, 1) 76%, rgba(255, 86, 66, 1) 88%, rgba(255, 255, 255, 1) 88%);
