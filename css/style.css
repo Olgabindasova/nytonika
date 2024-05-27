@@ -1254,6 +1254,10 @@ span.menu-one {
   margin: 15px 20px 10px 0px;
   padding: 12px 25px;
 }
+.menu-second-sub-mobile>li>a.cat{
+  font-family: 'Nunito-Black';
+  font-size: 15px !important;
+}
 .menu-second-mobile>li.uk-parent>a[aria-expanded="true"] {
   background: #FCEDFF;
 }
