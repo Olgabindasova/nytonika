@@ -226,10 +226,12 @@ img {
 
 a {
   text-decoration: none;
+  color: #9C16B9;
 }
 
 a:hover {
   text-decoration: underline;
+  color: #9C16B9;
 }
 
 *,
