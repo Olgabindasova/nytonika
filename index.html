@@ -811,8 +811,9 @@
                 <h2 class="uk-text-center">Нормальные цены</h2>
                 <div class="pricing pricing-simple uk-child-width-1-2@s uk-child-width-1-2@m uk-child-width-1-4@l uk-grid-small"
                     uk-grid>
-                    <div class="reviews-pricing-item" uk-scrollspy="cls: uk-animation-slide-top; delay: 400">
-                        <h4>Репетиторы профи																	
+                    <div class="reviews-pricing-item price-disclosure"
+                        uk-scrollspy="cls: uk-animation-slide-top; delay: 400">
+                        <h4>Репетиторы профи
                         </h4>
                         <div>Мы установили нормальные цены на максимально высокий уровень репетиторов.</div>
                         <div>Теперь к нам приходят более тысячи довольных учеников каждый месяц.</div>
@@ -820,7 +821,8 @@
                             <span>Посмотреть все пакеты</span><span
                                 uk-icon="icon: arrow-down; ratio: 1.3"></span></button>
                     </div>
-                    <div class="reviews-pricing-item" uk-scrollspy="cls: uk-animation-slide-top; delay: 800">
+                    <div class="reviews-pricing-item price-disclosure"
+                        uk-scrollspy="cls: uk-animation-slide-top; delay: 800">
                         <div class="pricing-item bordercolor1">
 
                             <div class="pricing-item_icon bordercolor1"><img
@@ -848,7 +850,8 @@
 
                         </div>
                     </div>
-                    <div class="reviews-pricing-item" uk-scrollspy="cls: uk-animation-slide-top; delay: 1200">
+                    <div class="reviews-pricing-item price-disclosure"
+                        uk-scrollspy="cls: uk-animation-slide-top; delay: 1200">
                         <div class="pricing-item bordercolor2">
 
                             <div class="pricing-item_icon bordercolor2"><img class="right"
@@ -907,7 +910,7 @@
                     </div>
 
 
-                    <div class="reviews-pricing-item">
+                    <div class="reviews-pricing-item price-disclosure">
                         <div class="pricing-item bordercolor4">
 
                             <div class="pricing-item_icon bordercolor4"><img
@@ -935,7 +938,7 @@
 
                         </div>
                     </div>
-                    <div class="reviews-pricing-item">
+                    <div class="reviews-pricing-item price-disclosure">
                         <div class="pricing-item bordercolor5">
 
                             <div class="pricing-item_icon bordercolor5"><img class="right"
@@ -963,7 +966,7 @@
 
                         </div>
                     </div>
-                    <div class="reviews-pricing-item">
+                    <div class="reviews-pricing-item price-disclosure">
                         <div class="pricing-item bordercolor6">
 
                             <div class="pricing-item_icon bordercolor6"><img
@@ -991,7 +994,7 @@
 
                         </div>
                     </div>
-                    <div class="reviews-pricing-item">
+                    <div class="reviews-pricing-item price-disclosure">
                         <div class="pricing-item bordercolor7">
 
                             <div class="pricing-item_icon bordercolor7"><img class="right"
@@ -1032,7 +1035,7 @@
                     const SHOW_INITIAL = 4;
                     const SHOW_MORE = 4;
                     const $button = $('.btn-search-more');
-                    const $items = $('.reviews-pricing-item').hide();
+                    const $items = $('.price-disclosure').hide();
                     const $button2 = $('.btn-search-more_mobileclouse');
 
                     showItems(SHOW_INITIAL);
@@ -1043,7 +1046,7 @@
                         $hidden.slice(0, count).show();
                         $button.toggle($hidden.length > count);
                     }
-                    $button2.click(() => $('.reviews-pricing-item').slice(-4).css('display', 'none'));
+                    $button2.click(() => $('.price-disclosure').slice(-4).css('display', 'none'));
 
                     document.querySelector('.btn-search-more_mobile').addEventListener('click', () => {
                         document.querySelector('.btn-search-more_mobileclouse').classList.add('active');
@@ -1060,10 +1063,13 @@
                 </script>
 
 
-                <div class="pricing pricing-simple uk-child-width-1-2@s uk-child-width-1-2@m uk-child-width-1-4@l uk-grid-small uk-margin-large-top" uk-grid>
-                    <div class="reviews-pricing-item" style="justify-content: flex-start;" uk-scrollspy="cls: uk-animation-scale-up; delay: 600">
+                <div class="pricing pricing-simple uk-child-width-1-2@s uk-child-width-1-2@m uk-child-width-1-4@l uk-grid-small uk-margin-large-top"
+                    uk-grid>
+                    <div class="reviews-pricing-item" style="justify-content: flex-start;"
+                        uk-scrollspy="cls: uk-animation-scale-up; delay: 600">
                         <h4>Репетиторы магистранты</h4>
-                        <div>Если нужно поддержать знания по предмету, то с этим прекрасно справятся репетиторы магистранты - студенты последних курсов ВУЗов.</div>
+                        <div>Если нужно поддержать знания по предмету, то с этим прекрасно справятся репетиторы
+                            магистранты - студенты последних курсов ВУЗов.</div>
                     </div>
                     <div class="reviews-pricing-item" uk-scrollspy="cls: uk-animation-scale-up; delay: 1000">
                         <div class="pricing-item bordercolor8">
@@ -1152,7 +1158,7 @@
                     </div>
 
 
-                    
+
                 </div>
             </section>
 
