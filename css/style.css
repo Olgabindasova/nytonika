@@ -6948,6 +6948,10 @@ ol.lessons-list li:before {
   .diagnostika-podgotovka {
     margin-bottom: -150px;
   }
+  .footer-logo {
+    
+    bottom: 10px;
+}
 }
 
 /*адаптив до 631*/
