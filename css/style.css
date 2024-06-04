@@ -735,11 +735,11 @@ h4 {
   background-color: #ae00d4;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 59 59'%3E%3Cpath fill='%23fff' fill-rule='evenodd' d='M16 21a1.5 1.5 0 0 1 1.5-1.5h25a1.5 1.5 0 0 1 0 3h-25A1.5 1.5 0 0 1 16 21Zm0 8a1.5 1.5 0 0 1 1.5-1.5h25a1.5 1.5 0 0 1 0 3h-25A1.5 1.5 0 0 1 16 29Zm0 8a1.5 1.5 0 0 1 1.5-1.5h25a1.5 1.5 0 0 1 0 3h-25A1.5 1.5 0 0 1 16 37Z' clip-rule='evenodd'/%3E%3C/svg%3E");
   background-position: center center;
-  background-size: 35px 35px;
+  background-size: 45px 45px;
   display: flex;
   position: relative;
-  width: 30px;
-  height: 30px;
+  width: 35px;
+  height: 35px;
   background-repeat: no-repeat;
   border-radius: 50%;
   border: 1px solid #ae00d4;
@@ -758,9 +758,9 @@ h4 {
   content: 'Mеню';
   display: block;
   position: relative;
-  top: 32px;
+  top: 35px;
   text-decoration: none !important;
-  font-size: 9px;
+  font-size: 10px;
   letter-spacing: -0.2px;
 }
 
@@ -808,11 +808,11 @@ a.button-menu:hover {
 .button-menu-lk-ex,
 .button-menu-lk-en {
   background-position: center center;
-  background-size: 25px 25px;
+  background-size: 30px 30px;
   position: relative;
   transition: all 0.5s;
-  width: 30px;
-  height: 30px;
+  width: 35px;
+  height: 35px;
   background-repeat: no-repeat;
   border-radius: 50%;
   border: 1px solid #ae00d4;
@@ -834,9 +834,9 @@ a.button-menu:hover {
   content: 'Войти';
   display: block;
   position: relative;
-  top: 32px;
+  top: 35px;
   text-decoration: none !important;
-  font-size: 9px;
+  font-size: 10px;
   letter-spacing: -0.2px;
 }
 a.button-menu-lk:hover{
@@ -855,9 +855,9 @@ a.button-menu-lk:hover{
   content: 'Выйти';
   display: block;
   position: relative;
-  top: 30px;
+  top: 34px;
   text-decoration: none !important;
-  font-size: 9px;
+  font-size: 10px;
   letter-spacing: -0.2px;
   color: #ae00d4;
 }
@@ -878,9 +878,9 @@ a.button-menu-lk-ex:hover{
   content: 'Профиль';
   display: block;
   position: relative;
-  top: 32px;
+  top: 35px;
   text-decoration: none !important;
-  font-size: 9px;
+  font-size: 10px;
   letter-spacing: -0.2px;
 }
 
@@ -895,10 +895,10 @@ a.button-menu-lk-en:hover {
   transition: all 0.1s;
   background-color: #fff;
   background-position: center center;
-  background-size: 20px 20px;
+  background-size: 23px 23px;
   position: relative;
-  width: 30px;
-  height: 30px;
+  width: 35px;
+  height: 35px;
   margin: 0 10px;
   background-repeat: no-repeat;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 33 35'%3E%3Cpath stroke='%239C16B9' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M14.266 8.664 9.04 2.483c-.603-.712-1.708-.71-2.408.01l-4.299 4.41c-1.28 1.313-1.645 3.262-.905 4.824 4.422 9.378 11.805 16.952 20.955 21.495 1.523.758 3.424.383 4.703-.93l4.34-4.452c.702-.72.704-1.858.002-2.476l-6.057-5.326c-.633-.557-1.618-.484-2.253.168l-2.108 2.162a.699.699 0 0 1-.854.14 22.777 22.777 0 0 1-8.283-8.496.75.75 0 0 1 .136-.877l2.102-2.154c.637-.655.706-1.668.156-2.319v.002Z'/%3E%3C/svg%3E");
@@ -915,9 +915,9 @@ a.button-menu-lk-en:hover {
   content: 'Звонок';
   display: block;
   position: relative;
-  top: 32px;
+  top: 35px;
   text-decoration: none !important;
-  font-size: 9px;
+  font-size: 10px;
   letter-spacing: -0.2px;
 }
 
@@ -5641,6 +5641,7 @@ ol.lessons-list li:before {
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
+    min-height: 45px;
   }
 
   .header-mobile>.button-two {
@@ -5652,7 +5653,7 @@ ol.lessons-list li:before {
   .mobile-buttons-block {
     display: flex;
     align-items: center;
-    gap: 7px;
+    gap: 8px;
   }
 
   .button-reg {
