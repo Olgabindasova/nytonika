@@ -147,11 +147,11 @@ video {
 html,
 body {
   max-width: 100%;
-  overflow-x: hidden;
-
 }
 
-
+html {
+  overflow-y: scroll;
+}
 
 /* always display scrollbars */
 body {
@@ -160,6 +160,7 @@ body {
   font-family: OpenSans, sans-serif;
   color: #24201E;
   height: 100%;
+  overflow-x: hidden;
 }
 
 div,
