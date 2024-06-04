@@ -713,19 +713,40 @@ h4 {
 }
 
 .button-menu {
-  background-image: url("https://cdn.nyutonika.ru/icons/menu.svg");
+  background-color: #ae00d4;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 59 59'%3E%3Cpath fill='%23fff' fill-rule='evenodd' d='M16 21a1.5 1.5 0 0 1 1.5-1.5h25a1.5 1.5 0 0 1 0 3h-25A1.5 1.5 0 0 1 16 21Zm0 8a1.5 1.5 0 0 1 1.5-1.5h25a1.5 1.5 0 0 1 0 3h-25A1.5 1.5 0 0 1 16 29Zm0 8a1.5 1.5 0 0 1 1.5-1.5h25a1.5 1.5 0 0 1 0 3h-25A1.5 1.5 0 0 1 16 37Z' clip-rule='evenodd'/%3E%3C/svg%3E");
   background-position: center center;
-  background-size: 40px 40px;
-  display: block;
+  background-size: 35px 35px;
+  display: flex;
   position: relative;
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 30px;
   background-repeat: no-repeat;
-  margin-top: 10px;
+  border-radius: 50%;
+  border: 1px solid #ae00d4;
+  transition: all 0.5s;
+  flex-direction: column;
+  align-items: center;
 }
 
 .button-menu:hover {
-  background-image: url("https://cdn.nyutonika.ru/icons/menu-hover.svg");
+  background-color: #fff;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 59 59'%3E%3Cpath fill='%23AE00D4' fill-rule='evenodd' d='M16 21a1.5 1.5 0 0 1 1.5-1.5h25a1.5 1.5 0 0 1 0 3h-25A1.5 1.5 0 0 1 16 21Zm0 8a1.5 1.5 0 0 1 1.5-1.5h25a1.5 1.5 0 0 1 0 3h-25A1.5 1.5 0 0 1 16 29Zm0 8a1.5 1.5 0 0 1 1.5-1.5h25a1.5 1.5 0 0 1 0 3h-25A1.5 1.5 0 0 1 16 37Z' clip-rule='evenodd'/%3E%3C/svg%3E");
+
+}
+
+.button-menu::after {
+  content: 'Mеню';
+  display: block;
+  position: relative;
+  top: 32px;
+  text-decoration: none !important;
+  font-size: 9px;
+  letter-spacing: -0.2px;
+}
+
+a.button-menu:hover {
+  text-decoration: none !important;
 }
 
 .button-menu[aria-expanded="true"] {
@@ -747,9 +768,7 @@ h4 {
   margin-top: -20px !important;
 }
 
-.button-menu-telefon {
-  display: block;
-}
+
 
 .entry {
   display: block;
@@ -763,60 +782,129 @@ h4 {
 
 .button-menu-lk,
 .button-menu-lk-ex {
-  display: none;
+  /* display: none;*/
 }
 
 .button-menu-lk,
-.button-menu-telefon,
 .button-menu-lk-ex,
 .button-menu-lk-en {
   background-position: center center;
-  background-size: 40px 40px;
+  background-size: 25px 25px;
   position: relative;
-  width: 50px;
-  height: 50px;
+  transition: all 0.5s;
+  width: 30px;
+  height: 30px;
   background-repeat: no-repeat;
-  margin-top: 10px;
-}
-
-.button-menu-lk-en {
-  top: -5px;
+  border-radius: 50%;
+  border: 1px solid #ae00d4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .button-menu-lk {
-  background-image: url("https://cdn.nyutonika.ru/icons/lk.svg");
-}
-
-.button-menu-lk-ex {
-  border: none;
-  background-image: url("https://cdn.nyutonika.ru/icons/lk2-.svg");
-  background-color: #fff;
-}
-
-.button-menu-lk-ex:hover {
-  background-image: url("https://cdn.nyutonika.ru/icons/lk3-.svg");
-}
-
-.button-menu-lk-en {
-  background-image: url("https://cdn.nyutonika.ru/icons/lk3+.svg");
-}
-
-.button-menu-lk-en:hover {
-  background-image: url("https://cdn.nyutonika.ru/icons/lk2+.svg");
-}
-
-.button-menu-telefon {
-  background-image: url("https://cdn.nyutonika.ru/icons/telefon.svg");
+  background-color: #ae00d4;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 59 59'%3E%3Cpath fill='%23fff' d='M25.87 44.336h19.484c.614 0 .985-.343 1.152-.548a1.51 1.51 0 0 0 .305-1.263C45.182 34.7 38.278 28.987 30.308 28.8a10.77 10.77 0 0 1-.797 0c-2.45.055-4.807.61-7.01 1.658a1.728 1.728 0 1 1-1.485-3.122c.7-.333 1.413-.624 2.138-.874A10.892 10.892 0 0 1 19 17.904C19 11.892 23.892 7 29.905 7c6.012 0 10.904 4.892 10.904 10.904 0 3.47-1.63 6.566-4.163 8.565a20.705 20.705 0 0 1 6.417 3.581 20.79 20.79 0 0 1 7.132 11.77 4.95 4.95 0 0 1-1.008 4.15 4.922 4.922 0 0 1-3.833 1.823H25.87a1.729 1.729 0 0 1 0-3.457Zm11.482-26.432c0-4.107-3.34-7.447-7.447-7.447s-7.448 3.34-7.448 7.447c0 3.993 3.16 7.261 7.11 7.439.112-.002.225-.005.338-.005.12 0 .242.002.362.004 3.94-.19 7.085-3.453 7.085-7.438Z'/%3E%3Cpath fill='%23fff' fill-rule='evenodd' stroke='%23fff' d='m17.831 33.219 4.942 4.753a.727.727 0 0 1 0 1.056l-4.942 4.753a.798.798 0 0 1-1.098 0 .727.727 0 0 1 0-1.056l3.616-3.478H9.776c-.428 0-.776-.334-.776-.747s.348-.747.776-.747H20.35l-3.616-3.478a.727.727 0 0 1 0-1.056.798.798 0 0 1 1.098 0Z' clip-rule='evenodd'/%3E%3C/svg%3E");
 }
 
 .button-menu-lk:hover {
-  background-image: url("https://cdn.nyutonika.ru/icons/lk-hover.svg");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 59 59'%3E%3Cpath fill='%23AE00D4' d='M25.87 44.336h19.483a1.46 1.46 0 0 0 1.152-.548 1.5 1.5 0 0 0 .305-1.263C45.182 34.7 38.278 28.987 30.307 28.8a10.765 10.765 0 0 1-.796 0c-2.45.055-4.808.61-7.01 1.658a1.728 1.728 0 1 1-1.485-3.122 20.7 20.7 0 0 1 2.137-.874A10.892 10.892 0 0 1 19 17.904C19 11.892 23.892 7 29.904 7c6.013 0 10.904 4.892 10.904 10.904 0 3.47-1.629 6.566-4.162 8.565 2.322.798 4.5 2.006 6.417 3.581a20.792 20.792 0 0 1 7.132 11.77 4.95 4.95 0 0 1-1.008 4.15 4.922 4.922 0 0 1-3.834 1.823H25.87a1.729 1.729 0 0 1 0-3.457Zm11.482-26.432c0-4.107-3.341-7.447-7.448-7.447-4.106 0-7.447 3.34-7.447 7.447 0 3.993 3.159 7.261 7.109 7.439.113-.002.225-.005.338-.005.121 0 .242.002.363.004 3.939-.19 7.085-3.453 7.085-7.438Z'/%3E%3Cpath fill='%23AE00D4' fill-rule='evenodd' stroke='%23AE00D4' d='m17.831 33.219 4.942 4.753a.727.727 0 0 1 0 1.056l-4.942 4.753a.798.798 0 0 1-1.098 0 .727.727 0 0 1 0-1.056l3.616-3.478H9.776c-.428 0-.776-.334-.776-.747s.348-.747.776-.747H20.35l-3.616-3.478a.727.727 0 0 1 0-1.056.798.798 0 0 1 1.098 0Z' clip-rule='evenodd'/%3E%3C/svg%3E%0A");
+  background-color: #fff;
+}
+.button-menu-lk::after{
+  content: 'Войти';
+  display: block;
+  position: relative;
+  top: 32px;
+  text-decoration: none !important;
+  font-size: 9px;
+  letter-spacing: -0.2px;
+}
+a.button-menu-lk:hover{
+  text-decoration: none;
+}
+.button-menu-lk-ex {
+  background-color: #ae00d4;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 59 59'%3E%3Cpath fill='%23fff' d='M33.43 43.336H13.948a1.46 1.46 0 0 1-1.151-.548 1.506 1.506 0 0 1-.306-1.263C14.12 33.7 21.023 27.987 28.994 27.8a10.76 10.76 0 0 0 .796 0c2.45.055 4.807.61 7.01 1.658a1.728 1.728 0 1 0 1.485-3.122 20.7 20.7 0 0 0-2.137-.874c2.527-2 4.153-5.092 4.153-8.558C40.3 10.892 35.409 6 29.396 6c-6.012 0-10.904 4.892-10.904 10.904 0 3.47 1.63 6.566 4.163 8.565a20.706 20.706 0 0 0-6.417 3.581 20.792 20.792 0 0 0-7.132 11.77 4.95 4.95 0 0 0 1.008 4.15 4.922 4.922 0 0 0 3.833 1.823H33.43a1.729 1.729 0 0 0 0-3.457ZM21.95 16.904c0-4.107 3.34-7.447 7.447-7.447s7.448 3.34 7.448 7.447c0 3.993-3.16 7.261-7.11 7.439-.112-.002-.225-.005-.338-.005-.12 0-.242.002-.362.004-3.94-.19-7.085-3.453-7.085-7.438Z'/%3E%3Cpath fill='%23fff' fill-rule='evenodd' stroke='%23fff' d='m42.831 32.219 4.942 4.753a.727.727 0 0 1 0 1.056l-4.942 4.753a.798.798 0 0 1-1.098 0 .727.727 0 0 1 0-1.056l3.616-3.478H34.776c-.428 0-.776-.334-.776-.747s.348-.747.776-.747H45.35l-3.616-3.478a.727.727 0 0 1 0-1.056.798.798 0 0 1 1.098 0Z' clip-rule='evenodd'/%3E%3C/svg%3E");
+}
+
+.button-menu-lk-ex:hover {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 59 59'%3E%3Cpath fill='%23AE00D4' d='M33.43 43.336H13.948a1.46 1.46 0 0 1-1.151-.548 1.506 1.506 0 0 1-.306-1.263C14.12 33.7 21.023 27.987 28.994 27.8a10.76 10.76 0 0 0 .796 0c2.45.055 4.807.61 7.01 1.658a1.728 1.728 0 1 0 1.485-3.122 20.7 20.7 0 0 0-2.137-.874c2.527-2 4.153-5.092 4.153-8.558C40.3 10.892 35.409 6 29.396 6c-6.012 0-10.904 4.892-10.904 10.904 0 3.47 1.63 6.566 4.163 8.565a20.706 20.706 0 0 0-6.417 3.581 20.792 20.792 0 0 0-7.132 11.77 4.95 4.95 0 0 0 1.008 4.15 4.922 4.922 0 0 0 3.833 1.823H33.43a1.729 1.729 0 0 0 0-3.457ZM21.95 16.904c0-4.107 3.34-7.447 7.447-7.447s7.448 3.34 7.448 7.447c0 3.993-3.16 7.261-7.11 7.439-.112-.002-.225-.005-.338-.005-.12 0-.242.002-.362.004-3.94-.19-7.085-3.453-7.085-7.438Z'/%3E%3Cpath fill='%23AE00D4' fill-rule='evenodd' stroke='%23AE00D4' d='m42.831 32.219 4.942 4.753a.727.727 0 0 1 0 1.056l-4.942 4.753a.798.798 0 0 1-1.098 0 .727.727 0 0 1 0-1.056l3.616-3.478H34.776c-.428 0-.776-.334-.776-.747s.348-.747.776-.747H45.35l-3.616-3.478a.727.727 0 0 1 0-1.056.798.798 0 0 1 1.098 0Z' clip-rule='evenodd'/%3E%3C/svg%3E%0A");
+  background-color: #fff;
+}
+.button-menu-lk-ex::after{
+  content: 'Выйти';
+  display: block;
+  position: relative;
+  top: 30px;
+  text-decoration: none !important;
+  font-size: 9px;
+  letter-spacing: -0.2px;
+  color: #ae00d4;
+}
+a.button-menu-lk-ex:hover{
+  text-decoration: none;
+}
+.button-menu-lk-en {
+  background-color: #F8F8F8;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 59 59'%3E%3Cpath fill='%23AE00D4' fill-rule='evenodd' d='M14.826 45.603H33.83c.054 0 .108.002.161.007h10.967c.613 0 .982-.336 1.148-.536a1.46 1.46 0 0 0 .305-1.239c-1.623-7.665-8.5-13.264-16.441-13.455h-.034a10.63 10.63 0 0 1-.73.002c-7.649.316-14.233 5.873-15.801 13.445-.092.44.017.893.297 1.24.163.2.524.536 1.124.536Zm24.172-16.369a20.584 20.584 0 0 1 3.675 2.371c3.633 2.939 6.16 7.036 7.113 11.54a4.792 4.792 0 0 1-1.005 4.067A4.941 4.941 0 0 1 44.958 49H25.529c-.055 0-.11-.003-.165-.008H14.826a4.792 4.792 0 0 1-3.74-1.787 4.872 4.872 0 0 1-.983-4.068 20.4 20.4 0 0 1 6.957-11.54 20.163 20.163 0 0 1 6.056-3.439c-2.349-2.005-4.438-5.26-4.438-8.46 0-5.873 4.842-10.655 10.807-10.69.136-.005.273-.008.41-.008 5.865 0 10.637 4.796 10.637 10.69 0 3.398-1.586 6.43-4.052 8.39.707.245 1.402.53 2.085.857.163.078.308.179.433.297Zm-9.437-16.838c-3.851.177-6.93 3.38-6.93 7.294 0 3.906 3.068 7.106 6.91 7.292a18.922 18.922 0 0 1 .536-.002c3.851-.266 6.901-3.43 6.901-7.282 0-4.023-3.326-7.297-7.417-7.302Z' clip-rule='evenodd'/%3E%3C/svg%3E%0A");
+}
+
+.button-menu-lk-en:hover {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 59 59'%3E%3Cpath  fill='%23fff' fill-rule='evenodd' d='M14.826 45.603H33.83c.055 0 .108.002.161.007h10.967a1.47 1.47 0 0 0 1.453-1.775c-1.623-7.665-8.5-13.264-16.441-13.455h-.034a10.867 10.867 0 0 1-.73.002c-7.649.316-14.233 5.873-15.801 13.445-.092.44.017.893.297 1.24.163.2.524.536 1.124.536Zm24.172-16.369a20.58 20.58 0 0 1 3.676 2.371c3.632 2.938 6.158 7.036 7.112 11.54a4.792 4.792 0 0 1-1.005 4.067A4.941 4.941 0 0 1 44.958 49H25.529c-.055 0-.11-.003-.164-.008H14.826a4.792 4.792 0 0 1-3.74-1.787 4.871 4.871 0 0 1-.983-4.068 20.4 20.4 0 0 1 6.957-11.54 20.162 20.162 0 0 1 6.056-3.439c-2.349-2.005-4.438-5.261-4.438-8.46 0-5.873 4.842-10.655 10.808-10.69.136-.005.272-.008.41-.008 5.864 0 10.636 4.796 10.636 10.69a10.7 10.7 0 0 1-4.051 8.39c.706.245 1.401.53 2.084.857.163.078.309.179.433.297Zm-9.437-16.838c-3.851.176-6.93 3.38-6.93 7.294 0 3.906 3.069 7.106 6.91 7.292a18.922 18.922 0 0 1 .536-.002c3.851-.266 6.902-3.43 6.902-7.282 0-4.023-3.327-7.297-7.418-7.302Z' clip-rule='evenodd'/%3E%3C/svg%3E%0A");
+  background-color: #ae00d4;
+}
+
+.button-menu-lk-en::after {
+  content: 'Профиль';
+  display: block;
+  position: relative;
+  top: 32px;
+  text-decoration: none !important;
+  font-size: 9px;
+  letter-spacing: -0.2px;
+}
+
+a.button-menu-lk-en:hover {
+  text-decoration: none !important;
+}
+
+.button-menu-telefon {
+  display: flex;
+  border-radius: 50%;
+  border: 1px solid #ae00d4;
+  transition: all 0.1s;
+  background-color: #fff;
+  background-position: center center;
+  background-size: 20px 20px;
+  position: relative;
+  width: 30px;
+  height: 30px;
+  margin: 0 10px;
+  background-repeat: no-repeat;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 33 35'%3E%3Cpath stroke='%239C16B9' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M14.266 8.664 9.04 2.483c-.603-.712-1.708-.71-2.408.01l-4.299 4.41c-1.28 1.313-1.645 3.262-.905 4.824 4.422 9.378 11.805 16.952 20.955 21.495 1.523.758 3.424.383 4.703-.93l4.34-4.452c.702-.72.704-1.858.002-2.476l-6.057-5.326c-.633-.557-1.618-.484-2.253.168l-2.108 2.162a.699.699 0 0 1-.854.14 22.777 22.777 0 0 1-8.283-8.496.75.75 0 0 1 .136-.877l2.102-2.154c.637-.655.706-1.668.156-2.319v.002Z'/%3E%3C/svg%3E");
+  flex-direction: column;
+  align-items: center;
 }
 
 .button-menu-telefon:hover {
-  background-image: url("https://cdn.nyutonika.ru/icons/telefon-hover.svg");
+  background-color: #ae00d4;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='59' height='59' fill='none' viewBox='0 0 59 59'%3E%3Cpath stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m27.266 19.664-5.227-6.181c-.603-.712-1.708-.71-2.408.01l-4.299 4.41c-1.28 1.313-1.645 3.262-.905 4.824 4.422 9.378 11.805 16.952 20.955 21.495 1.523.758 3.424.383 4.703-.93l4.34-4.452c.702-.72.704-1.858.002-2.476l-6.057-5.326c-.633-.557-1.618-.484-2.253.168l-2.107 2.162a.699.699 0 0 1-.855.14 22.777 22.777 0 0 1-8.282-8.496.75.75 0 0 1 .136-.877l2.101-2.154c.637-.655.706-1.668.156-2.319v.002Z'/%3E%3C/svg%3E");
+  background-size: 35px 35px;
+}
+.button-menu-telefon::after {
+  content: 'Звонок';
+  display: block;
+  position: relative;
+  top: 32px;
+  text-decoration: none !important;
+  font-size: 9px;
+  letter-spacing: -0.2px;
 }
 
+a.button-menu-telefon:hover {
+  text-decoration: none !important;
+}
 .button-two-mobile-header {
   width: 100%;
   background: #AE00D4;
@@ -828,7 +916,7 @@ h4 {
   text-align: center;
   color: #FFFFFF;
   text-transform: none;
-  padding: 15px;
+  padding: 10px 15px;
   display: none;
 }
 
@@ -992,6 +1080,7 @@ h4 {
 
 .header-mobile {
   display: none;
+  padding-bottom: 5px !important;
 }
 
 header {
@@ -1021,6 +1110,7 @@ header {
 
 .header-phone a {
   text-decoration: none;
+  white-space: nowrap;
 }
 
 .header-phone a:hover {
@@ -1198,6 +1288,7 @@ span.menu-one {
   margin: 15px;
   max-width: 600px !important;
   height: fit-content;
+  overflow-x: hidden;
 }
 
 .menu-slide>ul>li>a {
@@ -1217,19 +1308,40 @@ span.menu-one {
   font-family: 'Nunito-Bold';
   font-style: normal;
   font-weight: 700;
-  font-size: 14px;
-  line-height: 19px;
+  font-size: 16px;
   color: #292929;
-  margin-bottom: 30px;
-  margin-top: 10px;
+  margin: 10px 0;
   display: flex;
   flex-wrap: nowrap;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
+}
+.menu-mobile-reg {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  margin: 20px 0 0;
 }
 
+.menu-mobile-reg>a, .menu-mobile-reg>form>button {
+  font-family: 'Nunito-Bold';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  color: #292929;
+  background: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  transition: all 0.3s;
+  text-decoration: none;
+}
+.menu-mobile-reg>a:hover, .menu-mobile-reg>form>button:hover{
+color: #AE00D4;
+}
 .menu-mobile {
-
   height: fit-content;
   max-height: 600px;
 }
@@ -5121,7 +5233,6 @@ ol.lessons-list li:before {
 
   .header-logo {
     max-width: 160px;
-    padding-top: 12px;
   }
 
   .container-item {
@@ -5508,11 +5619,19 @@ ol.lessons-list li:before {
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: center;
   }
+
+  .header-mobile>.button-two {
+    padding: 10px 15px;
+    letter-spacing: -0.3px;
+    font-size: 12px;
+}
 
   .mobile-buttons-block {
     display: flex;
+    align-items: center;
+    gap: 7px;
   }
 
   .button-reg {
@@ -5530,9 +5649,7 @@ ol.lessons-list li:before {
     display: block;
   }
 
-  .button-menu-lk-en {
-    top: 0;
-  }
+
 
   .section-dop2-reg-img {
     top: 370px;
@@ -5908,8 +6025,7 @@ ol.lessons-list li:before {
   }
 
   .header-logo {
-    max-width: 132px;
-    padding-top: 17px;
+    max-width: 120px;
   }
 
   .section-six {
@@ -6948,10 +7064,11 @@ ol.lessons-list li:before {
   .diagnostika-podgotovka {
     margin-bottom: -150px;
   }
+
   .footer-logo {
-    
+
     bottom: 10px;
-}
+  }
 }
 
 /*адаптив до 631*/
@@ -7125,10 +7242,6 @@ ol.lessons-list li:before {
 
   .button-menu-lk-ex {
     display: block;
-  }
-
-  .header-mobile {
-    margin-top: 0px !important;
   }
 
   .footer-content_item {

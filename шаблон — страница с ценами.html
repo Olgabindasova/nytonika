@@ -90,9 +90,8 @@
                         <div class="header-phone_text"></div>
                     </div>
                     <div class="uk-navbar-item header-buttons"> <!-- Отдельный контейнер -->
-                        <button
-                            class="uk-button uk-button-default button-one uk-margin-small-right">Регистрация</button>
-                        <button class="uk-button uk-button-primary button-two">Войти на урок</button>
+                        <button class="uk-button uk-button-default button-tree">Профиль</button>
+                        <button class="uk-button uk-button-primary button-two">Выйти</button>
                     </div>
 
                 </nav>
@@ -103,16 +102,34 @@
                         <div class="header-logo">
                             <img src="svg/logo.svg">
                         </div>
-                        <a class="uk-button button-two button-one-mobile-header uk-margin-small-right">Войти на урок</a>
+                        <a class="uk-button button-two button-one-mobile-header">Войти на урок</a>
                         <div class="mobile-buttons-block">
-                            <a class="button-menu-lk" href=""></a>
                             <a class="button-menu-telefon" href="tel:+79999999999"></a>
+                            <form action="https://stage.nyutonika.ru/logout" method="post">
+                                <input type="hidden" name="_token" value="2SwK1ifb9GUBywh5KaAKzODhYOPDLJzreXpFFsXQ">
+                                <button type="submit" class="button-menu-lk-ex"></button>
+                            </form>
+                            <a class="button-menu-lk" href=""></a>
+                            <a class="button-menu-lk-en" title="Личный кабинет"
+                                href="https://stage.nyutonika.ru/cabinet"></a>
                             <a href="#offcanvas-slide" class="button-menu header-buttons-menu-open" uk-toggle></a>
                         </div>
                         <div id="offcanvas-slide" uk-offcanvas>
                             <div class="uk-offcanvas-bar menu-slide">
                                 <div class="menu-mobile-title">Меню <a href="#offcanvas-slide"
                                         class="button-menu header-buttons-menu-close" uk-toggle></a></div>
+                                <div class="menu-mobile-reg">
+                                    <a class="" title="Личный кабинет" href="https://stage.nyutonika.ru/cabinet">Личный кабинет</a>
+                                    <a href="https://stage.nyutonika.ru/register">
+                                         Регистрация 
+                                    </a>
+                                    <a href="https://stage.nyutonika.ru/login">
+                                       Войти на урок 
+                                    </a>
+                                    <form action="https://stage.nyutonika.ru/logout" method="post">
+                                         <button type="submit" class=" ">Выйти</button>
+                                    </form>
+                                </div>
                                 <ul class="uk-nav-default menu-mobile" uk-nav>
                                     <li class="uk-parent nav-item"><a href="#">Направления<span
                                                 class="uk-nav-parent-icon icon-menu-one">
@@ -204,7 +221,7 @@
 
                     </div>
                     <div>
-                        <a class="uk-button button-two-mobile-header uk-margin-small-right">Войти на урок</a>
+                        <a class="uk-button button-two-mobile-header">Войти на урок</a>
                     </div>
                 </nav>
 
@@ -221,322 +238,322 @@
 
 
             <!-- Ценники-->
-        <section class="container-item">
-            <h2 class="uk-text-center">Нормальные цены</h2>
-            <div class="pricing pricing-simple uk-child-width-1-2@s uk-child-width-1-2@m uk-child-width-1-4@l uk-grid-small"
-                uk-grid>
-                <div class="reviews-pricing-item price-disclosure"
-                    uk-scrollspy="cls: uk-animation-slide-top; delay: 400">
-                    <h4>Репетиторы профи
-                    </h4>
-                    <div>Мы установили нормальные цены на максимально высокий уровень репетиторов.</div>
-                    <div>Теперь к нам приходят более тысячи довольных учеников каждый месяц.</div>
-                   
-                </div>
-                <div class="reviews-pricing-item price-disclosure"
-                    uk-scrollspy="cls: uk-animation-slide-top; delay: 800">
-                    <div class="pricing-item bordercolor1">
-
-                        <div class="pricing-item_icon bordercolor1"><img
-                                src="https://cdn.nyutonika.ru/icons/прайс-1.svg" alt="">
-                        </div>
-                        <ul class="pricing-header_top pricing-header_top_hit">
-                            <li>
-                                Популярный
-                            </li>
-                        </ul>
-                        <div class="pricing-item_title pricing-item_title_hit">Пакет<br>
-                            на 8 занятий</div>
-                        <div class="pricing-item_one color10">
-                            <div><span>790</span>руб.</div>
-                            <div>за одно занятие</div>
-                        </div>
-                        <div class="pricing-item_set pricing-item_set_hit">
-                            Стоимость 6320 руб.
-                            <span>Хватит<br>на месяц - полтора</span>
-                        </div>
-                        <div class="pricing-item_button">
-                            <a href="" class="uk-button uk-button-primary button-tree button-color-1">
-                                Начать бесплатно</a>
-                        </div>
+            <section class="container-item">
+                <h2 class="uk-text-center">Нормальные цены</h2>
+                <div class="pricing pricing-simple uk-child-width-1-2@s uk-child-width-1-2@m uk-child-width-1-4@l uk-grid-small"
+                    uk-grid>
+                    <div class="reviews-pricing-item price-disclosure"
+                        uk-scrollspy="cls: uk-animation-slide-top; delay: 400">
+                        <h4>Репетиторы профи
+                        </h4>
+                        <div>Мы установили нормальные цены на максимально высокий уровень репетиторов.</div>
+                        <div>Теперь к нам приходят более тысячи довольных учеников каждый месяц.</div>
 
                     </div>
-                </div>
-                <div class="reviews-pricing-item price-disclosure"
-                    uk-scrollspy="cls: uk-animation-slide-top; delay: 1200">
-                    <div class="pricing-item bordercolor2">
+                    <div class="reviews-pricing-item price-disclosure"
+                        uk-scrollspy="cls: uk-animation-slide-top; delay: 800">
+                        <div class="pricing-item bordercolor1">
 
-                        <div class="pricing-item_icon bordercolor2"><img class="right"
-                                src="https://cdn.nyutonika.ru/icons/прайс-2.svg" alt="">
-                        </div>
-                        <ul class="pricing-header_top pricing-header_top_normal">
-                            <li>
+                            <div class="pricing-item_icon bordercolor1"><img
+                                    src="https://cdn.nyutonika.ru/icons/прайс-1.svg" alt="">
+                            </div>
+                            <ul class="pricing-header_top pricing-header_top_hit">
+                                <li>
+                                    Популярный
+                                </li>
+                            </ul>
+                            <div class="pricing-item_title pricing-item_title_hit">Пакет<br>
+                                на 8 занятий</div>
+                            <div class="pricing-item_one color10">
+                                <div><span>790</span>руб.</div>
+                                <div>за одно занятие</div>
+                            </div>
+                            <div class="pricing-item_set pricing-item_set_hit">
+                                Стоимость 6320 руб.
+                                <span>Хватит<br>на месяц - полтора</span>
+                            </div>
+                            <div class="pricing-item_button">
+                                <a href="" class="uk-button uk-button-primary button-tree button-color-1">
+                                    Начать бесплатно</a>
+                            </div>
 
-                            </li>
-                        </ul>
-                        <div class="pricing-item_title pricing-item_title_hit">Пакет<br>
-                            на 64 занятия</div>
-                        <div class="pricing-item_one color20">
-                            <div><span>690</span>руб.</div>
-                            <div>за одно занятие</div>
                         </div>
-                        <div class="pricing-item_set pricing-item_set_hit">
-                            Стоимость 44160 руб.
-                            <span>Хватит<br>примерно на год</span>
-                        </div>
-                        <div class="pricing-item_button">
-                            <a href="" class="uk-button uk-button-primary button-tree button-color-2">
-                                Начать бесплатно</a>
-                        </div>
-
                     </div>
-                </div>
-                <div class="reviews-pricing-item price-disclosure"
-                    uk-scrollspy="cls: uk-animation-slide-top; delay: 1600">
-                    <div class="pricing-item bordercolor3">
+                    <div class="reviews-pricing-item price-disclosure"
+                        uk-scrollspy="cls: uk-animation-slide-top; delay: 1200">
+                        <div class="pricing-item bordercolor2">
 
-                        <div class="pricing-item_icon  bordercolor3"><img
-                                src="https://cdn.nyutonika.ru/icons/прайс-3.svg" alt="">
-                        </div>
-                        <ul class="pricing-header_top   pricing-header_top_normal">
-                            <li>
+                            <div class="pricing-item_icon bordercolor2"><img class="right"
+                                    src="https://cdn.nyutonika.ru/icons/прайс-2.svg" alt="">
+                            </div>
+                            <ul class="pricing-header_top pricing-header_top_normal">
+                                <li>
 
-                            </li>
-                        </ul>
-                        <div class="pricing-item_title pricing-item_title_hit">Пакет<br>
-                            на 1 занятие</div>
-                        <div class="pricing-item_one color11">
-                            <div><span>990</span>руб.</div>
-                            <div>за одно занятие</div>
-                        </div>
-                        <div class="pricing-item_set pricing-item_set_hit">
+                                </li>
+                            </ul>
+                            <div class="pricing-item_title pricing-item_title_hit">Пакет<br>
+                                на 64 занятия</div>
+                            <div class="pricing-item_one color20">
+                                <div><span>690</span>руб.</div>
+                                <div>за одно занятие</div>
+                            </div>
+                            <div class="pricing-item_set pricing-item_set_hit">
+                                Стоимость 44160 руб.
+                                <span>Хватит<br>примерно на год</span>
+                            </div>
+                            <div class="pricing-item_button">
+                                <a href="" class="uk-button uk-button-primary button-tree button-color-2">
+                                    Начать бесплатно</a>
+                            </div>
 
-                            <span>Удобно<br>
-                                для разовых занятий</span>
                         </div>
-                        <div class="pricing-item_button">
-                            <a href="" class="uk-button uk-button-primary button-tree button-color-3">
-                                Начать бесплатно</a>
-                        </div>
-
                     </div>
-                </div>
+                    <div class="reviews-pricing-item price-disclosure"
+                        uk-scrollspy="cls: uk-animation-slide-top; delay: 1600">
+                        <div class="pricing-item bordercolor3">
 
+                            <div class="pricing-item_icon  bordercolor3"><img
+                                    src="https://cdn.nyutonika.ru/icons/прайс-3.svg" alt="">
+                            </div>
+                            <ul class="pricing-header_top   pricing-header_top_normal">
+                                <li>
 
-                <div class="reviews-pricing-item price-disclosure">
-                    <div class="pricing-item bordercolor4">
+                                </li>
+                            </ul>
+                            <div class="pricing-item_title pricing-item_title_hit">Пакет<br>
+                                на 1 занятие</div>
+                            <div class="pricing-item_one color11">
+                                <div><span>990</span>руб.</div>
+                                <div>за одно занятие</div>
+                            </div>
+                            <div class="pricing-item_set pricing-item_set_hit">
 
-                        <div class="pricing-item_icon bordercolor4"><img
-                                src="https://cdn.nyutonika.ru/icons/прайс-4.svg" alt="">
+                                <span>Удобно<br>
+                                    для разовых занятий</span>
+                            </div>
+                            <div class="pricing-item_button">
+                                <a href="" class="uk-button uk-button-primary button-tree button-color-3">
+                                    Начать бесплатно</a>
+                            </div>
+
                         </div>
-                        <ul class="pricing-header_top  pricing-header_top_normal">
-                            <li>
-
-                            </li>
-                        </ul>
-                        <div class="pricing-item_title pricing-item_title_hit">Пакет<br>
-                            на 4 занятия</div>
-                        <div class="pricing-item_one color21">
-                            <div><span>890</span>руб.</div>
-                            <div>за одно занятие</div>
-                        </div>
-                        <div class="pricing-item_set pricing-item_set_hit">
-                            Стоимость 3560 руб.
-                            <span>Хватит<br>на две-три недели</span>
-                        </div>
-                        <div class="pricing-item_button">
-                            <a href="" class="uk-button uk-button-primary button-tree button-color-4">
-                                Начать бесплатно</a>
-                        </div>
-
                     </div>
-                </div>
-                <div class="reviews-pricing-item price-disclosure">
-                    <div class="pricing-item bordercolor5">
 
-                        <div class="pricing-item_icon bordercolor5"><img class="right"
-                                src="https://cdn.nyutonika.ru/icons/прайс-5.svg" alt="">
-                        </div>
-                        <ul class="pricing-header_top  pricing-header_top_normal">
-                            <li>
 
-                            </li>
-                        </ul>
-                        <div class="pricing-item_title pricing-item_title_hit">Пакет<br>
-                            на 16 занятий</div>
-                        <div class="pricing-item_one color3">
-                            <div><span>750</span>руб.</div>
-                            <div>за одно занятие</div>
-                        </div>
-                        <div class="pricing-item_set pricing-item_set_hit">
-                            Стоимость 12000 руб.
-                            <span>Хватит<br>на два-три месяца</span>
-                        </div>
-                        <div class="pricing-item_button">
-                            <a href="" class="uk-button uk-button-primary button-tree button-color-5">
-                                Начать бесплатно</a>
-                        </div>
+                    <div class="reviews-pricing-item price-disclosure">
+                        <div class="pricing-item bordercolor4">
 
+                            <div class="pricing-item_icon bordercolor4"><img
+                                    src="https://cdn.nyutonika.ru/icons/прайс-4.svg" alt="">
+                            </div>
+                            <ul class="pricing-header_top  pricing-header_top_normal">
+                                <li>
+
+                                </li>
+                            </ul>
+                            <div class="pricing-item_title pricing-item_title_hit">Пакет<br>
+                                на 4 занятия</div>
+                            <div class="pricing-item_one color21">
+                                <div><span>890</span>руб.</div>
+                                <div>за одно занятие</div>
+                            </div>
+                            <div class="pricing-item_set pricing-item_set_hit">
+                                Стоимость 3560 руб.
+                                <span>Хватит<br>на две-три недели</span>
+                            </div>
+                            <div class="pricing-item_button">
+                                <a href="" class="uk-button uk-button-primary button-tree button-color-4">
+                                    Начать бесплатно</a>
+                            </div>
+
+                        </div>
                     </div>
-                </div>
-                <div class="reviews-pricing-item price-disclosure">
-                    <div class="pricing-item bordercolor6">
+                    <div class="reviews-pricing-item price-disclosure">
+                        <div class="pricing-item bordercolor5">
 
-                        <div class="pricing-item_icon bordercolor6"><img
-                                src="https://cdn.nyutonika.ru/icons/прайс-6.svg" alt="">
-                        </div>
-                        <ul class="pricing-header_top  pricing-header_top_normal">
-                            <li>
+                            <div class="pricing-item_icon bordercolor5"><img class="right"
+                                    src="https://cdn.nyutonika.ru/icons/прайс-5.svg" alt="">
+                            </div>
+                            <ul class="pricing-header_top  pricing-header_top_normal">
+                                <li>
 
-                            </li>
-                        </ul>
-                        <div class="pricing-item_title pricing-item_title_hit">Пакет<br>
-                            на 32 занятия</div>
-                        <div class="pricing-item_one color5">
-                            <div><span>730</span>руб.</div>
-                            <div>за одно занятие</div>
-                        </div>
-                        <div class="pricing-item_set pricing-item_set_hit">
-                            Стоимость 23360 руб.
-                            <span>Хватит<br>на четыре-пять месяцев</span>
-                        </div>
-                        <div class="pricing-item_button">
-                            <a href="" class="uk-button uk-button-primary button-tree button-color-6">
-                                Начать бесплатно</a>
-                        </div>
+                                </li>
+                            </ul>
+                            <div class="pricing-item_title pricing-item_title_hit">Пакет<br>
+                                на 16 занятий</div>
+                            <div class="pricing-item_one color3">
+                                <div><span>750</span>руб.</div>
+                                <div>за одно занятие</div>
+                            </div>
+                            <div class="pricing-item_set pricing-item_set_hit">
+                                Стоимость 12000 руб.
+                                <span>Хватит<br>на два-три месяца</span>
+                            </div>
+                            <div class="pricing-item_button">
+                                <a href="" class="uk-button uk-button-primary button-tree button-color-5">
+                                    Начать бесплатно</a>
+                            </div>
 
+                        </div>
                     </div>
-                </div>
-                <div class="reviews-pricing-item price-disclosure">
-                    <div class="pricing-item bordercolor7">
+                    <div class="reviews-pricing-item price-disclosure">
+                        <div class="pricing-item bordercolor6">
 
-                        <div class="pricing-item_icon bordercolor7"><img class="right"
-                                src="https://cdn.nyutonika.ru/icons/прайс-7.svg" alt="">
-                        </div>
-                        <ul class="pricing-header_top  pricing-header_top_normal">
-                            <li>
+                            <div class="pricing-item_icon bordercolor6"><img
+                                    src="https://cdn.nyutonika.ru/icons/прайс-6.svg" alt="">
+                            </div>
+                            <ul class="pricing-header_top  pricing-header_top_normal">
+                                <li>
 
-                            </li>
-                        </ul>
-                        <div class="pricing-item_title pricing-item_title_hit">Пакет<br>
-                            на 48 занятий</div>
-                        <div class="pricing-item_one color4">
-                            <div><span>710</span>руб.</div>
-                            <div>за одно занятие</div>
-                        </div>
-                        <div class="pricing-item_set pricing-item_set_hit">
-                            Стоимость 34080 руб.
-                            <span>Хватит<br>на шесть-восемь месяцев</span>
-                        </div>
-                        <div class="pricing-item_button">
-                            <a href="" class="uk-button uk-button-primary button-tree button-color-7">
-                                Начать бесплатно</a>
-                        </div>
+                                </li>
+                            </ul>
+                            <div class="pricing-item_title pricing-item_title_hit">Пакет<br>
+                                на 32 занятия</div>
+                            <div class="pricing-item_one color5">
+                                <div><span>730</span>руб.</div>
+                                <div>за одно занятие</div>
+                            </div>
+                            <div class="pricing-item_set pricing-item_set_hit">
+                                Стоимость 23360 руб.
+                                <span>Хватит<br>на четыре-пять месяцев</span>
+                            </div>
+                            <div class="pricing-item_button">
+                                <a href="" class="uk-button uk-button-primary button-tree button-color-6">
+                                    Начать бесплатно</a>
+                            </div>
 
+                        </div>
                     </div>
-                </div>
-               
-            </div>
+                    <div class="reviews-pricing-item price-disclosure">
+                        <div class="pricing-item bordercolor7">
 
+                            <div class="pricing-item_icon bordercolor7"><img class="right"
+                                    src="https://cdn.nyutonika.ru/icons/прайс-7.svg" alt="">
+                            </div>
+                            <ul class="pricing-header_top  pricing-header_top_normal">
+                                <li>
 
-            <div class="pricing pricing-simple uk-child-width-1-2@s uk-child-width-1-2@m uk-child-width-1-4@l uk-grid-small uk-margin-large-top"
-                uk-grid>
-                <div class="reviews-pricing-item" style="justify-content: flex-start;"
-                    uk-scrollspy="cls: uk-animation-scale-up; delay: 600">
-                    <h4>Репетиторы магистранты</h4>
-                    <div>Если нужно поддержать знания по предмету, то с этим прекрасно справятся репетиторы
-                        магистранты - студенты последних курсов ВУЗов.</div>
-                </div>
-                <div class="reviews-pricing-item" uk-scrollspy="cls: uk-animation-scale-up; delay: 1000">
-                    <div class="pricing-item bordercolor8">
+                                </li>
+                            </ul>
+                            <div class="pricing-item_title pricing-item_title_hit">Пакет<br>
+                                на 48 занятий</div>
+                            <div class="pricing-item_one color4">
+                                <div><span>710</span>руб.</div>
+                                <div>за одно занятие</div>
+                            </div>
+                            <div class="pricing-item_set pricing-item_set_hit">
+                                Стоимость 34080 руб.
+                                <span>Хватит<br>на шесть-восемь месяцев</span>
+                            </div>
+                            <div class="pricing-item_button">
+                                <a href="" class="uk-button uk-button-primary button-tree button-color-7">
+                                    Начать бесплатно</a>
+                            </div>
 
-                        <div class="pricing-item_icon bordercolor8"><img
-                                src="https://cdn.nyutonika.ru/icons/прайс-8.svg" alt="">
                         </div>
-                        <ul class="pricing-header_top pricing-header_top_hit">
-                            <li>
-                                Популярный
-                            </li>
-                        </ul>
-                        <div class="pricing-item_title pricing-item_title_hit">Пакет<br>
-                            на 8 занятий</div>
-                        <div class="pricing-item_one color22">
-                            <div><span>450</span>руб.</div>
-                            <div>за одно занятие</div>
-                        </div>
-                        <div class="pricing-item_set pricing-item_set_hit">
-                            Стоимость 3600 руб.
-                            <span>Хватит<br>на месяц - полтора</span>
-                        </div>
-                        <div class="pricing-item_button">
-                            <a href="" class="uk-button uk-button-primary button-tree button-color-8">
-                                Начать бесплатно</a>
-                        </div>
-
                     </div>
+
                 </div>
-                <div class="reviews-pricing-item" uk-scrollspy="cls: uk-animation-scale-up; delay: 1400">
-                    <div class="pricing-item bordercolor9">
 
-                        <div class="pricing-item_icon bordercolor9"><img class="right"
-                                src="https://cdn.nyutonika.ru/icons/прайс-9.svg" alt="">
-                        </div>
-                        <ul class="pricing-header_top pricing-header_top_normal">
-                            <li>
 
-                            </li>
-                        </ul>
-                        <div class="pricing-item_title pricing-item_title_hit">Пакет<br>
-                            на 64 занятия</div>
-                        <div class="pricing-item_one color23">
-                            <div><span>465</span>руб.</div>
-                            <div>за одно занятие</div>
-                        </div>
-                        <div class="pricing-item_set pricing-item_set_hit">
-                            Стоимость 1860 руб.
-                            <span>Хватит<br>на 2 -3 недели</span>
-                        </div>
-                        <div class="pricing-item_button">
-                            <a href="" class="uk-button uk-button-primary button-tree button-color-9">
-                                Начать бесплатно</a>
-                        </div>
-
+                <div class="pricing pricing-simple uk-child-width-1-2@s uk-child-width-1-2@m uk-child-width-1-4@l uk-grid-small uk-margin-large-top"
+                    uk-grid>
+                    <div class="reviews-pricing-item" style="justify-content: flex-start;"
+                        uk-scrollspy="cls: uk-animation-scale-up; delay: 600">
+                        <h4>Репетиторы магистранты</h4>
+                        <div>Если нужно поддержать знания по предмету, то с этим прекрасно справятся репетиторы
+                            магистранты - студенты последних курсов ВУЗов.</div>
                     </div>
-                </div>
-                <div class="reviews-pricing-item" uk-scrollspy="cls: uk-animation-scale-up; delay: 1800">
-                    <div class="pricing-item bordercolor10">
+                    <div class="reviews-pricing-item" uk-scrollspy="cls: uk-animation-scale-up; delay: 1000">
+                        <div class="pricing-item bordercolor8">
 
-                        <div class="pricing-item_icon  bordercolor10"><img
-                                src="https://cdn.nyutonika.ru/icons/прайс-10.svg" alt="">
-                        </div>
-                        <ul class="pricing-header_top   pricing-header_top_normal">
-                            <li>
+                            <div class="pricing-item_icon bordercolor8"><img
+                                    src="https://cdn.nyutonika.ru/icons/прайс-8.svg" alt="">
+                            </div>
+                            <ul class="pricing-header_top pricing-header_top_hit">
+                                <li>
+                                    Популярный
+                                </li>
+                            </ul>
+                            <div class="pricing-item_title pricing-item_title_hit">Пакет<br>
+                                на 8 занятий</div>
+                            <div class="pricing-item_one color22">
+                                <div><span>450</span>руб.</div>
+                                <div>за одно занятие</div>
+                            </div>
+                            <div class="pricing-item_set pricing-item_set_hit">
+                                Стоимость 3600 руб.
+                                <span>Хватит<br>на месяц - полтора</span>
+                            </div>
+                            <div class="pricing-item_button">
+                                <a href="" class="uk-button uk-button-primary button-tree button-color-8">
+                                    Начать бесплатно</a>
+                            </div>
 
-                            </li>
-                        </ul>
-                        <div class="pricing-item_title pricing-item_title_hit">Пакет<br>
-                            на 1 занятие</div>
-                        <div class="pricing-item_one color24">
-                            <div><span>480</span>руб.</div>
-                            <div>за одно занятие</div>
                         </div>
-                        <div class="pricing-item_set pricing-item_set_hit">
-
-                            <span>Удобно<br>
-                                для разовых занятий</span>
-                        </div>
-                        <div class="pricing-item_button">
-                            <a href="" class="uk-button uk-button-primary button-tree button-color-10">
-                                Начать бесплатно</a>
-                        </div>
-
                     </div>
+                    <div class="reviews-pricing-item" uk-scrollspy="cls: uk-animation-scale-up; delay: 1400">
+                        <div class="pricing-item bordercolor9">
+
+                            <div class="pricing-item_icon bordercolor9"><img class="right"
+                                    src="https://cdn.nyutonika.ru/icons/прайс-9.svg" alt="">
+                            </div>
+                            <ul class="pricing-header_top pricing-header_top_normal">
+                                <li>
+
+                                </li>
+                            </ul>
+                            <div class="pricing-item_title pricing-item_title_hit">Пакет<br>
+                                на 64 занятия</div>
+                            <div class="pricing-item_one color23">
+                                <div><span>465</span>руб.</div>
+                                <div>за одно занятие</div>
+                            </div>
+                            <div class="pricing-item_set pricing-item_set_hit">
+                                Стоимость 1860 руб.
+                                <span>Хватит<br>на 2 -3 недели</span>
+                            </div>
+                            <div class="pricing-item_button">
+                                <a href="" class="uk-button uk-button-primary button-tree button-color-9">
+                                    Начать бесплатно</a>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="reviews-pricing-item" uk-scrollspy="cls: uk-animation-scale-up; delay: 1800">
+                        <div class="pricing-item bordercolor10">
+
+                            <div class="pricing-item_icon  bordercolor10"><img
+                                    src="https://cdn.nyutonika.ru/icons/прайс-10.svg" alt="">
+                            </div>
+                            <ul class="pricing-header_top   pricing-header_top_normal">
+                                <li>
+
+                                </li>
+                            </ul>
+                            <div class="pricing-item_title pricing-item_title_hit">Пакет<br>
+                                на 1 занятие</div>
+                            <div class="pricing-item_one color24">
+                                <div><span>480</span>руб.</div>
+                                <div>за одно занятие</div>
+                            </div>
+                            <div class="pricing-item_set pricing-item_set_hit">
+
+                                <span>Удобно<br>
+                                    для разовых занятий</span>
+                            </div>
+                            <div class="pricing-item_button">
+                                <a href="" class="uk-button uk-button-primary button-tree button-color-10">
+                                    Начать бесплатно</a>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+
                 </div>
-
-
-
-            </div>
-        </section>
+            </section>
         </main>
         <footer class="footer">
             <div class="container">
