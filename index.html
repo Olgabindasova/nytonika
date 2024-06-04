@@ -40,9 +40,25 @@
                         <div class="uk-navbar-dropdown header-menu">
                             <ul class="uk-nav uk-navbar-dropdown-nav">
                                 <li class="uk-active uk-parent">
-                                    <a href="#">Активное<span class="uk-nav-parent-icon icon-menu-tree"></a>
+                                    <a href="#">Активное<span class="uk-nav-parent-icon icon-menu-tree"></span></a>
                                     <div class="uk-navbar-dropdown header-menu-second">
-                                        <ul class="uk-nav uk-navbar-dropdown-nav header-menu-second-position">
+                                        <ul class="uk-nav uk-navbar-dropdown-nav header-menu-second-position menu-slide-3">
+                                            <li><a href="#"><img class="trend-icon-nav" src="svg/МАлышам.svg">
+                                                    Активное</a></li>
+                                            <li><a href="#"><img class="trend-icon-nav" src="svg/МАлышам.svg">
+                                                    Элемент списка</a></li>
+                                            <li><a href="#"><img class="trend-icon-nav" src="svg/МАлышам.svg">
+                                                    Пункт меню</a></li>
+                                            <li><a href="#"><img class="trend-icon-nav" src="svg/МАлышам.svg">
+                                                    Продолжаем</a></li>
+                                            <li><a href="#"><img class="trend-icon-nav" src="svg/МАлышам.svg">
+                                                    Активное</a></li>
+                                            <li><a href="#"><img class="trend-icon-nav" src="svg/МАлышам.svg">
+                                                    Элемент списка</a></li>
+                                            <li><a href="#"><img class="trend-icon-nav" src="svg/МАлышам.svg">
+                                                    Пункт меню</a></li>
+                                            <li><a href="#"><img class="trend-icon-nav" src="svg/МАлышам.svg">
+                                                    Продолжаем</a></li>
                                             <li><a href="#"><img class="trend-icon-nav" src="svg/МАлышам.svg">
                                                     Активное</a></li>
                                             <li><a href="#"><img class="trend-icon-nav" src="svg/МАлышам.svg">
@@ -52,14 +68,13 @@
                                             <li><a href="#"><img class="trend-icon-nav" src="svg/МАлышам.svg">
                                                     Продолжаем</a></li>
 
-
                                         </ul>
                                     </div>
                                 </li>
                                 <li class="uk-parent"><a href="#">Элемент списка<span
-                                            class="uk-nav-parent-icon icon-menu-tree"></a>
+                                            class="uk-nav-parent-icon icon-menu-tree"></span></a>
                                     <div class="uk-navbar-dropdown header-menu-second">
-                                        <ul class="uk-nav uk-navbar-dropdown-nav header-menu-second-position">
+                                        <ul class="uk-nav uk-navbar-dropdown-nav header-menu-second-position menu-slide-3">
                                             <li><a href="#"><img class="trend-icon-nav" src="svg/МАлышам.svg">
                                                     Активное</a></li>
                                             <li><a href="#"><img class="trend-icon-nav" src="svg/МАлышам.svg">
@@ -73,13 +88,13 @@
                                     </div>
                                 </li>
                                 <li class="uk-parent"><a href="#">Пункт меню<span
-                                            class="uk-nav-parent-icon icon-menu-tree"></a></li>
+                                            class="uk-nav-parent-icon icon-menu-tree"></span></a></li>
                                 <li class="uk-parent"><a href="#">Продолжаем<span
-                                            class="uk-nav-parent-icon icon-menu-tree"></a></li>
+                                            class="uk-nav-parent-icon icon-menu-tree"></span></a></li>
                             </ul>
                         </div>
                     </li>
-                    <li class="nav-item"><a href="#">О школе</a></li>
+                    <li class="nav-item"><a href="#">Цены</a></li>
 
 
 
@@ -90,8 +105,8 @@
                     <div class="header-phone_text"></div>
                 </div>
                 <div class="uk-navbar-item header-buttons"> <!-- Отдельный контейнер -->
-                    <button class="uk-button uk-button-default button-one uk-margin-small-right">Регистрация</button>
-                    <button class="uk-button uk-button-primary button-two">Войти на урок</button>
+                    <button class="uk-button uk-button-default button-tree">Профиль</button>
+                    <button class="uk-button uk-button-primary button-two">Выйти</button>
                 </div>
 
             </nav>
@@ -102,30 +117,46 @@
                     <div class="header-logo">
                         <img src="svg/logo.svg">
                     </div>
-                    <a class="uk-button button-two button-one-mobile-header uk-margin-small-right">Войти на урок</a>
+                    <a class="uk-button button-two button-one-mobile-header">Войти на урок</a>
                     <div class="mobile-buttons-block">
-                        <a class="button-menu-lk" href=""></a>
                         <a class="button-menu-telefon" href="tel:+79999999999"></a>
+                        <form action="https://stage.nyutonika.ru/logout" method="post">
+                            <input type="hidden" name="_token" value="2SwK1ifb9GUBywh5KaAKzODhYOPDLJzreXpFFsXQ">
+                            <button type="submit" class="button-menu-lk-ex"></button>
+                        </form>
+                        <a class="button-menu-lk" href=""></a>
+                        <a class="button-menu-lk-en" title="Личный кабинет"
+                            href="https://stage.nyutonika.ru/cabinet"></a>
                         <a href="#offcanvas-slide" class="button-menu header-buttons-menu-open" uk-toggle></a>
                     </div>
                     <div id="offcanvas-slide" uk-offcanvas>
                         <div class="uk-offcanvas-bar menu-slide">
                             <div class="menu-mobile-title">Меню <a href="#offcanvas-slide"
                                     class="button-menu header-buttons-menu-close" uk-toggle></a></div>
-                            <ul class="uk-nav-default menu-mobile  uk-nav">
+                            <div class="menu-mobile-reg">
+                                <a class="" title="Личный кабинет" href="https://stage.nyutonika.ru/cabinet">Личный
+                                    кабинет</a>
+                                <a href="https://stage.nyutonika.ru/register">
+                                    Регистрация
+                                </a>
+                                <a href="https://stage.nyutonika.ru/login">
+                                    Войти на урок
+                                </a>
+                                <form action="https://stage.nyutonika.ru/logout" method="post">
+                                    <button type="submit" class=" ">Выйти</button>
+                                </form>
+                            </div>
+                            <ul class="uk-nav-default menu-mobile" uk-nav>
                                 <li class="uk-parent nav-item"><a href="#">Направления<span
                                             class="uk-nav-parent-icon icon-menu-one">
                                         </span></a>
 
                                     <ul class="uk-nav-sub menu-second-mobile uk-nav uk-nav-default" uk-nav>
                                         <li class="uk-parent">
-                                            <a href="#">Категория<span class="uk-nav-parent-icon icon-menu-two">
+                                            <a href="#">Активное<span class="uk-nav-parent-icon icon-menu-two">
                                                 </span></a>
 
                                             <ul class="menu-second-sub-mobile uk-nav uk-nav-default" uk-nav>
-                                                <li><a href="#" class="cat"><img class="trend-icon-nav"
-                                                            src="svg/МАлышам.svg">
-                                                        Ссылка на категорию</a></li>
                                                 <li><a href="#"><img class="trend-icon-nav" src="svg/МАлышам.svg">
                                                         Активное</a></li>
                                                 <li><a href="#"><img class="trend-icon-nav" src="svg/МАлышам.svg">
@@ -157,12 +188,12 @@
                                         </li>
                                         <li class="uk-parent"><a href="#">Пункт меню <span
                                                     class="uk-nav-parent-icon icon-menu-two"></span></a></li>
-                                        <li class=""><a href="#">Продолжаем</a></li>
+                                        <li class="uk-parent"><a href="#">Продолжаем <span
+                                                    class="uk-nav-parent-icon icon-menu-two"></span></a></li>
                                     </ul>
 
                                 </li>
-                                <li class="nav-item uk-parent"><a href="#">О школе <span
-                                            class="uk-nav-parent-icon icon-menu-one"></span></a></li>
+                                <li class="nav-item uk-parent"><a href="#">Цены</a></li>
 
                                 <li class="uk-nav-divider nav-line"></li>
                                 <li>
@@ -178,7 +209,6 @@
                                                 <a href="">
                                                     <img class="trend-icon" src="svg/viber.svg" alt="">
                                                 </a>
-
                                             </div>
                                             <div>
                                                 <div
@@ -188,8 +218,8 @@
                                                     <a href="">
                                                         <img class="trend-icon" src="svg/youtube.svg" alt="">
                                                     </a><a href="">
-                                                        <img class="trend-icon" src="svg/vk-logo-of-social-network.svg"
-                                                            alt="">
+                                                        <img class="trend-icon"
+                                                            src="svg/vk-logo-of-social-network.svg" alt="">
                                                     </a>
                                                     <a href="">
                                                         <img class="trend-icon" src="svg/viber.svg" alt="">
@@ -199,7 +229,7 @@
 
                                         </div>
 
-
+                                    </div>
                                 </li>
                             </ul>
                         </div>
@@ -207,7 +237,7 @@
 
                 </div>
                 <div>
-                    <a class="uk-button button-two-mobile-header uk-margin-small-right">Войти на урок</a>
+                    <a class="uk-button button-two-mobile-header">Войти на урок</a>
                 </div>
             </nav>
 
