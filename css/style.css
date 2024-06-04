@@ -398,7 +398,25 @@ h4 {
   border-radius: var(--scrollbarBorderRadius);
   border: var(--scrollbarBorder);
 }
+.menu-slide-3 {
+  scrollbar-width: 5px !important;
+  scrollbar-color: linear-gradient(90deg, rgba(255,255,255,0) 85%, rgba(255,255,255,0) 85%, rgba(174,0,212,1) 85%, rgba(174,0,212,1) 100%) transparent;
+}
 
+.menu-slide-3::-webkit-scrollbar {
+  width: 5px !important;
+  border-radius: 4px;
+}
+
+.menu-slide-3::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.menu-slide-3::-webkit-scrollbar-thumb {
+  background-color: transparent;
+  border-radius: 4px;
+  border: 3px solid var(--scrollbarThumb) !important;
+}
 
 
 /*цвета*/
@@ -1277,6 +1295,8 @@ span.menu-one {
   border-radius: 10px;
   box-shadow: 0 5px 8px rgb(0 0 0 / 15%);
   width: 225px;
+  max-height: 550px;
+  overflow-y: auto;
 }
 
 .menu-slide {
