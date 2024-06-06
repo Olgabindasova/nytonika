@@ -9915,7 +9915,10 @@ section.math-hach>.seven-section>.seven-section-block {
   font-weight: 500;
   text-align: center;
 }
-
+.pricing-item_set>span:nth-child(2){
+  font-size: 13px;
+    padding: 0 15px;
+}
 .pricing-item_button {
   display: flex;
   justify-content: center;
