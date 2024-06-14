@@ -10119,3 +10119,23 @@ section.math-hach>.seven-section>.seven-section-block {
     text-align: center;
   }
 }
+
+
+/*---- Модальное окно для рекламы акций -----*/
+
+.advertising-banner .uk-close {
+  position: relative; 
+  color: #9c16b9;
+  border: 1px solid;
+  padding: 10px;
+  width: fit-content;
+  border-radius: 50%;
+  transition: all 0.3s;
+  width: 35px;
+  z-index: 100;
+}
+.advertising-banner .uk-close:hover {
+  color: #ffffff;
+  border-color: #9c16b9;
+  background: #9c16b9;
+}
