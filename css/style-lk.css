@@ -3858,7 +3858,7 @@ ol.text-dogovora-items ol ol li::before {
 
     .star-wrapper {
         margin-bottom: 0px;
-        justify-content: flex-start;
+        justify-content: flex-end;
         min-width: 130px;
         line-height: 30px;
     }
