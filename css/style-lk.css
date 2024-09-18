@@ -93,16 +93,19 @@
     height: 100%;
     min-height: 100vh;
 }
+
 .footer-buttons-lk {
     border-top: 1px solid #fff;
 }
-@media (max-width: 561px){
-     
-    .lk-wrapper{
-      margin-bottom: 48px;
+
+@media (max-width: 561px) {
+
+    .lk-wrapper {
+        margin-bottom: 48px;
     }
-     
-  }
+
+}
+
 .aside-lk {
     z-index: 1;
     background-color: var(--main-color);
@@ -1542,12 +1545,13 @@ input:-webkit-autofill {
 .star-wrapper {
     margin-bottom: 10px;
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
     color: var(--colorWhiteText) !important;
     font-size: 13px;
     line-height: 13px;
     font-weight: 400;
     min-width: 150px;
+    flex-direction: row-reverse;
 }
 
 .star-wrapper>span {
@@ -1868,7 +1872,7 @@ input:-webkit-autofill {
     font-family: 'Nunito-Bold';
     font-size: 14px;
     font-weight: 700;
-  
+
 }
 
 .activity-packages_content.sale {
@@ -1882,12 +1886,14 @@ input:-webkit-autofill {
 }
 
 .activity-packages_content.sale>p.activity-packages_content_price {
-    font-size: 20px; 
+    font-size: 20px;
 }
+
 .activity-packages_content.sale>p.activity-packages_content_price>span {
     text-decoration: line-through;
     font-size: 28px;
 }
+
 .student {
     background-color: var(--colorBlockCardOne);
     padding: 30px;
