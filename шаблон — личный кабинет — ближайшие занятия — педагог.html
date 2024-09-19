@@ -104,7 +104,7 @@
        <div class="page-lk">
        <h1 class="uk-text-left uk-margin-top">Ближайшие занятия</h1>
        <div class="uk-margin-large-top">
-        <ul class="uk-grid-match uk-grid-small  uk-child-width-1-2@m uk-child-width-1-1@s" uk-sortable="handle: .card-lk" uk-grid>
+        <ul class="uk-grid-match uk-grid-small  uk-child-width-1-2@m uk-child-width-1-1@s" uk-grid>
          <li>
              <div class="card-lk color-next-class-card educator">
                  <div class="card-lk_title">Занятие от 04.05.23 10:02</div>
@@ -118,7 +118,39 @@
                         <button class="card-lk__button_class" type="submit">На занятие
                         </button>
                     </div>
-                    <button class="card-lk__button_repeal card-lk_button" type="button">Отменить</button>
+                    <button class="card-lk__button_repeal card-lk_button" type="submit" uk-toggle="target: #form-cancellation-lesson">Отменить</button>
+                    <div id="form-cancellation-lesson" class="uk-flex-top" uk-modal>
+                        <div class="uk-width-large uk-margin-auto-vertical uk-modal-dialog modal-trend">
+                            <button class="uk-modal-close-outside uk-icon uk-close" type="button" uk-close></button>
+                            <div class="uk-flex uk-flex-center">
+                                <h4 class="uk-width-large uk-text-center">Выбрать причину отмены занятия</h4>
+                            </div>
+                            
+                                <form class="form-leave-request uk-margin-remove">
+                                    <div class="uk-text-center">
+                                        <div class="uk-form-controls lk-radio-form">
+                                            <label><input class="uk-radio" type="radio" name="ready_cancellation_lessons" value="0">Смена даты
+                                            </label>
+                                            <label><input class="uk-radio" type="radio" name="ready_cancellation_lessons" value="0">Отсутствие оплаты
+                                            </label>
+                                            <label><input class="uk-radio" type="radio" name="ready_cancellation_lessons" value="0">Другое
+                                            </label>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="uk-margin-top">
+                                        <label class="uk-form-label" for="comment">Комментарий</label>
+                                        <div class="uk-form-controls">
+                                            <textarea class="uk-textarea uk-margin uk-margin-remove-left uk-margin-remove-right uk-margin-remove-bottom" rows="1" id="comment" name="comment" placeholder=""></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="uk-margin-small">
+                                        <button class="button-tree uk-button uk-button-primary uk-width-expand uk-margin-remove" type="submit">Отменить занятие</button>
+                                    </div>
+                                </form>
+                          
+                        </div>
+                    </div>
                 </div>
              </div>
          </li>
