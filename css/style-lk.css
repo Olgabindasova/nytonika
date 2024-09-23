@@ -2730,6 +2730,7 @@ table.operation-history>tbody .write-off td:nth-of-type(5) {
     container-type: inline-size;
     container-name: slots;
     margin-top: 20px;
+    padding-bottom: 45px;
 }
 
 .slots {
@@ -2757,7 +2758,7 @@ table.operation-history>tbody .write-off td:nth-of-type(5) {
 
 .slots_time {
     display: grid;
-    height: 200px;
+    height: fit-content;
     grid-template-columns: repeat(6, 1fr);
     gap: 10px;
     padding: 0 0 0 30px;
@@ -3584,7 +3585,7 @@ ol.text-dogovora-items ol ol li::before {
     }
 
     .slots_time {
-        height: 250px;
+        height: fit-content;
         grid-template-columns: repeat(3, 1fr);
         gap: 10px;
         padding: 0 0 0 20px;
@@ -3608,7 +3609,7 @@ ol.text-dogovora-items ol ol li::before {
     }
 
     .slots_time {
-        height: 250px;
+        height: fit-content;
         grid-template-columns: repeat(3, 1fr);
         padding: 0;
         border-left: 0px;
