@@ -3643,12 +3643,14 @@ ol.text-dogovora-items ol ol li::before {
     }
 }
 
-@container next-class-card-educator (max-width: 360px) {
+@container next-class-card-educator (max-width: 445px) {
     .card-lk_title-pay {
         flex-direction: column;
         width: 100%;
     }
-
+}
+@container next-class-card-educator (max-width: 360px) {
+   
     .card-lk_title-pay>span.payment-error {
         height: 40px;
     }
