@@ -76,6 +76,12 @@
     font-family: "Nunito-Bold";
 }
 
+.page-lk>div>.uk-pagination>li>a>span.uk-icon {
+    position: relative;
+    left: 2px;
+    top: 4px;
+}
+
 /*---------Основные Блоки-----------*/
 .page-lk {
     width: 100%;
