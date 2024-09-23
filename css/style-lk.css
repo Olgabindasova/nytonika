@@ -880,7 +880,6 @@ input:-webkit-autofill {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    gap: 10px;
 }
 
 .card-lk_title-pay>span.payment-error {
@@ -1018,6 +1017,9 @@ input:-webkit-autofill {
     justify-content: center;
 }
 
+.label-height {
+    height: fit-content !important;
+}
 .card-lk_button>button {
     border: none;
     background: none;
