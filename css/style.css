@@ -251,7 +251,7 @@ li {
 }
 
 
-h1 {
+h1, .h1 {
   font-family: "Nunito-Bold";
   font-style: normal;
   font-weight: 700;
@@ -259,7 +259,7 @@ h1 {
   font-size: 64px;
 }
 
-h2 {
+h2, .h2 {
   font-family: 'Nunito-Bold';
   font-style: normal;
   font-weight: 700;
@@ -268,7 +268,7 @@ h2 {
   margin-bottom: 50px;
 }
 
-h3 {
+h3, .h3 {
   font-family: 'Nunito-Bold';
   font-style: normal;
   font-weight: 700;
@@ -277,7 +277,7 @@ h3 {
   margin-bottom: 35px;
 }
 
-h4 {
+h4, .h4 {
   color: #24201E;
   font-family: "Nunito-Bold";
   font-style: normal;
@@ -637,7 +637,54 @@ h4 {
 }
 
 /*кнопки*/
-
+.a-non{
+  cursor: auto;
+  padding-top: 150px;
+	margin-top: -150px;
+	-webkit-background-clip: content-box;
+	background-clip: content-box;
+  font-family: "Nunito-Bold";
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px;
+  font-size: 28px;
+}
+.a-non:hover{
+  text-decoration: none;
+}
+.sidebar{
+  will-change: min-height;
+}
+.sidebar-docs {
+  background: #9205b1;
+  padding: 10px;
+  max-width: 310px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+}
+.sidebar-docs>li>a {
+  color: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  font-family: "Nunito-Bold";
+  font-style: normal;
+  font-weight: 500;
+  line-height: 15px;
+  font-size: 15px;
+  text-decoration: none;
+  display: flex;
+  transition: all 0.5s;
+}
+.sidebar-docs>li>a:hover{
+  background: #fff;
+  color: #9C16B9;
+}
+.sidebar__inner{
+  transform: translate(0, 0); /* For browsers don't support translate3d. */
+  transform: translate3d(0, 0, 0);
+  will-change: position, transform;
+}
 .scrollup {
   width: 105px;
   height: 105px;
@@ -2601,7 +2648,10 @@ a.tab-button-reviews {
   border-bottom: 1px solid #292929;
   padding: 10px 0 30px 0px;
 }
-
+.accordion-answer ul>li:nth-last-child(1) {
+  border-bottom: 1px solid transparent;
+  padding: 10px 0 10px 0px;
+}
 .accordion-answer ul>li>a {
   font-family: 'Nunito-Bold';
   font-style: normal;
@@ -2612,7 +2662,7 @@ a.tab-button-reviews {
 
 }
 
-ul.accordion-answer>li>div>p {
+.accordion-answer>ul>li>div>p {
   font-family: 'OpenSans';
   font-style: normal;
   font-weight: 400;
@@ -2621,6 +2671,8 @@ ul.accordion-answer>li>div>p {
   color: #292929;
   padding-right: 30px;
   text-align: justify;
+  padding-bottom: 10px;
+
 }
 
 
@@ -5542,6 +5594,10 @@ ol.lessons-list li:before {
 /*адаптив до 1080*/
 
 @media (max-width: 1080px) {
+
+  .sidebar-docs {
+    max-width: 270px;
+}
   .banner-trend-dop_img-malisham-aplle1 {
     left: -702px;
     top: -772px;
@@ -5560,11 +5616,11 @@ ol.lessons-list li:before {
     bottom: 2323px;
   }
 
-  h1 {
+  h1, .h1 {
     font-size: 58px;
   }
 
-  h3 {
+  h3, .h3 {
     font-size: 40px;
     line-height: 40px;
   }
@@ -5838,7 +5894,7 @@ ol.lessons-list li:before {
     line-height: 28px;
   }
 
-  h1 {
+  h1, .h1 {
     font-size: 54px;
   }
 
@@ -5873,6 +5929,17 @@ ol.lessons-list li:before {
 /*адаптив до 960*/
 
 @media (max-width: 959.5px) {
+  .sidebar {
+    margin-bottom: 40px;
+}
+  .sidebar-docs {
+    max-width: 100%;
+    width: 100% !important;
+    position: relative !important;
+    top: 0 !important;
+    left: 0 !important;
+    transform: translate3d(0, 0, 0) !important;
+}
 
   .banner-trend-dop_img-doprazvitie,
   .banner-trend-dop_img-srscola,
@@ -6692,22 +6759,25 @@ ol.lessons-list li:before {
 /*адаптив до 650*/
 
 @media (max-width: 650px) {
+  .a-non {
+    font-size: 22px;
+}
   .lessons-list-dop2 {
     margin-top: 520px !important;
     margin-bottom: -280px !important;
   }
 
-  h2 {
+  h2, .h2 {
     font-size: 28px;
     line-height: 28px;
   }
 
-  h3 {
+  h3, .h3 {
     font-size: 28px;
     line-height: 28px;
   }
 
-  h4 {
+  h4, .h4 {
     line-height: 28px;
     font-size: 22px;
   }
@@ -7043,7 +7113,7 @@ ol.lessons-list li:before {
     line-height: 18px;
   }
 
-  .vopros-otwet>ul>li>.uk-accordion-content>p {
+  .vopros-otwet>ul>li>div.uk-accordion-content>p {
     font-size: 14px;
     line-height: 18px;
   }
