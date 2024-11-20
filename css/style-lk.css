@@ -794,6 +794,7 @@ input:-webkit-autofill {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    height: 100%;
 }
 
 .color-next-class-card.educator.parental>.card-lk_title {
@@ -4554,7 +4555,7 @@ ol.text-dogovora-items ol ol li::before {
 
 .nav-kebab {
     display: flex;
-    position: absolute;
+    position: relative;
     flex-direction: column;
     justify-content: center;
     align-content: flex-end;
