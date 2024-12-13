@@ -3325,7 +3325,29 @@ ol.text-dogovora-items ol ol li::before {
 
 /*-------конец кабинет практиканта------------------*/
 
-
+.info-block {
+    background: transparent;
+}
+.info-block > .uk-alert-close {
+    position: relative;
+    top: 75px;
+    float: right;
+    left: 5px;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' fill='none' viewBox='0 0 24 24'%3e%3cg clip-path='url(%23a)'%3e%3ccircle cx='12' cy='12' r='11.5' fill='%23fff' stroke='%23AE00D4'/%3e%3cpath fill='%23AE00D4' fill-rule='evenodd' d='M6.116 6.116a1.25 1.25 0 0 1 1.768 0L12 10.232l4.116-4.116a1.25 1.25 0 0 1 1.768 1.768L13.768 12l4.116 4.116a1.25 1.25 0 0 1-1.768 1.768L12 13.768l-4.116 4.116a1.25 1.25 0 0 1-1.768-1.768L10.232 12 6.116 7.884a1.25 1.25 0 0 1 0-1.768Z' clip-rule='evenodd'/%3e%3c/g%3e%3cdefs%3e%3cclipPath id='a'%3e%3cpath fill='%23fff' d='M0 0h24v24H0z'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e ");
+    width: 30px;
+    height: 30px;
+    opacity: 1;
+    background-size: 100%;
+    padding: 0px;
+    background-repeat: no-repeat;
+    transition: all 0.3s;
+}
+.info-block > .uk-alert-close:hover {
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' fill='none' viewBox='0 0 24 24'%3e%3cg clip-path='url(%23a)'%3e%3ccircle cx='12' cy='12' r='11.5' fill='%23AE00D4' stroke='%23AE00D4'/%3e%3cpath fill='%23fff' fill-rule='evenodd' d='M6.116 6.116a1.25 1.25 0 0 1 1.768 0L12 10.232l4.116-4.116a1.25 1.25 0 0 1 1.768 1.768L13.768 12l4.116 4.116a1.25 1.25 0 0 1-1.768 1.768L12 13.768l-4.116 4.116a1.25 1.25 0 0 1-1.768-1.768L10.232 12 6.116 7.884a1.25 1.25 0 0 1 0-1.768Z' clip-rule='evenodd'/%3e%3c/g%3e%3cdefs%3e%3cclipPath id='a'%3e%3cpath fill='%23fff' d='M0 0h24v24H0z'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e ");
+} 
+.info-block > .uk-alert-close> svg{
+    display: none;
+}
 /*-------Адаптив------------------*/
 
 @container room-type (max-width: 500px) {
