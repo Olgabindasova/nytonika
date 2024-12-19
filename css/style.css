@@ -523,7 +523,9 @@ h4, .h4 {
 .color24 {
   background-color: #FFB31F !important;
 }
-
+.color25 {
+  background-color: #46C1ED !important;
+}
 .bordercolor1 {
   border-color: #33C7A2 !important;
 }
@@ -563,7 +565,12 @@ h4, .h4 {
 .bordercolor10 {
   border-color: #FFB31F !important;
 }
-
+.bordercolor11 {
+  border-color: #46C1ED !important;
+}
+.bordercolor12{
+  border-color: #325DE9 !important;
+}
 .textcolor1 {
   color: #7DDF9B !important;
 }
@@ -10141,6 +10148,26 @@ section.math-hach>.seven-section>.seven-section-block {
   color: #FFB31F;
   background: #fff;
   border: 2px solid #FFB31F;
+}
+.button-color-11 {
+  background: #46C1ED;
+  border: 2px solid #46C1ED;
+}
+
+.button-color-11:hover {
+  color: #46C1ED;
+  background: #fff;
+  border: 2px solid #46C1ED;
+}
+.button-color-12 {
+  background: #325DE9;
+  border: 2px solid #325DE9;
+}
+
+.button-color-12:hover {
+  color: #325DE9;
+  background: #fff;
+  border: 2px solid #325DE9;
 }
 
 .pricing-header_top_hit {
