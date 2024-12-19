@@ -526,6 +526,9 @@ h4, .h4 {
 .color25 {
   background-color: #46C1ED !important;
 }
+.color26 {
+  background-color: #D41B19 !important;
+}
 .bordercolor1 {
   border-color: #33C7A2 !important;
 }
@@ -570,6 +573,9 @@ h4, .h4 {
 }
 .bordercolor12{
   border-color: #325DE9 !important;
+}
+.bordercolor13{
+  border-color: #AE00D4 !important;
 }
 .textcolor1 {
   color: #7DDF9B !important;
@@ -10169,6 +10175,16 @@ section.math-hach>.seven-section>.seven-section-block {
   background: #fff;
   border: 2px solid #325DE9;
 }
+.button-color-13 {
+  background: #AE00D4;
+  border: 2px solid #AE00D4;
+}
+
+.button-color-12:hover {
+  color: #AE00D4;
+  background: #fff;
+  border: 2px solid #AE00D4;
+}
 
 .pricing-header_top_hit {
   background: rgb(255, 255, 255);
@@ -10177,7 +10193,9 @@ section.math-hach>.seven-section>.seven-section-block {
   bottom: 38px;
   position: relative;
 }
-
+.pricing-header_top_hit2{
+  background: linear-gradient(45deg, rgba(255, 255, 255, 1) 76%, #33c7a2 76%, #33c7a2 88%, rgba(255, 255, 255, 1) 88%);
+} 
 .pricing-header_top_normal {
   height: 125px;
   bottom: 38px;
