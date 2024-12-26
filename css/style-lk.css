@@ -2904,7 +2904,34 @@ table.operation-history>tbody .write-off td:nth-of-type(5) {
     text-align: center;
     border-radius: 50%;
 }
+.standart-checkbox {
+    border: 1px solid var(--main-color) !important;
+    border-radius: 5px;
+    margin-right: 5px;
+    width: 25px;
+    height: 25px;
+}
 
+.standart-checkbox:checked {
+    background-color: var(--main-color) !important;
+    border: 2px solid var(--main-color) !important;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2214%22%20height%3D%2211%22%20viewBox%3D%220%200%2014%2011%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%20%20%3Cpolygon%20fill%3D%22%23fff%22%20points%3D%2212%201%205%207.5%202%205%201%205.5%205%2010%2013%201.5%22%20%2F%3E%0A%3C%2Fsvg%3E%0A") !important;
+}
+.standart-checkbox-block {
+    display: flex;
+    padding: 15px;
+    align-items: center;
+    gap: 10px;
+    border-bottom: 1px solid  var(--main-color);
+}
+ .standart-checkbox-block label{
+    font-family: 'Nunito-Bold';
+    font-style: normal;
+    font-weight: 700;
+    color: var(--colorFontContent);
+    font-size: 16px;
+    line-height: 20px;
+}
 /*-----------------------------------------*/
 .assent_title {
     font-family: 'Nunito-Bold';
