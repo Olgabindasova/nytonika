@@ -4649,6 +4649,7 @@ ol.text-dogovora-items ol ol li::before {
 /*--кебаб---*/
 .card-lk_title-kebab {
     min-height: 80px !important;
+    padding: 20px 35px 20px 20px !important;
 }
 
 .card-lk_title-kebab>.card-lk_title-pay>span {
@@ -4667,9 +4668,17 @@ ol.text-dogovora-items ol ol li::before {
     position: relative;
     display: inline-block;
     box-sizing: border-box;
-
+    padding: 3px 5px;
+    border: 2px solid var(--colorWhiteText);
+    border-radius: 5px;
+    transition: all 0.2s;
 }
-
+.kebab:hover {
+    background: var(--colorWhiteText);
+}
+.kebab:hover figure{
+    background: var(--colorEducator);
+}
 .nav-kebab {
     display: flex;
     position: relative;
@@ -4689,12 +4698,12 @@ ol.text-dogovora-items ol ol li::before {
     height: 5px;
     min-height: 5px;
     border-radius: 50%;
-    background: #fff;
+    background: var(--colorWhiteText);
     margin: 3px 0;
 }
 
 .middle {
-    transition: all 0.25s cubic-bezier(0.72, 1.2, 0.71, 0.72);
+    transition: all 0.1s cubic-bezier(0.72, 1.2, 0.71, 0.72);
     transform: scale(1);
     position: relative;
     box-shadow: 0 0.1px 0.1px 0 rgba(0, 0, 0, 0.16), 0 0.1px 0.3px 0 rgba(0, 0, 0, 0.12);
@@ -4705,12 +4714,12 @@ ol.text-dogovora-items ol ol li::before {
 .middle.active {
     z-index: 1;
     top: -26px;
-    left: 8px;
+    left: 15px;
     width: 25px;
     min-width: 25px;
     height: 25px;
     min-height: 25px;
-    background: #d41b19;
+    background: #d41b19 !important; 
     /* transform: scale(4); */
     transition: all 0.5s cubic-bezier(0.32, 2.04, 0.85, 0.54);
     border: 2px solid #d41b19;
@@ -4718,13 +4727,13 @@ ol.text-dogovora-items ol ol li::before {
 
 .cross {
     position: absolute;
-    top: -4px;
-    left: 21px;
+    top: 0px;
+    left: 33px;
     transform: translate(-50%, -50%) scale(0);
     /* margin-top: -1px; */
     font-family: "Nunito-Bold";
     color: #fff;
-    transition: all 0.2s cubic-bezier(0.72, 1.2, 0.71, 0.72);
+    transition: all 0.05s cubic-bezier(0.72, 1.2, 0.71, 0.72);
     font-size: 18px;
     user-select: none;
 }
@@ -4732,7 +4741,7 @@ ol.text-dogovora-items ol ol li::before {
 .cross.active {
     z-index: 2;
     transform: translate(-50%, -50%) scale(1);
-    transition: all 0.15s cubic-bezier(0.32, 2.04, 0.85, 0.54);
+    transition: all 0.05s cubic-bezier(0.32, 2.04, 0.85, 0.54);
 }
 
 
@@ -4750,7 +4759,7 @@ ol.text-dogovora-items ol ol li::before {
     display: flex;
     position: absolute;
     right: -5px;
-    top: -10px;
+    top: -7px;
     transition: all 0.25s ease-out;
     transform: scale(0);
     background: #fff;
@@ -4862,6 +4871,9 @@ ol.text-dogovora-items ol ol li::before {
         flex-wrap: wrap;
         align-content: flex-start;
         padding: 25px;
+    }
+    .nav-kebab {
+        top: 30px;
     }
 }
 
