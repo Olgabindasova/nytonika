@@ -1,0 +1,4793 @@
+@font-face {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 250;
+    font-display: swap;
+    src: url(./fonts/Lato-Thin.woff2) format('woff2'),
+        url(./fonts/Lato-Thin.woff) format('woff'),
+        url(./fonts/Lato-Thin.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url(./fonts/Lato-Light.woff2) format('woff2'),
+        url(./fonts/Lato-Light.woff) format('woff'),
+        url(./fonts/Lato-Light.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(./fonts/Lato-Regular.woff2) format('woff2'),
+        url(./fonts/Lato-Regular.woff) format('woff'),
+        url(./fonts/Lato-Regular.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url(./fonts/Lato-Medium.woff2) format('woff2'),
+        url(./fonts/Lato-Medium.woff) format('woff'),
+        url(./fonts/Lato-Medium.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url(./fonts/Lato-SemiBold.woff2) format('woff2'),
+        url(./fonts/Lato-SemiBold.woff) format('woff'),
+        url(./fonts/Lato-SemiBold.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(./fonts/Lato-Bold.woff2) format('woff2'),
+        url(./fonts/Lato-Bold.woff) format('woff'),
+        url(./fonts/Lato-Bold.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-display: swap;
+    src: url(./fonts/Lato-ExtraBold.woff2) format('woff2'),
+        url(./fonts/Lato-ExtraBold.woff) format('woff'),
+        url(./fonts/Lato-ExtraBold.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-display: swap;
+    src: url(./fonts/Lato-Black.woff2) format('woff2'),
+        url(./fonts/Lato-Black.woff) format('woff'),
+        url(./fonts/Lato-Black.ttf) format('truetype');
+}
+
+:root {
+    --dfp-color-0: #4F6382;
+    --dfp-color-1: #fff;
+    --dfp-color-2: #F9FBFE;
+    --dfp-color-3: #E9F0F6;
+    --dfp-color-4: #889EC1;
+    --dfp-color-5: #1A3055;
+    --dfp-color-6: #3E68A8;
+    --dfp-color-7-2: #03B97A;
+    --dfp-color-7: #03B97A;
+    --dfp-color-8: #242424;
+    --dfp-color-9: #66727F;
+    --dfp-color-10: #FAFCFF;
+    --dfp-color-11: #EAEBEC;
+    --dfp-color-12: #dc3545;
+    --dfp-shadow: 0px 0px 15px 0px rgba(139, 139, 139, 0.2);
+    --dfp-radius-1: 10px;
+    --dfp-radius-2: 15px;
+    --dfp-radius-3: 20px;
+    --dfp-radius-4: 0px 15px 15px 15px;
+    --dfp-radius-5: 20px 0px 0px 20px;
+    --dfp-radius-6: 20px 20px 0px 0px;
+    --dfp-radius-7: 15px 0px 0px 15px;
+    --dfp-radius-8: 15px 15px 0px 0px;
+}
+
+.carousel__button {
+
+    color: var(--dfp-color-1) !important;
+
+}
+
+/*Шрифты*/
+body {
+    color: var(--dfp-color-8);
+    overflow-x: hidden;
+    font-family: sans-serif;
+}
+
+
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+li,
+span,
+div,
+button,
+a,
+input,
+label,
+section {
+    font-family: 'Lato', sans-serif;
+    color: inherit;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:hover {
+    color: inherit;
+}
+
+a.link:hover {
+    color: var(--dfp-color-4) !important;
+}
+
+a.link>svg {
+    fill: var(--dfp-color-0);
+}
+
+a.link:hover>svg {
+    fill: var(--dfp-color-4);
+}
+
+a[name].anchor {
+    border-top: 35px solid transparent;
+    margin-top: -35px;
+    /* padding: 15px;*/
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+}
+
+.df-text-xl {
+    letter-spacing: -2px;
+    font-size: clamp(50px, 5.5vw, 70px);
+    line-height: clamp(45px, 5.5vw, 65px);
+}
+
+.df-text-l {
+    letter-spacing: 0px;
+    font-size: clamp(32px, 4.5vw, 48px);
+    line-height: clamp(28px, 4.5vw, 44px);
+}
+
+.df-h1 {
+    font-weight: 700;
+    letter-spacing: 0px;
+    font-size: clamp(24px, 4vw, 36px);
+    line-height: clamp(28px, 4.5vw, 38px);
+}
+
+.df-h2 {
+    font-weight: 700;
+    letter-spacing: 0px;
+    font-size: clamp(22px, 3.5vw, 32px);
+    line-height: clamp(26px, 4vw, 36px);
+}
+
+.df-h3 {
+    font-weight: 500;
+    letter-spacing: 0px;
+    font-size: clamp(20px, 3vw, 28px);
+    line-height: clamp(24px, 3.5vw, 34px);
+}
+
+.df-h4 {
+    font-weight: 700;
+    letter-spacing: 0px;
+    font-size: clamp(18px, 2.8vw, 24px);
+    line-height: clamp(22px, 3.2vw, 28px);
+}
+
+.df-h5 {
+    font-weight: 500;
+    letter-spacing: 0px;
+    font-size: clamp(18px, 2.8vw, 24px);
+    line-height: clamp(22px, 3.2vw, 28px);
+}
+
+.df-h6 {
+    font-weight: 500;
+    letter-spacing: 0px;
+    font-size: clamp(16px, 2.2vw, 20px);
+    line-height: clamp(20px, 2.8vw, 24px);
+}
+
+.df-p {
+    font-weight: 400;
+    font-size: clamp(14px, 2vw, 16px) !important;
+    line-height: clamp(20px, 2.5vw, 22px) !important;
+}
+
+.df-p-l {
+    font-weight: 400;
+    font-size: clamp(16px, 2.2vw, 18px) !important;
+    line-height: clamp(16px, 2.2vw, 18px) !important;
+}
+
+.df-p-card {
+    font-weight: 400;
+    font-size: clamp(13px, 1.8vw, 15px);
+    line-height: clamp(16px, 2.5vw, 18px);
+}
+
+.df-p-card-min {
+    font-weight: 400;
+    font-size: clamp(12px, 1.6vw, 13px);
+    line-height: clamp(13px, 2.2vw, 15px);
+}
+
+.df-weight-250 {
+    font-weight: 250 !important;
+}
+
+.df-weight-300 {
+    font-weight: 300 !important;
+}
+
+.df-weight-400 {
+    font-weight: 400 !important;
+}
+
+.df-weight-500 {
+    font-weight: 500 !important;
+}
+
+.df-weight-600 {
+    font-weight: 600 !important;
+}
+
+.df-weight-700 {
+    font-weight: 700 !important;
+}
+
+.df-weight-800 {
+    font-weight: 800 !important;
+}
+
+.df-weight-900 {
+    font-weight: 900 !important;
+}
+
+/* Цвет фона */
+.df-bg-0 {
+    background-color: var(--dfp-color-0);
+}
+
+.df-bg-1 {
+    background-color: var(--dfp-color-1);
+}
+
+.df-bg-2 {
+    background-color: var(--dfp-color-2);
+}
+
+.df-bg-3 {
+    background-color: var(--dfp-color-3);
+}
+
+.df-bg-4 {
+    background-color: var(--dfp-color-4);
+}
+
+.df-bg-5 {
+    background-color: var(--dfp-color-5);
+}
+
+.df-bg-6 {
+    background-color: var(--dfp-color-6);
+}
+
+.df-bg-7 {
+    background-color: var(--dfp-color-7);
+}
+
+.df-bg-7-2 {
+    background-color: var(--dfp-color-7-2);
+}
+
+.df-bg-12 {
+    background-color: var(--dfp-color-12);
+}
+
+.df-bg-tr {
+    background-color: transparent !important;
+    background: transparent !important;
+}
+
+/* Бордеры */
+.df-bc-0 {
+    border: 1px solid var(--dfp-color-0);
+}
+
+.df-bc-2 {
+    border: 1px solid var(--dfp-color-2);
+}
+
+.df-bc-3 {
+    border: 1px solid var(--dfp-color-3);
+}
+
+.df-bc-4 {
+    border: 1px solid var(--dfp-color-4);
+}
+
+.df-bc-5 {
+    border: 1px solid var(--dfp-color-5);
+}
+
+.df-bc-6 {
+    border: 1px solid var(--dfp-color-6);
+}
+
+.df-bc-12 {
+    border: 1px solid var(--dfp-color-12);
+}
+
+.df-hr {
+    width: 100%;
+    height: 1px;
+}
+
+.df-column-divider-0 {
+    column-rule: 1px solid var(--dfp-color-0);
+}
+
+.df-count-2 {
+    column-count: 2;
+    column-gap: 25px;
+}
+
+/* Тень*/
+
+.df-shadow {
+    box-shadow: var(--dfp-shadow);
+}
+
+/* Цвет текста*/
+
+.df-tc-1 {
+    color: var(--dfp-color-1);
+}
+
+.df-tc-2 {
+    color: var(--dfp-color-2);
+}
+
+.df-tc-3 {
+    color: var(--dfp-color-3);
+}
+
+.df-tc-4 {
+    color: var(--dfp-color-4);
+}
+
+.df-tc-5 {
+    color: var(--dfp-color-5);
+}
+
+.df-tc-6 {
+    color: var(--dfp-color-6);
+}
+
+.df-tc-7 {
+    color: var(--dfp-color-7);
+}
+
+.df-tc-7-2 {
+    color: var(--dfp-color-7-2);
+}
+
+.df-tc-8 {
+    color: var(--dfp-color-8);
+}
+
+.df-tc-9 {
+    color: var(--dfp-color-9);
+}
+
+.df-tc-10 {
+    color: var(--dfp-color-0);
+}
+
+.df-tc-12 {
+    color: var(--dfp-color-12);
+}
+
+/* Радиусы*/
+
+.df-brr-1 {
+    border-radius: var(--dfp-radius-1);
+}
+
+.df-brr-2 {
+    border-radius: var(--dfp-radius-2);
+}
+
+.df-brr-3 {
+    border-radius: var(--dfp-radius-3);
+}
+
+.df-brr-4 {
+    border-radius: var(--dfp-radius-4);
+}
+
+.df-brr-5 {
+    border-radius: var(--dfp-radius-5);
+}
+
+.df-brr-6 {
+    border-radius: var(--dfp-radius-6);
+}
+
+.df-brr-7 {
+    border-radius: var(--dfp-radius-7);
+}
+
+.df-brr-8 {
+    border-radius: var(--dfp-radius-8);
+}
+
+/* Кнопки*/
+
+.df-button,
+a.df-button,
+button.df-button {
+    border-radius: 0px 15px 15px 15px;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.3s;
+    display: flex;
+    justify-content: center;
+    width: fit-content;
+    font-size: 14px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.df-button-1,
+a.df-button-1,
+button.df-button-1 {
+    background-color: var(--dfp-color-5);
+    border: 1px solid var(--dfp-color-5);
+    color: var(--dfp-color-1) !important;
+}
+
+.df-button-1:hover {
+    background-color: var(--dfp-color-0);
+    border: 1px solid var(--dfp-color-0);
+    color: var(--dfp-color-1) !important;
+}
+
+.df-button-1-2,
+a.df-button-1-2,
+button.df-button-1 {
+    background-color: var(--dfp-color-5);
+    border: 1px solid var(--dfp-color-5);
+    color: var(--dfp-color-1) !important;
+}
+
+.df-button-1-2:hover {
+    background-color: var(--dfp-color-1);
+    border: 1px solid var(--dfp-color-5);
+    color: var(--dfp-color-5) !important;
+}
+
+.df-button-2 {
+    background-color: var(--dfp-color-0);
+    border: 1px solid var(--dfp-color-0);
+    color: var(--dfp-color-1) !important;
+}
+
+.df-button-2:hover {
+    background-color: var(--dfp-color-4);
+    border: 1px solid var(--dfp-color-4);
+    color: var(--dfp-color-1) !important;
+}
+
+.df-button-3 {
+    background-color: var(--dfp-color-1);
+    border: 1px solid var(--dfp-color-5);
+    color: var(--dfp-color-5);
+}
+
+.df-button-3:hover {
+    background-color: var(--dfp-color-5);
+    border: 1px solid var(--dfp-color-1);
+    color: var(--dfp-color-1) !important;
+}
+
+.df-button-5 {
+    background-color: var(--dfp-color-4);
+    border: 1px solid var(--dfp-color-4);
+    color: var(--dfp-color-1);
+}
+
+.df-button-5:hover {
+    background-color: var(--dfp-color-0);
+    border: 1px solid var(--dfp-color-0);
+    color: var(--dfp-color-1) !important;
+}
+
+.df-button-6 {
+    background-color: var(--dfp-color-4);
+    border: 1px solid var(--dfp-color-4);
+    color: var(--dfp-color-1);
+}
+
+.df-button-6:hover {
+    background-color: var(--dfp-color-1);
+    border: 1px solid var(--dfp-color-4);
+    color: var(--dfp-color-4) !important;
+}
+
+.df-button-7 {
+    background-color: var(--dfp-color-12);
+    border: 1px solid var(--dfp-color-12);
+    color: var(--dfp-color-1);
+}
+
+.df-button-7:hover {
+    background-color: var(--dfp-color-1);
+    border: 1px solid var(--dfp-color-12);
+    color: var(--dfp-color-12) !important;
+}
+
+.df-button-8 {
+    background-color: var(--dfp-color-6);
+    border: 1px solid var(--dfp-color-6);
+    color: var(--dfp-color-1);
+}
+
+.df-button-8:hover {
+    background-color: var(--dfp-color-1);
+    border: 1px solid var(--dfp-color-6);
+    color: var(--dfp-color-6) !important;
+}
+
+.df-button-red:hover {
+    background-color: var(--dfp-color-12);
+    border: 1px solid var(--dfp-color-12);
+    color: var(--dfp-color-1) !important;
+}
+
+.df-button-4 {
+    padding: 10px 0px 5px 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.3s;
+    display: flex;
+    justify-content: start;
+    width: fit-content;
+    font-weight: 400;
+    font-size: clamp(16px, 2vw, 18px);
+    line-height: clamp(20px, 2.8vw, 24px);
+    white-space: nowrap;
+    color: var(--dfp-color-0);
+    border-bottom: 1px dashed var(--dfp-color-0);
+    background-color: transparent;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    gap: 10px;
+    align-items: center;
+}
+
+.df-button-4.df-p-card {
+    font-size: clamp(13px, 1.8vw, 15px);
+    line-height: clamp(16px, 2.5vw, 18px);
+}
+
+.df-button-4:hover {
+    border-bottom: 1px solid var(--dfp-color-5);
+    color: var(--dfp-color-5) !important;
+}
+
+.df-button-4>svg {
+    fill: var(--dfp-color-0);
+
+}
+
+.df-button-4:hover>svg {
+    fill: var(--dfp-color-5);
+}
+
+.df-button-4.arrow::after {
+    background-image: url("https://www.defectologiya.pro/assets/images/svg/Arrow4-after.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20px;
+    width: 20px;
+    min-width: 20px;
+    height: 15px;
+    content: '';
+    display: block;
+    position: relative;
+    top: 2px;
+    transition: all 0.3s;
+}
+
+.df-button-4:hover.arrow::after {
+    background-image: url("https://www.defectologiya.pro/assets/images/svg/Arrow4-after-hover.svg");
+}
+
+.arrow-r1.arrow::after {
+    transform: rotate(90deg);
+    top: 1px;
+    background-size: 16px;
+}
+
+.arrow-r2.arrow::after {
+    transform: rotate(-90deg);
+    top: 1px;
+    background-size: 16px;
+}
+
+.arrow-r3.arrow::after {
+    transform: rotate(-90deg);
+    top: 1px;
+    background-size: 16px;
+}
+
+.df-button-4.arrow.arrow-r1[aria-expanded="true"] {
+    display: none;
+}
+
+.df-icons-social {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 5px;
+}
+
+.df-icons-social .ya-share2__container.ya-share2__container_color-scheme_blackwhite .ya-share2__badge,
+.df-icons-social .ya-share2__container.ya-share2__container_color-scheme_blackwhite .ya-share2__mobile-popup-badge {
+    background-color: var(--dfp-color-5);
+}
+
+.df-icons-social .ya-share2__badge {
+    border-radius: 4px !important;
+}
+
+.df-button-9 {
+    background-color: var(--dfp-color-4);
+    border: 1px solid var(--dfp-color-4);
+    color: var(--dfp-color-1);
+    border-radius: var(--dfp-radius-1) !important;
+    align-items: center;
+}
+
+.df-button-9.df-button-9-1 {
+    background-color: var(--dfp-color-7);
+    border: 1px solid var(--dfp-color-7);
+}
+
+.df-button-9.df-button-9-2,
+.df-button-9.df-button-9-3 {
+    background-color: var(--dfp-color-6);
+    border: 1px solid var(--dfp-color-6);
+}
+
+.df-button-9.df-button-9-3 {
+    background-color: var(--dfp-color-6);
+    border: 1px solid var(--dfp-color-6);
+}
+
+.df-button-9.df-button-9-4 {
+    background-color: var(--dfp-color-5);
+    border: 1px solid var(--dfp-color-5);
+}
+
+.df-button-9:hover {
+    background-color: var(--dfp-color-0);
+    border: 1px solid var(--dfp-color-0);
+    color: var(--dfp-color-1);
+}
+
+/* Списки*/
+
+.df-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 0 0 0 10px;
+    margin-bottom: 0;
+}
+
+.df-list li {
+    list-style-type: none;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    align-items: flex-start;
+}
+
+.df-list li::before {
+    background-image: url("https://www.defectologiya.pro/assets/images/svg/galochka.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20px;
+    width: 20px;
+    min-width: 20px;
+    height: 15px;
+    content: '';
+    display: block;
+    color: var(--dfp-color-7);
+}
+
+.df-list-1 {
+    padding: 0;
+    list-style: none;
+    counter-reset: li;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.df-list-1 li {
+    position: relative;
+    width: 100%;
+    min-width: 100%;
+}
+
+.df-list-1>li>a,
+.df-list-1>li>p {
+    border: 1px solid var(--dfp-color-4);
+    background: var(--dfp-color-2);
+    border-radius: var(--dfp-radius-1);
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    padding: 20px 15px 25px 70px;
+    width: 100%;
+    min-width: 100%;
+    display: block;
+    text-decoration: none;
+    color: var(--dfp-color-8);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px;
+    margin: 0;
+}
+
+.df-list-2>li>p {
+    padding: 10px 15px 15px 55px !important;
+}
+
+.df-list-1>li>div {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+}
+
+.df-list-1>li>div>span {
+    background: var(--dfp-color-4);
+    border-radius: var(--dfp-radius-2);
+    color: var(--dfp-color-1);
+    width: fit-content;
+    font-size: 13px;
+    font-weight: 500;
+    padding: 5px 15px;
+    position: relative;
+    display: inline-block;
+    top: -15px;
+    left: -20px;
+    transition-duration: 0.3s;
+    text-align: center;
+}
+
+.df-list-1>li:hover>div>span {
+    background: var(--dfp-color-5);
+}
+
+
+.df-list-1>li:hover>a,
+.df-list-1>li:hover>p {
+    border: 1px solid var(--dfp-color-0);
+    border-radius: var(--dfp-radius-1);
+    color: var(--dfp-color-5);
+    background: var(--dfp-color-3);
+}
+
+.df-list-1 li:before {
+    position: absolute;
+    top: -20px;
+    left: 20px;
+    padding: 0px 5px;
+    font-size: 24px;
+    width: 40px;
+    height: 40px;
+    font-weight: 700;
+    color: var(--dfp-color-1);
+    background: var(--dfp-color-4);
+    counter-increment: li;
+    content: counter(li);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    text-align: center;
+    border-radius: var(--dfp-radius-1);
+}
+
+.df-list-2 li:before {
+    top: -15px;
+    left: 15px;
+    font-size: 18px;
+    width: 30px;
+    height: 30px;
+}
+
+.df-list-1 li:hover:before {
+    background: var(--dfp-color-5);
+    color: var(--dfp-color-1);
+    -webkit-transform: translate(-5px, 0);
+    -ms-transform: translate(-5px, 0);
+    -o-transform: translate(-5px, 0);
+    transform: translate(-5px, 0);
+}
+
+
+/* Блоки и карточки*/
+
+/* Блоки c кнопкой для обратной связи*/
+
+.df-feedback {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    padding: 25px 40px;
+}
+
+.df-feedback>div:nth-child(1) {
+    width: 65%;
+}
+
+.df-feedback>button {
+    width: 25%;
+}
+
+.df-feedback-block-1 {
+    font-weight: 800;
+    font-size: clamp(22px, 3vw, 26px);
+    line-height: clamp(24px, 3vw, 30px);
+    letter-spacing: 1px;
+}
+
+.df-feedback-block-2 {
+    font-weight: 600;
+    font-size: clamp(16px, 2.5vw, 20px);
+    line-height: clamp(20px, 3vw, 24px);
+}
+
+/* Блоки c тизерами */
+.df-tizers-block,
+.df-tizers-block2 {
+    box-sizing: border-box;
+}
+
+/*.df-tizers-block>div>div.slick-track {
+    margin: 0 auto;
+}*/
+.df-tizers-block>div>div.slick-track,
+.df-tizers-block2>div>div.slick-track {
+    margin: 0 auto;
+    display: flex;
+    align-items: stretch;
+    gap: 10px;
+}
+
+.df-tizer {
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+    justify-content: flex-start;
+}
+
+.df-tizer_svg {
+    width: 100px;
+    height: 100px;
+    padding: 20px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.df-tizer_svg>svg {
+    fill: var(--dfp-color-1);
+    width: 50px;
+}
+
+.df-tizer_text {
+    font-weight: 500;
+    font-size: clamp(13px, 1.7vw, 14px);
+    line-height: clamp(16px, 2.5vw, 17px);
+    width: 200px;
+}
+
+.df-tizers-block>button.slick-arrow,
+.df-tizers-block2>button.slick-arrow {
+    display: none !important;
+}
+
+.df-tizer.slick-slide {
+    gap: 15px;
+    padding: 15px 10px 15px 10px !important;
+    justify-content: flex-start;
+    height: auto;
+    background: #fff;
+    border-radius: 15px;
+    border: 1px solid #e9f0f6;
+    box-sizing: content-box !important;
+}
+
+.df-tizer.slick-slide>.df-tizer_svg {
+    background: var(--dfp-color-12);
+    transition: all 0.5s;
+}
+
+.df-tizer.slick-slide>a.df-tizer_svg:hover {
+    background: var(--dfp-color-5);
+}
+
+.df-tizer.slick-slide>.df-tizer_text {
+    font-size: clamp(13px, 1.7vw, 14px);
+    line-height: clamp(16px, 2.5vw, 15px);
+    width: 180px;
+}
+
+/* Блоки c номерами*/
+
+.df-block-numbers {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.df-block-number {
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 48%;
+}
+
+.df-block-number_numeral {
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 60px;
+    font-size: clamp(48px, 6vw, 70px);
+    line-height: clamp(44px, 5.5vw, 60px);
+    display: block;
+    position: relative;
+    top: -3px;
+}
+
+.df-block-number_text {
+    font-weight: 500;
+    font-size: clamp(13px, 1.7vw, 15px);
+    line-height: clamp(16px, 2.2vw, 18px);
+}
+
+/* Блоки c этапами'*/
+
+.df-block-number_stage {
+    padding: 0;
+    gap: 0;
+}
+
+.df-block-number_numeral_stage {
+    height: 100%;
+    top: 0;
+    padding: 20px 40px;
+    font-size: clamp(60px, 7vw, 80px);
+    line-height: clamp(55px, 6.5vw, 75px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: var(--dfp-radius-5);
+}
+
+.df-block-number_numeral_stage::after {
+    content: 'этап';
+    display: block;
+    position: relative;
+    font-size: clamp(16px, 2.2vw, 20px);
+    line-height: clamp(20px, 2.8vw, 24px);
+    font-weight: 700;
+}
+
+.df-block-number_text_stage {
+    padding: 20px;
+}
+
+.df-block-number_text_stage>div {
+    font-weight: 700;
+}
+
+/* Блоки c этапами'*/
+
+.df-block-icon {
+    padding: 0;
+    gap: 0;
+}
+
+.df-block-icon>.df-tizer_svg {
+    min-width: 130px;
+    height: 100%;
+    border-radius: var(--dfp-radius-5);
+}
+
+.df-block-icon>.df-tizer_svg>svg {
+    width: 70px;
+}
+
+
+/* Блок с рекламой цены*/
+.price-module {
+    padding: 35px;
+    display: flex;
+    flex-direction: row;
+}
+
+.price-module>div:nth-child(1),
+.price-module>div:nth-child(2) {
+    border-right: 1px solid var(--dfp-color-5);
+}
+
+.price-module>div:nth-child(1),
+.price-module>div:nth-child(2) {
+    min-width: 400px;
+    max-width: 400px;
+}
+
+.price-module>div:nth-child(3) {
+    width: fit-content;
+}
+
+.price-module>div:nth-child(1)::before {
+    width: 0;
+    height: 0;
+    display: block;
+    position: relative;
+    border: 25px solid transparent;
+    border-left: 25px solid var(--dfp-color-5);
+    top: 75px;
+    left: 114%;
+    background-image: none;
+    content: '';
+}
+
+.price-module_vig {
+    display: flex;
+    flex-direction: column;
+    width: 120px;
+    height: 120px;
+    font-size: 12px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: relative;
+    left: 60%;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.price-module_vig2 {
+    font-weight: 800;
+    letter-spacing: 0px;
+    font-size: clamp(40px, 5vw, 50px);
+    line-height: clamp(40px, 5.5vw, 50px);
+}
+
+.price-module_procent {
+    font-size: 14px;
+    display: block;
+    position: relative;
+    top: 10px;
+}
+
+.price-module_discounts {
+    border-top: 1px solid var(--dfp-color-5);
+    max-width: 700px;
+    height: 0;
+    margin-top: 15px;
+    padding-bottom: 10px;
+    width: 100%;
+}
+
+.price-module_discounts::before {
+    width: 0;
+    height: 0;
+    display: block;
+    position: relative;
+    border: 15px solid transparent;
+    border-top: 15px solid var(--dfp-color-5);
+    top: 100%;
+    left: 10%;
+    background-image: none;
+    content: '';
+}
+
+/* Блок с рекламой цены новый*/
+
+.price-module_decktop {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.price-module_decktop>div:nth-child(1)::before {
+    left: 100% !important;
+}
+
+.price-module_decktop>div:nth-child(1)>div {
+    padding-right: 45px;
+    min-width: 400px;
+    margin-left: -50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.price-module_vig_decktop {
+    background-image: url("https://www.defectologiya.pro/assets/images/svg/price-circle.svg");
+    width: 130px;
+    height: 130px;
+}
+
+.price-module_vig_card {
+    background-image: url("https://www.defectologiya.pro/assets/images/svg/price-circle-card.svg");
+    width: 65px;
+    height: 65px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.price-module_decktop>div:nth-child(2)>div>div.text-decoration-line-through,
+.price-module_decktop>div:nth-child(2)>div>div.price-module_vig2,
+.price-module_decktop>div:nth-child(2)>div>div:nth-child(4) {
+    display: block;
+    position: relative;
+    top: -20px;
+}
+
+.price-module_tablet {
+    display: none;
+}
+
+.price-module_mobile {
+    display: none;
+}
+
+.smart-time_mobile>div:nth-child(odd) {
+    width: 25%;
+}
+
+.smart-time_mobile>div>a,
+.smart-time_mobile>div>form>a,
+.smart-time_mobile>div>button,
+.smart-time_mobile>div>form>button {
+    width: 100%;
+}
+
+.smart-time_mobile>div>form {
+    display: flex;
+    width: 100% !important;
+}
+
+.price-module_pay-item {
+    display: flex;
+    background: var(--dfp-color-2);
+    border-radius: var(--dfp-radius-1);
+    border: 1px solid var(--dfp-color-4);
+    text-decoration: none;
+    flex-direction: column;
+    align-items: flex-start;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    padding: 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.price-module_pay-item>div {
+    text-align: start;
+}
+
+.price-module_pay-item:hover {
+    border: 1px solid var(--dfp-color-0);
+    background: var(--dfp-color-3);
+}
+
+.price-module_pay-item-info {
+    cursor: auto;
+    background: var(--dfp-color-2);
+}
+
+.price-module_pay-item-info:hover {
+    background: var(--dfp-color-2);
+}
+
+.price-block-new_pay {
+    min-height: 105px;
+    display: flex;
+}
+
+.price-block-new_pay>a,
+.price-block-new_pay>form>button {
+    max-height: 125px;
+    display: flex;
+    align-items: center;
+    font-size: clamp(18px, 2vw, 20px);
+    letter-spacing: 1px;
+}
+
+/* Блок с картинками - документы*/
+
+.block-img_pic {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+/* Картинки с фансибокс*/
+
+.img_pic1 {
+    display: block;
+    width: 200px;
+    padding: 10px;
+    height: 150px;
+    text-decoration: none;
+    background: var(--dfp-color-1);
+}
+
+.img_pic1>img {
+    width: 100%;
+}
+
+.zoom-pic1 {
+    position: relative;
+    left: 50%;
+    top: -50%;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 1px solid;
+    border-color: var(--dfp-color-5);
+    padding: 10px;
+    width: 30px;
+    height: 30px;
+    background: rgba(233, 240, 246, 0.5);
+    transition: all 0.3s;
+}
+
+.zoom-pic1:hover {
+    background: rgba(233, 240, 246, 1);
+    width: 35px;
+    height: 35px;
+}
+
+.zoom-pic1::after {
+    content: '+';
+    display: block;
+    font-size: 30px;
+    color: var(--dfp-color-5);
+    font-weight: 300;
+    position: relative;
+}
+
+/* Блок с преподавателями*/
+
+.educators-block {
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.educator-item {
+    background: var(--dfp-color-10);
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 20px;
+    margin-top: 35px;
+    margin-left: 35px;
+    width: 45%;
+    border: 1px solid var(--dfp-color-10);
+    transition: all .5s;
+}
+
+
+.educator_img {
+    min-width: 0;
+    width: 0;
+    height: 0;
+    display: block;
+    position: relative;
+    top: -55px;
+    left: -55px;
+}
+
+.educator_img-1 {
+    min-width: 105px;
+    width: 105px;
+    height: 105px;
+    display: block;
+    border: 1px solid var(--dfp-color-3);
+}
+
+.educator_img-1:hover {
+    border: 1px solid var(--dfp-color-5);
+}
+
+.educator-item:has(.educator_img-1:hover) {
+    border: 1px solid var(--dfp-color-5);
+}
+
+.educator-item:has(.educator_title:hover) {
+    border: 1px solid var(--dfp-color-5);
+}
+
+.educator_content {
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 0 45px;
+    width: 100%;
+}
+
+.educator_title {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 10px;
+    font-weight: 700;
+    letter-spacing: 0px;
+    font-size: clamp(16px, 2.1vw, 18px);
+    line-height: clamp(20px, 2.8vw, 24px);
+    color: var(--dfp-color-0);
+    align-items: center;
+    text-decoration: none;
+}
+
+.educator_title:hover {
+    color: var(--dfp-color-5);
+}
+
+.educator_star {
+    display: flex;
+    color: var(--dfp-color-4);
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 7px 10px 4px;
+    border: 1px solid var(--dfp-color-4);
+    text-decoration: none;
+    transition: all .5s;
+}
+
+.educator_star.inactive {
+    display: none;
+}
+
+.educator_star>svg {
+    fill: var(--dfp-color-4);
+    width: 15px;
+    transition: all .5s;
+}
+
+.educator_title:hover>.educator_star {
+    border: 1px solid var(--dfp-color-5);
+    color: var(--dfp-color-5);
+}
+
+.educator_title:hover>.educator_star>svg {
+    fill: var(--dfp-color-5);
+}
+
+/* Блок с модулями аккордеон*/
+
+.accordion-modul_header {
+    border-bottom: 1px solid var(--dfp-color-4);
+    gap: 5px;
+}
+
+
+.accordion-modul>div>.accordion-modul-item_header_bottom,
+.accordion-modul>div>h2>button {
+    color: var(--dfp-color-9);
+    font-weight: 400;
+    letter-spacing: 0px;
+    font-size: clamp(14px, 2.2vw, 20px);
+    line-height: clamp(16px, 2.8vw, 24px);
+}
+
+.accordion-modul-item_attest .accordion-header_attest {
+    position: relative;
+    left: -10px;
+}
+
+
+.accordion-modul-item_attest .accordion-header_attest>div {
+    top: -30px;
+    z-index: 999;
+    height: 40px;
+}
+
+.accordion-modul>div>h2>button {
+    border-bottom: 1px solid var(--dfp-color-4);
+    display: flex;
+    align-items: flex-start;
+    padding-bottom: 15px !important;
+    padding-top: 15px !important;
+}
+
+.accordion-modul_button_stag {
+    border-bottom: 0 !important;
+    min-height: 70px;
+}
+
+.accordion-modul_button_stag .accordion-header_attest>div {
+    top: -30px;
+}
+
+.accordion-modul>div>h2>button>div:nth-child(1) {
+    font-weight: 500;
+    letter-spacing: 0px;
+    font-size: clamp(20px, 4.2vw, 34px);
+    line-height: clamp(20px, 4.5vw, 38px);
+}
+
+.accordion-modul>div>h2>button>div:nth-child(2) {
+    text-transform: uppercase;
+    position: relative;
+    top: 5px;
+    padding-right: 10px;
+}
+
+.accordion-modul>div>h2>button::after {
+    display: block;
+    position: relative;
+    left: -25px;
+    background-image: none;
+    content: '+';
+    font-size: 1.2em;
+}
+
+.accordion-modul>div>h2>button:not(.collapsed) {
+    color: var(--dfp-color-5);
+    background-color: var(--dfp-color-1);
+    box-shadow: none;
+    border-bottom: 2px solid var(--dfp-color-4);
+}
+
+.accordion-modul>div>h2>button:not(.collapsed)::after {
+    display: block;
+    position: relative;
+    left: -25px;
+    top: -2px;
+    transform: rotate(0);
+    background-image: none;
+    content: '-';
+    font-size: 1.5em;
+}
+
+.accordion-modul>div>h2>button:focus,
+.accordion-modul-educator-item>div>h2>button:focus {
+    box-shadow: none;
+    border-color: var(--dfp-color-4);
+}
+
+.accordion-modul-educator-item_heder {
+    width: 100% !important;
+    background: var(--dfp-color-1);
+    border: 1px solid var(--dfp-color-1);
+}
+
+.accordion-modul-educator-item>div>h2>.accordion-button {
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    border-bottom: transparent !important;
+}
+
+.accordion-modul-educator-item>div>h2>.accordion-button::after {
+    background-image: none;
+    content: url("https://www.defectologiya.pro/assets/images/svg/Смотретьсодержание.svg");
+    background: var(--dfp-color-4);
+    border-radius: var(--dfp-radius-1);
+    width: 220px;
+    height: fit-content;
+    padding: 5px 20px;
+    position: relative;
+    top: 30px;
+    transition: all 0.5s;
+    margin-top: -45px;
+}
+
+.accordion-modul-educator-item>div>h2>.accordion-button:hover::after {
+    background: var(--dfp-color-0);
+}
+
+.accordion-modul-educator-item>div>h2>.accordion-button:not(.collapsed)::after {
+    background-image: none;
+    transform: rotate(0);
+    background: var(--dfp-color-0);
+    content: url("https://www.defectologiya.pro/assets/images/svg/Скрытьсодержание.svg");
+}
+
+.accordion-modul-educator-item>div>h2>button {
+    border-bottom: 1px solid var(--dfp-color-3);
+}
+
+.accordion-modul-educator-item>div>h2>button:not(.collapsed) {
+    color: var(--dfp-color-5);
+    background-color: var(--dfp-color-1);
+    box-shadow: none;
+    border-bottom: 1px solid transparent;
+}
+
+.accordion-modul-educator-item {
+    padding: 20px 35px 55px 35px;
+}
+
+.accordion-modul-educator-item>div>div {
+    padding-left: 45px;
+}
+
+.accordion-modul>.accordion-item {
+    border: 0;
+}
+
+.accordion-modul-item_attest>div:nth-child(2) {
+    text-transform: uppercase;
+}
+
+.accordion-modul-item_header_bottom>button {
+    border-bottom: 0px !important;
+}
+
+.educator_img>div {
+    min-width: fit-content;
+    width: 105px;
+    text-align: center;
+    background: var(--dfp-color-4);
+}
+
+.educator_img-2 {
+    min-width: 105px;
+    width: 105px;
+    height: 105px;
+    display: block;
+    border: 1px solid var(--dfp-color-4);
+}
+
+.educator_img-3 {
+    width: 270px;
+    height: 270px;
+    display: block;
+    border: 1px solid var(--dfp-color-4);
+    position: relative;
+    top: -30px;
+    right: 30px;
+}
+
+.educator-modul_title,
+.educator-modul_footer {
+    color: var(--dfp-color-4);
+}
+
+.accordion-modul-educator-item_videoclass {
+    border: 1px solid var(--dfp-color-2);
+    text-decoration: none;
+    transition: all 0.5s;
+    color: var(--dfp-color-9) !important;
+    width: 95%;
+    margin: auto;
+}
+
+.accordion-modul-educator-item_videoclass>span {
+    color: var(--dfp-color-4);
+}
+
+.accordion-modul-educator-item_videoclass:hover,
+a.accordion-modul-educator-item_videoclass:hover {
+    border: 1px solid var(--dfp-color-4);
+    background: var(--dfp-color-1);
+    color: var(--dfp-color-9) !important;
+}
+
+.accordion-modul-educator-item_videoclass:hover>span {
+    color: var(--dfp-color-0);
+}
+
+.accordion-modul-educator-item>div>h2>button:not(.collapsed)>.accordion-modul-educator-item_heder,
+.accordion-modul-educator-item>div>h2>button:not(.collapsed)>.accordion-modul-educator-item_heder>.educator_img>.educator_img-2 {
+    border: 1px solid var(--dfp-color-0);
+}
+
+.accordion-modul-educator-item>div>h2>button:not(.collapsed)>.accordion-modul-educator-item_heder>.educator_img>div {
+    background: var(--dfp-color-0);
+}
+
+.accordion-modul-educator-item>div>h2>button:not(.collapsed)>.accordion-modul-educator-item_heder>.educator_content>.educator-modul_title,
+.accordion-modul-educator-item>div>h2>button:not(.collapsed)>.accordion-modul-educator-item_heder>.educator_content>.educator-modul_footer {
+    color: var(--dfp-color-0);
+}
+
+.accordion-header_images-block-top {
+    overflow: hidden;
+    min-height: 0px;
+    max-height: 60px;
+    width: fit-content;
+}
+
+.accordion-header_images-block {
+    overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 20px;
+    margin-bottom: -20px;
+    width: 550px;
+    position: static;
+}
+
+.accordion-header_images {
+    padding-top: 10px;
+    display: inline-flex;
+    gap: 5px;
+    height: fit-content;
+}
+
+.accordion-header_images>img {
+    width: 50px;
+    border: 1px solid var(--dfp-color-0);
+    border-radius: var(--dfp-radius-1);
+}
+
+.accordion-header_attest {
+    display: flex;
+    justify-content: flex-end;
+    height: 0;
+}
+
+.accordion-header_attest>div {
+    width: 300px;
+    position: relative;
+    top: -55px;
+    font-weight: 600;
+    letter-spacing: 0px;
+    font-size: clamp(13px, 1.8vw, 15px);
+    line-height: clamp(15px, 2vw, 17px);
+    text-transform: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    background: var(--dfp-color-3);
+    height: 50px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    border-radius: var(--dfp-radius-2);
+    left: 85px;
+    color: var(--dfp-color-0);
+}
+
+.accordion-header_attest>div>span {
+    font-weight: 400;
+}
+
+/* Блок с востребованостью и практикой, элементы с тизерами*/
+
+.practice-tizer {
+    width: 135px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
+    position: relative;
+    top: -50px;
+    height: 130px;
+}
+
+.practice-tizer>.df-p-card {
+    text-align: end;
+}
+
+.practice-tizer_img {
+    width: 190px;
+    position: relative;
+    height: 140px;
+}
+
+.df-tizer_svg_practice>img {
+    width: 100px;
+}
+
+
+/* Блоки с документами*/
+.img_pic2 {
+    display: block;
+    width: 190px;
+    min-width: 190px;
+    padding: 10px;
+    height: 260px;
+    text-decoration: none;
+}
+
+.block-img {
+    margin-left: 50px;
+    width: 44%;
+    margin-top: 40px;
+}
+
+.block-img-doc {
+    width: 140px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    right: 30px;
+    bottom: 40px;
+    align-items: center;
+    border-radius: var(--dfp-radius-3);
+}
+
+
+.block-img-doc_text {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    right: 40px;
+}
+
+.block-img-doc_img-text {
+    right: 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Блоки с лояльностями*/
+
+.discounts-training {
+    border-top: 1px solid var(--dfp-color-5);
+    max-width: 700px;
+    height: 0;
+    margin-bottom: 15px;
+    padding-bottom: 25px;
+}
+
+.discounts-training::before {
+    width: 0;
+    height: 0;
+    display: block;
+    position: relative;
+    border: 25px solid transparent;
+    border-top: 25px solid var(--dfp-color-5);
+    top: 100%;
+    left: 25%;
+    background-image: none;
+    content: '';
+}
+
+
+.discount-block {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.discount-block_item {
+    padding: 20px 5%;
+    width: 49%;
+    display: flex;
+    gap: 5%;
+    align-items: center;
+}
+
+.discount-block_item>div:nth-child(2) {
+    min-width: 20px;
+    max-width: 20px;
+}
+
+.discount-block_item>div:nth-child(3) {
+    line-height: 14px;
+    font-size: 14px;
+}
+
+.discount-block_item>div:nth-child(3)>span {
+    width: fit-content;
+}
+
+/* Блоки с этапами обучение*/
+
+.list1b {
+    margin: 20px 0 0;
+    padding: 0;
+    list-style: none;
+    counter-reset: li;
+}
+
+.list1b>li {
+    box-shadow: var(--dfp-shadow);
+    border-radius: var(--dfp-radius-1);
+    position: relative;
+    margin-bottom: 30px;
+    padding: 35px 35px 35px 100px;
+    border-top: 10px solid var(--dfp-color-4);
+}
+
+.list1b>li:before {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    padding: 10px;
+    font-size: 24px;
+    border-radius: var(--dfp-radius-1);
+    width: 50px;
+    height: 50px;
+    display: flex;
+    font-weight: 600;
+    color: var(--dfp-color-1);
+    background: var(--dfp-color-4);
+    counter-increment: li;
+    content: counter(li);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    align-items: center;
+    justify-content: center;
+}
+
+.list1b>li:after {
+    content: "";
+    position: absolute;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    -webkit-transition-property: width;
+    transition-property: width;
+    z-index: -1;
+    background: #F0F5FB;
+    height: 100%;
+    left: 0;
+    top: 0;
+    width: 0;
+}
+
+.list1b>li:hover:after {
+    width: 100%;
+}
+
+/* Блоки с видео кейсами*/
+
+.video-cases {
+    display: grid;
+    justify-content: space-between;
+    gap: 20px;
+    justify-items: stretch;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.video-case_item {
+    padding: 25px;
+    background: var(--dfp-color-2);
+    border-radius: var(--dfp-radius-3);
+    border: 1px solid var(--dfp-color-3);
+    transition: all 0.5s;
+}
+
+.video-case_item-pre-title {
+    border-bottom: 1px solid var(--dfp-color-3);
+    padding-bottom: 10px;
+}
+
+.video-case_item-class {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px 0;
+}
+
+.video-case_item-class>div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: start;
+    gap: 12px;
+    align-items: center;
+}
+
+.video-case_item-class>div>img {
+    width: 60px;
+    background: var(--dfp-color-1);
+    border-radius: var(--dfp-radius-1);
+    border: 1px solid var(--dfp-color-0);
+}
+
+.video-case_item:has(.video-case_item-class-button:hover) {
+    border: 1px solid var(--dfp-color-4);
+    box-shadow: var(--dfp-shadow);
+}
+
+/* Блок  с видео каруселью*/
+
+.trust-us {
+    box-sizing: border-box;
+    padding: 20px 40px;
+}
+
+.trust-us_item {
+    display: flex !important;
+    justify-content: center;
+}
+
+.trust-us_item>a {
+    text-decoration: none;
+    width: 200px;
+    display: block;
+}
+
+.trust-us_item-img {
+    width: 99%;
+    height: auto;
+    border: 1px solid var(--dfp-color-4);
+    border-radius: var(--dfp-radius-3);
+}
+
+.trust-us_item-icon {
+    height: 0;
+}
+
+.trust-us_item>a>div>img {
+    height: fit-content;
+    position: relative;
+    top: -80px;
+    left: 90px;
+}
+
+.trust-us>i,
+.img-doc-slide>i,
+.df-doc2_item>i,
+.recommended-1>i {
+    width: 30px;
+    height: 30px;
+    background-image: url("https://www.defectologiya.pro/assets/images/svg/Arrow2.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-block;
+    position: absolute;
+    top: calc(44%);
+    cursor: pointer;
+    transition: all 0.5s;
+    z-index: 1;
+}
+
+.slider-for {
+    display: flex;
+}
+
+.slider-for>button.slick-prev:before {
+    content: url("https://www.defectologiya.pro/assets/images/svg/Arrow2.svg");
+    background: transparent !important;
+    color: transparent !important;
+    transform: rotate(0deg) !important;
+
+}
+
+.slider-for>button.slick-next:before {
+    content: url("https://www.defectologiya.pro/assets/images/svg/Arrow2.svg");
+    background: transparent !important;
+    color: transparent !important;
+    transform: rotate(0deg) !important;
+}
+
+.slider-for>button {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    position: absolute;
+    top: calc(44%);
+    cursor: pointer;
+    transition: all 0.5s;
+    z-index: 1;
+}
+
+.slider-for>button.slick-prev {
+    left: 0;
+    top: 175px;
+}
+
+.slider-for>button.slick-next {
+    left: 98%;
+    top: 190px;
+}
+
+.slider-for>button::after {
+    display: none !important;
+}
+
+.recommended-1>.right,
+.trust-us>.right,
+.img-doc-slide>.right,
+.df-doc2_item>.right,
+.slider-for>.slick-next {
+    right: 5px;
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+}
+
+.slider-for> {
+    left: 5px;
+}
+
+.recommended-1>i.left.arrow.slick-arrow {
+    left: 5px;
+}
+
+.df-doc2_item>.left,
+.img-doc-slide>.left,
+.trust-us>.left {
+    left: 10px;
+}
+
+.trust-us>i:hover,
+.img-doc-slide>i:hover,
+.df-doc2_item>i:hover,
+.recommended-1>i:hover {
+    background-image: url("https://www.defectologiya.pro/assets/images/svg/Arrow1.svg");
+}
+
+.slider-for>button:hover::before {
+    content: url("https://www.defectologiya.pro/assets/images/svg/Arrow1.svg");
+}
+
+.slider-nav>div>div.slick-track {
+    display: flex;
+    gap: 5px;
+    position: relative;
+    left: -2px;
+    align-content: center;
+    align-items: center;
+}
+
+.slider-nav>div>div.slick-track>h3 {
+    max-height: 100px;
+    height: 100px;
+}
+
+.slider-nav>div>div.slick-track>h3>img {
+    object-fit: contain;
+    height: 100%;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.slider-nav>div>div.slick-track>h3:hover {
+    border: 1px solid var(--dfp-color-0);
+}
+
+/* Меню-табы на странице переподготовки*/
+
+.menuLimiter {
+    width: 100%;
+    overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: -20px;
+}
+
+.menuWrapper {
+    overflow: hidden;
+    position: sticky;
+    top: 0px;
+    height: fit-content;
+    z-index: 1000;
+}
+
+.retraining-menu {
+    border-bottom: 1px solid transparent;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+}
+
+.retraining-menu>button,
+.retraining-menu>a,
+.retraining-menu>li>a {
+    border: 1px solid !important;
+    border-color: transparent !important;
+    color: var(--dfp-color-0) !important;
+    padding: 0px 0px 10px;
+    display: inline-block;
+    font-weight: 700;
+    letter-spacing: 0px;
+    font-size: clamp(14px, 2vw, 20px);
+    line-height: clamp(20px, 2.4vw, 24px);
+}
+
+.retraining-menu>button:focus-visible,
+.retraining-menu>a:focus-visible,
+.retraining-menu>li>a:focus-visible {
+    box-shadow: none;
+}
+
+.retraining-menu>button.active,
+.retraining-menu>a.active,
+.retraining-menu>li>a.active {
+    border: 1px solid !important;
+    border-color: transparent !important;
+    color: var(--dfp-color-5) !important;
+    border-bottom: 1px solid var(--dfp-color-5) !important;
+}
+
+.retraining-menu>li>a.active-point.active,
+.retraining-menu>li>a.active-point:hover {
+    border-bottom: 1px solid var(--dfp-color-5) !important;
+}
+
+
+.retraining-menu>button:hover,
+.retraining-menu>a:hover,
+.retraining-menu>li>a:hover {
+    color: var(--dfp-color-5) !important;
+}
+
+.border-menu {
+    border-bottom: 2px solid var(--dfp-color-3);
+}
+
+
+
+
+/* Блок нас рекомендуют*/
+
+.recommended {
+    display: grid;
+    justify-content: space-between;
+    gap: 20px;
+    justify-items: stretch;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.recommended_item {
+    padding: 10px;
+    background: var(--dfp-color-1);
+    border-radius: var(--dfp-radius-3);
+    border: 1px solid var(--dfp-color-3);
+}
+
+.recommended_item_label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 15px 15px;
+}
+
+.recommended_item_label>div:nth-child(1) {
+    padding: 10px;
+    border-bottom: 1px solid var(--dfp-color-3);
+    text-align: center;
+    min-height: 65px;
+    display: flex;
+    align-items: center;
+}
+
+.recommended_item_label>div:nth-child(2) {
+    text-align: center;
+    padding-top: 15px;
+}
+
+.recommended_item_img {
+    width: 100% !important;
+    margin-bottom: -10px;
+}
+
+
+.recommended_item_icon {
+    top: -50% !important;
+    left: 0 !important;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.recommended_item_icon>img {
+    top: 0 !important;
+    left: 0 !important;
+}
+
+.recommended-1 {
+    display: flex !important;
+    padding: 0 35px;
+    box-sizing: border-box;
+}
+
+.recommended-1 .recommended_item {
+    margin: 0 5px;
+}
+
+.recommended-2>div>div.slick-track {
+    display: flex;
+    align-items: stretch;
+}
+
+.recommended-2 .recommended_item {
+    height: auto;
+}
+
+.promo-recommended>div.slick-list {
+    min-width: 100% !important;
+}
+
+.promo-recommended>div.slick-list>div.slick-track {
+    gap: 15px;
+    padding: 20px;
+    left: -20px;
+    min-width: 100% !important;
+}
+
+.promo-recommended .trust-us_item-img {
+    border: 1px solid transparent;
+}
+
+/* Блок Ближайшие занятия*/
+.upcoming-classes-block {
+    display: grid;
+    justify-content: space-between;
+    gap: 15px;
+    justify-items: stretch;
+    grid-template-columns: 1fr 3fr;
+    align-items: end;
+}
+
+
+.upcoming-classes {
+    display: grid;
+    justify-content: space-between;
+    gap: 15px;
+    justify-items: stretch;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.upcoming-classe_item {
+    text-decoration: none;
+    padding: 15px;
+    background: var(--dfp-color-2);
+    border-radius: var(--dfp-radius-3);
+    border: 1px solid var(--dfp-color-3);
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: stretch;
+    color: var(--dfp-color-8);
+    transition: all 0.5s;
+}
+
+.upcoming-classe_item:hover {
+    color: var(--dfp-color-8) !important;
+    background: var(--dfp-color-3);
+    border: 1px solid var(--dfp-color-4);
+    box-shadow: var(--dfp-shadow);
+}
+
+.upcoming-classe_item>div:nth-child(1)>div:nth-child(1) {
+    padding: 15px;
+    background: var(--dfp-color-1);
+    border-radius: var(--dfp-radius-1);
+    border: 1px solid var(--dfp-color-0);
+    width: 90px;
+}
+
+.upcoming-classe_item>div:nth-child(1)>img {
+    width: 100%;
+}
+
+.upcoming-classe_item>div:nth-child(2)>div:nth-child(2) {
+    border-bottom: 1px solid var(--dfp-color-0);
+}
+
+/* Блок Выдаваемые документы*/
+
+.issued-documents {
+    display: grid;
+    justify-content: space-between;
+    gap: 15px;
+    justify-items: stretch;
+    grid-template-columns: 1fr 1fr;
+    margin: 30px 0 -40px;
+}
+
+.issued-documents_item {
+    display: flex;
+    height: calc(100% - 70px);
+    align-items: center;
+}
+
+.issued-documents_item>div:nth-child(1) {
+    display: flex;
+    min-width: 200px;
+    justify-content: center;
+}
+
+.issued-documents_item>div:nth-child(2) {
+    display: block;
+}
+
+.img_pic3 {
+    max-width: 130px;
+    height: 180px;
+    width: 130px;
+    min-width: 130px;
+}
+
+.img_pic4 {
+    width: 175px;
+    height: 130px;
+}
+
+/* Блок Поступайте сейчас, платите частями*/
+
+.payment-installments {
+    padding: 50px 0px;
+    display: grid;
+    justify-content: space-between;
+    justify-items: stretch;
+    grid-template-columns: 1fr 1fr;
+}
+
+.payment-installments>div {
+    padding: 0 50px;
+    display: grid;
+    grid-template-rows: 60% 1fr;
+}
+
+.payment-installments>div>ul {
+    border-top: 1px solid var(--dfp-color-11);
+    justify-content: space-between;
+}
+
+.payment-installments>div:nth-child(1) {
+    border-right: 2px solid var(--dfp-color-11);
+}
+
+.payment-installments>div:nth-child(1)>div>div:nth-child(2) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+    gap: 10px;
+}
+
+.payment-installments>div:nth-child(1)>div>div:nth-child(2)>img {
+    width: 100%;
+}
+
+/* Блок   Стоимость обучения*/
+
+.tuition-fees {
+    display: grid;
+    justify-content: space-between;
+    justify-items: stretch;
+    grid-template-columns: 45% 1fr;
+    gap: 40px;
+}
+
+.tuition-fees>div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Блоки Выдаваемые документы*/
+.df-doc1 {
+    display: flex;
+    align-items: center;
+}
+
+.df-doc2 {
+    display: flex;
+    align-items: center;
+}
+
+.img-doc-slide {
+    display: flex;
+    height: fit-content;
+    width: 500px;
+}
+
+.img_pic5 {
+    width: 395px;
+    height: 290px;
+    margin: 0 5px;
+    border: 2px solid var(--dfp-color-4);
+    text-align: center;
+}
+
+.img_pic5>img {
+    width: fit-content;
+    height: 100%;
+    margin: 0 auto;
+    padding: 5px;
+}
+
+.zoom-pic5 {
+    top: -50% !important;
+    left: 50% !important;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.zoom-pic5-df {
+    left: 0 !important;
+}
+
+.docs-block-content {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: 10px;
+    padding-bottom: 10px;
+    justify-items: stretch;
+    justify-content: space-between;
+}
+
+.docs-block2-content {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 10px;
+    padding-bottom: 10px;
+    justify-items: stretch;
+    justify-content: space-between;
+}
+
+.docs-block2-content>a {
+    white-space: normal;
+    text-align: center;
+}
+
+.img_pic6 {
+    width: 213px !important;
+    height: 300px !important;
+}
+
+.img_pic7 {
+    width: 213px !important;
+    height: 300px !important;
+    text-decoration: none;
+    margin: 0px;
+    background: var(--dfp-color-1);
+}
+
+.img_pic7_d {
+    height: 280px !important;
+}
+
+.img_pic7>img {
+    width: 200px;
+    height: 100%;
+}
+
+.zoom-pic6 {
+    left: 15px !important;
+}
+
+.zoom-pic8 {
+    left: 0 !important;
+}
+
+.df-doc1_item {
+    display: flex;
+    height: 0;
+    align-items: center;
+}
+
+.df-doc2_item {
+    height: 0;
+    display: flex;
+    align-items: center;
+    width: 301px !important;
+}
+
+.df-doc2_item>div.slick-list {
+    height: 300px;
+}
+
+.df-doc2_item.dop>div.slick-list {
+    height: 280px !important;
+}
+
+.df-doc2_item>div.slick-list>div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+/*--Тултип --*/
+.df-tooltip {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+
+.df-tooltip .df-tooltiptext {
+    visibility: hidden;
+    width: 200px;
+    background-color: var(--dfp-color-2);
+    color: var(--dfp-color-9);
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px 10px 0px 10px;
+    margin-bottom: 25px;
+    position: absolute;
+    z-index: 1;
+    box-shadow: var(--dfp-shadow);
+    border: 1px solid var(--dfp-color-0);
+    transition: all 0.5s;
+    opacity: 0;
+    cursor: auto;
+}
+
+.df-tooltip.df-tooltip-300 .df-tooltiptext {
+    width: 300px;
+}
+
+.df-tooltip:hover .df-tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+.df-tooltiptext::after {
+    width: 0;
+    height: 0;
+    display: block;
+    position: relative;
+    border: 7px solid transparent;
+    border-top: 7px solid var(--dfp-color-0);
+    top: 100%;
+    left: 164px;
+    top: 13px;
+    background-image: none;
+    content: '';
+}
+
+.df-tooltip-300 .df-tooltiptext::after {
+    left: 265px;
+}
+
+.df-tooltip_question {
+    font-size: 10px;
+    line-height: normal;
+    font-weight: 800;
+    padding: 3px;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.5s;
+    color: var(--dfp-color-1);
+    background: var(--dfp-color-5);
+    margin-right: 10px;
+}
+
+.df-tooltip_question-2 {
+    color: var(--dfp-color-5);
+    background: var(--dfp-color-1);
+}
+
+.df-tooltip_question:hover {
+    background: var(--dfp-color-0);
+}
+
+.df-tooltip_question-2:hover {
+    color: var(--dfp-color-1);
+    background: var(--dfp-color-5);
+}
+
+.price-module_pay-item-info:has(.df-tooltip_question:hover) {
+    background: var(--dfp-color-3);
+}
+
+
+.block-modalnewdesign {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: none;
+    width: 100%;
+    padding: 20px 0;
+    box-sizing: border-box;
+}
+
+/*--Модальное окно для дизайна--*/
+
+.modalnewdesign {
+    display: flex;
+    border-top: 1px solid var(--dfp-color-4);
+    z-index: 10000000000;
+}
+
+.modalnewdesign>div {
+    display: flex;
+    gap: 20px;
+    justify-content: end;
+    align-items: center;
+    flex-flow: wrap-reverse;
+}
+
+.df-button-close {
+    box-sizing: content-box !important;
+    width: 20px;
+    height: 20px;
+    background: url("https://www.defectologiya.pro/assets/images/svg/clouse-button.svg") center / 20px auto no-repeat;
+    background-color: var(--dfp-color-5);
+    border-radius: var(--dfp-radius-1);
+    opacity: 1;
+    margin: 0px;
+    padding: 7px;
+    transition: 0.5s;
+    border: none;
+}
+
+.df-button-close:hover {
+    background-color: var(--dfp-color-0);
+}
+
+/* Авторский курс блоки*/
+
+.df-autor-curs {
+    display: grid;
+    grid-template-columns: 45% 0px 45%;
+    align-items: center;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.df-autor-curs_smart {
+    grid-template-columns: 33% 15px 60%;
+    padding: 30px;
+    gap: 15px;
+}
+
+.df-autor-curs>div:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.df-autor-curs_smart>div:nth-child(1) {
+    gap: 5px;
+}
+
+.df-autor-curs>div:nth-child(2) {
+    border-right: 1px solid var(--dfp-color-5);
+    height: 100%;
+}
+
+.df-autor-curs>div:nth-child(2)::before {
+    width: 0;
+    height: 0;
+    display: block;
+    position: relative;
+    border: 25px solid transparent;
+    border-left: 25px solid var(--dfp-color-5);
+    top: 50px;
+    left: 100%;
+    background-image: none;
+    content: '';
+}
+
+.df-autor-curs_smart>div:nth-child(2) {
+    border-right: 1px solid var(--dfp-color-1);
+    height: 100%;
+}
+
+.df-autor-curs_smart>div:nth-child(2)::before {
+    width: 0;
+    height: 0;
+    display: block;
+    position: relative;
+    border: 15px solid transparent;
+    border-left: 15px solid var(--dfp-color-1);
+    top: 30px;
+    left: 100%;
+    background-image: none;
+    content: '';
+}
+
+.df-text-autor {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.df-text-autor span {
+    font-weight: 700;
+    color: var(--dfp-color-0);
+}
+
+.df-text-autor p {
+    font-weight: 400;
+    font-size: clamp(13px, 1.8vw, 15px);
+    line-height: clamp(16px, 2.5vw, 18px);
+    margin: 0;
+}
+
+.df-autor-block {
+    display: flex;
+    gap: 10px;
+}
+
+.df-autor-block_card-promo {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.df-autor-block_card-promo_title {
+    min-height: 120px;
+}
+
+.df-autor-block_card-promo_title2 {
+    min-height: 90px;
+}
+
+.df-grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+/*Отточие*/
+.price-list {
+    display: flex;
+    width: 100%;
+    line-height: 1.5;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    gap: 1rem;
+}
+
+a.price-list {
+    margin-bottom: 1rem;
+}
+
+a.price-list:hover,
+a.price-list:hover>.price-list__title,
+a.price-list:hover::before {
+    color: var(--dfp-color-12);
+}
+
+.price-list::before {
+    font-size: 14px;
+    content: "✔";
+    display: flex;
+    color: var(--dfp-color-5);
+    padding: 2px;
+    border: 1px solid;
+    border-radius: 50%;
+    height: 22px;
+    width: 22px;
+    justify-content: center;
+    align-items: center;
+}
+
+.price-list__title {
+    flex-grow: 1;
+    overflow: hidden;
+    position: relative;
+    color: var(--dfp-color-5);
+    font-weight: 500;
+    font-size: clamp(13px, 1.8vw, 15px);
+    line-height: clamp(16px, 2.5vw, 18px);
+}
+
+.price-list__title>span {
+    white-space: nowrap;
+}
+
+.price-list__ellipsis::before {
+    content: "";
+}
+
+.price-list__ellipsis::after {
+    position: absolute;
+    content: '......................................................................................................';
+    font-size: 13px;
+    letter-spacing: 2px;
+    padding-top: 3px;
+    padding-left: 10px;
+}
+
+.price-list__price {
+    flex-shrink: 0;
+    margin: 0 0 0 0.4em;
+    font-size: clamp(13px, 1.8vw, 15px);
+    line-height: clamp(16px, 2.5vw, 18px);
+}
+
+.price-list_dop {
+    width: fit-content;
+}
+
+/*Блок превью*/
+
+.df-block-prev {
+    border-radius: var(--dfp-radius-7);
+    width: 35%;
+    margin: 0 auto;
+    padding: 15px 5%;
+}
+
+.df-price-card-block {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.df-price-card-block_dop {
+    min-height: 150px;
+}
+
+/*Блок шаги безлимитная карта*/
+.df-shagi {
+    display: grid;
+    grid-template-columns: 1fr 20px 1fr 20px 1fr 20px 1fr;
+    gap: 10px;
+}
+
+.df-shagi_item {
+    display: flex;
+}
+
+.df-shagi_item>div:nth-child(2) {
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.df-shagi_item_line {
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.df-shagi_item_nomer {
+    border-radius: var(--dfp-radius-7);
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.df-shagi_item_nomer>span {
+    color: var(--dfp-color-1);
+}
+
+.df-shagi_item_nomer>span:nth-child(1) {
+    font-size: 40px;
+    line-height: 35px;
+}
+
+.df-shagi_item_nomer>span:nth-child(2) {
+    font-size: 12px;
+}
+
+.df-shagi_item_title {
+    line-height: clamp(16px, 2.5vw, 18px);
+    padding: 15px;
+}
+
+.df-shagi_item:hover>div:nth-child(2)>.df-shagi_item_title {
+    color: var(--dfp-color-5);
+}
+
+.df-shagi_item_text {
+    height: 0;
+    z-index: 1;
+    line-height: clamp(14px, 2vw, 14px);
+    font-size: clamp(14px, 2vw, 14px);
+    font-weight: 500;
+    transition: all 0.5s;
+    position: relative;
+    width: calc(100% + 50px);
+    left: -50px;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.df-shagi_item_text>p {
+    background: var(--dfp-color-2);
+    padding: 10px;
+    border-radius: var(--dfp-radius-1);
+    border: 1px solid var(--dfp-color-4);
+    box-shadow: var(--dfp-shadow);
+}
+
+.df-shagi_item:hover>div:nth-child(2)>.df-shagi_item_title~.df-shagi_item_text {
+    visibility: visible;
+    opacity: 1;
+}
+
+.df-block_card-promo {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px
+}
+
+.df-img-bezlimit {
+    height: calc(420px - 100px);
+}
+
+.df-img-bezlimit>img {
+    display: block;
+    position: relative;
+    width: auto;
+    height: 370px;
+    top: -50px;
+    left: 10%;
+}
+
+/* Калькулятор*/
+
+.cc-hero {
+    display: grid;
+    grid-template-columns: 1fr 1px 1fr;
+    gap: 50px;
+    padding: 40px;
+}
+
+.cc-container-left {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 0 0 0 30px;
+}
+
+.cc-container-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+/* Бегунки */
+
+input[type=range] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: var(--dfp-color-5);
+    height: 1.5px;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: 1px solid var(--dfp-color-5);
+    background: var(--dfp-color-5);
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+input[type=range]::-webkit-slider-thumb:hover {
+    transform: scale(1.3);
+    border: 1px solid var(--dfp-color-5);
+    background: var(--dfp-color-3);
+}
+
+input[type=range]:focus {
+    outline: none;
+}
+
+.rs-range {
+    margin-top: 17px;
+    width: 400px;
+}
+
+.rs-label {
+    position: relative;
+    display: block;
+    width: 65px;
+    background: var(--dfp-color-5);
+    border-radius: 15px;
+    text-align: center;
+    font-weight: 600;
+    color: var(--dfp-color-1);
+    font-size: 15px;
+    margin-top: 15px;
+    margin-left: -30px;
+}
+
+.rs-label-1 {
+    left: 10px;
+}
+
+.rs-label2,
+.rs-label3 {
+    margin-left: -20px;
+}
+
+.rs-label p {
+    padding: 3px 0px;
+    margin-bottom: 3px;
+    margin-top: 22px;
+}
+
+
+/* шкалы*/
+
+.cc-ref {
+    width: 420px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: -10px;
+}
+
+.cc-ref-1 {
+    margin-left: -20px !important;
+}
+
+.cc-ref div {
+    position: relative;
+    display: block;
+    width: 65px;
+    background: var(--dfp-color-3);
+    border-radius: 50px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 16px;
+    margin-top: 15px;
+    margin-left: -30px;
+}
+
+.cc-ref div p {
+    padding: 3px 0px;
+    color: var(--dfp-color-5);
+    margin: 0px;
+}
+
+/* Результат*/
+.cc-result-number {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    padding: 0 0 0 40px;
+}
+
+/* блок с текстом*/
+.profi {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-top: 20px;
+}
+
+.profi>div:nth-child(1) {
+    width: 55px;
+    height: 55px;
+    flex-shrink: 0;
+    display: flex;
+    color: var(--dfp-color-1);
+    text-transform: uppercase;
+    justify-content: center;
+    align-items: center;
+}
+
+/* таймер */
+.countdown,
+.countdown-number {
+    display: flex;
+    gap: 0;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.countdown::before {
+    content: url('https://www.defectologiya.pro/assets/images/svg/fire.svg');
+    position: relative;
+    padding-right: 8px;
+}
+
+.countdown>div:not(:last-child)::after {
+    content: ':';
+    position: relative;
+    padding: 0 4px;
+}
+
+.time-block,
+.sale-block {
+    border-radius: 10px;
+    padding: 5px 12px;
+    width: fit-content;
+    height: 30px;
+}
+
+/* Акции*/
+
+.df-promo_block {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.df-promo_img {
+    position: relative;
+    width: 99%;
+    display: block;
+    background-size: 100%;
+    padding-top: 66%;
+    background-repeat: no-repeat;
+    border-radius: var(--dfp-radius-3);
+    transition: all 0.1s;
+}
+
+.df-promo_img:hover {
+    box-shadow: var(--dfp-shadow);
+}
+
+.df-promo_banner {
+    display: grid;
+    grid-template-columns: 45% 50%;
+    align-items: end;
+    justify-content: space-between;
+}
+
+.df-promo_img_detail_text {
+    padding-left: 20px;
+    position: relative;
+    z-index: 1;
+    height: 100%;
+}
+
+.df-promo_img_detail_text a {
+    width: 70%;
+    min-width: 180px;
+}
+
+.df-promo_img_detail_text h1 {
+    font-size: clamp(22px, 3vw, 32px);
+    line-height: clamp(22px, 3vw, 34px);
+}
+
+.df-promo_img_detail {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.df-promo_img_detail>img {
+    width: 100%;
+}
+
+.df-promo_img>div {
+    height: 0;
+    position: relative;
+    bottom: 6vh;
+    left: 5%;
+}
+
+.df-promo_text>a:hover {
+    color: var(--dfp-color-0);
+}
+
+.recommended_item_promo {
+    min-height: 470px;
+    display: grid !important;
+    grid-template-columns: 1fr;
+    grid-template-rows: min-content 1fr;
+}
+
+.recommended_item_promo>div:nth-child(2) {
+    display: grid;
+    align-content: space-between;
+    gap: 5px;
+    grid-template-rows: 1fr 1fr min-content min-content;
+}
+
+.recommended_item_promo>.trust-us_item {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.recommended_item_promo>.trust-us_item>span {
+    display: block;
+    background: var(--dfp-color-4);
+    color: var(--dfp-color-1);
+    border-radius: var(--dfp-radius-1);
+    font-size: 14px;
+    font-weight: 600;
+    padding: 3px 13px;
+    position: relative;
+    top: -15px;
+    left: -15px;
+    margin-bottom: -13px;
+    letter-spacing: 0.05rem;
+}
+
+.new-toy {
+    height: 0;
+    display: inline-flex;
+}
+
+.new-toy::after {
+    display: block;
+    content: "";
+    position: relative;
+    background-image: url("https://www.defectologiya.pro/assets/images/svg/toy.svg");
+    width: 45px;
+    height: 49px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    top: 23px;
+    left: -18px;
+}
+
+/*Практика*/
+.df-practik-block {
+    margin-left: 40px;
+}
+
+.df-practik {
+    display: grid;
+    grid-template-columns: 370px 1fr;
+    margin-bottom: -50px;
+    padding-bottom: 25px;
+}
+
+.df-practik>div:nth-child(1) {
+    position: relative;
+    top: -50px;
+    left: -50px;
+    height: fit-content;
+}
+
+.df-practik>div:nth-child(2) {
+    position: relative;
+    left: -20px;
+}
+
+.df-practik>div:nth-child(2)>div.h-0 {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    top: -30px;
+}
+
+.df-practik_price {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+}
+
+.df-practik_price_doclink {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    align-items: center;
+    padding: 15px;
+}
+
+.df-practik_price_doclink>a {
+    position: relative;
+    left: -30px;
+    min-width: 215px;
+    display: flex;
+    justify-content: flex-start;
+    padding: 10px !important;
+}
+
+.df-sertifikat-block {
+    display: grid;
+    grid-template-columns: repeat(6, 0.15fr);
+    gap: 10px;
+    justify-items: center;
+    justify-content: center;
+}
+
+.df-sertifikat-block>div>a {
+    margin: 0;
+    padding: 5px;
+    width: 205px !important;
+    height: 275px !important;
+}
+
+.list1b-inp {
+    margin: 20px 0 0;
+    padding: 0;
+    list-style: none;
+    counter-reset: li;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.list1b-inp>li.form-check {
+    position: relative;
+    padding: 0px 15px 0px 75px;
+    margin-bottom: 0;
+}
+
+.list1b-inp>li.form-check>label.form-check-label {
+    color: var(--dfp-color-5);
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.list1b-inp>li.form-check::before {
+    position: absolute;
+    top: 0px;
+    left: 45px;
+    font-size: 15px;
+    border-radius: 5px;
+    padding: 5px;
+    width: 23px;
+    height: 23px;
+    display: flex;
+    font-weight: 600;
+    color: var(--dfp-color-1);
+    background: var(--dfp-color-4);
+    counter-increment: li;
+    content: counter(li);
+    -webkit-transition-duration: .3s;
+    transition-duration: .3s;
+    align-items: center;
+    justify-content: center;
+}
+
+.list1b-inp>li.form-check>input {
+    position: absolute;
+    top: -4px;
+    left: 69px;
+    border-radius: 5px;
+    width: 23px;
+    height: 23px;
+    background: transparent;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    border: 0;
+}
+
+.list1b-inp>li.form-check>input.form-check-input:focus {
+    border-color: var(--dfp-color-5);
+    box-shadow: 0 0 0 .25rem var(--dfp-color-5);
+    background-image: none;
+}
+
+.list1b-inp>li.form-check>input.form-check-input:checked[type=radio] {
+    background-image: none !important;
+}
+
+.list1b-inp>li.form-check:after {
+    content: "";
+    position: absolute;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    -webkit-transition-property: width;
+    transition-property: width;
+    z-index: -1;
+    background: #F0F5FB;
+    height: 100%;
+    left: 0;
+    top: 0;
+    width: 0;
+}
+
+.list1b-inp>li.form-check:hover:after {
+    width: 100%;
+}
+
+.df-progress-bar>.progress {
+    height: 23px;
+    border-radius: 6px;
+    background: var(--dfp-color-3);
+}
+
+.df-progress-bar>.progress>.progress-bar {
+    padding: 5px 20px;
+    font-size: 12px;
+    font-weight: 700;
+    align-items: start;
+    border-radius: 6px;
+}
+
+.price-module_pay_button,
+.price-module_pay_button>form,
+.price-module_pay_button>form>button,
+.discounts-training_pay_button,
+.discounts-training_pay_button>form,
+.discounts-training_pay_button>form>button {
+    width: 100% !important;
+}
+
+.price-module_pay_button>form>button {
+    color: var(--dfp-color-1) !important;
+    border: var(--dfp-color-0) !important;
+    background: var(--dfp-color-0) !important;
+    text-decoration: none;
+    text-transform: none !important;
+}
+
+.price-module_pay_button>form>button:hover {
+    border: var(--dfp-color-4) !important;
+    background: var(--dfp-color-4) !important;
+}
+
+.discounts-training_pay_button>form>button {
+    color: var(--dfp-color-1) !important;
+    border: var(--dfp-color-5) !important;
+    background: var(--dfp-color-5) !important;
+    text-decoration: none;
+    text-transform: none !important;
+}
+
+.discounts-training_pay_button>form>button:hover {
+    border: var(--dfp-color-0) !important;
+    background: var(--dfp-color-0) !important;
+}
+
+/* Адаптив*/
+@media (max-width: 1400px) {
+    .df-practik {
+        margin-bottom: 0;
+    }
+
+    .df-practik_price {
+        grid-template-columns: 1fr;
+        padding: 0 !important;
+        position: relative;
+        top: -30px;
+    }
+
+    .df-practik_price>div:nth-child(1) {
+        gap: 10px !important;
+        padding-bottom: 20px;
+    }
+
+    .df-practik_price>div:nth-child(2) {
+        padding: 0 !important;
+        gap: 10px !important;
+    }
+
+    .df-practik_price>div:nth-child(1)>div:nth-child(3) {
+        width: fit-content;
+        margin-left: 50px;
+    }
+
+    .df-practik>div:nth-child(1) {
+        height: fit-content;
+    }
+
+    .df-practik_price_doclink {
+        padding: 10px;
+    }
+
+    .df-practik_price_doclink>a {
+        left: -20px;
+        padding: 6px !important;
+        font-size: 13px;
+        min-width: 200px;
+    }
+
+    .df-sertifikat-block {
+        grid-template-columns: repeat(3, 0.15fr);
+        gap: 30px;
+    }
+
+    .recommended_item_promo {
+        min-height: 440px;
+    }
+
+    .upcoming-classes-block {
+        grid-template-columns: 300px 3fr;
+    }
+
+    .docs-block2-content {
+        grid-template-columns: 1fr;
+    }
+
+    .price-module_decktop>div:nth-child(1),
+    .price-module_decktop>div:nth-child(2) {
+        min-width: 325px;
+        max-width: 355px;
+    }
+
+    .price-module_decktop>div:nth-child(1)>div {
+        min-width: 360px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .recommended_item_promo {
+        min-height: 480px;
+    }
+
+    .df-promo_banner {
+        grid-template-columns: 45% 55%;
+    }
+
+    .df-promo_img {
+        border-radius: var(--dfp-radius-1);
+    }
+
+    .df-promo_block {
+        gap: 10px;
+    }
+
+    .slider-for>button.slick-prev {
+        left: 0;
+        top: 135px;
+    }
+
+    .slider-for>button.slick-next {
+        left: 98%;
+        top: 145px;
+    }
+
+    .df-img-bezlimit>img {
+        height: 370px;
+        top: -30px;
+    }
+
+    .df-price-card-block_dop {
+        min-height: 180px;
+    }
+
+    .df-block_card-promo {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .df-w-1200-100 {
+        width: 100% !important;
+    }
+
+    .accordion-modul_button_stag .accordion-header_attest>div {
+        top: 5px;
+    }
+
+    .accordion-header_attest>div {
+        width: fit-content;
+        position: relative;
+        top: 0;
+        border-radius: var(--dfp-radius-1);
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        height: fit-content;
+        padding: 5px 10px;
+        justify-content: flex-start;
+        align-items: center;
+        left: 0;
+        flex-wrap: wrap;
+    }
+
+    .accordion-header_attest {
+        height: fit-content;
+        justify-content: flex-start;
+        padding-top: 5px;
+    }
+
+    .accordion-modul-item_attest .accordion-header_attest {
+        top: 40px;
+        left: 0;
+    }
+
+    .accordion-header_images-block {
+        width: 550px;
+    }
+
+    .df-doc1_item {
+        height: fit-content;
+        padding: 0 10px !important;
+    }
+
+    .df-doc1 {
+        flex-direction: column;
+    }
+
+    .df-doc1>div:nth-child(2) {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .df-doc2_item {
+        height: 300px;
+    }
+
+    .upcoming-classes-block {
+        grid-template-columns: 1fr;
+    }
+
+    .video-cases {
+        grid-template-columns: 2fr 2fr;
+    }
+
+    .discount-block_item {
+        width: 48%;
+    }
+
+    .block-img {
+        width: 100%;
+    }
+
+    .price-module {
+        flex-wrap: wrap;
+    }
+
+    .price-module>div:nth-child(1),
+    .price-module>div:nth-child(2) {
+        min-width: 50%;
+        max-width: 400px;
+    }
+
+    .price-module>div:nth-child(1)::before {
+        left: 112.5%;
+    }
+
+    .price-module>div:nth-child(2) {
+        border: 0;
+    }
+
+    .price-module>div:nth-child(3) {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .price-module_decktop {
+        flex-wrap: nowrap;
+    }
+
+    .price-module_decktop>div:nth-child(1),
+    .price-module_decktop>div:nth-child(2) {
+        min-width: 300px !important;
+        max-width: 450px !important;
+    }
+
+    .price-module_decktop>div:nth-child(1) {
+        margin-bottom: 0 !important;
+    }
+
+    .price-block-new {
+        max-width: 95%;
+    }
+
+    .price-module_decktop>div:nth-child(3) {
+        display: none !important;
+    }
+
+    .price-module_tablet {
+        display: block;
+        padding: 30px;
+    }
+
+    .price-module_tablet>div {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .price-module_tablet>div>div:nth-child(2) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .tuition-fees {
+        grid-template-columns: 1fr;
+    }
+
+    .tuition-fees>div:nth-child(1)>div,
+    .tuition-fees>div:nth-child(1) {
+        max-width: 700px;
+        margin: 0 auto;
+    }
+
+    .recommended {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .discount-block_item {
+        width: 47%;
+    }
+
+    .educator-item {
+        width: 100%;
+    }
+
+    .price-module>div:nth-child(1),
+    .price-module>div:nth-child(2) {
+        min-width: 100%;
+        max-width: 100%;
+    }
+
+    .price-module>div:nth-child(1) {
+        border-right: 0;
+        border-bottom: 1px solid var(--dfp-color-5);
+        margin-bottom: 50px;
+        padding-right: 0 !important;
+    }
+
+    .price-module>div:nth-child(1)>.df-button {
+        margin-bottom: 20px;
+    }
+
+    .price-module>div:nth-child(1)::before {
+        width: 0;
+        height: 0;
+        display: block;
+        position: relative;
+        border: 25px solid transparent;
+        border-top: 25px solid var(--dfp-color-5);
+        top: 100%;
+        left: 25%;
+        background-image: none;
+        content: '';
+    }
+
+    .price-module>div:nth-child(1)::after {
+        width: 0;
+        height: 0;
+        display: block;
+        position: relative;
+        border: 25px solid transparent;
+        border-top: 25px solid var(--dfp-color-5);
+        top: 50px;
+        left: 25%;
+        background-image: none;
+        content: '';
+        display: none;
+    }
+
+    .price-module>div:nth-child(2)>div:nth-child(2) {
+        align-items: center;
+    }
+
+    .price-module>div:nth-child(2) {
+        border-bottom: 1px solid var(--dfp-color-5);
+        padding-bottom: 20px;
+    }
+
+    .price-module_vig {
+        left: 70px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .df-feedback>div:nth-child(1),
+    .df-feedback>button,
+    .df-feedback>a {
+        width: 100%;
+    }
+
+    .df-feedback-block-1,
+    .df-feedback-block-2 {
+        text-align: center;
+    }
+
+    .df-block-number {
+        width: 100%;
+    }
+
+    .price-module_decktop>div:nth-child(1),
+    .price-module>div:nth-child(2) {
+        border-bottom: 0 !important;
+    }
+
+    .price-module_decktop>div:nth-child(1) {
+        border-right: 1px solid var(--dfp-color-5);
+        width: 340px;
+        min-width: 340px !important;
+    }
+
+    .price-module_decktop>div:nth-child(1)::before {
+        left: 90.4% !important;
+        top: 25%;
+        border: 25px solid transparent;
+        border-right: 25px solid var(--dfp-color-5);
+        border-top: 0;
+        transform: rotate(45deg);
+    }
+
+    .price-module_decktop>div:nth-child(1)>div {
+        width: 340px;
+        min-width: 340px;
+    }
+
+    .price-module_decktop>div:nth-child(2)>div:nth-child(2) {
+        align-items: flex-end;
+        padding-top: 20px;
+    }
+
+    .price-module_vig_decktop {
+        left: 10px;
+    }
+
+    .price-module_decktop>div:nth-child(2)>div>div.text-decoration-line-through,
+    .price-module_decktop>div:nth-child(2)>div>div.price-module_vig2,
+    .price-module_decktop>div:nth-child(2)>div>div:nth-child(4) {
+        display: block;
+        position: relative;
+        top: 0px;
+    }
+
+    .price-module_decktop>div:nth-child(2) {
+        min-width: 200px !important;
+        max-width: 450px !important;
+    }
+
+    .price-module_vig_tablet {
+        left: 0;
+        margin: 10px auto;
+    }
+}
+
+@media (max-width: 992px) {
+    .df-practik_price_doclink {
+        grid-template-columns: 1fr;
+    }
+
+    .df-practik_price_doclink>a {
+        top: -15px;
+        margin-bottom: -10px;
+    }
+
+    .df-practik {
+        grid-template-columns: 250px 1fr;
+    }
+
+    .df-practik>div:nth-child(1)>div {
+        gap: 15px;
+    }
+
+    .df-practik>div:nth-child(1) {
+        top: 25px;
+    }
+
+    .df-sertifikat-block {
+        grid-template-columns: repeat(3, 0.15fr);
+    }
+
+    .df-promo_banner {
+        grid-template-columns: 40% 60%;
+    }
+
+    .cc-hero {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        justify-items: center;
+    }
+
+    .cc-container-right {
+        width: 420px;
+    }
+
+    .cc-container-left {
+        padding: 0;
+    }
+
+    .df-img-bezlimit>img {
+        height: 330px;
+        top: -10px;
+        left: 25%;
+    }
+
+    .df-shagi {
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .df-shagi_item_line {
+        height: 25px;
+        align-items: center;
+    }
+
+    .df-shagi_item_line>img {
+        width: 20px;
+        transform: rotate(90deg);
+    }
+
+    .df-price-card-block_dop {
+        min-height: fit-content;
+    }
+
+    .df-price-card-block {
+        grid-template-columns: 1fr;
+    }
+
+    .df-block-prev {
+        width: 50%;
+    }
+
+    .df-autor-curs_smart {
+        grid-template-columns: 45% 15px 45%;
+        padding: 30px;
+        gap: 15px;
+    }
+
+    .df-autor-curs_smart_arrow {
+        transform: rotate(90deg);
+        padding: 10px;
+        width: 50px;
+    }
+
+    .smart-time_mobile>div:nth-child(odd) {
+        width: fit-content;
+    }
+
+    /*доп стиль для мобильного меню переподготовки*/
+    .menuWrapper_sticky_style {
+        background: var(--dfp-color-3);
+        border-bottom: 1px solid var(--dfp-color-4);
+        padding-top: 0;
+    }
+
+    .menuWrapper_sticky_style>nav {
+        padding-top: 0;
+        max-width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .menuWrapper_sticky_style>nav>ul>li>a.active-point {
+        padding: 10px 15px;
+        border-radius: 0;
+        background: transparent;
+        box-sizing: content-box;
+    }
+
+    .menuWrapper_sticky_style>nav>ul {
+        gap: 0;
+    }
+
+    /*конец доп стиль для мобильного меню переподготовки*/
+
+    .accordion-header_images-block {
+        width: 435px;
+    }
+
+    .payment-installments>div:nth-child(1) {
+        border-right: 0px solid var(--dfp-color-11);
+        border-bottom: 2px solid var(--dfp-color-11);
+        padding-bottom: 35px;
+        margin-bottom: 15px;
+    }
+
+    .payment-installments {
+        grid-template-columns: 1fr;
+    }
+
+    .issued-documents {
+        grid-template-columns: 1fr;
+    }
+
+    .upcoming-classes {
+        grid-template-columns: 1fr;
+    }
+
+    .discount-block_item {
+        width: 100%;
+    }
+
+    .block-img-doc_img-text {
+        gap: 15px;
+    }
+
+    .img_pic2>.practice-tizer_img>img {
+        width: 70%;
+    }
+
+    .practice-tizer {
+        width: 265px;
+        display: flex;
+        align-items: flex-end;
+        gap: 10px;
+        position: relative;
+        top: 25px;
+        right: 0px;
+        height: 0;
+        flex-direction: row;
+        margin-bottom: 15px;
+        margin-top: 15px;
+    }
+
+    .practice-tizer>.df-p-card {
+        text-align: left;
+    }
+
+    .practice-tizer_img {
+        width: 120px;
+        position: relative;
+        height: 90px;
+        padding: 10px;
+    }
+
+    .df-tizer_svg_practice>img {
+        width: 70px;
+    }
+}
+
+@media (max-width: 768px) {
+    .df-practik_price>div:nth-child(1)>div:nth-child(3) {
+        width: 100%;
+        margin-left: 0;
+        max-width: 270px;
+        margin-bottom: 10px;
+    }
+
+    .df-practik>div:nth-child(2)>div.h-0 {
+        top: 40px;
+    }
+
+    .df-practik_price {
+        top: -10px;
+    }
+
+    .df-practik>div:nth-child(2) {
+        left: 0;
+        padding: 20px 30px;
+    }
+
+    .df-practik-block {
+        margin-left: 0;
+    }
+
+    .df-practik {
+        grid-template-columns: 1fr;
+        justify-items: center;
+        justify-content: center;
+    }
+
+    .df-practik>div:nth-child(1) {
+        top: 0;
+        left: 0;
+    }
+
+    .df-practik_price>div:nth-child(2) {
+        gap: 25px !important;
+    }
+
+    .df-practik_price_doclink>a {
+        top: -25px;
+        left: 0;
+        margin-bottom: -15px;
+    }
+
+    .df-practik_price_doclink {
+        padding: 15px 20px;
+    }
+
+    .df-sertifikat-block {
+        grid-template-columns: repeat(2, 0.15fr);
+    }
+
+    .price-block-new_pay {
+        min-height: 70px;
+    }
+
+    .new-toy::after {
+        width: 40px;
+        height: 40px;
+        left: -14px;
+    }
+
+    .df-promo_block {
+        grid-template-columns: 1fr;
+    }
+
+    .df-block_card-promo {
+        grid-template-columns: 1fr;
+    }
+
+    .df-promo_img {
+        border-radius: var(--dfp-radius-3);
+    }
+
+    .df-block-prev {
+        width: 100%;
+        border-radius: var(--dfp-radius-8);
+    }
+
+    .df-autor-curs_smart_arrow {
+        transform: rotate(0deg);
+        padding: 0px;
+        width: 35px;
+    }
+
+    .df-autor-block_card-promo {
+        grid-template-columns: 1fr;
+    }
+
+    .educator_img-3 {
+        width: 150px;
+        height: 150px;
+        top: 30px;
+        right: 20px;
+    }
+
+    .line_decktop {
+        display: none;
+    }
+
+    .accordion-header_images-block {
+        width: 325px;
+    }
+
+    .discount-block_item {
+        width: 100%;
+    }
+
+    .accordion-header_attest>div {
+        gap: 2px;
+        justify-content: flex-start;
+        align-items: stretch;
+    }
+
+    .price-module_decktop>div:nth-child(1) {
+        width: 300px;
+        min-width: 300px !important;
+        margin-right: 15px !important;
+    }
+
+    .price-module_decktop>div:nth-child(1)::before {
+        left: 88.9% !important;
+    }
+
+    .price-module_decktop>div:nth-child(1)>div {
+        width: 300px;
+        min-width: 300px;
+    }
+
+    .price-module_decktop>div:nth-child(2) {
+        justify-content: space-around !important;
+    }
+
+    .price-module_decktop>div:nth-child(1)>div {
+        padding-right: 20px;
+    }
+
+    .smart-time_mobile {
+        gap: 15px !important;
+    }
+
+    .smart-time_mobile>div,
+    .smart-time_mobile>div>a,
+    .smart-time_mobile>div>button {
+        width: 100% !important;
+    }
+
+    .smart-time_mobile>div:nth-child(3) {
+        padding: 0 !important;
+    }
+
+    .df-autor-curs {
+        grid-template-columns: 100%;
+        margin-top: 20px;
+    }
+
+    .df-autor-curs>div:nth-child(2) {
+        border-right: 0px;
+        height: 25px;
+        border-top: 1px solid var(--dfp-color-5);
+    }
+
+    .df-autor-curs>div:nth-child(2)::before {
+        border: 20px solid transparent;
+        border-top: 20px solid var(--dfp-color-5);
+        top: 0;
+        left: 20%;
+    }
+
+    .df-autor-curs_smart>div:nth-child(2) {
+        border-bottom: 1px solid var(--dfp-color-1);
+        height: 15px;
+        margin-bottom: 10px;
+    }
+
+    .df-autor-curs_smart>div:nth-child(2)::before {
+        width: 0;
+        height: 0;
+        display: block;
+        position: relative;
+        border: 15px solid transparent;
+        border-top: 15px solid var(--dfp-color-1);
+        top: 13px;
+        left: 20%;
+        background-image: none;
+        content: '';
+    }
+}
+
+@media (max-width: 670px) {
+    .price-module_decktop>div:nth-child(1) {
+        width: 250px;
+        min-width: 250px !important;
+        margin-right: 15px !important;
+    }
+
+    .price-module_decktop>div:nth-child(1)::before {
+        left: 86.9% !important;
+    }
+
+    .price-module_decktop>div:nth-child(1)>div {
+        width: 250px;
+        min-width: 250px;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .df-grid-2 {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .educator_img-3 {
+        width: 150px;
+        height: 150px;
+        top: 15px;
+        right: -15px;
+        margin-right: 30px;
+    }
+
+    .modalnewdesign>div {
+        gap: 10px;
+    }
+
+    .modalnewdesign>div>button {
+        width: 100%;
+    }
+
+    .modalnewdesign>div>div>.df-button-close {
+        width: 15px;
+        height: 15px;
+        background-size: 15px;
+    }
+
+    .accordion-modul>div>h2>button>div:nth-child(2) {
+        top: 2px;
+    }
+
+    .img-doc-slide>.right,
+    .df-doc2_item>.right {
+        right: 20px;
+    }
+
+    .img-doc-slide>.left,
+    .df-doc2_item>.left {
+        left: 20px;
+    }
+
+    .trust-us>i,
+    .img-doc-slide>i {
+        width: 25px;
+        height: 25px;
+    }
+
+    .recommended {
+        grid-template-columns: 1fr;
+    }
+
+    .video-cases {
+        grid-template-columns: 1fr;
+    }
+
+    .practice-tizer {
+        right: 0px;
+    }
+
+    .df-list li {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .df-list li::before {
+        background-size: 16px;
+        width: 16px;
+        min-width: 16px;
+        height: 12px;
+    }
+
+    .df-list-1 li:before {
+        top: -20px;
+        font-size: 20px;
+        width: 35px;
+        height: 35px;
+    }
+
+    .df-list-1>li>a,
+    .df-list-1>li>p {
+        padding: 30px 20px 30px 30px;
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    .df-list-1>li>div>span {
+        font-size: 12px;
+        max-width: 175px;
+        left: -5%;
+    }
+
+    .df-list-2>li>p {
+        padding: 20px 15px 15px 20px !important;
+    }
+
+    .df-list-1 {
+        gap: 15px;
+    }
+
+    .df-button {
+        font-size: 12px;
+    }
+
+    .price-module_tablet {
+        padding: 20px;
+    }
+
+    .price-module_tablet>div>div:nth-child(2) {
+        grid-template-columns: 1fr;
+        width: 100%;
+        gap: 10px;
+    }
+
+    .price-module_tablet>div {
+        gap: 10px;
+    }
+
+    .price-module_decktop {
+        display: none;
+    }
+
+    .price-module_mobile {
+        display: block;
+        padding: 20px;
+    }
+
+    .price-module_mobile.discounts-training {
+        padding: 0;
+        height: 0;
+        margin-bottom: 10px;
+    }
+
+    .price-module_mobile.discounts-training::before {
+        border: 15px solid transparent;
+        border-top: 20px solid var(--dfp-color-5);
+        left: 10%;
+    }
+
+    .price-module_mobile_procent {
+        display: flex;
+        gap: 5px;
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+
+    .mobile_procent {
+        border-radius: 7px;
+    }
+
+}
+
+@media (max-width: 576px) {
+    .cc-hero {
+        padding: 40px 20px;
+    }
+
+    .df-autor-curs_smart_arrow {
+        transform: rotate(90deg);
+        padding: 10px;
+        width: 50px;
+    }
+
+    .df-autor-curs_smart>div:nth-child(1) {
+        align-items: center;
+    }
+
+    .df-autor-curs_smart>div:nth-child(1)>div {
+        text-align: center;
+    }
+
+    .df-autor-curs_smart>div:nth-child(3) {
+        align-items: center !important;
+    }
+
+    .df-autor-curs_smart>div:nth-child(2)::before {
+        left: 50%;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .list1b-inp>li.form-check {
+        padding: 0px 15px 0px 35px;
+    }
+
+    .list1b-inp>li.form-check::before {
+        left: 5px;
+    }
+
+    .list1b-inp>li.form-check>input {
+        left: 29px;
+    }
+
+    .df-promo_banner {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .cc-ref {
+        width: 325px;
+    }
+
+    .cc-ref-1 {
+        margin-left: -10px !important;
+    }
+
+    .rs-label3 {
+        margin-left: -35px;
+    }
+
+    .rs-label-1 {
+        margin-left: -35px;
+    }
+
+    .rs-range {
+        margin-top: 0px;
+        width: 300px;
+    }
+
+    .cc-container-right {
+        width: 300px;
+    }
+
+    .slider-for>button.slick-prev {
+        left: 0;
+        top: 50px;
+    }
+
+    .slider-for>button.slick-next {
+        left: 98%;
+        top: 65px;
+    }
+
+    .df-img-bezlimit>img {
+        left: 10%;
+    }
+
+    .accordion-header_images-block {
+        width: 220px;
+    }
+
+    .docs-block-content {
+        grid-template-columns: 100%;
+        gap: 5px;
+    }
+
+    .img-doc-slide {
+        width: 320px;
+        padding-bottom: 5px;
+    }
+
+    .df-block-number_numeral.df-doc {
+        width: fit-content;
+        border-bottom: 0;
+    }
+
+    .payment-installments>div:nth-child(1) {
+        padding-bottom: 40px;
+    }
+
+    .issued-documents_item>div:nth-child(1) {
+        min-width: 150px;
+    }
+
+    .issued-documents_item {
+        height: calc(100% - 0px);
+        flex-direction: column;
+    }
+
+    .issued-documents {
+        margin: 0;
+    }
+
+    .issued-documents_item>div:nth-child(2) {
+        text-align: center;
+    }
+
+    .list1b>li:before {
+        top: 15px;
+        left: 15px;
+        padding: 5px;
+        font-size: 18px;
+        width: 30px;
+        height: 30px;
+    }
+
+    .list1b>li {
+        padding: 15px 25px 15px 60px;
+    }
+
+    .discount-block_item {
+        padding: 10px;
+        gap: 5px;
+        align-items: center;
+    }
+
+    .img_pic2>.practice-tizer_img {
+        width: 100%;
+        height: auto;
+    }
+
+    .block-img-doc_img-text {
+        right: -30px;
+        bottom: 20px;
+        gap: 10px;
+    }
+
+    .block-img {
+        margin-left: 0;
+        margin-top: 35px;
+    }
+
+    .block-img-doc_text {
+        right: 0;
+    }
+
+    .block-img-doc {
+        right: -50px;
+        bottom: 20px;
+    }
+
+    .accordion-modul-educator-item>div>div {
+        padding-left: 0;
+        width: 110%;
+        position: relative;
+        left: -20px;
+    }
+
+    .accordion-modul>div>h2>button::after,
+    .accordion-modul>div>h2>button:not(.collapsed)::after {
+        left: -5px;
+    }
+
+    .educator_img-1,
+    .educator_img-2 {
+        min-width: 80px;
+        width: 80px;
+        height: 80px;
+    }
+
+    .educator_img>div {
+        width: 80px;
+    }
+
+    .educator_content {
+        padding: 0 0 0 15px;
+    }
+
+    .educator_title {
+        align-items: flex-start;
+        text-decoration: none;
+        flex-direction: column;
+    }
+
+    /*.img_pic1 {
+        width: 260px;
+        padding: 10px;
+        height: 190px;
+    }*/
+    .img_pic1 {
+        width: 100%;
+        padding: 10px;
+        height: auto;
+    }
+
+    .img_pic2 {
+        height: 190px;
+        width: 140px;
+        min-width: 140px;
+    }
+
+    .img_pic4 {
+        width: 150px;
+        height: 115px;
+    }
+
+    .img_pic5 {
+        width: 213px !important;
+        padding: 0px;
+        height: 154px;
+    }
+
+    .df-block-number_numeral {
+        border-bottom: 1px solid var(--dfp-color-3);
+        width: 100%;
+        padding-bottom: 5px;
+    }
+
+    .df-block-number {
+        flex-direction: column;
+    }
+
+    .df-block-number_stage {
+        flex-direction: column;
+    }
+
+    .df-block-number_numeral_stage {
+        border-radius: var(--dfp-radius-6);
+        width: 100%;
+        padding: 15px 30px;
+        justify-content: flex-start;
+        align-items: flex-end;
+        flex-direction: row;
+        gap: 5px;
+    }
+
+    .df-block-number_numeral_stage::after {
+        font-size: clamp(28px, 4vw, 36px);
+        line-height: clamp(32px, 4vw, 40px);
+        font-weight: 500;
+    }
+
+    .df-block-number_text_stage {
+        padding: 20px 30px;
+    }
+
+    .df-block-icon>.df-tizer_svg {
+        width: 100%;
+        height: 100%;
+        border-radius: var(--dfp-radius-6);
+    }
+}
+
+@media (max-width: 480px) {
+    .df-practik>div:nth-child(2)>div.h-0 {
+        top: 0;
+
+    }
+
+    .df-sertifikat-block {
+        grid-template-columns: repeat(1, 0.15fr);
+    }
+
+    .df-autor-block {
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .df-autor-block>div {
+        padding: 15px !important;
+    }
+}
+
+@media (max-width: 420px) {
+
+    .recommended_item_promo {
+        min-height: 450px;
+    }
+
+    .cc-ref {
+        width: 260px;
+    }
+
+    .rs-range {
+        width: 230px;
+    }
+
+    .cc-container-right {
+        width: 250px;
+    }
+
+    .cc-result-number {
+        padding: 0;
+    }
+
+    .accordion-modul_header {
+        font-size: 14px;
+    }
+
+    .accordion-modul_header>div:nth-child(2) {
+        width: 70%;
+    }
+
+    .payment-installments>div:nth-child(1)>div>div:nth-child(2) {
+        grid-template-columns: 1fr 1fr;
+        gap: 0;
+        grid-column-gap: 15px;
+    }
+
+    .payment-installments>div {
+        padding: 0 25px;
+        display: grid;
+        grid-template-rows: 70% 1fr;
+    }
+}
+
+@media (max-width: 375px) {
+    .df-practik>div:nth-child(1) {
+        width: 250px;
+    }
+
+    .df-practik_time {
+        flex-direction: column !important;
+    }
+
+    .df-img-bezlimit {
+        height: calc(400px - 100px);
+    }
+
+    .df-img-bezlimit>img {
+        height: 300px;
+        top: 0px;
+        left: 10px;
+    }
+
+    .accordion-header_images-block {
+        width: 160px;
+    }
+}
+
+.fancybox__container {
+    z-index: 99999;
+}
