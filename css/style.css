@@ -872,15 +872,14 @@ a.button-menu:hover {
   display: none;
 }
 
-.button-menu-lk,
-.button-menu-lk-ex,
-.button-menu-lk-en {
+.button-menu-lk, .button-menu-lk-ex, .button-menu-lk-en {
   background-position: center center;
   background-size: 30px 30px;
   position: relative;
   transition: all 0.5s;
   width: 35px;
   height: 35px;
+  margin-left: 5px;
   background-repeat: no-repeat;
   border-radius: 50%;
   border: 1px solid #ae00d4;
@@ -5233,7 +5232,9 @@ ol.lessons-list li:before {
 .color-text-1 {
   color: #24201E !important;
 }
-
+.header-work {
+  display: none;
+}
 /*адаптив до 1580*/
 @media (max-width: 1580px) {
   .banner-trend-dop_img-logoped-aplle2 {
@@ -7372,6 +7373,21 @@ ol.lessons-list li:before {
 /*адаптив до 561*/
 
 @media (max-width: 561px) {
+  .button-menu-telefon {
+    margin: 0 5px;
+}
+  .header-logo {
+    max-width: 170px;
+    padding-top: 0px;
+}
+  .header-work {
+    display: block;
+    font-size: 13px;
+  }
+  .header-phone_text {
+    display: none;
+}
+
   .button-two-mobile-header {
     display: block;
   }
@@ -7779,6 +7795,12 @@ ol.lessons-list li:before {
 /*адаптив до 420*/
 
 @media (max-width: 420px) {
+  .header-work {
+    font-size: 3.5vw;
+}
+  .header-logo {
+    max-width: 48%;
+}
   .lessons-list-dop2 {
     margin-top: 520px !important;
     margin-bottom: -516px !important;
@@ -7792,9 +7814,7 @@ ol.lessons-list li:before {
   }
 
   .two-section-mobile>div>ul.uk-nav-default.uk-nav>li.uk-parent.uk-open>ul.uk-nav-sub {
-
     margin: 0;
-
   }
 
   .seven-section-block {
