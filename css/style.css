@@ -5615,7 +5615,13 @@ ol.lessons-list li:before {
 /*адаптив до 1080*/
 
 @media (max-width: 1080px) {
-
+  .header-phone_text {
+    font-size: 13px;
+    text-align: center;
+    min-width: 100px;
+    font-weight: 500;
+    padding: 10px 20px 0;
+}
   .sidebar-docs {
     max-width: 270px;
 }
