@@ -3515,7 +3515,11 @@ ol.text-dogovora-items ol ol li::before {
         aspect-ratio: 17 / 6 !important;
     }
 }
-
+@media  (max-width: 580px) {
+    .non-scheduled-notification {
+       margin-bottom: 50px;
+    }
+}
 @media  (max-width: 480px) {
     .non-scheduled-notification .uk-slideshow-items {
         aspect-ratio: 17 / 8 !important;
