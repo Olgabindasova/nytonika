@@ -3450,18 +3450,22 @@ ol.text-dogovora-items ol ol li::before {
 }
 .non-scheduled-notification .h4 {
     line-height: 26px;
+    padding-left: 15px !important;
 }
 .scheduled-notification_item {
-    margin: 15px 0 0 0;
+    margin: 15px 0 0 0 !important;
     gap: 10px;
 }
 .scheduled-notification_item>div:nth-child(1) {
     padding: 15px;
     border-radius: 10px;
     background-color: #9C16B9;
+    margin: 0 5px;
 }
 .scheduled-notification_item>div:nth-child(1)>div {
-text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .scheduled-notification_item .back-to-site-lk {
@@ -3474,6 +3478,7 @@ text-align: center;
     background: var(--colorEducator);
     color: var(--colorWhiteText);
     transition: all .5s;
+    margin: 0 5px !important;
 }
 .scheduled-notification_item .back-to-site-lk:hover {
     border: 2px solid var(--main-color);
@@ -3482,8 +3487,45 @@ text-align: center;
 .scheduled-notification_item .back-to-site-lk::after{
     display: block;
 }
+.non-scheduled-notification .uk-slideshow-items {
+    aspect-ratio: 17 / 2 !important;
+}
+.non-scheduled-notification .uk-position-center-right {
+    right: -25px;
+}
+.non-scheduled-notification .uk-position-center-left {
+    left: -25px;
+}
+.non-scheduled-notification .uk-slidenav {
+    color: #9c16b9;
+    padding-top: 20px;
+}
+.non-scheduled-notification a>svg{
+    width: 10px;
+}
 /*-------Адаптив------------------*/
 
+@media  (max-width: 800px) {
+    .non-scheduled-notification .uk-slideshow-items {
+        aspect-ratio: 17 / 3 !important;
+    }
+}
+@media  (max-width: 640px) {
+    .non-scheduled-notification .uk-slideshow-items {
+        aspect-ratio: 17 / 6 !important;
+    }
+}
+
+@media  (max-width: 480px) {
+    .non-scheduled-notification .uk-slideshow-items {
+        aspect-ratio: 17 / 8 !important;
+    }
+}
+@media  (max-width: 375px) {
+    .non-scheduled-notification .uk-slideshow-items {
+        aspect-ratio: 17 / 12 !important;
+    }
+}
 @container room-type (max-width: 500px) {
     .card-lk_button.room-type {
         grid-auto-flow: row;
