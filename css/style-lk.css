@@ -3435,6 +3435,53 @@ ol.text-dogovora-items ol ol li::before {
 .info-block > .uk-alert-close> svg{
     display: none;
 }
+
+/*-----------------------*/
+.non-scheduled-notification {
+    backdrop-filter: blur(5px);
+    border: 2px solid #ae00d4;
+    padding: 30px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 750px;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.7);
+    color: #9C16B9;
+}
+.non-scheduled-notification .h4 {
+    line-height: 26px;
+}
+.scheduled-notification_item {
+    margin: 15px 0 0 0;
+    gap: 10px;
+}
+.scheduled-notification_item>div:nth-child(1) {
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #9C16B9;
+}
+.scheduled-notification_item>div:nth-child(1)>div {
+text-align: center;
+}
+
+.scheduled-notification_item .back-to-site-lk {
+    height: auto;
+    min-height: 35px;
+    border: 2px solid var(--colorEducator);
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    background: var(--colorEducator);
+    color: var(--colorWhiteText);
+    transition: all .5s;
+}
+.scheduled-notification_item .back-to-site-lk:hover {
+    border: 2px solid var(--main-color);
+    background: var(--main-color);
+}
+.scheduled-notification_item .back-to-site-lk::after{
+    display: block;
+}
 /*-------Адаптив------------------*/
 
 @container room-type (max-width: 500px) {
