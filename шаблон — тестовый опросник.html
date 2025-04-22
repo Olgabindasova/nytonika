@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/uikit-rtl.css">
+    <link rel="stylesheet" href="css/uikit.css">
+    <link rel="stylesheet" href="css/custom-style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-lk.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+    <script src="js/uikit.js" type="text/javascript"></script>
+
+    <title>Ньютоника тестовый опросник</title>
+</head>
+
+<body>
+    <div class="wrapper">
+       
+
+        <main class="main container">
+            <section class="section-dop1-reg">
+                <img class="section-dop1-regpass-img section-dop2-reg-img" src="https://cdn.nyutonika.ru/images/зеленый-шейп1.png" alt="">
+            </section>
+
+            <section class="container-item">
+                <h1 class="h1 uk-scrollspy-inview" uk-scrollspy="cls: uk-animation-slide-bottom; delay: 300">Тестовый опросник 19</h1>
+
+                <div class="leave-request uk-width-medium uk-scrollspy-inview" uk-scrollspy="cls: uk-animation-slide-bottom; delay: 400">
+                    <p class="uk-text-lead">Класс 6</p>
+                </div>
+                <div class="teacher-text-trend uk-margin-medium-bottom uk-padding-remove-bottom uk-text-left uk-scrollspy-inview" uk-scrollspy="cls: uk-animation-slide-bottom; delay: 500" >
+                    Описание тестового опросника
+                </div>
+
+                <form class="uk-form-stacked form-leave-request" action="" method="POST">
+
+                    <input type="hidden" name="_token" value="">
+                    <div class="uk-margin">
+                        <label class="uk-form-label" for="question1">Тестовый вопрос 1. Поле одна строка</label>
+                        <div class="uk-form-controls">
+                            <input class="uk-input" id="question1" name="question1" type="text" placeholder="Введите ответ"
+                                required="">
+                        </div>
+                    </div>
+
+                    <div class="uk-margin">
+                        <label class="uk-form-label" for="question2">Тестовый вопрос 2. Поле  несколько строк</label>
+                        <div class="uk-form-controls">
+                            <textarea class="uk-textarea" rows="3" id="question2" name="question2"
+                                placeholder=""></textarea>
+                        </div>
+                    </div>
+
+                    <div class="uk-margin">
+                        <label class="uk-form-label" for="question3">Тестовый вопрос 3. Выпадающий список</label>
+                        <div class="uk-form-controls">
+                            <select class="uk-select select" name="question3" required="">
+                                <option>Не выбрано</option>
+                                <option disabled="">Не выбрано</option>
+                                <option value="">
+                                    Ответ 1
+                                </option>
+                                <option value="">
+                                    Ответ 2
+                                </option>
+                                <option value="">
+                                    Ответ 2
+                                </option>
+                                <option value="">
+                                    Ответ 3
+                                </option>
+                                <option value="">
+                                    Ответ 4
+                                </option> 
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="uk-margin">
+                        <label class="uk-form-label" for="question4">Тестовый вопрос 4. Выбор числа</label>
+                        <div class="uk-form-controls">
+                            <input class="uk-input" id="question4" name="question4" type="number"
+                                placeholder="" required="">
+                        </div>
+                    </div>
+
+                    <div class="uk-margin">
+                        <label class="uk-form-label" for="question5">Тестовый вопрос 5. Радио-кнопки единственный выбор</label>
+                        <div class="uk-form-controls">
+                            <label><input class="uk-radio" type="radio" name="question5" value="1"> Да
+                            </label>
+
+                            <label><input class="uk-radio" type="radio" name="question5" value="0"> Нет
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <div class="areas-of-work areas-of-work_test">
+                        <div class="uk-margin">
+                            <label class="uk-form-label" for="comment">Тестовый вопрос 6. Чекбоксы</label>
+
+                            <div class="">
+                                <label><input class="uk-checkbox" type="checkbox" name="lesson_subjects[]" value="1">
+                                    Ответ 1 </label>
+                                <label><input class="uk-checkbox" type="checkbox" name="lesson_subjects[]" value="2">
+                                    Ответ 2 </label>
+                                <label><input class="uk-checkbox" type="checkbox" name="lesson_subjects[]" value="3">
+                                    Ответ 3 </label>
+                                <label><input class="uk-checkbox" type="checkbox" name="lesson_subjects[]" value="4">
+                                    Ответ 4 </label>
+                            </div>
+                        </div>
+                       
+
+                    </div>
+                    <div uk-form-custom="" class="uk-form-custom">
+                        <button class="uk-button uk-button-large button-tree" type="submit">Отправить</button>
+                    </div>
+
+                </form>
+
+            </section>
+           
+
+        </main>
+        <footer class="">
+            <div class="container">
+               
+                <a href="#" class="scrollup">Наверх</a>
+            </div>
+        </footer>
+
+    </div>
+    <script src="https://cdn.nyutonika.ru/js/jquery.maskedinput-1.4.1.js" type="text/javascript"></script>
+    <script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
+    <script src="js/scripts.js" type="text/javascript"></script>
+
+</body>
+
+</html>

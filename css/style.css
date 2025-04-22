@@ -436,6 +436,7 @@ h5, .h5 {
 
 
 /*цвета*/
+
 .color1 {
   background-color: #7DDF9B;
 }
@@ -8349,7 +8350,13 @@ table.punkt td>ul>li::before {
   margin: 10px -10px 20px 10px;
   background: #fefcfe;
 }
-
+.areas-of-work_test {
+  border: 0px;
+  padding: 0px;
+  border-radius: 0px;
+  margin: 0;
+  background: transparent;
+}
 .areas-of-work>div>label {
   font-family: "Nunito-Bold";
   font-size: 20px;
