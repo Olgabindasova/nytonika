@@ -657,6 +657,10 @@ h5, .h5 {
 .textcolor18 {
   color: #fff !important;
 }
+/*радиусы*/
+.br-20{
+  border-radius: 20px;
+}
 
 /*кнопки*/
 .a-non{
