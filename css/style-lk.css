@@ -3275,6 +3275,7 @@ ol.text-dogovora-items ol ol li::before {
     container-name: intern-office;
 }
 
+
 .intern-office_info {
     border-bottom: 1px solid var(--main-color);
     padding-bottom: 25px;
@@ -3509,6 +3510,33 @@ ol.text-dogovora-items ol ol li::before {
 .non-scheduled-notification a>svg{
     width: 10px;
 }
+
+/*-------Новостная лента-----------------*/
+.lk-block-news {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px 0;
+}
+a.intern-office.news {
+    text-decoration: none !important;
+    margin: 0;
+}
+a.intern-office.news:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+a.intern-office.news:hover .intern-office_name {
+    color: #9C16B9;
+}
+.lk-block-news .intern-office_name>span {
+    background: var(--colorEducator);
+}
+.intern-office_name>span.noread {
+    background: var(--colorDanger);
+}
+
+
+
 /*-------Адаптив------------------*/
 
 @media  (max-width: 800px) {
