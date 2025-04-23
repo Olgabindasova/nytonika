@@ -3316,7 +3316,9 @@ ol.text-dogovora-items ol ol li::before {
     gap: 10px;
     width: 45%;
 }
-
+.intern-office_list-2 {
+    width: 100%;
+}
 .intern-office_list>li {
     font-family: "Nunito-Bold";
     font-style: normal;
