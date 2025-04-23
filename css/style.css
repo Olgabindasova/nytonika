@@ -240,7 +240,9 @@ a:hover {
 *:before {
   box-sizing: border-box;
 }
-
+.text-bold {
+  font-weight: 700 !important
+}
 p,
 li {
   font-family: 'OpenSans';
@@ -537,6 +539,9 @@ h5, .h5 {
 }
 .color26 {
   background-color: #D41B19 !important;
+}
+.color27 {
+  background-color: #fcf7feeb !important;
 }
 .bordercolor1 {
   border-color: #33C7A2 !important;
@@ -9523,6 +9528,10 @@ section.math-hach>.seven-section>.seven-section-block {
   gap: 20px;
   padding: 30px 20px;
 }
+.section-menu_lk {
+  justify-content: start;
+  padding: 20px 0px 35px;
+}
 
 .section-menu>li>a {
   background: #cc7dc3;
@@ -9537,6 +9546,7 @@ section.math-hach>.seven-section>.seven-section-block {
   display: block;
   text-align: center;
 }
+
 
 .section-menu.dosk>li>a {
   background: #7BC4F9;
@@ -9639,7 +9649,23 @@ section.math-hach>.seven-section>.seven-section-block {
   background: #20A0A0 !important;
   border: 2px solid #20A0A0 !important;
 }
-
+.section-menu_lk>li>a {
+  background: #fff;
+  border: 2px solid #9205b1;
+  color: #2A3B4F;
+}
+.section-menu_lk>li:hover>a {
+  color: #fff;
+}
+.section-menu_lk>li:nth-child(2n+2)>a:hover {
+  background: #cc7dc3;
+  border: 2px solid #cc7dc3;
+}
+.section-menu_lk>li>a.active {
+  background: #9205b1;
+  border: 2px solid #9205b1;
+  color: #fff;
+}
 @media (max-width: 451px) {
   .section-menu>li>a {
     padding: 15px 15px;
