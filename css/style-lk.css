@@ -3537,6 +3537,7 @@ a.intern-office.news:hover .intern-office_name {
 .lk-news-icons {
     position: relative;
     height: 0;
+    width: 0;
     color: var(--colorWhiteText);
     font-size: 10px;
     top: -11px;
@@ -3577,6 +3578,10 @@ a.intern-office.news:hover .intern-office_name {
   .menu-lk.active .lk-news-icons {
     top: -16px;
     left: 98px;
+}
+.menu-slide-lk-mobile>ul>li>a>div.lk-news-icons {
+    top: -40px;
+    left: 85px;
 }
 /*-------Адаптив------------------*/
 
