@@ -94,23 +94,47 @@
     </div>
     </aside>
     <section class="section-lk">
-        <div class="header-top-lk">
-            <a href="https://nyutonika.ru/">
-                <button class="back-to-site-lk">
+       <div class="header-top-lk lk-mobile">
+                <a href="https://nyutonika.ru/" class="back-to-site-lk">
                     Вернуться на сайт
-                </button>
-           </a>
-            
-            <div class="header-top-lk_profile">
-                <div>
-                    <p class="header-top-lk_profile_title">Профиль</p>
-                    <p class="header-top-lk_profile_name">Иванов Иван Иванович</p>
+                </a>
+
+                <div class="header-top-lk_profile">
+                    <a class="logo-mobile" href="https://nyutonika.ru/"><img class="logo1"
+                            src="https://cdn.nyutonika.ru/icons-lk/logo1.svg" /></a>
+                    <div>
+                        <p class="header-top-lk_profile_title">Профиль</p>
+                        <p class="header-top-lk_profile_name">Иванов Иван Иванович</p>
+                    </div>
+
+                    <a class="header-top-lk_profile_icon uk-margin-small-left"
+                        href="https://olgabindasova.github.io/nytonika/шаблон%20—%20личный%20кабинет%20—%20личный%20кабинет%20общая%20страница.html"><span
+                            uk-icon="icon: user; ratio: 1.5"></span></a>
+                    <a class="header-top-lk_profile_icon uk-margin-small-left menu-lk-mobile"
+                        href="#offcanvas-mobile-menu" uk-toggle="" aria-expanded="false"><span
+                            uk-icon="icon: menu; ratio: 1.5"></span></a>
                 </div>
-               
-                   <a class="header-top-lk_profile_icon uk-margin-small-left" href="https://olgabindasova.github.io/nytonika/шаблон%20—%20личный%20кабинет%20—%20личный%20кабинет%20общая%20страница.html"><span uk-icon="icon: user; ratio: 1.5"></span></a> 
-                
+                <div id="offcanvas-mobile-menu" uk-offcanvas="" class="uk-offcanvas">
+                    <div class="uk-offcanvas-bar menu-slide-lk-mobile educator">
+                        <div class="menu-lk-mobile-title">
+                            <div>
+                                <a href="https://nyutonika.ru/"><img class=""
+                                        src="https://cdn.nyutonika.ru/icons-lk/logo-menu-lk.svg" /></a>
+                            </div>
+                            <a href="#offcanvas-mobile-menu" uk-toggle="" aria-expanded="false"><span
+                                    uk-icon="icon: close; ratio: 1.3"></span></a>
+                        </div>
+                        <div class="menu-slide-lk-mobile_menu">Меню</div>
+                        <ul class="uk-nav-default uk-nav" uk-nav="">
+                            <li class="nav-item"><a href="#">Личный кабинет</a></li>
+                            <li class="nav-item"><a href="#">Ближайшие занятия</a></li>
+                            <li class="nav-item"><a href="#">Последние занятия</a></li>
+                            <li class="nav-item"><a href="#">Пакеты занятий</a></li>
+                            <li class="nav-item"><a href="#">История заказов</a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-        </div>
        <div class="page-lk">
        <h1 class="uk-margin-large-top">Новости</h1>
 
