@@ -3534,9 +3534,50 @@ a.intern-office.news:hover .intern-office_name {
 .intern-office_name>span.noread {
     background: var(--colorDanger);
 }
-
-
-
+.lk-news-icons {
+    position: relative;
+    height: 0;
+    color: var(--colorWhiteText);
+    font-size: 10px;
+    top: -11px;
+    left: 39px;
+    z-index: 2;
+    font-weight: 800;
+    animation-name: pulse;
+    transform: scale(.98);
+    animation: pulse 2.5s ease-in-out infinite;
+}
+.lk-news-icons::before {
+    display: block;
+    content: '';
+    position: relative;
+    background: var(--colorDanger);
+    border-radius: 50%;
+    border: 2px solid var(--colorWhiteText);
+    width: 20px;
+    min-width: 20px;
+    height: 20px;
+    top: 23px;
+    left: -7px;
+    z-index: -1;
+}
+ 
+@keyframes pulse {
+    from {
+        transform: scale(.98);
+      }
+      50% {
+        transform: scale(1);
+         
+      }
+      to {
+        transform: scale(.98);
+      }
+  } 
+  .menu-lk.active .lk-news-icons {
+    top: -16px;
+    left: 98px;
+}
 /*-------Адаптив------------------*/
 
 @media  (max-width: 800px) {
@@ -3941,6 +3982,10 @@ a.intern-office.news:hover .intern-office_name {
 
 
 @media (max-width: 1100px) {
+    .menu-lk.active .lk-news-icons {
+        top: -13px;
+        left: 87px;
+    }
     .header-top-lk {
         padding: 0 20px;
     }
