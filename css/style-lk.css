@@ -3572,12 +3572,12 @@ a.intern-office.news:hover .intern-office_name {
       }
   } 
   .menu-lk.active .lk-news-icons {
-    top: -16px;
-    left: 98px;
+    top: -20px;
+    left: 6px;
 }
 .menu-slide-lk-mobile>ul>li>a>div.lk-news-icons {
-    top: -40px;
-    left: 85px;
+    top: -47px;
+    left: -4px;
 }
 /*-------Адаптив------------------*/
 
@@ -3984,8 +3984,8 @@ a.intern-office.news:hover .intern-office_name {
 
 @media (max-width: 1100px) {
     .menu-lk.active .lk-news-icons {
-        top: -13px;
-        left: 87px;
+        top: -20px;
+        left: 5px;
     }
     .header-top-lk {
         padding: 0 20px;
