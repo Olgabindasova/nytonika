@@ -9990,8 +9990,8 @@ section.math-hach>.seven-section>.seven-section-block {
 @container pricing-item (min-width: 434px) {
   .pricing-header_top_hit {
     background: rgb(255, 255, 255);
-    background: linear-gradient(45deg, rgba(255, 255, 255, 1) 81%, rgba(255, 86, 66, 1) 81%, rgba(255, 86, 66, 1) 90%, rgba(255, 255, 255, 1) 90%) !important;
-  }
+    background: linear-gradient(45deg, rgba(255, 255, 255, 1) 81%, #33c7a2 81%, #33c7a2  90%, rgba(255, 255, 255, 1) 90%) !important;
+}
 }
 
 @container pricing-item (min-width: 450px) {
@@ -10055,13 +10055,14 @@ section.math-hach>.seven-section>.seven-section-block {
   position: relative;
   bottom: 35px;
   justify-content: center;
-  min-height: 115px;
+  min-height: 120px;
 }
 .pricing-item_one_old {
   text-decoration: line-through;
 }
-.pricing-item_set .pricing-item_one_old{
+.pricing-item_set .pricing-item_one_old {
   font-weight: 500;
+  font-size: 18px;
 }
 .pricing-item_one>div {
   font-family: "Nunito-Bold";
@@ -10090,7 +10091,10 @@ section.math-hach>.seven-section>.seven-section-block {
 .pricing-item_one>div>span {
   color: inherit;
 }
-
+.pricing-item_one .pricing-item_one_old {
+  font-size: 24px !important;
+  display: flex;
+}
 .pricing-item_set {
   display: flex;
   flex-direction: column;
