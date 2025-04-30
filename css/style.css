@@ -10054,8 +10054,15 @@ section.math-hach>.seven-section>.seven-section-block {
   gap: 5px;
   position: relative;
   bottom: 35px;
+  justify-content: center;
+  min-height: 115px;
 }
-
+.pricing-item_one_old {
+  text-decoration: line-through;
+}
+.pricing-item_set .pricing-item_one_old{
+  font-weight: 500;
+}
 .pricing-item_one>div {
   font-family: "Nunito-Bold";
   font-style: normal;
@@ -10076,7 +10083,7 @@ section.math-hach>.seven-section>.seven-section-block {
   font-size: 40px;
 }
 
-.pricing-item_one>div:nth-child(2) {
+.pricing-item_one>div:nth-child(2), .pricing-item_one>div:nth-child(3) {
   font-size: 16px;
 }
 
@@ -10094,11 +10101,12 @@ section.math-hach>.seven-section>.seven-section-block {
   font-weight: 700;
   color: #2A3B4F;
   font-size: 16px;
-  gap: 15px;
+  gap: 10px;
   min-height: 150px;
   justify-content: center;
   position: relative;
   bottom: 20px;
+  min-height: 125px;
 }
 
 .pricing-item_set>span {
@@ -10301,7 +10309,7 @@ section.math-hach>.seven-section>.seven-section-block {
 }
 
 .pricing-item_set_hit {
-  min-height: 100px;
+  min-height: 125px;
   bottom: 25px;
 }
 
