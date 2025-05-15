@@ -3506,7 +3506,10 @@ ol.text-dogovora-items ol ol li::before {
 .non-scheduled-notification a>svg{
     width: 10px;
 }
-
+.non-scheduled-notification .uk-alert-close {
+    top: -20px;
+    left: 20px;
+}
 /*-------Новостная лента-----------------*/
 .lk-block-news {
     display: flex;

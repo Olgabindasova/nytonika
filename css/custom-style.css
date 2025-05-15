@@ -53,3 +53,16 @@
     padding: 5% 15px;
     background: rgb(104 104 104 / 72%);
 }
+
+@media print {
+    .no-print {
+        display: none !important;
+    }
+    }
+    
+    .avoid-break {
+    display: block;
+    page-break-inside: avoid;
+    break-inside: avoid;
+    }
+    
