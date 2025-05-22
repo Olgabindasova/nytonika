@@ -3341,6 +3341,9 @@ ol.text-dogovora-items ol ol li::before {
     color: var(--colorBlockCardOne);
 }
 
+.intern-office_list_class-2 {
+    font-weight: 600 !important;
+}
 .intern-office_info-classes {
     margin: 25px 0 0;
     display: flex;
