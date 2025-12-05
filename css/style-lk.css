@@ -1165,6 +1165,9 @@ input:-webkit-autofill {
     width: 49%;
 }
 
+.buttons-educator>.card-lk_button-2 {
+    width: 100%;
+}
 
 .card-lk__button_repeal {
     background-color: var(--colorDanger) !important;
@@ -2916,6 +2919,17 @@ table.operation-history>tbody .write-off td:nth-of-type(5) {
     min-width: 30px;
     text-align: center;
     border-radius: 50%;
+}
+
+.slot-info {
+    font-weight: 800;
+    color: var(--colorEducator);
+    font-size: 18px;
+}
+
+.slot-info-2::before {
+    content: '✓';
+    color: var(--colorEducator);
 }
 
 .standart-checkbox {
