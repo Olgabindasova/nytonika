@@ -396,7 +396,14 @@ h5,
 .footer-buttons_w:hover {
   background-color: #20A0A0;
 }
+.footer-buttons_max {
+  background: linear-gradient(45deg,rgba(68, 188, 251, 1) 2%, rgba(41, 75, 249, 1) 44%, rgba(135, 70, 225, 1) 100%);
+  transition: all 0.8s;
+}
 
+.footer-buttons_max:hover {
+ background: linear-gradient(45deg,rgba(135, 70, 225, 1) 0%, rgba(41, 75, 249, 1) 50%, rgba(68, 188, 251, 1) 100%);
+}
 :root {
   --scrollbarBg: rgb(248 248 248);
   --scrollbarThumb: rgb(174 0 212);
