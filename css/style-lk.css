@@ -203,6 +203,7 @@
 
 .as-social [class*=as-icon-telegram],
 .as-social [class*=as-icon-whatsapp],
+.as-social [class*=as-icon-max],
 .as-social [class*=as-icon-viber] {
     color: #fff;
     background-color: var(--main-color);
