@@ -404,6 +404,14 @@ h5,
 .footer-buttons_max:hover {
  background: linear-gradient(45deg,rgba(135, 70, 225, 1) 0%, rgba(41, 75, 249, 1) 50%, rgba(68, 188, 251, 1) 100%);
 }
+.footer-buttons_telegram {
+  background: #53baed;
+  transition: all 0.8s;
+}
+
+.footer-buttons_telegram:hover {
+ background: #07a0ec;
+}
 :root {
   --scrollbarBg: rgb(248 248 248);
   --scrollbarThumb: rgb(174 0 212);
