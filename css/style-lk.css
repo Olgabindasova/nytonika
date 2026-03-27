@@ -1959,6 +1959,68 @@ input:-webkit-autofill {
     background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='33' height='26' fill='none' viewBox='0 0 33 26'%3e%3cpath fill='%23fff' d='M15.952 25.2a2 2 0 0 1-2.767.396L.818 16.539a2 2 0 0 1-.45-2.77l1.409-1.989a2 2 0 0 1 2.81-.46l7.294 5.318a2 2 0 0 0 2.758-.389L26.655.774a2 2 0 0 1 2.813-.349l1.889 1.479a2 2 0 0 1 .353 2.793L15.952 25.201Z'/%3e%3c/svg%3e ");
 }
 
+.button_yandex-split {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    gap: 7px;
+}
+
+.button_yandex-split:focus-visible {
+    outline: 0px;
+}
+
+.button_yandex-split::after {
+    content: url("https://cdn.nyutonika.ru/icons-lk/yandex-split-logo.svg");
+    position: relative;
+    display: block;
+    max-width: 115px;
+    width: 50%;
+    top: 1px;
+}
+
+.title_yandex-split {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 0;
+    width: 104%;
+    gap: 10px;
+}
+
+.title_yandex-split::after {
+    content: "";
+    background-image: url("https://cdn.nyutonika.ru/icons-lk/Watermelon.svg");
+    position: relative;
+    display: block;
+    background-size: 98%;
+    background-position: center;
+    max-width: 30px;
+    width: 30px;
+    max-height: 30px;
+    height: 30px;
+    min-width: 30px;
+    background-repeat: no-repeat;
+    top: -23px;
+    cursor: pointer;
+    transition: all 0.5s;
+    border: 3px solid transparent;
+    box-sizing: border-box;
+    filter: grayscale(0.1);
+}
+
+.title_yandex-split:hover::after, .title_yandex-split.active::after {
+    border: 3px solid var(--colorWhiteText);
+    border-radius: 50%;
+    filter: contrast(1.4);
+}
+
+.title_yandex-split.active:hover::after {
+    border: 3px solid transparent;
+    filter: grayscale(0.2);
+}
+
 .lable-sale-one {
     display: flex;
     justify-content: flex-end;
@@ -4767,7 +4829,7 @@ a.intern-office.news:hover .intern-office_name {
     .menu-slide-lk-mobile_menu {
         color: #fff;
         font-size: 22px;
-        font-family: Nunito-Bold;
+        font-family: "Nunito-Bold";
         font-weight: 700;
         line-height: 28px;
     }
@@ -4870,7 +4932,7 @@ a.intern-office.news:hover .intern-office_name {
     .mobile-lk_all_contact>div>p {
         color: var(--colorFontContent);
         font-size: 16px;
-        font-family: OpenSans;
+        font-family: "OpenSans";
         font-weight: 700;
         line-height: 32px;
     }
@@ -4883,7 +4945,7 @@ a.intern-office.news:hover .intern-office_name {
     .mobile-lk_all_contact>div>a {
         color: var(--colorFontContent);
         font-size: 16px;
-        font-family: OpenSans;
+        font-family: "OpenSans";
         font-weight: 700;
         line-height: 32px;
         text-decoration: none;
