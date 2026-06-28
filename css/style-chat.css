@@ -1,0 +1,196 @@
+.lk-chat-block {
+    margin: 20px 0 0;
+    gap: 20px;
+    height: 70vh;
+    max-height: 70vh;
+    flex-grow: 1;
+}
+
+.lk-chat-block_users {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.lk-chat-block__users_item {
+    width: 100%;
+    border-radius: 15px;
+    border: 1px solid #d4d5d533;
+    padding: 15px;
+    background: #d4d5d533;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-family: "Nunito";
+    transition: all 0.5s;
+}
+
+.lk-chat-block__users_item:hover,
+.lk-chat-block__users_item.active:hover {
+    background: #FEF7FF;
+    border: 1px solid var(--main-color);
+    text-decoration: none;
+}
+
+.lk-chat-block__users_item.active {
+    background: #FCEDFF;
+    border: 1px solid #FCEDFF;
+}
+
+.lk-chat-block__users_item>div {
+    display: flex;
+    justify-content: space-between;
+    line-height: 15px;
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--colorFontContent);
+}
+
+.lk-chat-block__users_item>div>div {
+    padding: 5px;
+    display: flex;
+    color: var(--colorWhiteText);
+    background: var(--colorBlockCardTwo);
+    border-radius: 50%;
+    font-size: 12px;
+    aspect-ratio: 1 / 1;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    top: -10px;
+    left: 10px;
+    transition: all 0.5s;
+}
+
+.lk-chat-block__users_item.active>div>div {
+    background: #9C16B9;
+}
+
+.lk-chat-block__users_item:hover>div>div,
+.lk-chat-block__users_item.active:hover>div>div {
+    background: var(--main-color);
+}
+
+.lk-chat-block__users_item>div>div.inert {
+    display: none;
+}
+
+.lk-chat-block__users_item>div:nth-child(2) {
+    font-weight: 500;
+    line-height: 15px;
+    font-size: 15px;
+    color: var(--colorFontContent);
+    transition: all 0.5s;
+}
+
+.lk-chat-block__users_item.active>div:nth-child(2) {
+    color: #9C16B9;
+}
+
+.lk-chat-block__users_item:hover>div:nth-child(2),
+.lk-chat-block__users_item.active:hover>div:nth-child(2) {
+    color: var(--main-color);
+}
+
+.lk-chat-block__users_item>div:nth-child(3) {
+    padding-top: 5px;
+    font-weight: 500;
+    line-height: 15px;
+    font-size: 14px;
+}
+
+.lk-chat-block_talk {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.lk-chat-block_messages {
+    padding: 15px;
+    border-radius: 15px;
+    border: 1px solid var(--main-color);
+    background-image: url("https://cdn.nyutonika.ru/icons-lk/chat-fon.svg");
+    height: calc(70vh - 50px);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    overflow-y: scroll;
+}
+
+.lk-chat-block_message {
+    border-radius: 15px;
+    font-family: "Nunito";
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.lk-chat-block_message>:nth-child(1) {
+    padding: 15px 20px;
+    border-radius: 15px;
+    display: inline-block;
+    font-weight: 500;
+    line-height: normal;
+    font-size: 16px;
+    border: 1px solid #9C16B9;
+    width: fit-content;
+    max-width: 75%;
+}
+
+.lk-chat-block_message>:nth-child(2) {
+    padding: 5px 10px;
+    border-radius: 15px;
+    display: inline-flex;
+    font-weight: 400;
+    line-height: 12px;
+    font-size: 12px;
+    border: 1px solid #9C16B9;
+    background: var(--colorWhiteText);
+    gap: 5px;
+    width: fit-content;
+}
+
+.lk-chat-block_message>:nth-child(2)>span {
+    color: #9C16B9;
+}
+
+.lk-chat-block_message.ego {
+    align-items: flex-end;
+}
+
+.lk-chat-block_message.ego>div:nth-child(1) {
+    background: #9C16B9;
+    color: var(--colorWhiteText);
+}
+
+.lk-chat-block_message.talker {
+    align-items: flex-start;
+}
+
+.lk-chat-block_message.talker>div:nth-child(1) {
+    background: #FEF7FF;
+}
+
+.lk-chat-block_message_unread-message {
+    text-align: center;
+    background: #CC7DC3;
+    height: 3px;
+    margin: 20px 0;
+}
+
+.lk-chat-block_message_unread-message>span {
+    font-family: "Nunito";
+    font-weight: 600;
+    font-size: 16px;
+    padding: 10px 15px;
+    background: var(--colorWhiteText);
+    border-radius: 15px;
+    color: #CC7DC3;
+    border: 1px solid #CC7DC3;
+    display: inline-block;
+    position: relative;
+    top: -17px;
+}
+
+ 
