@@ -108,14 +108,13 @@
 
 .lk-chat-block_messages {
     padding: 15px;
-    border-radius: 15px;
-    border: 1px solid var(--main-color);
-    background-image: url("https://cdn.nyutonika.ru/icons-lk/chat-fon.svg");
     height: calc(70vh - 50px);
     display: flex;
     flex-direction: column;
     gap: 15px;
     overflow-y: scroll;
+    scrollbar-width: 5px;
+    scrollbar-color: var(--scrollbarThumb) #FEF7FF !important;
 }
 
 .lk-chat-block_message {
@@ -193,4 +192,23 @@
     top: -17px;
 }
 
- 
+.lk-chat-block_talk_scroll {
+    padding: 2px 6px 2px 0;
+    border-radius: 15px;
+    border: 1px solid var(--main-color);
+    background-image: url("https://cdn.nyutonika.ru/icons-lk/chat-fon.svg");
+}
+
+.lk-chat-block_messages::-webkit-scrollbar {
+    width: 5px;
+}
+
+.lk-chat-block_messages::-webkit-scrollbar-track {
+    background: transparent !important;
+}
+
+.lk-chat-block_messages::-webkit-scrollbar-thumb {
+    background-color: var(--scrollbarThumb);
+    border-radius: var(--scrollbarBorderRadius);
+    border: var(--scrollbarBorder);
+}
