@@ -2443,31 +2443,34 @@ table.operation-history>tbody .write-off td:nth-of-type(5) {
     }
 
     table.operation-history.practice-schedule>tbody tr td:nth-of-type(1):before {
-        content: "№";
+        content: "Дата (МСК):";
     }
 
     table.operation-history.practice-schedule>tbody tr td:nth-of-type(2):before {
-        content: "Ближайшее занятие";
+        content: "Время (МСК):";
     }
 
     table.operation-history.practice-schedule>tbody tr td:nth-of-type(3):before {
-        content: "Имя";
+        content: "Специалист:";
     }
 
     table.operation-history.practice-schedule>tbody tr td:nth-of-type(4):before {
-        content: "Лет";
+        content: "Нарушение:";
     }
 
     table.operation-history.practice-schedule>tbody tr td:nth-of-type(5):before {
-        content: "Занятие по:";
+        content: "Имя:";
     }
 
     table.operation-history.practice-schedule>tbody tr td:nth-of-type(6):before {
-        content: "Занятие по счету:";
+        content: "Возраст:";
     }
 
     table.operation-history.practice-schedule>tbody tr td:nth-of-type(7):before {
-        content: "Супервизия";
+        content: "Занятие по счету:";
+    }
+    table.operation-history.practice-schedule>tbody tr td:nth-of-type(8):before {
+        content: "Преподаватель:";
     }
 }
 
