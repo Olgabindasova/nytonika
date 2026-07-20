@@ -212,3 +212,74 @@
     border-radius: var(--scrollbarBorderRadius);
     border: var(--scrollbarBorder);
 }
+
+.lk-chat-block_talk_send>div {
+    display: grid;
+    grid-template-columns: auto 60px;
+    grid-template-rows: 50px;
+    gap: 10px;
+}
+
+.lk-chat-block_talk_send textarea {
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+    margin: 0;
+    border-radius: 15px;
+    border: 1px solid #f6f7f7;
+    padding: 15px;
+    background: #f6f7f7;
+    transition: all 0.3s;
+    color: var(--colorFontContent);
+    font-size: 15px;
+    line-height: normal;
+    width: 100%;
+    min-height: 50px;
+    overflow-y: hidden;
+    resize: none;
+}
+
+.lk-chat-block_talk_send textarea::-webkit-scrollbar {
+    display: none;
+}
+
+.lk-chat-block_talk_send textarea:focus {
+    border: 1px solid var(--main-color);
+}
+
+.lk-chat-block_talk_send textarea::placeholder {
+    font-size: 15px;
+}
+
+.lk-chat-block_talk_send button {
+    display: block;
+    background: none;
+    border: none;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='63' height='63' fill='none' viewBox='0 0 63 63'%3e%3crect width='63' height='63' fill='%239C16B9' rx='31.5'/%3e%3cpath fill='%23fff' d='m57.098 30.435-38.5-19.25a1.75 1.75 0 0 0-1.89.21 1.75 1.75 0 0 0-.577 1.75l4.637 17.097H40.56v3.5H20.768l-4.707 17.045a1.75 1.75 0 0 0 1.75 2.205 1.75 1.75 0 0 0 .787-.192l38.5-19.25a1.75 1.75 0 0 0 0-3.115Z'/%3e%3c/svg%3e ");
+}
+
+.lk-chat-block_talk_send button:disabled {
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 63 63'%3e%3crect width='63' height='63' fill='%23D589CC' rx='31.5'/%3e%3cpath fill='%23fff' d='m57.098 30.435-38.5-19.25a1.75 1.75 0 0 0-1.89.21 1.75 1.75 0 0 0-.577 1.75l4.637 17.097H40.56v3.5H20.768l-4.707 17.045a1.75 1.75 0 0 0 1.75 2.205 1.75 1.75 0 0 0 .787-.192l38.5-19.25a1.75 1.75 0 0 0 0-3.115Z'/%3e%3c/svg%3e ");
+}
+.lk-chat-block_talk_send button>span {
+    width: 30px;
+    min-width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #AE00D4;
+    border: 1px solid;
+    color: var(--colorWhiteText);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: -23px;
+    left: 23px;
+    font-weight: 700;
+    font-family: "Nunito";
+}
+.lk-chat-block_talk_send button:disabled>span {
+     background: var(--main-color);
+}
