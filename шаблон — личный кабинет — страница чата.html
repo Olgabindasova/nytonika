@@ -136,7 +136,7 @@
                 <h1 class="uk-text-left uk-margin-top title-lk">Сообщения</h1>
                 <div class="lk-chat-block uk-grid-collapse uk-flex-stretch" uk-grid>
                     <div class="lk-chat-block_users uk-width-1-3@m uk-width-1-4@l uk-first-column">
-                        <a href="" class="lk-chat-block__users_item active">
+                        <a href="#modal-full" class="lk-chat-block__users_item active" uk-toggle>
                             <div>Тестовый родитель
                                 <div>25</div>
                             </div>
@@ -165,6 +165,7 @@
                             <div>Текст текст текст текст текст текст </div>
                         </a>
                     </div>
+
                     <div class="lk-chat-block_talk uk-width-expand">
                         <div class="lk-chat-block_talk_scroll">
                             <div class="lk-chat-block_messages">
@@ -225,6 +226,84 @@
                                 </button>
                             </div>
                         </form>
+                    </div>
+
+                    <div id="modal-full" class="uk-modal-full lk-chat-block_talk_mobile" uk-modal>
+                        <div class="uk-modal-dialog uk-flex uk-flex-column uk-flex-between">
+                            <div class="uk-modal-header">
+                                <div class="lk-chat-block_talk_mobile_title-rod">
+                                    <button class="lk-chat-block_talk_mobile-modal-close uk-modal-close" type="button"
+                                        uk-close></button>
+                                    <div>Тестовый родитель</div>
+                                </div>
+                                <div class="lk-chat-block_talk_mobile_title-uch">
+                                    Тестовый ученик
+                                </div>
+                                <div class="lk-chat-block_talk_mobile_title-dicr">
+                                    Текст текст текст текст текст текст
+                                </div>
+                            </div>
+                            <div class="lk-chat-block_messages uk-flex-stretch" uk-overflow-auto>
+                                <div class="lk-chat-block_message talker">
+                                    <div>Новое тестовое сообщение </div>
+                                    <div>
+                                        <span>25.06.2026</span><span>15:35:26</span>
+                                    </div>
+                                </div>
+                                <div class="lk-chat-block_message talker">
+                                    <div>Новое тестовое сообщение</div>
+                                    <div>
+                                        <span>25.06.2026</span><span>15:35:26</span>
+                                    </div>
+                                </div>
+                                <div class="lk-chat-block_message ego active">
+                                    <div>Новое тестовое сообщение </div>
+                                    <div>
+                                        <span>25.06.2026</span><span>15:35:26</span>
+                                    </div>
+                                </div>
+                                <div class="lk-chat-block_message ego">
+                                    <div>Новое тестовое сообщение Новое тестовое сообщение Новое тестовое сообщение
+                                        Новое тестовое сообщение </div>
+                                    <div>
+                                        <span>25.06.2026</span><span>15:35:26</span>
+                                    </div>
+                                </div>
+                                <div class="lk-chat-block_message_unread-message">
+                                    <span>Непрочитанные сообщения</span>
+                                </div>
+                                <div class="lk-chat-block_message talker">
+                                    <div>Новое тестовое сообщение </div>
+                                    <div>
+                                        <span>25.06.2026</span><span>15:35:26</span>
+                                    </div>
+                                </div>
+                                <div class="lk-chat-block_message talker">
+                                    <div>Новое тестовое сообщение </div>
+                                    <div>
+                                        <span>25.06.2026</span><span>15:35:26</span>
+                                    </div>
+                                </div>
+                                <div class="lk-chat-block_message talker">
+                                    <div>Новое тестовое сообщение Новое тестовое сообщение Новое тестовое сообщение
+                                        Новое тестовое сообщение Новое тестовое сообщение </div>
+                                    <div>
+                                        <span>25.06.2026</span><span>15:35:26</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="uk-modal-footer">
+                                <form class="lk-chat-block_talk_send">
+                                    <div>
+                                        <textarea class="uk-textarea" placeholder="Введите сообщение..."></textarea>
+                                        <button type="submit">
+                                            <span>10</span>
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

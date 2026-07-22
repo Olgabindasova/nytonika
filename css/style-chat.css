@@ -304,3 +304,113 @@
 .lk-chat-block_talk_send button:disabled>span {
     background: var(--main-color);
 }
+
+.lk-chat-block_talk_mobile {
+    padding: 0;
+    background: none;
+    height: 100vh;
+}
+
+.lk-chat-block_talk_mobile .uk-modal-dialog {
+    height: 100%;
+    min-height: 100%;
+}
+
+.lk-chat-block_talk_mobile .lk-chat-block_messages {
+    height: 100%;
+    max-height: 100% !important;
+    background-image: url("https://cdn.nyutonika.ru/icons-lk/chat-fon.svg");
+    padding: 15px 20px;
+}
+
+.lk-chat-block_talk_mobile .uk-modal-header {
+    padding: 15px;
+    background: #9C16B9;
+    background-image: url("https://cdn.nyutonika.ru/icons-lk/img-title-chat2.svg");
+    background-position: bottom right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.lk-chat-block_talk_mobile .lk-chat-block_message>:nth-child(1) {
+    max-width: 95%;
+}
+
+.lk-chat-block_talk_mobile .uk-modal-footer {
+    border-top: 1px solid #9C16B9;
+    padding: 10px 15px 10px 20px;
+}
+
+.lk-chat-block_talk_mobile .lk-chat-block_talk_send>div {
+    grid-template-columns: auto 50px;
+    grid-template-rows: 40px;
+    gap: 5px;
+}
+
+.lk-chat-block_talk_mobile .lk-chat-block_talk_send button {
+    background-position-x: right;
+}
+
+.lk-chat-block_talk_mobile .lk-chat-block_talk_send button>span {
+    width: 25px;
+    min-width: 25px;
+    height: 25px;
+    top: -21px;
+    left: 27px;
+}
+
+.lk-chat-block_talk_mobile .lk-chat-block_talk_send textarea {
+    padding: 8px 15px;
+    min-height: 45px;
+}
+
+.lk-chat-block_talk_mobile .uk-modal-header>div {
+    color: var(--colorWhiteText);
+    padding-left: 35px;
+}
+
+.lk-chat-block_talk_mobile_title-rod {
+    display: flex;
+    gap: 5px;
+    padding-left: 10px !important;
+    margin-bottom: 10px;
+    align-items: center;
+    position: relative;
+    left: -15px;
+}
+
+.lk-chat-block_talk_mobile_title-rod>div {
+    font-weight: 800;
+    font-family: "Nunito";
+    color: var(--colorWhiteText);
+    font-size: 1.2rem;
+    line-height: 1.1;
+    background: #ffffff33;
+    width: fit-content;
+    padding: 5px 12px;
+    border-radius: 20px;
+}
+
+.lk-chat-block_talk_mobile-modal-close svg {
+    display: none;
+}
+
+.lk-chat-block_talk_mobile_title-rod>button {
+    background-image: url("https://cdn.nyutonika.ru/icons-lk/button-chat-close.svg");
+    width: 25px;
+    height: 25px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.lk-chat-block_talk_mobile_title-uch {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.lk-chat-block_talk_mobile_title-dicr {
+    font-size: .75rem;
+}
