@@ -134,7 +134,7 @@
     font-size: 16px;
     border: 1px solid #9C16B9;
     width: fit-content;
-    max-width: 75%;
+    max-width: 80%;
 }
 
 .lk-chat-block_message>:nth-child(2) {
@@ -161,6 +161,25 @@
 .lk-chat-block_message.ego>div:nth-child(1) {
     background: #9C16B9;
     color: var(--colorWhiteText);
+    padding-right: 5px;
+}
+
+.lk-chat-block_message.ego>div:nth-child(1)::after {
+    display: block;
+    content: '';
+    position: relative;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' fill='none' viewBox='0 0 18 18'%3e%3cpath fill='%23fff' fill-rule='evenodd' d='M14.295 4.83a1.125 1.125 0 0 1 0 1.59l-6.75 6.75a1.125 1.125 0 0 1-1.59 0l-2.25-2.25a1.125 1.125 0 0 1 1.59-1.59l1.455 1.455 5.955-5.955a1.125 1.125 0 0 1 1.59 0Z' clip-rule='evenodd' opacity='.5'/%3e%3c/svg%3e ");
+    width: 18px;
+    height: 18px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    float: right;
+    margin-left: 7px;
+    top: 15px;
+}
+
+.lk-chat-block_message.ego.active>div:nth-child(1)::after {
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' fill='none' viewBox='0 0 18 18'%3e%3cmask id='a' width='19' height='14' x='0' y='2' maskUnits='userSpaceOnUse' style='mask-type:luminance'%3e%3cpath stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='m1.5 10.125 3 3 8.063-8.063'/%3e%3cpath stroke='%23000' stroke-linecap='round' stroke-linejoin='round' stroke-width='4.5' d='m5.625 10.125 3 3 8.063-8.063'/%3e%3c/mask%3e%3cg mask='url(%23a)'%3e%3cpath fill='%23fff' d='M0 0h18v18H0V0Z'/%3e%3c/g%3e%3cpath stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='m5.625 10.125 3 3 8.063-8.063'/%3e%3c/svg%3e ");
 }
 
 .lk-chat-block_message.talker {
@@ -263,6 +282,7 @@
 .lk-chat-block_talk_send button:disabled {
     background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 63 63'%3e%3crect width='63' height='63' fill='%23D589CC' rx='31.5'/%3e%3cpath fill='%23fff' d='m57.098 30.435-38.5-19.25a1.75 1.75 0 0 0-1.89.21 1.75 1.75 0 0 0-.577 1.75l4.637 17.097H40.56v3.5H20.768l-4.707 17.045a1.75 1.75 0 0 0 1.75 2.205 1.75 1.75 0 0 0 .787-.192l38.5-19.25a1.75 1.75 0 0 0 0-3.115Z'/%3e%3c/svg%3e ");
 }
+
 .lk-chat-block_talk_send button>span {
     width: 30px;
     min-width: 30px;
@@ -280,6 +300,7 @@
     font-weight: 700;
     font-family: "Nunito";
 }
+
 .lk-chat-block_talk_send button:disabled>span {
-     background: var(--main-color);
+    background: var(--main-color);
 }
