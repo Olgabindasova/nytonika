@@ -414,3 +414,14 @@
 .lk-chat-block_talk_mobile_title-dicr {
     font-size: .75rem;
 }
+
+/* По умолчанию скрываем на больших экранах */
+.uk-modal-header.lk-chat-mobile-header {
+    display: none;
+}
+
+@media (max-width: 960px) {
+    .uk-modal-header.lk-chat-mobile-header {
+        display: block;
+    }
+}
