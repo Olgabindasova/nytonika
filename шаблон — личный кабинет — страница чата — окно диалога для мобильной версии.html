@@ -25,61 +25,60 @@
     $(document).ready(function () {
 
 
-        // Добавление и удаление обертки для формы отправки сообщения
-        let isWrapped = false;
-        const BREAKPOINT = 960;
-        const FORM_SELECTOR = '.lk-chat-block_talk_send';
-        const WRAPPER_CLASS = 'uk-modal-footer';
+            // Добавление и удаление обертки для формы отправки сообщения
 
-        function toggleFooterWrapper() {
-            const forms = document.querySelectorAll(FORM_SELECTOR);
-            const shouldWrap = window.innerWidth < BREAKPOINT;
-
-            forms.forEach(form => {
-                const existingWrapper = form.parentElement;
-                const isCurrentWrapper = existingWrapper?.matches(`.${WRAPPER_CLASS.replace(/ /g, '.')}`);
-
-                if (shouldWrap) {
-                    if (!isCurrentWrapper) {
-                        const parent = form.parentNode;
-                        if (!parent) return;
-
-                        const wrapper = document.createElement('div');
-                        wrapper.className = WRAPPER_CLASS;
-
-                        parent.insertBefore(wrapper, form);
-                        wrapper.appendChild(form);
-                    }
-                } else {
-                    // На больших экранах — удаляем обёртку и возвращаем форму на место
-                    if (isCurrentWrapper && existingWrapper) {
-                        const nextSibling = existingWrapper.nextSibling;
-                        const grandParent = existingWrapper.parentNode;
-
-                        // Перемещаем форму перед бывшей обёрткой
-                        grandParent.insertBefore(form, nextSibling);
-                        existingWrapper.remove();
-                    }
-                }
-            });
-        }
-
-        toggleFooterWrapper();
-        window.addEventListener('resize', toggleFooterWrapper);
-
-
-        // Добавляем содержимое в див  .uk-modal-header.lk-chat-mobile-header
-        function initMobileHeaderContent() {
             const BREAKPOINT = 960;
-            const selector = '.uk-modal-header.lk-chat-mobile-header';
+            const FORM_SELECTOR = '.lk-chat-block_talk_send';
+            const WRAPPER_CLASS = 'uk-modal-footer';
 
-            document.querySelectorAll(selector).forEach(header => {
-                // Если содержимое уже есть — не вставляем повторно
-                if (header.querySelector('.lk-chat-block_talk_mobile_title-rod')) {
-                    return;
-                }
+            function toggleFooterWrapper() {
+                const forms = document.querySelectorAll(FORM_SELECTOR);
+                const shouldWrap = window.innerWidth < BREAKPOINT;
 
-                header.innerHTML = `
+                forms.forEach(form => {
+                    const existingWrapper = form.parentElement;
+                    const isCurrentWrapper = existingWrapper?.matches(`.${WRAPPER_CLASS.replace(/ /g, '.')}`);
+
+                    if (shouldWrap) {
+                        if (!isCurrentWrapper) {
+                            const parent = form.parentNode;
+                            if (!parent) return;
+
+                            const wrapper = document.createElement('div');
+                            wrapper.className = WRAPPER_CLASS;
+
+                            parent.insertBefore(wrapper, form);
+                            wrapper.appendChild(form);
+                        }
+                    } else {
+                        // На больших экранах — удаляем обёртку и возвращаем форму на место
+                        if (isCurrentWrapper && existingWrapper) {
+                            const nextSibling = existingWrapper.nextSibling;
+                            const grandParent = existingWrapper.parentNode;
+
+                            // Перемещаем форму перед бывшей обёрткой
+                            grandParent.insertBefore(form, nextSibling);
+                            existingWrapper.remove();
+                        }
+                    }
+                });
+            }
+
+            toggleFooterWrapper();
+            window.addEventListener('resize', toggleFooterWrapper);
+
+
+            // Добавляем содержимое в див  .uk-modal-header.lk-chat-mobile-header
+            function initMobileHeaderContent() {
+                const selector = '.uk-modal-header.lk-chat-mobile-header';
+
+                document.querySelectorAll(selector).forEach(header => {
+                    // Если содержимое уже есть — не вставляем повторно
+                    if (header.querySelector('.lk-chat-block_talk_mobile_title-rod')) {
+                        return;
+                    }
+
+                    header.innerHTML = `
                    <div class="lk-chat-block_talk_mobile_title-rod">
                        <button class="lk-chat-block_talk_mobile-modal-close uk-modal-close" type="button" uk-close></button>
                        <div>Тестовый родитель</div>
@@ -90,103 +89,103 @@
                    <div class="lk-chat-block_talk_mobile_title-dicr">
                       Текст текст текст текст текст текст
                    </div>`;
+                });
+            }
+
+            initMobileHeaderContent();
+
+            // Переменные для добавления и удаления классов, атрибутов
+            const lkchatblock = document.querySelector('.lk-chat-block_talk.uk-width-expand');
+            if (!lkchatblock) return;
+            const lkchatblockMessages = document.querySelector('.lk-chat-block_messages');
+            if (!lkchatblockMessages) return;
+            const lkchatblockTalkScroll = document.querySelector('.lk-chat-block_talk_scroll');
+            if (!lkchatblockTalkScroll) return;
+
+
+            // Добавляем новые в зависимости от ширины окна
+            function handleResize() {
+                const windowWidth = window.innerWidth;
+                if (windowWidth < 960) {
+                    // Удаляем текущие классы
+                    lkchatblock.classList.remove('lk-chat-block_talk', 'uk-width-expand');
+
+                    // Добавляем классы
+                    lkchatblock.classList.add('uk-modal-full', 'lk-chat-block_talk_mobile', 'uk-modal');
+                    lkchatblockMessages.classList.add('uk-flex-stretch');
+
+                    // Добавляем атрибуты
+                    lkchatblock.setAttribute('uk-modal', '');
+                    lkchatblockMessages.setAttribute('uk-overflow-auto', '');
+
+                    // Удаляем обёртку, оставляем содержимое
+                    lkchatblockTalkScroll.replaceWith(...lkchatblockTalkScroll.childNodes);
+
+                } else {
+                    // Удаляем текущие классы
+                    lkchatblock.classList.remove('uk-modal-full', 'lk-chat-block_talk_mobile', 'uk-modal');
+                    lkchatblockMessages.classList.remove('uk-flex-stretch', 'uk-overflow-auto');
+
+                    // Удаляем текущие атрибуты
+                    lkchatblock.removeAttribute('uk-modal', '');
+                    lkchatblockMessages.removeAttribute('uk-overflow-auto', '');
+
+                    // Добавляем классы
+                    lkchatblock.classList.add('lk-chat-block_talk', 'uk-width-expand');
+
+                    // Восстанавливаем обёртку
+                    const newlkchatblockTalkScroll = document.createElement('div');
+                    newlkchatblockTalkScroll.className = wrapperSelector.replace('.lk-chat-block_talk_scroll');
+
+                    // Вставляем новую обёртку туда, где раньше была старая
+                    // Перемещаем туда содержимое, которое было «вынуто»
+                    parent.insertBefore(newlkchatblockTalkScroll, lkchatblockTalkScroll || parent.firstChild);
+                }
+            }
+
+            handleResize();
+            window.addEventListener('resize', handleResize);
+        });
+
+
+        // Добавление дополнительной обертки для содержимого дива .lk-chat-block_talk_mobile на маленьких экранах и удаление на больших
+
+
+        function toggleWrapper() {
+            const parents = document.querySelectorAll('.uk-modal-full.lk-chat-block_talk_mobile');
+            const shouldWrap = window.innerWidth < BREAKPOINT;
+
+            parents.forEach(parent => {
+                const existingWrapper = parent.querySelector('.uk-modal-dialog.uk-flex.uk-flex-column.uk-flex-between');
+
+                if (shouldWrap) {
+                    if (!existingWrapper) {
+                        const header = parent.querySelector('.uk-modal-header.lk-chat-mobile-header');
+                        const messages = parent.querySelector('.lk-chat-block_messages.uk-flex-stretch');
+                        const footer = parent.querySelector('.uk-modal-footer');
+                        if (!header || !messages || !footer) return;
+
+                        const newWrapper = document.createElement('div');
+                        newWrapper.className = 'uk-modal-dialog uk-flex uk-flex-column uk-flex-between';
+                        parent.insertBefore(newWrapper, header);
+                        [header, messages, footer].forEach(el => newWrapper.appendChild(el));
+                    }
+                } else {
+                    // На больших экранах удаляем внутреннюю обёртку, возвращая элементы на место
+                    if (existingWrapper) {
+                        // Перемещаем детей обратно в родителя перед обёрткой
+                        const children = Array.from(existingWrapper.children);
+                        const beforeNode = existingWrapper.nextSibling;
+                        children.forEach(child => parent.insertBefore(child, beforeNode));
+                        existingWrapper.remove();
+                    }
+                }
             });
         }
 
-        initMobileHeaderContent();
+        toggleWrapper();
+        window.addEventListener('resize', toggleWrapper);
 
-        // Переменные для добавления и удаления классов, атрибутов
-        const lkchatblock = document.querySelector('.lk-chat-block_talk.uk-width-expand');
-        if (!lkchatblock) return;
-        const lkchatblockMessages = document.querySelector('.lk-chat-block_messages');
-        if (!lkchatblockMessages) return;
-        const lkchatblockTalkScroll = document.querySelector('.lk-chat-block_talk_scroll');
-        if (!lkchatblockTalkScroll) return;
-
-
-        // Добавляем новые в зависимости от ширины окна
-        function handleResize() {
-            const windowWidth = window.innerWidth;
-            if (windowWidth < 960) {
-                // Удаляем текущие классы
-                lkchatblock.classList.remove('lk-chat-block_talk', 'uk-width-expand');
-
-                // Добавляем классы
-                lkchatblock.classList.add('uk-modal-full', 'lk-chat-block_talk_mobile', 'uk-modal');
-                lkchatblockMessages.classList.add('uk-flex-stretch');
-
-                // Добавляем атрибуты
-                lkchatblock.setAttribute('uk-modal', '');
-                lkchatblockMessages.setAttribute('uk-overflow-auto', '');
-
-                // Удаляем обёртку, оставляем содержимое
-                lkchatblockTalkScroll.replaceWith(...lkchatblockTalkScroll.childNodes);
-
-            } else {
-                // Удаляем текущие классы
-                lkchatblock.classList.remove('uk-modal-full', 'lk-chat-block_talk_mobile', 'uk-modal');
-                lkchatblockMessages.classList.remove('uk-flex-stretch');
-
-                // Удаляем текущие атрибуты
-                lkchatblock.removeAttribute('uk-modal', '');
-                lkchatblockMessages.removeAttribute('uk-overflow-auto', '');
-
-                // Добавляем классы
-                lkchatblock.classList.add('lk-chat-block_talk', 'uk-width-expand');
-
-                // Восстанавливаем обёртку
-                const newlkchatblockTalkScroll = document.createElement('div');
-                newlkchatblockTalkScroll.className = wrapperSelector.replace('.lk-chat-block_talk_scroll');
-
-                // Вставляем новую обёртку туда, где раньше была старая
-                // Перемещаем туда содержимое, которое было «вынуто»
-                parent.insertBefore(newlkchatblockTalkScroll, lkchatblockTalkScroll || parent.firstChild);
-            }
-        }
-
-        handleResize();
-        window.addEventListener('resize', handleResize);
-    });
-
-
-    // Добавление дополнительной обертки для содержимого дива .lk-chat-block_talk_mobile на маленьких экранах и удаление на больших
-    let isWrapped = false;
-    const BREAKPOINT = 950;
-
-    function toggleWrapper() {
-        const parents = document.querySelectorAll('.uk-modal-full.lk-chat-block_talk_mobile');
-        const shouldWrap = window.innerWidth < BREAKPOINT;
-
-        parents.forEach(parent => {
-            const existingWrapper = parent.querySelector('.uk-modal-dialog.uk-flex.uk-flex-column.uk-flex-between');
-
-            if (shouldWrap) {
-                if (!existingWrapper) {
-                    const header = parent.querySelector('.uk-modal-header.lk-chat-mobile-header');
-                    const messages = parent.querySelector('.lk-chat-block_messages.uk-flex-stretch');
-                    const footer = parent.querySelector('.uk-modal-footer');
-                    if (!header || !messages || !footer) return;
-
-                    const newWrapper = document.createElement('div');
-                    newWrapper.className = 'uk-modal-dialog uk-flex uk-flex-column uk-flex-between';
-                    parent.insertBefore(newWrapper, header);
-                    [header, messages, footer].forEach(el => newWrapper.appendChild(el));
-                }
-            } else {
-                // На больших экранах удаляем внутреннюю обёртку, возвращая элементы на место
-                if (existingWrapper) {
-                    // Перемещаем детей обратно в родителя перед обёрткой
-                    const children = Array.from(existingWrapper.children);
-                    const beforeNode = existingWrapper.nextSibling;
-                    children.forEach(child => parent.insertBefore(child, beforeNode));
-                    existingWrapper.remove();
-                }
-            }
-        });
-    }
-
-    toggleWrapper();
-    window.addEventListener('resize', toggleWrapper);
 
 </script>
 
