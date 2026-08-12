@@ -40,6 +40,7 @@
     overflow-y: auto;
     position: relative;
     top: 125px;
+    top: 0;
 }
 
 .lk-chat-block__users_item {
@@ -258,6 +259,9 @@
     background-color: transparent;
 }
 
+.lk-chat-mobile-header .back-btn>svg {
+    display: none;
+}
 
 .lk-chat-mobile-header .titles {
     flex: 1;
