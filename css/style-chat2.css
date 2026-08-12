@@ -1,13 +1,21 @@
 /* ========== Фикс для .page-lk который схлопывает окно чата ========== */
 
 .page-lk-chat {
-    height: auto !important;
-    min-height: calc(100vh - 180px);
+    height: 100vh;
+    min-height: 100vh;
+    position: relative;
+    top: -80px;
+    z-index: 10000;
 }
 
 .page-lk-chat .lk-chat-block {
-    height: calc(100vh - 220px);
+    height: calc(100vh - 40px);
     min-height: 500px;
+    margin-top: 0;
+}
+
+.page-lk-chat h1 {
+    display: none;
 }
 
 /* ========== CHAT – CLEAN MOBILE FIRST ========== */
@@ -152,6 +160,33 @@
     display: none;
 }
 
+/* ===== Desktop (≥ 500px) – side by side ===== */
+@media (min-width: 500px) {
+    .page-lk-chat h1 {
+        display: block;
+    }
+
+    .page-lk-chat {
+        height: auto !important;
+        min-height: calc(100vh - 180px);
+        top: 0;
+    }
+
+    .page-lk-chat .lk-chat-block {
+        height: calc(100vh - 220px);
+        min-height: 500px;
+        margin-top: 20px;
+    }
+}
+
+@media (min-width: 500px) and (max-width: 900px) {
+    .page-lk-chat h1 {
+        font-size: 34px !important;
+        line-height: 30px !important;
+        margin-top: 0 !important;
+    }
+}
+
 /* ===== Desktop (≥ 900px) – side by side ===== */
 @media (min-width: 900px) {
     .lk-chat-block {
@@ -161,7 +196,8 @@
     }
 
     .lk-chat-block_users {
-        width: 340px;
+        min-width: 250px;
+        width: 30%;
         flex-shrink: 0;
         display: flex !important;
         /* always show list on desktop */
@@ -184,8 +220,8 @@
     background: #9C16B9;
     color: var(--colorWhiteText);
     flex-shrink: 0;
-    margin-bottom: 5px;
-    border-radius: 15px;
+    margin-bottom: 0px;
+    border-radius: 15px 15px 0 0;
     background-image: url(https://cdn.nyutonika.ru/icons-lk/img-title-chat2.svg);
     background-position: bottom right;
     background-size: contain;
@@ -239,6 +275,24 @@
 }
 
 /* Hide mobile header on desktop */
+@media (min-width: 500px) {
+    .lk-chat-mobile-header {
+        display: flex;
+        align-items: flex-start;
+        gap: 12px;
+        padding: 12px 16px;
+        background: #9C16B9;
+        color: var(--colorWhiteText);
+        flex-shrink: 0;
+        margin-bottom: 5px;
+        border-radius: 15px;
+        background-image: url(https://cdn.nyutonika.ru/icons-lk/img-title-chat2.svg);
+        background-position: bottom right;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+}
+
 @media (min-width: 900px) {
     .lk-chat-mobile-header {
         display: none;
@@ -253,7 +307,7 @@
     flex-direction: column;
     gap: 12px;
     -webkit-overflow-scrolling: touch;
-    border-radius: 15px;
+    border-radius: 0 0 15px 15px;
     border: 1px solid var(--main-color);
     background-image: url(https://cdn.nyutonika.ru/icons-lk/chat-fon.svg);
     overflow-y: auto;
@@ -370,6 +424,22 @@
     top: -17px;
 }
 
+@media (min-width: 500px) {
+    .lk-chat-block_messages {
+        flex: 1;
+        padding: 16px;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        -webkit-overflow-scrolling: touch;
+        border-radius: 15px;
+        border: 1px solid var(--main-color);
+        background-image: url(https://cdn.nyutonika.ru/icons-lk/chat-fon.svg);
+        overflow-y: auto;
+        scrollbar-width: none;
+    }
+}
+
 /* ===== Input ===== */
 .lk-chat-block_talk_send {
     padding: 20px 0px 12px 0px;
@@ -412,12 +482,24 @@
     display: block;
     background: none;
     border: none;
+    cursor: pointer;
+    transition: all 0.7s;
     background-size: contain;
     background-repeat: no-repeat;
     background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='63' height='63' fill='none' viewBox='0 0 63 63'%3e%3crect width='63' height='63' fill='%239C16B9' rx='31.5'/%3e%3cpath fill='%23fff' d='m57.098 30.435-38.5-19.25a1.75 1.75 0 0 0-1.89.21 1.75 1.75 0 0 0-.577 1.75l4.637 17.097H40.56v3.5H20.768l-4.707 17.045a1.75 1.75 0 0 0 1.75 2.205 1.75 1.75 0 0 0 .787-.192l38.5-19.25a1.75 1.75 0 0 0 0-3.115Z'/%3e%3c/svg%3e ");
 }
 
-.lk-chat-block_talk_send button:disabled {
+.lk-chat-block_talk_send button:hover {
+    display: block;
+    background: none;
+    border: none;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='35' height='35' fill='none' viewBox='0 0 35 35'%3e%3crect width='34' height='34' x='.5' y='.5' fill='%23fff' rx='17'/%3e%3crect width='34' height='34' x='.5' y='.5' stroke='%239C16B9' rx='17'/%3e%3cpath fill='%239C16B9' d='M31.72 16.908 10.333 6.214a.97.97 0 0 0-1.05.116.97.97 0 0 0-.32.973l2.576 9.498h10.995v1.945H11.537l-2.615 9.47a.972.972 0 0 0 .972 1.224 1 1 0 0 0 .438-.107L31.721 18.64a.972.972 0 0 0 0-1.73'/%3e%3c/svg%3e ");
+}
+
+.lk-chat-block_talk_send button:disabled,
+.lk-chat-block_talk_send button:disabled:hover {
     background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 63 63'%3e%3crect width='63' height='63' fill='%23D589CC' rx='31.5'/%3e%3cpath fill='%23fff' d='m57.098 30.435-38.5-19.25a1.75 1.75 0 0 0-1.89.21 1.75 1.75 0 0 0-.577 1.75l4.637 17.097H40.56v3.5H20.768l-4.707 17.045a1.75 1.75 0 0 0 1.75 2.205 1.75 1.75 0 0 0 .787-.192l38.5-19.25a1.75 1.75 0 0 0 0-3.115Z'/%3e%3c/svg%3e ");
 }
 
@@ -438,5 +520,3 @@
     font-weight: 700;
     font-family: "Nunito";
 }
-
- 
