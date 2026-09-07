@@ -226,7 +226,125 @@
     min-height: 100px;
 }
 
+/*---------Уменьшенное боковое меню----------*/
+.lk-wrapper:has(.aside-lk_min)>.section-lk .back-to-site-lk {
+    border: 0px;
+    color: var(--colorFontContent);
+    font-weight: 800;
+    display: flex;
+    gap: 5px;
+    font-size: 0.85rem;
+    text-wrap: nowrap;
+    margin-right: 5px !important;
+    background: #FCEDFF;
+    border: 2px solid #FCEDFF;
+}
 
+.lk-wrapper:has(.aside-lk_min)>.section-lk .back-to-site-lk:hover {
+    color: var(--colorWhiteText);
+    background: var(--main-color);
+    border: 2px solid var(--main-color);
+}
+
+.lk-wrapper:has(.aside-lk_min)>.section-lk .back-to-site-lk::after {
+    content: "";
+    display: block;
+    background-image: url("https://cdn.nyutonika.ru/icons-lk/logo1.svg");
+    width: 30px;
+    height: 30px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    top: -1px;
+    position: relative;
+    transition: all 0.5s;
+}
+
+.lk-wrapper:has(.aside-lk_min)>.section-lk .back-to-site-lk:hover::after {
+    background-color: var(--colorWhiteText);
+    border-radius: 50%;
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.aside-lk.aside-lk_min {
+    display: flex;
+}
+
+.aside-lk_min .aside-lk_all {
+    flex: 1;
+}
+
+.aside-lk_min .aside-lk_logo {
+    display: none;
+}
+
+.aside-lk_min .aside-lk_menu {
+    padding: 10px 15px 10px 15px;
+}
+
+.aside-lk_min .menu_one {
+    width: 25px;
+    height: 24px;
+}
+
+.aside-lk_min .close-menu-active {
+    width: 25px;
+    height: 24px;
+    margin-left: -50%;
+}
+
+.aside-lk_min .menu_one::after {
+    font-size: 16px;
+    left: -69px;
+}
+
+.aside-lk_min .close-menu-active::after {
+    font-size: 16px;
+    left: -2px;
+    bottom: 15px;
+}
+
+.aside-lk_min .menu_one::before {
+    left: -27px;
+    top: 22px;
+}
+
+.aside-lk_min .close-menu-active::before {
+    right: 20px;
+    top: 27px;
+    font-size: 12px;
+}
+
+.aside-lk_min .menu-lk {
+    padding: 10px;
+    margin-top: 15px;
+    gap: 5px;
+    flex: 1;
+    justify-content: space-evenly;
+}
+
+.aside-lk_min .menu-lk>li>a>img {
+    width: 45px;
+    padding: 1px;
+    height: 45px;
+}
+
+.aside-lk_min .aside-lk_all_contact>div {
+    padding: 5px 10px;
+}
+
+.aside-lk_min .menu-lk>li>a>span {
+    font-size: 16px;
+    line-height: 16px;
+    padding: 10px;
+}
+
+.aside-lk_min .aside-lk_all_contact {
+    justify-content: center;
+}
+
+/*---------Конец Уменьшенное боковое меню----------*/
 
 
 .header-top-lk {
@@ -2010,7 +2128,8 @@ input:-webkit-autofill {
     filter: grayscale(0.1);
 }
 
-.title_yandex-split:hover::after, .title_yandex-split.active::after {
+.title_yandex-split:hover::after,
+.title_yandex-split.active::after {
     border: 3px solid var(--colorWhiteText);
     border-radius: 50%;
     filter: contrast(1.4);
@@ -2469,6 +2588,7 @@ table.operation-history>tbody .write-off td:nth-of-type(5) {
     table.operation-history.practice-schedule>tbody tr td:nth-of-type(7):before {
         content: "Занятие по счету:";
     }
+
     table.operation-history.practice-schedule>tbody tr td:nth-of-type(8):before {
         content: "Преподаватель:";
     }
@@ -4503,6 +4623,10 @@ a.intern-office.news:hover .intern-office_name {
 
 @media (max-width: 640px) {
 
+    .lk-wrapper:has(.aside-lk_min)>.section-lk .header-top-lk_profile>div {
+        max-width: 85px;
+    }
+
     .welcome-lk {
         min-width: 270px;
     }
@@ -4764,7 +4888,9 @@ a.intern-office.news:hover .intern-office_name {
 }
 
 @media (max-width: 500px) {
-    .aside-lk {
+
+    .aside-lk,
+    .aside-lk.aside-lk_min {
         display: none;
     }
 
@@ -4794,6 +4920,13 @@ a.intern-office.news:hover .intern-office_name {
         height: 35px;
         display: block;
         line-height: 30px;
+        color: var(--main-color);
+    }
+
+    .lk-wrapper:has(.aside-lk_min)>.section-lk .back-to-site-lk {
+        width: 100%;
+        justify-content: center;
+        padding: 6px 5px 4px;
     }
 
     .header-top-lk_profile>.logo-mobile {
